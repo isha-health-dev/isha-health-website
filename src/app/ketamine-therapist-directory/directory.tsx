@@ -85,7 +85,7 @@ export function TherapistDirectory({ therapists }: Props) {
   ]);
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="td-scope min-h-screen bg-white">
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="text-center mb-10">
           <h1 className="text-3xl font-serif font-bold text-gray-900 mb-3">
