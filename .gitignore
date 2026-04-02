@@ -31,6 +31,11 @@ yarn-error.log*
 # vercel
 .vercel
 
+# source data (not needed in deploy)
+/webflow-scrape
+/scripts
+*.csv
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
