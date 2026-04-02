@@ -56,14 +56,16 @@ export default async function BlogPostPage({
         <h1 className="heading static-heading">{post.title}</h1>
       </div>
       <div className="section-wrapper static-page-wrapper">
-        <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+        <div style={{ maxWidth: '800px', margin: '0 auto', padding: '0 1rem' }}>
           <div
             style={{
               display: 'flex',
-              gap: '1rem',
+              flexWrap: 'wrap',
+              gap: '0.5rem',
               marginBottom: '2rem',
               fontSize: '0.875rem',
               color: '#666',
+              fontFamily: "'Poppins', sans-serif",
             }}
           >
             {publishDate && (

@@ -92,3 +92,72 @@
 .td-scope label {
   cursor: pointer;
 }
+
+/* === Blog post content styling === */
+/* Ensure blog MDX content is readable and mobile-friendly */
+.w-richtext img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.w-richtext a {
+  color: #0d9488;
+  text-decoration: underline;
+  word-break: break-word;
+}
+
+.w-richtext a:hover {
+  color: #0f766e;
+}
+
+.w-richtext p {
+  margin-bottom: 1em;
+  line-height: 1.7;
+}
+
+.w-richtext h2 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.w-richtext h3 {
+  margin-top: 1.25em;
+  margin-bottom: 0.5em;
+}
+
+.w-richtext ul, .w-richtext ol {
+  margin-bottom: 1em;
+  padding-left: 1.5em;
+}
+
+.w-richtext li {
+  margin-bottom: 0.5em;
+  line-height: 1.7;
+}
+
+.w-richtext blockquote {
+  border-left: 3px solid #0d9488;
+  padding-left: 1em;
+  margin: 1em 0;
+  color: #555;
+  font-style: italic;
+}
+
+/* Prevent horizontal scroll from long URLs or code in blog posts */
+.w-richtext {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+/* === Mobile overrides === */
+@media screen and (max-width: 479px) {
+  .td-scope .max-w-7xl {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .td-scope h1 {
+    font-size: 1.5rem;
+  }
+}
