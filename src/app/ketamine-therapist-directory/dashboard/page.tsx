@@ -100,7 +100,24 @@ export default function DashboardPage() {
             .eq('id', emailMatch.id);
           setProfile(emailMatch);
         } else {
-          setError('No therapist profile found. Please contact info@isha.health.');
+          // Create a new profile for this user
+          const meta = user.user_metadata || {};
+          const { data: newProfile, error: insertError } = await supabase
+            .from('therapist')
+            .insert({
+              user_id: user.id,
+              email: user.email,
+              first_name: meta.first_name || '',
+              last_name: meta.last_name || '',
+            })
+            .select('*')
+            .single();
+
+          if (insertError || !newProfile) {
+            setError('Failed to create profile: ' + (insertError?.message || 'Unknown error') + '. Please contact info@isha.health.');
+          } else {
+            setProfile(newProfile);
+          }
         }
       } else {
         setProfile(data);
