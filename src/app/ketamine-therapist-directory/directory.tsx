@@ -132,9 +132,9 @@ export function TherapistDirectory({ therapists }: Props) {
             Find a Ketamine-Assisted Psychotherapy Therapist
           </h1>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Browse {therapists.length} KAP-trained therapists across the United
-            States. Filter by state, specialty, visit type, and more to find
-            the right therapist for your ketamine-assisted therapy journey.
+            Browse KAP-trained therapists across the United States. Filter by
+            state, specialty, visit type, and more to find the right therapist
+            for your ketamine-assisted therapy journey.
           </p>
           <div
             style={{
