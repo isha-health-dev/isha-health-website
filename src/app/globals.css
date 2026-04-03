@@ -19,6 +19,7 @@
   display: flex !important;
   flex-wrap: wrap !important;
   gap: 2rem !important;
+  align-items: flex-start !important;
 }
 
 .heading-left + .horizontal > .horizontal {
