@@ -79,9 +79,7 @@ export function TherapistDirectory({ therapists }: Props) {
       }
 
       if (visitTypeFilter) {
-        if (visitTypeFilter === 'online' && t.visit_type === 'in_person')
-          return false;
-        if (visitTypeFilter === 'in_person' && t.visit_type === 'online')
+        if (visitTypeFilter && t.visit_type !== visitTypeFilter)
           return false;
       }
 
@@ -203,8 +201,7 @@ export function TherapistDirectory({ therapists }: Props) {
               className="px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-teal-500 focus:border-transparent"
             >
               <option value="">All Visit Types</option>
-              <option value="online">Online</option>
-              <option value="in_person">In Person</option>
+              <option value="telemedicine_only">Telemedicine Only</option>
               <option value="hybrid">Hybrid</option>
             </select>
             <select

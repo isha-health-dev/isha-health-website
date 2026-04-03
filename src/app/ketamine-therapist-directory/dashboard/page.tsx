@@ -381,11 +381,10 @@ export default function DashboardPage() {
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', marginBottom: '0.75rem' }}>
             <div>
               <label style={labelStyle}>Visit Type</label>
-              <select style={inputStyle} value={profile.visit_type || ''} onChange={(e) => updateField('visit_type', e.target.value)}>
+              <select style={inputStyle} value={profile.visit_type || ''} onChange={(e) => updateField('visit_type', e.target.value || null)}>
                 <option value="">Select...</option>
-                <option value="online">Online</option>
-                <option value="in_person">In Person</option>
-                <option value="hybrid">Hybrid</option>
+                <option value="telemedicine_only">Telemedicine Only</option>
+                <option value="hybrid">Hybrid (Online + In Person)</option>
               </select>
             </div>
             <div>
