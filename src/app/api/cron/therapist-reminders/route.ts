@@ -114,7 +114,7 @@ export async function GET(request: NextRequest) {
 
     try {
       await resend.emails.send({
-        from: 'Isha Health <onboarding@resend.dev>',
+        from: 'Isha Health <info@isha.health>',
         to: therapist.email,
         subject,
         html,
