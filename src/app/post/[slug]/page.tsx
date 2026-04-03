@@ -50,8 +50,36 @@ export default async function BlogPostPage({
 
   const publishDate = post.firstPublished || post.date;
 
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: post.title,
+    description: post.description || '',
+    datePublished: post.firstPublished || post.date,
+    dateModified: post.date,
+    author: {
+      '@type': 'Organization',
+      name: 'Isha Health',
+      url: 'https://isha.health',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Isha Health',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://isha.health/images/isha_logo.webp',
+      },
+    },
+    mainEntityOfPage: `https://isha.health/post/${post.slug}`,
+    ...(post.image ? { image: post.image } : {}),
+  };
+
   return (
     <div className="section-base white-section static-page">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       <div className="hero-isha">
         <h1 className="heading static-heading">{post.title}</h1>
       </div>

@@ -27,6 +27,36 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'MedicalBusiness',
+              name: 'Isha Health',
+              url: 'https://isha.health',
+              logo: 'https://isha.health/images/isha_logo.webp',
+              description:
+                'Isha Health offers online ketamine-assisted therapy for depression and anxiety. Personalized treatment plans from the comfort of your home.',
+              address: {
+                '@type': 'PostalAddress',
+                streetAddress: '4255 18th Street',
+                addressLocality: 'San Francisco',
+                addressRegion: 'CA',
+                postalCode: '94114',
+                addressCountry: 'US',
+              },
+              email: 'info@isha.health',
+              sameAs: [
+                'https://www.linkedin.com/company/isha-health/',
+                'https://www.instagram.com/isha.health/',
+                'https://twitter.com/IshaHealth',
+              ],
+              medicalSpecialty: 'Psychiatric',
+              areaServed: ['AZ', 'CA', 'CO', 'FL', 'GA', 'NY', 'OR', 'TX', 'WA'],
+            }),
+          }}
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
