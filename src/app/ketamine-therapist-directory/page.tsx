@@ -6,14 +6,14 @@ import { TherapistDirectory } from './directory';
 export const metadata: Metadata = {
   title: 'Find a Ketamine-Assisted Psychotherapy Therapist',
   description:
-    'Browse 190+ KAP-trained therapists across the United States. Filter by state, specialty, insurance, and visit type to find the right ketamine-assisted psychotherapy therapist for you.',
+    'Browse KAP-trained therapists across the United States. Filter by state, specialty, insurance, and visit type to find the right ketamine-assisted psychotherapy therapist for you.',
   alternates: {
     canonical: 'https://isha.health/ketamine-therapist-directory',
   },
   openGraph: {
     title: 'Find a Ketamine-Assisted Psychotherapy Therapist | Isha Health',
     description:
-      'Browse 190+ KAP-trained therapists across the United States. Filter by state, specialty, insurance, and visit type.',
+      'Browse KAP-trained therapists across the United States. Filter by state, specialty, insurance, and visit type.',
     type: 'website',
     url: 'https://isha.health/ketamine-therapist-directory',
   },
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Find a KAP Therapist | Isha Health',
     description:
-      'Browse 190+ KAP-trained therapists across the US. Filter by state, specialty, and more.',
+      'Browse KAP-trained therapists across the US. Filter by state, specialty, and more.',
   },
 };
 

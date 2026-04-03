@@ -237,10 +237,6 @@ export function TherapistDirectory({ therapists }: Props) {
               />
               <span className="text-sm text-gray-700">Sliding Scale</span>
             </label>
-            <span className="ml-auto text-sm text-gray-500">
-              {filtered.length} therapist{filtered.length !== 1 ? 's' : ''}{' '}
-              found
-            </span>
           </div>
         </div>
 
@@ -274,7 +270,7 @@ export function TherapistDirectory({ therapists }: Props) {
                 fontFamily: 'inherit',
               }}
             >
-              Load More ({filtered.length - visibleCount} remaining)
+              Load More
             </button>
           </div>
         )}
