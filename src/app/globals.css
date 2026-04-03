@@ -13,6 +13,46 @@
   font-size: 12px;
 }
 
+/* === Location page section fix === */
+/* Webflow CSS has conflicting .horizontal rules - the mobile override
+   (flex-direction:column) applies at all sizes. Fix for location pages. */
+.section-wrapper.location .horizontal {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 2rem !important;
+  align-items: flex-start !important;
+}
+
+.section-wrapper.location .horizontal > img {
+  max-width: 320px !important;
+  border-radius: 12px !important;
+  flex-shrink: 0 !important;
+}
+
+.section-wrapper.location .horizontal > .w-richtext {
+  flex: 1 !important;
+}
+
+.section-wrapper.location .horizontal .w-richtext ul {
+  padding-left: 1.25rem !important;
+}
+
+.section-wrapper.location .horizontal .w-richtext li {
+  margin-bottom: 1rem !important;
+  line-height: 1.6 !important;
+}
+
+@media screen and (max-width: 767px) {
+  .section-wrapper.location .horizontal {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .section-wrapper.location .horizontal > img {
+    max-width: 100% !important;
+  }
+}
+
 /* === Clinical Team section fix === */
 /* The two lead doctors should display side by side on desktop */
 .heading-left + .horizontal {
@@ -142,7 +182,10 @@
 .td-scope a {
   color: inherit !important;
   text-decoration: none !important;
-  display: block !important;
+}
+
+.td-scope a[style*="underline"] {
+  display: inline !important;
 }
 
 .td-scope a.text-teal-600 {
