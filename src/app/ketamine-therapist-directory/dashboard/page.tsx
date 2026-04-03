@@ -26,6 +26,7 @@ interface TherapistProfile {
   state: string | null;
   postal_code: string | null;
   street_address: string | null;
+  npi: string | null;
   note_on_finance: string | null;
   note_on_top_specialties: string | null;
   note_on_therapy_types: string | null;
@@ -155,6 +156,7 @@ export default function DashboardPage() {
         state: profile.state,
         postal_code: profile.postal_code,
         street_address: profile.street_address,
+        npi: profile.npi,
         note_on_finance: profile.note_on_finance,
         note_on_top_specialties: profile.note_on_top_specialties,
         note_on_therapy_types: profile.note_on_therapy_types,
@@ -273,6 +275,22 @@ export default function DashboardPage() {
             <div>
               <label style={labelStyle}>State</label>
               <input style={inputStyle} value={profile.state || ''} onChange={(e) => updateField('state', e.target.value)} placeholder="e.g., CA" />
+            </div>
+          </div>
+        </div>
+
+        {/* Credentials */}
+        <div style={sectionStyle}>
+          <h2 style={{ fontSize: '1.1rem', fontWeight: 600, color: '#111827', marginBottom: '1rem' }}>Credentials &amp; Licensing</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem' }}>
+            <div>
+              <label style={labelStyle}>NPI Number</label>
+              <input style={inputStyle} value={profile.npi || ''} onChange={(e) => updateField('npi', e.target.value)} placeholder="10-digit NPI" />
+            </div>
+            <div>
+              <label style={labelStyle}>State License Number</label>
+              <input style={inputStyle} value="" disabled placeholder="Edit in Supabase (coming soon)" />
+              <p style={{ fontSize: '0.7rem', color: '#9ca3af', marginTop: '0.2rem' }}>License info is managed separately. Contact info@isha.health to update.</p>
             </div>
           </div>
         </div>
