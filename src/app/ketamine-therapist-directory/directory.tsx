@@ -146,14 +146,14 @@ export function TherapistDirectory({ therapists }: Props) {
           >
             Are you a KAP-trained therapist?{' '}
             <a
-              href="https://findyourkaptherapist.isha.health/create-account"
+              href="/ketamine-therapist-directory/create-account"
               style={{ color: '#0d9488', textDecoration: 'underline' }}
             >
               Join the directory
             </a>
             {' or '}
             <a
-              href="https://findyourkaptherapist.isha.health/login"
+              href="/ketamine-therapist-directory/login"
               style={{ color: '#0d9488', textDecoration: 'underline' }}
             >
               log in to update your profile
