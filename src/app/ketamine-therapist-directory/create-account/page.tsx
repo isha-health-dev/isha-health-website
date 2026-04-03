@@ -57,11 +57,19 @@ export default function CreateAccountPage() {
           .eq('email', email);
 
         if (linkError) {
-          setError('Account created but profile setup failed. Please contact info@isha.health.');
-          setLoading(false);
-          return;
+          console.error('Profile link error:', linkError);
+          // Don't block signup - profile will be created on first dashboard visit
         }
       }
+    }
+
+    // If user identity has confirmed email, they can log in directly
+    // Otherwise show the confirmation message
+    if (authData.user?.identities?.length === 0) {
+      // Email already registered
+      setError('An account with this email already exists. Please log in instead.');
+      setLoading(false);
+      return;
     }
 
     setSuccess(true);
