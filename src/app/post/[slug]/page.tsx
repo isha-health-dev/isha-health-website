@@ -50,6 +50,31 @@ export default async function BlogPostPage({
 
   const publishDate = post.firstPublished || post.date;
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: 'https://isha.health',
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Blog',
+        item: 'https://isha.health/blog',
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: post.title,
+        item: `https://isha.health/post/${post.slug}`,
+      },
+    ],
+  };
+
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -80,6 +105,27 @@ export default async function BlogPostPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <nav
+        aria-label="Breadcrumb"
+        style={{
+          maxWidth: '800px',
+          margin: '0 auto',
+          padding: '1rem 1rem 0',
+          fontSize: '0.8rem',
+          color: '#6b7280',
+          fontFamily: "'Poppins', sans-serif",
+        }}
+      >
+        <a href="/" style={{ color: '#0d9488', textDecoration: 'none' }}>Home</a>
+        {' / '}
+        <a href="/blog" style={{ color: '#0d9488', textDecoration: 'none' }}>Blog</a>
+        {' / '}
+        <span style={{ color: '#9ca3af' }}>{post.title}</span>
+      </nav>
       <div className="hero-isha">
         <h1 className="heading static-heading">{post.title}</h1>
       </div>

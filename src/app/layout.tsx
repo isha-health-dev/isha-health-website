@@ -13,6 +13,23 @@ export const metadata: Metadata = {
     icon: '/favicon.png',
     apple: '/apple-touch-icon.png',
   },
+  metadataBase: new URL('https://isha.health'),
+  openGraph: {
+    siteName: 'Isha Health',
+    type: 'website',
+    images: [
+      {
+        url: '/images/isha_logo.webp',
+        width: 400,
+        height: 100,
+        alt: 'Isha Health - Online Ketamine Therapy',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@IshaHealth',
+  },
 };
 
 const navbarHtml = `<div data-wf--navigation--variant="base" data-animation="default" data-collapse="all" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav"><div class="top-label"><p class="p2">Online Ketamine Treatment Available in: AZ, CA, CO, FL, GA, NY, OR, TX, and WA.</p></div><div class="section-wrapper nav-wrapper"><div class="navbar-wrapper"><div class="header_left"><div data-w-id="efbf0ce3-b7e7-d709-9cde-4249ece669b7" class="menu-button w-nav-button"><div class="icon w-icon-nav-menu"></div></div><a href="/" class="logo-link w-nav-brand"><p class="journey_with">FEEL BETTER WITH</p><img src="/images/isha_logo.webp" loading="lazy" alt="Isha Health" class="logo-image"/></a><p class="paragraph-33"><a href="/collaborate-with-isha-health" class="link-6">FOR KAP TRAINED THERAPISTS</a></p></div><div class="header_right"><a href="/pricing" class="w-inline-block"><p class="paragraph-33">PRICING</p></a><a id="check-availability" href="/appointment" class="button-navbar w-button">CHECK AVAILABILITY</a></div></div><div class="menu-popup-wrapper"><div class="menu-popup"><div class="menu-popup-logo-column"><img src="/images/close_black.svg" loading="lazy" data-w-id="da2bd1ce-fa1e-9f4e-a882-a68198e882e9" alt="" class="close-menu"/><div class="div-block-37"><a href="/" class="logo-link w-nav-brand"><img src="/images/isha_logo.webp" loading="lazy" alt="Isha Health" class="logo-image"/></a></div></div><div class="menu-popup-list"><div class="menu-popup-list-inner"><p>FOR PATIENTS</p><a href="/appointment" class="popupmenu-link">Make an Appointment</a><a href="/pricing" class="popupmenu-link">Pricing</a><a href="/our-treatment-approach" class="popupmenu-link">OUR TREATMENT APPROACH</a><div class="menu-popup-dropdown"><div data-hover="false" data-delay="0" class="dropdown-2 w-dropdown"><div class="dropdown-toggle-2 w-dropdown-toggle"><div class="icon-3 w-icon-dropdown-toggle"></div><div class="text-block-2">For OUR Current Patients</div></div><nav class="menu-popup-dropdown-list w-dropdown-list"><div><a href="/current-patients/scheduling" class="popupmenu-link">Scheduling</a></div><div><a href="/current-patients/referral-from-your-primary-doctor" class="popupmenu-link">Qualified Telemedicine Referral</a></div><div><a href="/current-patients/superbill" class="popupmenu-link">Superbill</a></div><div><a href="/current-patients/session-instruction" class="popupmenu-link">Dosing session instructions</a></div><div><a href="/healing-music-playlist" class="popupmenu-link">Healing Sound Playlist</a></div></nav></div></div><a href="/ketamine-therapist-directory" class="popupmenu-link">Ketamine Assisted Psychotherapist Directory</a></div><div class="menu-separator"></div><div class="menu-popup-list-inner"><p>FOR CLINICIANS</p><a href="/collaborate-with-isha-health" class="popupmenu-link">Collaborate with Isha Health</a><a href="/referral-patient-process" class="popupmenu-link">PATIENT REFERRAL PROCESS</a><a href="/isha-health-media-kit" class="popupmenu-link">Isha Health Media Kit</a></div><div class="menu-separator"></div><div><div class="menu-popup-dropdown"><div data-hover="false" data-delay="0" class="dropdown-2 w-dropdown"><div class="dropdown-toggle-2 w-dropdown-toggle"><div class="icon-3 w-icon-dropdown-toggle"></div><div class="text-block-2">About Us</div></div><nav class="menu-popup-dropdown-list w-dropdown-list"><div><a href="/about-us/about-isha-health" class="popupmenu-link">Isha</a></div><div><a href="/about-us/ketamine-therapy" class="popupmenu-link">Ketamine</a></div></nav></div></div></div><div><a href="/isha-health-in-the-media" class="popupmenu-link">Media</a></div><div><a href="/faq" class="popupmenu-link">FAQ</a></div><div><a href="/blog" class="popupmenu-link">Blog</a></div></div></div></div></div><div class="black-line"></div></div>`;
