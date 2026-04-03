@@ -136,6 +136,29 @@ export function TherapistDirectory({ therapists }: Props) {
             States. Filter by state, specialty, visit type, and more to find
             the right therapist for your ketamine-assisted therapy journey.
           </p>
+          <div
+            style={{
+              marginTop: '1rem',
+              fontSize: '0.85rem',
+              color: '#6b7280',
+              fontFamily: "'Poppins', sans-serif",
+            }}
+          >
+            Are you a KAP-trained therapist?{' '}
+            <a
+              href="https://findyourkaptherapist.isha.health/create-account"
+              style={{ color: '#0d9488', textDecoration: 'underline' }}
+            >
+              Join the directory
+            </a>
+            {' or '}
+            <a
+              href="https://findyourkaptherapist.isha.health/login"
+              style={{ color: '#0d9488', textDecoration: 'underline' }}
+            >
+              log in to update your profile
+            </a>
+          </div>
         </div>
 
         {/* Filters */}
