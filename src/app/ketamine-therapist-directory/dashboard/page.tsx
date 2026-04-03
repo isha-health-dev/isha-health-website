@@ -64,6 +64,7 @@ const sectionStyle = {
 
 export default function DashboardPage() {
   const [profile, setProfile] = useState<TherapistProfile | null>(null);
+  const [licenses, setLicenses] = useState<{ id: string; state: string; license_number: string }[]>([]);
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
   const [message, setMessage] = useState('');
@@ -128,6 +129,20 @@ export default function DashboardPage() {
     load();
   }, []);
 
+  // Load licenses when profile is available
+  useEffect(() => {
+    if (!profile) return;
+    async function loadLicenses() {
+      const { data } = await supabase
+        .from('therapist_license')
+        .select('id, state, license_number')
+        .eq('therapist_id', profile!.id);
+      if (data) setLicenses(data);
+    }
+    loadLicenses();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [profile?.id]);
+
   async function handleSave(e: React.FormEvent) {
     e.preventDefault();
     if (!profile) return;
@@ -171,9 +186,31 @@ export default function DashboardPage() {
 
     if (error) {
       setError('Failed to save: ' + error.message);
-    } else {
-      setMessage('Profile saved and verified!');
+      setSaving(false);
+      return;
     }
+
+    // Save licenses
+    // Delete existing licenses for this therapist, then insert fresh
+    await supabase.from('therapist_license').delete().eq('therapist_id', profile.id);
+
+    const validLicenses = licenses.filter((l) => l.state && l.license_number);
+    if (validLicenses.length > 0) {
+      const { error: licError } = await supabase.from('therapist_license').insert(
+        validLicenses.map((l) => ({
+          therapist_id: profile.id,
+          state: l.state,
+          license_number: l.license_number,
+        }))
+      );
+      if (licError) {
+        setError('Profile saved but license update failed: ' + licError.message);
+        setSaving(false);
+        return;
+      }
+    }
+
+    setMessage('Profile saved and verified!');
     setSaving(false);
   }
 
@@ -282,17 +319,60 @@ export default function DashboardPage() {
         {/* Credentials */}
         <div style={sectionStyle}>
           <h2 style={{ fontSize: '1.1rem', fontWeight: 600, color: '#111827', marginBottom: '1rem' }}>Credentials &amp; Licensing</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem' }}>
-            <div>
-              <label style={labelStyle}>NPI Number</label>
-              <input style={inputStyle} value={profile.npi || ''} onChange={(e) => updateField('npi', e.target.value)} placeholder="10-digit NPI" />
-            </div>
-            <div>
-              <label style={labelStyle}>State License Number</label>
-              <input style={inputStyle} value="" disabled placeholder="Edit in Supabase (coming soon)" />
-              <p style={{ fontSize: '0.7rem', color: '#9ca3af', marginTop: '0.2rem' }}>License info is managed separately. Contact info@isha.health to update.</p>
-            </div>
+          <div style={{ marginBottom: '1rem' }}>
+            <label style={labelStyle}>NPI Number</label>
+            <input style={{ ...inputStyle, maxWidth: '300px' }} value={profile.npi || ''} onChange={(e) => updateField('npi', e.target.value)} placeholder="10-digit NPI" />
           </div>
+
+          <label style={labelStyle}>State Licenses</label>
+          {licenses.map((lic, i) => (
+            <div key={lic.id || i} style={{ display: 'flex', gap: '0.5rem', marginBottom: '0.5rem', alignItems: 'center' }}>
+              <select
+                style={{ ...inputStyle, width: '120px', flex: 'none' }}
+                value={lic.state}
+                onChange={(e) => {
+                  const updated = [...licenses];
+                  updated[i] = { ...lic, state: e.target.value };
+                  setLicenses(updated);
+                }}
+              >
+                <option value="">State</option>
+                {['AK','AL','AR','AZ','CA','CO','CT','DC','DE','FL','GA','HI','IA','ID','IL','IN','KS','KY','LA','MA','MD','ME','MI','MN','MO','MS','MT','NC','ND','NE','NH','NJ','NM','NV','NY','OH','OK','OR','PA','RI','SC','SD','TN','TX','UT','VA','VT','WA','WI','WV','WY'].map((s) => (
+                  <option key={s} value={s}>{s}</option>
+                ))}
+              </select>
+              <input
+                style={inputStyle}
+                value={lic.license_number}
+                onChange={(e) => {
+                  const updated = [...licenses];
+                  updated[i] = { ...lic, license_number: e.target.value };
+                  setLicenses(updated);
+                }}
+                placeholder="License number"
+              />
+              <button
+                type="button"
+                onClick={async () => {
+                  if (lic.id && !lic.id.startsWith('new-')) {
+                    await supabase.from('therapist_license').delete().eq('id', lic.id);
+                  }
+                  setLicenses(licenses.filter((_, j) => j !== i));
+                }}
+                style={{ background: 'none', border: 'none', color: '#dc2626', cursor: 'pointer', fontSize: '1.2rem', padding: '0 0.5rem', flexShrink: 0 }}
+                title="Remove license"
+              >
+                &times;
+              </button>
+            </div>
+          ))}
+          <button
+            type="button"
+            onClick={() => setLicenses([...licenses, { id: `new-${Date.now()}`, state: '', license_number: '' }])}
+            style={{ background: 'none', border: '1px dashed #d1d5db', borderRadius: '6px', padding: '0.5rem 1rem', color: '#0d9488', cursor: 'pointer', fontSize: '0.85rem', marginTop: '0.25rem' }}
+          >
+            + Add State License
+          </button>
         </div>
 
         {/* Practice */}
