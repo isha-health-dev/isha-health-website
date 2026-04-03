@@ -66,6 +66,16 @@ export function getTherapistName(t: Therapist): string {
   return parts.join(' ');
 }
 
+export function getTherapistSlug(t: Therapist): string {
+  const name = [t.first_name, t.last_name].filter(Boolean).join(' ');
+  const state = t.state ? t.state.toLowerCase() : '';
+  const slug = name
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '');
+  return state ? `${slug}-${state}` : slug;
+}
+
 export function getTherapistLocation(t: Therapist): string | null {
   if (t.city && t.state) return `${t.city}, ${t.state}`;
   if (t.state) return t.state;

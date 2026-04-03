@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { getTherapistById, getAllTherapistIds } from '@/lib/therapist-queries';
+import { getTherapistBySlug, getAllTherapistSlugs } from '@/lib/therapist-queries';
 import {
   formatRole,
   formatLabel,
@@ -12,17 +12,17 @@ import {
 export const revalidate = 3600;
 
 export async function generateStaticParams() {
-  const ids = await getAllTherapistIds();
-  return ids.map((id) => ({ id }));
+  const slugs = await getAllTherapistSlugs();
+  return slugs.map(({ slug }) => ({ slug }));
 }
 
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ id: string }>;
+  params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
-  const { id } = await params;
-  const therapist = await getTherapistById(id);
+  const { slug } = await params;
+  const therapist = await getTherapistBySlug(slug);
   if (!therapist) return { title: 'Therapist Not Found' };
 
   const name = getTherapistName(therapist);
@@ -34,16 +34,19 @@ export async function generateMetadata({
   const title = location
     ? `${displayName} - Ketamine-Assisted Therapy in ${location}`
     : `${displayName} - Ketamine-Assisted Therapy`;
-  const description = `Offering ketamine-assisted therapy${location ? ` in ${location}` : ''}, ${name} specializes in treating various mental health conditions through personalized ketamine treatment.`;
+  const description = `${name} offers ketamine-assisted psychotherapy${location ? ` in ${location}` : ''}. Specializing in personalized mental health treatment through ketamine therapy.`;
 
   return {
     title,
     description,
+    alternates: {
+      canonical: `https://isha.health/ketamine-therapist-directory/${slug}`,
+    },
     openGraph: {
       title: `${displayName} - Ketamine-Assisted Therapy`,
       description,
-      type: 'website',
-      siteName: 'Isha Health',
+      type: 'profile',
+      ...(therapist.profile_pic ? { images: [therapist.profile_pic] } : {}),
     },
     twitter: {
       card: 'summary',
@@ -56,10 +59,10 @@ export async function generateMetadata({
 export default async function TherapistProfilePage({
   params,
 }: {
-  params: Promise<{ id: string }>;
+  params: Promise<{ slug: string }>;
 }) {
-  const { id } = await params;
-  const t = await getTherapistById(id);
+  const { slug } = await params;
+  const t = await getTherapistBySlug(slug);
   if (!t) notFound();
 
   const name = getTherapistName(t);
@@ -89,22 +92,97 @@ export default async function TherapistProfilePage({
     formatLabel(p.payment_method)
   );
 
+  // Structured data
+  const personSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name,
+    jobTitle: formatRole(t.mental_health_role),
+    ...(t.profile_pic ? { image: t.profile_pic } : {}),
+    ...(t.website ? { url: t.website } : {}),
+    ...(t.phone ? { telephone: t.phone } : {}),
+    ...(location
+      ? {
+          address: {
+            '@type': 'PostalAddress',
+            ...(t.city ? { addressLocality: t.city } : {}),
+            ...(t.state ? { addressRegion: t.state } : {}),
+            addressCountry: 'US',
+          },
+        }
+      : {}),
+    worksFor: {
+      '@type': 'Organization',
+      name: 'Isha Health',
+      url: 'https://isha.health',
+    },
+  };
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: 'https://isha.health',
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Therapist Directory',
+        item: 'https://isha.health/ketamine-therapist-directory',
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name,
+        item: `https://isha.health/ketamine-therapist-directory/${slug}`,
+      },
+    ],
+  };
+
   return (
     <div className="td-scope min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <div className="max-w-4xl mx-auto px-4 py-12">
-        <Link
-          href="/ketamine-therapist-directory"
-          className="text-teal-600 hover:text-teal-800 text-sm mb-8 inline-block"
+        {/* Breadcrumb */}
+        <nav
+          aria-label="Breadcrumb"
+          style={{
+            fontSize: '0.8rem',
+            color: '#6b7280',
+            marginBottom: '1.5rem',
+          }}
         >
-          &larr; Back to Directory
-        </Link>
+          <Link href="/" style={{ color: '#0d9488', textDecoration: 'none' }}>
+            Home
+          </Link>
+          {' / '}
+          <Link
+            href="/ketamine-therapist-directory"
+            style={{ color: '#0d9488', textDecoration: 'none' }}
+          >
+            Therapist Directory
+          </Link>
+          {' / '}
+          <span style={{ color: '#9ca3af' }}>{name}</span>
+        </nav>
 
         {/* Header */}
         <div className="flex flex-col sm:flex-row items-start gap-6 mb-8">
           {t.profile_pic ? (
             <img
               src={t.profile_pic}
-              alt={name}
+              alt={`${name} - Ketamine-Assisted Psychotherapist`}
               className="w-32 h-32 rounded-full object-cover flex-shrink-0"
             />
           ) : (
@@ -227,11 +305,8 @@ export default async function TherapistProfilePage({
 
         {/* Details Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-          {/* Contact & Logistics */}
           <div className="space-y-6">
-            {t.fee && (
-              <Detail label="Fee" value={t.fee} />
-            )}
+            {t.fee && <Detail label="Fee" value={t.fee} />}
             {t.note_on_finance && (
               <Detail label="Financial Notes" value={t.note_on_finance} />
             )}
@@ -245,25 +320,20 @@ export default async function TherapistProfilePage({
                   href={t.website}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-teal-600 hover:text-teal-800 break-all"
+                  className="text-teal-600 break-all"
+                  style={{ textDecoration: 'underline' }}
                 >
                   {t.website}
                 </a>
               </div>
             )}
             {licenses.length > 0 && (
-              <div>
-                <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">
-                  Licensed In
-                </h3>
-                <p className="text-gray-700">
-                  {licenses.map((l) => l.state).join(', ')}
-                </p>
-              </div>
+              <Detail
+                label="Licensed In"
+                value={licenses.map((l) => l.state).join(', ')}
+              />
             )}
           </div>
-
-          {/* Additional Info */}
           <div className="space-y-6">
             {languages.length > 0 && (
               <Detail label="Languages" value={languages.join(', ')} />
@@ -272,21 +342,62 @@ export default async function TherapistProfilePage({
               <Detail label="Insurance" value={insurances.join(', ')} />
             )}
             {paymentMethods.length > 0 && (
-              <Detail
-                label="Payment Methods"
-                value={paymentMethods.join(', ')}
-              />
+              <Detail label="Payment Methods" value={paymentMethods.join(', ')} />
             )}
             {ageGroups.length > 0 && (
               <Detail label="Age Groups" value={ageGroups.join(', ')} />
             )}
             {trainingPrograms.length > 0 && (
-              <Detail
-                label="Training Programs"
-                value={trainingPrograms.join(', ')}
-              />
+              <Detail label="Training Programs" value={trainingPrograms.join(', ')} />
             )}
           </div>
+        </div>
+
+        {/* CTA */}
+        <div
+          style={{
+            marginTop: '3rem',
+            padding: '2rem',
+            backgroundColor: '#f0fdfa',
+            borderRadius: '12px',
+            textAlign: 'center',
+          }}
+        >
+          <h2
+            style={{
+              fontSize: '1.25rem',
+              fontWeight: 600,
+              color: '#111827',
+              marginBottom: '0.5rem',
+            }}
+          >
+            Ready to start ketamine-assisted therapy?
+          </h2>
+          <p
+            style={{
+              color: '#4b5563',
+              marginBottom: '1.5rem',
+              fontSize: '0.95rem',
+            }}
+          >
+            Book a consultation with Isha Health to see if ketamine therapy is
+            right for you.
+          </p>
+          <a
+            href="/appointment"
+            style={{
+              display: 'inline-block',
+              backgroundColor: '#0d9488',
+              color: '#fff',
+              padding: '0.75rem 2rem',
+              borderRadius: '8px',
+              textDecoration: 'none',
+              fontWeight: 600,
+              fontSize: '0.95rem',
+            }}
+          >
+            Check Appointment Availability
+          </a>
         </div>
       </div>
     </div>

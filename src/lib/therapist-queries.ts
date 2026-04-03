@@ -1,5 +1,6 @@
 import { supabase } from './supabase';
 import type { TherapistWithRelations } from './therapist-types';
+import { getTherapistSlug } from './therapist-types';
 
 const THERAPIST_SELECT = `
   *,
@@ -38,11 +39,20 @@ export async function getTherapistById(
   return data as TherapistWithRelations;
 }
 
-export async function getAllTherapistIds(): Promise<string[]> {
-  const { data, error } = await supabase
-    .from('therapist')
-    .select('id');
+export async function getTherapistBySlug(
+  slug: string
+): Promise<TherapistWithRelations | null> {
+  // Fetch all and match by generated slug (since slug isn't stored in DB)
+  const all = await getAllTherapists();
+  return all.find((t) => getTherapistSlug(t) === slug) || null;
+}
 
-  if (error) throw error;
-  return (data || []).map((t) => t.id);
+export async function getAllTherapistSlugs(): Promise<
+  { slug: string; id: string }[]
+> {
+  const all = await getAllTherapists();
+  return all.map((t) => ({
+    slug: getTherapistSlug(t),
+    id: t.id,
+  }));
 }

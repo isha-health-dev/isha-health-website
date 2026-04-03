@@ -17,6 +17,7 @@ const nextConfig = {
         destination: '/:path*',
         permanent: true,
       },
+      // Old UUID therapist profile URLs -> handled by middleware
       // Webflow index.html -> root
       {
         source: '/index',

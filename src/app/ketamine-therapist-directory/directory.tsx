@@ -8,6 +8,7 @@ import {
   formatLabel,
   getTherapistName,
   getTherapistLocation,
+  getTherapistSlug,
 } from '@/lib/therapist-types';
 
 interface Props {
@@ -21,6 +22,7 @@ export function TherapistDirectory({ therapists }: Props) {
   const [visitTypeFilter, setVisitTypeFilter] = useState('');
   const [lgbtqFilter, setLgbtqFilter] = useState(false);
   const [slidingScaleFilter, setSlidingScaleFilter] = useState(false);
+  const [visibleCount, setVisibleCount] = useState(24);
 
   // Extract unique values for filter dropdowns
   const states = useMemo(() => {
@@ -87,13 +89,30 @@ export function TherapistDirectory({ therapists }: Props) {
   return (
     <div className="td-scope min-h-screen bg-white">
       <div className="max-w-7xl mx-auto px-4 py-12">
+        {/* Breadcrumb */}
+        <nav
+          aria-label="Breadcrumb"
+          style={{
+            fontSize: '0.8rem',
+            color: '#6b7280',
+            marginBottom: '1.5rem',
+          }}
+        >
+          <a href="/" style={{ color: '#0d9488', textDecoration: 'none' }}>
+            Home
+          </a>
+          {' / '}
+          <span style={{ color: '#9ca3af' }}>Therapist Directory</span>
+        </nav>
+
         <div className="text-center mb-10">
           <h1 className="text-3xl font-serif font-bold text-gray-900 mb-3">
-            Find a KAP Therapist
+            Find a Ketamine-Assisted Psychotherapy Therapist
           </h1>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Browse our directory of ketamine-assisted psychotherapy therapists.
-            Use the filters to find the right match for your needs.
+            Browse {therapists.length} KAP-trained therapists across the United
+            States. Filter by state, specialty, visit type, and more to find
+            the right therapist for your ketamine-assisted therapy journey.
           </p>
         </div>
 
@@ -170,7 +189,7 @@ export function TherapistDirectory({ therapists }: Props) {
 
         {/* Results */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filtered.map((t) => (
+          {filtered.slice(0, visibleCount).map((t) => (
             <TherapistCard key={t.id} therapist={t} />
           ))}
         </div>
@@ -179,6 +198,27 @@ export function TherapistDirectory({ therapists }: Props) {
           <div className="text-center py-16 text-gray-500">
             <p className="text-lg">No therapists match your filters.</p>
             <p className="text-sm mt-2">Try broadening your search criteria.</p>
+          </div>
+        )}
+
+        {visibleCount < filtered.length && (
+          <div style={{ textAlign: 'center', marginTop: '2rem' }}>
+            <button
+              onClick={() => setVisibleCount((c) => c + 24)}
+              style={{
+                padding: '0.75rem 2rem',
+                backgroundColor: '#0d9488',
+                color: '#fff',
+                border: 'none',
+                borderRadius: '8px',
+                cursor: 'pointer',
+                fontSize: '0.95rem',
+                fontWeight: 600,
+                fontFamily: 'inherit',
+              }}
+            >
+              Load More ({filtered.length - visibleCount} remaining)
+            </button>
           </div>
         )}
       </div>
@@ -202,7 +242,7 @@ function TherapistCard({ therapist: t }: { therapist: TherapistWithRelations }) 
 
   return (
     <Link
-      href={`/ketamine-therapist-directory/${t.id}`}
+      href={`/ketamine-therapist-directory/${getTherapistSlug(t)}`}
       className="block bg-white border border-gray-200 rounded-lg p-6 hover:shadow-md transition-shadow"
     >
       <div className="flex items-start gap-4">
