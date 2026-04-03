@@ -29,8 +29,47 @@ export interface Therapist {
   note_on_therapy_types: string | null;
   sliding_scale: boolean;
   lgbtq_affirmative: boolean;
+  instagram_url: string | null;
+  linkedin_url: string | null;
+  twitter_url: string | null;
+  youtube_url: string | null;
+  tiktok_url: string | null;
+  last_verified_at: string | null;
+  verification_reminder_sent_at: string | null;
   created_at: string;
   updated_at: string;
+}
+
+export interface TherapistEvent {
+  id: string;
+  therapist_id: string;
+  title: string;
+  description: string | null;
+  event_date: string;
+  event_url: string | null;
+  location: string | null;
+  is_virtual: boolean;
+  created_at: string;
+}
+
+export function getVerificationStatus(t: Therapist): {
+  label: string;
+  color: string;
+  daysAgo: number | null;
+} {
+  if (!t.last_verified_at) {
+    return { label: 'Not yet verified', color: '#9ca3af', daysAgo: null };
+  }
+  const days = Math.floor(
+    (Date.now() - new Date(t.last_verified_at).getTime()) / (1000 * 60 * 60 * 24)
+  );
+  if (days <= 30) {
+    return { label: 'Verified recently', color: '#16a34a', daysAgo: days };
+  }
+  if (days <= 90) {
+    return { label: `Verified ${days} days ago`, color: '#ca8a04', daysAgo: days };
+  }
+  return { label: `Last verified ${days} days ago`, color: '#9ca3af', daysAgo: days };
 }
 
 export interface TherapistWithRelations extends Therapist {
@@ -44,6 +83,7 @@ export interface TherapistWithRelations extends Therapist {
   therapist_age_group: { age_group: string }[];
   therapist_payment_method: { payment_method: string }[];
   therapist_training_program: { training_program: string }[];
+  therapist_event: TherapistEvent[];
 }
 
 export function formatRole(role: string | null): string {

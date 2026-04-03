@@ -13,7 +13,8 @@ const THERAPIST_SELECT = `
   therapist_license(license_number, state),
   therapist_age_group(age_group),
   therapist_payment_method(payment_method),
-  therapist_training_program(training_program)
+  therapist_training_program(training_program),
+  therapist_event(id, title, description, event_date, event_url, location, is_virtual, created_at)
 `;
 
 export async function getAllTherapists(): Promise<TherapistWithRelations[]> {

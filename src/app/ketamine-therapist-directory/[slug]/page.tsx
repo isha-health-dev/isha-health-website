@@ -7,6 +7,7 @@ import {
   formatLabel,
   getTherapistName,
   getTherapistLocation,
+  getVerificationStatus,
 } from '@/lib/therapist-types';
 
 export const revalidate = 3600;
@@ -226,8 +227,102 @@ export default async function TherapistProfilePage({
                 </span>
               )}
             </div>
+
+            {/* Social Links */}
+            {(t.instagram_url || t.linkedin_url || t.twitter_url || t.youtube_url || t.tiktok_url) && (
+              <div className="flex flex-wrap gap-3 mt-3">
+                {t.linkedin_url && (
+                  <a href={t.linkedin_url} target="_blank" rel="noopener noreferrer" style={{ color: '#0077b5', textDecoration: 'none', fontSize: '0.85rem', display: 'inline-flex', alignItems: 'center', gap: '0.25rem' }}>
+                    LinkedIn
+                  </a>
+                )}
+                {t.instagram_url && (
+                  <a href={t.instagram_url} target="_blank" rel="noopener noreferrer" style={{ color: '#e1306c', textDecoration: 'none', fontSize: '0.85rem', display: 'inline-flex', alignItems: 'center', gap: '0.25rem' }}>
+                    Instagram
+                  </a>
+                )}
+                {t.twitter_url && (
+                  <a href={t.twitter_url} target="_blank" rel="noopener noreferrer" style={{ color: '#1da1f2', textDecoration: 'none', fontSize: '0.85rem', display: 'inline-flex', alignItems: 'center', gap: '0.25rem' }}>
+                    Twitter
+                  </a>
+                )}
+                {t.youtube_url && (
+                  <a href={t.youtube_url} target="_blank" rel="noopener noreferrer" style={{ color: '#ff0000', textDecoration: 'none', fontSize: '0.85rem', display: 'inline-flex', alignItems: 'center', gap: '0.25rem' }}>
+                    YouTube
+                  </a>
+                )}
+                {t.tiktok_url && (
+                  <a href={t.tiktok_url} target="_blank" rel="noopener noreferrer" style={{ color: '#000', textDecoration: 'none', fontSize: '0.85rem', display: 'inline-flex', alignItems: 'center', gap: '0.25rem' }}>
+                    TikTok
+                  </a>
+                )}
+              </div>
+            )}
+
+            {/* Verification Badge */}
+            <div style={{ marginTop: '0.75rem' }}>
+              {(() => {
+                const v = getVerificationStatus(t);
+                return (
+                  <span style={{ fontSize: '0.75rem', color: v.color, display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}>
+                    <span style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: v.color, display: 'inline-block' }} />
+                    {v.label}
+                    {t.last_verified_at && (
+                      <> &middot; {new Date(t.last_verified_at).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</>
+                    )}
+                  </span>
+                );
+              })()}
+            </div>
           </div>
         </div>
+
+        {/* Upcoming Events */}
+        {t.therapist_event && t.therapist_event.length > 0 && (
+          <Section title="Upcoming Events">
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+              {t.therapist_event
+                .filter((e) => new Date(e.event_date) >= new Date())
+                .sort((a, b) => new Date(a.event_date).getTime() - new Date(b.event_date).getTime())
+                .map((event) => (
+                  <div
+                    key={event.id}
+                    style={{
+                      padding: '1rem 1.25rem',
+                      border: '1px solid #e5e7eb',
+                      borderRadius: '8px',
+                      backgroundColor: '#fafafa',
+                    }}
+                  >
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '0.5rem' }}>
+                      <div>
+                        <h3 style={{ fontSize: '1rem', fontWeight: 600, color: '#111827', margin: 0, textTransform: 'none', letterSpacing: 'normal' }}>
+                          {event.event_url ? (
+                            <a href={event.event_url} target="_blank" rel="noopener noreferrer" style={{ color: '#0d9488', textDecoration: 'none' }}>
+                              {event.title}
+                            </a>
+                          ) : (
+                            event.title
+                          )}
+                        </h3>
+                        {event.description && (
+                          <p style={{ fontSize: '0.875rem', color: '#4b5563', marginTop: '0.25rem' }}>
+                            {event.description}
+                          </p>
+                        )}
+                      </div>
+                      <div style={{ fontSize: '0.8rem', color: '#6b7280', textAlign: 'right', whiteSpace: 'nowrap' }}>
+                        <div>{new Date(event.event_date).toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' })}</div>
+                        <div>{new Date(event.event_date).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' })}</div>
+                        {event.location && <div>{event.location}</div>}
+                        {event.is_virtual && <span style={{ color: '#0d9488' }}>Virtual</span>}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+            </div>
+          </Section>
+        )}
 
         {/* Welcome Message */}
         {t.welcome_message && (
