@@ -13,6 +13,83 @@
   font-size: 12px;
 }
 
+/* === Clinical Team section fix === */
+/* The two lead doctors should display side by side on desktop */
+.heading-left + .horizontal {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 2rem !important;
+}
+
+.heading-left + .horizontal > .horizontal {
+  display: flex !important;
+  flex: 1 1 400px !important;
+  gap: 1.5rem !important;
+  align-items: flex-start !important;
+}
+
+.heading-left + .horizontal > .horizontal .image-28 {
+  width: 200px !important;
+  height: 200px !important;
+  object-fit: cover !important;
+  border-radius: 8px !important;
+  flex-shrink: 0 !important;
+}
+
+.heading-left + .horizontal > .horizontal .w-richtext {
+  flex: 1 !important;
+}
+
+.heading-left + .horizontal > .horizontal .w-richtext h3 {
+  font-size: 1.25rem !important;
+  margin-bottom: 0.25rem !important;
+}
+
+.heading-left + .horizontal > .horizontal .w-richtext p {
+  line-height: 1.6 !important;
+}
+
+/* Slider clinician photos - consistent sizing */
+.clinician-slide-pic {
+  width: 180px !important;
+  height: 180px !important;
+  object-fit: cover !important;
+  border-radius: 8px !important;
+  flex-shrink: 0 !important;
+}
+
+/* Slider slide layout */
+.w-slide > .horizontal {
+  display: flex !important;
+  gap: 1.5rem !important;
+  align-items: flex-start !important;
+}
+
+@media screen and (max-width: 767px) {
+  .heading-left + .horizontal > .horizontal {
+    flex: 1 1 100% !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .heading-left + .horizontal > .horizontal .image-28 {
+    width: 160px !important;
+    height: 160px !important;
+  }
+
+  .w-slide > .horizontal {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .clinician-slide-pic {
+    width: 140px !important;
+    height: 140px !important;
+  }
+}
+
 /* === Therapist directory scoped reset === */
 /* Webflow's CSS reset and normalize strip styling from form elements, links,
    headings, and override display/layout properties. We use !important here
