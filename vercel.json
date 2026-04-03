@@ -13,10 +13,5 @@
       ]
     }
   ],
-  "crons": [
-    {
-      "path": "/api/cron/therapist-reminders?secret=${CRON_SECRET}",
-      "schedule": "0 14 * * 1"
-    }
-  ]
+  "crons": []
 }
