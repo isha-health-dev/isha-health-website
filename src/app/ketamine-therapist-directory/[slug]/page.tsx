@@ -450,50 +450,14 @@ export default async function TherapistProfilePage({
 
         {/* CTA */}
         <div
-          style={{
-            marginTop: '3rem',
-            padding: '2rem',
-            backgroundColor: '#f0fdfa',
-            borderRadius: '12px',
-            textAlign: 'center',
+          dangerouslySetInnerHTML={{
+            __html: `<div style="margin-top:3rem;padding:2.5rem;background-color:#f0fdfa;border-radius:12px;text-align:center;border:1px solid #ccfbf1;">
+              <p style="font-size:1.35rem !important;font-weight:700 !important;color:#0f766e !important;margin-bottom:0.5rem !important;font-family:'Libre Baskerville',serif !important;letter-spacing:normal !important;text-transform:none !important;">Ready to start ketamine-assisted therapy?</p>
+              <p style="color:#4b5563 !important;margin-bottom:1.5rem !important;font-size:1rem !important;font-family:'Poppins',sans-serif !important;letter-spacing:normal !important;text-transform:none !important;">Book a consultation with Isha Health to see if ketamine therapy is right for you.</p>
+              <a href="/appointment" style="display:inline-block !important;background-color:#0d9488 !important;color:#fff !important;padding:0.85rem 2.5rem !important;border-radius:8px !important;text-decoration:none !important;font-weight:600 !important;font-size:1rem !important;font-family:'Poppins',sans-serif !important;letter-spacing:normal !important;text-transform:none !important;transition:background-color 0.2s;">Check Appointment Availability</a>
+            </div>`,
           }}
-        >
-          <h2
-            style={{
-              fontSize: '1.25rem',
-              fontWeight: 600,
-              color: '#111827',
-              marginBottom: '0.5rem',
-            }}
-          >
-            Ready to start ketamine-assisted therapy?
-          </h2>
-          <p
-            style={{
-              color: '#4b5563',
-              marginBottom: '1.5rem',
-              fontSize: '0.95rem',
-            }}
-          >
-            Book a consultation with Isha Health to see if ketamine therapy is
-            right for you.
-          </p>
-          <a
-            href="/appointment"
-            style={{
-              display: 'inline-block',
-              backgroundColor: '#0d9488',
-              color: '#fff',
-              padding: '0.75rem 2rem',
-              borderRadius: '8px',
-              textDecoration: 'none',
-              fontWeight: 600,
-              fontSize: '0.95rem',
-            }}
-          >
-            Check Appointment Availability
-          </a>
-        </div>
+        />
       </div>
     </div>
   );
