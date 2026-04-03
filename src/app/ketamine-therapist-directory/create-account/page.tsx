@@ -81,38 +81,18 @@ export default function CreateAccountPage() {
         }}
       >
         <div
-          style={{
-            maxWidth: '420px',
-            backgroundColor: '#f0fdfa',
-            borderRadius: '12px',
-            padding: '2.5rem',
-            textAlign: 'center',
-            border: '1px solid #ccfbf1',
+          dangerouslySetInnerHTML={{
+            __html: `<div style="max-width:420px;background-color:#f0fdfa;border-radius:12px;padding:2.5rem;text-align:center;border:1px solid #ccfbf1;">
+              <p style="font-size:1.5rem !important;font-weight:700 !important;color:#0f766e !important;font-family:'Libre Baskerville',serif !important;margin-bottom:0.75rem !important;letter-spacing:normal !important;text-transform:none !important;">Check your email</p>
+              <p style="color:#4b5563 !important;line-height:1.6 !important;font-size:0.95rem !important;font-family:'Poppins',sans-serif !important;letter-spacing:normal !important;text-transform:none !important;">
+                We've sent a confirmation link to <strong>${email}</strong>.
+                Click the link to verify your account, then
+                <a href="/ketamine-therapist-directory/login" style="color:#0d9488 !important;text-decoration:underline !important;display:inline !important;">log in</a>
+                to set up your profile.
+              </p>
+            </div>`,
           }}
-        >
-          <h1
-            style={{
-              fontSize: '1.5rem',
-              fontWeight: 700,
-              color: '#0f766e',
-              fontFamily: "'Libre Baskerville', serif",
-              marginBottom: '0.75rem',
-            }}
-          >
-            Check your email
-          </h1>
-          <p style={{ color: '#4b5563', lineHeight: 1.6 }}>
-            We&apos;ve sent a confirmation link to <strong>{email}</strong>.
-            Click the link to verify your account, then{' '}
-            <Link
-              href="/ketamine-therapist-directory/login"
-              style={{ color: '#0d9488', textDecoration: 'underline' }}
-            >
-              log in
-            </Link>{' '}
-            to set up your profile.
-          </p>
-        </div>
+        />
       </div>
     );
   }
