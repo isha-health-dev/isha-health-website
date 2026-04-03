@@ -20,6 +20,7 @@ export function TherapistDirectory({ therapists }: Props) {
   const [stateFilter, setStateFilter] = useState('');
   const [specialtyFilter, setSpecialtyFilter] = useState('');
   const [visitTypeFilter, setVisitTypeFilter] = useState('');
+  const [insuranceFilter, setInsuranceFilter] = useState('');
   const [lgbtqFilter, setLgbtqFilter] = useState(false);
   const [slidingScaleFilter, setSlidingScaleFilter] = useState(false);
   const [visibleCount, setVisibleCount] = useState(24);
@@ -43,6 +44,19 @@ export function TherapistDirectory({ therapists }: Props) {
     });
     return [...s].sort();
   }, [therapists]);
+
+  const insurances = useMemo(() => {
+    const s = new Set<string>();
+    therapists.forEach((t) => {
+      t.therapist_insurance.forEach((i) => s.add(i.insurance_type));
+    });
+    return [...s].sort();
+  }, [therapists]);
+
+  // Reset pagination when filters change
+  useMemo(() => {
+    setVisibleCount(24);
+  }, [search, stateFilter, specialtyFilter, visitTypeFilter, insuranceFilter, lgbtqFilter, slidingScaleFilter]);
 
   const filtered = useMemo(() => {
     return therapists.filter((t) => {
@@ -71,6 +85,13 @@ export function TherapistDirectory({ therapists }: Props) {
           return false;
       }
 
+      if (insuranceFilter) {
+        const hasInsurance = t.therapist_insurance.some(
+          (i) => i.insurance_type === insuranceFilter
+        );
+        if (!hasInsurance) return false;
+      }
+
       if (lgbtqFilter && !t.lgbtq_affirmative) return false;
       if (slidingScaleFilter && !t.sliding_scale) return false;
 
@@ -82,6 +103,7 @@ export function TherapistDirectory({ therapists }: Props) {
     stateFilter,
     specialtyFilter,
     visitTypeFilter,
+    insuranceFilter,
     lgbtqFilter,
     slidingScaleFilter,
   ]);
@@ -161,6 +183,18 @@ export function TherapistDirectory({ therapists }: Props) {
               <option value="online">Online</option>
               <option value="in_person">In Person</option>
               <option value="hybrid">Hybrid</option>
+            </select>
+            <select
+              value={insuranceFilter}
+              onChange={(e) => setInsuranceFilter(e.target.value)}
+              className="px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-teal-500 focus:border-transparent"
+            >
+              <option value="">All Insurance</option>
+              {insurances.map((i) => (
+                <option key={i} value={i}>
+                  {formatLabel(i)}
+                </option>
+              ))}
             </select>
             <label className="flex items-center gap-2 cursor-pointer">
               <input
