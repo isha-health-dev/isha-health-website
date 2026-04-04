@@ -53,7 +53,7 @@ export default function PricingPage() {
           <ul style="list-style:none;padding:0;margin:0;font-family:'Poppins',sans-serif;font-size:0.9rem;color:#374151;line-height:1.6;">
             <li style="padding:0.5rem 0;border-bottom:1px solid #f3f4f6;display:flex;gap:0.5rem;align-items:flex-start;">
               <span style="color:#0d9488;font-weight:700;flex-shrink:0;">✓</span>
-              Comprehensive psychiatric evaluation
+              Comprehensive medical evaluation
             </li>
             <li style="padding:0.5rem 0;border-bottom:1px solid #f3f4f6;display:flex;gap:0.5rem;align-items:flex-start;">
               <span style="color:#0d9488;font-weight:700;flex-shrink:0;">✓</span>
@@ -66,6 +66,10 @@ export default function PricingPage() {
             <li style="padding:0.5rem 0;display:flex;gap:0.5rem;align-items:flex-start;">
               <span style="color:#0d9488;font-weight:700;flex-shrink:0;">✓</span>
               Ongoing support from your care team
+            </li>
+            <li style="padding:0.5rem 0;display:flex;gap:0.5rem;align-items:flex-start;">
+              <span style="color:#0d9488;font-weight:700;flex-shrink:0;">✓</span>
+              Thorough advice on how to make the most of your sessions based on our experience from tens of thousands of sessions
             </li>
           </ul>
         </div>
@@ -88,7 +92,7 @@ export default function PricingPage() {
             </li>
             <li style="padding:0.5rem 0;border-bottom:1px solid #f3f4f6;display:flex;gap:0.5rem;align-items:flex-start;">
               <span style="color:#0d9488;font-weight:700;flex-shrink:0;">✓</span>
-              Dosage and protocol adjustments based on your response
+              Dosage and protocol adjustments based on your response — personalized advice on how to make the most of your sessions
             </li>
             <li style="padding:0.5rem 0;border-bottom:1px solid #f3f4f6;display:flex;gap:0.5rem;align-items:flex-start;">
               <span style="color:#0d9488;font-weight:700;flex-shrink:0;">✓</span>
