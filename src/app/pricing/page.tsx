@@ -44,7 +44,7 @@ export default function PricingPage() {
       <div style="flex:1 1 360px;max-width:420px;border:2px solid #0d9488;border-radius:12px;overflow:hidden;">
         <div style="background-color:#0d9488;padding:1.25rem;text-align:center;">
           <p style="color:#fff;font-family:'Libre Baskerville',serif;font-size:1.2rem;font-weight:700;margin:0;">Initial Consultation</p>
-          <p style="color:#ccfbf1;font-size:0.85rem;margin:0.25rem 0 0;font-family:'Poppins',sans-serif;">60 minutes with an MD</p>
+          <p style="color:#ccfbf1;font-size:0.85rem;margin:0.25rem 0 0;font-family:'Poppins',sans-serif;">60 minutes with a physician</p>
         </div>
         <div style="padding:1.5rem;">
           <p style="text-align:center;margin-bottom:1.25rem;">
