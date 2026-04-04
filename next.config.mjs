@@ -11,13 +11,31 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      // Redirect findyourkaptherapist.isha.health -> main site login
+      {
+        source: '/login',
+        has: [{ type: 'host', value: 'findyourkaptherapist.isha.health' }],
+        destination: 'https://isha.health/ketamine-therapist-directory/login',
+        permanent: true,
+      },
+      {
+        source: '/create-account',
+        has: [{ type: 'host', value: 'findyourkaptherapist.isha.health' }],
+        destination: 'https://isha.health/ketamine-therapist-directory/create-account',
+        permanent: true,
+      },
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'findyourkaptherapist.isha.health' }],
+        destination: 'https://isha.health/ketamine-therapist-directory',
+        permanent: true,
+      },
       // Strip .html extensions (catch-all pattern)
       {
         source: '/:path*.html',
         destination: '/:path*',
         permanent: true,
       },
-      // Old UUID therapist profile URLs -> handled by middleware
       // Webflow index.html -> root
       {
         source: '/index',
