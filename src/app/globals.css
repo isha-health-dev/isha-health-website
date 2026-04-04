@@ -13,22 +13,34 @@
   font-size: 12px;
 }
 
-/* === Location page section fix === */
-/* Only target the specific image+text horizontal layout in location pages,
-   not all .horizontal divs (which Webflow uses for many flex layouts). */
-.section-wrapper.location > .horizontal > img + .w-richtext {
-  flex: 1 !important;
-}
-
-.section-wrapper.location > .horizontal > img {
-  max-width: 320px !important;
-  border-radius: 12px !important;
-}
-
-@media screen and (max-width: 767px) {
-  .section-wrapper.location > .horizontal > img {
-    max-width: 100% !important;
+/* === Fix Webflow .horizontal layout === */
+/* The Webflow CSS export has a @media(max-width:991px) rule that forces
+   flex-direction:column on ALL .horizontal elements. This breaks desktop
+   layouts on location pages and other content pages. Restore row on desktop. */
+@media screen and (min-width: 992px) {
+  .horizontal {
+    flex-direction: row !important;
   }
+}
+
+/* Location page image+text sections */
+.section-wrapper.location .horizontal > img {
+  max-width: 320px;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.section-wrapper.location .horizontal > .w-richtext {
+  flex: 1;
+}
+
+.section-wrapper.location .horizontal .w-richtext ul {
+  padding-left: 1.25rem;
+}
+
+.section-wrapper.location .horizontal .w-richtext li {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
 }
 
 /* === Clinical Team section fix === */
