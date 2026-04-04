@@ -91,6 +91,8 @@ gtag('config', 'AW-16993591045');`,
                 addressCountry: 'US',
               },
               email: 'info@isha.health',
+              priceRange: '$$',
+              image: 'https://isha.health/images/isha_logo.webp',
               sameAs: [
                 'https://www.linkedin.com/company/isha-health/',
                 'https://www.instagram.com/isha.health/',
