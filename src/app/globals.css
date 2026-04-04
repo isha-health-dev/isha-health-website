@@ -13,13 +13,42 @@
   font-size: 12px;
 }
 
-/* === Fix Webflow .horizontal layout === */
-/* The Webflow CSS export has a @media(max-width:991px) rule that forces
-   flex-direction:column on ALL .horizontal elements. This breaks desktop
-   layouts on location pages and other content pages. Restore row on desktop. */
+/* === Fix Webflow layout overrides === */
+/* The Webflow CSS export has media query rules that collapse
+   .horizontal to column and .w-col to 100% width at tablet/mobile
+   breakpoints, but those rules leak into desktop too. Fix here. */
 @media screen and (min-width: 992px) {
   .horizontal {
     flex-direction: row !important;
+  }
+
+  .w-col-4 {
+    width: 33.3333% !important;
+  }
+
+  .w-col-6 {
+    width: 50% !important;
+  }
+
+  .w-col-3 {
+    width: 25% !important;
+  }
+
+  .w-col {
+    float: left !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .w-row {
+    margin-left: -10px !important;
+    margin-right: -10px !important;
+  }
+
+  .w-row::after {
+    content: "" !important;
+    display: table !important;
+    clear: both !important;
   }
 }
 
