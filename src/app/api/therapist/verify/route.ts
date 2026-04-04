@@ -52,7 +52,7 @@ export async function GET(request: NextRequest) {
   <div class="card">
     <h1>Profile Verified!</h1>
     <p>Thank you for confirming your information is up to date. Your profile now shows a verified badge on the <a href="https://isha.health/ketamine-therapist-directory">Isha Health directory</a>.</p>
-    <p style="margin-top: 1.5rem;">Want to update your profile? <a href="https://findyourkaptherapist.isha.health/login">Log in here</a>.</p>
+    <p style="margin-top: 1.5rem;">Want to update your profile? <a href="https://isha.health/ketamine-therapist-directory/claim">Log in here</a>.</p>
   </div>
 </body>
 </html>`;

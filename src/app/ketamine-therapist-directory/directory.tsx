@@ -151,7 +151,7 @@ export function TherapistDirectory({ therapists }: Props) {
             </a>
             {' or '}
             <a
-              href="/ketamine-therapist-directory/login"
+              href="/ketamine-therapist-directory/claim"
               style={{ color: '#0d9488', textDecoration: 'underline' }}
             >
               log in to update your profile

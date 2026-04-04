@@ -27,7 +27,7 @@ function buildEmail(therapist: {
 }): { subject: string; html: string } {
   const token = generateToken(therapist.id);
   const verifyUrl = `${BASE_URL}/api/therapist/verify?id=${therapist.id}&token=${token}`;
-  const loginUrl = 'https://findyourkaptherapist.isha.health/login';
+  const loginUrl = 'https://isha.health/ketamine-therapist-directory/claim';
 
   return {
     subject: `${therapist.first_name}, is your Isha Health directory profile up to date?`,
