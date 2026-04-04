@@ -14,41 +14,19 @@
 }
 
 /* === Location page section fix === */
-/* Webflow CSS has conflicting .horizontal rules - the mobile override
-   (flex-direction:column) applies at all sizes. Fix for location pages. */
-.section-wrapper.location .horizontal {
-  display: flex !important;
-  flex-direction: row !important;
-  gap: 2rem !important;
-  align-items: flex-start !important;
-}
-
-.section-wrapper.location .horizontal > img {
-  max-width: 320px !important;
-  border-radius: 12px !important;
-  flex-shrink: 0 !important;
-}
-
-.section-wrapper.location .horizontal > .w-richtext {
+/* Only target the specific image+text horizontal layout in location pages,
+   not all .horizontal divs (which Webflow uses for many flex layouts). */
+.section-wrapper.location > .horizontal > img + .w-richtext {
   flex: 1 !important;
 }
 
-.section-wrapper.location .horizontal .w-richtext ul {
-  padding-left: 1.25rem !important;
-}
-
-.section-wrapper.location .horizontal .w-richtext li {
-  margin-bottom: 1rem !important;
-  line-height: 1.6 !important;
+.section-wrapper.location > .horizontal > img {
+  max-width: 320px !important;
+  border-radius: 12px !important;
 }
 
 @media screen and (max-width: 767px) {
-  .section-wrapper.location .horizontal {
-    flex-direction: column !important;
-    align-items: center !important;
-  }
-
-  .section-wrapper.location .horizontal > img {
+  .section-wrapper.location > .horizontal > img {
     max-width: 100% !important;
   }
 }
