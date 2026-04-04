@@ -1,22 +1,22 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Ketamine Therapy for Depression and Anxiety | Isha Health, California",
-  description: "Isha Health is an online at-home ketamine clinic in San Francisco, CA, dedicated to providing safe and effective treatments for depression and anxiety. Our experienced team of healthcare professionals offers personalized care and support to help you achieve mental wellness. Book your appointment today",
+  title: "Online Ketamine Therapy for Depression & Anxiety | Isha Health",
+  description: "Isha Health offers personalized online ketamine-assisted therapy for depression, anxiety, and PTSD. Physician-led telehealth treatment available in AZ, CA, CO, FL, GA, NY, OR, TX, and WA. Book your appointment today.",
   alternates: {
     canonical: "https://isha.health",
   },
   openGraph: {
-    title: "Ketamine Therapy for Depression and Anxiety | Isha Health, California",
-    description: "Isha Health is an online at-home ketamine clinic in San Francisco, CA, dedicated to providing safe and effective treatments for depression and anxiety. Our experienced team of healthcare professionals offers personalized care and support to help you achieve mental wellness. Book your appointment today",
+    title: "Online Ketamine Therapy for Depression & Anxiety | Isha Health",
+    description: "Isha Health offers personalized online ketamine-assisted therapy for depression, anxiety, and PTSD. Physician-led telehealth treatment available in AZ, CA, CO, FL, GA, NY, OR, TX, and WA. Book your appointment today.",
     type: "website",
     url: "https://isha.health",
     images: ["/images/isha_logo.webp"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ketamine Therapy for Depression and Anxiety | Isha Health, California",
-    description: "Isha Health is an online at-home ketamine clinic in San Francisco, CA, dedicated to providing safe and effective treatments for depression and anxiety. Our experienced team of healthcare professionals offers personalized care and support to help you achieve mental wellness. Book your appointment today",
+    title: "Online Ketamine Therapy for Depression & Anxiety | Isha Health",
+    description: "Isha Health offers personalized online ketamine-assisted therapy for depression, anxiety, and PTSD. Physician-led telehealth treatment available in AZ, CA, CO, FL, GA, NY, OR, TX, and WA. Book your appointment today.",
   },
 };
 
