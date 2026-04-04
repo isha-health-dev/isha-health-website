@@ -22,34 +22,33 @@
     flex-direction: row !important;
   }
 
-  .w-col-4 {
-    width: 33.3333% !important;
-  }
+}
 
-  .w-col-6 {
-    width: 50% !important;
-  }
+/* Webflow column layout fix — replace broken float with flexbox */
+.w-row {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 20px !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
 
-  .w-col-3 {
-    width: 25% !important;
-  }
+.w-col {
+  float: none !important;
+  min-height: auto !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  position: static !important;
+}
 
-  .w-col {
-    float: left !important;
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-  }
+.w-col-4 {
+  flex: 1 1 280px !important;
+  width: auto !important;
+}
 
-  .w-row {
-    margin-left: -10px !important;
-    margin-right: -10px !important;
-  }
-
-  .w-row::after {
-    content: "" !important;
-    display: table !important;
-    clear: both !important;
-  }
+.w-col-6 {
+  flex: 1 1 45% !important;
+  width: auto !important;
 }
 
 /* Location page image+text sections */
