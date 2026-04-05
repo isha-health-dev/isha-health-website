@@ -1,0 +1,60 @@
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Request Your Superbill',
+  description: 'Request a superbill from Isha Health or submit an insurance claim through our claims portal.',
+  robots: { index: false, follow: true },
+};
+
+export default function SuperbillPage() {
+  return (
+    <div
+      dangerouslySetInnerHTML={{
+        __html: `<div class="section-base white-section static-page">
+  <div class="hero-isha">
+    <h1 class="heading static-heading">Request Your Superbill</h1>
+  </div>
+  <div class="section-wrapper" style="max-width:700px;margin:0 auto;padding:2rem 1.5rem;">
+
+    <p style="font-family:'Poppins',sans-serif;font-size:1rem;color:#4b5563;line-height:1.7;text-align:center;margin-bottom:2.5rem;text-wrap:pretty;">
+      Use the options below to request a superbill or submit an insurance claim for reimbursement.
+    </p>
+
+    <div style="display:flex;flex-wrap:wrap;gap:1.5rem;justify-content:center;margin-bottom:2.5rem;">
+
+      <!-- Claims portal -->
+      <a href="https://claims.isha.health/" style="flex:1 1 280px;max-width:320px;padding:2rem;border:2px solid #0d9488;border-radius:12px;text-decoration:none;text-align:center;background:#f0fdfa;">
+        <p style="font-family:'Libre Baskerville',serif;font-size:1.15rem;font-weight:700;color:#0f766e;margin-bottom:0.5rem;">Submit a Claim</p>
+        <p style="font-family:'Poppins',sans-serif;font-size:0.85rem;color:#4b5563;line-height:1.5;">Upload your superbill and insurance card to submit a claim electronically.</p>
+        <p style="font-family:'Poppins',sans-serif;font-size:0.85rem;color:#0d9488;font-weight:600;margin-top:1rem;">Go to claims portal →</p>
+      </a>
+
+      <!-- Email request -->
+      <a href="mailto:info@isha.health?subject=Superbill%20Request&body=Hi%2C%20I'd%20like%20to%20request%20a%20superbill.%0A%0AName%3A%20%0ADate%20range%3A%20" style="flex:1 1 280px;max-width:320px;padding:2rem;border:1px solid #e5e7eb;border-radius:12px;text-decoration:none;text-align:center;background:#fff;">
+        <p style="font-family:'Libre Baskerville',serif;font-size:1.15rem;font-weight:700;color:#111827;margin-bottom:0.5rem;">Request via Email</p>
+        <p style="font-family:'Poppins',sans-serif;font-size:0.85rem;color:#4b5563;line-height:1.5;">Email info@isha.health with your name and service dates. We'll send your superbill within 1-2 business days.</p>
+        <p style="font-family:'Poppins',sans-serif;font-size:0.85rem;color:#0d9488;font-weight:600;margin-top:1rem;">Send email →</p>
+      </a>
+
+    </div>
+
+    <!-- Learn more -->
+    <div style="background:#f9fafb;border-radius:10px;padding:1.5rem;text-align:center;border:1px solid #e5e7eb;">
+      <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#4b5563;line-height:1.6;">
+        <strong>New to superbills?</strong> Read our complete guide on
+        <a href="/post/ketamine-therapy-insurance-superbill" style="color:#0d9488;text-decoration:underline;">how to get reimbursed for ketamine therapy</a>
+        — including what insurance covers, how much you can expect back, and how to appeal a denial.
+      </p>
+    </div>
+
+    <!-- HSA/FSA note -->
+    <p style="font-family:'Poppins',sans-serif;font-size:0.8rem;color:#9ca3af;text-align:center;margin-top:1.5rem;">
+      HSA and FSA cards are accepted for all Isha Health services. No superbill needed for HSA/FSA payments.
+    </p>
+
+  </div>
+</div>`,
+      }}
+    />
+  );
+}
