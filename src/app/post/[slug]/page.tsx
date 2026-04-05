@@ -126,6 +126,16 @@ export default async function BlogPostPage({
       name: 'Isha Health',
       url: 'https://isha.health',
     },
+    reviewedBy: {
+      '@type': 'Person',
+      name: 'Mai Shimada, MD',
+      url: 'https://isha.health/dr-mai-shimada',
+      jobTitle: 'Founder & CEO',
+      worksFor: {
+        '@type': 'Organization',
+        name: 'Isha Health',
+      },
+    },
     publisher: {
       '@type': 'Organization',
       name: 'Isha Health',
@@ -207,6 +217,12 @@ export default async function BlogPostPage({
               </span>
             )}
             {post.category && <span>{post.category}</span>}
+            <span>
+              · Reviewed by{' '}
+              <a href="/dr-mai-shimada" style={{ color: '#0d9488', textDecoration: 'none' }}>
+                Mai Shimada, MD
+              </a>
+            </span>
           </div>
           {post.image && (
             <div style={{ marginBottom: '2rem' }}>
