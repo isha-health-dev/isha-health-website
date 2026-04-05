@@ -20,6 +20,16 @@ function getBlogPosts(): { slug: string; date: string }[] {
   }
 }
 
+function getDynamicPages(dir: string, prefix: string): string[] {
+  try {
+    return readdirSync(join(process.cwd(), 'src', 'app', dir), { withFileTypes: true })
+      .filter((d) => d.isDirectory() && !d.name.startsWith('[') && !d.name.startsWith('('))
+      .map((d) => `${prefix}/${d.name}`);
+  } catch {
+    return [];
+  }
+}
+
 const staticPages = [
   '',
   'about-us/about-isha-health',
@@ -44,17 +54,6 @@ const staticPages = [
   'ketamine-therapist-directory',
   'ketamine-therapy-for-anxiety',
   'ketamine-therapy-for-depression',
-  'locations/ketamine-therapy-long-island',
-  'locations/ketamine-therapy-nyc',
-  'locations/online-at-home-ketamine-therapy-in-arizona',
-  'locations/online-at-home-ketamine-therapy-in-california',
-  'locations/online-at-home-ketamine-therapy-in-colorado',
-  'locations/online-at-home-ketamine-therapy-in-florida',
-  'locations/online-at-home-ketamine-therapy-in-georgia',
-  'locations/online-at-home-ketamine-therapy-in-new-york',
-  'locations/online-at-home-ketamine-therapy-in-oregon',
-  'locations/online-at-home-ketamine-therapy-in-texas',
-  'locations/online-at-home-ketamine-therapy-in-washington',
   'notice-of-privacy-practices',
   'our-treatment-approach',
   'pricing',
@@ -68,13 +67,16 @@ const staticPages = [
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const today = new Date().toISOString().split('T')[0];
+
   const staticEntries: MetadataRoute.Sitemap = staticPages.map((page) => ({
     url: page ? `${BASE_URL}/${page}` : BASE_URL,
-    lastModified: new Date().toISOString().split('T')[0],
+    lastModified: today,
     changeFrequency: page === '' ? 'weekly' : 'monthly',
     priority: page === '' ? 1.0 : page === 'pricing' || page === 'appointment' ? 0.9 : 0.7,
   }));
 
+  // Blog posts
   const blogPosts = getBlogPosts();
   const blogEntries: MetadataRoute.Sitemap = blogPosts.map((post) => ({
     url: `${BASE_URL}/post/${post.slug}`,
@@ -83,5 +85,57 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticEntries, ...blogEntries];
+  // Location pages (state pages from static + city pages)
+  const statePages = [
+    'online-at-home-ketamine-therapy-in-arizona',
+    'online-at-home-ketamine-therapy-in-california',
+    'online-at-home-ketamine-therapy-in-colorado',
+    'online-at-home-ketamine-therapy-in-florida',
+    'online-at-home-ketamine-therapy-in-georgia',
+    'online-at-home-ketamine-therapy-in-new-york',
+    'online-at-home-ketamine-therapy-in-oregon',
+    'online-at-home-ketamine-therapy-in-texas',
+    'online-at-home-ketamine-therapy-in-washington',
+  ];
+  const stateEntries: MetadataRoute.Sitemap = statePages.map((page) => ({
+    url: `${BASE_URL}/locations/${page}`,
+    lastModified: today,
+    changeFrequency: 'monthly',
+    priority: 0.8,
+  }));
+
+  const cityPages = getDynamicPages('locations', 'locations');
+  const cityEntries: MetadataRoute.Sitemap = cityPages.map((page) => ({
+    url: `${BASE_URL}/${page}`,
+    lastModified: today,
+    changeFrequency: 'monthly',
+    priority: 0.7,
+  }));
+
+  // Condition pages
+  const conditionPages = getDynamicPages('conditions', 'conditions');
+  const conditionEntries: MetadataRoute.Sitemap = conditionPages.map((page) => ({
+    url: `${BASE_URL}/${page}`,
+    lastModified: today,
+    changeFrequency: 'monthly',
+    priority: 0.8,
+  }));
+
+  // Comparison pages
+  const comparePages = getDynamicPages('compare', 'compare');
+  const compareEntries: MetadataRoute.Sitemap = comparePages.map((page) => ({
+    url: `${BASE_URL}/${page}`,
+    lastModified: today,
+    changeFrequency: 'monthly',
+    priority: 0.7,
+  }));
+
+  return [
+    ...staticEntries,
+    ...blogEntries,
+    ...stateEntries,
+    ...cityEntries,
+    ...conditionEntries,
+    ...compareEntries,
+  ];
 }
