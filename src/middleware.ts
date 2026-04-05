@@ -17,6 +17,15 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(url);
   }
 
+  // Redirect old UUID therapist profile URLs to directory listing
+  const uuidPattern = /^\/ketamine-therapist-directory\/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/;
+  if (uuidPattern.test(request.nextUrl.pathname)) {
+    return NextResponse.redirect(
+      new URL('/ketamine-therapist-directory', request.url),
+      301
+    );
+  }
+
   return NextResponse.next();
 }
 

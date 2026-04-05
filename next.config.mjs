@@ -30,6 +30,28 @@ const nextConfig = {
         destination: 'https://isha.health/ketamine-therapist-directory',
         permanent: true,
       },
+      // Old blog slugs that changed
+      {
+        source: '/post/is-ketamine-addictive',
+        destination: '/post/is-ketamine-therapy-addictive',
+        permanent: true,
+      },
+      // Parent directory index pages
+      {
+        source: '/locations',
+        destination: '/',
+        permanent: false,
+      },
+      {
+        source: '/current-patients',
+        destination: '/',
+        permanent: false,
+      },
+      {
+        source: '/about-us',
+        destination: '/about-us/about-isha-health',
+        permanent: true,
+      },
       // Strip .html extensions (catch-all pattern)
       {
         source: '/:path*.html',
