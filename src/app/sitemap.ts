@@ -130,6 +130,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
+  // Therapist directory pages
+  const therapistSlugs = getDynamicPages('ketamine-therapist-directory', 'ketamine-therapist-directory')
+    .filter((p) => !['ketamine-therapist-directory/login', 'ketamine-therapist-directory/create-account', 'ketamine-therapist-directory/dashboard', 'ketamine-therapist-directory/claim'].includes(p));
+  const therapistEntries: MetadataRoute.Sitemap = therapistSlugs.map((page) => ({
+    url: `${BASE_URL}/${page}`,
+    lastModified: today,
+    changeFrequency: 'monthly',
+    priority: 0.5,
+  }));
+
   return [
     ...staticEntries,
     ...blogEntries,
@@ -137,5 +147,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...cityEntries,
     ...conditionEntries,
     ...compareEntries,
+    ...therapistEntries,
   ];
 }
