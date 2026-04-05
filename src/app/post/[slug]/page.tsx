@@ -196,6 +196,16 @@ export default async function BlogPostPage({
                 })}
               </time>
             )}
+            {post.date !== publishDate && post.date && (
+              <span style={{ color: '#9ca3af' }}>
+                · Updated{' '}
+                {new Date(post.date).toLocaleDateString('en-US', {
+                  year: 'numeric',
+                  month: 'long',
+                  day: 'numeric',
+                })}
+              </span>
+            )}
             {post.category && <span>{post.category}</span>}
           </div>
           {post.image && (
