@@ -75,6 +75,45 @@ export default async function BlogPostPage({
     ],
   };
 
+  // Extract FAQ from content — find question headings and their answers
+  const faqItems: { question: string; answer: string }[] = [];
+  const lines = post.content.split('\n');
+  for (let i = 0; i < lines.length; i++) {
+    const qMatch = lines[i].match(/^#{2,3}\s+(.+\?)\s*$/);
+    const boldQMatch = lines[i].match(/^\*\*(.+\?)\*\*\s*$/);
+    const question = qMatch?.[1] || boldQMatch?.[1];
+    if (question) {
+      // Collect answer from following paragraphs until next heading
+      const answerLines: string[] = [];
+      for (let j = i + 1; j < lines.length; j++) {
+        if (lines[j].match(/^#{1,3}\s/) || lines[j].match(/^\*\*.*\?\*\*/)) break;
+        const cleaned = lines[j].replace(/\*\*/g, '').replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').trim();
+        if (cleaned && !cleaned.startsWith('---') && !cleaned.startsWith('![')) {
+          answerLines.push(cleaned);
+        }
+      }
+      if (answerLines.length > 0) {
+        faqItems.push({
+          question: question.replace(/\*\*/g, ''),
+          answer: answerLines.slice(0, 3).join(' ').slice(0, 500),
+        });
+      }
+    }
+  }
+
+  const faqSchema = faqItems.length > 0 ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqItems.slice(0, 10).map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
+      },
+    })),
+  } : null;
+
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -109,6 +148,12 @@ export default async function BlogPostPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
       <nav
         aria-label="Breadcrumb"
         style={{
