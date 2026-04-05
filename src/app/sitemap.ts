@@ -1,6 +1,8 @@
 import { MetadataRoute } from 'next';
 import { readdirSync, readFileSync } from 'fs';
 import { join } from 'path';
+import { getAllTherapists } from '@/lib/therapist-queries';
+import { getTherapistSlug } from '@/lib/therapist-types';
 
 const BASE_URL = 'https://isha.health';
 
@@ -66,7 +68,7 @@ const staticPages = [
   'what-is-ketamine-assisted-therapy',
 ];
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const today = new Date().toISOString().split('T')[0];
 
   const staticEntries: MetadataRoute.Sitemap = staticPages.map((page) => ({
@@ -130,15 +132,35 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  // Therapist directory pages
-  const therapistSlugs = getDynamicPages('ketamine-therapist-directory', 'ketamine-therapist-directory')
-    .filter((p) => !['ketamine-therapist-directory/login', 'ketamine-therapist-directory/create-account', 'ketamine-therapist-directory/dashboard', 'ketamine-therapist-directory/claim'].includes(p));
-  const therapistEntries: MetadataRoute.Sitemap = therapistSlugs.map((page) => ({
+  // Guide pages
+  const guidePages = getDynamicPages('guide', 'guide');
+  const guideEntries: MetadataRoute.Sitemap = guidePages.map((page) => ({
     url: `${BASE_URL}/${page}`,
     lastModified: today,
     changeFrequency: 'monthly',
-    priority: 0.5,
+    priority: 0.9,
   }));
+
+  // Therapist directory — main page + all profiles from Supabase
+  let therapistEntries: MetadataRoute.Sitemap = [
+    { url: `${BASE_URL}/ketamine-therapist-directory`, lastModified: today, changeFrequency: 'weekly', priority: 0.8 },
+  ];
+  try {
+    const therapists = await getAllTherapists();
+    const profileEntries: MetadataRoute.Sitemap = therapists.map((t) => ({
+      url: `${BASE_URL}/ketamine-therapist-directory/${getTherapistSlug(t)}`,
+      lastModified: today,
+      changeFrequency: 'monthly',
+      priority: 0.5,
+    }));
+    therapistEntries = [...therapistEntries, ...profileEntries];
+  } catch {};
+
+  // Additional dynamic pages
+  const additionalPages: MetadataRoute.Sitemap = [
+    { url: `${BASE_URL}/resources`, lastModified: today, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE_URL}/pricing`, lastModified: today, changeFrequency: 'monthly', priority: 0.9 },
+  ];
 
   return [
     ...staticEntries,
@@ -147,6 +169,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...cityEntries,
     ...conditionEntries,
     ...compareEntries,
+    ...guideEntries,
     ...therapistEntries,
+    ...additionalPages,
   ];
 }

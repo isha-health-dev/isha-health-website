@@ -74,6 +74,18 @@ function getAllUrls(): string[] {
     dirs.forEach((d) => urls.push(`${BASE_URL}/compare/${d}`));
   } catch {}
 
+  // Guide pages
+  try {
+    const guideDir = join(process.cwd(), 'src', 'app', 'guide');
+    const dirs = readdirSync(guideDir, { withFileTypes: true })
+      .filter((d) => d.isDirectory())
+      .map((d) => d.name);
+    dirs.forEach((d) => urls.push(`${BASE_URL}/guide/${d}`));
+  } catch {}
+
+  // Resources page
+  urls.push(`${BASE_URL}/resources`);
+
   return [...new Set(urls)];
 }
 
