@@ -21,6 +21,7 @@ export async function getAllTherapists(): Promise<TherapistWithRelations[]> {
   const { data, error } = await supabase
     .from('therapist')
     .select(THERAPIST_SELECT)
+    .order('last_verified_at', { ascending: false, nullsFirst: false })
     .order('first_name', { ascending: true });
 
   if (error) throw error;
