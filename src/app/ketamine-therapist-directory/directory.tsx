@@ -320,32 +320,32 @@ function TherapistCard({ therapist: t }: { therapist: TherapistWithRelations }) 
             )}
           </h2>
           <p className="text-sm text-gray-600">{formatRole(t.mental_health_role)}</p>
-          {location && (
-            <p className="text-sm text-gray-500 mt-1">{location}</p>
-          )}
+          <p className="text-sm text-gray-500 mt-1">{location || 'Location not specified'}</p>
         </div>
       </div>
 
-      {displaySpecialties.length > 0 && (
-        <div className="flex flex-wrap gap-1.5 mt-4">
-          {displaySpecialties.map((s) => (
+      <div className="flex flex-wrap gap-1.5 mt-4">
+        {displaySpecialties.length > 0 ? (
+          displaySpecialties.map((s) => (
             <span
               key={s}
               className="inline-block bg-teal-50 text-teal-700 text-xs px-2 py-1 rounded-full"
             >
               {s}
             </span>
-          ))}
-        </div>
-      )}
+          ))
+        ) : (
+          <span className="inline-block bg-gray-50 text-gray-400 text-xs px-2 py-1 rounded-full">
+            Specialties not listed
+          </span>
+        )}
+      </div>
 
       <div className="flex flex-wrap gap-3 mt-4 text-xs text-gray-500">
-        {t.visit_type && (
-          <span>{formatLabel(t.visit_type)}</span>
-        )}
+        <span>{t.visit_type ? formatLabel(t.visit_type) : 'Contact for details'}</span>
         {t.sliding_scale && <span>Sliding Scale</span>}
         {t.lgbtq_affirmative && <span>LGBTQ+ Affirmative</span>}
-        {t.fee && <span>{t.fee}</span>}
+        <span>{t.fee || 'Contact for pricing'}</span>
       </div>
     </Link>
   );
