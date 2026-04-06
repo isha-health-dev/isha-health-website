@@ -2,20 +2,20 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "Informed Consent",
-  description: "Review Isha Health's informed consent policy detailing the rights and responsibilities of clients, including privacy, risks, and treatment protocols. Understand the consent process for participating in services offered by our clinic.",
+  description: "Review Isha Health's informed consent policy detailing the rights and responsibilities of clients, including privacy, risks, and treatment protocols.",
   alternates: {
     canonical: "https://isha.health/consent-form",
   },
   openGraph: {
     title: "Informed Consent",
-    description: "Review Isha Health's informed consent policy detailing the rights and responsibilities of clients, including privacy, risks, and treatment protocols. Understand the consent process for participating in services offered by our clinic.",
+    description: "Review Isha Health's informed consent policy detailing the rights and responsibilities of clients, including privacy, risks, and treatment protocols.",
     type: "website",
     url: "https://isha.health/consent-form",
   },
   twitter: {
     card: "summary_large_image",
     title: "Informed Consent",
-    description: "Review Isha Health's informed consent policy detailing the rights and responsibilities of clients, including privacy, risks, and treatment protocols. Understand the consent process for participating in services offered by our clinic.",
+    description: "Review Isha Health's informed consent policy detailing the rights and responsibilities of clients, including privacy, risks, and treatment protocols.",
   },
 };
 

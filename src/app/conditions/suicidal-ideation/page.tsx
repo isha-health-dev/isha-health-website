@@ -2,18 +2,18 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "Ketamine Therapy for Suicidal Ideation | Isha Health",
-  description: "Research suggests ketamine may rapidly reduce suicidal thoughts when other treatments have not been effective. Learn about the clinical evidence and how Isha Health approaches ketamine-assisted therapy for suicidal ideation.",
+  description: "Research suggests ketamine may rapidly reduce suicidal thoughts when other treatments have not been effective.",
   alternates: { canonical: "https://isha.health/conditions/suicidal-ideation" },
   openGraph: {
     title: "Ketamine Therapy for Suicidal Ideation | Isha Health",
-    description: "Research suggests ketamine may rapidly reduce suicidal thoughts when other treatments have not been effective. Learn about the clinical evidence and how Isha Health approaches ketamine-assisted therapy for suicidal ideation.",
+    description: "Research suggests ketamine may rapidly reduce suicidal thoughts when other treatments have not been effective.",
     type: "website",
     url: "https://isha.health/conditions/suicidal-ideation",
   },
   twitter: {
     card: "summary_large_image",
     title: "Ketamine Therapy for Suicidal Ideation | Isha Health",
-    description: "Research suggests ketamine may rapidly reduce suicidal thoughts when other treatments have not been effective. Learn about the clinical evidence and how Isha Health approaches ketamine-assisted therapy for suicidal ideation.",
+    description: "Research suggests ketamine may rapidly reduce suicidal thoughts when other treatments have not been effective.",
   },
 };
 

@@ -2,20 +2,20 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "Refund Policy",
-  description: "By using ISHA Health's online ketamine therapy services, you agree to our terms of use. Learn more about what you can expect when you work with our experienced team to improve your mental health and wellbeing. Contact us if you have any questions.",
+  description: "By using ISHA Health's online ketamine therapy services, you agree to our terms of use.",
   alternates: {
     canonical: "https://isha.health/refund-policy",
   },
   openGraph: {
     title: "Refund Policy",
-    description: "By using ISHA Health's online ketamine therapy services, you agree to our terms of use. Learn more about what you can expect when you work with our experienced team to improve your mental health and wellbeing. Contact us if you have any questions.",
+    description: "By using ISHA Health's online ketamine therapy services, you agree to our terms of use.",
     type: "website",
     url: "https://isha.health/refund-policy",
   },
   twitter: {
     card: "summary_large_image",
     title: "Refund Policy",
-    description: "By using ISHA Health's online ketamine therapy services, you agree to our terms of use. Learn more about what you can expect when you work with our experienced team to improve your mental health and wellbeing. Contact us if you have any questions.",
+    description: "By using ISHA Health's online ketamine therapy services, you agree to our terms of use.",
   },
 };
 

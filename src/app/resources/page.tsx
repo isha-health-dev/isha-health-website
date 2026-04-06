@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Ketamine Therapy Resources & Guides',
   description:
-    'Comprehensive resources on ketamine therapy for depression, anxiety, PTSD, and more. Guides, research, comparisons, and condition-specific information from Isha Health.',
+    'Comprehensive resources on ketamine therapy for depression, anxiety, PTSD, and more.',
   alternates: { canonical: 'https://isha.health/resources' },
   openGraph: {
     title: 'Ketamine Therapy Resources & Guides | Isha Health',

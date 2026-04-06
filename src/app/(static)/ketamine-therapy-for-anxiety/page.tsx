@@ -2,20 +2,20 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "Ketamine for Anxiety: Treatment, Legality, and Efficacy | Isha Health",
-  description: "Ketamine is an FDA-approved anesthetic medication that is being used to treat treatment-resistant depression and anxiety disorders. This page provides information on ketamine's legal status, efficacy, and usage in treating social anxiety disorder, generalized anxiety disorder, and as a maintenance therapy.",
+  description: "Ketamine is an FDA-approved anesthetic medication that is being used to treat treatment-resistant depression and anxiety disorders.",
   alternates: {
     canonical: "https://isha.health/ketamine-therapy-for-anxiety",
   },
   openGraph: {
     title: "Ketamine for Anxiety: Treatment, Legality, and Efficacy | Isha Health",
-    description: "Ketamine is an FDA-approved anesthetic medication that is being used to treat treatment-resistant depression and anxiety disorders. This page provides information on ketamine's legal status, efficacy, and usage in treating social anxiety disorder, generalized anxiety disorder, and as a maintenance therapy.",
+    description: "Ketamine is an FDA-approved anesthetic medication that is being used to treat treatment-resistant depression and anxiety disorders.",
     type: "website",
     url: "https://isha.health/ketamine-therapy-for-anxiety",
   },
   twitter: {
     card: "summary_large_image",
     title: "Ketamine for Anxiety: Treatment, Legality, and Efficacy | Isha Health",
-    description: "Ketamine is an FDA-approved anesthetic medication that is being used to treat treatment-resistant depression and anxiety disorders. This page provides information on ketamine's legal status, efficacy, and usage in treating social anxiety disorder, generalized anxiety disorder, and as a maintenance therapy.",
+    description: "Ketamine is an FDA-approved anesthetic medication that is being used to treat treatment-resistant depression and anxiety disorders.",
   },
 };
 

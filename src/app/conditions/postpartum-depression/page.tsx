@@ -2,18 +2,18 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "Ketamine Therapy for Postpartum Depression | Isha Health",
-  description: "Preliminary research suggests ketamine may help with postpartum depression when standard treatments have not provided relief. Learn about the emerging evidence and how Isha Health approaches treatment.",
+  description: "Preliminary research suggests ketamine may help with postpartum depression when standard treatments have not provided relief.",
   alternates: { canonical: "https://isha.health/conditions/postpartum-depression" },
   openGraph: {
     title: "Ketamine Therapy for Postpartum Depression | Isha Health",
-    description: "Preliminary research suggests ketamine may help with postpartum depression when standard treatments have not provided relief. Learn about the emerging evidence and how Isha Health approaches treatment.",
+    description: "Preliminary research suggests ketamine may help with postpartum depression when standard treatments have not provided relief.",
     type: "website",
     url: "https://isha.health/conditions/postpartum-depression",
   },
   twitter: {
     card: "summary_large_image",
     title: "Ketamine Therapy for Postpartum Depression | Isha Health",
-    description: "Preliminary research suggests ketamine may help with postpartum depression when standard treatments have not provided relief. Learn about the emerging evidence and how Isha Health approaches treatment.",
+    description: "Preliminary research suggests ketamine may help with postpartum depression when standard treatments have not provided relief.",
   },
 };
 

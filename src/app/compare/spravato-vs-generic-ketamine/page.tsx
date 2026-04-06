@@ -2,18 +2,18 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "Spravato vs Generic Ketamine: Which Is Right for You? | Isha Health",
-  description: "Compare Spravato (esketamine) nasal spray with generic ketamine for depression. Understand differences in FDA approval, cost, administration, insurance coverage, and clinical evidence.",
+  description: "Compare Spravato (esketamine) nasal spray with generic ketamine for depression. Understand differences in FDA approval, cost, administration, insurance",
   alternates: { canonical: "https://isha.health/compare/spravato-vs-generic-ketamine" },
   openGraph: {
     title: "Spravato vs Generic Ketamine: Which Is Right for You? | Isha Health",
-    description: "Compare Spravato (esketamine) nasal spray with generic ketamine for depression. Understand differences in FDA approval, cost, administration, insurance coverage, and clinical evidence.",
+    description: "Compare Spravato (esketamine) nasal spray with generic ketamine for depression. Understand differences in FDA approval, cost, administration, insurance",
     type: "website",
     url: "https://isha.health/compare/spravato-vs-generic-ketamine",
   },
   twitter: {
     card: "summary_large_image",
     title: "Spravato vs Generic Ketamine: Which Is Right for You? | Isha Health",
-    description: "Compare Spravato (esketamine) nasal spray with generic ketamine for depression. Understand differences in FDA approval, cost, administration, insurance coverage, and clinical evidence.",
+    description: "Compare Spravato (esketamine) nasal spray with generic ketamine for depression. Understand differences in FDA approval, cost, administration, insurance",
   },
 };
 

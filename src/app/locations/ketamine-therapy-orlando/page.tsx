@@ -2,18 +2,18 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "At-Home Ketamine Therapy in Orlando, FL",
-  description: "Online ketamine-assisted therapy in Orlando, Florida. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
+  description: "Online ketamine-assisted therapy in Orlando, Florida. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required.",
   alternates: { canonical: "https://isha.health/locations/ketamine-therapy-orlando" },
   openGraph: {
     title: "At-Home Ketamine Therapy in Orlando, FL | Isha Health",
-    description: "Online ketamine-assisted therapy in Orlando, Florida. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
+    description: "Online ketamine-assisted therapy in Orlando, Florida. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required.",
     type: "website",
     url: "https://isha.health/locations/ketamine-therapy-orlando",
   },
   twitter: {
     card: "summary_large_image",
     title: "At-Home Ketamine Therapy in Orlando, FL | Isha Health",
-    description: "Online ketamine-assisted therapy in Orlando, Florida. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
+    description: "Online ketamine-assisted therapy in Orlando, Florida. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required.",
   },
 };
 

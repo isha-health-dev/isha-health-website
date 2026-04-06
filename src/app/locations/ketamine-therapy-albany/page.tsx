@@ -2,18 +2,18 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "At-Home Ketamine Therapy in Albany, NY",
-  description: "Online ketamine-assisted therapy in Albany, New York. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
+  description: "Online ketamine-assisted therapy in Albany, New York. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required.",
   alternates: { canonical: "https://isha.health/locations/ketamine-therapy-albany" },
   openGraph: {
     title: "At-Home Ketamine Therapy in Albany, NY | Isha Health",
-    description: "Online ketamine-assisted therapy in Albany, New York. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
+    description: "Online ketamine-assisted therapy in Albany, New York. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required.",
     type: "website",
     url: "https://isha.health/locations/ketamine-therapy-albany",
   },
   twitter: {
     card: "summary_large_image",
     title: "At-Home Ketamine Therapy in Albany, NY | Isha Health",
-    description: "Online ketamine-assisted therapy in Albany, New York. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
+    description: "Online ketamine-assisted therapy in Albany, New York. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required.",
   },
 };
 

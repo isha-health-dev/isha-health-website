@@ -2,20 +2,20 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "At ISHA Health, we are committed to protecting your privacy. Learn more about our privacy policy and how we keep your information safe and secure when you use our online ketamine therapy services.",
+  description: "At ISHA Health, we are committed to protecting your privacy. Learn more about our privacy policy and how we keep your information safe and secure when you",
   alternates: {
     canonical: "https://isha.health/privacy-policy",
   },
   openGraph: {
     title: "Privacy Policy",
-    description: "At ISHA Health, we are committed to protecting your privacy. Learn more about our privacy policy and how we keep your information safe and secure when you use our online ketamine therapy services.",
+    description: "At ISHA Health, we are committed to protecting your privacy. Learn more about our privacy policy and how we keep your information safe and secure when you",
     type: "website",
     url: "https://isha.health/privacy-policy",
   },
   twitter: {
     card: "summary_large_image",
     title: "Privacy Policy",
-    description: "At ISHA Health, we are committed to protecting your privacy. Learn more about our privacy policy and how we keep your information safe and secure when you use our online ketamine therapy services.",
+    description: "At ISHA Health, we are committed to protecting your privacy. Learn more about our privacy policy and how we keep your information safe and secure when you",
   },
 };
 

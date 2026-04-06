@@ -2,20 +2,20 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "Online At-Home Ketamine Therapy in Texas",
-  description: "Discover at-home ketamine treatment in Georgia with Isha Health. Get expert, personalized care for anxiety, depression, and PTSD—all from the comfort of home. Start your journey today!",
+  description: "Discover at-home ketamine treatment in Georgia with Isha Health. Get expert, personalized care for anxiety, depression, and PTSD—all from the comfort of",
   alternates: {
     canonical: "https://isha.health/locations/online-at-home-ketamine-therapy-in-texas",
   },
   openGraph: {
     title: "Online At-Home Ketamine Therapy in Texas",
-    description: "Discover at-home ketamine treatment in Georgia with Isha Health. Get expert, personalized care for anxiety, depression, and PTSD—all from the comfort of home. Start your journey today!",
+    description: "Discover at-home ketamine treatment in Georgia with Isha Health. Get expert, personalized care for anxiety, depression, and PTSD—all from the comfort of",
     type: "website",
     url: "https://isha.health/locations/online-at-home-ketamine-therapy-in-texas",
   },
   twitter: {
     card: "summary_large_image",
     title: "Online At-Home Ketamine Therapy in Texas",
-    description: "Discover at-home ketamine treatment in Georgia with Isha Health. Get expert, personalized care for anxiety, depression, and PTSD—all from the comfort of home. Start your journey today!",
+    description: "Discover at-home ketamine treatment in Georgia with Isha Health. Get expert, personalized care for anxiety, depression, and PTSD—all from the comfort of",
   },
 };
 

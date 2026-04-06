@@ -2,18 +2,18 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "At-Home Ketamine Therapy in Beverly Hills, CA",
-  description: "Online ketamine-assisted therapy in Beverly Hills, California. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
+  description: "Online ketamine-assisted therapy in Beverly Hills, California. Physician-led at-home treatment for depression, anxiety, and PTSD.",
   alternates: { canonical: "https://isha.health/locations/ketamine-therapy-beverly-hills" },
   openGraph: {
     title: "At-Home Ketamine Therapy in Beverly Hills, CA | Isha Health",
-    description: "Online ketamine-assisted therapy in Beverly Hills, California. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
+    description: "Online ketamine-assisted therapy in Beverly Hills, California. Physician-led at-home treatment for depression, anxiety, and PTSD.",
     type: "website",
     url: "https://isha.health/locations/ketamine-therapy-beverly-hills",
   },
   twitter: {
     card: "summary_large_image",
     title: "At-Home Ketamine Therapy in Beverly Hills, CA | Isha Health",
-    description: "Online ketamine-assisted therapy in Beverly Hills, California. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
+    description: "Online ketamine-assisted therapy in Beverly Hills, California. Physician-led at-home treatment for depression, anxiety, and PTSD.",
   },
 };
 

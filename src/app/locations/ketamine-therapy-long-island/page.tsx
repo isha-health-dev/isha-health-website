@@ -2,18 +2,18 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "At-Home Ketamine Therapy in Long Island, NY",
-  description: "Online ketamine-assisted therapy in Long Island, New York. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
+  description: "Online ketamine-assisted therapy in Long Island, New York. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required.",
   alternates: { canonical: "https://isha.health/locations/ketamine-therapy-long-island" },
   openGraph: {
     title: "At-Home Ketamine Therapy in Long Island, NY | Isha Health",
-    description: "Online ketamine-assisted therapy in Long Island, New York. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
+    description: "Online ketamine-assisted therapy in Long Island, New York. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required.",
     type: "website",
     url: "https://isha.health/locations/ketamine-therapy-long-island",
   },
   twitter: {
     card: "summary_large_image",
     title: "At-Home Ketamine Therapy in Long Island, NY | Isha Health",
-    description: "Online ketamine-assisted therapy in Long Island, New York. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
+    description: "Online ketamine-assisted therapy in Long Island, New York. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required.",
   },
 };
 

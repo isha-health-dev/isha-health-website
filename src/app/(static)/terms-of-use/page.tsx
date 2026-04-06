@@ -2,20 +2,20 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "Terms of Use",
-  description: "By using ISHA Health's online ketamine therapy services, you agree to our terms of use. Learn more about what you can expect when you work with our experienced team to improve your mental health and wellbeing. Contact us if you have any questions.",
+  description: "By using ISHA Health's online ketamine therapy services, you agree to our terms of use.",
   alternates: {
     canonical: "https://isha.health/terms-of-use",
   },
   openGraph: {
     title: "Terms of Use",
-    description: "By using ISHA Health's online ketamine therapy services, you agree to our terms of use. Learn more about what you can expect when you work with our experienced team to improve your mental health and wellbeing. Contact us if you have any questions.",
+    description: "By using ISHA Health's online ketamine therapy services, you agree to our terms of use.",
     type: "website",
     url: "https://isha.health/terms-of-use",
   },
   twitter: {
     card: "summary_large_image",
     title: "Terms of Use",
-    description: "By using ISHA Health's online ketamine therapy services, you agree to our terms of use. Learn more about what you can expect when you work with our experienced team to improve your mental health and wellbeing. Contact us if you have any questions.",
+    description: "By using ISHA Health's online ketamine therapy services, you agree to our terms of use.",
   },
 };
 

@@ -2,20 +2,20 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "About Ketamine | Isha Health",
-  description: "Ketamine was approved by FDA in 1970 as an anesthetic and has been used in hospitals for over 50 years. More and more clinicians use it for mental health these days.",
+  description: "Ketamine was approved by FDA in 1970 as an anesthetic and has been used in hospitals for over 50 years.",
   alternates: {
     canonical: "https://isha.health/about-us/ketamine-therapy",
   },
   openGraph: {
     title: "About Ketamine | Isha Health",
-    description: "Ketamine was approved by FDA in 1970 as an anesthetic and has been used in hospitals for over 50 years. More and more clinicians use it for mental health these days.",
+    description: "Ketamine was approved by FDA in 1970 as an anesthetic and has been used in hospitals for over 50 years.",
     type: "website",
     url: "https://isha.health/about-us/ketamine-therapy",
   },
   twitter: {
     card: "summary_large_image",
     title: "About Ketamine | Isha Health",
-    description: "Ketamine was approved by FDA in 1970 as an anesthetic and has been used in hospitals for over 50 years. More and more clinicians use it for mental health these days.",
+    description: "Ketamine was approved by FDA in 1970 as an anesthetic and has been used in hospitals for over 50 years.",
   },
 };
 

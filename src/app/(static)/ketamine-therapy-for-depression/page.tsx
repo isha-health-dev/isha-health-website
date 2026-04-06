@@ -2,20 +2,20 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "Ketamine for Depression - Effective Treatment for Treatment-Resistant Depression | Isha Health",
-  description: "Ketamine is a safe and effective medication for treating depression, including treatment-resistant depression. Learn about the different routes of administration for ketamine and its efficacy in reducing symptoms of depression. Isha Health is a licensed healthcare provider for ketamine therapy in San Francisco, CA.",
+  description: "Ketamine is a safe and effective medication for treating depression, including treatment-resistant depression.",
   alternates: {
     canonical: "https://isha.health/ketamine-therapy-for-depression",
   },
   openGraph: {
     title: "Ketamine for Depression - Effective Treatment for Treatment-Resistant Depression | Isha Health",
-    description: "Ketamine is a safe and effective medication for treating depression, including treatment-resistant depression. Learn about the different routes of administration for ketamine and its efficacy in reducing symptoms of depression. Isha Health is a licensed healthcare provider for ketamine therapy in San Francisco, CA.",
+    description: "Ketamine is a safe and effective medication for treating depression, including treatment-resistant depression.",
     type: "website",
     url: "https://isha.health/ketamine-therapy-for-depression",
   },
   twitter: {
     card: "summary_large_image",
     title: "Ketamine for Depression - Effective Treatment for Treatment-Resistant Depression | Isha Health",
-    description: "Ketamine is a safe and effective medication for treating depression, including treatment-resistant depression. Learn about the different routes of administration for ketamine and its efficacy in reducing symptoms of depression. Isha Health is a licensed healthcare provider for ketamine therapy in San Francisco, CA.",
+    description: "Ketamine is a safe and effective medication for treating depression, including treatment-resistant depression.",
   },
 };
 

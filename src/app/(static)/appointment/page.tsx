@@ -2,20 +2,20 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "Make an Appointment - Online Ketamine Therapy for Depression & Anxiety",
-  description: "Ready to start your journey towards better mental health with online ketamine therapy? Book an appointment with ISHA Health today to learn more about our services and how we can support you. Our experienced team is dedicated to helping you achieve optimal mental health and wellbeing from the comfort of your own home.",
+  description: "Ready to start your journey towards better mental health with online ketamine therapy?",
   alternates: {
     canonical: "https://isha.health/appointment",
   },
   openGraph: {
     title: "Make an Appointment - Online Ketamine Therapy for Depression & Anxiety",
-    description: "Ready to start your journey towards better mental health with online ketamine therapy? Book an appointment with ISHA Health today to learn more about our services and how we can support you. Our experienced team is dedicated to helping you achieve optimal mental health and wellbeing from the comfort of your own home.",
+    description: "Ready to start your journey towards better mental health with online ketamine therapy?",
     type: "website",
     url: "https://isha.health/appointment",
   },
   twitter: {
     card: "summary_large_image",
     title: "Make an Appointment - Online Ketamine Therapy for Depression & Anxiety",
-    description: "Ready to start your journey towards better mental health with online ketamine therapy? Book an appointment with ISHA Health today to learn more about our services and how we can support you. Our experienced team is dedicated to helping you achieve optimal mental health and wellbeing from the comfort of your own home.",
+    description: "Ready to start your journey towards better mental health with online ketamine therapy?",
   },
 };
 

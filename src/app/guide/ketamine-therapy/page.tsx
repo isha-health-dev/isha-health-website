@@ -2,18 +2,18 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "The Complete Guide to Ketamine Therapy | Isha Health",
-  description: "Everything you need to know about ketamine therapy: how it works, conditions treated, types of ketamine, what to expect, costs, safety, and how to choose a provider.",
+  description: "Everything you need to know about ketamine therapy: how it works, conditions treated, types of ketamine, what to expect, costs, safety, and how to choose",
   alternates: { canonical: "https://isha.health/guide/ketamine-therapy" },
   openGraph: {
     title: "The Complete Guide to Ketamine Therapy | Isha Health",
-    description: "Everything you need to know about ketamine therapy: how it works, conditions treated, types of ketamine, what to expect, costs, safety, and how to choose a provider.",
+    description: "Everything you need to know about ketamine therapy: how it works, conditions treated, types of ketamine, what to expect, costs, safety, and how to choose",
     type: "website",
     url: "https://isha.health/guide/ketamine-therapy",
   },
   twitter: {
     card: "summary_large_image",
     title: "The Complete Guide to Ketamine Therapy | Isha Health",
-    description: "Everything you need to know about ketamine therapy: how it works, conditions treated, types of ketamine, what to expect, costs, safety, and how to choose a provider.",
+    description: "Everything you need to know about ketamine therapy: how it works, conditions treated, types of ketamine, what to expect, costs, safety, and how to choose",
   },
 };
 

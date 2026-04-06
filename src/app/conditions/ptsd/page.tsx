@@ -2,18 +2,18 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "Ketamine Therapy for PTSD | Isha Health",
-  description: "Ketamine may offer rapid relief for PTSD symptoms when traditional treatments have not worked. Learn about the clinical evidence for ketamine-assisted therapy for post-traumatic stress disorder.",
+  description: "Ketamine may offer rapid relief for PTSD symptoms when traditional treatments have not worked.",
   alternates: { canonical: "https://isha.health/conditions/ptsd" },
   openGraph: {
     title: "Ketamine Therapy for PTSD | Isha Health",
-    description: "Ketamine may offer rapid relief for PTSD symptoms when traditional treatments have not worked. Learn about the clinical evidence for ketamine-assisted therapy for post-traumatic stress disorder.",
+    description: "Ketamine may offer rapid relief for PTSD symptoms when traditional treatments have not worked.",
     type: "website",
     url: "https://isha.health/conditions/ptsd",
   },
   twitter: {
     card: "summary_large_image",
     title: "Ketamine Therapy for PTSD | Isha Health",
-    description: "Ketamine may offer rapid relief for PTSD symptoms when traditional treatments have not worked. Learn about the clinical evidence for ketamine-assisted therapy for post-traumatic stress disorder.",
+    description: "Ketamine may offer rapid relief for PTSD symptoms when traditional treatments have not worked.",
   },
 };
 
