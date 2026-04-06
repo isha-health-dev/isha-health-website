@@ -52,6 +52,22 @@ const nextConfig = {
         destination: '/about-us/about-isha-health',
         permanent: true,
       },
+      // Parent directory pages without index
+      {
+        source: '/compare',
+        destination: '/resources',
+        permanent: false,
+      },
+      {
+        source: '/conditions',
+        destination: '/resources',
+        permanent: false,
+      },
+      {
+        source: '/guide',
+        destination: '/resources',
+        permanent: false,
+      },
       // Old URL patterns from Ahrefs 404 report
       {
         source: '/ketamine-for-depression',
