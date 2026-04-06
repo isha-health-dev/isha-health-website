@@ -52,6 +52,68 @@ const nextConfig = {
         destination: '/about-us/about-isha-health',
         permanent: true,
       },
+      // Old URL patterns from Ahrefs 404 report
+      {
+        source: '/ketamine-for-depression',
+        destination: '/ketamine-therapy-for-depression',
+        permanent: true,
+      },
+      {
+        source: '/ketamine-for-anxiety',
+        destination: '/ketamine-therapy-for-anxiety',
+        permanent: true,
+      },
+      {
+        source: '/ketamine-therapy-nyc',
+        destination: '/locations/ketamine-therapy-nyc',
+        permanent: true,
+      },
+      {
+        source: '/ketamine-therapy-long-island',
+        destination: '/locations/ketamine-therapy-long-island',
+        permanent: true,
+      },
+      {
+        source: '/post/what-a-therapist-should-be-aware-of-as-your-client-goes-through-ketamine-therapy',
+        destination: '/post/therapist-awareness-ketamine-client-therapy',
+        permanent: true,
+      },
+      {
+        source: '/superbill',
+        destination: '/current-patients/superbill',
+        permanent: true,
+      },
+      {
+        source: '/collaborating-with-isha-health',
+        destination: '/collaborate-with-isha-health',
+        permanent: true,
+      },
+      {
+        source: '/scheduling',
+        destination: '/current-patients/scheduling',
+        permanent: true,
+      },
+      // Old therapist directory URLs with domains/UUIDs -> directory listing
+      {
+        source: '/ketamine-therapist-directory/:slug/public-profile',
+        destination: '/ketamine-therapist-directory',
+        permanent: true,
+      },
+      {
+        source: '/ketamine-therapist-directory/alissahirshfeld.com',
+        destination: '/ketamine-therapist-directory',
+        permanent: true,
+      },
+      {
+        source: '/ketamine-therapist-directory/kadmoncpt.com',
+        destination: '/ketamine-therapist-directory',
+        permanent: true,
+      },
+      {
+        source: '/ketamine-therapist-directory/brianlissak.com',
+        destination: '/ketamine-therapist-directory',
+        permanent: true,
+      },
       // Strip .html extensions (catch-all pattern)
       {
         source: '/:path*.html',
