@@ -37,6 +37,21 @@ interface TherapistProfile {
   youtube_url: string | null;
   tiktok_url: string | null;
   last_verified_at: string | null;
+  accepting_new_clients: boolean;
+  education: string | null;
+  years_in_practice: number | null;
+  treatment_approach: string | null;
+  client_focus: string | null;
+  faith_or_spiritual_focus: string | null;
+  session_formats: string | null;
+  typical_session_length: string | null;
+  evening_weekend_availability: boolean;
+  free_consultation: boolean;
+  telehealth_platform: string | null;
+  publications: string | null;
+  professional_memberships: string | null;
+  booking_url: string | null;
+  cultural_focus: string | null;
 }
 
 const inputStyle = {
@@ -181,6 +196,21 @@ export default function DashboardPage() {
         twitter_url: profile.twitter_url,
         youtube_url: profile.youtube_url,
         tiktok_url: profile.tiktok_url,
+        accepting_new_clients: profile.accepting_new_clients,
+        education: profile.education,
+        years_in_practice: profile.years_in_practice,
+        treatment_approach: profile.treatment_approach,
+        client_focus: profile.client_focus,
+        faith_or_spiritual_focus: profile.faith_or_spiritual_focus,
+        session_formats: profile.session_formats,
+        typical_session_length: profile.typical_session_length,
+        evening_weekend_availability: profile.evening_weekend_availability,
+        free_consultation: profile.free_consultation,
+        telehealth_platform: profile.telehealth_platform,
+        publications: profile.publications,
+        professional_memberships: profile.professional_memberships,
+        booking_url: profile.booking_url,
+        cultural_focus: profile.cultural_focus,
         last_verified_at: new Date().toISOString(),
       })
       .eq('id', profile.id);
@@ -354,6 +384,29 @@ export default function DashboardPage() {
           </div>
         </div>
 
+        {/* Availability */}
+        <div style={sectionStyle}>
+          <h2 style={{ fontSize: '1.1rem', fontWeight: 600, color: '#111827', marginBottom: '1rem' }}>Availability</h2>
+          <div style={{ display: 'flex', gap: '1.5rem', marginBottom: '0.75rem', flexWrap: 'wrap' as const }}>
+            <label style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', cursor: 'pointer', fontSize: '0.85rem', color: '#374151' }}>
+              <input type="checkbox" checked={profile.accepting_new_clients} onChange={(e) => updateField('accepting_new_clients', e.target.checked)} />
+              Accepting New Clients
+            </label>
+            <label style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', cursor: 'pointer', fontSize: '0.85rem', color: '#374151' }}>
+              <input type="checkbox" checked={profile.free_consultation} onChange={(e) => updateField('free_consultation', e.target.checked)} />
+              Free Consultation
+            </label>
+            <label style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', cursor: 'pointer', fontSize: '0.85rem', color: '#374151' }}>
+              <input type="checkbox" checked={profile.evening_weekend_availability} onChange={(e) => updateField('evening_weekend_availability', e.target.checked)} />
+              Evening/Weekend Availability
+            </label>
+          </div>
+          <div>
+            <label style={labelStyle}>Booking URL</label>
+            <input style={inputStyle} value={profile.booking_url || ''} onChange={(e) => updateField('booking_url', e.target.value)} placeholder="https://calendly.com/..." />
+          </div>
+        </div>
+
         {/* Contact */}
         <div style={sectionStyle}>
           <h2 style={{ fontSize: '1.1rem', fontWeight: 600, color: '#111827', marginBottom: '1rem' }}>Contact</h2>
@@ -366,6 +419,29 @@ export default function DashboardPage() {
               <label style={labelStyle}>Website</label>
               <input style={inputStyle} value={profile.website || ''} onChange={(e) => updateField('website', e.target.value)} placeholder="https://" />
             </div>
+          </div>
+        </div>
+
+        {/* Background */}
+        <div style={sectionStyle}>
+          <h2 style={{ fontSize: '1.1rem', fontWeight: 600, color: '#111827', marginBottom: '1rem' }}>Background</h2>
+          <div style={{ marginBottom: '0.75rem' }}>
+            <label style={labelStyle}>Education</label>
+            <textarea style={{ ...inputStyle, minHeight: '80px', resize: 'vertical' as const }} value={profile.education || ''} onChange={(e) => updateField('education', e.target.value)} placeholder="e.g., PhD Clinical Psychology, NYU, 2015" />
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', marginBottom: '0.75rem' }}>
+            <div>
+              <label style={labelStyle}>Years in Practice</label>
+              <input style={inputStyle} type="number" min="0" value={profile.years_in_practice ?? ''} onChange={(e) => updateField('years_in_practice', e.target.value === '' ? null : e.target.value)} />
+            </div>
+          </div>
+          <div style={{ marginBottom: '0.75rem' }}>
+            <label style={labelStyle}>Professional Memberships</label>
+            <textarea style={{ ...inputStyle, minHeight: '60px', resize: 'vertical' as const }} value={profile.professional_memberships || ''} onChange={(e) => updateField('professional_memberships', e.target.value)} placeholder="e.g., APA, MAPS, IFS Institute" />
+          </div>
+          <div>
+            <label style={labelStyle}>Publications</label>
+            <textarea style={{ ...inputStyle, minHeight: '60px', resize: 'vertical' as const }} value={profile.publications || ''} onChange={(e) => updateField('publications', e.target.value)} placeholder="Published works, media appearances" />
           </div>
         </div>
 
@@ -481,6 +557,48 @@ export default function DashboardPage() {
           <div>
             <label style={labelStyle}>Bio</label>
             <textarea style={{ ...inputStyle, minHeight: '120px', resize: 'vertical' as const }} value={profile.bio || ''} onChange={(e) => updateField('bio', e.target.value)} />
+          </div>
+        </div>
+
+        {/* Approach */}
+        <div style={sectionStyle}>
+          <h2 style={{ fontSize: '1.1rem', fontWeight: 600, color: '#111827', marginBottom: '1rem' }}>Approach</h2>
+          <div style={{ marginBottom: '0.75rem' }}>
+            <label style={labelStyle}>Treatment Approach</label>
+            <textarea style={{ ...inputStyle, minHeight: '80px', resize: 'vertical' as const }} value={profile.treatment_approach || ''} onChange={(e) => updateField('treatment_approach', e.target.value)} placeholder="Describe your therapeutic approach..." />
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', marginBottom: '0.75rem' }}>
+            <div>
+              <label style={labelStyle}>Session Formats</label>
+              <input style={inputStyle} value={profile.session_formats || ''} onChange={(e) => updateField('session_formats', e.target.value)} placeholder="e.g., Individual, Couples, Group, Family" />
+            </div>
+            <div>
+              <label style={labelStyle}>Typical Session Length</label>
+              <input style={inputStyle} value={profile.typical_session_length || ''} onChange={(e) => updateField('typical_session_length', e.target.value)} placeholder="e.g., 50 minutes" />
+            </div>
+          </div>
+          <div>
+            <label style={labelStyle}>Telehealth Platform</label>
+            <input style={inputStyle} value={profile.telehealth_platform || ''} onChange={(e) => updateField('telehealth_platform', e.target.value)} placeholder="e.g., Zoom, Doxy.me" />
+          </div>
+        </div>
+
+        {/* Client Focus */}
+        <div style={sectionStyle}>
+          <h2 style={{ fontSize: '1.1rem', fontWeight: 600, color: '#111827', marginBottom: '1rem' }}>Client Focus</h2>
+          <div style={{ marginBottom: '0.75rem' }}>
+            <label style={labelStyle}>Client Focus</label>
+            <textarea style={{ ...inputStyle, minHeight: '80px', resize: 'vertical' as const }} value={profile.client_focus || ''} onChange={(e) => updateField('client_focus', e.target.value)} placeholder="e.g., Adults 25-65, LGBTQ+ community, veterans" />
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem' }}>
+            <div>
+              <label style={labelStyle}>Cultural Focus</label>
+              <input style={inputStyle} value={profile.cultural_focus || ''} onChange={(e) => updateField('cultural_focus', e.target.value)} placeholder="e.g., Multicultural, BIPOC-affirming" />
+            </div>
+            <div>
+              <label style={labelStyle}>Faith / Spiritual Focus</label>
+              <input style={inputStyle} value={profile.faith_or_spiritual_focus || ''} onChange={(e) => updateField('faith_or_spiritual_focus', e.target.value)} placeholder="e.g., Buddhist-informed, Christian counseling, secular" />
+            </div>
           </div>
         </div>
 

@@ -112,6 +112,10 @@ export default async function TherapistProfilePage({
           },
         }
       : {}),
+    ...(t.education ? { alumniOf: t.education } : {}),
+    ...(t.years_in_practice != null
+      ? { description: `${t.years_in_practice} years in practice` }
+      : {}),
     worksFor: {
       '@type': 'Organization',
       name: 'Isha Health',
@@ -226,6 +230,21 @@ export default async function TherapistProfilePage({
                   Certified
                 </span>
               )}
+              {t.accepting_new_clients && (
+                <span className="inline-block bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">
+                  Accepting New Clients
+                </span>
+              )}
+              {t.free_consultation && (
+                <span className="inline-block bg-teal-100 text-teal-800 text-xs px-3 py-1 rounded-full">
+                  Free Consultation
+                </span>
+              )}
+              {t.evening_weekend_availability && (
+                <span className="inline-block bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full">
+                  Evening/Weekend Hours
+                </span>
+              )}
             </div>
 
             {/* Social Links */}
@@ -276,6 +295,21 @@ export default async function TherapistProfilePage({
             </div>
           </div>
         </div>
+
+        {/* Booking Button */}
+        {t.booking_url && (
+          <div className="mb-8">
+            <a
+              href={t.booking_url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-teal-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-teal-700 transition-colors"
+              style={{ textDecoration: 'none' }}
+            >
+              Book a Session
+            </a>
+          </div>
+        )}
 
         {/* Upcoming Events */}
         {t.therapist_event && t.therapist_event.length > 0 && (
@@ -337,6 +371,87 @@ export default async function TherapistProfilePage({
         {t.bio && (
           <Section title="About">
             <p className="text-gray-700 whitespace-pre-line">{t.bio}</p>
+          </Section>
+        )}
+
+        {/* Background */}
+        {(t.education || t.years_in_practice || t.professional_memberships || t.publications) && (
+          <Section title="Background">
+            <div className="space-y-3">
+              {t.education && (
+                <div>
+                  <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Education</h3>
+                  <p className="text-gray-700 whitespace-pre-line">{t.education}</p>
+                </div>
+              )}
+              {t.years_in_practice != null && (
+                <div>
+                  <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Experience</h3>
+                  <p className="text-gray-700">{t.years_in_practice} years in practice</p>
+                </div>
+              )}
+              {t.professional_memberships && (
+                <div>
+                  <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Professional Memberships</h3>
+                  <p className="text-gray-700 whitespace-pre-line">{t.professional_memberships}</p>
+                </div>
+              )}
+              {t.publications && (
+                <div>
+                  <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Publications</h3>
+                  <p className="text-gray-700 whitespace-pre-line">{t.publications}</p>
+                </div>
+              )}
+            </div>
+          </Section>
+        )}
+
+        {/* Treatment Approach */}
+        {t.treatment_approach && (
+          <Section title="Treatment Approach">
+            <p className="text-gray-700 whitespace-pre-line">{t.treatment_approach}</p>
+            {(t.session_formats || t.typical_session_length) && (
+              <div className="flex flex-wrap gap-4 mt-3">
+                {t.session_formats && (
+                  <div>
+                    <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Session Formats</h3>
+                    <p className="text-gray-700">{t.session_formats}</p>
+                  </div>
+                )}
+                {t.typical_session_length && (
+                  <div>
+                    <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Typical Session Length</h3>
+                    <p className="text-gray-700">{t.typical_session_length}</p>
+                  </div>
+                )}
+              </div>
+            )}
+          </Section>
+        )}
+
+        {/* Client Focus */}
+        {(t.client_focus || t.cultural_focus || t.faith_or_spiritual_focus) && (
+          <Section title="Client Focus">
+            <div className="space-y-3">
+              {t.client_focus && (
+                <div>
+                  <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Focus Areas</h3>
+                  <p className="text-gray-700 whitespace-pre-line">{t.client_focus}</p>
+                </div>
+              )}
+              {t.cultural_focus && (
+                <div>
+                  <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Cultural Focus</h3>
+                  <p className="text-gray-700 whitespace-pre-line">{t.cultural_focus}</p>
+                </div>
+              )}
+              {t.faith_or_spiritual_focus && (
+                <div>
+                  <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Faith / Spiritual Focus</h3>
+                  <p className="text-gray-700 whitespace-pre-line">{t.faith_or_spiritual_focus}</p>
+                </div>
+              )}
+            </div>
           </Section>
         )}
 
