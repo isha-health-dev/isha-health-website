@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     title: "Support Person Overview | Isha Health",
     description: "Learn about the role of a support person in your ketamine therapy sessions with Isha Health.",
     type: "website",
+    images: ["/images/isha_logo.webp"],
     url: "https://isha.health/support-person-overview",
   },
   twitter: {

@@ -1,13 +1,13 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Online Ketamine Therapy for Depression & Anxiety | Isha Health",
+  title: "Online Ketamine Therapy for Depression &",
   description: "Isha Health offers personalized online ketamine-assisted therapy for depression, anxiety, and PTSD.",
   alternates: {
     canonical: "https://isha.health",
   },
   openGraph: {
-    title: "Online Ketamine Therapy for Depression & Anxiety | Isha Health",
+    title: "Online Ketamine Therapy for Depression &",
     description: "Isha Health offers personalized online ketamine-assisted therapy for depression, anxiety, and PTSD.",
     type: "website",
     url: "https://isha.health",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Online Ketamine Therapy for Depression & Anxiety | Isha Health",
+    title: "Online Ketamine Therapy for Depression &",
     description: "Isha Health offers personalized online ketamine-assisted therapy for depression, anxiety, and PTSD.",
   },
 };

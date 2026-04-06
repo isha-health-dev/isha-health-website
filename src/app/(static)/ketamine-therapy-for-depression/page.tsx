@@ -1,20 +1,21 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Ketamine for Depression - Effective Treatment for Treatment-Resistant Depression | Isha Health",
+  title: "Ketamine for Depression - Effective Treatment",
   description: "Ketamine is a safe and effective medication for treating depression, including treatment-resistant depression.",
   alternates: {
     canonical: "https://isha.health/ketamine-therapy-for-depression",
   },
   openGraph: {
-    title: "Ketamine for Depression - Effective Treatment for Treatment-Resistant Depression | Isha Health",
+    title: "Ketamine for Depression - Effective Treatment",
     description: "Ketamine is a safe and effective medication for treating depression, including treatment-resistant depression.",
     type: "website",
+    images: ["/images/isha_logo.webp"],
     url: "https://isha.health/ketamine-therapy-for-depression",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ketamine for Depression - Effective Treatment for Treatment-Resistant Depression | Isha Health",
+    title: "Ketamine for Depression - Effective Treatment",
     description: "Ketamine is a safe and effective medication for treating depression, including treatment-resistant depression.",
   },
 };

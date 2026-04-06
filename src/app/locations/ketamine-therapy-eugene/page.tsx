@@ -5,14 +5,15 @@ export const metadata: Metadata = {
   description: "Online ketamine-assisted therapy in Eugene, Oregon. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required.",
   alternates: { canonical: "https://isha.health/locations/ketamine-therapy-eugene" },
   openGraph: {
-    title: "At-Home Ketamine Therapy in Eugene, OR | Isha Health",
+    title: "At-Home Ketamine Therapy in Eugene, OR | Isha",
     description: "Online ketamine-assisted therapy in Eugene, Oregon. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required.",
     type: "website",
+    images: ["/images/isha_logo.webp"],
     url: "https://isha.health/locations/ketamine-therapy-eugene",
   },
   twitter: {
     card: "summary_large_image",
-    title: "At-Home Ketamine Therapy in Eugene, OR | Isha Health",
+    title: "At-Home Ketamine Therapy in Eugene, OR | Isha",
     description: "Online ketamine-assisted therapy in Eugene, Oregon. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required.",
   },
 };

@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     title: "Privacy Policy",
     description: "At ISHA Health, we are committed to protecting your privacy. Learn more about our privacy policy and how we keep your information safe and secure when you",
     type: "website",
+    images: ["/images/isha_logo.webp"],
     url: "https://isha.health/privacy-policy",
   },
   twitter: {

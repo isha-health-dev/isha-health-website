@@ -1,20 +1,20 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "About ISHA Health: Online Ketamine Therapy Provider",
+  title: "About ISHA Health: Online Ketamine Therapy",
   description: "Learn more about ISHA Health, the leading provider of online ketamine therapy for depression and anxiety.",
   alternates: {
     canonical: "https://isha.health/about-us/about-isha-health",
   },
   openGraph: {
-    title: "About ISHA Health: Online Ketamine Therapy Provider",
+    title: "About ISHA Health: Online Ketamine Therapy",
     description: "Learn more about ISHA Health, the leading provider of online ketamine therapy for depression and anxiety.",
     type: "website",
     url: "https://isha.health/about-us/about-isha-health",
   },
   twitter: {
     card: "summary_large_image",
-    title: "About ISHA Health: Online Ketamine Therapy Provider",
+    title: "About ISHA Health: Online Ketamine Therapy",
     description: "Learn more about ISHA Health, the leading provider of online ketamine therapy for depression and anxiety.",
   },
 };

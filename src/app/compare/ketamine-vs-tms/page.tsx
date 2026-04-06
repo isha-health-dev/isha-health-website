@@ -1,18 +1,19 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Ketamine vs TMS: Which Treatment Is Right for You? | Isha Health",
+  title: "Ketamine vs TMS: Which Treatment Is Right for",
   description: "Compare ketamine therapy and transcranial magnetic stimulation (TMS) for depression.",
   alternates: { canonical: "https://isha.health/compare/ketamine-vs-tms" },
   openGraph: {
-    title: "Ketamine vs TMS: Which Treatment Is Right for You? | Isha Health",
+    title: "Ketamine vs TMS: Which Treatment Is Right for",
     description: "Compare ketamine therapy and transcranial magnetic stimulation (TMS) for depression.",
     type: "website",
+    images: ["/images/isha_logo.webp"],
     url: "https://isha.health/compare/ketamine-vs-tms",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ketamine vs TMS: Which Treatment Is Right for You? | Isha Health",
+    title: "Ketamine vs TMS: Which Treatment Is Right for",
     description: "Compare ketamine therapy and transcranial magnetic stimulation (TMS) for depression.",
   },
 };

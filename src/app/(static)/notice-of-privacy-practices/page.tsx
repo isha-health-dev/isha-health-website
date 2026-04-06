@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     title: "Notice of Privacy Practices | Isha Health",
     description: "Learn more about ISHA Health, the leading provider of online ketamine therapy for depression and anxiety.",
     type: "website",
+    images: ["/images/isha_logo.webp"],
     url: "https://isha.health/notice-of-privacy-practices",
   },
   twitter: {

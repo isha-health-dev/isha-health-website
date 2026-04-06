@@ -1,20 +1,21 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "What is Ketamine Assisted Therapy | Isha Health",
+  title: "What is Ketamine Assisted Therapy | Isha",
   description: "Ketamine assisted psychotherapy can be a faster and more effective treatment for depression, anxiety, PTSD, and other mental health conditions.",
   alternates: {
     canonical: "https://isha.health/what-is-ketamine-assisted-therapy",
   },
   openGraph: {
-    title: "What is Ketamine Assisted Therapy | Isha Health",
+    title: "What is Ketamine Assisted Therapy | Isha",
     description: "Ketamine assisted psychotherapy can be a faster and more effective treatment for depression, anxiety, PTSD, and other mental health conditions.",
     type: "website",
+    images: ["/images/isha_logo.webp"],
     url: "https://isha.health/what-is-ketamine-assisted-therapy",
   },
   twitter: {
     card: "summary_large_image",
-    title: "What is Ketamine Assisted Therapy | Isha Health",
+    title: "What is Ketamine Assisted Therapy | Isha",
     description: "Ketamine assisted psychotherapy can be a faster and more effective treatment for depression, anxiety, PTSD, and other mental health conditions.",
   },
 };

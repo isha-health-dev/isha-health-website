@@ -5,14 +5,15 @@ export const metadata: Metadata = {
   description: "Online ketamine-assisted therapy in Buffalo, New York. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required.",
   alternates: { canonical: "https://isha.health/locations/ketamine-therapy-buffalo" },
   openGraph: {
-    title: "At-Home Ketamine Therapy in Buffalo, NY | Isha Health",
+    title: "At-Home Ketamine Therapy in Buffalo, NY |",
     description: "Online ketamine-assisted therapy in Buffalo, New York. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required.",
     type: "website",
+    images: ["/images/isha_logo.webp"],
     url: "https://isha.health/locations/ketamine-therapy-buffalo",
   },
   twitter: {
     card: "summary_large_image",
-    title: "At-Home Ketamine Therapy in Buffalo, NY | Isha Health",
+    title: "At-Home Ketamine Therapy in Buffalo, NY |",
     description: "Online ketamine-assisted therapy in Buffalo, New York. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required.",
   },
 };

@@ -1,18 +1,19 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Ketamine vs ECT (Electroconvulsive Therapy): Which Is Right for You? | Isha Health",
+  title: "Ketamine vs ECT (Electroconvulsive Therapy)",
   description: "Compare ketamine therapy and electroconvulsive therapy (ECT) for treatment-resistant depression.",
   alternates: { canonical: "https://isha.health/compare/ketamine-vs-ect" },
   openGraph: {
-    title: "Ketamine vs ECT (Electroconvulsive Therapy): Which Is Right for You? | Isha Health",
+    title: "Ketamine vs ECT (Electroconvulsive Therapy)",
     description: "Compare ketamine therapy and electroconvulsive therapy (ECT) for treatment-resistant depression.",
     type: "website",
+    images: ["/images/isha_logo.webp"],
     url: "https://isha.health/compare/ketamine-vs-ect",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ketamine vs ECT (Electroconvulsive Therapy): Which Is Right for You? | Isha Health",
+    title: "Ketamine vs ECT (Electroconvulsive Therapy)",
     description: "Compare ketamine therapy and electroconvulsive therapy (ECT) for treatment-resistant depression.",
   },
 };

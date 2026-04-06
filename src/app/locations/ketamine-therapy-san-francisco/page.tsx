@@ -5,14 +5,15 @@ export const metadata: Metadata = {
   description: "Online ketamine-assisted therapy in San Francisco, California. Physician-led at-home treatment for depression, anxiety, and PTSD.",
   alternates: { canonical: "https://isha.health/locations/ketamine-therapy-san-francisco" },
   openGraph: {
-    title: "At-Home Ketamine Therapy in San Francisco, CA | Isha Health",
+    title: "At-Home Ketamine Therapy in San Francisco, CA",
     description: "Online ketamine-assisted therapy in San Francisco, California. Physician-led at-home treatment for depression, anxiety, and PTSD.",
     type: "website",
+    images: ["/images/isha_logo.webp"],
     url: "https://isha.health/locations/ketamine-therapy-san-francisco",
   },
   twitter: {
     card: "summary_large_image",
-    title: "At-Home Ketamine Therapy in San Francisco, CA | Isha Health",
+    title: "At-Home Ketamine Therapy in San Francisco, CA",
     description: "Online ketamine-assisted therapy in San Francisco, California. Physician-led at-home treatment for depression, anxiety, and PTSD.",
   },
 };

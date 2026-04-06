@@ -5,14 +5,15 @@ export const metadata: Metadata = {
   description: "Online ketamine-assisted therapy in El Paso, Texas. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required.",
   alternates: { canonical: "https://isha.health/locations/ketamine-therapy-el-paso" },
   openGraph: {
-    title: "At-Home Ketamine Therapy in El Paso, TX | Isha Health",
+    title: "At-Home Ketamine Therapy in El Paso, TX |",
     description: "Online ketamine-assisted therapy in El Paso, Texas. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required.",
     type: "website",
+    images: ["/images/isha_logo.webp"],
     url: "https://isha.health/locations/ketamine-therapy-el-paso",
   },
   twitter: {
     card: "summary_large_image",
-    title: "At-Home Ketamine Therapy in El Paso, TX | Isha Health",
+    title: "At-Home Ketamine Therapy in El Paso, TX |",
     description: "Online ketamine-assisted therapy in El Paso, Texas. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required.",
   },
 };

@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     title: "Safety Information for ketamine treatment",
     description: "Learn about the safety guidelines and important precautions for ketamine treatment at Isha Health.",
     type: "website",
+    images: ["/images/isha_logo.webp"],
     url: "https://isha.health/safety-information-for-ketamine-treatment",
   },
   twitter: {

@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     title: "Refund Policy",
     description: "By using ISHA Health's online ketamine therapy services, you agree to our terms of use.",
     type: "website",
+    images: ["/images/isha_logo.webp"],
     url: "https://isha.health/refund-policy",
   },
   twitter: {

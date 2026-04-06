@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     title: "Healing Music Playlist | Isha Health",
     description: "Relax and enhance your ketamine therapy experience with our carefully curated healing music playlist.",
     type: "website",
+    images: ["/images/isha_logo.webp"],
     url: "https://isha.health/healing-music-playlist",
   },
   twitter: {

@@ -1,18 +1,18 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "How to Choose a Ketamine Therapy Provider | Isha Health",
+  title: "How to Choose a Ketamine Therapy Provider |",
   description: "A comprehensive guide to choosing the right ketamine therapy provider. Learn about credentials, red flags, cost transparency, at-home vs clinic options,",
   alternates: { canonical: "https://isha.health/guide/choosing-ketamine-provider" },
   openGraph: {
-    title: "How to Choose a Ketamine Therapy Provider | Isha Health",
+    title: "How to Choose a Ketamine Therapy Provider |",
     description: "A comprehensive guide to choosing the right ketamine therapy provider. Learn about credentials, red flags, cost transparency, at-home vs clinic options,",
     type: "website",
     url: "https://isha.health/guide/choosing-ketamine-provider",
   },
   twitter: {
     card: "summary_large_image",
-    title: "How to Choose a Ketamine Therapy Provider | Isha Health",
+    title: "How to Choose a Ketamine Therapy Provider |",
     description: "A comprehensive guide to choosing the right ketamine therapy provider. Learn about credentials, red flags, cost transparency, at-home vs clinic options,",
   },
 };

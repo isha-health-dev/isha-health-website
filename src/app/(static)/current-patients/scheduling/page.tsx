@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     title: "Appointment Scheduling for Current Patients",
     description: "For current patients: Schedule your follow-up appointments quickly and easily with Isha Health. Manage your healthcare online in just a few clicks.",
     type: "website",
+    images: ["/images/isha_logo.webp"],
     url: "https://isha.health/current-patients/scheduling",
   },
   twitter: {

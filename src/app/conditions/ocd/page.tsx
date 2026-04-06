@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     title: "Ketamine Therapy for OCD | Isha Health",
     description: "Emerging evidence suggests ketamine may help reduce OCD symptoms when standard treatments have not been effective.",
     type: "website",
+    images: ["/images/isha_logo.webp"],
     url: "https://isha.health/conditions/ocd",
   },
   twitter: {

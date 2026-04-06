@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     title: "Good Faith Estimate",
     description: "At ISHA Health, we are committed to protecting your privacy. Learn more about our privacy policy and how we keep your information safe and secure when you",
     type: "website",
+    images: ["/images/isha_logo.webp"],
     url: "https://isha.health/good-faith-estimate",
   },
   twitter: {

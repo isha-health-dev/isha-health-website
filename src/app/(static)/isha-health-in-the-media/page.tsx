@@ -1,20 +1,20 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "ISHA Health Press - Online Ketamine Therapy for Depression & Anxiety",
+  title: "ISHA Health Press - Online Ketamine Therapy",
   description: "ISHA Health has been featured in a variety of news outlets and publications for our innovative approach to online ketamine therapy for depression and",
   alternates: {
     canonical: "https://isha.health/isha-health-in-the-media",
   },
   openGraph: {
-    title: "ISHA Health Press - Online Ketamine Therapy for Depression & Anxiety",
+    title: "ISHA Health Press - Online Ketamine Therapy",
     description: "ISHA Health has been featured in a variety of news outlets and publications for our innovative approach to online ketamine therapy for depression and",
     type: "website",
     url: "https://isha.health/isha-health-in-the-media",
   },
   twitter: {
     card: "summary_large_image",
-    title: "ISHA Health Press - Online Ketamine Therapy for Depression & Anxiety",
+    title: "ISHA Health Press - Online Ketamine Therapy",
     description: "ISHA Health has been featured in a variety of news outlets and publications for our innovative approach to online ketamine therapy for depression and",
   },
 };

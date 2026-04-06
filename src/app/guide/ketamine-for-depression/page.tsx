@@ -1,18 +1,18 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Ketamine for Depression: A Complete Guide | Isha Health",
+  title: "Ketamine for Depression: A Complete Guide |",
   description: "Learn how ketamine therapy may help treatment-resistant depression. Covers clinical evidence, how it works differently, oral vs IV options, timelines, and",
   alternates: { canonical: "https://isha.health/guide/ketamine-for-depression" },
   openGraph: {
-    title: "Ketamine for Depression: A Complete Guide | Isha Health",
+    title: "Ketamine for Depression: A Complete Guide |",
     description: "Learn how ketamine therapy may help treatment-resistant depression. Covers clinical evidence, how it works differently, oral vs IV options, timelines, and",
     type: "website",
     url: "https://isha.health/guide/ketamine-for-depression",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ketamine for Depression: A Complete Guide | Isha Health",
+    title: "Ketamine for Depression: A Complete Guide |",
     description: "Learn how ketamine therapy may help treatment-resistant depression. Covers clinical evidence, how it works differently, oral vs IV options, timelines, and",
   },
 };

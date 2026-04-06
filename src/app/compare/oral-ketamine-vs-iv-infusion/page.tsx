@@ -1,18 +1,19 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Oral Ketamine vs IV Ketamine Infusion: Which Is Right for You? | Isha Health",
+  title: "Oral Ketamine vs IV Ketamine Infusion: Which",
   description: "Compare oral (sublingual) ketamine with IV ketamine infusions. Understand differences in bioavailability, convenience, cost, clinical evidence, and which",
   alternates: { canonical: "https://isha.health/compare/oral-ketamine-vs-iv-infusion" },
   openGraph: {
-    title: "Oral Ketamine vs IV Ketamine Infusion: Which Is Right for You? | Isha Health",
+    title: "Oral Ketamine vs IV Ketamine Infusion: Which",
     description: "Compare oral (sublingual) ketamine with IV ketamine infusions. Understand differences in bioavailability, convenience, cost, clinical evidence, and which",
     type: "website",
+    images: ["/images/isha_logo.webp"],
     url: "https://isha.health/compare/oral-ketamine-vs-iv-infusion",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Oral Ketamine vs IV Ketamine Infusion: Which Is Right for You? | Isha Health",
+    title: "Oral Ketamine vs IV Ketamine Infusion: Which",
     description: "Compare oral (sublingual) ketamine with IV ketamine infusions. Understand differences in bioavailability, convenience, cost, clinical evidence, and which",
   },
 };

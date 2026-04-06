@@ -5,14 +5,15 @@ export const metadata: Metadata = {
   description: "Online ketamine-assisted therapy in Bend, Oregon. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required.",
   alternates: { canonical: "https://isha.health/locations/ketamine-therapy-bend" },
   openGraph: {
-    title: "At-Home Ketamine Therapy in Bend, OR | Isha Health",
+    title: "At-Home Ketamine Therapy in Bend, OR | Isha",
     description: "Online ketamine-assisted therapy in Bend, Oregon. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required.",
     type: "website",
+    images: ["/images/isha_logo.webp"],
     url: "https://isha.health/locations/ketamine-therapy-bend",
   },
   twitter: {
     card: "summary_large_image",
-    title: "At-Home Ketamine Therapy in Bend, OR | Isha Health",
+    title: "At-Home Ketamine Therapy in Bend, OR | Isha",
     description: "Online ketamine-assisted therapy in Bend, Oregon. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required.",
   },
 };

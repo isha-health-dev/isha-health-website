@@ -5,14 +5,15 @@ export const metadata: Metadata = {
   description: "Online ketamine-assisted therapy in St Petersburg, Florida. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required.",
   alternates: { canonical: "https://isha.health/locations/ketamine-therapy-st-petersburg" },
   openGraph: {
-    title: "At-Home Ketamine Therapy in St Petersburg, FL | Isha Health",
+    title: "At-Home Ketamine Therapy in St Petersburg, FL",
     description: "Online ketamine-assisted therapy in St Petersburg, Florida. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required.",
     type: "website",
+    images: ["/images/isha_logo.webp"],
     url: "https://isha.health/locations/ketamine-therapy-st-petersburg",
   },
   twitter: {
     card: "summary_large_image",
-    title: "At-Home Ketamine Therapy in St Petersburg, FL | Isha Health",
+    title: "At-Home Ketamine Therapy in St Petersburg, FL",
     description: "Online ketamine-assisted therapy in St Petersburg, Florida. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required.",
   },
 };

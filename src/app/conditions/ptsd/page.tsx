@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     title: "Ketamine Therapy for PTSD | Isha Health",
     description: "Ketamine may offer rapid relief for PTSD symptoms when traditional treatments have not worked.",
     type: "website",
+    images: ["/images/isha_logo.webp"],
     url: "https://isha.health/conditions/ptsd",
   },
   twitter: {

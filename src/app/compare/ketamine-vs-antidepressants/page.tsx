@@ -1,18 +1,19 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Ketamine vs Antidepressants (SSRIs/SNRIs): Which Is Right for You? | Isha Health",
+  title: "Ketamine vs Antidepressants (SSRIs/SNRIs)",
   description: "Compare ketamine therapy with traditional antidepressants like SSRIs and SNRIs. Learn about speed of relief, mechanisms, side effects, and when each",
   alternates: { canonical: "https://isha.health/compare/ketamine-vs-antidepressants" },
   openGraph: {
-    title: "Ketamine vs Antidepressants (SSRIs/SNRIs): Which Is Right for You? | Isha Health",
+    title: "Ketamine vs Antidepressants (SSRIs/SNRIs)",
     description: "Compare ketamine therapy with traditional antidepressants like SSRIs and SNRIs. Learn about speed of relief, mechanisms, side effects, and when each",
     type: "website",
+    images: ["/images/isha_logo.webp"],
     url: "https://isha.health/compare/ketamine-vs-antidepressants",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ketamine vs Antidepressants (SSRIs/SNRIs): Which Is Right for You? | Isha Health",
+    title: "Ketamine vs Antidepressants (SSRIs/SNRIs)",
     description: "Compare ketamine therapy with traditional antidepressants like SSRIs and SNRIs. Learn about speed of relief, mechanisms, side effects, and when each",
   },
 };

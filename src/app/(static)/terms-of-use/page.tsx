@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     title: "Terms of Use",
     description: "By using ISHA Health's online ketamine therapy services, you agree to our terms of use.",
     type: "website",
+    images: ["/images/isha_logo.webp"],
     url: "https://isha.health/terms-of-use",
   },
   twitter: {

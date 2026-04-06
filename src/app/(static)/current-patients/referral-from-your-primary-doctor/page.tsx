@@ -1,20 +1,20 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Get a Referral for Ketamine Therapy from Your Doctor",
+  title: "Get a Referral for Ketamine Therapy from Your",
   description: "If you're interested in ketamine therapy, learn how to get a referral from your doctor to our online clinic for at-home treatment.",
   alternates: {
     canonical: "https://isha.health/current-patients/referral-from-your-primary-doctor",
   },
   openGraph: {
-    title: "Get a Referral for Ketamine Therapy from Your Doctor",
+    title: "Get a Referral for Ketamine Therapy from Your",
     description: "If you're interested in ketamine therapy, learn how to get a referral from your doctor to our online clinic for at-home treatment.",
     type: "website",
     url: "https://isha.health/current-patients/referral-from-your-primary-doctor",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Get a Referral for Ketamine Therapy from Your Doctor",
+    title: "Get a Referral for Ketamine Therapy from Your",
     description: "If you're interested in ketamine therapy, learn how to get a referral from your doctor to our online clinic for at-home treatment.",
   },
 };

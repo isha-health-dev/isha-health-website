@@ -5,14 +5,15 @@ export const metadata: Metadata = {
   description: "Online ketamine-assisted therapy in San Antonio, Texas. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required.",
   alternates: { canonical: "https://isha.health/locations/ketamine-therapy-san-antonio" },
   openGraph: {
-    title: "At-Home Ketamine Therapy in San Antonio, TX | Isha Health",
+    title: "At-Home Ketamine Therapy in San Antonio, TX |",
     description: "Online ketamine-assisted therapy in San Antonio, Texas. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required.",
     type: "website",
+    images: ["/images/isha_logo.webp"],
     url: "https://isha.health/locations/ketamine-therapy-san-antonio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "At-Home Ketamine Therapy in San Antonio, TX | Isha Health",
+    title: "At-Home Ketamine Therapy in San Antonio, TX |",
     description: "Online ketamine-assisted therapy in San Antonio, Texas. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required.",
   },
 };
