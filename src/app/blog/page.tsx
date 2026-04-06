@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getAllBlogPosts } from '@/lib/blog';
+import { NewsletterForm } from '../newsletter-form';
 
 const POSTS_PER_PAGE = 12;
 
@@ -381,6 +382,43 @@ export default function BlogPage({
         >
           Page {currentPage} of {totalPages}
         </p>
+
+        {/* Newsletter signup */}
+        <div
+          style={{
+            marginTop: '3rem',
+            padding: '2rem',
+            backgroundColor: '#f0fdfa',
+            borderRadius: '12px',
+            border: '1px solid #ccfbf1',
+            textAlign: 'center',
+          }}
+        >
+          <p
+            style={{
+              fontFamily: "'Libre Baskerville', serif",
+              fontSize: '1.1rem',
+              fontWeight: 700,
+              color: '#0f766e',
+              marginBottom: '0.5rem',
+            }}
+          >
+            Get new articles in your inbox
+          </p>
+          <p
+            style={{
+              fontFamily: "'Poppins', sans-serif",
+              fontSize: '0.85rem',
+              color: '#4b5563',
+              marginBottom: '1rem',
+            }}
+          >
+            Research updates and clinical insights on ketamine therapy — no spam.
+          </p>
+          <div style={{ maxWidth: '400px', margin: '0 auto' }}>
+            <NewsletterForm variant="blog" />
+          </div>
+        </div>
       </div>
     </div>
   );

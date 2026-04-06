@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
 import './globals.css';
+import { NewsletterForm } from './newsletter-form';
 
 export const metadata: Metadata = {
   title: {
@@ -130,6 +131,39 @@ gtag('config', 'AW-16993591045');`,
           dangerouslySetInnerHTML={{ __html: navbarHtml }}
         />
         {children}
+        {/* Newsletter signup */}
+        <div
+          style={{
+            backgroundColor: '#1a1a2e',
+            padding: '2.5rem 1.5rem',
+            textAlign: 'center',
+          }}
+        >
+          <div style={{ maxWidth: '500px', margin: '0 auto' }}>
+            <p
+              style={{
+                color: '#fff',
+                fontFamily: "'Libre Baskerville', serif",
+                fontSize: '1.1rem',
+                fontWeight: 700,
+                marginBottom: '0.5rem',
+              }}
+            >
+              Stay informed on ketamine therapy
+            </p>
+            <p
+              style={{
+                color: '#9ca3af',
+                fontFamily: "'Poppins', sans-serif",
+                fontSize: '0.85rem',
+                marginBottom: '1rem',
+              }}
+            >
+              Research updates, clinical insights, and mental health resources — delivered to your inbox.
+            </p>
+            <NewsletterForm variant="footer" />
+          </div>
+        </div>
         <div
           dangerouslySetInnerHTML={{ __html: footerHtml }}
         />
