@@ -20,6 +20,7 @@ interface TherapistProfile {
   visit_type: string | null;
   mental_health_role: string | null;
   fee: string | null;
+  profile_pic: string | null;
   sliding_scale: boolean;
   lgbtq_affirmative: boolean;
   city: string | null;
@@ -256,6 +257,77 @@ export default function DashboardPage() {
         <button onClick={handleLogout} style={{ color: '#6b7280', background: 'none', border: '1px solid #d1d5db', borderRadius: '6px', padding: '0.4rem 1rem', cursor: 'pointer', fontSize: '0.85rem' }}>
           Sign Out
         </button>
+      </div>
+
+      {/* Profile Photo */}
+      <div style={sectionStyle}>
+        <h2 style={{ fontSize: '1.1rem', fontWeight: 600, color: '#111827', marginBottom: '1rem' }}>Profile Photo</h2>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
+          {profile.profile_pic ? (
+            <img
+              src={profile.profile_pic}
+              alt="Profile"
+              style={{ width: '100px', height: '100px', borderRadius: '50%', objectFit: 'cover' }}
+            />
+          ) : (
+            <div style={{ width: '100px', height: '100px', borderRadius: '50%', backgroundColor: '#ccfbf1', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <span style={{ fontSize: '2rem', color: '#0f766e', fontWeight: 700 }}>
+                {profile.first_name?.[0]}{profile.last_name?.[0]}
+              </span>
+            </div>
+          )}
+          <div>
+            <label
+              style={{
+                display: 'inline-block',
+                padding: '0.5rem 1.25rem',
+                backgroundColor: '#0d9488',
+                color: '#fff',
+                borderRadius: '6px',
+                cursor: 'pointer',
+                fontSize: '0.85rem',
+                fontWeight: 600,
+              }}
+            >
+              Upload Photo
+              <input
+                type="file"
+                accept="image/*"
+                style={{ display: 'none' }}
+                onChange={async (e) => {
+                  const file = e.target.files?.[0];
+                  if (!file) return;
+                  if (file.size > 5 * 1024 * 1024) {
+                    setError('Image must be under 5MB');
+                    return;
+                  }
+                  setMessage('Uploading photo...');
+                  const ext = file.name.split('.').pop();
+                  const path = `profile-images/${profile.id}/profile-${Date.now()}.${ext}`;
+                  const { error: uploadError } = await supabase.storage
+                    .from('therapist-media')
+                    .upload(path, file, { upsert: true });
+                  if (uploadError) {
+                    setError('Upload failed: ' + uploadError.message);
+                    setMessage('');
+                    return;
+                  }
+                  const { data: urlData } = supabase.storage
+                    .from('therapist-media')
+                    .getPublicUrl(path);
+                  const publicUrl = urlData.publicUrl;
+                  await supabase
+                    .from('therapist')
+                    .update({ profile_pic: publicUrl })
+                    .eq('id', profile.id);
+                  setProfile({ ...profile, profile_pic: publicUrl });
+                  setMessage('Photo updated!');
+                }}
+              />
+            </label>
+            <p style={{ fontSize: '0.75rem', color: '#9ca3af', marginTop: '0.35rem' }}>JPG, PNG, or WebP. Max 5MB.</p>
+          </div>
+        </div>
       </div>
 
       <form onSubmit={handleSave}>
