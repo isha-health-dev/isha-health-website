@@ -30,9 +30,9 @@ export default function SuperbillPage() {
       </a>
 
       <!-- Email request -->
-      <a href="mailto:info@isha.health?subject=Superbill%20Request&body=Hi%2C%20I'd%20like%20to%20request%20a%20superbill.%0A%0AName%3A%20%0ADate%20range%3A%20" style="flex:1 1 280px;max-width:320px;padding:2rem;border:1px solid #e5e7eb;border-radius:12px;text-decoration:none;text-align:center;background:#fff;">
+      <a href="mailto:info@isha.health?subject=Superbill%20Request&body=Hi%2C%20I'd%20like%20to%20request%20a%20superbill.%0A%0APatient%20name%3A%20%0ADate%20of%20birth%3A%20%0AVisit%20date(s)%3A%20%0AClinician%20name%3A%20" style="flex:1 1 280px;max-width:320px;padding:2rem;border:1px solid #e5e7eb;border-radius:12px;text-decoration:none;text-align:center;background:#fff;">
         <p style="font-family:'Libre Baskerville',serif;font-size:1.15rem;font-weight:700;color:#111827;margin-bottom:0.5rem;">Request via Email</p>
-        <p style="font-family:'Poppins',sans-serif;font-size:0.85rem;color:#4b5563;line-height:1.5;">Email info@isha.health with your name and service dates. We'll send your superbill within 1-2 business days.</p>
+        <p style="font-family:'Poppins',sans-serif;font-size:0.85rem;color:#4b5563;line-height:1.5;">Email info@isha.health with your name, date of birth, visit dates, and clinician name. We'll send your superbill within 1-2 business days.</p>
         <p style="font-family:'Poppins',sans-serif;font-size:0.85rem;color:#0d9488;font-weight:600;margin-top:1rem;">Send email →</p>
       </a>
 
