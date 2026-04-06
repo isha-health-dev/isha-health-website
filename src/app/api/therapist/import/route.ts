@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 
 export async function POST(request: NextRequest) {
   try {
@@ -82,27 +82,24 @@ For treatment_approach, summarize their therapeutic philosophy in 2-3 sentences.
 Webpage text:
 ${pageText}`;
 
-    const claudeRes = await fetch('https://api.anthropic.com/v1/messages', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'x-api-key': ANTHROPIC_API_KEY || '',
-        'anthropic-version': '2023-06-01',
-      },
-      body: JSON.stringify({
-        model: 'claude-sonnet-4-20250514',
-        max_tokens: 2000,
-        messages: [{ role: 'user', content: prompt }],
-      }),
-    });
+    const geminiRes = await fetch(
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_API_KEY}`,
+      {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          contents: [{ parts: [{ text: prompt }] }],
+        }),
+      }
+    );
 
-    if (!claudeRes.ok) {
-      const err = await claudeRes.text();
+    if (!geminiRes.ok) {
+      const err = await geminiRes.text();
       return NextResponse.json({ error: 'AI extraction failed', details: err }, { status: 500 });
     }
 
-    const claudeData = await claudeRes.json();
-    const text = claudeData.content?.[0]?.text || '';
+    const geminiData = await geminiRes.json();
+    const text = geminiData.candidates?.[0]?.content?.parts?.[0]?.text || '';
 
     // Parse JSON from response
     const jsonMatch = text.match(/\{[\s\S]*\}/);

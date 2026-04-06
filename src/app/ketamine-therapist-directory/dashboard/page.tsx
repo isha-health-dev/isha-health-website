@@ -360,6 +360,96 @@ export default function DashboardPage() {
         </div>
       </div>
 
+      {/* Import from website */}
+      <div style={sectionStyle}>
+        <h2 style={{ fontSize: '1.1rem', fontWeight: 600, color: '#111827', marginBottom: '0.5rem' }}>Import from Website</h2>
+        <p style={{ fontSize: '0.8rem', color: '#6b7280', marginBottom: '0.75rem' }}>
+          Paste your Psychology Today or practice website URL to auto-fill your profile.
+        </p>
+        <div style={{ display: 'flex', gap: '0.5rem' }}>
+          <input
+            type="url"
+            placeholder="https://www.psychologytoday.com/us/therapists/..."
+            style={{ ...inputStyle, flex: 1 }}
+            id="import-url"
+          />
+          <button
+            type="button"
+            onClick={async () => {
+              const urlInput = document.getElementById('import-url') as HTMLInputElement;
+              const url = urlInput?.value;
+              if (!url) return;
+              setMessage('Importing profile data...');
+              setError('');
+              try {
+                const res = await fetch('/api/therapist/import', {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify({ url }),
+                });
+                const data = await res.json();
+                if (!data.success || !data.data) {
+                  setError('Import failed: ' + (data.error || 'Unknown error'));
+                  setMessage('');
+                  return;
+                }
+                const d = data.data;
+                setProfile((prev) => {
+                  if (!prev) return prev;
+                  return {
+                    ...prev,
+                    bio: d.bio || prev.bio,
+                    welcome_message: d.welcome_message || prev.welcome_message,
+                    treatment_approach: d.treatment_approach || prev.treatment_approach,
+                    education: d.education || prev.education,
+                    years_in_practice: d.years_in_practice || prev.years_in_practice,
+                    session_formats: d.session_formats || prev.session_formats,
+                    typical_session_length: d.typical_session_length || prev.typical_session_length,
+                    fee: d.fee || prev.fee,
+                    sliding_scale: d.sliding_scale ?? prev.sliding_scale,
+                    accepting_new_clients: d.accepting_new_clients ?? prev.accepting_new_clients,
+                    free_consultation: d.free_consultation ?? prev.free_consultation,
+                    evening_weekend_availability: d.evening_weekend_availability ?? prev.evening_weekend_availability,
+                    lgbtq_affirmative: d.lgbtq_affirmative ?? prev.lgbtq_affirmative,
+                    phone: d.phone || prev.phone,
+                    city: d.city || prev.city,
+                    state: d.state || prev.state,
+                    street_address: d.street_address || prev.street_address,
+                    booking_url: d.booking_url || prev.booking_url,
+                    telehealth_platform: d.telehealth_platform || prev.telehealth_platform,
+                    publications: d.publications || prev.publications,
+                    professional_memberships: d.professional_memberships || prev.professional_memberships,
+                    client_focus: d.client_focus || prev.client_focus,
+                    cultural_focus: d.cultural_focus || prev.cultural_focus,
+                    faith_or_spiritual_focus: d.faith_or_spiritual_focus || prev.faith_or_spiritual_focus,
+                    instagram_url: d.instagram_url || prev.instagram_url,
+                    linkedin_url: d.linkedin_url || prev.linkedin_url,
+                  };
+                });
+                setMessage('Profile data imported! Review below and click Save.');
+              } catch {
+                setError('Import failed. Please try again.');
+                setMessage('');
+              }
+            }}
+            style={{
+              padding: '0.6rem 1.25rem',
+              backgroundColor: '#0d9488',
+              color: '#fff',
+              border: 'none',
+              borderRadius: '6px',
+              cursor: 'pointer',
+              fontSize: '0.85rem',
+              fontWeight: 600,
+              fontFamily: 'inherit',
+              whiteSpace: 'nowrap',
+            }}
+          >
+            Import
+          </button>
+        </div>
+      </div>
+
       <form onSubmit={handleSave}>
         {/* Basic Info */}
         <div style={sectionStyle}>
