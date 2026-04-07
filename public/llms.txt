@@ -11,6 +11,7 @@ Isha Health is a telehealth practice offering personalized ketamine-assisted the
 - Complete Guide: https://isha.health/guide/ketamine-therapy
 - Depression Guide: https://isha.health/guide/ketamine-for-depression
 - Provider Guide: https://isha.health/guide/choosing-ketamine-provider
+- Clinical Outcomes: https://isha.health/outcomes
 - Blog: https://isha.health/blog
 - Resources: https://isha.health/resources
 - Clinician Directory: https://isha.health/ketamine-therapist-directory
@@ -44,7 +45,10 @@ Isha Health is a telehealth practice offering personalized ketamine-assisted the
 - HSA/FSA accepted
 - Available in 9 states: AZ, CA, CO, FL, GA, NY, OR, TX, WA
 - 195 clinicians in the directory
-- 86% positive response rate in patients with moderate to severe symptoms
+- 88.79% improvement rate across 546 patients with moderate-to-severe depression (PHQ-9 validated)
+- 92.64% of anxiety patients reach minimal anxiety levels (GAD-7 validated)
+- 99.1% patient retention rate, 128-day average treatment duration
+- Full outcomes data: https://isha.health/outcomes
 - No in-person visit required — fully telehealth
 
 ## Contact

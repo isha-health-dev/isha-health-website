@@ -317,6 +317,13 @@ export default function Page() {
     </div>
 
     <!-- Related Guides -->
+    <div style="max-width:800px;margin:2rem auto;padding:0 1.5rem;">
+      <div style="background:#fff;border:1px solid #ccfbf1;border-radius:10px;padding:1.25rem 1.5rem;text-align:center;">
+        <p style="font-family:'Poppins',sans-serif;font-size:0.95rem;color:#0f766e;font-weight:600;margin-bottom:0.25rem;">88.8% of Isha Health patients with moderate-to-severe depression show measurable improvement</p>
+        <p style="font-family:'Poppins',sans-serif;font-size:0.8rem;color:#6b7280;">Based on PHQ-9 assessments across 546 patients. <a href="/outcomes" style="color:#0d9488;text-decoration:underline;">See our full clinical outcomes report →</a></p>
+      </div>
+    </div>
+
     <div style="background-color:#f9fafb;border-radius:12px;padding:2rem;margin-top:3rem;">
       <h2 style="font-family:'Libre Baskerville',serif;font-size:1.2rem;font-weight:700;color:#111827;margin-bottom:1rem;">Related Guides</h2>
       <ul style="font-family:'Source Sans Pro','Poppins',sans-serif;font-size:0.95rem;line-height:2.2;padding-left:1.25rem;color:#374151;">

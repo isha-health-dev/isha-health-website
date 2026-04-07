@@ -110,6 +110,12 @@ export default function PricingPage() {
       </div>
     </div>
 
+    <!-- Outcomes callout -->
+    <div style="margin-top:2rem;background:#f0fdfa;border:1px solid #ccfbf1;border-radius:10px;padding:1.25rem 1.5rem;text-align:center;">
+      <p style="font-family:'Poppins',sans-serif;font-size:0.95rem;color:#0f766e;font-weight:600;margin-bottom:0.25rem;">88.8% of our patients with moderate-to-severe depression show measurable improvement</p>
+      <p style="font-family:'Poppins',sans-serif;font-size:0.8rem;color:#6b7280;">Based on 546 patients and 1,900+ validated assessments. <a href="/outcomes" style="color:#0d9488;text-decoration:underline;">See our clinical outcomes →</a></p>
+    </div>
+
     <!-- Medication note -->
     <p style="text-align:center;font-family:'Poppins',sans-serif;font-size:0.85rem;color:#6b7280;margin-top:1.5rem;text-wrap:pretty;">
       Medication cost is separate — typically $50–150 for a 30-day supply, depending on your pharmacy. If you have a preferred pharmacy, we can send the prescription there.
@@ -139,7 +145,7 @@ export default function PricingPage() {
         <div style="flex:1 1 250px;background:#fff;border-radius:10px;padding:1.5rem;border:1px solid #e5e7eb;">
           <p style="font-size:1.5rem;margin-bottom:0.5rem;">📊</p>
           <h3 style="font-family:'Poppins',sans-serif;font-size:1rem;font-weight:600;color:#111827;margin-bottom:0.5rem;">Continuous Monitoring</h3>
-          <p style="font-family:'Poppins',sans-serif;font-size:0.85rem;color:#4b5563;line-height:1.6;">We track your progress with validated tools (PHQ-9, GAD-7) and adjust your plan proactively — not just when you ask. 86% of our members feel better within 3 months.</p>
+          <p style="font-family:'Poppins',sans-serif;font-size:0.85rem;color:#4b5563;line-height:1.6;">We track your progress with validated tools (PHQ-9, GAD-7) and adjust your plan proactively — not just when you ask. <a href="/outcomes" style="color:#0d9488;text-decoration:underline;">88.8% of our patients show measurable improvement</a>.</p>
         </div>
       </div>
     </div>
