@@ -10,7 +10,7 @@ import {
   getVerificationStatus,
 } from '@/lib/therapist-types';
 
-export const revalidate = 3600;
+export const revalidate = 60;
 
 export async function generateStaticParams() {
   const slugs = await getAllTherapistSlugs();
