@@ -6,6 +6,7 @@ export interface Therapist {
   middle_name: string | null;
   last_name: string;
   profile_pic: string | null;
+  profile_pic_position: string | null;
   website: string | null;
   is_verified: boolean;
   pronouns: string | null;

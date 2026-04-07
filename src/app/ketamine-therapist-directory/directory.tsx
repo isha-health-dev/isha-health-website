@@ -302,6 +302,7 @@ function TherapistCard({ therapist: t }: { therapist: TherapistWithRelations }) 
             src={t.profile_pic}
             alt={name}
             className="w-16 h-16 rounded-full object-cover flex-shrink-0"
+              style={{ objectPosition: t.profile_pic_position || 'center center' }}
           />
         ) : (
           <div className="w-16 h-16 rounded-full bg-teal-100 flex items-center justify-center flex-shrink-0">

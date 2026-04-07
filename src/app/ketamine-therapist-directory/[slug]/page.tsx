@@ -189,6 +189,7 @@ export default async function TherapistProfilePage({
               src={t.profile_pic}
               alt={`${name} - Ketamine-Assisted Psychotherapist`}
               className="w-32 h-32 rounded-full object-cover flex-shrink-0"
+              style={{ objectPosition: t.profile_pic_position || 'center center' }}
             />
           ) : (
             <div className="w-32 h-32 rounded-full bg-teal-100 flex items-center justify-center flex-shrink-0">
