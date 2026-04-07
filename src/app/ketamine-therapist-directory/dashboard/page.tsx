@@ -85,6 +85,7 @@ export default function DashboardPage() {
   const [insurances, setInsurances] = useState<string[]>([]);
   const [specialties, setSpecialties] = useState<string[]>([]);
   const [therapyTypes, setTherapyTypes] = useState<string[]>([]);
+  const [trainingPrograms, setTrainingPrograms] = useState<string[]>([]);
   const [importPreview, setImportPreview] = useState<Record<string, { current: string; imported: string; use: 'current' | 'imported' }> | null>(null);
   const [importing, setImporting] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -164,14 +165,16 @@ export default function DashboardPage() {
     loadLicenses();
 
     async function loadRelations() {
-      const [ins, spec, tt] = await Promise.all([
+      const [ins, spec, tt, tp] = await Promise.all([
         supabase.from('therapist_insurance').select('insurance_type').eq('therapist_id', profile!.id),
         supabase.from('therapist_specialty').select('specialty').eq('therapist_id', profile!.id),
         supabase.from('therapist_therapy_type').select('therapy_type').eq('therapist_id', profile!.id),
+        supabase.from('therapist_training_program').select('training_program').eq('therapist_id', profile!.id),
       ]);
       if (ins.data) setInsurances(ins.data.map((i) => i.insurance_type));
       if (spec.data) setSpecialties(spec.data.map((s) => s.specialty));
       if (tt.data) setTherapyTypes(tt.data.map((t) => t.therapy_type));
+      if (tp.data) setTrainingPrograms(tp.data.map((t) => t.training_program));
     }
     loadRelations();
   // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -279,6 +282,13 @@ export default function DashboardPage() {
     if (therapyTypes.length > 0) {
       await supabase.from('therapist_therapy_type').insert(
         therapyTypes.map((t) => ({ therapist_id: profile.id, therapy_type: t }))
+      );
+    }
+
+    await supabase.from('therapist_training_program').delete().eq('therapist_id', profile.id);
+    if (trainingPrograms.length > 0) {
+      await supabase.from('therapist_training_program').insert(
+        trainingPrograms.map((t) => ({ therapist_id: profile.id, training_program: t }))
       );
     }
 
@@ -834,6 +844,23 @@ export default function DashboardPage() {
           <div style={{ display: 'flex', gap: '0.5rem' }}>
             <input style={{ ...inputStyle, flex: 1 }} placeholder="Type therapy modality and press Add (e.g., CBT, EMDR, IFS)" id="new-therapy-type" onKeyDown={(e) => { if (e.key === 'Enter') { e.preventDefault(); const input = e.target as HTMLInputElement; if (input.value.trim()) { setTherapyTypes([...therapyTypes, input.value.trim().toLowerCase().replace(/\s+/g, '_')]); input.value = ''; } } }} />
             <button type="button" onClick={() => { const input = document.getElementById('new-therapy-type') as HTMLInputElement; if (input?.value.trim()) { setTherapyTypes([...therapyTypes, input.value.trim().toLowerCase().replace(/\s+/g, '_')]); input.value = ''; } }} style={{ padding: '0.5rem 1rem', backgroundColor: '#0d9488', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontSize: '0.8rem', fontFamily: 'inherit' }}>Add</button>
+          </div>
+        </div>
+
+        {/* Training Programs */}
+        <div style={sectionStyle}>
+          <h2 style={{ fontSize: '1.1rem', fontWeight: 600, color: '#111827', marginBottom: '1rem' }}>Ketamine / Psychedelic Training</h2>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '0.5rem' }}>
+            {trainingPrograms.map((tp, i) => (
+              <span key={i} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.25rem', padding: '0.3rem 0.75rem', backgroundColor: '#fef3c7', borderRadius: '20px', fontSize: '0.8rem', color: '#92400e' }}>
+                {tp.replace(/_/g, ' ')}
+                <button type="button" onClick={() => setTrainingPrograms(trainingPrograms.filter((_, j) => j !== i))} style={{ background: 'none', border: 'none', color: '#dc2626', cursor: 'pointer', fontSize: '1rem', padding: 0, lineHeight: 1 }}>&times;</button>
+              </span>
+            ))}
+          </div>
+          <div style={{ display: 'flex', gap: '0.5rem' }}>
+            <input style={{ ...inputStyle, flex: 1 }} placeholder="e.g., Fluence, Polaris Insight Center, MAPS, IPI" id="new-training" onKeyDown={(e) => { if (e.key === 'Enter') { e.preventDefault(); const input = e.target as HTMLInputElement; if (input.value.trim()) { setTrainingPrograms([...trainingPrograms, input.value.trim()]); input.value = ''; } } }} />
+            <button type="button" onClick={() => { const input = document.getElementById('new-training') as HTMLInputElement; if (input?.value.trim()) { setTrainingPrograms([...trainingPrograms, input.value.trim()]); input.value = ''; } }} style={{ padding: '0.5rem 1rem', backgroundColor: '#0d9488', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontSize: '0.8rem', fontFamily: 'inherit' }}>Add</button>
           </div>
         </div>
 
