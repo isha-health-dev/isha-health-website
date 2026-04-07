@@ -47,8 +47,11 @@ export default function PricingPage() {
           <p style="color:#ccfbf1;font-size:0.85rem;margin:0.25rem 0 0;font-family:'Poppins',sans-serif;">60 minutes with a physician</p>
         </div>
         <div style="padding:1.5rem;">
-          <p style="text-align:center;margin-bottom:1.25rem;">
+          <p style="text-align:center;margin-bottom:0.25rem;">
             <span style="font-size:2.5rem;font-weight:700;color:#111827;font-family:'Libre Baskerville',serif;">$350</span>
+          </p>
+          <p style="text-align:center;margin-bottom:1.25rem;">
+            <span style="display:inline-block;background-color:#fef3c7;color:#92400e;font-family:'Poppins',sans-serif;font-size:0.8rem;font-weight:600;padding:0.3rem 0.75rem;border-radius:6px;">Limited-time price — available through April 30, 2026</span>
           </p>
           <ul style="list-style:none;padding:0;margin:0;font-family:'Poppins',sans-serif;font-size:0.9rem;color:#374151;line-height:1.6;">
             <li style="padding:0.5rem 0;border-bottom:1px solid #f3f4f6;display:flex;gap:0.5rem;align-items:flex-start;">
