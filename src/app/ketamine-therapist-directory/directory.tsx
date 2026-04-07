@@ -142,7 +142,8 @@ export function TherapistDirectory({ therapists }: Props) {
               fontFamily: "'Poppins', sans-serif",
             }}
           >
-            Are you a KAP-trained therapist?{' '}
+            Are you a KAP-trained therapist?
+            <br />
             <a
               href="/ketamine-therapist-directory/create-account"
               style={{ color: '#0d9488', textDecoration: 'underline' }}
