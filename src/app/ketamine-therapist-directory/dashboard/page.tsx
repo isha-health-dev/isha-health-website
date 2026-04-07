@@ -85,6 +85,7 @@ export default function DashboardPage() {
   const [specialties, setSpecialties] = useState<string[]>([]);
   const [therapyTypes, setTherapyTypes] = useState<string[]>([]);
   const [importPreview, setImportPreview] = useState<Record<string, { current: string; imported: string; use: 'current' | 'imported' }> | null>(null);
+  const [importing, setImporting] = useState(false);
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
   const [message, setMessage] = useState('');
@@ -417,6 +418,7 @@ export default function DashboardPage() {
               const urlInput = document.getElementById('import-url') as HTMLInputElement;
               const url = urlInput?.value;
               if (!url) return;
+              setImporting(true);
               setMessage('Importing profile data...');
               setError('');
               try {
@@ -429,6 +431,7 @@ export default function DashboardPage() {
                 if (!data.success || !data.data) {
                   setError('Import failed: ' + (data.error || 'Unknown error'));
                   setMessage('');
+                  setImporting(false);
                   return;
                 }
                 const d = data.data;
@@ -444,9 +447,11 @@ export default function DashboardPage() {
                 }
                 if (Object.keys(preview).length === 0) {
                   setMessage('No new data found to import.');
+                  setImporting(false);
                 } else {
                   setImportPreview(preview);
                   setMessage(`Found ${Object.keys(preview).length} fields to review.`);
+                  setImporting(false);
                 }
               } catch {
                 setError('Import failed. Please try again.');
@@ -466,7 +471,7 @@ export default function DashboardPage() {
               whiteSpace: 'nowrap',
             }}
           >
-            Import
+            {importing ? 'Importing...' : 'Import'}
           </button>
         </div>
       </div>
