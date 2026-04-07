@@ -81,6 +81,10 @@ const sectionStyle = {
 export default function DashboardPage() {
   const [profile, setProfile] = useState<TherapistProfile | null>(null);
   const [licenses, setLicenses] = useState<{ id: string; state: string; license_number: string }[]>([]);
+  const [insurances, setInsurances] = useState<string[]>([]);
+  const [specialties, setSpecialties] = useState<string[]>([]);
+  const [therapyTypes, setTherapyTypes] = useState<string[]>([]);
+  const [importPreview, setImportPreview] = useState<Record<string, { current: string; imported: string; use: 'current' | 'imported' }> | null>(null);
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
   const [message, setMessage] = useState('');
@@ -156,6 +160,18 @@ export default function DashboardPage() {
       if (data) setLicenses(data);
     }
     loadLicenses();
+
+    async function loadRelations() {
+      const [ins, spec, tt] = await Promise.all([
+        supabase.from('therapist_insurance').select('insurance_type').eq('therapist_id', profile!.id),
+        supabase.from('therapist_specialty').select('specialty').eq('therapist_id', profile!.id),
+        supabase.from('therapist_therapy_type').select('therapy_type').eq('therapist_id', profile!.id),
+      ]);
+      if (ins.data) setInsurances(ins.data.map((i) => i.insurance_type));
+      if (spec.data) setSpecialties(spec.data.map((s) => s.specialty));
+      if (tt.data) setTherapyTypes(tt.data.map((t) => t.therapy_type));
+    }
+    loadRelations();
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [profile?.id]);
 
@@ -239,6 +255,28 @@ export default function DashboardPage() {
         setSaving(false);
         return;
       }
+    }
+
+    // Save insurance, specialties, therapy types (delete + re-insert)
+    await supabase.from('therapist_insurance').delete().eq('therapist_id', profile.id);
+    if (insurances.length > 0) {
+      await supabase.from('therapist_insurance').insert(
+        insurances.map((i) => ({ therapist_id: profile.id, insurance_type: i }))
+      );
+    }
+
+    await supabase.from('therapist_specialty').delete().eq('therapist_id', profile.id);
+    if (specialties.length > 0) {
+      await supabase.from('therapist_specialty').insert(
+        specialties.map((s) => ({ therapist_id: profile.id, specialty: s }))
+      );
+    }
+
+    await supabase.from('therapist_therapy_type').delete().eq('therapist_id', profile.id);
+    if (therapyTypes.length > 0) {
+      await supabase.from('therapist_therapy_type').insert(
+        therapyTypes.map((t) => ({ therapist_id: profile.id, therapy_type: t }))
+      );
     }
 
     setMessage('Profile saved and verified!');
@@ -394,39 +432,22 @@ export default function DashboardPage() {
                   return;
                 }
                 const d = data.data;
-                setProfile((prev) => {
-                  if (!prev) return prev;
-                  return {
-                    ...prev,
-                    bio: d.bio || prev.bio,
-                    welcome_message: d.welcome_message || prev.welcome_message,
-                    treatment_approach: d.treatment_approach || prev.treatment_approach,
-                    education: d.education || prev.education,
-                    years_in_practice: d.years_in_practice || prev.years_in_practice,
-                    session_formats: d.session_formats || prev.session_formats,
-                    typical_session_length: d.typical_session_length || prev.typical_session_length,
-                    fee: d.fee || prev.fee,
-                    sliding_scale: d.sliding_scale ?? prev.sliding_scale,
-                    accepting_new_clients: d.accepting_new_clients ?? prev.accepting_new_clients,
-                    free_consultation: d.free_consultation ?? prev.free_consultation,
-                    evening_weekend_availability: d.evening_weekend_availability ?? prev.evening_weekend_availability,
-                    lgbtq_affirmative: d.lgbtq_affirmative ?? prev.lgbtq_affirmative,
-                    phone: d.phone || prev.phone,
-                    city: d.city || prev.city,
-                    state: d.state || prev.state,
-                    street_address: d.street_address || prev.street_address,
-                    booking_url: d.booking_url || prev.booking_url,
-                    telehealth_platform: d.telehealth_platform || prev.telehealth_platform,
-                    publications: d.publications || prev.publications,
-                    professional_memberships: d.professional_memberships || prev.professional_memberships,
-                    client_focus: d.client_focus || prev.client_focus,
-                    cultural_focus: d.cultural_focus || prev.cultural_focus,
-                    faith_or_spiritual_focus: d.faith_or_spiritual_focus || prev.faith_or_spiritual_focus,
-                    instagram_url: d.instagram_url || prev.instagram_url,
-                    linkedin_url: d.linkedin_url || prev.linkedin_url,
-                  };
-                });
-                setMessage('Profile data imported! Review below and click Save.');
+                // Build diff preview — show fields where imported data differs from current
+                const fields = ['bio', 'welcome_message', 'treatment_approach', 'education', 'fee', 'phone', 'city', 'state', 'session_formats', 'typical_session_length', 'booking_url', 'telehealth_platform', 'publications', 'professional_memberships', 'client_focus', 'cultural_focus', 'faith_or_spiritual_focus', 'instagram_url', 'linkedin_url'];
+                const preview: Record<string, { current: string; imported: string; use: 'current' | 'imported' }> = {};
+                for (const field of fields) {
+                  const current = String((profile as unknown as Record<string, unknown>)[field] || '');
+                  const imported = String(d[field] || '');
+                  if (imported && imported !== current) {
+                    preview[field] = { current, imported, use: current ? 'current' : 'imported' };
+                  }
+                }
+                if (Object.keys(preview).length === 0) {
+                  setMessage('No new data found to import.');
+                } else {
+                  setImportPreview(preview);
+                  setMessage(`Found ${Object.keys(preview).length} fields to review.`);
+                }
               } catch {
                 setError('Import failed. Please try again.');
                 setMessage('');
@@ -449,6 +470,54 @@ export default function DashboardPage() {
           </button>
         </div>
       </div>
+
+      {/* Import preview diff */}
+      {importPreview && Object.keys(importPreview).length > 0 && (
+        <div style={{ ...sectionStyle, backgroundColor: '#fffbeb', padding: '1.5rem', borderRadius: '10px', border: '1px solid #fcd34d' }}>
+          <h2 style={{ fontSize: '1.1rem', fontWeight: 600, color: '#92400e', marginBottom: '1rem' }}>Review imported data</h2>
+          <p style={{ fontSize: '0.8rem', color: '#78350f', marginBottom: '1rem' }}>For each field, choose which version to keep:</p>
+          {Object.entries(importPreview).map(([field, { current, imported, use }]) => (
+            <div key={field} style={{ marginBottom: '1rem', paddingBottom: '1rem', borderBottom: '1px solid #fde68a' }}>
+              <p style={{ fontSize: '0.8rem', fontWeight: 600, color: '#92400e', marginBottom: '0.5rem', textTransform: 'capitalize' }}>
+                {field.replace(/_/g, ' ')}
+              </p>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
+                {current && (
+                  <label style={{ display: 'flex', alignItems: 'flex-start', gap: '0.5rem', cursor: 'pointer', fontSize: '0.85rem', padding: '0.5rem', borderRadius: '6px', backgroundColor: use === 'current' ? '#dcfce7' : '#fff', border: '1px solid #e5e7eb' }}>
+                    <input type="radio" checked={use === 'current'} onChange={() => setImportPreview({ ...importPreview, [field]: { ...importPreview[field], use: 'current' } })} style={{ marginTop: '0.15rem' }} />
+                    <span><strong>Keep current:</strong> {current.slice(0, 150)}{current.length > 150 ? '...' : ''}</span>
+                  </label>
+                )}
+                <label style={{ display: 'flex', alignItems: 'flex-start', gap: '0.5rem', cursor: 'pointer', fontSize: '0.85rem', padding: '0.5rem', borderRadius: '6px', backgroundColor: use === 'imported' ? '#dbeafe' : '#fff', border: '1px solid #e5e7eb' }}>
+                  <input type="radio" checked={use === 'imported'} onChange={() => setImportPreview({ ...importPreview, [field]: { ...importPreview[field], use: 'imported' } })} style={{ marginTop: '0.15rem' }} />
+                  <span><strong>Use imported:</strong> {imported.slice(0, 150)}{imported.length > 150 ? '...' : ''}</span>
+                </label>
+              </div>
+            </div>
+          ))}
+          <div style={{ display: 'flex', gap: '0.75rem' }}>
+            <button type="button" onClick={() => {
+              setProfile((prev) => {
+                if (!prev) return prev;
+                const updated = { ...prev };
+                for (const [field, { imported, use }] of Object.entries(importPreview)) {
+                  if (use === 'imported') {
+                    (updated as unknown as Record<string, unknown>)[field] = imported;
+                  }
+                }
+                return updated;
+              });
+              setImportPreview(null);
+              setMessage('Import applied! Review the form and click Save.');
+            }} style={{ padding: '0.6rem 1.5rem', backgroundColor: '#0d9488', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontSize: '0.85rem', fontWeight: 600, fontFamily: 'inherit' }}>
+              Apply Selected
+            </button>
+            <button type="button" onClick={() => { setImportPreview(null); setMessage(''); }} style={{ padding: '0.6rem 1.5rem', backgroundColor: '#fff', color: '#374151', border: '1px solid #d1d5db', borderRadius: '6px', cursor: 'pointer', fontSize: '0.85rem', fontFamily: 'inherit' }}>
+              Cancel Import
+            </button>
+          </div>
+        </div>
+      )}
 
       <form onSubmit={handleSave}>
         {/* Basic Info */}
@@ -611,6 +680,57 @@ export default function DashboardPage() {
           >
             + Add State License
           </button>
+        </div>
+
+        {/* Insurance */}
+        <div style={sectionStyle}>
+          <h2 style={{ fontSize: '1.1rem', fontWeight: 600, color: '#111827', marginBottom: '1rem' }}>Insurance Accepted</h2>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '0.5rem' }}>
+            {insurances.map((ins, i) => (
+              <span key={i} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.25rem', padding: '0.3rem 0.75rem', backgroundColor: '#f3f4f6', borderRadius: '20px', fontSize: '0.8rem' }}>
+                {ins.replace(/_/g, ' ')}
+                <button type="button" onClick={() => setInsurances(insurances.filter((_, j) => j !== i))} style={{ background: 'none', border: 'none', color: '#dc2626', cursor: 'pointer', fontSize: '1rem', padding: 0, lineHeight: 1 }}>&times;</button>
+              </span>
+            ))}
+          </div>
+          <div style={{ display: 'flex', gap: '0.5rem' }}>
+            <input style={{ ...inputStyle, flex: 1 }} placeholder="Type insurance name and press Add" id="new-insurance" onKeyDown={(e) => { if (e.key === 'Enter') { e.preventDefault(); const input = e.target as HTMLInputElement; if (input.value.trim()) { setInsurances([...insurances, input.value.trim().toLowerCase().replace(/\s+/g, '_')]); input.value = ''; } } }} />
+            <button type="button" onClick={() => { const input = document.getElementById('new-insurance') as HTMLInputElement; if (input?.value.trim()) { setInsurances([...insurances, input.value.trim().toLowerCase().replace(/\s+/g, '_')]); input.value = ''; } }} style={{ padding: '0.5rem 1rem', backgroundColor: '#0d9488', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontSize: '0.8rem', fontFamily: 'inherit' }}>Add</button>
+          </div>
+        </div>
+
+        {/* Specialties */}
+        <div style={sectionStyle}>
+          <h2 style={{ fontSize: '1.1rem', fontWeight: 600, color: '#111827', marginBottom: '1rem' }}>Specialties</h2>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '0.5rem' }}>
+            {specialties.map((spec, i) => (
+              <span key={i} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.25rem', padding: '0.3rem 0.75rem', backgroundColor: '#f0fdfa', borderRadius: '20px', fontSize: '0.8rem', color: '#0f766e' }}>
+                {spec.replace(/_/g, ' ')}
+                <button type="button" onClick={() => setSpecialties(specialties.filter((_, j) => j !== i))} style={{ background: 'none', border: 'none', color: '#dc2626', cursor: 'pointer', fontSize: '1rem', padding: 0, lineHeight: 1 }}>&times;</button>
+              </span>
+            ))}
+          </div>
+          <div style={{ display: 'flex', gap: '0.5rem' }}>
+            <input style={{ ...inputStyle, flex: 1 }} placeholder="Type specialty and press Add (e.g., anxiety, PTSD)" id="new-specialty" onKeyDown={(e) => { if (e.key === 'Enter') { e.preventDefault(); const input = e.target as HTMLInputElement; if (input.value.trim()) { setSpecialties([...specialties, input.value.trim().toLowerCase().replace(/\s+/g, '_')]); input.value = ''; } } }} />
+            <button type="button" onClick={() => { const input = document.getElementById('new-specialty') as HTMLInputElement; if (input?.value.trim()) { setSpecialties([...specialties, input.value.trim().toLowerCase().replace(/\s+/g, '_')]); input.value = ''; } }} style={{ padding: '0.5rem 1rem', backgroundColor: '#0d9488', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontSize: '0.8rem', fontFamily: 'inherit' }}>Add</button>
+          </div>
+        </div>
+
+        {/* Therapy Types */}
+        <div style={sectionStyle}>
+          <h2 style={{ fontSize: '1.1rem', fontWeight: 600, color: '#111827', marginBottom: '1rem' }}>Therapy Types / Modalities</h2>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '0.5rem' }}>
+            {therapyTypes.map((tt, i) => (
+              <span key={i} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.25rem', padding: '0.3rem 0.75rem', backgroundColor: '#f3f4f6', borderRadius: '20px', fontSize: '0.8rem' }}>
+                {tt.replace(/_/g, ' ')}
+                <button type="button" onClick={() => setTherapyTypes(therapyTypes.filter((_, j) => j !== i))} style={{ background: 'none', border: 'none', color: '#dc2626', cursor: 'pointer', fontSize: '1rem', padding: 0, lineHeight: 1 }}>&times;</button>
+              </span>
+            ))}
+          </div>
+          <div style={{ display: 'flex', gap: '0.5rem' }}>
+            <input style={{ ...inputStyle, flex: 1 }} placeholder="Type therapy modality and press Add (e.g., CBT, EMDR, IFS)" id="new-therapy-type" onKeyDown={(e) => { if (e.key === 'Enter') { e.preventDefault(); const input = e.target as HTMLInputElement; if (input.value.trim()) { setTherapyTypes([...therapyTypes, input.value.trim().toLowerCase().replace(/\s+/g, '_')]); input.value = ''; } } }} />
+            <button type="button" onClick={() => { const input = document.getElementById('new-therapy-type') as HTMLInputElement; if (input?.value.trim()) { setTherapyTypes([...therapyTypes, input.value.trim().toLowerCase().replace(/\s+/g, '_')]); input.value = ''; } }} style={{ padding: '0.5rem 1rem', backgroundColor: '#0d9488', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontSize: '0.8rem', fontFamily: 'inherit' }}>Add</button>
+          </div>
         </div>
 
         {/* Practice */}
