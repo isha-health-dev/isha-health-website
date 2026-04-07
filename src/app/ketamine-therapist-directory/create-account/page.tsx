@@ -40,7 +40,7 @@ export default function CreateAccountPage() {
       return;
     }
 
-    // Create therapist profile linked to auth user
+    // Create clinician profile linked to auth user
     if (authData.user) {
       const { error: profileError } = await supabase.from('therapist').insert({
         user_id: authData.user.id,
@@ -137,7 +137,7 @@ export default function CreateAccountPage() {
               marginBottom: '0.5rem',
             }}
           >
-            Join the Directory
+            Join the Clinician Directory
           </h1>
           <p style={{ color: '#6b7280', fontSize: '0.9rem' }}>
             Create an account to list your practice on the Isha Health therapist

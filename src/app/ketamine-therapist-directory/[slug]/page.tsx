@@ -136,7 +136,7 @@ export default async function TherapistProfilePage({
       {
         '@type': 'ListItem',
         position: 2,
-        name: 'Therapist Directory',
+        name: 'Clinician Directory',
         item: 'https://isha.health/ketamine-therapist-directory',
       },
       {
@@ -176,7 +176,7 @@ export default async function TherapistProfilePage({
             href="/ketamine-therapist-directory"
             style={{ color: '#0d9488', textDecoration: 'none' }}
           >
-            Therapist Directory
+            Clinician Directory
           </Link>
           {' / '}
           <span style={{ color: '#9ca3af' }}>{name}</span>

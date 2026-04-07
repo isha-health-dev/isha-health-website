@@ -122,15 +122,15 @@ export function TherapistDirectory({ therapists }: Props) {
             Home
           </a>
           {' / '}
-          <span style={{ color: '#9ca3af' }}>Therapist Directory</span>
+          <span style={{ color: '#9ca3af' }}>Clinician Directory</span>
         </nav>
 
         <div className="text-center mb-10">
           <h1 className="text-3xl font-serif font-bold text-gray-900 mb-3">
-            Find a Ketamine-Assisted Psychotherapy Therapist
+            Ketamine Therapy Clinician Directory
           </h1>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Browse KAP-trained therapists across the United States. Filter by
+            Browse ketamine therapy clinicians across the United States. Filter by
             state, specialty, visit type, and more to find the right therapist
             for your ketamine-assisted therapy journey.
           </p>
@@ -142,13 +142,13 @@ export function TherapistDirectory({ therapists }: Props) {
               fontFamily: "'Poppins', sans-serif",
             }}
           >
-            Are you a KAP-trained therapist?
+            Are you a ketamine therapy clinician?
             <br />
             <a
               href="/ketamine-therapist-directory/create-account"
               style={{ color: '#0d9488', textDecoration: 'underline' }}
             >
-              Join the directory
+              Join the clinician directory
             </a>
             {' or '}
             <a

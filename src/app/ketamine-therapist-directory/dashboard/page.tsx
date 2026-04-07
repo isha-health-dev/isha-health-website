@@ -333,7 +333,7 @@ export default function DashboardPage() {
     <div className="td-scope" style={{ maxWidth: '700px', margin: '0 auto', padding: '2rem 1rem' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem' }}>
         <h1 style={{ fontSize: '1.5rem', fontWeight: 700, color: '#111827', fontFamily: "'Libre Baskerville', serif" }}>
-          Edit Your Profile
+          Edit Your Clinician Profile
         </h1>
         <button onClick={handleLogout} style={{ color: '#6b7280', background: 'none', border: '1px solid #d1d5db', borderRadius: '6px', padding: '0.4rem 1rem', cursor: 'pointer', fontSize: '0.85rem' }}>
           Sign Out

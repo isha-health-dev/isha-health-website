@@ -109,8 +109,8 @@ export default function LoginPage() {
         <div
           dangerouslySetInnerHTML={{
             __html: `<div style="text-align:center;margin-bottom:2rem;">
-              <p style="font-size:1.5rem !important;font-weight:700 !important;color:#111827 !important;font-family:'Libre Baskerville',serif !important;margin-bottom:0.5rem !important;letter-spacing:normal !important;text-transform:none !important;">Therapist Login</p>
-              <p style="color:#6b7280 !important;font-size:0.9rem !important;font-family:'Poppins',sans-serif !important;letter-spacing:normal !important;text-transform:none !important;">Sign in to manage your directory profile</p>
+              <p style="font-size:1.5rem !important;font-weight:700 !important;color:#111827 !important;font-family:'Libre Baskerville',serif !important;margin-bottom:0.5rem !important;letter-spacing:normal !important;text-transform:none !important;">Clinician Login</p>
+              <p style="color:#6b7280 !important;font-size:0.9rem !important;font-family:'Poppins',sans-serif !important;letter-spacing:normal !important;text-transform:none !important;">Sign in to manage your clinician directory profile</p>
             </div>`,
           }}
         />
