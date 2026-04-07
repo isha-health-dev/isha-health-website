@@ -102,6 +102,10 @@ export default function ResourcesPage() {
           <p style="font-family:'Poppins',sans-serif;font-weight:600;color:#111827;font-size:0.9rem;margin-bottom:0.25rem;">Oral Ketamine Real-World Outcomes</p>
           <p style="font-family:'Source Sans Pro',sans-serif;font-size:0.8rem;color:#6b7280;">What the data shows for sublingual ketamine outside clinical trials</p>
         </a>
+        <a href="/outcomes" style="padding:1rem;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:inherit;background:#fff;">
+          <p style="font-family:'Poppins',sans-serif;font-weight:600;color:#111827;font-size:0.9rem;margin-bottom:0.25rem;">Clinical Outcomes Report</p>
+          <p style="font-family:'Source Sans Pro',sans-serif;font-size:0.8rem;color:#6b7280;">88.8% improvement rate across 546 patients — PHQ-9, GAD-7, and retention data</p>
+        </a>
         <a href="/blog" style="padding:1rem;border:1px solid #0d9488;border-radius:8px;text-decoration:none;color:#0d9488;background:#f0fdfa;text-align:center;">
           <p style="font-family:'Poppins',sans-serif;font-weight:600;font-size:0.9rem;">View all research articles →</p>
         </a>

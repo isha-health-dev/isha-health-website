@@ -160,6 +160,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const additionalPages: MetadataRoute.Sitemap = [
     { url: `${BASE_URL}/resources`, lastModified: today, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE_URL}/pricing`, lastModified: today, changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${BASE_URL}/outcomes`, lastModified: today, changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${BASE_URL}/faq/ketamine-therapy`, lastModified: today, changeFrequency: 'monthly', priority: 0.8 },
   ];
 
   return [
