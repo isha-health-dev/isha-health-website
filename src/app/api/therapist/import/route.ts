@@ -101,13 +101,33 @@ ${pageText}`;
     const geminiData = await geminiRes.json();
     const text = geminiData.candidates?.[0]?.content?.parts?.[0]?.text || '';
 
-    // Parse JSON from response
-    const jsonMatch = text.match(/\{[\s\S]*\}/);
+    // Parse JSON from response — clean up common Gemini formatting issues
+    let jsonStr = text;
+    // Remove markdown code fences
+    jsonStr = jsonStr.replace(/```json\s*/g, '').replace(/```\s*/g, '');
+    // Find the JSON object
+    const jsonMatch = jsonStr.match(/\{[\s\S]*\}/);
     if (!jsonMatch) {
-      return NextResponse.json({ error: 'Could not parse AI response', raw: text }, { status: 500 });
+      return NextResponse.json({ error: 'Could not parse AI response', raw: text.slice(0, 500) }, { status: 500 });
     }
+    // Clean common issues: trailing commas, control characters
+    const cleaned = jsonMatch[0]
+      .replace(/,\s*}/g, '}')
+      .replace(/,\s*]/g, ']')
+      .replace(/[\x00-\x1f]/g, ' ');
 
-    const extracted = JSON.parse(jsonMatch[0]);
+    let extracted;
+    try {
+      extracted = JSON.parse(cleaned);
+    } catch {
+      // Try more aggressive cleanup — remove everything after last valid closing brace
+      const lastBrace = cleaned.lastIndexOf('}');
+      try {
+        extracted = JSON.parse(cleaned.slice(0, lastBrace + 1));
+      } catch {
+        return NextResponse.json({ error: 'Could not parse AI response', raw: text.slice(0, 500) }, { status: 500 });
+      }
+    }
 
     return NextResponse.json({ success: true, data: extracted, source_url: url });
   } catch (err) {

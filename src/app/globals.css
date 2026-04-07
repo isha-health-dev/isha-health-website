@@ -417,7 +417,6 @@
   padding: 0.5rem 1rem !important;
   font-size: 0.875rem !important;
   line-height: 1.25rem !important;
-  width: 100% !important;
   font-family: inherit !important;
   color: #111827 !important;
 }
@@ -448,6 +447,26 @@
 
 .td-scope label {
   cursor: pointer !important;
+}
+
+/* Fix inputs in dashboard */
+.td-scope input[type="text"],
+.td-scope input[type="url"],
+.td-scope input[type="email"],
+.td-scope input[type="tel"],
+.td-scope input[type="number"],
+.td-scope textarea {
+  display: block !important;
+  min-height: 36px !important;
+  pointer-events: auto !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.td-scope select {
+  pointer-events: auto !important;
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
 /* Responsive flex/grid on small screens */
