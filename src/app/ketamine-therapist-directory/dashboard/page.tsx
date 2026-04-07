@@ -431,7 +431,7 @@ export default function DashboardPage() {
 
       {/* Import from website */}
       <div style={sectionStyle}>
-        <h2 style={{ fontSize: '1.1rem', fontWeight: 600, color: '#111827', marginBottom: '0.5rem' }}>Import from Website <span style='font-size:0.7rem;background:#fef3c7;color:#92400e;padding:2px 6px;border-radius:4px;margin-left:6px;'>BETA</span></h2>
+        <h2 style={{ fontSize: '1.1rem', fontWeight: 600, color: '#111827', marginBottom: '0.5rem' }}>Import from Website <span style={{ fontSize: '0.65rem', backgroundColor: '#fef3c7', color: '#92400e', padding: '2px 6px', borderRadius: '4px', marginLeft: '6px', verticalAlign: 'middle' }}>BETA</span></h2>
         <p style={{ fontSize: '0.8rem', color: '#6b7280', marginBottom: '0.75rem' }}>
           Paste your Psychology Today or practice website URL to auto-fill your profile.
         </p>
