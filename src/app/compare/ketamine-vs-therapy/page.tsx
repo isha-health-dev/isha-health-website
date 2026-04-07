@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Ketamine vs Traditional Therapy (CBT/Talk",
+  title: "Ketamine vs Traditional Talk Therapy",
   description: "Compare ketamine-assisted therapy with traditional psychotherapy approaches like CBT and talk therapy.",
   alternates: { canonical: "https://isha.health/compare/ketamine-vs-therapy" },
   openGraph: {
-    title: "Ketamine vs Traditional Therapy (CBT/Talk",
+    title: "Ketamine vs Traditional Talk Therapy",
     description: "Compare ketamine-assisted therapy with traditional psychotherapy approaches like CBT and talk therapy.",
     type: "website",
     images: ["/images/isha_logo.webp"],
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ketamine vs Traditional Therapy (CBT/Talk",
+    title: "Ketamine vs Traditional Talk Therapy",
     description: "Compare ketamine-assisted therapy with traditional psychotherapy approaches like CBT and talk therapy.",
   },
 };

@@ -1,13 +1,13 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Safety Information for ketamine treatment",
+  title: "Safety Information for Ketamine Treatment",
   description: "Learn about the safety guidelines and important precautions for ketamine treatment at Isha Health.",
   alternates: {
     canonical: "https://isha.health/safety-information-for-ketamine-treatment",
   },
   openGraph: {
-    title: "Safety Information for ketamine treatment",
+    title: "Safety Information for Ketamine Treatment",
     description: "Learn about the safety guidelines and important precautions for ketamine treatment at Isha Health.",
     type: "website",
     images: ["/images/isha_logo.webp"],
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Safety Information for ketamine treatment",
+    title: "Safety Information for Ketamine Treatment",
     description: "Learn about the safety guidelines and important precautions for ketamine treatment at Isha Health.",
   },
 };

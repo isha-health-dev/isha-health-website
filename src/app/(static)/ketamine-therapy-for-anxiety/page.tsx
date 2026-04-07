@@ -1,13 +1,13 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Ketamine for Anxiety: Treatment, Legality,",
+  title: "Ketamine Therapy for Anxiety",
   description: "Ketamine is an FDA-approved anesthetic medication that is being used to treat treatment-resistant depression and anxiety disorders.",
   alternates: {
     canonical: "https://isha.health/ketamine-therapy-for-anxiety",
   },
   openGraph: {
-    title: "Ketamine for Anxiety: Treatment, Legality,",
+    title: "Ketamine Therapy for Anxiety",
     description: "Ketamine is an FDA-approved anesthetic medication that is being used to treat treatment-resistant depression and anxiety disorders.",
     type: "website",
     images: ["/images/isha_logo.webp"],
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ketamine for Anxiety: Treatment, Legality,",
+    title: "Ketamine Therapy for Anxiety",
     description: "Ketamine is an FDA-approved anesthetic medication that is being used to treat treatment-resistant depression and anxiety disorders.",
   },
 };

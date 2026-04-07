@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Ketamine Therapy for Alcohol Use Disorder |",
+  title: "Ketamine Therapy for Alcohol Use Disorder",
   description: "Emerging research suggests ketamine may help reduce alcohol cravings and support recovery from alcohol use disorder.",
   alternates: { canonical: "https://isha.health/conditions/alcohol-addiction" },
   openGraph: {
-    title: "Ketamine Therapy for Alcohol Use Disorder |",
+    title: "Ketamine Therapy for Alcohol Use Disorder",
     description: "Emerging research suggests ketamine may help reduce alcohol cravings and support recovery from alcohol use disorder.",
     type: "website",
     images: ["/images/isha_logo.webp"],
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ketamine Therapy for Alcohol Use Disorder |",
+    title: "Ketamine Therapy for Alcohol Use Disorder",
     description: "Emerging research suggests ketamine may help reduce alcohol cravings and support recovery from alcohol use disorder.",
   },
 };

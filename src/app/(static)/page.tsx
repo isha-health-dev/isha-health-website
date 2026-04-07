@@ -1,13 +1,13 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Online Ketamine Therapy for Depression &",
+  title: "Online Ketamine Therapy for Depression & Anxiety",
   description: "Isha Health offers personalized online ketamine-assisted therapy for depression, anxiety, and PTSD.",
   alternates: {
     canonical: "https://isha.health",
   },
   openGraph: {
-    title: "Online Ketamine Therapy for Depression &",
+    title: "Online Ketamine Therapy for Depression & Anxiety",
     description: "Isha Health offers personalized online ketamine-assisted therapy for depression, anxiety, and PTSD.",
     type: "website",
     url: "https://isha.health",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Online Ketamine Therapy for Depression &",
+    title: "Online Ketamine Therapy for Depression & Anxiety",
     description: "Isha Health offers personalized online ketamine-assisted therapy for depression, anxiety, and PTSD.",
   },
 };
@@ -53,6 +53,36 @@ export default function Page() {
                 <p style="font-family:'Poppins',sans-serif;font-size:0.8rem;color:#6b7280;font-weight:600;">— Rakesh V, Seattle, Washington</p>
               </div>
             </div>
+          </div>
+        </div>`,
+      }}
+    />
+
+    {/* Outcomes Trust Bar */}
+    <div
+      dangerouslySetInnerHTML={{
+        __html: `<div style="background-color:#0f766e;padding:2.5rem 1.5rem;">
+          <div style="max-width:1000px;margin:0 auto;text-align:center;">
+            <p style="font-family:'Libre Baskerville',serif;font-size:1.2rem;font-weight:700;color:#fff;margin-bottom:1.5rem;">Real Results from Real Patients</p>
+            <div style="display:flex;flex-wrap:wrap;gap:1.5rem;justify-content:center;">
+              <div style="flex:1 1 180px;max-width:220px;">
+                <p style="font-family:'Libre Baskerville',serif;font-size:2.2rem;font-weight:700;color:#5eead4;margin-bottom:0.25rem;">88.8%</p>
+                <p style="font-family:'Poppins',sans-serif;font-size:0.8rem;color:#ccfbf1;line-height:1.4;">improvement rate in patients with moderate-to-severe depression</p>
+              </div>
+              <div style="flex:1 1 180px;max-width:220px;">
+                <p style="font-family:'Libre Baskerville',serif;font-size:2.2rem;font-weight:700;color:#5eead4;margin-bottom:0.25rem;">92.6%</p>
+                <p style="font-family:'Poppins',sans-serif;font-size:0.8rem;color:#ccfbf1;line-height:1.4;">of anxiety patients reach minimal anxiety levels</p>
+              </div>
+              <div style="flex:1 1 180px;max-width:220px;">
+                <p style="font-family:'Libre Baskerville',serif;font-size:2.2rem;font-weight:700;color:#5eead4;margin-bottom:0.25rem;">546</p>
+                <p style="font-family:'Poppins',sans-serif;font-size:0.8rem;color:#ccfbf1;line-height:1.4;">patients with validated PHQ-9 and GAD-7 assessments</p>
+              </div>
+              <div style="flex:1 1 180px;max-width:220px;">
+                <p style="font-family:'Libre Baskerville',serif;font-size:2.2rem;font-weight:700;color:#5eead4;margin-bottom:0.25rem;">99.1%</p>
+                <p style="font-family:'Poppins',sans-serif;font-size:0.8rem;color:#ccfbf1;line-height:1.4;">patient retention rate across treatment</p>
+              </div>
+            </div>
+            <a href="/outcomes" style="display:inline-block;margin-top:1.5rem;font-family:'Poppins',sans-serif;font-size:0.85rem;color:#5eead4;text-decoration:underline;">See our full clinical outcomes report →</a>
           </div>
         </div>`,
       }}

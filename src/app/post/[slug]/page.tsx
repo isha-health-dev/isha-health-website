@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { MDXRemote } from 'next-mdx-remote/rsc';
-import { getBlogPost, getAllBlogSlugs } from '@/lib/blog';
+import { getBlogPost, getAllBlogSlugs, getAllBlogPosts } from '@/lib/blog';
+import Link from 'next/link';
 
 export async function generateStaticParams() {
   const slugs = getAllBlogSlugs();
@@ -238,6 +239,56 @@ export default async function BlogPostPage({
           </div>
         </div>
       </div>
+
+      {/* Outcomes Callout */}
+      <div style={{ maxWidth: '800px', margin: '2rem auto', padding: '0 1rem' }}>
+        <div style={{ background: '#f0fdfa', border: '1px solid #ccfbf1', borderRadius: '10px', padding: '1.25rem 1.5rem', textAlign: 'center' }}>
+          <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.95rem', color: '#0f766e', fontWeight: 600, marginBottom: '0.25rem' }}>88.8% of Isha Health patients with moderate-to-severe depression show measurable improvement</p>
+          <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.8rem', color: '#6b7280', margin: 0 }}>Based on 546 patients and 1,900+ validated assessments. <a href="/outcomes" style={{ color: '#0d9488', textDecoration: 'underline' }}>See our clinical outcomes →</a></p>
+        </div>
+      </div>
+
+      {/* Related Posts */}
+      {(() => {
+        const allPosts = getAllBlogPosts();
+        const sameCategoryPosts = post.categorySlug
+          ? allPosts.filter((p) => p.categorySlug === post.categorySlug && p.slug !== post.slug)
+          : [];
+        const relatedPosts = sameCategoryPosts.length > 0
+          ? sameCategoryPosts.slice(0, 3)
+          : allPosts.filter((p) => p.slug !== post.slug).slice(0, 3);
+
+        return relatedPosts.length > 0 ? (
+          <div style={{ maxWidth: '800px', margin: '2rem auto 3rem', padding: '0 1rem' }}>
+            <h2 style={{ fontFamily: "'Poppins', sans-serif", fontSize: '1.5rem', fontWeight: 600, color: '#1a1a1a', marginBottom: '1.25rem' }}>Related Posts</h2>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: '1.25rem' }}>
+              {relatedPosts.map((related) => (
+                <Link
+                  key={related.slug}
+                  href={`/post/${related.slug}`}
+                  style={{ textDecoration: 'none', color: 'inherit', display: 'block', borderRadius: '10px', overflow: 'hidden', border: '1px solid #e5e7eb', transition: 'box-shadow 0.2s ease' }}
+                >
+                  {related.thumbnail && (
+                    <img
+                      src={related.thumbnail}
+                      alt={related.imageAlt || related.title}
+                      style={{ width: '100%', height: '160px', objectFit: 'cover', display: 'block' }}
+                    />
+                  )}
+                  <div style={{ padding: '1rem' }}>
+                    <h3 style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.95rem', fontWeight: 600, color: '#0f766e', margin: '0 0 0.5rem', lineHeight: 1.3 }}>{related.title}</h3>
+                    {related.description && (
+                      <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.8rem', color: '#6b7280', margin: 0, lineHeight: 1.5 }}>
+                        {related.description.length > 100 ? related.description.slice(0, 100).trimEnd() + '...' : related.description}
+                      </p>
+                    )}
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        ) : null;
+      })()}
     </div>
   );
 }

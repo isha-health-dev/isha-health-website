@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Ketamine vs Psilocybin Therapy: Which Is",
+  title: "Ketamine vs Psilocybin Therapy Compared",
   description: "Compare ketamine therapy and psilocybin-assisted therapy for depression. Understand legal status, mechanisms of action, clinical evidence, accessibility,",
   alternates: { canonical: "https://isha.health/compare/ketamine-vs-psilocybin" },
   openGraph: {
-    title: "Ketamine vs Psilocybin Therapy: Which Is",
+    title: "Ketamine vs Psilocybin Therapy Compared",
     description: "Compare ketamine therapy and psilocybin-assisted therapy for depression. Understand legal status, mechanisms of action, clinical evidence, accessibility,",
     type: "website",
     images: ["/images/isha_logo.webp"],
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ketamine vs Psilocybin Therapy: Which Is",
+    title: "Ketamine vs Psilocybin Therapy Compared",
     description: "Compare ketamine therapy and psilocybin-assisted therapy for depression. Understand legal status, mechanisms of action, clinical evidence, accessibility,",
   },
 };

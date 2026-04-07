@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Ketamine Therapy for Bipolar Depression |",
+  title: "Ketamine Therapy for Bipolar Depression",
   description: "Research suggests ketamine may provide rapid relief from depressive episodes in bipolar disorder.",
   alternates: { canonical: "https://isha.health/conditions/bipolar-depression" },
   openGraph: {
-    title: "Ketamine Therapy for Bipolar Depression |",
+    title: "Ketamine Therapy for Bipolar Depression",
     description: "Research suggests ketamine may provide rapid relief from depressive episodes in bipolar disorder.",
     type: "website",
     images: ["/images/isha_logo.webp"],
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ketamine Therapy for Bipolar Depression |",
+    title: "Ketamine Therapy for Bipolar Depression",
     description: "Research suggests ketamine may provide rapid relief from depressive episodes in bipolar disorder.",
   },
 };

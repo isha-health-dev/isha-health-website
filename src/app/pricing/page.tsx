@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     "ISHA Health offers personalized online ketamine therapy for depression and anxiety.",
   alternates: { canonical: 'https://isha.health/pricing' },
   openGraph: {
-    title: 'Pricing - Personalized Ketamine Therapy |',
+    title: 'Personalized Ketamine Therapy Pricing',
     description:
       'Personalized ketamine-assisted therapy tailored to your unique needs. Initial consultation $350.',
     type: 'website',
@@ -25,6 +25,42 @@ export default function PricingPage() {
       dangerouslySetInnerHTML={{
         __html: `
 <div class="section-base white-section static-page">
+  <script type="application/ld+json">${JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Which states does Isha Health serve?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Isha Health offers ketamine-assisted therapy in Arizona, California, Colorado, Florida, Georgia, New York, Oregon, Texas, and Washington." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use HSA or FSA for ketamine therapy?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Isha Health services are eligible for HSA and FSA spending." }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Isha Health accept insurance?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Isha Health does not accept insurance plans, including Medicaid and Medicare. Payment is due at the time of service. A superbill can be provided for potential reimbursement from your insurer." }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does ketamine medication cost?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Medication cost is typically $50-150 for a 30-day supply from a compounding pharmacy. The cost varies by location and pharmacy." }
+      },
+      {
+        "@type": "Question",
+        "name": "What is Isha Health's cancellation policy?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Please provide at least 48 hours notice to cancel or reschedule. Late cancellations incur a $120 fee. No-shows are charged the full $350 appointment fee." }
+      },
+      {
+        "@type": "Question",
+        "name": "How quickly can I get an appointment?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Appointments are often available within 24 hours. Email info@isha.health if no immediate openings are shown." }
+      }
+    ]
+  })}</script>
   <div class="hero-isha">
     <h1 class="heading static-heading">Your Healing Journey, Personalized</h1>
   </div>
