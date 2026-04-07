@@ -282,7 +282,7 @@ export default function DashboardPage() {
       );
     }
 
-    setMessage('Profile saved and verified!');
+    setMessage('Profile saved and verified! Changes will appear on your directory listing within a few minutes.');
     setSaving(false);
   }
 
