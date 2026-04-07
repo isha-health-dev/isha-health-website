@@ -272,6 +272,278 @@ export function TherapistDirectory({ therapists }: Props) {
             </button>
           </div>
         )}
+
+        {/* Why Join Section */}
+        <div
+          style={{
+            marginTop: '4rem',
+            borderTop: '1px solid #e5e7eb',
+            paddingTop: '3rem',
+          }}
+        >
+          <h2
+            style={{
+              fontFamily: "'Libre Baskerville', serif",
+              fontSize: '1.6rem',
+              fontWeight: 700,
+              color: '#111827',
+              textAlign: 'center',
+              marginBottom: '0.5rem',
+            }}
+          >
+            Are You a Ketamine Therapy Clinician?
+          </h2>
+          <p
+            style={{
+              fontFamily: "'Poppins', sans-serif",
+              fontSize: '1rem',
+              color: '#4b5563',
+              textAlign: 'center',
+              maxWidth: '600px',
+              margin: '0 auto 2.5rem',
+              lineHeight: 1.7,
+            }}
+          >
+            Join the Isha Health Clinician Directory — free, takes 5 minutes, and puts your practice in front of patients actively searching for ketamine therapy.
+          </p>
+
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))',
+              gap: '1.25rem',
+              maxWidth: '900px',
+              margin: '0 auto 2.5rem',
+            }}
+          >
+            <div
+              style={{
+                background: '#f0fdfa',
+                borderRadius: '10px',
+                padding: '1.5rem',
+                border: '1px solid #ccfbf1',
+              }}
+            >
+              <p style={{ fontSize: '1.4rem', marginBottom: '0.5rem' }}>📈</p>
+              <h3
+                style={{
+                  fontFamily: "'Poppins', sans-serif",
+                  fontSize: '0.95rem',
+                  fontWeight: 600,
+                  color: '#111827',
+                  marginBottom: '0.4rem',
+                }}
+              >
+                Get Found by Patients
+              </h3>
+              <p
+                style={{
+                  fontFamily: "'Poppins', sans-serif",
+                  fontSize: '0.85rem',
+                  color: '#4b5563',
+                  lineHeight: 1.6,
+                }}
+              >
+                Our directory ranks on Google for hundreds of ketamine therapy search terms. Your profile becomes a landing page that patients find organically.
+              </p>
+            </div>
+
+            <div
+              style={{
+                background: '#f0fdfa',
+                borderRadius: '10px',
+                padding: '1.5rem',
+                border: '1px solid #ccfbf1',
+              }}
+            >
+              <p style={{ fontSize: '1.4rem', marginBottom: '0.5rem' }}>🤖</p>
+              <h3
+                style={{
+                  fontFamily: "'Poppins', sans-serif",
+                  fontSize: '0.95rem',
+                  fontWeight: 600,
+                  color: '#111827',
+                  marginBottom: '0.4rem',
+                }}
+              >
+                AI-Powered Profile Setup
+              </h3>
+              <p
+                style={{
+                  fontFamily: "'Poppins', sans-serif",
+                  fontSize: '0.85rem',
+                  color: '#4b5563',
+                  lineHeight: 1.6,
+                }}
+              >
+                Already have a Psychology Today or practice website? Our AI import tool pulls your info automatically — just paste your URL and review.
+              </p>
+            </div>
+
+            <div
+              style={{
+                background: '#f0fdfa',
+                borderRadius: '10px',
+                padding: '1.5rem',
+                border: '1px solid #ccfbf1',
+              }}
+            >
+              <p style={{ fontSize: '1.4rem', marginBottom: '0.5rem' }}>💰</p>
+              <h3
+                style={{
+                  fontFamily: "'Poppins', sans-serif",
+                  fontSize: '0.95rem',
+                  fontWeight: 600,
+                  color: '#111827',
+                  marginBottom: '0.4rem',
+                }}
+              >
+                Completely Free
+              </h3>
+              <p
+                style={{
+                  fontFamily: "'Poppins', sans-serif",
+                  fontSize: '0.85rem',
+                  color: '#4b5563',
+                  lineHeight: 1.6,
+                }}
+              >
+                No listing fees, no subscription, no hidden costs. We built this directory to connect patients with qualified clinicians — not to monetize providers.
+              </p>
+            </div>
+
+            <div
+              style={{
+                background: '#f0fdfa',
+                borderRadius: '10px',
+                padding: '1.5rem',
+                border: '1px solid #ccfbf1',
+              }}
+            >
+              <p style={{ fontSize: '1.4rem', marginBottom: '0.5rem' }}>🔗</p>
+              <h3
+                style={{
+                  fontFamily: "'Poppins', sans-serif",
+                  fontSize: '0.95rem',
+                  fontWeight: 600,
+                  color: '#111827',
+                  marginBottom: '0.4rem',
+                }}
+              >
+                Your Own Profile Page
+              </h3>
+              <p
+                style={{
+                  fontFamily: "'Poppins', sans-serif",
+                  fontSize: '0.85rem',
+                  color: '#4b5563',
+                  lineHeight: 1.6,
+                }}
+              >
+                Each clinician gets a dedicated, SEO-optimized profile page with your photo, specialties, insurance, booking link, and more.
+              </p>
+            </div>
+
+            <div
+              style={{
+                background: '#f0fdfa',
+                borderRadius: '10px',
+                padding: '1.5rem',
+                border: '1px solid #ccfbf1',
+              }}
+            >
+              <p style={{ fontSize: '1.4rem', marginBottom: '0.5rem' }}>✏️</p>
+              <h3
+                style={{
+                  fontFamily: "'Poppins', sans-serif",
+                  fontSize: '0.95rem',
+                  fontWeight: 600,
+                  color: '#111827',
+                  marginBottom: '0.4rem',
+                }}
+              >
+                Full Control
+              </h3>
+              <p
+                style={{
+                  fontFamily: "'Poppins', sans-serif",
+                  fontSize: '0.85rem',
+                  color: '#4b5563',
+                  lineHeight: 1.6,
+                }}
+              >
+                Log in anytime to update your profile, add new specialties, change your availability, or upload a new photo. Your profile, your data.
+              </p>
+            </div>
+
+            <div
+              style={{
+                background: '#f0fdfa',
+                borderRadius: '10px',
+                padding: '1.5rem',
+                border: '1px solid #ccfbf1',
+              }}
+            >
+              <p style={{ fontSize: '1.4rem', marginBottom: '0.5rem' }}>🏥</p>
+              <h3
+                style={{
+                  fontFamily: "'Poppins', sans-serif",
+                  fontSize: '0.95rem',
+                  fontWeight: 600,
+                  color: '#111827',
+                  marginBottom: '0.4rem',
+                }}
+              >
+                Built by Clinicians
+              </h3>
+              <p
+                style={{
+                  fontFamily: "'Poppins', sans-serif",
+                  fontSize: '0.85rem',
+                  color: '#4b5563',
+                  lineHeight: 1.6,
+                }}
+              >
+                Isha Health is led by physicians who practice ketamine-assisted therapy. We understand what matters to both clinicians and patients.
+              </p>
+            </div>
+          </div>
+
+          <div style={{ textAlign: 'center' }}>
+            <a
+              href="/ketamine-therapist-directory/create-account"
+              style={{
+                display: 'inline-block',
+                backgroundColor: '#0d9488',
+                color: '#fff',
+                padding: '0.85rem 2.5rem',
+                borderRadius: '8px',
+                textDecoration: 'none',
+                fontWeight: 600,
+                fontSize: '1rem',
+                fontFamily: "'Poppins', sans-serif",
+              }}
+            >
+              Join the Directory — It&apos;s Free
+            </a>
+            <p
+              style={{
+                fontFamily: "'Poppins', sans-serif",
+                fontSize: '0.8rem',
+                color: '#9ca3af',
+                marginTop: '0.75rem',
+              }}
+            >
+              Already have an account?{' '}
+              <a
+                href="/ketamine-therapist-directory/login"
+                style={{ color: '#0d9488', textDecoration: 'underline' }}
+              >
+                Log in
+              </a>
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
