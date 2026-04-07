@@ -24,7 +24,7 @@ export default function Page() {
   return (
     <div
       dangerouslySetInnerHTML={{
-        __html: "<div class=\"hero-isha\"><h1 class=\"heading static-heading\">AM&nbsp;I&nbsp;Candidate?</h1></div><div class=\"section-base white-section static-page\"><div class=\"w-embed w-iframe w-script\"><div data-tf-widget=\"GDo2cArM\" data-tf-opacity=\"100\" data-tf-iframe-props=\"title=Isha Health\" data-tf-transitive-search-params=\"\" data-tf-medium=\"snippet\" style=\"width:100%;height:500px;\"></div></div></div><!-- Google Tag Manager (noscript) -->\n\n<!-- End Google Tag Manager (noscript) -->\n\n",
+        __html: "<div class=\"hero-isha\"><h1 class=\"heading static-heading\">Am I a Candidate?</h1></div><div class=\"section-base white-section static-page\"><div style=\"width:100%;height:600px;\"><div data-tf-widget=\"GDo2cArM\" data-tf-opacity=\"100\" data-tf-iframe-props=\"title=Isha Health\" data-tf-medium=\"snippet\" style=\"width:100%;height:100%;\"></div><script src=\"//embed.typeform.com/next/embed.js\"></script></div></div>",
       }}
     />
   );

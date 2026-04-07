@@ -7,10 +7,164 @@
   visibility: hidden !important;
 }
 
+/* Doctor profile page — constrain layout */
+.doctor-page-wrapper {
+  max-width: 900px !important;
+  margin: 0 auto !important;
+  padding: 2rem 1.5rem !important;
+  gap: 2.5rem !important;
+}
+.doctor-sidebar {
+  width: 280px !important;
+  max-width: 280px !important;
+}
+.doctor_pic {
+  width: 220px !important;
+  height: 300px !important;
+  object-fit: cover !important;
+  object-position: top center !important;
+  border-radius: 12px !important;
+}
+.doctor-maiin-wrapper h1 {
+  font-family: 'Libre Baskerville', serif !important;
+  font-size: 1.8rem !important;
+  font-weight: 700 !important;
+}
+.doctor-maiin-wrapper p,
+.doctor-maiin-wrapper .w-richtext p,
+.doctor-maiin-wrapper .left-align,
+.doctor-sidebar-container p,
+.doctor-sidebar-container li,
+.doctor-sidebar-container .w-richtext p,
+.doctor-sidebar-container .w-richtext li,
+.doctor-sidebar-container .w-richtext h3 {
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 0.95rem !important;
+  line-height: 1.7 !important;
+}
+.doctor-sidebar-container .w-richtext h3 {
+  font-family: 'Libre Baskerville', serif !important;
+  font-size: 1.1rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 0.5rem !important;
+}
+.doctor-sidebar-container .w-richtext li {
+  font-size: 0.85rem !important;
+  margin-bottom: 0.35rem !important;
+}
+.doctor-testimonial {
+  margin-top: 2rem !important;
+}
+.doctor-testimonial p {
+  font-family: 'Source Sans Pro', sans-serif !important;
+}
+@media (max-width: 768px) {
+  .doctor-page-wrapper {
+    flex-direction: column !important;
+  }
+  .doctor-sidebar {
+    width: 100% !important;
+    max-width: 100% !important;
+    align-items: center !important;
+  }
+  .doctor_pic {
+    width: 180px !important;
+    height: 180px !important;
+  }
+}
+
+/* Sticky header */
+.navbar {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1000 !important;
+  background-color: #fff !important;
+}
+
 /* Footer text style */
 .footer-text {
   color: #fff;
   font-size: 12px;
+}
+
+/* ============================================
+   Global font override — replace Alternategotno3d
+   Headings: Libre Baskerville (serif)
+   Body/UI: Poppins (sans-serif)
+   ============================================ */
+
+/* Kill Alternategotno3d everywhere — target every selector Webflow uses */
+h1, h2, h3,
+.heading,
+.heading.hero-header,
+.heading-7,
+.heading-10,
+.heading-28,
+.heading-29,
+.heading.heading-left,
+.heading.heading-left.why-ketamine,
+.testimonial,
+.bold-text-2,
+.bold-text-3 {
+  font-family: 'Libre Baskerville', serif !important;
+}
+
+/* Body text, UI elements, buttons — Poppins */
+body,
+p, a, span, li, label, input, select, textarea, button,
+.w-richtext p,
+.w-richtext,
+.rich-text,
+.paragraph-31,
+.paragraph-33,
+.p2,
+.p-70,
+.journey_with,
+.footer-link-two,
+.footer-title,
+.footer-text,
+.button-primary,
+.button-navbar,
+.popupmenu-link,
+.text-block-2,
+.heading-29,
+.italic-text,
+.right-align,
+.c-accordion-item-q-text,
+._w-accordion-item-q-text,
+.column-center {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+/* Hero heading — large serif */
+.heading.hero-header {
+  font-size: 2.8rem !important;
+  font-weight: 700 !important;
+  line-height: 1.15 !important;
+}
+
+/* Hero subheading */
+.heading-29 {
+  font-size: 1.15rem !important;
+  font-weight: 400 !important;
+  color: #4b5563 !important;
+}
+
+/* Testimonial slider heading — serif */
+.testimonial {
+  font-family: 'Libre Baskerville', serif !important;
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  line-height: 1.3 !important;
+}
+
+/* Testimonial body text */
+.testimonial-16,
+p.testimonial-16,
+p.column-content {
+  font-family: 'Source Sans Pro', sans-serif !important;
+  font-size: 0.95rem !important;
+  line-height: 1.6 !important;
 }
 
 /* === Fix Webflow layout overrides === */
