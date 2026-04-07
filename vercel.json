@@ -13,5 +13,11 @@
       ]
     }
   ],
+  "rewrites": [
+    {
+      "source": "/BingSiteAuth.xml",
+      "destination": "/api/bing-auth"
+    }
+  ],
   "crons": []
 }

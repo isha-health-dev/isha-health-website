@@ -247,7 +247,7 @@ export default function DashboardPage() {
     // Delete existing licenses for this therapist, then insert fresh
     await supabase.from('therapist_license').delete().eq('therapist_id', profile.id);
 
-    const validLicenses = licenses.filter((l) => l.state && l.license_number);
+    const validLicenses = licenses.filter((l) => l.state).map((l) => ({ ...l, license_number: l.license_number || 'N/A' }));
     if (validLicenses.length > 0) {
       const { error: licError } = await supabase.from('therapist_license').insert(
         validLicenses.map((l) => ({
@@ -431,7 +431,7 @@ export default function DashboardPage() {
 
       {/* Import from website */}
       <div style={sectionStyle}>
-        <h2 style={{ fontSize: '1.1rem', fontWeight: 600, color: '#111827', marginBottom: '0.5rem' }}>Import from Website</h2>
+        <h2 style={{ fontSize: '1.1rem', fontWeight: 600, color: '#111827', marginBottom: '0.5rem' }}>Import from Website <span style='font-size:0.7rem;background:#fef3c7;color:#92400e;padding:2px 6px;border-radius:4px;margin-left:6px;'>BETA</span></h2>
         <p style={{ fontSize: '0.8rem', color: '#6b7280', marginBottom: '0.75rem' }}>
           Paste your Psychology Today or practice website URL to auto-fill your profile.
         </p>
@@ -809,7 +809,7 @@ export default function DashboardPage() {
               <option value="united_healthcare">UnitedHealthcare</option>
               <option value="western_health_advantage">Western Health Advantage</option>
             </select>
-            <button type="button" onClick={() => { const select = document.getElementById('new-insurance') as HTMLSelectElement; if (select?.value) { if (!insurances.includes(select.value)) { setInsurances([...insurances, select.value]); } select.value = ''; } }} style={{ padding: '0.5rem 1rem', backgroundColor: '#0d9488', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontSize: '0.8rem', fontFamily: 'inherit' }}>Add</button>
+            <button type="button" onClick={() => { const select = document.getElementById('new-insurance') as HTMLSelectElement; if (select?.value) { let val = select.value; if (val === 'other') { const custom = prompt('Enter insurance company name:'); if (!custom) return; val = custom.trim().toLowerCase().replace(/\s+/g, '_'); } if (val && !insurances.includes(val)) { setInsurances([...insurances, val]); } select.value = ''; } }} style={{ padding: '0.5rem 1rem', backgroundColor: '#0d9488', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontSize: '0.8rem', fontFamily: 'inherit' }}>Add</button>
           </div>
         </div>
 

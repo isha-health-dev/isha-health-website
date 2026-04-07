@@ -68,6 +68,53 @@ const nextConfig = {
         destination: '/resources',
         permanent: false,
       },
+      // Old therapist directory state abbreviation URLs
+      {
+        source: '/ketamine-therapist-directory/wa',
+        destination: '/ketamine-therapist-directory',
+        permanent: true,
+      },
+      {
+        source: '/ketamine-therapist-directory/az',
+        destination: '/ketamine-therapist-directory',
+        permanent: true,
+      },
+      {
+        source: '/ketamine-therapist-directory/ny',
+        destination: '/ketamine-therapist-directory',
+        permanent: true,
+      },
+      {
+        source: '/ketamine-therapist-directory/la',
+        destination: '/ketamine-therapist-directory',
+        permanent: true,
+      },
+      {
+        source: '/ketamine-therapist-directory/co',
+        destination: '/ketamine-therapist-directory',
+        permanent: true,
+      },
+      {
+        source: '/ketamine-therapist-directory/ca',
+        destination: '/ketamine-therapist-directory',
+        permanent: true,
+      },
+      // Old Webflow learning center and misc URLs
+      {
+        source: '/ketamine-learning-center/:slug*',
+        destination: '/blog',
+        permanent: true,
+      },
+      {
+        source: '/Isha',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/post/this-week-in-ketamine-9-20',
+        destination: '/post/this-week-in-ketamine-new-studies-explore-its-efficacy-and-mechanisms-of-action',
+        permanent: true,
+      },
       // Old URL patterns from Ahrefs 404 report
       {
         source: '/ketamine-for-depression',
