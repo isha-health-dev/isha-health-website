@@ -670,7 +670,7 @@ export default function DashboardPage() {
           {licenses.map((lic, i) => (
             <div key={lic.id || i} style={{ display: 'flex', gap: '0.5rem', marginBottom: '0.5rem', alignItems: 'center' }}>
               <select
-                style={{ ...inputStyle, width: '120px', flex: 'none' }}
+                style={{ ...inputStyle, width: '80px', flex: 'none' }}
                 value={lic.state}
                 onChange={(e) => {
                   const updated = [...licenses];
