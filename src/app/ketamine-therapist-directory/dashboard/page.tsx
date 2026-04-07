@@ -842,6 +842,24 @@ export default function DashboardPage() {
           <h2 style={{ fontSize: '1.1rem', fontWeight: 600, color: '#111827', marginBottom: '1rem' }}>Practice Details</h2>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', marginBottom: '0.75rem' }}>
             <div>
+              <label style={labelStyle}>Professional Role</label>
+              <select style={inputStyle} value={profile.mental_health_role || ''} onChange={(e) => updateField('mental_health_role', e.target.value || null)}>
+                <option value="">Select...</option>
+                <option value="clinical_social_work_therapist">Clinical Social Worker (LCSW)</option>
+                <option value="marriage_and_family_therapist">Marriage &amp; Family Therapist (LMFT)</option>
+                <option value="licensed_professional_counselor">Licensed Professional Counselor (LPC)</option>
+                <option value="psychologist">Psychologist (PhD/PsyD)</option>
+                <option value="psychiatric_nurse_practitioner">Psychiatric Nurse Practitioner</option>
+                <option value="psychiatrist">Psychiatrist (MD/DO)</option>
+                <option value="counselor">Counselor</option>
+                <option value="art_therapist">Art Therapist</option>
+                <option value="licensed_psychoanalyst">Licensed Psychoanalyst</option>
+                <option value="registered_psychotherapist">Registered Psychotherapist</option>
+                <option value="pre_licensed_professional">Pre-Licensed Professional</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div>
               <label style={labelStyle}>Visit Type</label>
               <select style={inputStyle} value={profile.visit_type || ''} onChange={(e) => updateField('visit_type', e.target.value || null)}>
                 <option value="">Select...</option>
