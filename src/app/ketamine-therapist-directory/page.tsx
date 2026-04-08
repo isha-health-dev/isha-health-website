@@ -53,6 +53,14 @@ export default async function Page() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
       />
       <TherapistDirectory therapists={therapists} />
+      {/* Server-rendered links for crawlers — hidden visually but discoverable */}
+      <nav aria-label="All clinician profiles" style={{ position: 'absolute', width: '1px', height: '1px', overflow: 'hidden', clip: 'rect(0,0,0,0)', whiteSpace: 'nowrap' }}>
+        {therapists.map((t) => (
+          <a key={t.id} href={`/ketamine-therapist-directory/${getTherapistSlug(t)}`}>
+            {getTherapistName(t)}
+          </a>
+        ))}
+      </nav>
     </>
   );
 }
