@@ -103,7 +103,7 @@ gtag('config', 'AW-16993591045');`,
               areaServed: ['AZ', 'CA', 'CO', 'FL', 'GA', 'NY', 'OR', 'TX', 'WA'],
               aggregateRating: {
                 '@type': 'AggregateRating',
-                ratingValue: '4.4',
+                ratingValue: '5.0',
                 reviewCount: '12',
                 bestRating: '5',
                 worstRating: '1',
