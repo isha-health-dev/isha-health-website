@@ -82,7 +82,7 @@ gtag('config', 'AW-16993591045');`,
               url: 'https://isha.health',
               logo: 'https://isha.health/images/isha_logo.webp',
               description:
-                'Isha Health offers online ketamine-assisted therapy for depression and anxiety. Personalized treatment plans from the comfort of your home.',
+                'Physician-led online ketamine therapy for depression, anxiety, and PTSD. 88.8% of patients with moderate-to-severe depression show measurable improvement. Available in 9 states.',
               address: {
                 '@type': 'PostalAddress',
                 streetAddress: '4255 18th Street',
@@ -101,6 +101,39 @@ gtag('config', 'AW-16993591045');`,
               ],
               medicalSpecialty: 'Psychiatric',
               areaServed: ['AZ', 'CA', 'CO', 'FL', 'GA', 'NY', 'OR', 'TX', 'WA'],
+              aggregateRating: {
+                '@type': 'AggregateRating',
+                ratingValue: '4.4',
+                reviewCount: '12',
+                bestRating: '5',
+                worstRating: '1',
+              },
+              founder: {
+                '@type': 'Person',
+                name: 'Mai Shimada, MD',
+                url: 'https://isha.health/dr-mai-shimada',
+                jobTitle: 'Founder & CEO',
+              },
+              hasOfferCatalog: {
+                '@type': 'OfferCatalog',
+                name: 'Ketamine Therapy Services',
+                itemListElement: [
+                  {
+                    '@type': 'Offer',
+                    name: 'Initial Consultation',
+                    price: '350',
+                    priceCurrency: 'USD',
+                    description: '60-minute video consultation with a physician',
+                  },
+                  {
+                    '@type': 'Offer',
+                    name: 'Follow-Up Appointment',
+                    price: '350',
+                    priceCurrency: 'USD',
+                    description: '30-minute follow-up to adjust treatment plan',
+                  },
+                ],
+              },
             }),
           }}
         />

@@ -96,6 +96,17 @@ export default function Page() {
     </div>
   </div>
 
+
+  <div style="background:#f0fdfa;border:1px solid #ccfbf1;border-radius:10px;padding:1.25rem 1.5rem;text-align:center;max-width:700px;margin:2rem auto;">
+    <p style="font-family:'Poppins',sans-serif;font-size:0.95rem;color:#0f766e;font-weight:600;margin-bottom:0.25rem;">88.8% of Isha Health patients with moderate-to-severe depression show measurable improvement</p>
+    <p style="font-family:'Poppins',sans-serif;font-size:0.8rem;color:#6b7280;">Based on over 500 patients with validated assessments. <a href="/outcomes" style="color:#0d9488;text-decoration:underline;">See our clinical outcomes report →</a></p>
+  </div>
+
+  <div style="text-align:center;margin:1.5rem 0;">
+    <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#4b5563;margin-bottom:0.75rem;">Looking for a ketamine therapist in your area?</p>
+    <a href="/ketamine-therapist-directory" style="display:inline-block;background-color:#fff;color:#0d9488;padding:0.7rem 1.5rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:0.9rem;font-family:'Poppins',sans-serif;border:1px solid #0d9488;">Browse the Clinician Directory</a>
+  </div>
+
   <div style="background-color:#f0fdfa;padding:3rem 1.5rem;text-align:center;border-top:1px solid #ccfbf1;">
     <p style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#0f766e;margin-bottom:0.5rem;">Ready to start feeling better?</p>
     <p style="font-family:'Poppins',sans-serif;color:#4b5563;margin-bottom:1.5rem;font-size:0.95rem;">Appointments often available within 24 hours for patients in Rochester.</p>
