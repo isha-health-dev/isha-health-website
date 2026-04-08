@@ -32,9 +32,10 @@ export async function generateMetadata({
     .map((c) => c.credential.toUpperCase())
     .join(', ');
   const displayName = credentials ? `${name}, ${credentials}` : name;
-  const title = location
-    ? `${displayName} - Ketamine-Assisted Therapy in ${location}`
-    : `${displayName} - Ketamine-Assisted Therapy`;
+  // Keep title under 60 chars — use shorter suffix for long names
+  const suffix = location ? `KAP in ${location}` : 'KAP Therapist';
+  const fullTitle = `${displayName} - ${suffix}`;
+  const title = fullTitle.length > 60 ? `${name} - ${suffix}` : fullTitle;
   const description = `${name} offers ketamine-assisted psychotherapy${location ? ` in ${location}` : ''}. Specializing in personalized mental health treatment through ketamine therapy.`;
 
   return {

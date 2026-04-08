@@ -138,11 +138,6 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/ketamine-therapy-nyc',
-        destination: '/locations/ketamine-therapy-nyc',
-        permanent: true,
-      },
-      {
         source: '/ketamine-therapy-long-island',
         destination: '/locations/ketamine-therapy-long-island',
         permanent: true,

@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Request Your Superbill',
   description: 'Request a superbill from Isha Health or submit an insurance claim through our claims portal.',
-  robots: { index: false, follow: true },
+  robots: { index: true, follow: true },
 };
 
 export default function SuperbillPage() {
