@@ -1,22 +1,22 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Ketamine for Depression - Effective Treatment",
-  description: "Ketamine is a safe and effective medication for treating depression, including treatment-resistant depression.",
+  title: "Ketamine Therapy for Depression: 88.8% Improve",
+  description: "88.8% of patients with moderate-to-severe depression improve with ketamine therapy. Physician-led, at-home treatment starting at $350.",
   alternates: {
     canonical: "https://isha.health/ketamine-therapy-for-depression",
   },
   openGraph: {
-    title: "Ketamine for Depression - Effective Treatment",
-    description: "Ketamine is a safe and effective medication for treating depression, including treatment-resistant depression.",
+    title: "Ketamine Therapy for Depression: 88.8% Improve",
+    description: "88.8% of patients with moderate-to-severe depression improve with ketamine therapy. Physician-led, at-home treatment starting at $350.",
     type: "website",
     images: ["/images/isha_logo.webp"],
     url: "https://isha.health/ketamine-therapy-for-depression",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ketamine for Depression - Effective Treatment",
-    description: "Ketamine is a safe and effective medication for treating depression, including treatment-resistant depression.",
+    title: "Ketamine Therapy for Depression: 88.8% Improve",
+    description: "88.8% of patients with moderate-to-severe depression improve with ketamine therapy. Physician-led, at-home treatment starting at $350.",
   },
 };
 

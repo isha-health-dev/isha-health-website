@@ -13,6 +13,14 @@
       ]
     }
   ],
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.isha.health" }],
+      "destination": "https://isha.health/:path*",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/BingSiteAuth.xml",

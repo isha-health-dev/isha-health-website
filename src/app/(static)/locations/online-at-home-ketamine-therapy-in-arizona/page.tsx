@@ -2,20 +2,20 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "Online At-Home Ketamine Therapy in Arizona",
-  description: "Discover at-home ketamine treatment in Georgia with Isha Health. Get expert, personalized care for anxiety, depression, and PTSD—all from the comfort of",
+  description: "At-home ketamine therapy in Arizona. Physician-led telehealth treatment for depression, anxiety, and PTSD. 88.8% improvement rate. $350 consultation.",
   alternates: {
     canonical: "https://isha.health/locations/online-at-home-ketamine-therapy-in-arizona",
   },
   openGraph: {
     title: "Online At-Home Ketamine Therapy in Arizona",
-    description: "Discover at-home ketamine treatment in Georgia with Isha Health. Get expert, personalized care for anxiety, depression, and PTSD—all from the comfort of",
+    description: "At-home ketamine therapy in Arizona. Physician-led telehealth treatment for depression, anxiety, and PTSD. 88.8% improvement rate. $350 consultation.",
     type: "website",
     url: "https://isha.health/locations/online-at-home-ketamine-therapy-in-arizona",
   },
   twitter: {
     card: "summary_large_image",
     title: "Online At-Home Ketamine Therapy in Arizona",
-    description: "Discover at-home ketamine treatment in Georgia with Isha Health. Get expert, personalized care for anxiety, depression, and PTSD—all from the comfort of",
+    description: "At-home ketamine therapy in Arizona. Physician-led telehealth treatment for depression, anxiety, and PTSD. 88.8% improvement rate. $350 consultation.",
   },
 };
 

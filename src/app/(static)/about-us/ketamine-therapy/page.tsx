@@ -1,21 +1,21 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "About Ketamine | Isha Health",
-  description: "Ketamine was approved by FDA in 1970 as an anesthetic and has been used in hospitals for over 50 years.",
+  title: "What Is Ketamine Therapy? How It Treats Depression",
+  description: "Ketamine therapy uses a 50-year-old FDA-approved medication to treat depression, anxiety, and PTSD. Learn how it works, who it helps, and what to expect.",
   alternates: {
     canonical: "https://isha.health/about-us/ketamine-therapy",
   },
   openGraph: {
-    title: "About Ketamine | Isha Health",
-    description: "Ketamine was approved by FDA in 1970 as an anesthetic and has been used in hospitals for over 50 years.",
+    title: "What Is Ketamine Therapy? How It Treats Depression",
+    description: "Ketamine therapy uses a 50-year-old FDA-approved medication to treat depression, anxiety, and PTSD. Learn how it works, who it helps, and what to expect.",
     type: "website",
     url: "https://isha.health/about-us/ketamine-therapy",
   },
   twitter: {
     card: "summary_large_image",
-    title: "About Ketamine | Isha Health",
-    description: "Ketamine was approved by FDA in 1970 as an anesthetic and has been used in hospitals for over 50 years.",
+    title: "What Is Ketamine Therapy? How It Treats Depression",
+    description: "Ketamine therapy uses a 50-year-old FDA-approved medication to treat depression, anxiety, and PTSD. Learn how it works, who it helps, and what to expect.",
   },
 };
 

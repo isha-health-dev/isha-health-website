@@ -2,13 +2,13 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "What Is Ketamine-Assisted Therapy?",
-  description: "Ketamine assisted psychotherapy can be a faster and more effective treatment for depression, anxiety, PTSD, and other mental health conditions.",
+  description: "Ketamine-assisted therapy combines low-dose ketamine with clinical support to treat depression, anxiety, and PTSD. 88.8% of patients improve.",
   alternates: {
     canonical: "https://isha.health/what-is-ketamine-assisted-therapy",
   },
   openGraph: {
     title: "What Is Ketamine-Assisted Therapy?",
-    description: "Ketamine assisted psychotherapy can be a faster and more effective treatment for depression, anxiety, PTSD, and other mental health conditions.",
+    description: "Ketamine-assisted therapy combines low-dose ketamine with clinical support to treat depression, anxiety, and PTSD. 88.8% of patients improve.",
     type: "website",
     images: ["/images/isha_logo.webp"],
     url: "https://isha.health/what-is-ketamine-assisted-therapy",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "What Is Ketamine-Assisted Therapy?",
-    description: "Ketamine assisted psychotherapy can be a faster and more effective treatment for depression, anxiety, PTSD, and other mental health conditions.",
+    description: "Ketamine-assisted therapy combines low-dose ketamine with clinical support to treat depression, anxiety, and PTSD. 88.8% of patients improve.",
   },
 };
 
