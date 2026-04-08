@@ -528,13 +528,13 @@ export default async function TherapistProfilePage({
                   Website
                 </h3>
                 <a
-                  href={t.website}
+                  href={t.website.startsWith('http') ? t.website : `https://${t.website}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-teal-600 break-all"
                   style={{ textDecoration: 'underline' }}
                 >
-                  {t.website}
+                  {t.website.replace(/^https?:\/\//, '')}
                 </a>
               </div>
             )}

@@ -11,6 +11,17 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      // Fix 404 location aliases
+      {
+        source: '/locations/ketamine-therapy-nyc',
+        destination: '/locations/ketamine-therapy-new-york-city',
+        permanent: true,
+      },
+      {
+        source: '/ketamine-therapy-nyc',
+        destination: '/locations/ketamine-therapy-new-york-city',
+        permanent: true,
+      },
       // Redirect findyourkaptherapist.isha.health -> main site login
       {
         source: '/login',
