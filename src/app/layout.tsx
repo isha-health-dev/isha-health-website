@@ -45,6 +45,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Ahrefs Analytics */}
+        <Script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="cQOExkk7E6SoS147G9lR0w"
+          strategy="afterInteractive"
+        />
         {/* Google Tag Manager */}
         <Script
           id="gtm-script"
