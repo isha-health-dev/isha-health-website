@@ -53,14 +53,21 @@ export default async function Page() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
       />
       <TherapistDirectory therapists={therapists} />
-      {/* Server-rendered links for crawlers — hidden visually but discoverable */}
-      <nav aria-label="All clinician profiles" style={{ position: 'absolute', width: '1px', height: '1px', overflow: 'hidden', clip: 'rect(0,0,0,0)', whiteSpace: 'nowrap' }}>
-        {therapists.map((t) => (
-          <a key={t.id} href={`/ketamine-therapist-directory/${getTherapistSlug(t)}`}>
-            {getTherapistName(t)}
-          </a>
-        ))}
-      </nav>
+      {/* All clinician links — visible, server-rendered for crawlers */}
+      <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '2rem 1rem 3rem' }}>
+        <h2 style={{ fontFamily: "'Libre Baskerville', serif", fontSize: '1.3rem', fontWeight: 700, color: '#111827', marginBottom: '1rem', textAlign: 'center' }}>Browse All Clinicians</h2>
+        <div style={{ display: 'flex', flexWrap: 'wrap' as const, gap: '0.4rem 0.75rem', justifyContent: 'center' }}>
+          {therapists.map((t) => (
+            <a
+              key={t.id}
+              href={`/ketamine-therapist-directory/${getTherapistSlug(t)}`}
+              style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.8rem', color: '#0d9488', textDecoration: 'none' }}
+            >
+              {getTherapistName(t)}
+            </a>
+          ))}
+        </div>
+      </div>
     </>
   );
 }
