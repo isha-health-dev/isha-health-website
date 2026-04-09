@@ -48,9 +48,9 @@ export default function CollaboratePage() {
 
   if (status === 'sent') {
     return (
-      <div className="section-base white-section static-page">
-        <div className="hero-isha">
-          <h1 className="heading static-heading">Thank You</h1>
+      <div style={{ padding: '0 0 2rem' }}>
+        <div style={{ textAlign: 'center', padding: '3rem 1.5rem 1.5rem' }}>
+          <h1 style={{ fontFamily: "'Libre Baskerville', serif", fontSize: '2rem', fontWeight: 700, color: '#111827', margin: 0 }}>Thank You</h1>
         </div>
         <div
           style={{
@@ -75,24 +75,84 @@ export default function CollaboratePage() {
   }
 
   return (
-    <div className="section-base white-section static-page">
-      <div className="hero-isha">
-        <h1 className="heading static-heading">Collaborate with Isha Health</h1>
+    <div style={{ padding: '0 0 2rem' }}>
+      <div style={{ textAlign: 'center', padding: '3rem 1.5rem 1.5rem' }}>
+        <h1 style={{ fontFamily: "'Libre Baskerville', serif", fontSize: '2rem', fontWeight: 700, color: '#111827', margin: 0 }}>Collaborate with Isha Health</h1>
       </div>
       <div
         style={{
           maxWidth: '700px',
           margin: '0 auto',
-          padding: '2rem 1.5rem',
+          padding: '0 1.5rem 2rem',
         }}
       >
-        <div
-          dangerouslySetInnerHTML={{
-            __html: `<p style="font-family:'Poppins',sans-serif;font-size:1rem;line-height:1.7;color:#4b5563;margin-bottom:2rem;text-align:center;text-wrap:pretty;">
-              Are you a KAP-trained therapist, psychiatrist, or mental health clinician interested in collaborating with Isha Health? Fill out the form below and our team will be in touch.
-            </p>`,
-          }}
-        />
+        <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '1rem', lineHeight: 1.7, color: '#4b5563', marginBottom: '2rem', textAlign: 'center' }}>
+          We believe ketamine therapy works best when prescribers and therapists work together. Isha Health physicians handle the medical side — you provide the integration support that deepens and sustains patient progress.
+        </p>
+
+        {/* How It Works */}
+        <div style={{ marginBottom: '2.5rem' }}>
+          <h2 style={{ fontFamily: "'Libre Baskerville', serif", fontSize: '1.3rem', fontWeight: 700, color: '#111827', marginBottom: '1.25rem' }}>How the Collaboration Works</h2>
+          <div style={{ display: 'flex', flexDirection: 'column' as const, gap: '1rem' }}>
+            <div style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
+              <span style={{ fontFamily: "'Libre Baskerville', serif", fontSize: '1.3rem', fontWeight: 700, color: '#0d9488', flexShrink: 0 }}>1</span>
+              <div>
+                <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.95rem', fontWeight: 600, color: '#111827', marginBottom: '0.25rem' }}>We prescribe, you integrate</p>
+                <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.85rem', color: '#4b5563', lineHeight: 1.6 }}>Isha Health physicians evaluate patients, prescribe ketamine, and monitor medical safety. You provide the psychotherapy and integration sessions that make the treatment meaningful.</p>
+              </div>
+            </div>
+            <div style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
+              <span style={{ fontFamily: "'Libre Baskerville', serif", fontSize: '1.3rem', fontWeight: 700, color: '#0d9488', flexShrink: 0 }}>2</span>
+              <div>
+                <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.95rem', fontWeight: 600, color: '#111827', marginBottom: '0.25rem' }}>Shared patients, shared communication</p>
+                <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.85rem', color: '#4b5563', lineHeight: 1.6 }}>When appropriate, our physicians coordinate directly with you on dosage, frequency, and treatment adjustments based on what you observe in therapy sessions.</p>
+              </div>
+            </div>
+            <div style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
+              <span style={{ fontFamily: "'Libre Baskerville', serif", fontSize: '1.3rem', fontWeight: 700, color: '#0d9488', flexShrink: 0 }}>3</span>
+              <div>
+                <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.95rem', fontWeight: 600, color: '#111827', marginBottom: '0.25rem' }}>Refer patients who need a prescriber</p>
+                <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.85rem', color: '#4b5563', lineHeight: 1.6 }}>If your clients are interested in ketamine therapy but need a physician to prescribe and monitor, refer them to Isha Health. We handle the medical side so you can focus on therapy.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Benefits */}
+        <div style={{ marginBottom: '2.5rem' }}>
+          <h2 style={{ fontFamily: "'Libre Baskerville', serif", fontSize: '1.3rem', fontWeight: 700, color: '#111827', marginBottom: '1.25rem' }}>Why Clinicians Work with Us</h2>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '1rem' }}>
+            <div style={{ background: '#f0fdfa', borderRadius: '8px', padding: '1.25rem', border: '1px solid #ccfbf1' }}>
+              <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.9rem', fontWeight: 600, color: '#0f766e', marginBottom: '0.25rem' }}>Free Directory Listing</p>
+              <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.8rem', color: '#4b5563', lineHeight: 1.5 }}>Get a dedicated profile page on our clinician directory — no fees, ever.</p>
+            </div>
+            <div style={{ background: '#f0fdfa', borderRadius: '8px', padding: '1.25rem', border: '1px solid #ccfbf1' }}>
+              <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.9rem', fontWeight: 600, color: '#0f766e', marginBottom: '0.25rem' }}>Patient Referrals</p>
+              <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.8rem', color: '#4b5563', lineHeight: 1.5 }}>Patients searching our directory can find and contact you directly.</p>
+            </div>
+            <div style={{ background: '#f0fdfa', borderRadius: '8px', padding: '1.25rem', border: '1px solid #ccfbf1' }}>
+              <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.9rem', fontWeight: 600, color: '#0f766e', marginBottom: '0.25rem' }}>AI Profile Import</p>
+              <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.8rem', color: '#4b5563', lineHeight: 1.5 }}>Paste your Psychology Today or website URL — our AI fills in your profile automatically.</p>
+            </div>
+            <div style={{ background: '#f0fdfa', borderRadius: '8px', padding: '1.25rem', border: '1px solid #ccfbf1' }}>
+              <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.9rem', fontWeight: 600, color: '#0f766e', marginBottom: '0.25rem' }}>88.8% Outcomes</p>
+              <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.8rem', color: '#4b5563', lineHeight: 1.5 }}>Our collaborative model achieves measurable results. <a href="/outcomes" style={{ color: '#0d9488', textDecoration: 'underline' }}>See the data</a>.</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Who We're Looking For */}
+        <div style={{ marginBottom: '2.5rem', background: '#f9fafb', borderRadius: '10px', padding: '1.5rem', border: '1px solid #e5e7eb' }}>
+          <h2 style={{ fontFamily: "'Libre Baskerville', serif", fontSize: '1.3rem', fontWeight: 700, color: '#111827', marginBottom: '0.75rem' }}>Who We&rsquo;re Looking For</h2>
+          <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.9rem', color: '#4b5563', lineHeight: 1.6, marginBottom: '0.5rem' }}>Licensed mental health professionals with training or interest in ketamine-assisted psychotherapy:</p>
+          <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.85rem', color: '#4b5563', lineHeight: 1.8 }}>
+            LMFTs &bull; LCSWs &bull; LPCs &bull; Psychologists (PsyD, PhD) &bull; Psychiatrists (MD, DO) &bull; Psychiatric NPs
+          </p>
+        </div>
+
+        {/* Form Header */}
+        <h2 style={{ fontFamily: "'Libre Baskerville', serif", fontSize: '1.3rem', fontWeight: 700, color: '#111827', marginBottom: '0.5rem' }}>Get in Touch</h2>
+        <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.9rem', color: '#6b7280', marginBottom: '1.5rem' }}>Fill out the form below and our team will be in touch.</p>
 
         <form onSubmit={handleSubmit}>
           <div style={{ display: 'flex', gap: '0.75rem', marginBottom: '1rem' }}>
