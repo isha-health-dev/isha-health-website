@@ -169,17 +169,23 @@ export default function PricingPage() {
       <h2 style="font-family:'Libre Baskerville',serif;font-size:1.5rem;font-weight:700;color:#111827;text-align:center;margin-bottom:2rem;">Why Personalized Care Matters</h2>
       <div style="display:flex;flex-wrap:wrap;gap:1.5rem;">
         <div style="flex:1 1 250px;background:#fff;border-radius:10px;padding:1.5rem;border:1px solid #e5e7eb;">
-          <p style="font-size:1.5rem;margin-bottom:0.5rem;">🧠</p>
+          <div style="width:36px;height:36px;border-radius:8px;background:#f0fdfa;display:flex;align-items:center;justify-content:center;margin-bottom:0.75rem;">
+            <span style="font-family:'Libre Baskerville',serif;font-size:1.1rem;font-weight:700;color:#0d9488;">Rx</span>
+          </div>
           <h3 style="font-family:'Poppins',sans-serif;font-size:1rem;font-weight:600;color:#111827;margin-bottom:0.5rem;">Your Brain, Your Protocol</h3>
           <p style="font-family:'Poppins',sans-serif;font-size:0.85rem;color:#4b5563;line-height:1.6;">Everyone responds differently to ketamine. We start with a thorough evaluation and adjust your dosage and frequency based on how you respond — not a generic script.</p>
         </div>
         <div style="flex:1 1 250px;background:#fff;border-radius:10px;padding:1.5rem;border:1px solid #e5e7eb;">
-          <p style="font-size:1.5rem;margin-bottom:0.5rem;">👩‍⚕️</p>
+          <div style="width:36px;height:36px;border-radius:8px;background:#f0fdfa;display:flex;align-items:center;justify-content:center;margin-bottom:0.75rem;">
+            <span style="font-family:'Libre Baskerville',serif;font-size:1.1rem;font-weight:700;color:#0d9488;">MD</span>
+          </div>
           <h3 style="font-family:'Poppins',sans-serif;font-size:1rem;font-weight:600;color:#111827;margin-bottom:0.5rem;">Licensed Clinician at Every Step</h3>
           <p style="font-family:'Poppins',sans-serif;font-size:0.85rem;color:#4b5563;line-height:1.6;">Unlike mail-order ketamine services, every Isha Health patient works directly with a licensed physician or psychiatric nurse practitioner who knows your full history.</p>
         </div>
         <div style="flex:1 1 250px;background:#fff;border-radius:10px;padding:1.5rem;border:1px solid #e5e7eb;">
-          <p style="font-size:1.5rem;margin-bottom:0.5rem;">📊</p>
+          <div style="width:36px;height:36px;border-radius:8px;background:#f0fdfa;display:flex;align-items:center;justify-content:center;margin-bottom:0.75rem;">
+            <span style="font-family:'Poppins',sans-serif;font-size:0.7rem;font-weight:700;color:#0d9488;">PHQ</span>
+          </div>
           <h3 style="font-family:'Poppins',sans-serif;font-size:1rem;font-weight:600;color:#111827;margin-bottom:0.5rem;">Continuous Monitoring</h3>
           <p style="font-family:'Poppins',sans-serif;font-size:0.85rem;color:#4b5563;line-height:1.6;">We track your progress with validated tools (PHQ-9, GAD-7) and adjust your plan proactively — not just when you ask. <a href="/outcomes" style="color:#0d9488;text-decoration:underline;">88.8% of our patients show measurable improvement</a>.</p>
         </div>
