@@ -24,7 +24,41 @@ export default function Page() {
   return (
     <div
       dangerouslySetInnerHTML={{
-        __html: "<div style=\"padding:0 0 2rem;\"><div style=\"text-align:center;padding:3rem 1.5rem 1.5rem;\"><h1 style=\"font-family:'Libre Baskerville',serif;font-size:2rem;font-weight:700;color:#111827;margin:0;\">SCHEDULE YOUR INITIAL&nbsp;CONSULTATION</h1></div><div style=\"max-width:800px;margin:0 auto;padding:0 1.5rem;\"><p class=\"square-space-description\">Please note that this appointment scheduler is for patients who are new to Isha Health. If you are a patient currently receiving treatment with us, please make an appointment on <a target=\"_blank\" href=\"https://isha-health.webflow.io/current-patients/scheduling\">Current Patients page</a>.<br><br>Isha Health does not accept any insurance, including Medicaid and Medicare. Payment is due at the time of service.<br><br>Please remember to mind the time zone and avoid any scheduling surprises.<br><strong><br>A late cancellation fee of $120 will be charged</strong> if the cancellation or rescheduling occurs less than 48 hours before the scheduled appointment. In the case of a no-show without any notice, <strong>a charge of $350 will be applied.</strong>‍<br>Please review <a href=\"/cancellation-policy-isha-health\"><strong>our cancellation policy</strong></a> prior to making an appointment.<br><br>If there are no immediate appointments available, please don't hesitate to contact us directly at <a href=\"/appointment#\">info@isha.health</a>. We may be able to accommodate you at an earlier time.<br><br>If you'd like to make any changes, please email <a target=\"_blank\" href=\"mailto:info@isha.health\">info@isha.health</a>.<br></p><div class=\"c-accordion-item-a how-it-works\"><div class=\"_w-accordion-item-a\"><div id=\"all-states-booking\" class=\"c-accordion-item\"><div class=\"_w-accordion-item\"><div class=\"c-accordion-item-q\"><div class=\"_w-accordion-item-q\"><div class=\"c-accordion-item-q-text\"><div class=\"_w-accordion-item-q-text\"><h3 class=\"heading-11\">If YOU&nbsp;ARE&nbsp;IN&nbsp;AZ, CA, CO, FL, TX, NY, OR, GA or WA</h3></div></div><div class=\"c-accordion-item-q-icon\"><div class=\"_w-accordion-item-q-icon\"><div class=\"accordion-item-q-icon-stripe-1\"></div><div class=\"accordion-item-q-icon-stripe-2\"></div></div></div></div></div><div class=\"c-accordion-item-a\"><div class=\"_w-accordion-item-a\"><div class=\"w-embed w-iframe w-script\"><iframe src=\"https://app.acuityscheduling.com/schedule.php?owner=26756408&amp;owner=26756408&amp;appointmentType=38092182\" width=\"100%\" height=\"800\" frameborder=\"0\"></iframe>\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div></div></div></div></div></div></div></div></div>",
+        __html: `<div style="max-width:800px;margin:0 auto;padding:2rem 1.5rem 4rem;">
+
+  <div style="text-align:center;padding:2rem 0;">
+    <h1 style="font-family:'Libre Baskerville',serif;font-size:2rem;font-weight:700;color:#111827;margin-bottom:0.75rem;">Schedule Your Initial Consultation</h1>
+    <p style="font-family:'Poppins',sans-serif;font-size:1rem;color:#6b7280;">60 minutes with a physician &middot; $350 &middot; Available in 9 states</p>
+  </div>
+
+  <div style="background:#f9fafb;border:1px solid #e5e7eb;border-radius:10px;padding:1.5rem;margin-bottom:2rem;">
+    <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#4b5563;line-height:1.7;margin-bottom:1rem;">
+      This scheduler is for <strong>new patients</strong>. If you are currently receiving treatment, please schedule on the <a href="/current-patients/scheduling" style="color:#0d9488;text-decoration:underline;">Current Patients page</a>.
+    </p>
+    <p style="font-family:'Poppins',sans-serif;font-size:0.85rem;color:#6b7280;line-height:1.6;margin-bottom:0.75rem;">
+      Isha Health does not accept insurance, including Medicaid and Medicare. Payment is due at the time of service. Please mind the time zone when booking.
+    </p>
+    <p style="font-family:'Poppins',sans-serif;font-size:0.85rem;color:#6b7280;line-height:1.6;margin-bottom:0.75rem;">
+      <strong style="color:#374151;">Cancellation policy:</strong> A $120 fee applies for cancellations less than 48 hours before the appointment. No-shows are charged the full $350. <a href="/cancellation-policy-isha-health" style="color:#0d9488;text-decoration:underline;">View full policy</a>.
+    </p>
+    <p style="font-family:'Poppins',sans-serif;font-size:0.85rem;color:#6b7280;line-height:1.6;">
+      No availability showing? Email <a href="mailto:info@isha.health" style="color:#0d9488;text-decoration:underline;">info@isha.health</a> — we may be able to accommodate you sooner.
+    </p>
+  </div>
+
+  <div style="margin-bottom:1rem;">
+    <p style="font-family:'Poppins',sans-serif;font-size:0.85rem;font-weight:600;color:#111827;margin-bottom:0.5rem;">Available in: AZ, CA, CO, FL, GA, NY, OR, TX, WA</p>
+  </div>
+
+  <div id="all-states-booking" style="border:1px solid #e5e7eb;border-radius:10px;overflow:hidden;">
+    <iframe src="https://app.acuityscheduling.com/schedule.php?owner=26756408&amp;owner=26756408&amp;appointmentType=38092182" width="100%" height="800" frameborder="0" style="display:block;"></iframe>
+  </div>
+
+  <div style="text-align:center;margin-top:2rem;">
+    <p style="font-family:'Poppins',sans-serif;font-size:0.8rem;color:#9ca3af;">To reschedule or cancel, email <a href="mailto:info@isha.health" style="color:#0d9488;">info@isha.health</a></p>
+  </div>
+
+</div>`,
       }}
     />
   );
