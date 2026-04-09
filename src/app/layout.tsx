@@ -43,10 +43,10 @@ const navbarHtml = `
   <div style="max-width:1200px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;">
     <!-- Left: hamburger + logo + therapist link -->
     <div style="display:flex;align-items:center;gap:16px;">
-      <button class="menu-btn" aria-label="Menu" style="display:none;background:none;border:none;cursor:pointer;padding:4px;font-size:24px;line-height:1;">
-        <span style="display:block;width:24px;height:3px;background:#333;margin:4px 0;"></span>
-        <span style="display:block;width:24px;height:3px;background:#333;margin:4px 0;"></span>
-        <span style="display:block;width:24px;height:3px;background:#333;margin:4px 0;"></span>
+      <button class="menu-btn" aria-label="Menu" style="background:none;border:none;cursor:pointer;padding:4px;font-size:24px;line-height:1;display:flex;flex-direction:column;">
+        <span style="display:block;width:22px;height:2px;background:#333;margin:3px 0;"></span>
+        <span style="display:block;width:22px;height:2px;background:#333;margin:3px 0;"></span>
+        <span style="display:block;width:22px;height:2px;background:#333;margin:3px 0;"></span>
       </button>
       <a href="/" style="text-decoration:none;display:flex;flex-direction:column;align-items:flex-start;">
         <span style="font-size:10px;letter-spacing:2px;color:#555;font-weight:500;">FEEL BETTER WITH</span>
@@ -95,7 +95,6 @@ const navbarHtml = `
   <div style="height:1px;background:#222;"></div>
   <style>
     @media (max-width: 768px) {
-      .menu-btn { display: flex !important; flex-direction: column; }
       .desktop-only { display: none !important; }
     }
   </style>
