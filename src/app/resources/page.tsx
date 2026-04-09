@@ -139,6 +139,29 @@ export default function ResourcesPage() {
       </div>
     </div>
 
+    <!-- Legal & Regulatory -->
+    <div style="margin-bottom:3rem;">
+      <h2 style="font-family:'Libre Baskerville',serif;font-size:1.4rem;font-weight:700;color:#111827;margin-bottom:1.25rem;padding-bottom:0.5rem;border-bottom:2px solid #0d9488;">Legal & Regulatory</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem;">
+        <a href="/post/is-ketamine-legal" style="padding:1rem;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:inherit;background:#fff;">
+          <p style="font-family:'Poppins',sans-serif;font-weight:600;color:#111827;font-size:0.9rem;margin-bottom:0.25rem;">Is Ketamine Legal? State-by-State Guide</p>
+          <p style="font-family:'Source Sans Pro',sans-serif;font-size:0.8rem;color:#6b7280;">Federal status, off-label prescribing, telehealth rules, and your 9-state guide</p>
+        </a>
+        <a href="/post/dea-extends-telemedicine-prescribing" style="padding:1rem;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:inherit;background:#fff;">
+          <p style="font-family:'Poppins',sans-serif;font-weight:600;color:#111827;font-size:0.9rem;margin-bottom:0.25rem;">DEA Extends Telemedicine Prescribing</p>
+          <p style="font-family:'Source Sans Pro',sans-serif;font-size:0.8rem;color:#6b7280;">What the latest DEA rules mean for at-home ketamine therapy</p>
+        </a>
+        <a href="/post/the-fda-approval-process-for-ketamine-treatment-why-hasnt-it-happened-yet" style="padding:1rem;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:inherit;background:#fff;">
+          <p style="font-family:'Poppins',sans-serif;font-weight:600;color:#111827;font-size:0.9rem;margin-bottom:0.25rem;">FDA Approval for Ketamine: Why Hasn't It Happened?</p>
+          <p style="font-family:'Source Sans Pro',sans-serif;font-size:0.8rem;color:#6b7280;">The regulatory path for ketamine as a depression treatment</p>
+        </a>
+        <a href="/post/psychedelic-therapy-legislation-expands-across-the-u-s" style="padding:1rem;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:inherit;background:#fff;">
+          <p style="font-family:'Poppins',sans-serif;font-weight:600;color:#111827;font-size:0.9rem;margin-bottom:0.25rem;">Psychedelic Therapy Legislation in the U.S.</p>
+          <p style="font-family:'Source Sans Pro',sans-serif;font-size:0.8rem;color:#6b7280;">How state laws are expanding access to psychedelic-assisted therapies</p>
+        </a>
+      </div>
+    </div>
+
     <!-- Practical Guides -->
     <div style="margin-bottom:3rem;">
       <h2 style="font-family:'Libre Baskerville',serif;font-size:1.4rem;font-weight:700;color:#111827;margin-bottom:1.25rem;padding-bottom:0.5rem;border-bottom:2px solid #0d9488;">Practical Guides</h2>
