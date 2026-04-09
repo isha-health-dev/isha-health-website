@@ -87,7 +87,7 @@ export default function CollaboratePage() {
         }}
       >
         <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '1rem', lineHeight: 1.7, color: '#4b5563', marginBottom: '2rem', textAlign: 'center' }}>
-          We believe ketamine therapy works best when prescribers and therapists work together. Isha Health physicians handle the medical side — you provide the integration support that deepens and sustains patient progress.
+          We believe ketamine therapy works best when prescribers and therapists work together. Isha Health collaborates with over 500 clinicians across the country — our physicians handle the medical side while you provide the integration support that deepens and sustains patient progress.
         </p>
 
         {/* How It Works */}
