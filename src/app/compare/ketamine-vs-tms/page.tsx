@@ -22,13 +22,13 @@ export default function Page() {
   return (
     <div
       dangerouslySetInnerHTML={{
-        __html: `<div class="section-base white-section static-page">
+        __html: `<div style="padding:0 0 2rem;">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is ketamine faster than TMS for depression?","acceptedAnswer":{"@type":"Answer","text":"Ketamine may produce noticeable mood improvements within hours to days in some patients, whereas TMS typically requires several weeks of daily sessions before patients report meaningful changes. However, individual responses vary significantly."}},{"@type":"Question","name":"Can you do ketamine and TMS together?","acceptedAnswer":{"@type":"Answer","text":"Some clinicians may recommend combining ketamine and TMS, though research on this combination is still limited. It is important to discuss any combined treatment approach with your provider to understand potential benefits and risks."}},{"@type":"Question","name":"Is TMS or ketamine more expensive?","acceptedAnswer":{"@type":"Answer","text":"A full course of TMS may cost $6,000 to $12,000 or more, though some insurance plans cover it. Ketamine therapy costs vary by route of administration, with oral ketamine generally being more affordable than IV infusions. At-home oral ketamine through Isha Health starts at $350 per appointment plus $50-150 per month for medication."}},{"@type":"Question","name":"Does insurance cover ketamine or TMS?","acceptedAnswer":{"@type":"Answer","text":"TMS is more widely covered by insurance for treatment-resistant depression. Ketamine therapy, when used off-label for depression, is generally not covered by insurance, though HSA/FSA funds may be used. Spravato (esketamine), which is FDA-approved for treatment-resistant depression, may be covered by some plans."}}]}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://isha.health"},{"@type":"ListItem","position":2,"name":"Compare","item":"https://isha.health/compare"},{"@type":"ListItem","position":3,"name":"Ketamine vs TMS","item":"https://isha.health/compare/ketamine-vs-tms"}]}</script>
-  <div class="hero-isha">
-    <h1 class="heading static-heading">Ketamine vs TMS: Which Is Right for You?</h1>
+  <div style="text-align:center;padding:3rem 1.5rem 1.5rem;">
+    <h1 style="font-family:'Libre Baskerville',serif;font-size:2rem;font-weight:700;color:#111827;margin:0;">Ketamine vs TMS: Which Is Right for You?</h1>
   </div>
-  <div class="section-wrapper" style="max-width:800px;margin:0 auto;padding:2rem 1.5rem;">
+  <div style="max-width:800px;margin:0 auto;padding:1.5rem;" style="max-width:800px;margin:0 auto;padding:2rem 1.5rem;">
     <nav aria-label="Breadcrumb" style="font-size:0.8rem;color:#6b7280;margin-bottom:1.5rem;font-family:'Poppins',sans-serif;">
       <a href="/" style="color:#0d9488;text-decoration:none;">Home</a> /
       <a href="/compare" style="color:#0d9488;text-decoration:none;">Compare</a> /

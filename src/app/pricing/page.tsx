@@ -24,7 +24,7 @@ export default function PricingPage() {
     <div
       dangerouslySetInnerHTML={{
         __html: `
-<div class="section-base white-section static-page">
+<div style="padding:0 0 2rem;">
   <script type="application/ld+json">${JSON.stringify({
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -61,19 +61,19 @@ export default function PricingPage() {
       }
     ]
   })}</script>
-  <div class="hero-isha">
-    <h1 class="heading static-heading">Your Healing Journey, Personalized</h1>
+  <div style="text-align:center;padding:3rem 1.5rem 1.5rem;">
+    <h1 style="font-family:'Libre Baskerville',serif;font-size:2rem;font-weight:700;color:#111827;margin:0;">Your Healing Journey, Personalized</h1>
   </div>
 
   <!-- Personalized Care Intro -->
-  <div class="section-wrapper" style="max-width:800px;margin:0 auto;padding:2rem 1.5rem 0;">
+  <div style="max-width:800px;margin:0 auto;padding:1.5rem;" style="max-width:800px;margin:0 auto;padding:2rem 1.5rem 0;">
     <p style="font-family:'Poppins',sans-serif;font-size:1.1rem;line-height:1.8;color:#4b5563;text-align:center;text-wrap:pretty;">
       At Isha Health, we don't believe in one-size-fits-all treatment. Every patient receives a care plan built around their unique history, symptoms, and goals — guided by a licensed clinician from start to finish.
     </p>
   </div>
 
   <!-- Pricing Cards -->
-  <div class="section-wrapper" style="max-width:900px;margin:0 auto;padding:2.5rem 1.5rem;">
+  <div style="max-width:800px;margin:0 auto;padding:1.5rem;" style="max-width:900px;margin:0 auto;padding:2.5rem 1.5rem;">
     <div style="background-color:#fef3c7;border:1px solid #fcd34d;border-radius:10px;padding:0.85rem 1.25rem;text-align:center;margin-bottom:1.5rem;">
       <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;font-weight:600;color:#92400e;margin:0;">Book before May 1, 2026 to lock in $350 — pricing increases to $398 after that date.</p>
     </div>
@@ -188,7 +188,7 @@ export default function PricingPage() {
   </div>
 
   <!-- FAQ Section -->
-  <div class="section-wrapper" style="max-width:800px;margin:0 auto;padding:3rem 1.5rem;">
+  <div style="max-width:800px;margin:0 auto;padding:1.5rem;" style="max-width:800px;margin:0 auto;padding:3rem 1.5rem;">
     <h2 style="font-family:'Libre Baskerville',serif;font-size:1.5rem;font-weight:700;color:#111827;text-align:center;margin-bottom:2rem;">Frequently Asked Questions</h2>
 
     <div style="border-bottom:1px solid #e5e7eb;padding:1.25rem 0;">

@@ -23,7 +23,7 @@ export default function Page() {
   return (
     <div
       dangerouslySetInnerHTML={{
-        __html: "<div class=\"section-base white-section static-page\"><div class=\"hero-isha\"><h1 class=\"heading static-heading\">Ketamine Therapy Informed consent</h1></div><div class=\"section-wrapper static-page-wrapper\"><div class=\"w-embed w-iframe\"><iframe src=\"/images/8e6cd264_66f2b17fdc7238f5456dca90_Instructions___Informed_consent_09272024.pdf\" width=\"100%\" height=\"800px\" style=\"border:none;\"></iframe></div></div></div><!-- Google Tag Manager (noscript) -->\n\n<!-- End Google Tag Manager (noscript) -->\n\n",
+        __html: "<div style=\"padding:0 0 2rem;\"><div style=\"text-align:center;padding:3rem 1.5rem 1.5rem;\"><h1 style=\"font-family:'Libre Baskerville',serif;font-size:2rem;font-weight:700;color:#111827;margin:0;\">Ketamine Therapy Informed consent</h1></div><div style=\"max-width:800px;margin:0 auto;padding:0 1.5rem;\"><div class=\"w-embed w-iframe\"><iframe src=\"/images/8e6cd264_66f2b17fdc7238f5456dca90_Instructions___Informed_consent_09272024.pdf\" width=\"100%\" height=\"800px\" style=\"border:none;\"></iframe></div></div></div>",
       }}
     />
   );

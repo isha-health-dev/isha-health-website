@@ -22,13 +22,13 @@ export default function Page() {
   return (
     <div
       dangerouslySetInnerHTML={{
-        __html: `<div class="section-base white-section static-page">
+        __html: `<div style="padding:0 0 2rem;">
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How does at-home ketamine therapy work in Santa Monica?", "acceptedAnswer": {"@type": "Answer", "text": "Isha Health provides ketamine therapy via telemedicine for patients in Santa Monica, California. You meet with a physician over video for your initial consultation, receive your prescription by mail, and complete sessions at home with ongoing clinical support."}}, {"@type": "Question", "name": "How much does ketamine therapy cost in Santa Monica?", "acceptedAnswer": {"@type": "Answer", "text": "Initial consultation is $350 (60 minutes with a physician). Follow-up appointments are $350 (30 minutes). Medication typically costs $50-150 for a 30-day supply from a compounding pharmacy. HSA/FSA accepted."}}, {"@type": "Question", "name": "Is ketamine therapy legal in California?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Ketamine is a Schedule III medication that can be legally prescribed off-label by licensed physicians in California for conditions including depression, anxiety, and PTSD. Isha Health physicians are licensed to practice in California."}}, {"@type": "Question", "name": "Do I need to visit a clinic?", "acceptedAnswer": {"@type": "Answer", "text": "No. Isha Health is fully telehealth-based. All consultations are conducted via secure video. Your medication is delivered to your home in Santa Monica. No in-person visits required."}}]}</script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://isha.health"}, {"@type": "ListItem", "position": 2, "name": "Ketamine Therapy in California", "item": "https://isha.health/locations/online-at-home-ketamine-therapy-in-california"}, {"@type": "ListItem", "position": 3, "name": "Ketamine Therapy in Santa Monica", "item": "https://isha.health/locations/ketamine-therapy-santa-monica"}]}</script>
-  <div class="hero-isha">
-    <h1 class="heading static-heading">At-Home Ketamine Therapy in Santa Monica, CA</h1>
+  <div style="text-align:center;padding:3rem 1.5rem 1.5rem;">
+    <h1 style="font-family:'Libre Baskerville',serif;font-size:2rem;font-weight:700;color:#111827;margin:0;">At-Home Ketamine Therapy in Santa Monica, CA</h1>
   </div>
-  <div class="section-wrapper" style="max-width:800px;margin:0 auto;padding:2rem 1.5rem;">
+  <div style="max-width:800px;margin:0 auto;padding:1.5rem;" style="max-width:800px;margin:0 auto;padding:2rem 1.5rem;">
     <nav aria-label="Breadcrumb" style="font-size:0.8rem;color:#6b7280;margin-bottom:1.5rem;font-family:'Poppins',sans-serif;">
       <a href="/" style="color:#0d9488;text-decoration:none;">Home</a> /
       <a href="/locations/online-at-home-ketamine-therapy-in-california" style="color:#0d9488;text-decoration:none;">California</a> /

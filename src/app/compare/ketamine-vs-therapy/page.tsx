@@ -22,13 +22,13 @@ export default function Page() {
   return (
     <div
       dangerouslySetInnerHTML={{
-        __html: `<div class="section-base white-section static-page">
+        __html: `<div style="padding:0 0 2rem;">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can ketamine therapy replace talk therapy?","acceptedAnswer":{"@type":"Answer","text":"Ketamine therapy is generally not intended to replace psychotherapy entirely. Many clinicians recommend using ketamine in conjunction with therapy, as the neuroplasticity that ketamine may promote could help patients engage more effectively in therapeutic work. Isha Health encourages patients to continue working with a therapist alongside ketamine treatment."}},{"@type":"Question","name":"Is ketamine-assisted psychotherapy different from regular ketamine therapy?","acceptedAnswer":{"@type":"Answer","text":"Yes. Ketamine-assisted psychotherapy (KAP) integrates ketamine sessions with structured therapeutic sessions, where a therapist helps the patient process insights and emotions that may arise during or after the ketamine experience. Standard ketamine therapy may focus more on the pharmacological effects without formal therapy integration."}},{"@type":"Question","name":"How long does it take for therapy vs ketamine to show results?","acceptedAnswer":{"@type":"Answer","text":"Traditional therapy such as CBT typically shows meaningful results over 8-16 weeks of regular sessions. Some patients report mood improvements from ketamine within hours to days, though sustained benefit usually requires ongoing treatment and may be enhanced by concurrent therapy."}},{"@type":"Question","name":"Should I try therapy before ketamine?","acceptedAnswer":{"@type":"Answer","text":"Therapy is generally recommended as a foundational treatment for depression and anxiety. Many patients who seek ketamine treatment have already tried therapy without sufficient improvement. However, there is no strict requirement to exhaust all therapy options before exploring ketamine, and the two approaches can complement each other."}}]}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://isha.health"},{"@type":"ListItem","position":2,"name":"Compare","item":"https://isha.health/compare"},{"@type":"ListItem","position":3,"name":"Ketamine vs Traditional Therapy","item":"https://isha.health/compare/ketamine-vs-therapy"}]}</script>
-  <div class="hero-isha">
-    <h1 class="heading static-heading">Ketamine vs Traditional Therapy: Which Is Right for You?</h1>
+  <div style="text-align:center;padding:3rem 1.5rem 1.5rem;">
+    <h1 style="font-family:'Libre Baskerville',serif;font-size:2rem;font-weight:700;color:#111827;margin:0;">Ketamine vs Traditional Therapy: Which Is Right for You?</h1>
   </div>
-  <div class="section-wrapper" style="max-width:800px;margin:0 auto;padding:2rem 1.5rem;">
+  <div style="max-width:800px;margin:0 auto;padding:1.5rem;" style="max-width:800px;margin:0 auto;padding:2rem 1.5rem;">
     <nav aria-label="Breadcrumb" style="font-size:0.8rem;color:#6b7280;margin-bottom:1.5rem;font-family:'Poppins',sans-serif;">
       <a href="/" style="color:#0d9488;text-decoration:none;">Home</a> /
       <a href="/compare" style="color:#0d9488;text-decoration:none;">Compare</a> /

@@ -33,9 +33,159 @@ export const metadata: Metadata = {
   },
 };
 
-const navbarHtml = `<div data-wf--navigation--variant="base" data-animation="default" data-collapse="all" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav"><div class="top-label"><p class="p2">Online Ketamine Treatment Available in: AZ, CA, CO, FL, GA, NY, OR, TX, and WA.</p></div><div class="section-wrapper nav-wrapper"><div class="navbar-wrapper"><div class="header_left"><div data-w-id="efbf0ce3-b7e7-d709-9cde-4249ece669b7" class="menu-button w-nav-button"><div class="icon w-icon-nav-menu"></div></div><a href="/" class="logo-link w-nav-brand"><p class="journey_with">FEEL BETTER WITH</p><img src="/images/isha_logo.webp" loading="lazy" alt="Isha Health" class="logo-image"/></a><p class="paragraph-33"><a href="/collaborate-with-isha-health" class="link-6">FOR KAP TRAINED THERAPISTS</a></p></div><div class="header_right"><a href="/pricing" class="w-inline-block"><p class="paragraph-33">PRICING</p></a><a id="check-availability" href="/appointment" class="button-navbar w-button">CHECK AVAILABILITY</a></div></div><div class="menu-popup-wrapper"><div class="menu-popup"><div class="menu-popup-logo-column"><img src="/images/close_black.svg" loading="lazy" data-w-id="da2bd1ce-fa1e-9f4e-a882-a68198e882e9" alt="" class="close-menu"/><div class="div-block-37"><a href="/" class="logo-link w-nav-brand"><img src="/images/isha_logo.webp" loading="lazy" alt="Isha Health" class="logo-image"/></a></div></div><div class="menu-popup-list"><div class="menu-popup-list-inner"><p>FOR PATIENTS</p><a href="/appointment" class="popupmenu-link">Make an Appointment</a><a href="/pricing" class="popupmenu-link">Pricing</a><a href="/our-treatment-approach" class="popupmenu-link">OUR TREATMENT APPROACH</a><div class="menu-popup-dropdown"><div data-hover="false" data-delay="0" class="dropdown-2 w-dropdown"><div class="dropdown-toggle-2 w-dropdown-toggle"><div class="icon-3 w-icon-dropdown-toggle"></div><div class="text-block-2">For OUR Current Patients</div></div><nav class="menu-popup-dropdown-list w-dropdown-list"><div><a href="/current-patients/scheduling" class="popupmenu-link">Scheduling</a></div><div><a href="/current-patients/referral-from-your-primary-doctor" class="popupmenu-link">Qualified Telemedicine Referral</a></div><div><a href="/current-patients/superbill" class="popupmenu-link">Superbill</a></div><div><a href="/current-patients/session-instruction" class="popupmenu-link">Dosing session instructions</a></div><div><a href="/healing-music-playlist" class="popupmenu-link">Healing Sound Playlist</a></div></nav></div></div><a href="/ketamine-therapist-directory" class="popupmenu-link">Ketamine Assisted Psychotherapist Directory</a></div><div class="menu-separator"></div><div class="menu-popup-list-inner"><p>FOR CLINICIANS</p><a href="/collaborate-with-isha-health" class="popupmenu-link">Collaborate with Isha Health</a><a href="/referral-patient-process" class="popupmenu-link">PATIENT REFERRAL PROCESS</a><a href="/isha-health-media-kit" class="popupmenu-link">Isha Health Media Kit</a></div><div class="menu-separator"></div><div><div class="menu-popup-dropdown"><div data-hover="false" data-delay="0" class="dropdown-2 w-dropdown"><div class="dropdown-toggle-2 w-dropdown-toggle"><div class="icon-3 w-icon-dropdown-toggle"></div><div class="text-block-2">About Us</div></div><nav class="menu-popup-dropdown-list w-dropdown-list"><div><a href="/about-us/about-isha-health" class="popupmenu-link">Isha</a></div><div><a href="/about-us/ketamine-therapy" class="popupmenu-link">Ketamine</a></div></nav></div></div></div><div><a href="/isha-health-in-the-media" class="popupmenu-link">Media</a></div><div><a href="/faq" class="popupmenu-link">FAQ</a></div><div><a href="/blog" class="popupmenu-link">Blog</a></div></div></div></div></div><div class="black-line"></div></div>`;
+const navbarHtml = `
+<nav style="position:sticky;top:0;z-index:1000;font-family:'Poppins',sans-serif;background:#fff;">
+  <!-- Top bar -->
+  <div style="background:#2d3436;color:#fff;text-align:center;padding:8px 16px;font-size:13px;letter-spacing:0.3px;">
+    Online Ketamine Treatment Available in: AZ, CA, CO, FL, GA, NY, OR, TX, and WA.
+  </div>
+  <!-- Main navbar -->
+  <div style="max-width:1200px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;">
+    <!-- Left: hamburger + logo + therapist link -->
+    <div style="display:flex;align-items:center;gap:16px;">
+      <button class="menu-btn" aria-label="Menu" style="display:none;background:none;border:none;cursor:pointer;padding:4px;font-size:24px;line-height:1;">
+        <span style="display:block;width:24px;height:3px;background:#333;margin:4px 0;"></span>
+        <span style="display:block;width:24px;height:3px;background:#333;margin:4px 0;"></span>
+        <span style="display:block;width:24px;height:3px;background:#333;margin:4px 0;"></span>
+      </button>
+      <a href="/" style="text-decoration:none;display:flex;flex-direction:column;align-items:flex-start;">
+        <span style="font-size:10px;letter-spacing:2px;color:#555;font-weight:500;">FEEL BETTER WITH</span>
+        <img src="/images/isha_logo.webp" loading="lazy" alt="Isha Health" style="height:36px;margin-top:2px;" />
+      </a>
+      <a href="/collaborate-with-isha-health" style="font-size:11px;letter-spacing:1px;color:#333;text-decoration:none;font-weight:500;margin-left:8px;">FOR KAP TRAINED THERAPISTS</a>
+    </div>
+    <!-- Right: pricing + CTA -->
+    <div style="display:flex;align-items:center;gap:20px;">
+      <a href="/pricing" style="font-size:13px;font-weight:600;letter-spacing:1px;color:#333;text-decoration:none;">PRICING</a>
+      <a id="check-availability" href="/appointment" style="background:#1abc9c;color:#fff;padding:10px 22px;border-radius:6px;font-size:13px;font-weight:600;letter-spacing:0.5px;text-decoration:none;white-space:nowrap;">CHECK AVAILABILITY</a>
+    </div>
+  </div>
+  <!-- Mobile menu -->
+  <div id="mobile-menu" style="display:none;background:#fff;border-top:1px solid #eee;padding:24px;font-family:'Poppins',sans-serif;">
+    <div style="margin-bottom:16px;">
+      <p style="font-size:12px;font-weight:600;letter-spacing:1px;color:#888;margin:0 0 8px;">FOR PATIENTS</p>
+      <a href="/appointment" style="display:block;padding:6px 0;color:#333;text-decoration:none;font-size:14px;">Make an Appointment</a>
+      <a href="/pricing" style="display:block;padding:6px 0;color:#333;text-decoration:none;font-size:14px;">Pricing</a>
+      <a href="/our-treatment-approach" style="display:block;padding:6px 0;color:#333;text-decoration:none;font-size:14px;">Our Treatment Approach</a>
+      <p style="font-size:13px;font-weight:500;color:#555;margin:10px 0 4px;">Current Patients</p>
+      <a href="/current-patients/scheduling" style="display:block;padding:4px 0 4px 12px;color:#333;text-decoration:none;font-size:13px;">Scheduling</a>
+      <a href="/current-patients/referral-from-your-primary-doctor" style="display:block;padding:4px 0 4px 12px;color:#333;text-decoration:none;font-size:13px;">Qualified Telemedicine Referral</a>
+      <a href="/current-patients/superbill" style="display:block;padding:4px 0 4px 12px;color:#333;text-decoration:none;font-size:13px;">Superbill</a>
+      <a href="/current-patients/session-instruction" style="display:block;padding:4px 0 4px 12px;color:#333;text-decoration:none;font-size:13px;">Dosing Session Instructions</a>
+      <a href="/healing-music-playlist" style="display:block;padding:4px 0 4px 12px;color:#333;text-decoration:none;font-size:13px;">Healing Sound Playlist</a>
+      <a href="/ketamine-therapist-directory" style="display:block;padding:6px 0;color:#333;text-decoration:none;font-size:14px;">Clinician Directory</a>
+    </div>
+    <div style="border-top:1px solid #eee;padding-top:16px;margin-bottom:16px;">
+      <p style="font-size:12px;font-weight:600;letter-spacing:1px;color:#888;margin:0 0 8px;">FOR CLINICIANS</p>
+      <a href="/collaborate-with-isha-health" style="display:block;padding:6px 0;color:#333;text-decoration:none;font-size:14px;">Collaborate with Isha Health</a>
+      <a href="/referral-patient-process" style="display:block;padding:6px 0;color:#333;text-decoration:none;font-size:14px;">Patient Referral Process</a>
+      <a href="/isha-health-media-kit" style="display:block;padding:6px 0;color:#333;text-decoration:none;font-size:14px;">Isha Health Media Kit</a>
+    </div>
+    <div style="border-top:1px solid #eee;padding-top:16px;margin-bottom:16px;">
+      <p style="font-size:13px;font-weight:500;color:#555;margin:0 0 4px;">About Us</p>
+      <a href="/about-us/about-isha-health" style="display:block;padding:4px 0 4px 12px;color:#333;text-decoration:none;font-size:13px;">Isha</a>
+      <a href="/about-us/ketamine-therapy" style="display:block;padding:4px 0 4px 12px;color:#333;text-decoration:none;font-size:13px;">Ketamine</a>
+    </div>
+    <div style="border-top:1px solid #eee;padding-top:16px;">
+      <a href="/isha-health-in-the-media" style="display:block;padding:6px 0;color:#333;text-decoration:none;font-size:14px;">Media</a>
+      <a href="/faq" style="display:block;padding:6px 0;color:#333;text-decoration:none;font-size:14px;">FAQ</a>
+      <a href="/blog" style="display:block;padding:6px 0;color:#333;text-decoration:none;font-size:14px;">Blog</a>
+    </div>
+  </div>
+  <div style="height:1px;background:#222;"></div>
+  <style>
+    @media (max-width: 768px) {
+      .menu-btn { display: flex !important; flex-direction: column; }
+    }
+  </style>
+  <script>
+    document.querySelector('.menu-btn').addEventListener('click', function() {
+      var m = document.getElementById('mobile-menu');
+      m.style.display = m.style.display === 'none' ? 'block' : 'none';
+    });
+  </script>
+</nav>`;
 
-const footerHtml = `<section class="footer-light"><div class="container"><div class="footer-wrapper-two"><a href="/" class="footer-brand w-inline-block"><img src="/images/logo_white.webp" loading="lazy" alt="Isha Health" class="image-3"/></a><div class="footer-social-block-two"><a href="https://www.linkedin.com/company/isha-health/" class="footer-social-link w-inline-block"><img src="/images/icon-linkedin.webp" loading="lazy" alt="LinkedIn" class="social-icon"/></a><a href="https://www.instagram.com/isha.health/" class="footer-social-link w-inline-block"><img src="/images/icon-instagram.webp" loading="lazy" alt="Instagram" class="social-icon"/></a><a href="https://twitter.com/IshaHealth" class="footer-social-link w-inline-block"><img src="/images/icon-twitter.webp" loading="lazy" alt="Twitter" class="social-icon"/></a></div></div><div class="footer-wrapper-two"><div class="footer-block-two"><div class="footer-title">Company</div><a href="/pricing" class="footer-link-two">PRICING</a><a href="/about-us/about-isha-health" class="footer-link-two">About Us</a></div><div class="footer-block-two"><div class="footer-title">SERVICE</div><a href="/about-us/ketamine-therapy" class="footer-link-two">Ketamine Therapy</a><a href="/ketamine-therapy-for-depression" class="footer-link-two">Ketamine Therapy for Depression</a><a href="/ketamine-therapy-for-anxiety" class="footer-link-two">Ketamine Therapy for Anxiety</a><a href="/what-is-ketamine-assisted-therapy" class="footer-link-two">What is Ketamine Assisted Therapy</a><a href="/outcomes" class="footer-link-two">Patient Outcomes</a><a href="/faq/ketamine-therapy" class="footer-link-two">FAQ</a><a href="/current-patients/superbill" class="footer-link-two">Superbill</a></div><div class="footer-block-two"><div class="footer-title">Legal</div><a href="/terms-of-use" class="footer-link-two">Terms of Use</a><a href="/privacy-policy" class="footer-link-two">Privacy Policy</a><a href="/notice-of-privacy-practices" class="footer-link-two">Notice of Privacy Practices</a><a href="/safety-information-for-ketamine-treatment" class="footer-link-two">Safety Information for Ketamine Treatment</a><a href="/good-faith-estimate" class="footer-link-two">Good Faith Estimate</a><a href="/consent-form" class="footer-link-two">Consent Form</a></div><div class="footer-block-two"><div class="footer-title">CONTACT US</div><span class="footer-link-two">San Francisco, California</span><a href="mailto:info@isha.health" class="footer-link-two">Email: info@isha.health</a></div></div><div class="footer-wrapper-two"><div class="div-block-43"><p class="paragraph-30">This website has been reviewed by Isha Health California, P.C. and should not be used as medical advice in place of a licensed psychiatric clinician.<br/><br/>IN CASE OF EMERGENCY:<br/>If you are in a life-threatening situation, don&apos;t use this site. Call, text, or chat 988 or 1-800-273-TALK (8255), or use these resources to get immediate help.</p></div><div class="footer-block-two"><div class="footer-title">Location</div><div class="horizontal"><div class="vertical"><a href="/locations/online-at-home-ketamine-therapy-in-arizona" class="footer-link-two">Arizona</a><a href="/locations/online-at-home-ketamine-therapy-in-california" class="footer-link-two">California</a><a href="/locations/online-at-home-ketamine-therapy-in-colorado" class="footer-link-two">Colorado</a><a href="/locations/online-at-home-ketamine-therapy-in-florida" class="footer-link-two">Florida</a><a href="/locations/online-at-home-ketamine-therapy-in-georgia" class="footer-link-two">Georgia</a></div><div class="vertical"><a href="/locations/online-at-home-ketamine-therapy-in-new-york" class="footer-link-two">New York</a><a href="/locations/online-at-home-ketamine-therapy-in-oregon" class="footer-link-two">Oregon</a><a href="/locations/online-at-home-ketamine-therapy-in-washington" class="footer-link-two">Washington</a><a href="/locations/online-at-home-ketamine-therapy-in-texas" class="footer-link-two">Texas</a></div></div></div></div><div class="footer-bottom"><footer><p class="footer-text">&copy; ${new Date().getFullYear()} Isha Health. All rights reserved</p></footer></div></div></section>`;
+const footerHtml = `
+<footer style="background:#1a1a1a;color:#fff;font-family:'Poppins',sans-serif;padding:60px 24px 0;">
+  <div style="max-width:1200px;margin:0 auto;">
+    <!-- Logo + social -->
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-bottom:48px;">
+      <a href="/" style="text-decoration:none;">
+        <img src="/images/logo_white.webp" loading="lazy" alt="Isha Health" style="height:40px;" />
+      </a>
+      <div style="display:flex;gap:16px;">
+        <a href="https://www.linkedin.com/company/isha-health/" style="text-decoration:none;"><img src="/images/icon-linkedin.webp" loading="lazy" alt="LinkedIn" style="width:28px;height:28px;" /></a>
+        <a href="https://www.instagram.com/isha.health/" style="text-decoration:none;"><img src="/images/icon-instagram.webp" loading="lazy" alt="Instagram" style="width:28px;height:28px;" /></a>
+        <a href="https://twitter.com/IshaHealth" style="text-decoration:none;"><img src="/images/icon-twitter.webp" loading="lazy" alt="Twitter" style="width:28px;height:28px;" /></a>
+      </div>
+    </div>
+    <!-- Link columns -->
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:40px;margin-bottom:48px;">
+      <!-- Company -->
+      <div>
+        <p style="font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#888;margin:0 0 16px;">Company</p>
+        <a href="/pricing" style="display:block;color:#ccc;text-decoration:none;font-size:14px;padding:4px 0;">PRICING</a>
+        <a href="/about-us/about-isha-health" style="display:block;color:#ccc;text-decoration:none;font-size:14px;padding:4px 0;">About Us</a>
+      </div>
+      <!-- Service -->
+      <div>
+        <p style="font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#888;margin:0 0 16px;">Service</p>
+        <a href="/about-us/ketamine-therapy" style="display:block;color:#ccc;text-decoration:none;font-size:14px;padding:4px 0;">Ketamine Therapy</a>
+        <a href="/ketamine-therapy-for-depression" style="display:block;color:#ccc;text-decoration:none;font-size:14px;padding:4px 0;">Ketamine Therapy for Depression</a>
+        <a href="/ketamine-therapy-for-anxiety" style="display:block;color:#ccc;text-decoration:none;font-size:14px;padding:4px 0;">Ketamine Therapy for Anxiety</a>
+        <a href="/what-is-ketamine-assisted-therapy" style="display:block;color:#ccc;text-decoration:none;font-size:14px;padding:4px 0;">What is Ketamine Assisted Therapy</a>
+        <a href="/outcomes" style="display:block;color:#ccc;text-decoration:none;font-size:14px;padding:4px 0;">Patient Outcomes</a>
+        <a href="/faq/ketamine-therapy" style="display:block;color:#ccc;text-decoration:none;font-size:14px;padding:4px 0;">FAQ</a>
+        <a href="/current-patients/superbill" style="display:block;color:#ccc;text-decoration:none;font-size:14px;padding:4px 0;">Superbill</a>
+      </div>
+      <!-- Legal -->
+      <div>
+        <p style="font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#888;margin:0 0 16px;">Legal</p>
+        <a href="/terms-of-use" style="display:block;color:#ccc;text-decoration:none;font-size:14px;padding:4px 0;">Terms of Use</a>
+        <a href="/privacy-policy" style="display:block;color:#ccc;text-decoration:none;font-size:14px;padding:4px 0;">Privacy Policy</a>
+        <a href="/notice-of-privacy-practices" style="display:block;color:#ccc;text-decoration:none;font-size:14px;padding:4px 0;">Notice of Privacy Practices</a>
+        <a href="/safety-information-for-ketamine-treatment" style="display:block;color:#ccc;text-decoration:none;font-size:14px;padding:4px 0;">Safety Information</a>
+        <a href="/good-faith-estimate" style="display:block;color:#ccc;text-decoration:none;font-size:14px;padding:4px 0;">Good Faith Estimate</a>
+        <a href="/consent-form" style="display:block;color:#ccc;text-decoration:none;font-size:14px;padding:4px 0;">Consent Form</a>
+      </div>
+      <!-- Contact -->
+      <div>
+        <p style="font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#888;margin:0 0 16px;">Contact Us</p>
+        <span style="display:block;color:#ccc;font-size:14px;padding:4px 0;">San Francisco, California</span>
+        <a href="mailto:info@isha.health" style="display:block;color:#ccc;text-decoration:none;font-size:14px;padding:4px 0;">Email: info@isha.health</a>
+      </div>
+    </div>
+    <!-- Emergency notice + locations -->
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:40px;margin-bottom:48px;padding-top:32px;border-top:1px solid #333;">
+      <div>
+        <p style="font-size:13px;color:#999;line-height:1.7;margin:0;">
+          This website has been reviewed by Isha Health California, P.C. and should not be used as medical advice in place of a licensed psychiatric clinician.<br/><br/>
+          <strong style="color:#ccc;">IN CASE OF EMERGENCY:</strong><br/>
+          If you are in a life-threatening situation, don't use this site. Call, text, or chat 988 or 1-800-273-TALK (8255), or use these resources to get immediate help.
+        </p>
+      </div>
+      <div>
+        <p style="font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#888;margin:0 0 16px;">Location</p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px 24px;">
+          <a href="/locations/online-at-home-ketamine-therapy-in-arizona" style="color:#ccc;text-decoration:none;font-size:14px;padding:4px 0;">Arizona</a>
+          <a href="/locations/online-at-home-ketamine-therapy-in-new-york" style="color:#ccc;text-decoration:none;font-size:14px;padding:4px 0;">New York</a>
+          <a href="/locations/online-at-home-ketamine-therapy-in-california" style="color:#ccc;text-decoration:none;font-size:14px;padding:4px 0;">California</a>
+          <a href="/locations/online-at-home-ketamine-therapy-in-oregon" style="color:#ccc;text-decoration:none;font-size:14px;padding:4px 0;">Oregon</a>
+          <a href="/locations/online-at-home-ketamine-therapy-in-colorado" style="color:#ccc;text-decoration:none;font-size:14px;padding:4px 0;">Colorado</a>
+          <a href="/locations/online-at-home-ketamine-therapy-in-washington" style="color:#ccc;text-decoration:none;font-size:14px;padding:4px 0;">Washington</a>
+          <a href="/locations/online-at-home-ketamine-therapy-in-florida" style="color:#ccc;text-decoration:none;font-size:14px;padding:4px 0;">Florida</a>
+          <a href="/locations/online-at-home-ketamine-therapy-in-texas" style="color:#ccc;text-decoration:none;font-size:14px;padding:4px 0;">Texas</a>
+          <a href="/locations/online-at-home-ketamine-therapy-in-georgia" style="color:#ccc;text-decoration:none;font-size:14px;padding:4px 0;">Georgia</a>
+        </div>
+      </div>
+    </div>
+    <!-- Copyright -->
+    <div style="border-top:1px solid #333;padding:24px 0;text-align:center;">
+      <p style="font-size:13px;color:#666;margin:0;">&copy; 2026 Isha Health. All rights reserved</p>
+    </div>
+  </div>
+</footer>`;
 
 export default function RootLayout({
   children,
@@ -153,8 +303,6 @@ gtag('config', 'AW-16993591045');`,
           href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Poppins:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
           rel="stylesheet"
         />
-        <link href="/css/webflow.css" rel="stylesheet" />
-        <link href="/css/bxslider.css" rel="stylesheet" />
       </head>
       <body>
         {/* GTM noscript fallback */}
@@ -206,9 +354,6 @@ gtag('config', 'AW-16993591045');`,
         <div
           dangerouslySetInnerHTML={{ __html: footerHtml }}
         />
-        <Script src="/js/jquery.min.js" strategy="beforeInteractive" />
-        <Script src="/js/webflow.schunk.js" strategy="afterInteractive" />
-        <Script src="/js/webflow.main.js" strategy="afterInteractive" />
       </body>
     </html>
   );

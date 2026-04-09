@@ -1,681 +1,76 @@
-/* Only load Tailwind utilities — no base reset that would conflict with Webflow */
 @tailwind utilities;
 
-/* Webflow badge hide */
-[class^="w-webflow-badge"] {
-  display: none !important;
-  visibility: hidden !important;
+/* ============================================
+   Global Typography
+   ============================================ */
+h1, h2, h3 {
+  font-family: 'Libre Baskerville', serif;
 }
 
-/* Doctor profile page — constrain layout */
-.doctor-page-wrapper {
-  max-width: 900px !important;
-  margin: 0 auto !important;
-  padding: 2rem 1.5rem !important;
-  gap: 2.5rem !important;
-}
-.doctor-sidebar {
-  width: 280px !important;
-  max-width: 280px !important;
-}
-.doctor_pic {
-  width: 220px !important;
-  height: 300px !important;
-  object-fit: cover !important;
-  object-position: top center !important;
-  border-radius: 12px !important;
-}
-.doctor-maiin-wrapper h1 {
-  font-family: 'Libre Baskerville', serif !important;
-  font-size: 1.8rem !important;
-  font-weight: 700 !important;
-}
-.doctor-maiin-wrapper p,
-.doctor-maiin-wrapper .w-richtext p,
-.doctor-maiin-wrapper .left-align,
-.doctor-sidebar-container p,
-.doctor-sidebar-container li,
-.doctor-sidebar-container .w-richtext p,
-.doctor-sidebar-container .w-richtext li,
-.doctor-sidebar-container .w-richtext h3 {
-  font-family: 'Poppins', sans-serif !important;
-  font-size: 0.95rem !important;
-  line-height: 1.7 !important;
-}
-.doctor-sidebar-container .w-richtext h3 {
-  font-family: 'Libre Baskerville', serif !important;
-  font-size: 1.1rem !important;
-  font-weight: 700 !important;
-  margin-bottom: 0.5rem !important;
-}
-.doctor-sidebar-container .w-richtext li {
-  font-size: 0.85rem !important;
-  margin-bottom: 0.35rem !important;
-}
-.doctor-testimonial {
-  margin-top: 2rem !important;
-}
-.doctor-testimonial p {
-  font-family: 'Source Sans Pro', sans-serif !important;
-}
-@media (max-width: 768px) {
-  .doctor-page-wrapper {
-    flex-direction: column !important;
-  }
-  .doctor-sidebar {
-    width: 100% !important;
-    max-width: 100% !important;
-    align-items: center !important;
-  }
-  .doctor_pic {
-    width: 180px !important;
-    height: 180px !important;
-  }
+body, p, a, span, li, label, input, select, textarea, button {
+  font-family: 'Poppins', sans-serif;
 }
 
-/* Sticky header */
-.navbar {
-  position: sticky !important;
-  top: 0 !important;
-  z-index: 1000 !important;
-  background-color: #fff !important;
-}
-
-/* Footer text style */
-.footer-text {
-  color: #fff;
-  font-size: 12px;
+/* Text wrap / orphan prevention */
+h1, h2, h3, p, li {
+  text-wrap: pretty;
+  orphans: 3;
+  widows: 3;
 }
 
 /* ============================================
-   Global font override — replace Alternategotno3d
-   Headings: Libre Baskerville (serif)
-   Body/UI: Poppins (sans-serif)
+   Blog Post Content (MDX via rich-text class)
    ============================================ */
-
-/* Kill Alternategotno3d everywhere — target every selector Webflow uses */
-h1, h2, h3,
-.heading,
-.heading.hero-header,
-.heading-7,
-.heading-10,
-.heading-28,
-.heading-29,
-.heading.heading-left,
-.heading.heading-left.why-ketamine,
-.testimonial,
-.bold-text-2,
-.bold-text-3 {
-  font-family: 'Libre Baskerville', serif !important;
-}
-
-/* Body text, UI elements, buttons — Poppins */
-body,
-p, a, span, li, label, input, select, textarea, button,
-.w-richtext p,
-.w-richtext,
-.rich-text,
-.paragraph-31,
-.paragraph-33,
-.p2,
-.p-70,
-.journey_with,
-.footer-link-two,
-.footer-title,
-.footer-text,
-.button-primary,
-.button-navbar,
-.popupmenu-link,
-.text-block-2,
-.heading-29,
-.italic-text,
-.right-align,
-.c-accordion-item-q-text,
-._w-accordion-item-q-text,
-.column-center {
-  font-family: 'Poppins', sans-serif !important;
-}
-
-/* Hero heading — large serif */
-.heading.hero-header {
-  font-size: 2.8rem !important;
-  font-weight: 700 !important;
-  line-height: 1.15 !important;
-}
-
-/* Hero subheading */
-.heading-29 {
-  font-size: 1.15rem !important;
-  font-weight: 400 !important;
-  color: #4b5563 !important;
-}
-
-/* Testimonial slider heading — serif */
-.testimonial {
-  font-family: 'Libre Baskerville', serif !important;
-  font-size: 1.5rem !important;
-  font-weight: 700 !important;
-  line-height: 1.3 !important;
-}
-
-/* Testimonial body text */
-.testimonial-16,
-p.testimonial-16,
-p.column-content {
-  font-family: 'Source Sans Pro', sans-serif !important;
-  font-size: 0.95rem !important;
-  line-height: 1.6 !important;
-}
-
-/* === Fix Webflow layout overrides === */
-/* The Webflow CSS export has media query rules that collapse
-   .horizontal to column and .w-col to 100% width at tablet/mobile
-   breakpoints, but those rules leak into desktop too. Fix here. */
-@media screen and (min-width: 992px) {
-  .horizontal {
-    flex-direction: row !important;
-  }
-
-}
-
-/* Webflow column layout fix — replace broken float with flexbox */
-.w-row {
-  display: flex !important;
-  flex-wrap: wrap !important;
-  gap: 20px !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}
-
-.w-col {
-  float: none !important;
-  min-height: auto !important;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  position: static !important;
-}
-
-.w-col-4 {
-  flex: 1 1 280px !important;
-  width: auto !important;
-}
-
-.w-col-6 {
-  flex: 1 1 45% !important;
-  width: auto !important;
-}
-
-/* Location page image+text sections */
-.section-wrapper.location .horizontal > img {
-  max-width: 320px;
-  border-radius: 12px;
-  flex-shrink: 0;
-}
-
-.section-wrapper.location .horizontal > .w-richtext {
-  flex: 1;
-}
-
-.section-wrapper.location .horizontal .w-richtext ul {
-  padding-left: 1.25rem;
-}
-
-.section-wrapper.location .horizontal .w-richtext li {
-  margin-bottom: 0.75rem;
-  line-height: 1.6;
-}
-
-/* === Clinical Team section fix === */
-/* The two lead doctors should display side by side on desktop */
-.heading-left + .horizontal {
-  display: flex !important;
-  flex-wrap: wrap !important;
-  gap: 2rem !important;
-  align-items: flex-start !important;
-}
-
-.heading-left + .horizontal > .horizontal {
-  display: flex !important;
-  flex: 1 1 400px !important;
-  gap: 1.5rem !important;
-  align-items: flex-start !important;
-}
-
-.heading-left + .horizontal > .horizontal .image-28 {
-  width: 200px !important;
-  height: 200px !important;
-  object-fit: cover !important;
-  border-radius: 8px !important;
-  flex-shrink: 0 !important;
-}
-
-.heading-left + .horizontal > .horizontal .w-richtext {
-  flex: 1 !important;
-}
-
-.heading-left + .horizontal > .horizontal .w-richtext h3 {
-  font-size: 1.25rem !important;
-  margin-bottom: 0.25rem !important;
-}
-
-.heading-left + .horizontal > .horizontal .w-richtext p {
-  line-height: 1.6 !important;
-}
-
-/* Slider clinician photos - consistent sizing */
-.clinician-slide-pic {
-  width: 180px !important;
-  height: 180px !important;
-  object-fit: cover !important;
-  border-radius: 8px !important;
-  flex-shrink: 0 !important;
-}
-
-/* Slider slide layout */
-.w-slide > .horizontal {
-  display: flex !important;
-  gap: 1.5rem !important;
-  align-items: flex-start !important;
-}
-
-@media screen and (max-width: 767px) {
-  .heading-left + .horizontal > .horizontal {
-    flex: 1 1 100% !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    text-align: center !important;
-  }
-
-  .heading-left + .horizontal > .horizontal .image-28 {
-    width: 160px !important;
-    height: 160px !important;
-  }
-
-  .w-slide > .horizontal {
-    flex-direction: column !important;
-    align-items: center !important;
-    text-align: center !important;
-  }
-
-  .clinician-slide-pic {
-    width: 140px !important;
-    height: 140px !important;
-  }
-}
-
-/* === Therapist directory scoped reset === */
-/* Webflow's CSS reset and normalize strip styling from form elements, links,
-   headings, and override display/layout properties. We use !important here
-   because Webflow CSS loads first and has high specificity on generic selectors. */
-.td-scope {
-  font-family: 'Poppins', 'Source Sans Pro', sans-serif !important;
-  color: #111827 !important;
-  line-height: 1.5 !important;
-}
-
-.td-scope *,
-.td-scope *::before,
-.td-scope *::after {
-  box-sizing: border-box !important;
-}
-
-.td-scope h1 {
-  margin: 0 !important;
-  line-height: 1.25 !important;
-  font-size: 1.875rem !important;
-  font-weight: 700 !important;
-  font-family: 'Libre Baskerville', serif !important;
-  color: #111827 !important;
-}
-
-.td-scope h2 {
-  margin: 0 !important;
-  line-height: 1.25 !important;
-  font-size: 1.125rem !important;
-  font-weight: 600 !important;
-  color: #111827 !important;
-}
-
-.td-scope h3 {
-  margin: 0 !important;
-  line-height: 1.25 !important;
-  font-size: 0.875rem !important;
-  font-weight: 600 !important;
-  color: #6b7280 !important;
-  text-transform: uppercase !important;
-  letter-spacing: 0.05em !important;
-}
-
-.td-scope p {
-  margin: 0 !important;
-  color: #374151 !important;
-}
-
-.td-scope a {
-  color: inherit !important;
-  text-decoration: none !important;
-}
-
-.td-scope a[style*="underline"] {
-  display: inline !important;
-}
-
-.td-scope a.text-teal-600 {
-  display: inline-block !important;
-  color: #0d9488 !important;
-}
-
-.td-scope a.text-teal-600:hover {
-  color: #0f766e !important;
-}
-
-.td-scope img {
-  max-width: 100% !important;
-  height: auto !important;
-}
-
-/* Grid layout - must override Webflow's display resets */
-.td-scope .grid {
-  display: grid !important;
-}
-
-.td-scope .flex {
-  display: flex !important;
-}
-
-.td-scope .inline-block {
-  display: inline-block !important;
-}
-
-.td-scope .block {
-  display: block !important;
-}
-
-.td-scope .hidden {
-  display: none !important;
-}
-
-/* Ensure grid columns work */
-.td-scope .grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
-}
-
-.td-scope .gap-6 {
-  gap: 1.5rem !important;
-}
-
-.td-scope .gap-4 {
-  gap: 1rem !important;
-}
-
-.td-scope .gap-2 {
-  gap: 0.5rem !important;
-}
-
-@media (min-width: 768px) {
-  .td-scope .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-  }
-}
-
-@media (min-width: 1024px) {
-  .td-scope .lg\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-  }
-}
-
-/* Card styling */
-.td-scope .border {
-  border-width: 1px !important;
-  border-style: solid !important;
-}
-
-.td-scope .border-gray-200 {
-  border-color: #e5e7eb !important;
-}
-
-.td-scope .rounded-lg {
-  border-radius: 0.5rem !important;
-}
-
-.td-scope .rounded-full {
-  border-radius: 9999px !important;
-}
-
-.td-scope .rounded-md {
-  border-radius: 0.375rem !important;
-}
-
-.td-scope .bg-white {
-  background-color: #fff !important;
-}
-
-.td-scope .bg-gray-50 {
-  background-color: #f9fafb !important;
-}
-
-.td-scope .bg-gray-100 {
-  background-color: #f3f4f6 !important;
-}
-
-.td-scope .bg-teal-50 {
-  background-color: #f0fdfa !important;
-}
-
-.td-scope .bg-teal-100 {
-  background-color: #ccfbf1 !important;
-}
-
-.td-scope .bg-purple-50 {
-  background-color: #faf5ff !important;
-}
-
-.td-scope .bg-green-50 {
-  background-color: #f0fdf4 !important;
-}
-
-/* Text colors */
-.td-scope .text-gray-500 { color: #6b7280 !important; }
-.td-scope .text-gray-600 { color: #4b5563 !important; }
-.td-scope .text-gray-700 { color: #374151 !important; }
-.td-scope .text-gray-900 { color: #111827 !important; }
-.td-scope .text-teal-600 { color: #0d9488 !important; }
-.td-scope .text-teal-700 { color: #0f766e !important; }
-.td-scope .text-purple-700 { color: #7c3aed !important; }
-.td-scope .text-green-700 { color: #15803d !important; }
-
-/* Text sizing */
-.td-scope .text-xs { font-size: 0.75rem !important; line-height: 1rem !important; }
-.td-scope .text-sm { font-size: 0.875rem !important; line-height: 1.25rem !important; }
-.td-scope .text-lg { font-size: 1.125rem !important; line-height: 1.75rem !important; }
-.td-scope .text-2xl { font-size: 1.5rem !important; line-height: 2rem !important; }
-.td-scope .text-3xl { font-size: 1.875rem !important; line-height: 2.25rem !important; }
-
-/* Font weight */
-.td-scope .font-semibold { font-weight: 600 !important; }
-.td-scope .font-bold { font-weight: 700 !important; }
-.td-scope .font-normal { font-weight: 400 !important; }
-
-/* Spacing */
-.td-scope .p-6 { padding: 1.5rem !important; }
-.td-scope .px-4 { padding-left: 1rem !important; padding-right: 1rem !important; }
-.td-scope .px-2 { padding-left: 0.5rem !important; padding-right: 0.5rem !important; }
-.td-scope .px-3 { padding-left: 0.75rem !important; padding-right: 0.75rem !important; }
-.td-scope .py-1 { padding-top: 0.25rem !important; padding-bottom: 0.25rem !important; }
-.td-scope .py-2 { padding-top: 0.5rem !important; padding-bottom: 0.5rem !important; }
-.td-scope .py-12 { padding-top: 3rem !important; padding-bottom: 3rem !important; }
-.td-scope .mb-3 { margin-bottom: 0.75rem !important; }
-.td-scope .mb-4 { margin-bottom: 1rem !important; }
-.td-scope .mb-8 { margin-bottom: 2rem !important; }
-.td-scope .mb-10 { margin-bottom: 2.5rem !important; }
-.td-scope .mt-1 { margin-top: 0.25rem !important; }
-.td-scope .mt-3 { margin-top: 0.75rem !important; }
-.td-scope .mt-4 { margin-top: 1rem !important; }
-.td-scope .mt-8 { margin-top: 2rem !important; }
-.td-scope .ml-auto { margin-left: auto !important; }
-
-/* Layout */
-.td-scope .max-w-7xl { max-width: 80rem !important; margin-left: auto !important; margin-right: auto !important; }
-.td-scope .max-w-4xl { max-width: 56rem !important; margin-left: auto !important; margin-right: auto !important; }
-.td-scope .max-w-2xl { max-width: 42rem !important; margin-left: auto !important; margin-right: auto !important; }
-.td-scope .mx-auto { margin-left: auto !important; margin-right: auto !important; }
-.td-scope .min-h-screen { min-height: 100vh !important; }
-.td-scope .min-w-0 { min-width: 0 !important; }
-.td-scope .w-full { width: 100% !important; }
-.td-scope .w-16 { width: 4rem !important; }
-.td-scope .h-16 { height: 4rem !important; }
-.td-scope .w-32 { width: 8rem !important; }
-.td-scope .h-32 { height: 8rem !important; }
-.td-scope .w-4 { width: 1rem !important; }
-.td-scope .h-4 { height: 1rem !important; }
-
-/* Flex utilities */
-.td-scope .flex-wrap { flex-wrap: wrap !important; }
-.td-scope .flex-shrink-0 { flex-shrink: 0 !important; }
-.td-scope .items-start { align-items: flex-start !important; }
-.td-scope .items-center { align-items: center !important; }
-.td-scope .justify-center { justify-content: center !important; }
-
-/* Object fit */
-.td-scope .object-cover { object-fit: cover !important; }
-
-/* Truncate */
-.td-scope .truncate { overflow: hidden !important; text-overflow: ellipsis !important; white-space: nowrap !important; }
-
-/* Text alignment */
-.td-scope .text-center { text-align: center !important; }
-
-/* Whitespace */
-.td-scope .whitespace-pre-line { white-space: pre-line !important; }
-
-/* Break words */
-.td-scope .break-all { word-break: break-all !important; }
-
-/* Transitions */
-.td-scope .transition-shadow { transition: box-shadow 0.15s ease !important; }
-.td-scope a:hover .hover\:shadow-md,
-.td-scope a.hover\:shadow-md:hover {
-  box-shadow: 0 4px 6px -1px rgba(0,0,0,.1), 0 2px 4px -2px rgba(0,0,0,.1) !important;
-}
-
-/* Form elements */
-.td-scope input[type="text"],
-.td-scope input[type="email"],
-.td-scope input[type="search"],
-.td-scope select {
-  appearance: none !important;
-  -webkit-appearance: none !important;
-  background-color: #fff !important;
-  border: 1px solid #d1d5db !important;
-  border-radius: 0.375rem !important;
-  padding: 0.5rem 1rem !important;
-  font-size: 0.875rem !important;
-  line-height: 1.25rem !important;
-  font-family: inherit !important;
-  color: #111827 !important;
-}
-
-.td-scope input[type="text"]:focus,
-.td-scope select:focus {
-  outline: none !important;
-  border-color: #14b8a6 !important;
-  box-shadow: 0 0 0 2px rgba(20, 184, 166, 0.3) !important;
-}
-
-.td-scope select {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e") !important;
-  background-position: right 0.5rem center !important;
-  background-repeat: no-repeat !important;
-  background-size: 1.5em 1.5em !important;
-  padding-right: 2.5rem !important;
-}
-
-.td-scope input[type="checkbox"] {
-  appearance: auto !important;
-  -webkit-appearance: checkbox !important;
-  width: 1rem !important;
-  height: 1rem !important;
-  accent-color: #14b8a6 !important;
-  cursor: pointer !important;
-}
-
-.td-scope label {
-  cursor: pointer !important;
-}
-
-/* Fix inputs in dashboard */
-.td-scope input[type="text"],
-.td-scope input[type="url"],
-.td-scope input[type="email"],
-.td-scope input[type="tel"],
-.td-scope input[type="number"],
-.td-scope textarea {
-  display: block !important;
-  min-height: 36px !important;
-  pointer-events: auto !important;
-  opacity: 1 !important;
-  visibility: visible !important;
-}
-
-.td-scope select {
-  pointer-events: auto !important;
-  opacity: 1 !important;
-  visibility: visible !important;
-}
-
-/* Responsive flex/grid on small screens */
-@media (max-width: 639px) {
-  .td-scope .sm\:flex-row { flex-direction: row !important; }
-  .td-scope .flex-col { flex-direction: column !important; }
-}
-
-@media (min-width: 640px) {
-  .td-scope .sm\:flex-row { flex-direction: row !important; }
-}
-
-/* === Blog post content styling === */
-/* Ensure blog MDX content is readable and mobile-friendly */
+.rich-text img,
 .w-richtext img {
   max-width: 100%;
   height: auto;
   border-radius: 4px;
 }
 
+.rich-text a,
 .w-richtext a {
   color: #0d9488;
   text-decoration: underline;
   word-break: break-word;
 }
 
+.rich-text a:hover,
 .w-richtext a:hover {
   color: #0f766e;
 }
 
+.rich-text p,
 .w-richtext p {
   margin-bottom: 1em;
   line-height: 1.7;
 }
 
+.rich-text h2,
 .w-richtext h2 {
   margin-top: 1.5em;
   margin-bottom: 0.5em;
 }
 
+.rich-text h3,
 .w-richtext h3 {
   margin-top: 1.25em;
   margin-bottom: 0.5em;
 }
 
+.rich-text ul, .rich-text ol,
 .w-richtext ul, .w-richtext ol {
   margin-bottom: 1em;
   padding-left: 1.5em;
 }
 
+.rich-text li,
 .w-richtext li {
   margin-bottom: 0.5em;
   line-height: 1.7;
 }
 
+.rich-text blockquote,
 .w-richtext blockquote {
   border-left: 3px solid #0d9488;
   padding-left: 1em;
@@ -684,33 +79,205 @@ p.column-content {
   font-style: italic;
 }
 
-/* Prevent horizontal scroll from long URLs or code in blog posts */
+.rich-text,
 .w-richtext {
   overflow-wrap: break-word;
   word-wrap: break-word;
 }
 
-/* === Mobile overrides === */
-@media screen and (max-width: 479px) {
-  .td-scope .max-w-7xl {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .td-scope h1 {
-    font-size: 1.5rem;
-  }
+/* ============================================
+   Therapist Directory Scoped Styles (.td-scope)
+   ============================================ */
+.td-scope {
+  font-family: 'Poppins', 'Source Sans Pro', sans-serif;
+  color: #111827;
+  line-height: 1.5;
 }
 
-/* === Typography: prevent orphans and widows === */
-h1, h2, h3, h4, h5, h6,
-.heading, .static-heading, .hero-header,
-.w-richtext p, .w-richtext li,
-.paragraph-30, .paragraph-32, .paragraph-33,
-.p2, .p-35, .p-55, .paragraph-26,
-.footer-link-two, .footer-title,
-.td-scope p, .td-scope h1, .td-scope h2, .td-scope h3 {
-  text-wrap: pretty;
-  orphans: 3;
-  widows: 3;
+.td-scope *, .td-scope *::before, .td-scope *::after {
+  box-sizing: border-box;
+}
+
+.td-scope h1 {
+  margin: 0; line-height: 1.25; font-size: 1.875rem; font-weight: 700;
+  font-family: 'Libre Baskerville', serif; color: #111827;
+}
+.td-scope h2 { margin: 0; line-height: 1.25; font-size: 1.125rem; font-weight: 600; color: #111827; }
+.td-scope h3 { margin: 0; line-height: 1.25; font-size: 0.875rem; font-weight: 600; color: #6b7280; text-transform: uppercase; letter-spacing: 0.05em; }
+.td-scope p { margin: 0; color: #374151; }
+.td-scope a { color: inherit; text-decoration: none; }
+.td-scope a[style*="underline"] { display: inline; }
+.td-scope a.text-teal-600 { display: inline-block; color: #0d9488; }
+.td-scope a.text-teal-600:hover { color: #0f766e; }
+.td-scope img { max-width: 100%; height: auto; }
+
+/* Grid/flex utilities */
+.td-scope .grid { display: grid; }
+.td-scope .flex { display: flex; }
+.td-scope .inline-block { display: inline-block; }
+.td-scope .block { display: block; }
+.td-scope .hidden { display: none; }
+.td-scope .grid-cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+.td-scope .gap-6 { gap: 1.5rem; }
+.td-scope .gap-4 { gap: 1rem; }
+.td-scope .gap-2 { gap: 0.5rem; }
+
+@media (min-width: 768px) {
+  .td-scope .md\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (min-width: 1024px) {
+  .td-scope .lg\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+/* Card styling */
+.td-scope .border { border-width: 1px; border-style: solid; }
+.td-scope .border-gray-200 { border-color: #e5e7eb; }
+.td-scope .rounded-lg { border-radius: 0.5rem; }
+.td-scope .rounded-full { border-radius: 9999px; }
+.td-scope .rounded-md { border-radius: 0.375rem; }
+.td-scope .bg-white { background-color: #fff; }
+.td-scope .bg-gray-50 { background-color: #f9fafb; }
+.td-scope .bg-gray-100 { background-color: #f3f4f6; }
+.td-scope .bg-teal-50 { background-color: #f0fdfa; }
+.td-scope .bg-teal-100 { background-color: #ccfbf1; }
+.td-scope .bg-purple-50 { background-color: #faf5ff; }
+.td-scope .bg-green-50 { background-color: #f0fdf4; }
+
+/* Text colors */
+.td-scope .text-gray-500 { color: #6b7280; }
+.td-scope .text-gray-600 { color: #4b5563; }
+.td-scope .text-gray-700 { color: #374151; }
+.td-scope .text-gray-900 { color: #111827; }
+.td-scope .text-teal-600 { color: #0d9488; }
+.td-scope .text-teal-700 { color: #0f766e; }
+.td-scope .text-purple-700 { color: #7c3aed; }
+.td-scope .text-green-700 { color: #15803d; }
+
+/* Text sizing */
+.td-scope .text-xs { font-size: 0.75rem; line-height: 1rem; }
+.td-scope .text-sm { font-size: 0.875rem; line-height: 1.25rem; }
+.td-scope .text-lg { font-size: 1.125rem; line-height: 1.75rem; }
+.td-scope .text-2xl { font-size: 1.5rem; line-height: 2rem; }
+.td-scope .text-3xl { font-size: 1.875rem; line-height: 2.25rem; }
+
+/* Font weight */
+.td-scope .font-semibold { font-weight: 600; }
+.td-scope .font-bold { font-weight: 700; }
+.td-scope .font-normal { font-weight: 400; }
+
+/* Spacing */
+.td-scope .p-6 { padding: 1.5rem; }
+.td-scope .px-4 { padding-left: 1rem; padding-right: 1rem; }
+.td-scope .px-2 { padding-left: 0.5rem; padding-right: 0.5rem; }
+.td-scope .px-3 { padding-left: 0.75rem; padding-right: 0.75rem; }
+.td-scope .py-1 { padding-top: 0.25rem; padding-bottom: 0.25rem; }
+.td-scope .py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+.td-scope .py-12 { padding-top: 3rem; padding-bottom: 3rem; }
+.td-scope .mb-3 { margin-bottom: 0.75rem; }
+.td-scope .mb-4 { margin-bottom: 1rem; }
+.td-scope .mb-8 { margin-bottom: 2rem; }
+.td-scope .mb-10 { margin-bottom: 2.5rem; }
+.td-scope .mt-1 { margin-top: 0.25rem; }
+.td-scope .mt-3 { margin-top: 0.75rem; }
+.td-scope .mt-4 { margin-top: 1rem; }
+.td-scope .mt-8 { margin-top: 2rem; }
+.td-scope .ml-auto { margin-left: auto; }
+
+/* Layout */
+.td-scope .max-w-7xl { max-width: 80rem; margin-left: auto; margin-right: auto; }
+.td-scope .max-w-4xl { max-width: 56rem; margin-left: auto; margin-right: auto; }
+.td-scope .max-w-2xl { max-width: 42rem; margin-left: auto; margin-right: auto; }
+.td-scope .mx-auto { margin-left: auto; margin-right: auto; }
+.td-scope .min-h-screen { min-height: 100vh; }
+.td-scope .min-w-0 { min-width: 0; }
+.td-scope .w-full { width: 100%; }
+.td-scope .w-16 { width: 4rem; }
+.td-scope .h-16 { height: 4rem; }
+.td-scope .w-32 { width: 8rem; }
+.td-scope .h-32 { height: 8rem; }
+.td-scope .w-4 { width: 1rem; }
+.td-scope .h-4 { height: 1rem; }
+
+/* Flex utilities */
+.td-scope .flex-wrap { flex-wrap: wrap; }
+.td-scope .flex-shrink-0 { flex-shrink: 0; }
+.td-scope .items-start { align-items: flex-start; }
+.td-scope .items-center { align-items: center; }
+.td-scope .justify-center { justify-content: center; }
+
+/* Object fit / text */
+.td-scope .object-cover { object-fit: cover; }
+.td-scope .truncate { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.td-scope .text-center { text-align: center; }
+.td-scope .whitespace-pre-line { white-space: pre-line; }
+.td-scope .break-all { word-break: break-all; }
+
+/* Transitions */
+.td-scope .transition-shadow { transition: box-shadow 0.15s ease; }
+.td-scope a:hover .hover\:shadow-md,
+.td-scope a.hover\:shadow-md:hover {
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,.1), 0 2px 4px -2px rgba(0,0,0,.1);
+}
+
+/* Form elements */
+.td-scope input[type="text"],
+.td-scope input[type="email"],
+.td-scope input[type="search"],
+.td-scope input[type="url"],
+.td-scope input[type="tel"],
+.td-scope input[type="number"],
+.td-scope textarea,
+.td-scope select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-family: inherit;
+  color: #111827;
+  display: block;
+  min-height: 36px;
+}
+
+.td-scope input:focus,
+.td-scope select:focus,
+.td-scope textarea:focus {
+  outline: none;
+  border-color: #14b8a6;
+  box-shadow: 0 0 0 2px rgba(20, 184, 166, 0.3);
+}
+
+.td-scope select {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right 0.5rem center;
+  background-repeat: no-repeat;
+  background-size: 1.5em 1.5em;
+  padding-right: 2.5rem;
+}
+
+.td-scope input[type="checkbox"] {
+  appearance: auto;
+  -webkit-appearance: checkbox;
+  width: 1rem;
+  height: 1rem;
+  accent-color: #14b8a6;
+  cursor: pointer;
+}
+
+.td-scope label { cursor: pointer; }
+
+/* Responsive */
+@media (max-width: 639px) {
+  .td-scope .sm\:flex-row { flex-direction: row; }
+  .td-scope .flex-col { flex-direction: column; }
+}
+@media (min-width: 640px) {
+  .td-scope .sm\:flex-row { flex-direction: row; }
+}
+@media (max-width: 479px) {
+  .td-scope .max-w-7xl { padding-left: 1rem; padding-right: 1rem; }
+  .td-scope h1 { font-size: 1.5rem; }
 }

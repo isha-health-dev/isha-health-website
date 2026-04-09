@@ -290,13 +290,13 @@ function buildHtml() {
     }
   }
 
-  return `<div class="section-base white-section static-page">
+  return `<div style="padding:0 0 2rem;">
   <script type="application/ld+json">${JSON.stringify(jsonLdFaq)}</script>
   <script type="application/ld+json">${JSON.stringify(jsonLdBreadcrumb)}</script>
-  <div class="hero-isha">
-    <h1 class="heading static-heading">Ketamine Therapy FAQ: 50+ Questions Answered</h1>
+  <div style="text-align:center;padding:3rem 1.5rem 1.5rem;">
+    <h1 style="font-family:'Libre Baskerville',serif;font-size:2rem;font-weight:700;color:#111827;margin:0;">Ketamine Therapy FAQ: 50+ Questions Answered</h1>
   </div>
-  <div class="section-wrapper" style="max-width:800px;margin:0 auto;padding:2rem 1.5rem;">
+  <div style="max-width:800px;margin:0 auto;padding:1.5rem;" style="max-width:800px;margin:0 auto;padding:2rem 1.5rem;">
     <nav aria-label="Breadcrumb" style="font-size:0.8rem;color:#6b7280;margin-bottom:1.5rem;font-family:'Poppins',sans-serif;">
       <a href="/" style="color:#0d9488;text-decoration:none;">Home</a> /
       <a href="/faq" style="color:#0d9488;text-decoration:none;">FAQ</a> /

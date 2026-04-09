@@ -22,13 +22,13 @@ export default function Page() {
   return (
     <div
       dangerouslySetInnerHTML={{
-        __html: `<div class="section-base white-section static-page">
+        __html: `<div style="padding:0 0 2rem;">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is IV ketamine more effective than oral ketamine?","acceptedAnswer":{"@type":"Answer","text":"IV ketamine has higher bioavailability (near 100%) compared to oral/sublingual ketamine (approximately 20-30%), which means more of the drug reaches the bloodstream. However, growing evidence suggests that oral ketamine can also produce meaningful antidepressant effects. Recent large retrospective studies have shown significant symptom improvement with oral ketamine for depression and anxiety. The best route depends on individual factors and should be discussed with your provider."}},{"@type":"Question","name":"Can I do ketamine therapy at home?","acceptedAnswer":{"@type":"Answer","text":"Yes. Oral and sublingual ketamine can be prescribed for at-home use under physician supervision via telemedicine. Isha Health provides at-home ketamine therapy with ongoing clinical support, including video consultations and monitoring. IV infusions must be administered in a clinical setting."}},{"@type":"Question","name":"How much does IV ketamine cost compared to oral ketamine?","acceptedAnswer":{"@type":"Answer","text":"IV ketamine infusions typically cost $400-800 per session, with an initial course of 6 sessions often recommended. Oral ketamine through Isha Health involves $350 per physician appointment plus $50-150 per month for compounded medication. Over a treatment course, at-home oral ketamine is generally significantly less expensive than IV infusions."}},{"@type":"Question","name":"Is oral ketamine FDA-approved for depression?","acceptedAnswer":{"@type":"Answer","text":"No. Neither oral ketamine nor IV ketamine is FDA-approved specifically for depression. Ketamine is FDA-approved as an anesthetic. When used for depression, it is prescribed off-label by licensed physicians. Only esketamine (Spravato), an intranasal formulation, has received FDA approval specifically for treatment-resistant depression."}}]}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://isha.health"},{"@type":"ListItem","position":2,"name":"Compare","item":"https://isha.health/compare"},{"@type":"ListItem","position":3,"name":"Oral Ketamine vs IV Infusion","item":"https://isha.health/compare/oral-ketamine-vs-iv-infusion"}]}</script>
-  <div class="hero-isha">
-    <h1 class="heading static-heading">Oral Ketamine vs IV Infusion: Which Is Right for You?</h1>
+  <div style="text-align:center;padding:3rem 1.5rem 1.5rem;">
+    <h1 style="font-family:'Libre Baskerville',serif;font-size:2rem;font-weight:700;color:#111827;margin:0;">Oral Ketamine vs IV Infusion: Which Is Right for You?</h1>
   </div>
-  <div class="section-wrapper" style="max-width:800px;margin:0 auto;padding:2rem 1.5rem;">
+  <div style="max-width:800px;margin:0 auto;padding:1.5rem;" style="max-width:800px;margin:0 auto;padding:2rem 1.5rem;">
     <nav aria-label="Breadcrumb" style="font-size:0.8rem;color:#6b7280;margin-bottom:1.5rem;font-family:'Poppins',sans-serif;">
       <a href="/" style="color:#0d9488;text-decoration:none;">Home</a> /
       <a href="/compare" style="color:#0d9488;text-decoration:none;">Compare</a> /
