@@ -1,19 +1,19 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Ketamine for Depression: Complete Guide",
-  description: "Learn how ketamine therapy may help treatment-resistant depression. Covers clinical evidence, how it works differently, oral vs IV options, timelines, and",
+  title: "How Ketamine Treats Depression: Evidence Guide",
+  description: "How does ketamine treat depression? Clinical evidence, oral vs IV options, timelines, and what 88.8% improvement means for patients.",
   alternates: { canonical: "https://isha.health/guide/ketamine-for-depression" },
   openGraph: {
-    title: "Ketamine for Depression: Complete Guide",
-    description: "Learn how ketamine therapy may help treatment-resistant depression. Covers clinical evidence, how it works differently, oral vs IV options, timelines, and",
+    title: "How Ketamine Treats Depression: Evidence Guide",
+    description: "How does ketamine treat depression? Clinical evidence, oral vs IV options, timelines, and what 88.8% improvement means for patients.",
     type: "website",
     url: "https://isha.health/guide/ketamine-for-depression",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ketamine for Depression: Complete Guide",
-    description: "Learn how ketamine therapy may help treatment-resistant depression. Covers clinical evidence, how it works differently, oral vs IV options, timelines, and",
+    title: "How Ketamine Treats Depression: Evidence Guide",
+    description: "How does ketamine treat depression? Clinical evidence, oral vs IV options, timelines, and what 88.8% improvement means for patients.",
   },
 };
 

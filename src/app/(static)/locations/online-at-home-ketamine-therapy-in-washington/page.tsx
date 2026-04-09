@@ -2,20 +2,20 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "Online At-Home Ketamine Therapy in Washington",
-  description: "At-home ketamine therapy in Washington. Physician-led telehealth treatment for depression, anxiety, and PTSD. 88.8% improvement rate. $350 consultation.",
+  description: "Washington residents: at-home ketamine therapy starting at $350. 88.8% of patients improve. Same-day appointments. No referral needed.",
   alternates: {
     canonical: "https://isha.health/locations/online-at-home-ketamine-therapy-in-washington",
   },
   openGraph: {
     title: "Online At-Home Ketamine Therapy in Washington",
-    description: "At-home ketamine therapy in Washington. Physician-led telehealth treatment for depression, anxiety, and PTSD. 88.8% improvement rate. $350 consultation.",
+    description: "Washington residents: at-home ketamine therapy starting at $350. 88.8% of patients improve. Same-day appointments. No referral needed.",
     type: "website",
     url: "https://isha.health/locations/online-at-home-ketamine-therapy-in-washington",
   },
   twitter: {
     card: "summary_large_image",
     title: "Online At-Home Ketamine Therapy in Washington",
-    description: "At-home ketamine therapy in Washington. Physician-led telehealth treatment for depression, anxiety, and PTSD. 88.8% improvement rate. $350 consultation.",
+    description: "Washington residents: at-home ketamine therapy starting at $350. 88.8% of patients improve. Same-day appointments. No referral needed.",
   },
 };
 

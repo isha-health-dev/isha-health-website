@@ -2,20 +2,20 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "Online At-Home Ketamine Therapy in New York",
-  description: "At-home ketamine therapy in New York. Physician-led telehealth treatment for depression, anxiety, and PTSD. 88.8% improvement rate. $350 consultation.",
+  description: "New York residents: at-home ketamine therapy starting at $350. 88.8% of patients improve. Same-day appointments. No referral needed.",
   alternates: {
     canonical: "https://isha.health/locations/online-at-home-ketamine-therapy-in-new-york",
   },
   openGraph: {
     title: "Online At-Home Ketamine Therapy in New York",
-    description: "At-home ketamine therapy in New York. Physician-led telehealth treatment for depression, anxiety, and PTSD. 88.8% improvement rate. $350 consultation.",
+    description: "New York residents: at-home ketamine therapy starting at $350. 88.8% of patients improve. Same-day appointments. No referral needed.",
     type: "website",
     url: "https://isha.health/locations/online-at-home-ketamine-therapy-in-new-york",
   },
   twitter: {
     card: "summary_large_image",
     title: "Online At-Home Ketamine Therapy in New York",
-    description: "At-home ketamine therapy in New York. Physician-led telehealth treatment for depression, anxiety, and PTSD. 88.8% improvement rate. $350 consultation.",
+    description: "New York residents: at-home ketamine therapy starting at $350. 88.8% of patients improve. Same-day appointments. No referral needed.",
   },
 };
 
