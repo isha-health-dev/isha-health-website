@@ -49,15 +49,15 @@ const navbarHtml = `
         <span style="display:block;width:22px;height:2px;background:#333;margin:3px 0;"></span>
       </button>
       <a href="/" style="text-decoration:none;display:flex;flex-direction:column;align-items:flex-start;">
-        <span style="font-size:10px;letter-spacing:2px;color:#555;font-weight:500;">FEEL BETTER WITH</span>
-        <img src="/images/isha_logo.webp" loading="lazy" alt="Isha Health" style="height:36px;margin-top:2px;" />
+        <span class="desktop-only" style="font-size:10px;letter-spacing:2px;color:#555;font-weight:500;">FEEL BETTER WITH</span>
+        <img src="/images/isha_logo.webp" loading="lazy" alt="Isha Health" class="nav-logo" style="height:36px;margin-top:2px;" />
       </a>
     </div>
     <!-- Right: links + CTA -->
-    <div style="display:flex;align-items:center;gap:20px;">
+    <div style="display:flex;align-items:center;gap:12px;flex-shrink:0;">
       <a href="/collaborate-with-isha-health" class="desktop-only" style="font-size:11px;letter-spacing:0.5px;color:#888;text-decoration:none;font-weight:500;">FOR CLINICIANS</a>
-      <a href="/pricing" style="font-size:13px;font-weight:600;letter-spacing:1px;color:#333;text-decoration:none;">PRICING</a>
-      <a id="check-availability" href="/appointment" style="background:#1abc9c;color:#fff;padding:10px 22px;border-radius:6px;font-size:13px;font-weight:600;letter-spacing:0.5px;text-decoration:none;white-space:nowrap;">CHECK AVAILABILITY</a>
+      <a href="/pricing" class="desktop-only" style="font-size:13px;font-weight:600;letter-spacing:1px;color:#333;text-decoration:none;">PRICING</a>
+      <a id="check-availability" href="/appointment" class="nav-cta" style="background:#1abc9c;color:#fff;padding:10px 22px;border-radius:6px;font-size:13px;font-weight:600;letter-spacing:0.5px;text-decoration:none;white-space:nowrap;">CHECK AVAILABILITY</a>
     </div>
   </div>
   <!-- Overlay backdrop -->
@@ -104,6 +104,11 @@ const navbarHtml = `
   <style>
     @media (max-width: 768px) {
       .desktop-only { display: none !important; }
+      .nav-cta { padding: 8px 14px !important; font-size: 11px !important; }
+    }
+    @media (max-width: 400px) {
+      .nav-cta { padding: 7px 10px !important; font-size: 10px !important; letter-spacing: 0 !important; }
+      .nav-logo { height: 28px !important; }
     }
   </style>
   <script>
