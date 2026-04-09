@@ -8,6 +8,7 @@ import {
   getTherapistName,
   getTherapistLocation,
   getVerificationStatus,
+  getOptimizedProfilePic,
 } from '@/lib/therapist-types';
 
 export const revalidate = 60;
@@ -187,9 +188,12 @@ export default async function TherapistProfilePage({
         <div className="flex flex-col sm:flex-row items-start gap-6 mb-8">
           {t.profile_pic ? (
             <img
-              src={t.profile_pic}
+              src={getOptimizedProfilePic(t.profile_pic, 256) || t.profile_pic}
               alt={`${name} - Ketamine-Assisted Psychotherapist`}
               className="w-32 h-32 rounded-full object-cover flex-shrink-0"
+              width={128}
+              height={128}
+              loading="lazy"
               style={{ objectPosition: t.profile_pic_position || 'center center' }}
             />
           ) : (

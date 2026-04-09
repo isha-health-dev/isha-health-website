@@ -131,6 +131,15 @@ export function getTherapistSlug(t: Therapist): string {
   return state ? `${slug}-${state}` : slug;
 }
 
+export function getOptimizedProfilePic(url: string | null, width: number = 300): string | null {
+  if (!url) return null;
+  // Transform Supabase Storage URLs to use image rendering with resize
+  if (url.includes('supabase.co/storage/v1/object/public/')) {
+    return url.replace('/storage/v1/object/public/', '/storage/v1/render/image/public/') + `?width=${width}&resize=contain`;
+  }
+  return url;
+}
+
 export function getTherapistLocation(t: Therapist): string | null {
   if (t.city && t.state) return `${t.city}, ${t.state}`;
   if (t.state) return t.state;

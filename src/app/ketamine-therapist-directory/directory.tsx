@@ -9,6 +9,7 @@ import {
   getTherapistName,
   getTherapistLocation,
   getTherapistSlug,
+  getOptimizedProfilePic,
 } from '@/lib/therapist-types';
 
 interface Props {
@@ -571,10 +572,13 @@ function TherapistCard({ therapist: t }: { therapist: TherapistWithRelations }) 
       <div className="flex items-start gap-4">
         {t.profile_pic ? (
           <img
-            src={t.profile_pic}
+            src={getOptimizedProfilePic(t.profile_pic, 128) || t.profile_pic}
             alt={name}
             className="w-16 h-16 rounded-full object-cover flex-shrink-0"
-              style={{ objectPosition: t.profile_pic_position || 'center center' }}
+            width={64}
+            height={64}
+            loading="lazy"
+            style={{ objectPosition: t.profile_pic_position || 'center center' }}
           />
         ) : (
           <div className="w-16 h-16 rounded-full bg-teal-100 flex items-center justify-center flex-shrink-0">
