@@ -60,8 +60,16 @@ const navbarHtml = `
       <a id="check-availability" href="/appointment" style="background:#1abc9c;color:#fff;padding:10px 22px;border-radius:6px;font-size:13px;font-weight:600;letter-spacing:0.5px;text-decoration:none;white-space:nowrap;">CHECK AVAILABILITY</a>
     </div>
   </div>
-  <!-- Mobile menu -->
-  <div id="mobile-menu" style="display:none;background:#fff;border-top:1px solid #eee;padding:24px;font-family:'Poppins',sans-serif;">
+  <!-- Overlay backdrop -->
+  <div id="menu-backdrop" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.4);z-index:998;" onclick="document.getElementById('mobile-menu').style.display='none';this.style.display='none';"></div>
+  <!-- Side menu -->
+  <div id="mobile-menu" style="display:none;position:fixed;top:0;left:0;width:320px;max-width:85vw;height:100vh;background:#fff;z-index:999;overflow-y:auto;padding:24px;font-family:'Poppins',sans-serif;box-shadow:2px 0 12px rgba(0,0,0,0.15);">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
+      <a href="/" style="text-decoration:none;">
+        <img src="/images/isha_logo.webp" alt="Isha Health" style="height:30px;" />
+      </a>
+      <button id="close-menu" style="background:none;border:none;cursor:pointer;font-size:24px;color:#333;padding:4px;">&#10005;</button>
+    </div>
     <div style="margin-bottom:16px;">
       <p style="font-size:12px;font-weight:600;letter-spacing:1px;color:#888;margin:0 0 8px;">FOR PATIENTS</p>
       <a href="/appointment" style="display:block;padding:6px 0;color:#333;text-decoration:none;font-size:14px;">Make an Appointment</a>
@@ -100,8 +108,12 @@ const navbarHtml = `
   </style>
   <script>
     document.querySelector('.menu-btn').addEventListener('click', function() {
-      var m = document.getElementById('mobile-menu');
-      m.style.display = m.style.display === 'none' ? 'block' : 'none';
+      document.getElementById('mobile-menu').style.display = 'block';
+      document.getElementById('menu-backdrop').style.display = 'block';
+    });
+    document.getElementById('close-menu').addEventListener('click', function() {
+      document.getElementById('mobile-menu').style.display = 'none';
+      document.getElementById('menu-backdrop').style.display = 'none';
     });
   </script>
 </nav>`;
