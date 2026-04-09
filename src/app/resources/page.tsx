@@ -46,6 +46,33 @@ export default function ResourcesPage() {
       </div>
     </div>
 
+    <!-- Getting Started -->
+    <div style="margin-bottom:3rem;">
+      <h2 style="font-family:'Libre Baskerville',serif;font-size:1.4rem;font-weight:700;color:#111827;margin-bottom:1.25rem;padding-bottom:0.5rem;border-bottom:2px solid #0d9488;">Getting Started</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem;">
+        <a href="/online-ketamine-therapy" style="padding:1.25rem;border:1px solid #e5e7eb;border-radius:10px;text-decoration:none;color:inherit;background:#fff;">
+          <p style="font-family:'Poppins',sans-serif;font-weight:600;color:#111827;font-size:1rem;margin-bottom:0.35rem;">Online Ketamine Therapy</p>
+          <p style="font-family:'Source Sans Pro',sans-serif;font-size:0.85rem;color:#6b7280;line-height:1.5;">How at-home ketamine therapy works, who it's for, and what to expect from telehealth treatment.</p>
+        </a>
+        <a href="/ketamine-therapy-cost" style="padding:1.25rem;border:1px solid #e5e7eb;border-radius:10px;text-decoration:none;color:inherit;background:#fff;">
+          <p style="font-family:'Poppins',sans-serif;font-weight:600;color:#111827;font-size:1rem;margin-bottom:0.35rem;">Ketamine Therapy Cost</p>
+          <p style="font-family:'Source Sans Pro',sans-serif;font-size:0.85rem;color:#6b7280;line-height:1.5;">Pricing breakdown for IV, oral, and Spravato — plus insurance and payment options.</p>
+        </a>
+        <a href="/ketamine-therapy-reviews" style="padding:1.25rem;border:1px solid #e5e7eb;border-radius:10px;text-decoration:none;color:inherit;background:#fff;">
+          <p style="font-family:'Poppins',sans-serif;font-weight:600;color:#111827;font-size:1rem;margin-bottom:0.35rem;">Ketamine Therapy Reviews</p>
+          <p style="font-family:'Source Sans Pro',sans-serif;font-size:0.85rem;color:#6b7280;line-height:1.5;">Real patient experiences and what the evidence says about ketamine outcomes.</p>
+        </a>
+        <a href="/compare/ketamine-providers" style="padding:1.25rem;border:1px solid #e5e7eb;border-radius:10px;text-decoration:none;color:inherit;background:#fff;">
+          <p style="font-family:'Poppins',sans-serif;font-weight:600;color:#111827;font-size:1rem;margin-bottom:0.35rem;">Compare Ketamine Providers</p>
+          <p style="font-family:'Source Sans Pro',sans-serif;font-size:0.85rem;color:#6b7280;line-height:1.5;">Side-by-side comparison of online ketamine therapy providers, clinics, and Spravato.</p>
+        </a>
+        <a href="/outcomes" style="padding:1.25rem;border:1px solid #e5e7eb;border-radius:10px;text-decoration:none;color:inherit;background:#fff;">
+          <p style="font-family:'Poppins',sans-serif;font-weight:600;color:#111827;font-size:1rem;margin-bottom:0.35rem;">Clinical Outcomes</p>
+          <p style="font-family:'Source Sans Pro',sans-serif;font-size:0.85rem;color:#6b7280;line-height:1.5;">88.8% improvement rate across 546 patients — our published outcomes data.</p>
+        </a>
+      </div>
+    </div>
+
     <!-- Conditions -->
     <div style="margin-bottom:3rem;">
       <h2 style="font-family:'Libre Baskerville',serif;font-size:1.4rem;font-weight:700;color:#111827;margin-bottom:1.25rem;padding-bottom:0.5rem;border-bottom:2px solid #0d9488;">Conditions We Treat</h2>

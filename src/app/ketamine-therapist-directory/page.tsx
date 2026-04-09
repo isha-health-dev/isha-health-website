@@ -6,7 +6,7 @@ import { TherapistDirectory } from './directory';
 export const metadata: Metadata = {
   title: 'Ketamine Therapy Clinician Directory',
   description:
-    'Browse ketamine therapy clinicians across the United States. Filter by state, specialty, insurance, and visit type to find the right ketamine-assisted psychotherapy therapist for you.',
+    'Browse ketamine therapy clinicians across the US. Filter by state, specialty, insurance, and visit type to find the right therapist.',
   alternates: {
     canonical: 'https://isha.health/ketamine-therapist-directory',
   },

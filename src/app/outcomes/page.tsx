@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Patient Outcomes & Clinical Results',
   description:
-    '88.79% of Isha Health patients with moderate-to-severe depression show measurable improvement. Based on 546 patients, 1,900+ assessments, and 128-day average treatment duration.',
+    '88.8% of Isha Health patients with moderate-to-severe depression show measurable improvement. Based on 546 patients and 1,900+ assessments.',
   alternates: { canonical: 'https://isha.health/outcomes' },
   openGraph: {
     title: 'Patient Outcomes | Isha Health',

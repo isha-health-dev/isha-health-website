@@ -288,6 +288,22 @@ export default function Page() {
       }}
     />
 
+    {/* Quick Links */}
+    <div
+      dangerouslySetInnerHTML={{
+        __html: `<div style="background-color:#fff;padding:2rem 1.5rem;border-top:1px solid #e5e7eb;">
+          <div style="max-width:1100px;margin:0 auto;">
+            <div style="display:flex;flex-wrap:wrap;gap:0.75rem;justify-content:center;">
+              <a href="/online-ketamine-therapy" style="padding:0.6rem 1.25rem;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#111827;font-family:'Poppins',sans-serif;font-size:0.9rem;background:#fff;">Online Ketamine Therapy</a>
+              <a href="/ketamine-therapy-cost" style="padding:0.6rem 1.25rem;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#111827;font-family:'Poppins',sans-serif;font-size:0.9rem;background:#fff;">Ketamine Therapy Cost</a>
+              <a href="/ketamine-therapy-reviews" style="padding:0.6rem 1.25rem;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#111827;font-family:'Poppins',sans-serif;font-size:0.9rem;background:#fff;">Patient Reviews</a>
+              <a href="/compare/ketamine-providers" style="padding:0.6rem 1.25rem;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:#111827;font-family:'Poppins',sans-serif;font-size:0.9rem;background:#fff;">Compare Providers</a>
+            </div>
+          </div>
+        </div>`,
+      }}
+    />
+
     {/* Featured Content */}
     <div
       dangerouslySetInnerHTML={{

@@ -2,11 +2,11 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "Best Online Ketamine Therapy Providers (2026)",
-  description: "Compare online ketamine therapy providers. Isha Health offers physician-led care with an 88.8% improvement rate. See how at-home oral ketamine compares to IV clinics, Spravato, and other telehealth options.",
+  description: "Compare online ketamine therapy providers side by side: Isha Health, IV clinics, Spravato, and telehealth options compared on cost and outcomes.",
   alternates: { canonical: "https://isha.health/compare/ketamine-providers" },
   openGraph: {
     title: "Best Online Ketamine Therapy Providers (2026)",
-    description: "Compare online ketamine therapy providers. Isha Health offers physician-led care with an 88.8% improvement rate. See how at-home oral ketamine compares to IV clinics, Spravato, and other telehealth options.",
+    description: "Compare online ketamine therapy providers side by side: Isha Health, IV clinics, Spravato, and telehealth options compared on cost and outcomes.",
     type: "website",
     images: ["/images/isha_logo.webp"],
     url: "https://isha.health/compare/ketamine-providers",
