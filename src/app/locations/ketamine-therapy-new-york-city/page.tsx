@@ -2,11 +2,11 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "At-Home Ketamine Therapy in New York City, NY",
-  description: "Online ketamine-assisted therapy in New York City, New York. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required.",
+  description: "NYC ketamine therapy from home — $350/session, no clinic visit. 88.8% of patients improve. Same-day appointments available.",
   alternates: { canonical: "https://isha.health/locations/ketamine-therapy-new-york-city" },
   openGraph: {
     title: "At-Home Ketamine Therapy in New York City, NY",
-    description: "Online ketamine-assisted therapy in New York City, New York. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required.",
+    description: "NYC ketamine therapy from home — $350/session, no clinic visit. 88.8% of patients improve. Same-day appointments available.",
     type: "website",
     images: ["/images/isha_logo.webp"],
     url: "https://isha.health/locations/ketamine-therapy-new-york-city",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "At-Home Ketamine Therapy in New York City, NY",
-    description: "Online ketamine-assisted therapy in New York City, New York. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required.",
+    description: "NYC ketamine therapy from home — $350/session, no clinic visit. 88.8% of patients improve. Same-day appointments available.",
   },
 };
 

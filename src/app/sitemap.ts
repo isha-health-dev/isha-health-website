@@ -36,6 +36,7 @@ const staticPages = [
   '',
   'about-us/about-isha-health',
   'about-us/ketamine-therapy',
+  'affordable-ketamine-therapy',
   'am-i-a-candidate',
   'appointment',
   'blog',
