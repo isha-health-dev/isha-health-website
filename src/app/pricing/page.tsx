@@ -75,7 +75,7 @@ export default function PricingPage() {
   <!-- Pricing Cards -->
   <div style="max-width:800px;margin:0 auto;padding:1.5rem;" style="max-width:900px;margin:0 auto;padding:2.5rem 1.5rem;">
     <div style="background-color:#fef3c7;border:1px solid #fcd34d;border-radius:10px;padding:0.85rem 1.25rem;text-align:center;margin-bottom:1.5rem;">
-      <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;font-weight:600;color:#92400e;margin:0;">Book before May 1, 2026 to lock in $350 — pricing increases to $398 after that date.</p>
+      <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;font-weight:600;color:#92400e;margin:0;">Current price: $350 per appointment. Starting May 1, 2026, all appointments will be $398.</p>
     </div>
     <div style="display:flex;flex-wrap:wrap;gap:1.5rem;justify-content:center;">
 
