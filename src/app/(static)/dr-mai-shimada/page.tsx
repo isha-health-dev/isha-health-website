@@ -46,12 +46,12 @@ export default function Page() {
           style="flex-shrink: 0;"
         />
         <div>
-          <h3 style="font-family: 'Libre Baskerville', Georgia, serif; font-size: 1.15rem; font-weight: 700; margin: 0 0 12px 0; color: #1a1a1a;">Experience &amp; Training</h3>
-          <ul style="padding-left: 18px; margin: 0 0 10px 0; font-size: 0.92rem; line-height: 1.7; color: #333;">
+          <h3 style="font-family: 'Libre Baskerville', Georgia, serif; font-size: 1.05rem; font-weight: 700; margin: 0 0 12px 0; color: #1a1a1a;">Experience &amp; Training</h3>
+          <ul style="padding-left: 18px; margin: 0 0 10px 0; font-size: 0.9rem; line-height: 1.7; color: #333;">
             <li style="margin-bottom: 8px;">Ketamine-Assisted Psychotherapy Training Program, <a href="https://training.polarisinsight.com/" style="color: #0d9488; text-decoration: underline;">Polaris Insight Center</a></li>
             <li style="margin-bottom: 8px;">Psychedelic Facilitation Certification, UC Berkeley Center for the Science of Psychedelics in two areas</li>
           </ul>
-          <ul style="padding-left: 18px; margin: 0; font-size: 0.92rem; line-height: 1.7; color: #333;">
+          <ul style="padding-left: 18px; margin: 0; font-size: 0.9rem; line-height: 1.7; color: #333;">
             <li style="margin-bottom: 8px;">Clinical Trial Study Physician, Open Mind Collective</li>
             <li style="margin-bottom: 8px;">Postdoctoral Research, Harvard John A. Paulson School of Engineering and Applied Sciences</li>
             <li style="margin-bottom: 8px;">Doctor of Medicine, The University of Tokyo</li>
@@ -62,7 +62,7 @@ export default function Page() {
 
     <!-- Main Content -->
     <div style="flex: 1 1 500px; min-width: 0;">
-      <h1 style="font-family: 'Libre Baskerville', Georgia, serif; font-size: 2.25rem; font-weight: 700; margin: 0 0 16px 0; color: #1a1a1a;">Dr. Mai Shimada</h1>
+      <h1 style="font-family: 'Libre Baskerville', Georgia, serif; font-size: 2rem; font-weight: 700; margin: 0 0 16px 0; color: #1a1a1a;">Dr. Mai Shimada</h1>
       <div style="width: 60px; height: 3px; background-color: #0d9488; border-radius: 2px; margin-bottom: 16px;"></div>
       <p style="font-size: 1rem; line-height: 1.7; margin: 0 0 24px 0; color: #444;">
         Founder &amp; CEO<br />
