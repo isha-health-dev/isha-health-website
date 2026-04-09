@@ -97,8 +97,8 @@ export default function CollaboratePage() {
             <div style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
               <span style={{ fontFamily: "'Libre Baskerville', serif", fontSize: '1.3rem', fontWeight: 700, color: '#0d9488', flexShrink: 0 }}>1</span>
               <div>
-                <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.95rem', fontWeight: 600, color: '#111827', marginBottom: '0.25rem' }}>We prescribe, you integrate</p>
-                <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.85rem', color: '#4b5563', lineHeight: 1.6 }}>Isha Health physicians evaluate patients, prescribe ketamine, and monitor medical safety. You provide the psychotherapy and integration sessions that make the treatment meaningful.</p>
+                <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.95rem', fontWeight: 600, color: '#111827', marginBottom: '0.25rem' }}>We provide integrative medical care, you provide therapy</p>
+                <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.85rem', color: '#4b5563', lineHeight: 1.6 }}>Isha Health physicians evaluate patients, prescribe ketamine, monitor medical safety, and provide ongoing integrative care. You provide the psychotherapy and integration sessions that deepen the therapeutic work.</p>
               </div>
             </div>
             <div style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
