@@ -45,14 +45,14 @@ export default function Page() {
     </p>
 
     <div style="text-align:center;">
-      <img src="/images/9fc1ea38_641c5cd1df883504184d8c02_bamboos.webp" loading="lazy" srcset="/images/3d374277_641c5cd1df883504184d8c02_bamboos-p-500.webp 500w, /images/14743862_641c5cd1df883504184d8c02_bamboos.webp 640w" alt="Experience a zen mind with ketamine therapy - Isha Health's online at-home ketamine clinic for depression and anxiety" sizes="(max-width:479px) 86vw, (max-width:767px) 90vw, 450px" style="max-width:450px;width:100%;height:auto;border-radius:12px;">
+      <img src="/images/9fc1ea38_641c5cd1df883504184d8c02_bamboos.webp" loading="lazy" srcset="/images/3d374277_641c5cd1df883504184d8c02_bamboos-p-500.webp 500w, /images/14743862_641c5cd1df883504184d8c02_bamboos.webp 640w" alt="Experience a zen mind with ketamine therapy" sizes="(max-width:479px) 86vw, 100%" style="width:100%;max-width:100%;height:280px;object-fit:cover;border-radius:12px;">
     </div>
   </section>
 
   <!-- How Ketamine Helps + Process -->
   <section style="display:flex;gap:2.5rem;align-items:flex-start;margin-bottom:3rem;flex-wrap:wrap;">
     <div style="flex:1;min-width:260px;">
-      <img src="/images/6e5f14a0_64399bed868b7751024043b2_pexels-pixabay-302100__1).webp" loading="lazy" sizes="(max-width:479px) 91vw, (max-width:767px) 450px, 450px" alt="Experience a zen mind with ketamine therapy - Isha Health's online at-home ketamine clinic for depression and anxiety" width="600" srcset="/images/6e5f14a0_64399bed868b7751024043b2_pexels-pixabay-302100__1)-p-500.webp 500w, /images/6e5f14a0_64399bed868b7751024043b2_pexels-pixabay-302100__1).webp 640w" style="width:100%;max-width:450px;height:auto;border-radius:12px;">
+      <img src="/images/6e5f14a0_64399bed868b7751024043b2_pexels-pixabay-302100__1).webp" loading="lazy" sizes="(max-width:479px) 100vw, 260px" alt="Zen and tranquility with ketamine therapy" width="260" srcset="/images/6e5f14a0_64399bed868b7751024043b2_pexels-pixabay-302100__1)-p-500.webp 500w, /images/6e5f14a0_64399bed868b7751024043b2_pexels-pixabay-302100__1).webp 640w" style="width:100%;height:320px;object-fit:cover;border-radius:12px;">
     </div>
     <div style="flex:2;min-width:280px;">
       <h3 style="font-family:'Libre Baskerville',serif;font-size:1.2rem;font-weight:700;color:#111827;margin:0 0 1rem;">How can Ketamine Therapy help with Mental Health?</h3>
@@ -86,7 +86,7 @@ export default function Page() {
     </p>
 
     <div style="text-align:center;">
-      <img src="/images/96614ab3_6439a980ca8c4e29711deb18_pexels-liger-pham-739074__2)%20(1).jpg" loading="lazy" sizes="(max-width:479px) 86vw, (max-width:991px) 90vw, 50vw" alt="Find peace and tranquility with ketamine therapy - Isha Health" width="320" srcset="/images/96614ab3_6439a980ca8c4e29711deb18_pexels-liger-pham-739074__2)%20(1)-p-500.webp 500w, /images/96614ab3_6439a980ca8c4e29711deb18_pexels-liger-pham-739074__2)%20(1)-p-800.webp 800w, /images/96614ab3_6439a980ca8c4e29711deb18_pexels-liger-pham-739074__2)%20(1)-p-1080.webp 1080w, /images/96614ab3_6439a980ca8c4e29711deb18_pexels-liger-pham-739074__2)%20(1).jpg 1280w" style="max-width:320px;width:100%;height:auto;border-radius:12px;">
+      <img src="/images/96614ab3_6439a980ca8c4e29711deb18_pexels-liger-pham-739074__2)%20(1).jpg" loading="lazy" sizes="(max-width:479px) 86vw, 100%" alt="Find peace and tranquility with ketamine therapy" width="800" srcset="/images/96614ab3_6439a980ca8c4e29711deb18_pexels-liger-pham-739074__2)%20(1)-p-500.webp 500w, /images/96614ab3_6439a980ca8c4e29711deb18_pexels-liger-pham-739074__2)%20(1)-p-800.webp 800w, /images/96614ab3_6439a980ca8c4e29711deb18_pexels-liger-pham-739074__2)%20(1)-p-1080.webp 1080w, /images/96614ab3_6439a980ca8c4e29711deb18_pexels-liger-pham-739074__2)%20(1).jpg 1280w" style="width:100%;max-width:100%;height:280px;object-fit:cover;border-radius:12px;">
     </div>
   </section>
 
