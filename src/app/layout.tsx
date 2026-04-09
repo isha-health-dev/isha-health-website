@@ -52,10 +52,10 @@ const navbarHtml = `
         <span style="font-size:10px;letter-spacing:2px;color:#555;font-weight:500;">FEEL BETTER WITH</span>
         <img src="/images/isha_logo.webp" loading="lazy" alt="Isha Health" style="height:36px;margin-top:2px;" />
       </a>
-      <a href="/collaborate-with-isha-health" style="font-size:11px;letter-spacing:1px;color:#333;text-decoration:none;font-weight:500;margin-left:8px;">FOR KAP TRAINED THERAPISTS</a>
     </div>
-    <!-- Right: pricing + CTA -->
+    <!-- Right: links + CTA -->
     <div style="display:flex;align-items:center;gap:20px;">
+      <a href="/collaborate-with-isha-health" class="desktop-only" style="font-size:11px;letter-spacing:0.5px;color:#888;text-decoration:none;font-weight:500;">FOR CLINICIANS</a>
       <a href="/pricing" style="font-size:13px;font-weight:600;letter-spacing:1px;color:#333;text-decoration:none;">PRICING</a>
       <a id="check-availability" href="/appointment" style="background:#1abc9c;color:#fff;padding:10px 22px;border-radius:6px;font-size:13px;font-weight:600;letter-spacing:0.5px;text-decoration:none;white-space:nowrap;">CHECK AVAILABILITY</a>
     </div>
@@ -96,6 +96,7 @@ const navbarHtml = `
   <style>
     @media (max-width: 768px) {
       .menu-btn { display: flex !important; flex-direction: column; }
+      .desktop-only { display: none !important; }
     }
   </style>
   <script>
