@@ -122,8 +122,11 @@ export default function Page() {
       </div>
     </div>
 
-    <!-- Additional Clinicians -->
-    <h3 style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#111827;margin:0 0 1.5rem;text-align:center;">Our Therapists &amp; Specialists</h3>
+    <!-- Collaborative Care -->
+    <h3 style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#111827;margin:0 0 0.75rem;text-align:center;">A Collaborative Approach to Care</h3>
+    <p style="font-family:'Poppins',sans-serif;font-size:0.95rem;color:#555;line-height:1.7;text-align:center;max-width:600px;margin:0 auto 1.5rem;">
+      Ketamine therapy works best alongside integration support. We collaborate with a network of independent therapists and specialists who are trained in ketamine-assisted psychotherapy. They are not employees of Isha Health — they are independent practitioners who share our commitment to patient-centered care.
+    </p>
 
     <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:2rem;margin-bottom:2rem;">
 
@@ -238,11 +241,16 @@ export default function Page() {
       </div>
 
     </div>
+
+    <div style="text-align:center;margin-top:1rem;">
+      <p style="font-family:'Poppins',sans-serif;font-size:0.85rem;color:#6b7280;margin-bottom:1rem;">Our collaborating network includes 600+ clinicians across the country.</p>
+      <a href="/ketamine-therapist-directory" style="display:inline-block;background-color:#fff;color:#0d9488;padding:0.75rem 2rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:0.9rem;font-family:'Poppins',sans-serif;border:1px solid #0d9488;">Browse the Clinician Directory</a>
+    </div>
   </section>
 
   <!-- CTA -->
   <div style="text-align:center;padding:2rem 0;">
-    <a href="/pricing" style="display:inline-block;background-color:#0d9488;color:#fff;padding:1rem 2.5rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:1rem;font-family:'Poppins',sans-serif;transition:opacity 0.2s;">Learn More</a>
+    <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#fff;padding:1rem 2.5rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:1rem;font-family:'Poppins',sans-serif;">Book a Consultation</a>
   </div>
 
 </div>
