@@ -4,6 +4,9 @@ import { MDXRemote } from 'next-mdx-remote/rsc';
 import { getBlogPost, getAllBlogPosts } from '@/lib/blog';
 import Link from 'next/link';
 
+export const revalidate = 3600; // Revalidate every hour
+export const dynamicParams = true; // Allow non-pre-rendered slugs
+
 export async function generateStaticParams() {
   const posts = getAllBlogPosts(); // Already filters out future-dated posts
   return posts.map((post) => ({ slug: post.slug }));
