@@ -50,7 +50,7 @@ export default function Page() {
 
   <section style="margin-bottom:2.5rem;">
     <h2 style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#111827;margin-bottom:0.75rem;">Why Choose Isha Health for At-Home Ketamine Treatment in Colorado?</h2>
-    <img src="/images/3a27d97b_67acf5b26c5a83cdd332b761_pexels-esra-afsar-123882149-30411707__1).jpg" loading="lazy" alt="At-home ketamine therapy" style="width:100%;border-radius:8px;margin-bottom:1rem;">
+    <img src="/images/3a27d97b_67acf5b26c5a83cdd332b761_pexels-esra-afsar-123882149-30411707__1).jpg" loading="lazy" alt="At-home ketamine therapy" style="width:100%;max-height:300px;object-fit:cover;border-radius:8px;margin-bottom:1rem;">
     <ul style="padding-left:1.25rem;">
       <li style="margin-bottom:0.75rem;"><strong>86% of our members feel better within three months</strong><br>Most clients experience significant improvements in mood, anxiety, and overall well-being within just a few months of treatment. Our <strong>digital ketamine therapy</strong> is backed by research and personalized for each patient.</li>
       <li style="margin-bottom:0.75rem;"><strong>Appointments available in as little as 24 hours</strong><br>No long wait times—schedule your initial consultation quickly and begin your healing journey immediately. Our team ensures you receive prompt access to <strong>online ketamine treatment options</strong>.</li>
@@ -144,7 +144,7 @@ export default function Page() {
       <h4 style="font-weight:700;color:#111827;margin:0 0 0.5rem;">4. Begin Your At-Home Ketamine Treatment</h4>
       <p style="margin:0;">Administer the <strong>sublingual ketamine</strong> lozenge as instructed. The session typically lasts 1.5 hours, during which you'll rest in a calm setting, using relaxation techniques to enhance the experience.</p>
     </div>
-    <img src="/images/ae5f6a69_64de1de50aadefba5f98b95c_how-it-works.webp" loading="lazy" alt="How it works" style="width:100%;border-radius:8px;margin-top:1rem;">
+    <img src="/images/ae5f6a69_64de1de50aadefba5f98b95c_how-it-works.webp" loading="lazy" alt="How it works" style="width:100%;max-height:300px;object-fit:cover;border-radius:8px;margin-top:1rem;">
     <div style="text-align:center;margin-top:1.5rem;">
       <a href="/pricing" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.85rem 2rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:0.95rem;">Learn More</a>
     </div>
@@ -195,7 +195,7 @@ export default function Page() {
       <p style="margin:0;">Our team is here to answer your questions! Visit our Contact Page or email us at <a href="mailto:info@isha.health" style="color:#0d9488;">info@isha.health</a>.</p>
     </div>
 
-    <img src="/images/60503bec_6538dad73fe55bb4d6aab323_all_you_need_is_kat__1).png" loading="lazy" alt="Ketamine therapy" style="width:100%;border-radius:8px;margin-top:1rem;">
+    <img src="/images/60503bec_6538dad73fe55bb4d6aab323_all_you_need_is_kat__1).png" loading="lazy" alt="Ketamine therapy" style="width:100%;max-height:300px;object-fit:cover;border-radius:8px;margin-top:1rem;">
   </section>
 
   <section style="background:#f0fdfa;border:1px solid #99f6e4;border-radius:12px;padding:1.5rem;text-align:center;margin-bottom:2.5rem;">
