@@ -160,6 +160,15 @@ export default function Page() {
     </p>
   </div>
 
+  
+  <div style="margin:2.5rem 0;">
+    <h2 style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#111827;margin-bottom:1rem;">Patient Story: Joseph's Experience</h2>
+    <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:10px;">
+      <iframe src="https://www.youtube.com/embed/MutkPa2btzE" title="Joseph's Ketamine Therapy Testimonial - Isha Health" frameborder="0" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+    </div>
+    <p style="font-family:'Poppins',sans-serif;font-size:0.85rem;color:#6b7280;margin-top:0.75rem;font-style:italic;">"I found myself enjoying myself in a way I had never been able to." — Joseph, Cambria, CA</p>
+  </div>
+
   <!-- CTA Button -->
   <div style="text-align:center;margin:2.5rem 0;">
     <a href="/appointment" style="display:inline-block;background:#0d9488;color:#ffffff;font-family:'Poppins',sans-serif;font-size:1rem;font-weight:600;padding:0.85rem 2.5rem;border-radius:8px;text-decoration:none;">

@@ -245,7 +245,16 @@ export default function OnlineKetamineTherapyPage() {
       </div>
     </div>
 
-    <!-- CTA -->
+    
+  <div style="margin:2.5rem 0;">
+    <h2 style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#111827;margin-bottom:1rem;">Patient Story: Joseph's Experience</h2>
+    <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:10px;">
+      <iframe src="https://www.youtube.com/embed/MutkPa2btzE" title="Joseph's Ketamine Therapy Testimonial - Isha Health" frameborder="0" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+    </div>
+    <p style="font-family:'Poppins',sans-serif;font-size:0.85rem;color:#6b7280;margin-top:0.75rem;font-style:italic;">"I found myself enjoying myself in a way I had never been able to." — Joseph, Cambria, CA</p>
+  </div>
+
+  <!-- CTA -->
     <div style="background-color:#f0fdfa;padding:2.5rem;border-radius:12px;text-align:center;border:1px solid #ccfbf1;">
       <p style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#0f766e;margin-bottom:0.5rem;">Start Online Ketamine Therapy Today</p>
       <p style="font-family:'Poppins',sans-serif;color:#4b5563;margin-bottom:1.5rem;font-size:0.95rem;">Book a 60-minute consultation with a board-certified psychiatrist.</p>

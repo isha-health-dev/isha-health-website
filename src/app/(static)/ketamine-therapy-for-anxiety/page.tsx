@@ -75,6 +75,15 @@ export default function Page() {
     <a href="/appointment" style="display:inline-block;background:#0d9488;color:#fff;font-family:Poppins,sans-serif;font-size:1rem;font-weight:600;padding:0.75rem 2rem;border-radius:8px;text-decoration:none;">Make an appointment</a>
   </section>
 
+  
+  <div style="margin:2.5rem 0;">
+    <h2 style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#111827;margin-bottom:1rem;">How to Prepare for Your Session</h2>
+    <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:10px;">
+      <iframe src="https://www.youtube.com/embed/9KCRmNtZnC0" title="How to Prepare for Ketamine Therapy Sessions - Isha Health" frameborder="0" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+    </div>
+    <p style="font-family:'Poppins',sans-serif;font-size:0.85rem;color:#6b7280;margin-top:0.75rem;">Step-by-step guide to preparing for your at-home ketamine therapy session.</p>
+  </div>
+
   <div style="background:#f0fdfa;border:1px solid #ccfbf1;border-radius:10px;padding:1.5rem;margin:2rem 0;">
     <h3 style="font-family:Libre Baskerville,serif;font-size:1.05rem;font-weight:700;color:#0f766e;margin-bottom:0.75rem;">Isha Health Patient Outcomes</h3>
     <p style="font-size:0.9rem;color:#374151;line-height:1.6;margin-bottom:0.5rem;">92.6% of Isha Health patients with elevated anxiety reach minimal anxiety levels on the GAD-7 scale. Our patients see their first improvement in an average of 1.29 sessions.</p>
