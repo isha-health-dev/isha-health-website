@@ -54,10 +54,17 @@ export function getBlogPost(slug: string): BlogPost | null {
 }
 
 export function getAllBlogPosts(): BlogPost[] {
+  const now = new Date();
+  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
   const slugs = getAllBlogSlugs();
   return slugs
     .map((slug) => getBlogPost(slug))
-    .filter((p): p is BlogPost => p !== null && !p.draft)
+    .filter((p): p is BlogPost => {
+      if (p === null || p.draft) return false;
+      // Exclude future-dated posts
+      const postDate = new Date(p.date);
+      return postDate <= today;
+    })
     .sort((a, b) => {
       const dateA = a.firstPublished || a.date;
       const dateB = b.firstPublished || b.date;

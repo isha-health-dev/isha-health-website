@@ -8,15 +8,18 @@ const BASE_URL = 'https://isha.health';
 
 function getBlogPosts(): { slug: string; date: string }[] {
   const blogDir = join(process.cwd(), 'content', 'blog');
+  const today = new Date().toISOString().split('T')[0];
   try {
     const files = readdirSync(blogDir).filter((f) => f.endsWith('.mdx'));
-    return files.map((file) => {
-      const content = readFileSync(join(blogDir, file), 'utf-8');
-      const slug = file.replace(/\.mdx$/, '');
-      const dateMatch = content.match(/^date:\s*(.+)$/m);
-      const date = dateMatch ? dateMatch[1].trim().replace(/['"]/g, '') : '2024-01-01';
-      return { slug, date };
-    });
+    return files
+      .map((file) => {
+        const content = readFileSync(join(blogDir, file), 'utf-8');
+        const slug = file.replace(/\.mdx$/, '');
+        const dateMatch = content.match(/^date:\s*(.+)$/m);
+        const date = dateMatch ? dateMatch[1].trim().replace(/['"]/g, '') : '2024-01-01';
+        return { slug, date };
+      })
+      .filter((post) => post.date <= today); // Exclude future-dated posts
   } catch {
     return [];
   }

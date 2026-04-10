@@ -1,12 +1,12 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { MDXRemote } from 'next-mdx-remote/rsc';
-import { getBlogPost, getAllBlogSlugs, getAllBlogPosts } from '@/lib/blog';
+import { getBlogPost, getAllBlogPosts } from '@/lib/blog';
 import Link from 'next/link';
 
 export async function generateStaticParams() {
-  const slugs = getAllBlogSlugs();
-  return slugs.map((slug) => ({ slug }));
+  const posts = getAllBlogPosts(); // Already filters out future-dated posts
+  return posts.map((post) => ({ slug: post.slug }));
 }
 
 export async function generateMetadata({
@@ -48,6 +48,11 @@ export default async function BlogPostPage({
   const { slug } = await params;
   const post = getBlogPost(slug);
   if (!post) notFound();
+
+  // Don't render future-dated posts
+  const now = new Date();
+  const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  if (new Date(post.date) > today) notFound();
 
   const publishDate = post.firstPublished || post.date;
 
