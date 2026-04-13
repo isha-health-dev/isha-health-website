@@ -24,7 +24,7 @@ export default function Page() {
   return (
     <div
       dangerouslySetInnerHTML={{
-        __html: `<div style="max-width:800px;margin:0 auto;padding:2rem 1.5rem 4rem;">
+        __html: `<div style="max-width:1100px;margin:0 auto;padding:2rem 1.5rem 4rem;">
 
   <div style="text-align:center;padding:2rem 0;">
     <h1 style="font-family:'Libre Baskerville',serif;font-size:2rem;font-weight:700;color:#111827;margin-bottom:0.75rem;">Schedule Your Initial Consultation</h1>
