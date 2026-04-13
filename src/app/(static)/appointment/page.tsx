@@ -51,7 +51,7 @@ export default function Page() {
   </div>
 
   <div id="all-states-booking" style="border:1px solid #e5e7eb;border-radius:10px;overflow:hidden;">
-    <iframe src="https://app.acuityscheduling.com/schedule.php?owner=26756408&amp;owner=26756408&amp;appointmentType=38092182" width="100%" height="800" frameborder="0" style="display:block;"></iframe>
+    <iframe src="https://app.acuityscheduling.com/schedule.php?owner=26756408&amp;appointmentType=38092182&amp;numDays=5" width="100%" height="800" frameborder="0" style="display:block;"></iframe>
   </div>
 
   <div style="text-align:center;margin-top:2rem;">
