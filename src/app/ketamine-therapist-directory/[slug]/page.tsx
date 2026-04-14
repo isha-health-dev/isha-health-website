@@ -11,7 +11,8 @@ import {
   getOptimizedProfilePic,
 } from '@/lib/therapist-types';
 
-export const revalidate = 86400; // Once per day to stay within Vercel free tier
+// No timer-based ISR — on-demand revalidation only (triggered by dashboard save)
+export const dynamicParams = false; // Only pre-rendered slugs — prevents ISR reads
 
 export async function generateStaticParams() {
   const slugs = await getAllTherapistSlugs();
@@ -94,6 +95,7 @@ export default async function TherapistProfilePage({
   const paymentMethods = t.therapist_payment_method.map((p) =>
     formatLabel(p.payment_method)
   );
+  const ethnicities = t.therapist_ethnicity.map((e) => formatLabel(e.ethnicity));
 
   // Structured data
   const personSchema = {
@@ -569,6 +571,9 @@ export default async function TherapistProfilePage({
             )}
             {trainingPrograms.length > 0 && (
               <Detail label="Training Programs" value={trainingPrograms.join(', ')} />
+            )}
+            {ethnicities.length > 0 && (
+              <Detail label="Ethnic Focus" value={ethnicities.join(', ')} />
             )}
           </div>
         </div>

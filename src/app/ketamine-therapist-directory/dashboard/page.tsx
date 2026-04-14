@@ -88,6 +88,10 @@ export default function DashboardPage() {
   const [trainingPrograms, setTrainingPrograms] = useState<string[]>([]);
   const [credentials, setCredentials] = useState<string[]>([]);
   const [languages, setLanguages] = useState<string[]>([]);
+  const [ageGroups, setAgeGroups] = useState<string[]>([]);
+  const [paymentMethods, setPaymentMethods] = useState<string[]>([]);
+  const [events, setEvents] = useState<{title: string; description: string; event_date: string; event_url: string; location: string; is_virtual: boolean}[]>([]);
+  const [ethnicities, setEthnicities] = useState<string[]>([]);
   const [importPreview, setImportPreview] = useState<Record<string, { current: string; imported: string; use: 'current' | 'imported' }> | null>(null);
   const [importing, setImporting] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -167,13 +171,17 @@ export default function DashboardPage() {
     loadLicenses();
 
     async function loadRelations() {
-      const [ins, spec, tt, tp, cred, lang] = await Promise.all([
+      const [ins, spec, tt, tp, cred, lang, ag, pm, ev, eth] = await Promise.all([
         supabase.from('therapist_insurance').select('insurance_type').eq('therapist_id', profile!.id),
         supabase.from('therapist_specialty').select('specialty').eq('therapist_id', profile!.id),
         supabase.from('therapist_therapy_type').select('therapy_type').eq('therapist_id', profile!.id),
         supabase.from('therapist_training_program').select('training_program').eq('therapist_id', profile!.id),
         supabase.from('therapist_credential').select('credential').eq('therapist_id', profile!.id),
         supabase.from('therapist_language').select('language').eq('therapist_id', profile!.id),
+        supabase.from('therapist_age_group').select('age_group').eq('therapist_id', profile!.id),
+        supabase.from('therapist_payment_method').select('payment_method').eq('therapist_id', profile!.id),
+        supabase.from('therapist_event').select('*').eq('therapist_id', profile!.id),
+        supabase.from('therapist_ethnicity').select('ethnicity').eq('therapist_id', profile!.id),
       ]);
       if (ins.data) setInsurances(ins.data.map((i) => i.insurance_type));
       if (spec.data) setSpecialties(spec.data.map((s) => s.specialty));
@@ -181,6 +189,10 @@ export default function DashboardPage() {
       if (tp.data) setTrainingPrograms(tp.data.map((t) => t.training_program));
       if (cred.data) setCredentials(cred.data.map((c) => c.credential));
       if (lang.data) setLanguages(lang.data.map((l) => l.language));
+      if (ag.data) setAgeGroups(ag.data.map((a) => a.age_group));
+      if (pm.data) setPaymentMethods(pm.data.map((p) => p.payment_method));
+      if (ev.data) setEvents(ev.data.map((e) => ({ title: e.title, description: e.description || '', event_date: e.event_date || '', event_url: e.event_url || '', location: e.location || '', is_virtual: e.is_virtual || false })));
+      if (eth.data) setEthnicities(eth.data.map((e) => e.ethnicity));
     }
     loadRelations();
   // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -309,6 +321,34 @@ export default function DashboardPage() {
     if (languages.length > 0) {
       await supabase.from('therapist_language').insert(
         languages.map((l) => ({ therapist_id: profile.id, language: l }))
+      );
+    }
+
+    await supabase.from('therapist_age_group').delete().eq('therapist_id', profile.id);
+    if (ageGroups.length > 0) {
+      await supabase.from('therapist_age_group').insert(
+        ageGroups.map((a) => ({ therapist_id: profile.id, age_group: a }))
+      );
+    }
+
+    await supabase.from('therapist_payment_method').delete().eq('therapist_id', profile.id);
+    if (paymentMethods.length > 0) {
+      await supabase.from('therapist_payment_method').insert(
+        paymentMethods.map((p) => ({ therapist_id: profile.id, payment_method: p }))
+      );
+    }
+
+    await supabase.from('therapist_event').delete().eq('therapist_id', profile.id);
+    if (events.length > 0) {
+      await supabase.from('therapist_event').insert(
+        events.map((ev) => ({ therapist_id: profile.id, title: ev.title, description: ev.description || null, event_date: ev.event_date, event_url: ev.event_url || null, location: ev.location || null, is_virtual: ev.is_virtual }))
+      );
+    }
+
+    await supabase.from('therapist_ethnicity').delete().eq('therapist_id', profile.id);
+    if (ethnicities.length > 0) {
+      await supabase.from('therapist_ethnicity').insert(
+        ethnicities.map((e) => ({ therapist_id: profile.id, ethnicity: e }))
       );
     }
 
@@ -869,6 +909,33 @@ export default function DashboardPage() {
           </div>
         </div>
 
+        {/* Payment Methods */}
+        <div style={sectionStyle}>
+          <h2 style={{ fontSize: '1.1rem', fontWeight: 600, color: '#111827', marginBottom: '1rem' }}>Payment Methods</h2>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '0.5rem' }}>
+            {paymentMethods.map((pm, i) => (
+              <span key={i} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.25rem', padding: '0.3rem 0.75rem', backgroundColor: '#f3f4f6', borderRadius: '20px', fontSize: '0.8rem' }}>
+                {pm}
+                <button type="button" onClick={() => setPaymentMethods(paymentMethods.filter((_, j) => j !== i))} style={{ background: 'none', border: 'none', color: '#dc2626', cursor: 'pointer', fontSize: '1rem', padding: 0, lineHeight: 1 }}>&times;</button>
+              </span>
+            ))}
+          </div>
+          <div style={{ display: 'flex', gap: '0.5rem' }}>
+            <select style={{ ...inputStyle, flex: 1 }} id="new-payment-method" defaultValue="">
+              <option value="" disabled>Select payment method...</option>
+              <option value="Cash">Cash</option>
+              <option value="Check">Check</option>
+              <option value="Credit Card">Credit Card</option>
+              <option value="HSA/FSA">HSA/FSA</option>
+              <option value="Zelle">Zelle</option>
+              <option value="Venmo">Venmo</option>
+              <option value="PayPal">PayPal</option>
+              <option value="Other">Other</option>
+            </select>
+            <button type="button" onClick={() => { const select = document.getElementById('new-payment-method') as HTMLSelectElement; if (select?.value && !paymentMethods.includes(select.value)) { setPaymentMethods([...paymentMethods, select.value]); select.value = ''; } }} style={{ padding: '0.5rem 1rem', backgroundColor: '#0d9488', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontSize: '0.8rem', fontFamily: 'inherit' }}>Add</button>
+          </div>
+        </div>
+
         {/* Specialties */}
         <div style={sectionStyle}>
           <h2 style={{ fontSize: '1.1rem', fontWeight: 600, color: '#111827', marginBottom: '1rem' }}>Specialties</h2>
@@ -1033,6 +1100,47 @@ export default function DashboardPage() {
               <input style={inputStyle} value={profile.faith_or_spiritual_focus || ''} onChange={(e) => updateField('faith_or_spiritual_focus', e.target.value)} placeholder="e.g., Buddhist-informed, Christian counseling, secular" />
             </div>
           </div>
+
+          {/* Age Groups */}
+          <div style={{ marginTop: '1rem' }}>
+            <label style={labelStyle}>Age Groups</label>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '0.5rem' }}>
+              {ageGroups.map((ag, i) => (
+                <span key={i} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.25rem', padding: '0.3rem 0.75rem', backgroundColor: '#f3f4f6', borderRadius: '20px', fontSize: '0.8rem' }}>
+                  {ag}
+                  <button type="button" onClick={() => setAgeGroups(ageGroups.filter((_, j) => j !== i))} style={{ background: 'none', border: 'none', color: '#dc2626', cursor: 'pointer', fontSize: '1rem', padding: 0, lineHeight: 1 }}>&times;</button>
+                </span>
+              ))}
+            </div>
+            <div style={{ display: 'flex', gap: '0.5rem' }}>
+              <select style={{ ...inputStyle, flex: 1 }} id="new-age-group" defaultValue="">
+                <option value="" disabled>Select age group...</option>
+                <option value="Children (0-12)">Children (0-12)</option>
+                <option value="Adolescents (13-17)">Adolescents (13-17)</option>
+                <option value="Young Adults (18-25)">Young Adults (18-25)</option>
+                <option value="Adults (26-64)">Adults (26-64)</option>
+                <option value="Seniors (65+)">Seniors (65+)</option>
+              </select>
+              <button type="button" onClick={() => { const select = document.getElementById('new-age-group') as HTMLSelectElement; if (select?.value && !ageGroups.includes(select.value)) { setAgeGroups([...ageGroups, select.value]); select.value = ''; } }} style={{ padding: '0.5rem 1rem', backgroundColor: '#0d9488', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontSize: '0.8rem', fontFamily: 'inherit' }}>Add</button>
+            </div>
+          </div>
+
+          {/* Ethnicities */}
+          <div style={{ marginTop: '1rem' }}>
+            <label style={labelStyle}>Ethnic Focus</label>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '0.5rem' }}>
+              {ethnicities.map((eth, i) => (
+                <span key={i} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.25rem', padding: '0.3rem 0.75rem', backgroundColor: '#f3f4f6', borderRadius: '20px', fontSize: '0.8rem' }}>
+                  {eth.replace(/_/g, ' ')}
+                  <button type="button" onClick={() => setEthnicities(ethnicities.filter((_, j) => j !== i))} style={{ background: 'none', border: 'none', color: '#dc2626', cursor: 'pointer', fontSize: '1rem', padding: 0, lineHeight: 1 }}>&times;</button>
+                </span>
+              ))}
+            </div>
+            <div style={{ display: 'flex', gap: '0.5rem' }}>
+              <input style={{ ...inputStyle, flex: 1 }} placeholder="Type ethnicity and press Add" id="new-ethnicity" onKeyDown={(e) => { if (e.key === 'Enter') { e.preventDefault(); const input = e.target as HTMLInputElement; if (input.value.trim()) { setEthnicities([...ethnicities, input.value.trim().toLowerCase().replace(/\s+/g, '_')]); input.value = ''; } } }} />
+              <button type="button" onClick={() => { const input = document.getElementById('new-ethnicity') as HTMLInputElement; if (input?.value.trim()) { setEthnicities([...ethnicities, input.value.trim().toLowerCase().replace(/\s+/g, '_')]); input.value = ''; } }} style={{ padding: '0.5rem 1rem', backgroundColor: '#0d9488', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontSize: '0.8rem', fontFamily: 'inherit' }}>Add</button>
+            </div>
+          </div>
         </div>
 
         {/* Social Media */}
@@ -1077,6 +1185,76 @@ export default function DashboardPage() {
             <label style={labelStyle}>Note on Finances</label>
             <textarea style={{ ...inputStyle, minHeight: '60px', resize: 'vertical' as const }} value={profile.note_on_finance || ''} onChange={(e) => updateField('note_on_finance', e.target.value)} />
           </div>
+        </div>
+
+        {/* Events */}
+        <div style={sectionStyle}>
+          <h2 style={{ fontSize: '1.1rem', fontWeight: 600, color: '#111827', marginBottom: '1rem' }}>Events</h2>
+          {events.map((ev, i) => (
+            <div key={i} style={{ padding: '1rem', border: '1px solid #e5e7eb', borderRadius: '8px', marginBottom: '0.75rem', backgroundColor: '#fafafa' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+                <div>
+                  <p style={{ fontWeight: 600, fontSize: '0.9rem', color: '#111827' }}>{ev.title}</p>
+                  <p style={{ fontSize: '0.8rem', color: '#6b7280' }}>{ev.event_date ? new Date(ev.event_date).toLocaleDateString() : 'No date'}{ev.location ? ` - ${ev.location}` : ''}{ev.is_virtual ? ' (Virtual)' : ''}</p>
+                </div>
+                <button type="button" onClick={() => setEvents(events.filter((_, j) => j !== i))} style={{ background: 'none', border: 'none', color: '#dc2626', cursor: 'pointer', fontSize: '1.2rem', padding: '0 0.5rem', flexShrink: 0 }}>&times;</button>
+              </div>
+            </div>
+          ))}
+          <details style={{ marginTop: '0.5rem' }}>
+            <summary style={{ cursor: 'pointer', color: '#0d9488', fontSize: '0.85rem', fontWeight: 600 }}>+ Add Event</summary>
+            <div style={{ marginTop: '0.75rem', padding: '1rem', border: '1px dashed #d1d5db', borderRadius: '8px' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', marginBottom: '0.75rem' }}>
+                <div>
+                  <label style={labelStyle}>Title *</label>
+                  <input style={inputStyle} id="new-event-title" placeholder="Event title" />
+                </div>
+                <div>
+                  <label style={labelStyle}>Date *</label>
+                  <input style={inputStyle} type="datetime-local" id="new-event-date" />
+                </div>
+              </div>
+              <div style={{ marginBottom: '0.75rem' }}>
+                <label style={labelStyle}>Description</label>
+                <textarea style={{ ...inputStyle, minHeight: '60px', resize: 'vertical' as const }} id="new-event-description" placeholder="Event description" />
+              </div>
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', marginBottom: '0.75rem' }}>
+                <div>
+                  <label style={labelStyle}>URL</label>
+                  <input style={inputStyle} id="new-event-url" placeholder="https://..." />
+                </div>
+                <div>
+                  <label style={labelStyle}>Location</label>
+                  <input style={inputStyle} id="new-event-location" placeholder="e.g., New York, NY" />
+                </div>
+              </div>
+              <div style={{ marginBottom: '0.75rem' }}>
+                <label style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', cursor: 'pointer', fontSize: '0.85rem', color: '#374151' }}>
+                  <input type="checkbox" id="new-event-virtual" />
+                  Virtual Event
+                </label>
+              </div>
+              <button type="button" onClick={() => {
+                const title = (document.getElementById('new-event-title') as HTMLInputElement)?.value.trim();
+                const event_date = (document.getElementById('new-event-date') as HTMLInputElement)?.value;
+                if (!title || !event_date) { setError('Event title and date are required.'); return; }
+                const description = (document.getElementById('new-event-description') as HTMLTextAreaElement)?.value.trim() || '';
+                const event_url = (document.getElementById('new-event-url') as HTMLInputElement)?.value.trim() || '';
+                const location = (document.getElementById('new-event-location') as HTMLInputElement)?.value.trim() || '';
+                const is_virtual = (document.getElementById('new-event-virtual') as HTMLInputElement)?.checked || false;
+                setEvents([...events, { title, description, event_date, event_url, location, is_virtual }]);
+                (document.getElementById('new-event-title') as HTMLInputElement).value = '';
+                (document.getElementById('new-event-date') as HTMLInputElement).value = '';
+                (document.getElementById('new-event-description') as HTMLTextAreaElement).value = '';
+                (document.getElementById('new-event-url') as HTMLInputElement).value = '';
+                (document.getElementById('new-event-location') as HTMLInputElement).value = '';
+                (document.getElementById('new-event-virtual') as HTMLInputElement).checked = false;
+                setError('');
+              }} style={{ padding: '0.5rem 1.25rem', backgroundColor: '#0d9488', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontSize: '0.85rem', fontWeight: 600, fontFamily: 'inherit' }}>
+                Add Event
+              </button>
+            </div>
+          </details>
         </div>
 
         {/* Save */}

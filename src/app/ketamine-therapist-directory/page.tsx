@@ -25,7 +25,8 @@ export const metadata: Metadata = {
   },
 };
 
-export const revalidate = 86400; // Once per day to stay within Vercel free tier
+// No timer-based ISR — use on-demand revalidation only (triggered by dashboard save)
+// This prevents ISR reads from consuming Vercel free tier quota
 
 export default async function Page() {
   const therapists = await getAllTherapists();

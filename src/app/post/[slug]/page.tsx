@@ -4,7 +4,8 @@ import { MDXRemote } from 'next-mdx-remote/rsc';
 import { getBlogPost, getAllBlogPosts } from '@/lib/blog';
 import Link from 'next/link';
 
-// Static generation — no ISR to stay within Vercel free tier
+// Fully static — no ISR reads, no dynamic params
+export const dynamicParams = false;
 
 export async function generateStaticParams() {
   const posts = getAllBlogPosts(); // Already filters out future-dated posts
