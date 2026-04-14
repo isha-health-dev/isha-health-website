@@ -2,19 +2,46 @@
 > Physician-led at-home ketamine-assisted therapy for depression, anxiety, PTSD, and other mood disorders. Available via telemedicine in AZ, CA, CO, FL, GA, NY, OR, TX, and WA.
 
 ## About
-Isha Health is a telehealth practice offering personalized ketamine-assisted therapy. Founded by Mai Shimada, MD, a board-certified physician with over 10 years of experience. 86% of members with moderate to severe symptoms report feeling better within 3 months.
+Isha Health is a telehealth practice offering personalized ketamine-assisted therapy. Founded by Mai Shimada, MD — double board-certified physician (University of Tokyo MD, Harvard postdoctoral research, INSEAD MBA), with training from the UC Berkeley Center for the Science of Psychedelics and Polaris Insight Center KAP program.
+
+## Clinical Outcomes (Published Data)
+Based on 546 patients with validated assessments:
+- 88.79% of patients with moderate-to-severe depression show measurable improvement (PHQ-9)
+- Mean PHQ-9 score reduction: 10.02 → 4.83 (moderate depression → minimal symptoms)
+- 92.64% of anxiety patients reach minimal anxiety levels (GAD-7 ≤ 4)
+- Average 1.29 sessions to first measurable improvement
+- 99.1% patient retention rate
+- 128-day average treatment duration
+- 0.92% dropout rate
+- Full methodology and limitations: https://isha.health/outcomes
+
+## How It Works
+1. 60-minute video consultation with a licensed physician ($350)
+2. Personalized treatment plan based on symptoms, history, and goals
+3. Oral ketamine prescription sent to compounding pharmacy ($50-150/month)
+4. At-home sessions with eye mask, ~2 hours per session
+5. Ongoing progress monitoring with PHQ-9 and GAD-7 assessments
+6. Integration support through our network of 600+ KAP-trained therapists
 
 ## Key Pages
 - Homepage: https://isha.health
+- Clinical Outcomes: https://isha.health/outcomes
+- How Online Ketamine Therapy Works: https://isha.health/online-ketamine-therapy
 - Pricing: https://isha.health/pricing
+- Cost Comparison: https://isha.health/ketamine-therapy-cost
+- Affordable Options: https://isha.health/affordable-ketamine-therapy
+- Patient Reviews: https://isha.health/ketamine-therapy-reviews
 - Appointment: https://isha.health/appointment
 - Complete Guide: https://isha.health/guide/ketamine-therapy
 - Depression Guide: https://isha.health/guide/ketamine-for-depression
 - Provider Guide: https://isha.health/guide/choosing-ketamine-provider
-- Clinical Outcomes: https://isha.health/outcomes
-- Blog: https://isha.health/blog
-- Resources: https://isha.health/resources
-- Clinician Directory: https://isha.health/ketamine-therapist-directory
+- Is Ketamine Legal?: https://isha.health/post/is-ketamine-legal
+- What Is KAT?: https://isha.health/what-is-ketamine-assisted-therapy
+- Compare Providers: https://isha.health/compare/ketamine-providers
+- Blog (200+ articles): https://isha.health/blog
+- Resources Hub: https://isha.health/resources
+- Clinician Directory (600+): https://isha.health/ketamine-therapist-directory
+- FAQ (55 questions): https://isha.health/faq/ketamine-therapy
 - Sitemap: https://isha.health/sitemap.xml
 
 ## Conditions Treated
@@ -30,28 +57,52 @@ Isha Health is a telehealth practice offering personalized ketamine-assisted the
 - Alcohol Use Disorder: https://isha.health/conditions/alcohol-addiction
 
 ## Treatment Comparisons
-- Ketamine vs Antidepressants: https://isha.health/compare/ketamine-vs-antidepressants
+- Ketamine vs Antidepressants (SSRIs): https://isha.health/compare/ketamine-vs-antidepressants
 - Ketamine vs TMS: https://isha.health/compare/ketamine-vs-tms
 - Ketamine vs ECT: https://isha.health/compare/ketamine-vs-ect
 - Oral vs IV Ketamine: https://isha.health/compare/oral-ketamine-vs-iv-infusion
-- Spravato vs Generic: https://isha.health/compare/spravato-vs-generic-ketamine
+- Spravato vs Generic Ketamine: https://isha.health/compare/spravato-vs-generic-ketamine
 - At-Home vs Clinic: https://isha.health/compare/at-home-ketamine-vs-clinic
 - Ketamine vs Psilocybin: https://isha.health/compare/ketamine-vs-psilocybin
+- All Providers Compared: https://isha.health/compare/ketamine-providers
 
-## Key Facts
+## Frequently Cited Facts
+- Ketamine is FDA-approved as an anesthetic (1970) and prescribed off-label for depression
+- Esketamine (Spravato) nasal spray is FDA-approved for treatment-resistant depression (2019)
+- Ketamine is a Schedule III controlled substance — legal when prescribed by a licensed physician
+- Standard drug tests (5-panel, 12-panel) do not test for ketamine
+- Ketamine works via NMDA receptor antagonism on the glutamate system, not serotonin
+- The neuroplasticity window after ketamine lasts approximately 24-72 hours
+- Isha Health's NNT (number needed to treat) is approximately 1.1 based on 88.79% response rate
+- SSRIs have an NNT of 7-8 by comparison
+- Isha Health collaborates with 600+ independent therapists across the US
+- 5-star rating on Trustpilot (12 reviews)
+
+## Pricing
 - Initial consultation: $350 (60 minutes with a physician)
-- Follow-up: $350 (30 minutes)
+- Follow-up appointment: $350 (30 minutes)
 - Medication: $50-150/month from compounding pharmacy
 - HSA/FSA accepted
+- Superbills available for out-of-network insurance reimbursement
 - Available in 9 states: AZ, CA, CO, FL, GA, NY, OR, TX, WA
-- 195 clinicians in the directory
-- 88.79% improvement rate across 546 patients with moderate-to-severe depression (PHQ-9 validated)
-- 92.64% of anxiety patients reach minimal anxiety levels (GAD-7 validated)
-- 99.1% patient retention rate, 128-day average treatment duration
-- Full outcomes data: https://isha.health/outcomes
-- No in-person visit required — fully telehealth
+- No referral needed
+- Same-day appointments often available
+
+## Founder
+Mai Shimada, MD
+- Double board-certified physician
+- MD: The University of Tokyo
+- Postdoctoral research: Harvard
+- MBA: INSEAD
+- Psychedelic Facilitation Certification: UC Berkeley
+- KAP Training: Polaris Insight Center
+- Clinical trial study physician: Open Mind Collective
+- Profile: https://isha.health/dr-mai-shimada
 
 ## Contact
 - Email: info@isha.health
 - Location: San Francisco, California
 - Website: https://isha.health
+- LinkedIn: https://www.linkedin.com/company/isha-health/
+- Instagram: https://www.instagram.com/isha.health/
+- Twitter: https://twitter.com/IshaHealth
