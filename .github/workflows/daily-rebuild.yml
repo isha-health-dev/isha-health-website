@@ -1,0 +1,23 @@
+name: Daily Rebuild for Scheduled Posts
+
+on:
+  schedule:
+    # Run at 7am UTC (midnight PT) every day
+    - cron: '0 7 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Trigger Vercel rebuild
+        run: |
+          # Push an empty commit to trigger Vercel auto-deploy
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git commit --allow-empty -m "chore: daily rebuild for scheduled posts [skip ci]"
+          git push

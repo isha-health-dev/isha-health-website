@@ -4,8 +4,7 @@ import { MDXRemote } from 'next-mdx-remote/rsc';
 import { getBlogPost, getAllBlogPosts } from '@/lib/blog';
 import Link from 'next/link';
 
-export const revalidate = 3600; // Revalidate every hour
-export const dynamicParams = true; // Allow non-pre-rendered slugs
+// Static generation — no ISR to stay within Vercel free tier
 
 export async function generateStaticParams() {
   const posts = getAllBlogPosts(); // Already filters out future-dated posts

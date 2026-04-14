@@ -11,7 +11,7 @@ import {
   getOptimizedProfilePic,
 } from '@/lib/therapist-types';
 
-export const revalidate = 60;
+export const revalidate = 86400; // Once per day to stay within Vercel free tier
 
 export async function generateStaticParams() {
   const slugs = await getAllTherapistSlugs();

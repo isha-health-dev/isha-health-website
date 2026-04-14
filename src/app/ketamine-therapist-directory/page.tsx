@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
 };
 
-export const revalidate = 60;
+export const revalidate = 86400; // Once per day to stay within Vercel free tier
 
 export default async function Page() {
   const therapists = await getAllTherapists();
