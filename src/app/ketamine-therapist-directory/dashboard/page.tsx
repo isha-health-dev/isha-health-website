@@ -292,7 +292,17 @@ export default function DashboardPage() {
       );
     }
 
-    setMessage('Profile saved and verified! Changes will appear on your directory listing within a few minutes.');
+    // Trigger revalidation of directory and profile page
+    const slug = [profile.first_name, profile.last_name].filter(Boolean).join(' ')
+      .toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')
+      + (profile.state ? `-${profile.state.toLowerCase()}` : '');
+    fetch('/api/therapist/revalidate', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ slug }),
+    }).catch(() => {}); // Fire and forget
+
+    setMessage('Profile saved and verified! Changes will appear on your directory listing shortly.');
     setSaving(false);
   }
 
