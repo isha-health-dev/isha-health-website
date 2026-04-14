@@ -214,6 +214,9 @@ export default async function TherapistProfilePage({
             <p className="text-lg text-gray-600 mt-1">
               {formatRole(t.mental_health_role)}
             </p>
+            {t.pronouns && (
+              <p className="text-sm text-gray-500 mt-1">{t.pronouns}</p>
+            )}
             {location && <p className="text-gray-500 mt-1">{location}</p>}
             <div className="flex flex-wrap gap-2 mt-3">
               {t.visit_type && (
@@ -543,6 +546,7 @@ export default async function TherapistProfilePage({
                 </a>
               </div>
             )}
+            {t.telehealth_platform && <Detail label="Telehealth Platform" value={t.telehealth_platform} />}
             {licenses.length > 0 && (
               <Detail
                 label="Licensed In"

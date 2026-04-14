@@ -86,6 +86,8 @@ export default function DashboardPage() {
   const [specialties, setSpecialties] = useState<string[]>([]);
   const [therapyTypes, setTherapyTypes] = useState<string[]>([]);
   const [trainingPrograms, setTrainingPrograms] = useState<string[]>([]);
+  const [credentials, setCredentials] = useState<string[]>([]);
+  const [languages, setLanguages] = useState<string[]>([]);
   const [importPreview, setImportPreview] = useState<Record<string, { current: string; imported: string; use: 'current' | 'imported' }> | null>(null);
   const [importing, setImporting] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -165,16 +167,20 @@ export default function DashboardPage() {
     loadLicenses();
 
     async function loadRelations() {
-      const [ins, spec, tt, tp] = await Promise.all([
+      const [ins, spec, tt, tp, cred, lang] = await Promise.all([
         supabase.from('therapist_insurance').select('insurance_type').eq('therapist_id', profile!.id),
         supabase.from('therapist_specialty').select('specialty').eq('therapist_id', profile!.id),
         supabase.from('therapist_therapy_type').select('therapy_type').eq('therapist_id', profile!.id),
         supabase.from('therapist_training_program').select('training_program').eq('therapist_id', profile!.id),
+        supabase.from('therapist_credential').select('credential').eq('therapist_id', profile!.id),
+        supabase.from('therapist_language').select('language').eq('therapist_id', profile!.id),
       ]);
       if (ins.data) setInsurances(ins.data.map((i) => i.insurance_type));
       if (spec.data) setSpecialties(spec.data.map((s) => s.specialty));
       if (tt.data) setTherapyTypes(tt.data.map((t) => t.therapy_type));
       if (tp.data) setTrainingPrograms(tp.data.map((t) => t.training_program));
+      if (cred.data) setCredentials(cred.data.map((c) => c.credential));
+      if (lang.data) setLanguages(lang.data.map((l) => l.language));
     }
     loadRelations();
   // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -289,6 +295,20 @@ export default function DashboardPage() {
     if (trainingPrograms.length > 0) {
       await supabase.from('therapist_training_program').insert(
         trainingPrograms.map((t) => ({ therapist_id: profile.id, training_program: t }))
+      );
+    }
+
+    await supabase.from('therapist_credential').delete().eq('therapist_id', profile.id);
+    if (credentials.length > 0) {
+      await supabase.from('therapist_credential').insert(
+        credentials.map((c) => ({ therapist_id: profile.id, credential: c.toUpperCase() }))
+      );
+    }
+
+    await supabase.from('therapist_language').delete().eq('therapist_id', profile.id);
+    if (languages.length > 0) {
+      await supabase.from('therapist_language').insert(
+        languages.map((l) => ({ therapist_id: profile.id, language: l }))
       );
     }
 
@@ -574,6 +594,10 @@ export default function DashboardPage() {
               <input style={inputStyle} value={profile.first_name || ''} onChange={(e) => updateField('first_name', e.target.value)} />
             </div>
             <div>
+              <label style={labelStyle}>Middle Name</label>
+              <input style={inputStyle} value={profile.middle_name || ''} onChange={(e) => updateField('middle_name', e.target.value)} />
+            </div>
+            <div>
               <label style={labelStyle}>Last Name</label>
               <input style={inputStyle} value={profile.last_name || ''} onChange={(e) => updateField('last_name', e.target.value)} />
             </div>
@@ -656,6 +680,7 @@ export default function DashboardPage() {
             <div style={{ gridColumn: '1 / -1' }}>
               <label style={labelStyle}>Street Address</label>
               <input style={inputStyle} value={profile.street_address || ''} onChange={(e) => updateField('street_address', e.target.value)} />
+              <p style={{ fontSize: '0.7rem', color: '#9ca3af', marginTop: '0.25rem' }}>(Not displayed publicly)</p>
             </div>
             <div>
               <label style={labelStyle}>City</label>
@@ -664,6 +689,10 @@ export default function DashboardPage() {
             <div>
               <label style={labelStyle}>State</label>
               <input style={inputStyle} value={profile.state || ''} onChange={(e) => updateField('state', e.target.value)} placeholder="e.g., CA" />
+            </div>
+            <div>
+              <label style={labelStyle}>Postal Code</label>
+              <input style={inputStyle} value={profile.postal_code || ''} onChange={(e) => updateField('postal_code', e.target.value)} placeholder="e.g., 90210" />
             </div>
           </div>
         </div>
@@ -674,6 +703,23 @@ export default function DashboardPage() {
           <div style={{ marginBottom: '1rem' }}>
             <label style={labelStyle}>NPI Number</label>
             <input style={{ ...inputStyle, maxWidth: '300px' }} value={profile.npi || ''} onChange={(e) => updateField('npi', e.target.value)} placeholder="10-digit NPI" />
+            <p style={{ fontSize: '0.7rem', color: '#9ca3af', marginTop: '0.25rem' }}>(Not displayed publicly)</p>
+          </div>
+
+          <div style={{ marginBottom: '1rem' }}>
+            <label style={labelStyle}>Credentials</label>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '0.5rem' }}>
+              {credentials.map((cred, i) => (
+                <span key={i} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.25rem', padding: '0.3rem 0.75rem', backgroundColor: '#f0fdfa', borderRadius: '20px', fontSize: '0.8rem', color: '#0f766e' }}>
+                  {cred}
+                  <button type="button" onClick={() => setCredentials(credentials.filter((_, j) => j !== i))} style={{ background: 'none', border: 'none', color: '#dc2626', cursor: 'pointer', fontSize: '1rem', padding: 0, lineHeight: 1 }}>&times;</button>
+                </span>
+              ))}
+            </div>
+            <div style={{ display: 'flex', gap: '0.5rem' }}>
+              <input style={{ ...inputStyle, flex: 1 }} placeholder="Type credential and press Add (e.g., LCSW, LMFT, PhD)" id="new-credential" onKeyDown={(e) => { if (e.key === 'Enter') { e.preventDefault(); const input = e.target as HTMLInputElement; if (input.value.trim()) { setCredentials([...credentials, input.value.trim().toUpperCase()]); input.value = ''; } } }} />
+              <button type="button" onClick={() => { const input = document.getElementById('new-credential') as HTMLInputElement; if (input?.value.trim()) { setCredentials([...credentials, input.value.trim().toUpperCase()]); input.value = ''; } }} style={{ padding: '0.5rem 1rem', backgroundColor: '#0d9488', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontSize: '0.8rem', fontFamily: 'inherit' }}>Add</button>
+            </div>
           </div>
 
           <label style={labelStyle}>State Licenses</label>
@@ -874,6 +920,23 @@ export default function DashboardPage() {
           </div>
         </div>
 
+        {/* Languages */}
+        <div style={sectionStyle}>
+          <h2 style={{ fontSize: '1.1rem', fontWeight: 600, color: '#111827', marginBottom: '1rem' }}>Languages</h2>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '0.5rem' }}>
+            {languages.map((lang, i) => (
+              <span key={i} style={{ display: 'inline-flex', alignItems: 'center', gap: '0.25rem', padding: '0.3rem 0.75rem', backgroundColor: '#f3f4f6', borderRadius: '20px', fontSize: '0.8rem' }}>
+                {lang.replace(/_/g, ' ')}
+                <button type="button" onClick={() => setLanguages(languages.filter((_, j) => j !== i))} style={{ background: 'none', border: 'none', color: '#dc2626', cursor: 'pointer', fontSize: '1rem', padding: 0, lineHeight: 1 }}>&times;</button>
+              </span>
+            ))}
+          </div>
+          <div style={{ display: 'flex', gap: '0.5rem' }}>
+            <input style={{ ...inputStyle, flex: 1 }} placeholder="Type language and press Add (e.g., English, Spanish)" id="new-language" onKeyDown={(e) => { if (e.key === 'Enter') { e.preventDefault(); const input = e.target as HTMLInputElement; if (input.value.trim()) { setLanguages([...languages, input.value.trim().toLowerCase().replace(/\s+/g, '_')]); input.value = ''; } } }} />
+            <button type="button" onClick={() => { const input = document.getElementById('new-language') as HTMLInputElement; if (input?.value.trim()) { setLanguages([...languages, input.value.trim().toLowerCase().replace(/\s+/g, '_')]); input.value = ''; } }} style={{ padding: '0.5rem 1rem', backgroundColor: '#0d9488', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontSize: '0.8rem', fontFamily: 'inherit' }}>Add</button>
+          </div>
+        </div>
+
         {/* Practice */}
         <div style={sectionStyle}>
           <h2 style={{ fontSize: '1.1rem', fontWeight: 600, color: '#111827', marginBottom: '1rem' }}>Practice Details</h2>
@@ -901,6 +964,7 @@ export default function DashboardPage() {
               <select style={inputStyle} value={profile.visit_type || ''} onChange={(e) => updateField('visit_type', e.target.value || null)}>
                 <option value="">Select...</option>
                 <option value="telemedicine_only">Telemedicine Only</option>
+                <option value="in_person">In-Person Only</option>
                 <option value="hybrid">Hybrid (Online + In Person)</option>
               </select>
             </div>

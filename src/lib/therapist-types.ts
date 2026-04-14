@@ -40,6 +40,7 @@ export interface Therapist {
   treatment_approach: string | null;
   session_formats: string | null;
   typical_session_length: string | null;
+  telehealth_platform: string | null;
   client_focus: string | null;
   cultural_focus: string | null;
   faith_or_spiritual_focus: string | null;
