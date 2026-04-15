@@ -2,13 +2,13 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "Make an Appointment - Online Ketamine Therapy",
-  description: "Ready to start your journey towards better mental health with online ketamine therapy?",
+  description: "Book your online ketamine therapy consultation with a licensed clinician. Most patients notice improvement within days of starting treatment.",
   alternates: {
     canonical: "https://isha.health/appointment",
   },
   openGraph: {
     title: "Make an Appointment - Online Ketamine Therapy",
-    description: "Ready to start your journey towards better mental health with online ketamine therapy?",
+    description: "Book your online ketamine therapy consultation with a licensed clinician. Most patients notice improvement within days of starting treatment.",
     type: "website",
     images: ["/images/isha_logo.webp"],
     url: "https://isha.health/appointment",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Make an Appointment - Online Ketamine Therapy",
-    description: "Ready to start your journey towards better mental health with online ketamine therapy?",
+    description: "Book your online ketamine therapy consultation with a licensed clinician. Most patients notice improvement within days of starting treatment.",
   },
 };
 

@@ -17,6 +17,9 @@ const THERAPIST_SELECT = `
   therapist_event(id, title, description, event_date, event_url, location, is_virtual, created_at)
 `;
 
+// Emails to exclude from the public directory
+const EXCLUDED_EMAILS = ['mai@isha.health'];
+
 export async function getAllTherapists(): Promise<TherapistWithRelations[]> {
   const { data, error } = await supabase
     .from('therapist')
@@ -25,7 +28,10 @@ export async function getAllTherapists(): Promise<TherapistWithRelations[]> {
     .order('first_name', { ascending: true });
 
   if (error) throw error;
-  return (data as TherapistWithRelations[]) || [];
+  // Filter out excluded profiles (staff, test accounts, etc.)
+  return ((data as TherapistWithRelations[]) || []).filter(
+    (t) => !EXCLUDED_EMAILS.includes(t.email)
+  );
 }
 
 export async function getTherapistById(

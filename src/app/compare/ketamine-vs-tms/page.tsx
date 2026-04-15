@@ -2,11 +2,11 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "Ketamine vs TMS: Comparison Guide",
-  description: "Compare ketamine therapy and transcranial magnetic stimulation (TMS) for depression.",
+  description: "Compare ketamine therapy and TMS for depression — cost, speed of relief, side effects, and insurance coverage explained side by side.",
   alternates: { canonical: "https://isha.health/compare/ketamine-vs-tms" },
   openGraph: {
     title: "Ketamine vs TMS: Comparison Guide",
-    description: "Compare ketamine therapy and transcranial magnetic stimulation (TMS) for depression.",
+    description: "Compare ketamine therapy and TMS for depression — cost, speed of relief, side effects, and insurance coverage explained side by side.",
     type: "website",
     images: ["/images/isha_logo.webp"],
     url: "https://isha.health/compare/ketamine-vs-tms",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Ketamine vs TMS: Comparison Guide",
-    description: "Compare ketamine therapy and transcranial magnetic stimulation (TMS) for depression.",
+    description: "Compare ketamine therapy and TMS for depression — cost, speed of relief, side effects, and insurance coverage explained side by side.",
   },
 };
 

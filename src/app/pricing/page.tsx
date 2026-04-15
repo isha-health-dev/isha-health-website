@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Pricing - Personalized Ketamine Therapy',
   description:
-    "ISHA Health offers personalized online ketamine therapy for depression and anxiety.",
+    "ISHA Health offers personalized online ketamine therapy for depression and anxiety. Plans start at $350 with ongoing support from licensed clinicians.",
   alternates: { canonical: 'https://isha.health/pricing' },
   openGraph: {
     title: 'Personalized Ketamine Therapy Pricing',
