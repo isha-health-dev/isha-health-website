@@ -77,16 +77,18 @@ const staticPages = [
 ];
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const today = new Date().toISOString().split('T')[0];
+  // lastModified is intentionally omitted for pages where we don't have a
+  // trustworthy per-page timestamp. Stamping every URL with today's date
+  // dilutes the freshness signal — Google recommends omitting lastmod over
+  // supplying a value that doesn't reflect a real content change.
 
   const staticEntries: MetadataRoute.Sitemap = staticPages.map((page) => ({
     url: page ? `${BASE_URL}/${page}` : BASE_URL,
-    lastModified: today,
     changeFrequency: page === '' ? 'weekly' : 'monthly',
     priority: page === '' ? 1.0 : page === 'pricing' || page === 'appointment' ? 0.9 : 0.7,
   }));
 
-  // Blog posts
+  // Blog posts — frontmatter date is a real per-post timestamp
   const blogPosts = getBlogPosts();
   const blogEntries: MetadataRoute.Sitemap = blogPosts.map((post) => ({
     url: `${BASE_URL}/post/${post.slug}`,
@@ -109,7 +111,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   ];
   const stateEntries: MetadataRoute.Sitemap = statePages.map((page) => ({
     url: `${BASE_URL}/locations/${page}`,
-    lastModified: today,
     changeFrequency: 'monthly',
     priority: 0.8,
   }));
@@ -117,7 +118,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const cityPages = getDynamicPages('locations', 'locations');
   const cityEntries: MetadataRoute.Sitemap = cityPages.map((page) => ({
     url: `${BASE_URL}/${page}`,
-    lastModified: today,
     changeFrequency: 'monthly',
     priority: 0.7,
   }));
@@ -126,7 +126,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const conditionPages = getDynamicPages('conditions', 'conditions');
   const conditionEntries: MetadataRoute.Sitemap = conditionPages.map((page) => ({
     url: `${BASE_URL}/${page}`,
-    lastModified: today,
     changeFrequency: 'monthly',
     priority: 0.8,
   }));
@@ -135,7 +134,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const comparePages = getDynamicPages('compare', 'compare');
   const compareEntries: MetadataRoute.Sitemap = comparePages.map((page) => ({
     url: `${BASE_URL}/${page}`,
-    lastModified: today,
     changeFrequency: 'monthly',
     priority: 0.7,
   }));
@@ -144,21 +142,21 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const guidePages = getDynamicPages('guide', 'guide');
   const guideEntries: MetadataRoute.Sitemap = guidePages.map((page) => ({
     url: `${BASE_URL}/${page}`,
-    lastModified: today,
     changeFrequency: 'monthly',
     priority: 0.9,
   }));
 
   // Therapist directory — main page + all profiles from Supabase
   let therapistEntries: MetadataRoute.Sitemap = [
-    { url: `${BASE_URL}/ketamine-therapist-directory`, lastModified: today, changeFrequency: 'weekly', priority: 0.8 },
+    { url: `${BASE_URL}/ketamine-therapist-directory`, changeFrequency: 'weekly', priority: 0.8 },
   ];
   try {
     const therapists = await getAllTherapists();
     const profileEntries: MetadataRoute.Sitemap = therapists.map((t) => ({
       url: `${BASE_URL}/ketamine-therapist-directory/${getTherapistSlug(t)}`,
-      lastModified: today,
-      changeFrequency: 'monthly',
+      // therapist rows carry updated_at from Supabase; use it when present
+      ...(t.updated_at ? { lastModified: new Date(t.updated_at) } : {}),
+      changeFrequency: 'monthly' as const,
       priority: 0.5,
     }));
     therapistEntries = [...therapistEntries, ...profileEntries];
@@ -166,10 +164,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Additional dynamic pages
   const additionalPages: MetadataRoute.Sitemap = [
-    { url: `${BASE_URL}/resources`, lastModified: today, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${BASE_URL}/pricing`, lastModified: today, changeFrequency: 'monthly', priority: 0.9 },
-    { url: `${BASE_URL}/outcomes`, lastModified: today, changeFrequency: 'monthly', priority: 0.9 },
-    { url: `${BASE_URL}/faq/ketamine-therapy`, lastModified: today, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE_URL}/resources`, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${BASE_URL}/pricing`, changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${BASE_URL}/outcomes`, changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${BASE_URL}/faq/ketamine-therapy`, changeFrequency: 'monthly', priority: 0.8 },
   ];
 
   return [
