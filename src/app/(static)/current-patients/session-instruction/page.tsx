@@ -2,20 +2,20 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "Session Instruction",
-  description: "Learn how to safely self-administer ketamine with detailed instructions from Isha Health.",
+  description: "Learn how to safely self-administer ketamine with detailed instructions from Isha Health. Follow our guidelines to ensure effective and secure treatment at home. Please read and follow the Session Instruction page to prepare for your dosing sessions. Find out what you need to know before, during, and after your session.",
   alternates: {
     canonical: "https://isha.health/current-patients/session-instruction",
   },
   openGraph: {
     title: "Session Instruction",
-    description: "Learn how to safely self-administer ketamine with detailed instructions from Isha Health.",
+    description: "Learn how to safely self-administer ketamine with detailed instructions from Isha Health. Follow our guidelines to ensure effective and secure treatment at home. Please read and follow the Session Instruction page to prepare for your dosing sessions. Find out what you need to know before, during, and after your session.",
     type: "website",
     url: "https://isha.health/current-patients/session-instruction",
   },
   twitter: {
     card: "summary_large_image",
     title: "Session Instruction",
-    description: "Learn how to safely self-administer ketamine with detailed instructions from Isha Health.",
+    description: "Learn how to safely self-administer ketamine with detailed instructions from Isha Health. Follow our guidelines to ensure effective and secure treatment at home. Please read and follow the Session Instruction page to prepare for your dosing sessions. Find out what you need to know before, during, and after your session.",
   },
 };
 

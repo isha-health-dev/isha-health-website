@@ -1,22 +1,22 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Support Person Overview | Isha Health",
-  description: "Learn about the role of a support person in your ketamine therapy sessions with Isha Health.",
+  title: "Support Person Overview",
+  description: "Learn about the role of a support person in your ketamine therapy sessions with Isha Health. Find out how they can help ensure your comfort and safety during treatment, and what to expect from the session. Contact us for more information.",
   alternates: {
     canonical: "https://isha.health/support-person-overview",
   },
   openGraph: {
-    title: "Support Person Overview | Isha Health",
-    description: "Learn about the role of a support person in your ketamine therapy sessions with Isha Health.",
+    title: "Support Person Overview",
+    description: "Learn about the role of a support person in your ketamine therapy sessions with Isha Health. Find out how they can help ensure your comfort and safety during treatment, and what to expect from the session. Contact us for more information.",
     type: "website",
     images: ["/images/isha_logo.webp"],
     url: "https://isha.health/support-person-overview",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Support Person Overview | Isha Health",
-    description: "Learn about the role of a support person in your ketamine therapy sessions with Isha Health.",
+    title: "Support Person Overview",
+    description: "Learn about the role of a support person in your ketamine therapy sessions with Isha Health. Find out how they can help ensure your comfort and safety during treatment, and what to expect from the session. Contact us for more information.",
   },
 };
 

@@ -1,20 +1,20 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "At-Home Ketamine Therapy in Colorado Springs,",
-  description: "Online ketamine-assisted therapy in Colorado Springs, Colorado. Physician-led at-home treatment for depression, anxiety, and PTSD.",
+  title: "At-Home Ketamine Therapy in Colorado Springs, CO",
+  description: "Online ketamine-assisted therapy in Colorado Springs, Colorado. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
   alternates: { canonical: "https://isha.health/locations/ketamine-therapy-colorado-springs" },
   openGraph: {
-    title: "At-Home Ketamine Therapy in Colorado Springs,",
-    description: "Online ketamine-assisted therapy in Colorado Springs, Colorado. Physician-led at-home treatment for depression, anxiety, and PTSD.",
+    title: "At-Home Ketamine Therapy in Colorado Springs, CO",
+    description: "Online ketamine-assisted therapy in Colorado Springs, Colorado. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
     type: "website",
     images: ["/images/isha_logo.webp"],
     url: "https://isha.health/locations/ketamine-therapy-colorado-springs",
   },
   twitter: {
     card: "summary_large_image",
-    title: "At-Home Ketamine Therapy in Colorado Springs,",
-    description: "Online ketamine-assisted therapy in Colorado Springs, Colorado. Physician-led at-home treatment for depression, anxiety, and PTSD.",
+    title: "At-Home Ketamine Therapy in Colorado Springs, CO",
+    description: "Online ketamine-assisted therapy in Colorado Springs, Colorado. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
   },
 };
 

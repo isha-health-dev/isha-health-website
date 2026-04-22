@@ -2,19 +2,19 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "At-Home Ketamine Therapy in Tampa, FL",
-  description: "Online ketamine-assisted therapy in Tampa, Florida. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required.",
+  description: "Online ketamine-assisted therapy in Tampa, Florida. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
   alternates: { canonical: "https://isha.health/locations/ketamine-therapy-tampa" },
   openGraph: {
-    title: "At-Home Ketamine Therapy in Tampa, FL | Isha",
-    description: "Online ketamine-assisted therapy in Tampa, Florida. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required.",
+    title: "At-Home Ketamine Therapy in Tampa, FL",
+    description: "Online ketamine-assisted therapy in Tampa, Florida. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
     type: "website",
     images: ["/images/isha_logo.webp"],
     url: "https://isha.health/locations/ketamine-therapy-tampa",
   },
   twitter: {
     card: "summary_large_image",
-    title: "At-Home Ketamine Therapy in Tampa, FL | Isha",
-    description: "Online ketamine-assisted therapy in Tampa, Florida. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required.",
+    title: "At-Home Ketamine Therapy in Tampa, FL",
+    description: "Online ketamine-assisted therapy in Tampa, Florida. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
   },
 };
 

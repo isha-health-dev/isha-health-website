@@ -1,22 +1,22 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Notice of Privacy Practices | Isha Health",
-  description: "Learn more about ISHA Health, the leading provider of online ketamine therapy for depression and anxiety.",
+  title: "Notice of Privacy Practices",
+  description: "Learn more about ISHA Health, the leading provider of online ketamine therapy for depression and anxiety. Our experienced team is dedicated to helping individuals improve their mental health and wellbeing from the comfort of their own home.",
   alternates: {
     canonical: "https://isha.health/notice-of-privacy-practices",
   },
   openGraph: {
-    title: "Notice of Privacy Practices | Isha Health",
-    description: "Learn more about ISHA Health, the leading provider of online ketamine therapy for depression and anxiety.",
+    title: "Notice of Privacy Practices",
+    description: "Learn more about ISHA Health, the leading provider of online ketamine therapy for depression and anxiety. Our experienced team is dedicated to helping individuals improve their mental health and wellbeing from the comfort of their own home.",
     type: "website",
     images: ["/images/isha_logo.webp"],
     url: "https://isha.health/notice-of-privacy-practices",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Notice of Privacy Practices | Isha Health",
-    description: "Learn more about ISHA Health, the leading provider of online ketamine therapy for depression and anxiety.",
+    title: "Notice of Privacy Practices",
+    description: "Learn more about ISHA Health, the leading provider of online ketamine therapy for depression and anxiety. Our experienced team is dedicated to helping individuals improve their mental health and wellbeing from the comfort of their own home.",
   },
 };
 

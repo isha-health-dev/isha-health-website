@@ -1,22 +1,22 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Cancellation Policy | Isha Health",
-  description: "Review the cancellation policy at Isha Health. Understand the terms and conditions regarding appointment cancellations and rescheduling.",
+  title: "Cancellation Policy",
+  description: "Review the cancellation policy at Isha Health. Understand the terms and conditions regarding appointment cancellations and rescheduling. Ensure you are aware of our policies to avoid any fees and manage your appointments effectively.",
   alternates: {
     canonical: "https://isha.health/cancellation-policy-isha-health",
   },
   openGraph: {
-    title: "Cancellation Policy | Isha Health",
-    description: "Review the cancellation policy at Isha Health. Understand the terms and conditions regarding appointment cancellations and rescheduling.",
+    title: "Cancellation Policy",
+    description: "Review the cancellation policy at Isha Health. Understand the terms and conditions regarding appointment cancellations and rescheduling. Ensure you are aware of our policies to avoid any fees and manage your appointments effectively.",
     type: "website",
     images: ["/images/isha_logo.webp"],
     url: "https://isha.health/cancellation-policy-isha-health",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cancellation Policy | Isha Health",
-    description: "Review the cancellation policy at Isha Health. Understand the terms and conditions regarding appointment cancellations and rescheduling.",
+    title: "Cancellation Policy",
+    description: "Review the cancellation policy at Isha Health. Understand the terms and conditions regarding appointment cancellations and rescheduling. Ensure you are aware of our policies to avoid any fees and manage your appointments effectively.",
   },
 };
 

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Pricing | Isha Health',
+    title: 'Pricing',
     description: 'Personalized ketamine therapy. Initial consultation $350.',
   },
 };
