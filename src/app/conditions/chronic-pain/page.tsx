@@ -138,6 +138,14 @@ export default function Page() {
       </div>
     </div>
   </div>
+  <div style="max-width:800px;margin:1rem auto 2rem;padding:0 1.5rem;">
+    <h2 style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#111827;margin-bottom:1rem;">Further reading on ketamine and chronic pain</h2>
+    <ul style="font-family:'Poppins',sans-serif;font-size:0.95rem;color:#374151;line-height:1.9;padding-left:1.25rem;margin:0;">
+    <li><a href="/post/ketamine-chronic-pain-systematic-review-2026" style="color:#0d9488;text-decoration:none;">Ketamine for chronic pain: 20 years of RCTs</a></li>
+    <li><a href="/post/ketamine-chronic-pain-comorbid-depression" style="color:#0d9488;text-decoration:none;">Ketamine for chronic pain with comorbid depression</a></li>
+    <li><a href="/post/ketamine-crps-dystonia-case-report" style="color:#0d9488;text-decoration:none;">Ketamine for CRPS: a long-term case report</a></li>
+    </ul>
+  </div>
 
   <div style="background-color:#f0fdfa;padding:3rem 1.5rem;text-align:center;border-top:1px solid #ccfbf1;">
     <p style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#0f766e;margin-bottom:0.5rem;">Ready to explore ketamine therapy for chronic pain?</p>

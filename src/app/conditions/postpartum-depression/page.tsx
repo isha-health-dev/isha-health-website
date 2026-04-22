@@ -145,6 +145,14 @@ export default function Page() {
       <p style="font-family:'Poppins',sans-serif;font-size:0.8rem;color:#6b7280;">Based on PHQ-9 assessments across 546 patients. <a href="/outcomes" style="color:#0d9488;text-decoration:underline;">See our full clinical outcomes report →</a></p>
     </div>
   </div>
+  <div style="max-width:800px;margin:1rem auto 2rem;padding:0 1.5rem;">
+    <h2 style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#111827;margin-bottom:1rem;">Further reading on ketamine and postpartum depression</h2>
+    <ul style="font-family:'Poppins',sans-serif;font-size:0.95rem;color:#374151;line-height:1.9;padding-left:1.25rem;margin:0;">
+    <li><a href="/post/esketamine-prevents-postpartum-depression-meta-analysis" style="color:#0d9488;text-decoration:none;">Esketamine prevents postpartum depression (meta-analysis)</a></li>
+    <li><a href="/post/ketamine-postpartum-depression" style="color:#0d9488;text-decoration:none;">Ketamine for postpartum depression</a></li>
+    <li><a href="/post/how-to-deal-with-postpartum-depression" style="color:#0d9488;text-decoration:none;">How to deal with postpartum depression</a></li>
+    </ul>
+  </div>
 
   <div style="background-color:#f0fdfa;padding:3rem 1.5rem;text-align:center;border-top:1px solid #ccfbf1;">
     <p style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#0f766e;margin-bottom:0.5rem;">Ready to explore ketamine therapy for postpartum depression?</p>

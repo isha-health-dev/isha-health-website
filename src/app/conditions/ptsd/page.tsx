@@ -138,6 +138,16 @@ export default function Page() {
       </div>
     </div>
   </div>
+  <div style="max-width:800px;margin:1rem auto 2rem;padding:0 1.5rem;">
+    <h2 style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#111827;margin-bottom:1rem;">Further reading on ketamine and PTSD</h2>
+    <ul style="font-family:'Poppins',sans-serif;font-size:0.95rem;color:#374151;line-height:1.9;padding-left:1.25rem;margin:0;">
+    <li><a href="/post/ketamine-ptsd-clinical-evidence" style="color:#0d9488;text-decoration:none;">Ketamine for PTSD: the clinical evidence</a></li>
+    <li><a href="/post/can-ketamine-be-effective-for-ptsd" style="color:#0d9488;text-decoration:none;">Ketamine-assisted therapy for PTSD patients</a></li>
+    <li><a href="/post/ketamine-enhanced-prolonged-exposure-ptsd-veterans" style="color:#0d9488;text-decoration:none;">Ketamine-enhanced prolonged exposure for veterans</a></li>
+    <li><a href="/post/oral-ketamine-ptsd-2026-review" style="color:#0d9488;text-decoration:none;">Oral ketamine for PTSD (2026 review)</a></li>
+    <li><a href="/post/ketamine-fear-memory-reconsolidation-ptsd" style="color:#0d9488;text-decoration:none;">How ketamine affects fear memory reconsolidation</a></li>
+    </ul>
+  </div>
 
   <div style="background-color:#f0fdfa;padding:3rem 1.5rem;text-align:center;border-top:1px solid #ccfbf1;">
     <p style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#0f766e;margin-bottom:0.5rem;">Ready to explore ketamine therapy for PTSD?</p>

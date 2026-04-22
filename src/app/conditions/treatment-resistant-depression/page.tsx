@@ -145,6 +145,16 @@ export default function Page() {
       <p style="font-family:'Poppins',sans-serif;font-size:0.8rem;color:#6b7280;">Based on PHQ-9 assessments across 546 patients. <a href="/outcomes" style="color:#0d9488;text-decoration:underline;">See our full clinical outcomes report →</a></p>
     </div>
   </div>
+  <div style="max-width:800px;margin:1rem auto 2rem;padding:0 1.5rem;">
+    <h2 style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#111827;margin-bottom:1rem;">Further reading on ketamine and treatment-resistant depression</h2>
+    <ul style="font-family:'Poppins',sans-serif;font-size:0.95rem;color:#374151;line-height:1.9;padding-left:1.25rem;margin:0;">
+    <li><a href="/post/at-home-ketamine-11000-patients-real-world-data" style="color:#0d9488;text-decoration:none;">11,000 patients: at-home ketamine real-world outcomes</a></li>
+    <li><a href="/post/oral-ketamine-depression-rct-meta-analysis-2025" style="color:#0d9488;text-decoration:none;">Oral ketamine for depression: RCT + meta-analysis</a></li>
+    <li><a href="/post/karma-dep-serial-ketamine-inpatient-depression" style="color:#0d9488;text-decoration:none;">KARMA-Dep 2: serial ketamine for inpatient depression</a></li>
+    <li><a href="/post/case-study-julian-ketamine-maintenance-treatment-resistant-depression" style="color:#0d9488;text-decoration:none;">Julian's story: ketamine maintenance for TRD</a></li>
+    <li><a href="/post/extended-release-ketamine-tablets-trd-phase2" style="color:#0d9488;text-decoration:none;">Extended-release ketamine tablets: Phase 2 trial</a></li>
+    </ul>
+  </div>
 
   <div style="background-color:#f0fdfa;padding:3rem 1.5rem;text-align:center;border-top:1px solid #ccfbf1;">
     <p style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#0f766e;margin-bottom:0.5rem;">Ready to explore ketamine therapy for treatment-resistant depression?</p>
