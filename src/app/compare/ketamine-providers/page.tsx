@@ -78,10 +78,12 @@ export default function Page() {
       { "@type": "ListItem", "position": 3, "name": "Ketamine Providers Compared", "item": "https://isha.health/compare/ketamine-providers" }
     ]
   })}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"MedicalWebPage","name":"Best Online Ketamine Therapy Providers (2026)","url":"https://isha.health/compare/ketamine-providers","lastReviewed":"2026-04-21","audience":{"@type":"MedicalAudience","audienceType":"Patient"},"specialty":{"@type":"MedicalSpecialty","name":"Psychiatric"},"reviewedBy":{"@type":"Person","name":"Mai Shimada, MD","jobTitle":"Psychiatrist","url":"https://isha.health/dr-mai-shimada"}}</script>
   <div style="text-align:center;padding:3rem 1.5rem 1.5rem;">
     <h1 style="font-family:'Libre Baskerville',serif;font-size:2rem;font-weight:700;color:#111827;margin:0;">Comparing Online Ketamine Therapy Providers</h1>
   </div>
-  <div style="max-width:800px;margin:0 auto;padding:1.5rem;" style="max-width:800px;margin:0 auto;padding:2rem 1.5rem;">
+  <p style="font-family:'Poppins',sans-serif;font-size:0.85rem;color:#6b7280;text-align:center;margin:0 0 2rem;">Medically reviewed by <a href="/dr-mai-shimada" style="color:#0d9488;text-decoration:none;">Mai Shimada, MD</a> · Last reviewed 2026-04-21</p>
+  <div style="max-width:800px;margin:0 auto;padding:1.5rem;">
     <nav aria-label="Breadcrumb" style="font-size:0.8rem;color:#6b7280;margin-bottom:1.5rem;font-family:'Poppins',sans-serif;">
       <a href="/" style="color:#0d9488;text-decoration:none;">Home</a> /
       <a href="/compare" style="color:#0d9488;text-decoration:none;">Compare</a> /

@@ -25,10 +25,12 @@ export default function Page() {
         __html: `<div style="padding:0 0 2rem;">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is psilocybin legal for depression treatment?","acceptedAnswer":{"@type":"Answer","text":"As of early 2026, psilocybin remains a Schedule I controlled substance under federal law in the United States. Oregon has implemented a regulated psilocybin services program, and some cities have decriminalized possession. However, psilocybin is not FDA-approved for any psychiatric condition. Ketamine, by contrast, is a Schedule III medication that can be legally prescribed off-label by licensed physicians in all 50 states."}},{"@type":"Question","name":"Is ketamine or psilocybin more effective for depression?","acceptedAnswer":{"@type":"Answer","text":"Both substances have shown promising results in clinical research for depression, but they are difficult to compare directly. Ketamine has a larger body of clinical evidence and is more widely available. Psilocybin research, while encouraging, is still in earlier stages with fewer completed large-scale trials. Head-to-head comparisons are limited, and individual responses may vary significantly."}},{"@type":"Question","name":"Can I access psilocybin therapy now?","acceptedAnswer":{"@type":"Answer","text":"Access to legal psilocybin therapy is currently very limited in the United States. Oregon's regulated program is operational but only available at licensed service centers within the state. FDA-approved psilocybin therapy is not yet available. Ketamine therapy, including at-home oral ketamine through providers like Isha Health, is legally accessible in many states today."}},{"@type":"Question","name":"Do ketamine and psilocybin work through the same mechanism?","acceptedAnswer":{"@type":"Answer","text":"No. Ketamine primarily acts on NMDA glutamate receptors and may promote rapid synaptogenesis. Psilocybin primarily acts on serotonin 5-HT2A receptors and produces its effects through a different pathway. Both may promote neuroplasticity, but through distinct neurochemical mechanisms."}}]}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://isha.health"},{"@type":"ListItem","position":2,"name":"Compare","item":"https://isha.health/compare"},{"@type":"ListItem","position":3,"name":"Ketamine vs Psilocybin Therapy","item":"https://isha.health/compare/ketamine-vs-psilocybin"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"MedicalWebPage","name":"Ketamine vs Psilocybin Therapy Compared","url":"https://isha.health/compare/ketamine-vs-psilocybin","lastReviewed":"2026-04-21","audience":{"@type":"MedicalAudience","audienceType":"Patient"},"specialty":{"@type":"MedicalSpecialty","name":"Psychiatric"},"reviewedBy":{"@type":"Person","name":"Mai Shimada, MD","jobTitle":"Psychiatrist","url":"https://isha.health/dr-mai-shimada"}}</script>
   <div style="text-align:center;padding:3rem 1.5rem 1.5rem;">
     <h1 style="font-family:'Libre Baskerville',serif;font-size:2rem;font-weight:700;color:#111827;margin:0;">Ketamine vs Psilocybin Therapy: Which Is Right for You?</h1>
   </div>
-  <div style="max-width:800px;margin:0 auto;padding:1.5rem;" style="max-width:800px;margin:0 auto;padding:2rem 1.5rem;">
+  <p style="font-family:'Poppins',sans-serif;font-size:0.85rem;color:#6b7280;text-align:center;margin:0 0 2rem;">Medically reviewed by <a href="/dr-mai-shimada" style="color:#0d9488;text-decoration:none;">Mai Shimada, MD</a> · Last reviewed 2026-04-21</p>
+  <div style="max-width:800px;margin:0 auto;padding:1.5rem;">
     <nav aria-label="Breadcrumb" style="font-size:0.8rem;color:#6b7280;margin-bottom:1.5rem;font-family:'Poppins',sans-serif;">
       <a href="/" style="color:#0d9488;text-decoration:none;">Home</a> /
       <a href="/compare" style="color:#0d9488;text-decoration:none;">Compare</a> /
@@ -137,13 +139,6 @@ export default function Page() {
         <h3 style="font-family:'Poppins',sans-serif;font-size:0.95rem;font-weight:600;color:#111827;margin-bottom:0.35rem;">Do ketamine and psilocybin work through the same mechanism?</h3>
         <p style="font-family:'Source Sans Pro',sans-serif;font-size:0.9rem;color:#4b5563;line-height:1.5;">No. Ketamine primarily acts on NMDA glutamate receptors while psilocybin acts on serotonin 5-HT2A receptors. Both may promote neuroplasticity but through distinct pathways.</p>
       </div>
-    </div>
-  </div>
-
-  <div style="max-width:800px;margin:2rem auto;padding:0 1.5rem;">
-    <div style="background:#fff;border:1px solid #ccfbf1;border-radius:10px;padding:1.25rem 1.5rem;text-align:center;">
-      <p style="font-family:'Poppins',sans-serif;font-size:0.95rem;color:#0f766e;font-weight:600;margin-bottom:0.25rem;">88.8% of Isha Health patients with moderate-to-severe depression show measurable improvement</p>
-      <p style="font-family:'Poppins',sans-serif;font-size:0.8rem;color:#6b7280;">Based on PHQ-9 assessments across 546 patients. <a href="/outcomes" style="color:#0d9488;text-decoration:underline;">See our full clinical outcomes report →</a></p>
     </div>
   </div>
 

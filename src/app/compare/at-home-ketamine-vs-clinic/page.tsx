@@ -25,10 +25,12 @@ export default function Page() {
         __html: `<div style="padding:0 0 2rem;">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is at-home ketamine therapy safe?","acceptedAnswer":{"@type":"Answer","text":"At-home ketamine therapy can be safe when provided by a reputable, physician-led program with proper screening, dosing protocols, and ongoing monitoring. Isha Health requires a thorough medical evaluation, uses conservative oral dosing, provides safety guidelines, and recommends a support person be present during sessions. However, at-home therapy is not appropriate for all patients, and a physician will determine your suitability during the initial consultation."}},{"@type":"Question","name":"What is the difference between at-home and clinic ketamine?","acceptedAnswer":{"@type":"Answer","text":"The primary differences are the setting, route of administration, and level of in-person supervision. At-home programs typically use oral or sublingual ketamine with telemedicine physician support. Clinic-based treatment may use IV infusions, intramuscular injections, or intranasal delivery with on-site medical staff present throughout the session. Cost, convenience, and the intensity of the experience also differ."}},{"@type":"Question","name":"Is at-home ketamine as effective as in-clinic treatment?","acceptedAnswer":{"@type":"Answer","text":"Recent large retrospective studies of telehealth-based oral ketamine programs have shown significant improvement in depression and anxiety symptoms. While at-home oral ketamine has lower bioavailability than IV infusions, the clinical outcomes in real-world studies have been encouraging. Effectiveness depends on many factors including proper dosing, adherence, and ongoing medical support."}},{"@type":"Question","name":"Do I need a support person for at-home ketamine?","acceptedAnswer":{"@type":"Answer","text":"Most at-home ketamine programs, including Isha Health, recommend or require that a support person be available during your sessions, especially for the first few treatments. This person should be a trusted adult who can assist you if needed and ensure your safety during the experience."}}]}</script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://isha.health"},{"@type":"ListItem","position":2,"name":"Compare","item":"https://isha.health/compare"},{"@type":"ListItem","position":3,"name":"At-Home Ketamine vs Clinic","item":"https://isha.health/compare/at-home-ketamine-vs-clinic"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"MedicalWebPage","name":"At-Home Ketamine vs In-Clinic Ketamine","url":"https://isha.health/compare/at-home-ketamine-vs-clinic","lastReviewed":"2026-04-21","audience":{"@type":"MedicalAudience","audienceType":"Patient"},"specialty":{"@type":"MedicalSpecialty","name":"Psychiatric"},"reviewedBy":{"@type":"Person","name":"Mai Shimada, MD","jobTitle":"Psychiatrist","url":"https://isha.health/dr-mai-shimada"}}</script>
   <div style="text-align:center;padding:3rem 1.5rem 1.5rem;">
     <h1 style="font-family:'Libre Baskerville',serif;font-size:2rem;font-weight:700;color:#111827;margin:0;">At-Home Ketamine vs Clinic: Which Is Right for You?</h1>
   </div>
-  <div style="max-width:800px;margin:0 auto;padding:1.5rem;" style="max-width:800px;margin:0 auto;padding:2rem 1.5rem;">
+  <p style="font-family:'Poppins',sans-serif;font-size:0.85rem;color:#6b7280;text-align:center;margin:0 0 2rem;">Medically reviewed by <a href="/dr-mai-shimada" style="color:#0d9488;text-decoration:none;">Mai Shimada, MD</a> · Last reviewed 2026-04-21</p>
+  <div style="max-width:800px;margin:0 auto;padding:1.5rem;">
     <nav aria-label="Breadcrumb" style="font-size:0.8rem;color:#6b7280;margin-bottom:1.5rem;font-family:'Poppins',sans-serif;">
       <a href="/" style="color:#0d9488;text-decoration:none;">Home</a> /
       <a href="/compare" style="color:#0d9488;text-decoration:none;">Compare</a> /
@@ -137,13 +139,6 @@ export default function Page() {
         <h3 style="font-family:'Poppins',sans-serif;font-size:0.95rem;font-weight:600;color:#111827;margin-bottom:0.35rem;">Do I need a support person for at-home ketamine?</h3>
         <p style="font-family:'Source Sans Pro',sans-serif;font-size:0.9rem;color:#4b5563;line-height:1.5;">Most at-home programs, including Isha Health, recommend or require a <a href="/support-person-overview" style="color:#0d9488;text-decoration:underline;">support person</a> during sessions, especially for the first few treatments. This should be a trusted adult who can assist you and ensure your safety.</p>
       </div>
-    </div>
-  </div>
-
-  <div style="max-width:800px;margin:2rem auto;padding:0 1.5rem;">
-    <div style="background:#fff;border:1px solid #ccfbf1;border-radius:10px;padding:1.25rem 1.5rem;text-align:center;">
-      <p style="font-family:'Poppins',sans-serif;font-size:0.95rem;color:#0f766e;font-weight:600;margin-bottom:0.25rem;">88.8% of Isha Health patients with moderate-to-severe depression show measurable improvement</p>
-      <p style="font-family:'Poppins',sans-serif;font-size:0.8rem;color:#6b7280;">Based on PHQ-9 assessments across 546 patients. <a href="/outcomes" style="color:#0d9488;text-decoration:underline;">See our full clinical outcomes report →</a></p>
     </div>
   </div>
 
