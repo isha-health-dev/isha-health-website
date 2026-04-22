@@ -2,20 +2,20 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "Isha Health Media Kit",
-  description: "Download Isha Health clinic logos and HTML code to easily add a link to Isha Health on your website.",
+  description: "Download Isha Health clinic logos and HTML code to easily add a link to Isha Health on your website. Access high-quality branding materials for media use and create clickable buttons linking to our clinic.",
   alternates: {
     canonical: "https://isha.health/isha-health-media-kit",
   },
   openGraph: {
     title: "Isha Health Media Kit",
-    description: "Download Isha Health clinic logos and HTML code to easily add a link to Isha Health on your website.",
+    description: "Download Isha Health clinic logos and HTML code to easily add a link to Isha Health on your website. Access high-quality branding materials for media use and create clickable buttons linking to our clinic.",
     type: "website",
     url: "https://isha.health/isha-health-media-kit",
   },
   twitter: {
     card: "summary_large_image",
     title: "Isha Health Media Kit",
-    description: "Download Isha Health clinic logos and HTML code to easily add a link to Isha Health on your website.",
+    description: "Download Isha Health clinic logos and HTML code to easily add a link to Isha Health on your website. Access high-quality branding materials for media use and create clickable buttons linking to our clinic.",
   },
 };
 

@@ -2,19 +2,19 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "At-Home Ketamine Therapy in Savannah, GA",
-  description: "Online ketamine-assisted therapy in Savannah, Georgia. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required.",
+  description: "Online ketamine-assisted therapy in Savannah, Georgia. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
   alternates: { canonical: "https://isha.health/locations/ketamine-therapy-savannah" },
   openGraph: {
-    title: "At-Home Ketamine Therapy in Savannah, GA |",
-    description: "Online ketamine-assisted therapy in Savannah, Georgia. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required.",
+    title: "At-Home Ketamine Therapy in Savannah, GA",
+    description: "Online ketamine-assisted therapy in Savannah, Georgia. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
     type: "website",
     images: ["/images/isha_logo.webp"],
     url: "https://isha.health/locations/ketamine-therapy-savannah",
   },
   twitter: {
     card: "summary_large_image",
-    title: "At-Home Ketamine Therapy in Savannah, GA |",
-    description: "Online ketamine-assisted therapy in Savannah, Georgia. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required.",
+    title: "At-Home Ketamine Therapy in Savannah, GA",
+    description: "Online ketamine-assisted therapy in Savannah, Georgia. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
   },
 };
 

@@ -1,20 +1,20 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Ketamine Therapy for Chronic Pain | Isha",
-  description: "Ketamine has a long history of use in pain management and emerging evidence supports its role in treating chronic pain conditions.",
+  title: "Ketamine Therapy for Chronic Pain",
+  description: "Ketamine has a long history of use in pain management and emerging evidence supports its role in treating chronic pain conditions. Learn how Isha Health approaches ketamine-assisted therapy for chronic pain.",
   alternates: { canonical: "https://isha.health/conditions/chronic-pain" },
   openGraph: {
-    title: "Ketamine Therapy for Chronic Pain | Isha",
-    description: "Ketamine has a long history of use in pain management and emerging evidence supports its role in treating chronic pain conditions.",
+    title: "Ketamine Therapy for Chronic Pain",
+    description: "Ketamine has a long history of use in pain management and emerging evidence supports its role in treating chronic pain conditions. Learn how Isha Health approaches ketamine-assisted therapy for chronic pain.",
     type: "website",
     images: ["/images/isha_logo.webp"],
     url: "https://isha.health/conditions/chronic-pain",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ketamine Therapy for Chronic Pain | Isha",
-    description: "Ketamine has a long history of use in pain management and emerging evidence supports its role in treating chronic pain conditions.",
+    title: "Ketamine Therapy for Chronic Pain",
+    description: "Ketamine has a long history of use in pain management and emerging evidence supports its role in treating chronic pain conditions. Learn how Isha Health approaches ketamine-assisted therapy for chronic pain.",
   },
 };
 

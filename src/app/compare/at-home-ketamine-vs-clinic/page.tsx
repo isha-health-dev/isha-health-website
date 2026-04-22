@@ -2,11 +2,11 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "At-Home Ketamine vs In-Clinic Ketamine",
-  description: "Compare at-home telehealth ketamine therapy with in-clinic ketamine treatment. Learn about differences in convenience, supervision, cost, safety, and",
+  description: "Compare at-home telehealth ketamine therapy with in-clinic ketamine treatment. Learn about differences in convenience, supervision, cost, safety, and outcomes to make an informed decision.",
   alternates: { canonical: "https://isha.health/compare/at-home-ketamine-vs-clinic" },
   openGraph: {
     title: "At-Home Ketamine vs In-Clinic Ketamine",
-    description: "Compare at-home telehealth ketamine therapy with in-clinic ketamine treatment. Learn about differences in convenience, supervision, cost, safety, and",
+    description: "Compare at-home telehealth ketamine therapy with in-clinic ketamine treatment. Learn about differences in convenience, supervision, cost, safety, and outcomes to make an informed decision.",
     type: "website",
     images: ["/images/isha_logo.webp"],
     url: "https://isha.health/compare/at-home-ketamine-vs-clinic",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "At-Home Ketamine vs In-Clinic Ketamine",
-    description: "Compare at-home telehealth ketamine therapy with in-clinic ketamine treatment. Learn about differences in convenience, supervision, cost, safety, and",
+    description: "Compare at-home telehealth ketamine therapy with in-clinic ketamine treatment. Learn about differences in convenience, supervision, cost, safety, and outcomes to make an informed decision.",
   },
 };
 

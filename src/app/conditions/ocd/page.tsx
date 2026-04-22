@@ -1,20 +1,20 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Ketamine Therapy for OCD | Isha Health",
-  description: "Emerging evidence suggests ketamine may help reduce OCD symptoms when standard treatments have not been effective.",
+  title: "Ketamine Therapy for OCD",
+  description: "Emerging evidence suggests ketamine may help reduce OCD symptoms when standard treatments have not been effective. Learn about the research and how Isha Health approaches ketamine therapy for obsessive-compulsive disorder.",
   alternates: { canonical: "https://isha.health/conditions/ocd" },
   openGraph: {
-    title: "Ketamine Therapy for OCD | Isha Health",
-    description: "Emerging evidence suggests ketamine may help reduce OCD symptoms when standard treatments have not been effective.",
+    title: "Ketamine Therapy for OCD",
+    description: "Emerging evidence suggests ketamine may help reduce OCD symptoms when standard treatments have not been effective. Learn about the research and how Isha Health approaches ketamine therapy for obsessive-compulsive disorder.",
     type: "website",
     images: ["/images/isha_logo.webp"],
     url: "https://isha.health/conditions/ocd",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ketamine Therapy for OCD | Isha Health",
-    description: "Emerging evidence suggests ketamine may help reduce OCD symptoms when standard treatments have not been effective.",
+    title: "Ketamine Therapy for OCD",
+    description: "Emerging evidence suggests ketamine may help reduce OCD symptoms when standard treatments have not been effective. Learn about the research and how Isha Health approaches ketamine therapy for obsessive-compulsive disorder.",
   },
 };
 

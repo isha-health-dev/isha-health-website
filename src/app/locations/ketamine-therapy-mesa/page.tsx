@@ -2,19 +2,19 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: "At-Home Ketamine Therapy in Mesa, AZ",
-  description: "Online ketamine-assisted therapy in Mesa, Arizona. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required.",
+  description: "Online ketamine-assisted therapy in Mesa, Arizona. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
   alternates: { canonical: "https://isha.health/locations/ketamine-therapy-mesa" },
   openGraph: {
-    title: "At-Home Ketamine Therapy in Mesa, AZ | Isha",
-    description: "Online ketamine-assisted therapy in Mesa, Arizona. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required.",
+    title: "At-Home Ketamine Therapy in Mesa, AZ",
+    description: "Online ketamine-assisted therapy in Mesa, Arizona. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
     type: "website",
     images: ["/images/isha_logo.webp"],
     url: "https://isha.health/locations/ketamine-therapy-mesa",
   },
   twitter: {
     card: "summary_large_image",
-    title: "At-Home Ketamine Therapy in Mesa, AZ | Isha",
-    description: "Online ketamine-assisted therapy in Mesa, Arizona. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required.",
+    title: "At-Home Ketamine Therapy in Mesa, AZ",
+    description: "Online ketamine-assisted therapy in Mesa, Arizona. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
   },
 };
 
