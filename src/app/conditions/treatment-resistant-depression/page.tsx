@@ -70,10 +70,12 @@ export default function Page() {
       { "@type": "ListItem", "position": 3, "name": "Treatment-Resistant Depression", "item": "https://isha.health/conditions/treatment-resistant-depression" }
     ]
   })}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"MedicalWebPage","name":"Ketamine for Treatment-Resistant Depression","url":"https://isha.health/conditions/treatment-resistant-depression","lastReviewed":"2026-04-21","audience":{"@type":"MedicalAudience","audienceType":"Patient"},"about":{"@type":"MedicalCondition","name":"Treatment-Resistant Depression"},"specialty":{"@type":"MedicalSpecialty","name":"Psychiatric"},"reviewedBy":{"@type":"Person","name":"Mai Shimada, MD","jobTitle":"Psychiatrist","url":"https://isha.health/dr-mai-shimada"}}</script>
   <div style="text-align:center;padding:3rem 1.5rem 1.5rem;">
     <h1 style="font-family:'Libre Baskerville',serif;font-size:2rem;font-weight:700;color:#111827;margin:0;">Ketamine Therapy for Treatment-Resistant Depression</h1>
   </div>
-  <div style="max-width:800px;margin:0 auto;padding:1.5rem;" style="max-width:800px;margin:0 auto;padding:2rem 1.5rem;">
+  <p style="font-family:'Poppins',sans-serif;font-size:0.85rem;color:#6b7280;text-align:center;margin:0 0 2rem;">Medically reviewed by <a href="/dr-mai-shimada" style="color:#0d9488;text-decoration:none;">Mai Shimada, MD</a> · Last reviewed 2026-04-21</p>
+  <div style="max-width:800px;margin:0 auto;padding:1.5rem;">
     <nav aria-label="Breadcrumb" style="font-size:0.8rem;color:#6b7280;margin-bottom:1.5rem;font-family:'Poppins',sans-serif;">
       <a href="/" style="color:#0d9488;text-decoration:none;">Home</a> /
       <span style="color:#6b7280;">Conditions</span> /
