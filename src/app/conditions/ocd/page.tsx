@@ -138,6 +138,13 @@ export default function Page() {
       </div>
     </div>
   </div>
+  <div style="max-width:800px;margin:1rem auto 2rem;padding:0 1.5rem;">
+    <h2 style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#111827;margin-bottom:1rem;">Further reading on ketamine and OCD</h2>
+    <ul style="font-family:'Poppins',sans-serif;font-size:0.95rem;color:#374151;line-height:1.9;padding-left:1.25rem;margin:0;">
+    <li><a href="/post/ketamine-ocd-emerging-evidence" style="color:#0d9488;text-decoration:none;">Ketamine for OCD: emerging clinical evidence</a></li>
+    <li><a href="/post/six-week-oral-ketamine-trd-ptsd-ocd" style="color:#0d9488;text-decoration:none;">Six weeks of oral ketamine for TRD, PTSD, and OCD</a></li>
+    </ul>
+  </div>
 
   <div style="background-color:#f0fdfa;padding:3rem 1.5rem;text-align:center;border-top:1px solid #ccfbf1;">
     <p style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#0f766e;margin-bottom:0.5rem;">Ready to explore ketamine therapy for OCD?</p>
