@@ -115,12 +115,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.8,
   }));
 
-  const cityPages = getDynamicPages('locations', 'locations');
-  const cityEntries: MetadataRoute.Sitemap = cityPages.map((page) => ({
-    url: `${BASE_URL}/${page}`,
-    changeFrequency: 'monthly',
-    priority: 0.7,
-  }));
+  // City pages (/locations/ketamine-therapy-*) are noindex — see
+  // src/app/locations/layout.tsx. Excluded from the sitemap so we
+  // don't submit URLs we've already told Google to skip.
 
   // Condition pages
   const conditionPages = getDynamicPages('conditions', 'conditions');
@@ -174,7 +171,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...staticEntries,
     ...blogEntries,
     ...stateEntries,
-    ...cityEntries,
     ...conditionEntries,
     ...compareEntries,
     ...guideEntries,
