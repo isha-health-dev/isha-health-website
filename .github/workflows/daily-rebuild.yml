@@ -23,3 +23,18 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git commit --allow-empty -m "chore: daily rebuild for scheduled posts [skip ci]"
           git push
+
+      - name: Submit fresh URLs to IndexNow (Bing, Yandex)
+        env:
+          CRON_SECRET: ${{ secrets.CRON_SECRET }}
+        run: |
+          if [ -z "$CRON_SECRET" ]; then
+            echo "CRON_SECRET not set in GitHub secrets — skipping IndexNow"
+            exit 0
+          fi
+          # Give Vercel time to finish the rebuild triggered above.
+          echo "Waiting 180s for Vercel deploy to finish..."
+          sleep 180
+          echo "Submitting URLs to IndexNow..."
+          curl -fsS -m 30 "https://isha.health/api/indexnow?secret=${CRON_SECRET}" \
+            || echo "IndexNow returned non-zero (non-fatal — new build still deployed)"
