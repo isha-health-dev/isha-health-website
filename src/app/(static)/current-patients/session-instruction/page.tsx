@@ -50,7 +50,7 @@ export default function Page() {
     <a href="/faq" style="display:inline-flex;align-items:center;gap:0.4rem;font-family:'Poppins',sans-serif;font-size:0.8rem;font-weight:600;color:#0d9488;text-decoration:none;padding:0.4rem 0.75rem;border:1px solid #d1d5db;border-radius:6px;background:#fff;">
       <img src="/images/5c86e7c3_6424066424468df6964e631a_information.webp" loading="lazy" width="16" height="16" alt="Information"> FAQ
     </a>
-    <a href="/scheduling" style="display:inline-flex;align-items:center;gap:0.4rem;font-family:'Poppins',sans-serif;font-size:0.8rem;font-weight:600;color:#0d9488;text-decoration:none;padding:0.4rem 0.75rem;border:1px solid #d1d5db;border-radius:6px;background:#fff;">
+    <a href="/current-patients/scheduling" style="display:inline-flex;align-items:center;gap:0.4rem;font-family:'Poppins',sans-serif;font-size:0.8rem;font-weight:600;color:#0d9488;text-decoration:none;padding:0.4rem 0.75rem;border:1px solid #d1d5db;border-radius:6px;background:#fff;">
       <img src="/images/8ec269eb_642406644f8a9954ff8d2bcb_booking.webp" loading="lazy" width="16" height="16" alt="Booking"> Booking
     </a>
   </div>
