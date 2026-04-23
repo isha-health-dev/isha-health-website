@@ -1,15 +1,15 @@
 import type { Metadata } from 'next';
+import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "How Ketamine Treats Depression: Evidence Guide",
   description: "How does ketamine treat depression? Clinical evidence, oral vs IV options, timelines, and what 88.8% improvement means for patients.",
   alternates: { canonical: "https://isha.health/guide/ketamine-for-depression" },
-  openGraph: {
+  openGraph: buildOpenGraph({
     title: "How Ketamine Treats Depression: Evidence Guide",
     description: "How does ketamine treat depression? Clinical evidence, oral vs IV options, timelines, and what 88.8% improvement means for patients.",
-    type: "website",
-    url: "https://isha.health/guide/ketamine-for-depression",
-  },
+    path: '/guide/ketamine-for-depression',
+  }),
   twitter: {
     card: "summary_large_image",
     title: "How Ketamine Treats Depression: Evidence Guide",

@@ -1,16 +1,15 @@
 import type { Metadata } from 'next';
+import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "Ketamine vs Traditional Talk Therapy",
   description: "Compare ketamine-assisted therapy with traditional psychotherapy approaches like CBT and talk therapy. Understand how they differ in mechanism, timeline, cost, and when each may be appropriate.",
   alternates: { canonical: "https://isha.health/compare/ketamine-vs-therapy" },
-  openGraph: {
+  openGraph: buildOpenGraph({
     title: "Ketamine vs Traditional Talk Therapy",
     description: "Compare ketamine-assisted therapy with traditional psychotherapy approaches like CBT and talk therapy. Understand how they differ in mechanism, timeline, cost, and when each may be appropriate.",
-    type: "website",
-    images: ["/images/isha_logo.webp"],
-    url: "https://isha.health/compare/ketamine-vs-therapy",
-  },
+    path: '/compare/ketamine-vs-therapy',
+  }),
   twitter: {
     card: "summary_large_image",
     title: "Ketamine vs Traditional Talk Therapy",
@@ -33,7 +32,7 @@ export default function Page() {
   <div style="max-width:800px;margin:0 auto;padding:1.5rem;">
     <nav aria-label="Breadcrumb" style="font-size:0.8rem;color:#6b7280;margin-bottom:1.5rem;font-family:'Poppins',sans-serif;">
       <a href="/" style="color:#0d9488;text-decoration:none;">Home</a> /
-      <a href="/compare" style="color:#0d9488;text-decoration:none;">Compare</a> /
+      <a href="/resources" style="color:#0d9488;text-decoration:none;">Compare</a> /
       <span style="color:#9ca3af;">Ketamine vs Traditional Therapy</span>
     </nav>
 

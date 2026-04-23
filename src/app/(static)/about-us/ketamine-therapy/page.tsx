@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "What Is Ketamine Therapy? How It Treats Depression",
@@ -6,12 +7,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://isha.health/about-us/ketamine-therapy",
   },
-  openGraph: {
+  openGraph: buildOpenGraph({
     title: "What Is Ketamine Therapy? How It Treats Depression",
     description: "Ketamine therapy uses a 50-year-old FDA-approved medication to treat depression, anxiety, and PTSD. Learn how it works, who it helps, and what to expect.",
-    type: "website",
-    url: "https://isha.health/about-us/ketamine-therapy",
-  },
+    path: '/about-us/ketamine-therapy',
+  }),
   twitter: {
     card: "summary_large_image",
     title: "What Is Ketamine Therapy? How It Treats Depression",

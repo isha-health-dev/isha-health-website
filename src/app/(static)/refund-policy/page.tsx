@@ -1,18 +1,17 @@
 import type { Metadata } from 'next';
+import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "Refund Policy",
-  description: "By using ISHA Health's online ketamine therapy services, you agree to our terms of use.",
+  description: "Isha Health refund policy: full refund if you cancel 48+ hours before your consultation, partial fees for late cancellations and missed appointments.",
   alternates: {
     canonical: "https://isha.health/refund-policy",
   },
-  openGraph: {
+  openGraph: buildOpenGraph({
     title: "Refund Policy",
     description: "By using ISHA Health's online ketamine therapy services, you agree to our terms of use.",
-    type: "website",
-    images: ["/images/isha_logo.webp"],
-    url: "https://isha.health/refund-policy",
-  },
+    path: '/refund-policy',
+  }),
   twitter: {
     card: "summary_large_image",
     title: "Refund Policy",

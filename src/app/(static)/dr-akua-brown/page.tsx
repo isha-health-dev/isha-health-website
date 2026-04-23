@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "Dr Akua Brown | Isha Health",
@@ -6,12 +7,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://isha.health/dr-akua-brown",
   },
-  openGraph: {
+  openGraph: buildOpenGraph({
     title: "Dr Akua Brown | Isha Health",
     description: "Dr. Akua Brown specializes in psychedelic medicine with a focus on increasing accessibility, education, and safety in the field. Fluent in both Spanish and English, she adopts community-focused approaches that mirror her identity as a Black American, queer, nature lover, and abolitionist. Her commitment to holistic health and patient empowerment drives her work, which has significantly deepened her connection to community, spirit, and the joy found in psychedelic therapies. Dr. Brown is dedicated to helping others achieve similar fulfillment and empowerment on their therapeutic journeys.",
-    type: "website",
-    url: "https://isha.health/dr-akua-brown",
-  },
+    path: '/dr-akua-brown',
+  }),
   twitter: {
     card: "summary_large_image",
     title: "Dr Akua Brown | Isha Health",

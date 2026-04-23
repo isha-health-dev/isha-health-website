@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "Get a Referral for Ketamine Therapy",
@@ -6,12 +7,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://isha.health/current-patients/referral-from-your-primary-doctor",
   },
-  openGraph: {
+  openGraph: buildOpenGraph({
     title: "Get a Referral for Ketamine Therapy",
     description: "If you're interested in ketamine therapy, learn how to get a referral from your doctor to our online clinic for at-home treatment.",
-    type: "website",
-    url: "https://isha.health/current-patients/referral-from-your-primary-doctor",
-  },
+    path: '/current-patients/referral-from-your-primary-doctor',
+  }),
   twitter: {
     card: "summary_large_image",
     title: "Get a Referral for Ketamine Therapy",

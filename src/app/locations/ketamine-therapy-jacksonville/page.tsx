@@ -1,16 +1,15 @@
 import type { Metadata } from 'next';
+import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "At-Home Ketamine Therapy in Jacksonville, FL",
   description: "Online ketamine-assisted therapy in Jacksonville, Florida. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
   alternates: { canonical: "https://isha.health/locations/ketamine-therapy-jacksonville" },
-  openGraph: {
+  openGraph: buildOpenGraph({
     title: "At-Home Ketamine Therapy in Jacksonville, FL",
     description: "Online ketamine-assisted therapy in Jacksonville, Florida. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
-    type: "website",
-    images: ["/images/isha_logo.webp"],
-    url: "https://isha.health/locations/ketamine-therapy-jacksonville",
-  },
+    path: '/locations/ketamine-therapy-jacksonville',
+  }),
   twitter: {
     card: "summary_large_image",
     title: "At-Home Ketamine Therapy in Jacksonville, FL",

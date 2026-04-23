@@ -10,6 +10,7 @@ import {
   getVerificationStatus,
   getOptimizedProfilePic,
 } from '@/lib/therapist-types';
+import { buildOpenGraph } from '@/lib/seo';
 
 // No timer-based ISR — on-demand revalidation only (triggered by dashboard save)
 export const dynamicParams = false; // Only pre-rendered slugs — prevents ISR reads
@@ -34,11 +35,18 @@ export async function generateMetadata({
     .map((c) => c.credential.toUpperCase())
     .join(', ');
   const displayName = credentials ? `${name}, ${credentials}` : name;
-  // Keep title under 60 chars — use shorter suffix for long names
+  // Budget for title (60 char aspirational / 70 hard): layout appends " | Isha Health" (14 chars)
+  // so the per-page title should be ≤46 (ideal) or ≤56 (acceptable).
   const suffix = location ? `KAP in ${location}` : 'KAP Therapist';
-  const fullTitle = `${displayName} - ${suffix}`;
-  const title = fullTitle.length > 60 ? `${name} - ${suffix}` : fullTitle;
-  const description = `${name} offers ketamine-assisted psychotherapy${location ? ` in ${location}` : ''}. Specializing in personalized mental health treatment through ketamine therapy.`;
+  const withCreds = `${displayName} - ${suffix}`;
+  const withoutCreds = `${name} - ${suffix}`;
+  const title =
+    withCreds.length <= 46
+      ? withCreds
+      : withoutCreds.length <= 56
+        ? withoutCreds
+        : name;
+  const description = `${name} offers ketamine-assisted psychotherapy${location ? ` in ${location}` : ''}. View specialties, credentials, and book a session via Isha Health.`;
 
   return {
     title,
@@ -46,12 +54,13 @@ export async function generateMetadata({
     alternates: {
       canonical: `https://isha.health/ketamine-therapist-directory/${slug}`,
     },
-    openGraph: {
+    openGraph: buildOpenGraph({
       title: `${displayName} - Ketamine-Assisted Therapy`,
       description,
+      path: `/ketamine-therapist-directory/${slug}`,
       type: 'profile',
-      ...(therapist.profile_pic ? { images: [therapist.profile_pic] } : {}),
-    },
+      image: therapist.profile_pic || undefined,
+    }),
     twitter: {
       card: 'summary',
       title: `${displayName} - Ketamine-Assisted Therapy`,
@@ -262,27 +271,27 @@ export default async function TherapistProfilePage({
             {(t.instagram_url || t.linkedin_url || t.twitter_url || t.youtube_url || t.tiktok_url) && (
               <div className="flex flex-wrap gap-3 mt-3">
                 {t.linkedin_url && (
-                  <a href={t.linkedin_url} target="_blank" rel="noopener noreferrer" style={{ color: '#0077b5', textDecoration: 'none', fontSize: '0.85rem', display: 'inline-flex', alignItems: 'center', gap: '0.25rem' }}>
+                  <a href={t.linkedin_url.startsWith('http') ? t.linkedin_url : `https://${t.linkedin_url}`} target="_blank" rel="noopener noreferrer" style={{ color: '#0077b5', textDecoration: 'none', fontSize: '0.85rem', display: 'inline-flex', alignItems: 'center', gap: '0.25rem' }}>
                     LinkedIn
                   </a>
                 )}
                 {t.instagram_url && (
-                  <a href={t.instagram_url} target="_blank" rel="noopener noreferrer" style={{ color: '#e1306c', textDecoration: 'none', fontSize: '0.85rem', display: 'inline-flex', alignItems: 'center', gap: '0.25rem' }}>
+                  <a href={t.instagram_url.startsWith('http') ? t.instagram_url : `https://${t.instagram_url}`} target="_blank" rel="noopener noreferrer" style={{ color: '#e1306c', textDecoration: 'none', fontSize: '0.85rem', display: 'inline-flex', alignItems: 'center', gap: '0.25rem' }}>
                     Instagram
                   </a>
                 )}
                 {t.twitter_url && (
-                  <a href={t.twitter_url} target="_blank" rel="noopener noreferrer" style={{ color: '#1da1f2', textDecoration: 'none', fontSize: '0.85rem', display: 'inline-flex', alignItems: 'center', gap: '0.25rem' }}>
+                  <a href={t.twitter_url.startsWith('http') ? t.twitter_url : `https://${t.twitter_url}`} target="_blank" rel="noopener noreferrer" style={{ color: '#1da1f2', textDecoration: 'none', fontSize: '0.85rem', display: 'inline-flex', alignItems: 'center', gap: '0.25rem' }}>
                     Twitter
                   </a>
                 )}
                 {t.youtube_url && (
-                  <a href={t.youtube_url} target="_blank" rel="noopener noreferrer" style={{ color: '#ff0000', textDecoration: 'none', fontSize: '0.85rem', display: 'inline-flex', alignItems: 'center', gap: '0.25rem' }}>
+                  <a href={t.youtube_url.startsWith('http') ? t.youtube_url : `https://${t.youtube_url}`} target="_blank" rel="noopener noreferrer" style={{ color: '#ff0000', textDecoration: 'none', fontSize: '0.85rem', display: 'inline-flex', alignItems: 'center', gap: '0.25rem' }}>
                     YouTube
                   </a>
                 )}
                 {t.tiktok_url && (
-                  <a href={t.tiktok_url} target="_blank" rel="noopener noreferrer" style={{ color: '#000', textDecoration: 'none', fontSize: '0.85rem', display: 'inline-flex', alignItems: 'center', gap: '0.25rem' }}>
+                  <a href={t.tiktok_url.startsWith('http') ? t.tiktok_url : `https://${t.tiktok_url}`} target="_blank" rel="noopener noreferrer" style={{ color: '#000', textDecoration: 'none', fontSize: '0.85rem', display: 'inline-flex', alignItems: 'center', gap: '0.25rem' }}>
                     TikTok
                   </a>
                 )}

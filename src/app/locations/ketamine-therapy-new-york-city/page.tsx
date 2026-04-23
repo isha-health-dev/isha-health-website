@@ -1,16 +1,15 @@
 import type { Metadata } from 'next';
+import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "At-Home Ketamine Therapy in New York City, NY",
   description: "NYC ketamine therapy from home — $350/session, no clinic visit. 88.8% of patients improve. Same-day appointments available.",
   alternates: { canonical: "https://isha.health/locations/ketamine-therapy-new-york-city" },
-  openGraph: {
+  openGraph: buildOpenGraph({
     title: "At-Home Ketamine Therapy in New York City, NY",
     description: "NYC ketamine therapy from home — $350/session, no clinic visit. 88.8% of patients improve. Same-day appointments available.",
-    type: "website",
-    images: ["/images/isha_logo.webp"],
-    url: "https://isha.health/locations/ketamine-therapy-new-york-city",
-  },
+    path: '/locations/ketamine-therapy-new-york-city',
+  }),
   twitter: {
     card: "summary_large_image",
     title: "At-Home Ketamine Therapy in New York City, NY",

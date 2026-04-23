@@ -1,18 +1,16 @@
 import type { Metadata } from 'next';
+import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Online Ketamine Therapy from Home | Isha Health',
   description:
     'Get online ketamine therapy from home. 88.8% of 500+ patients show improvement, 92.6% anxiety remission. Available in 9 states. $350 consultation.',
   alternates: { canonical: 'https://isha.health/online-ketamine-therapy' },
-  openGraph: {
+  openGraph: buildOpenGraph({
     title: 'Online Ketamine Therapy from Home | Isha Health',
-    description:
-      'Telehealth ketamine treatment with 88.8% improvement rate. Prescribed by board-certified psychiatrists. Available in AZ, CA, CO, FL, GA, NY, OR, TX, WA.',
-    type: 'website',
-    url: 'https://isha.health/online-ketamine-therapy',
-    images: ['/images/isha_logo.webp'],
-  },
+    description: 'Telehealth ketamine treatment with 88.8% improvement rate. Prescribed by board-certified psychiatrists. Available in AZ, CA, CO, FL, GA, NY, OR, TX, WA.',
+    path: '/online-ketamine-therapy',
+  }),
   twitter: {
     card: 'summary_large_image',
     title: 'Online Ketamine Therapy from Home | Isha Health',

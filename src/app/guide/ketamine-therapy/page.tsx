@@ -1,15 +1,15 @@
 import type { Metadata } from 'next';
+import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "The Complete Guide to Ketamine Therapy",
   description: "Everything you need to know about ketamine therapy: how it works, conditions treated, types of ketamine, what to expect, costs, safety, and how to choose a provider.",
   alternates: { canonical: "https://isha.health/guide/ketamine-therapy" },
-  openGraph: {
+  openGraph: buildOpenGraph({
     title: "The Complete Guide to Ketamine Therapy",
     description: "Everything you need to know about ketamine therapy: how it works, conditions treated, types of ketamine, what to expect, costs, safety, and how to choose a provider.",
-    type: "website",
-    url: "https://isha.health/guide/ketamine-therapy",
-  },
+    path: '/guide/ketamine-therapy',
+  }),
   twitter: {
     card: "summary_large_image",
     title: "The Complete Guide to Ketamine Therapy",
@@ -256,7 +256,7 @@ export default function Page() {
     <ul style="font-family:'Source Sans Pro','Poppins',sans-serif;font-size:0.95rem;color:#374151;line-height:1.8;padding-left:1.25rem;margin-bottom:1rem;">
       <li>Dissociation or a feeling of detachment from one's body or surroundings</li>
       <li>Dizziness or lightheadedness</li>
-      <li>Nausea (which can be managed with <a href="/post/how-to-get-affordable-ondansetron-for-mental-health-ibs-and-ketamine-therapy-treatments" style="color:#0d9488;text-decoration:underline;">anti-nausea medication</a>)</li>
+      <li>Nausea (which can be managed with anti-nausea medication)</li>
       <li>Temporary increases in blood pressure and heart rate</li>
       <li>Visual or sensory changes</li>
     </ul>

@@ -1,15 +1,15 @@
 import type { Metadata } from 'next';
+import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: "Ketamine Therapy FAQ: 50+ Questions Answered | Isha Health",
+  title: "Ketamine Therapy FAQ: 50+ Questions Answered",
   description: "Answers to 55+ ketamine therapy FAQs: how it works, safety, cost, side effects, types, conditions treated, and what to expect.",
   alternates: { canonical: "https://isha.health/faq/ketamine-therapy" },
-  openGraph: {
+  openGraph: buildOpenGraph({
     title: "Ketamine Therapy FAQ: 50+ Questions Answered | Isha Health",
     description: "Answers to 55+ ketamine therapy FAQs: how it works, safety, cost, side effects, types, conditions treated, and what to expect.",
-    type: "website",
-    url: "https://isha.health/faq/ketamine-therapy",
-  },
+    path: '/faq/ketamine-therapy',
+  }),
   twitter: {
     card: "summary_large_image",
     title: "Ketamine Therapy FAQ: 50+ Questions Answered | Isha Health",

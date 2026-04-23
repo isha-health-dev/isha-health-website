@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "Ketamine Therapy for Anxiety",
@@ -6,13 +7,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://isha.health/ketamine-therapy-for-anxiety",
   },
-  openGraph: {
+  openGraph: buildOpenGraph({
     title: "Ketamine Therapy for Anxiety",
     description: "92.6% of patients reach minimal anxiety levels with ketamine therapy. Physician-led at-home treatment starting at $350.",
-    type: "website",
-    images: ["/images/isha_logo.webp"],
-    url: "https://isha.health/ketamine-therapy-for-anxiety",
-  },
+    path: '/ketamine-therapy-for-anxiety',
+  }),
   twitter: {
     card: "summary_large_image",
     title: "Ketamine Therapy for Anxiety",

@@ -1,16 +1,16 @@
 import type { Metadata } from 'next';
+import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Ketamine Therapy Resources & Guides',
   description:
     'Comprehensive resources on ketamine therapy for depression, anxiety, and PTSD. Evidence-based guides, research, and comparisons from our clinical team.',
   alternates: { canonical: 'https://isha.health/resources' },
-  openGraph: {
+  openGraph: buildOpenGraph({
     title: 'Ketamine Therapy Resources & Guides',
     description: 'Comprehensive resources on ketamine therapy. Guides, research, comparisons, and condition-specific information.',
-    type: 'website',
-    url: 'https://isha.health/resources',
-  },
+    path: '/resources',
+  }),
 };
 
 export default function ResourcesPage() {

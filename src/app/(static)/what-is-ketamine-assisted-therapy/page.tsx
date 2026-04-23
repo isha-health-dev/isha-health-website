@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "What Is Ketamine-Assisted Therapy?",
@@ -6,13 +7,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://isha.health/what-is-ketamine-assisted-therapy",
   },
-  openGraph: {
+  openGraph: buildOpenGraph({
     title: "What Is Ketamine-Assisted Therapy?",
     description: "Ketamine-assisted therapy combines low-dose ketamine with clinical support to treat depression, anxiety, and PTSD. 88.8% of patients improve.",
-    type: "website",
-    images: ["/images/isha_logo.webp"],
-    url: "https://isha.health/what-is-ketamine-assisted-therapy",
-  },
+    path: '/what-is-ketamine-assisted-therapy',
+  }),
   twitter: {
     card: "summary_large_image",
     title: "What Is Ketamine-Assisted Therapy?",

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
@@ -6,13 +7,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://isha.health/privacy-policy",
   },
-  openGraph: {
+  openGraph: buildOpenGraph({
     title: "Privacy Policy",
     description: "At ISHA Health, we are committed to protecting your privacy. Learn more about our privacy policy and how we keep your information safe and secure when you use our online ketamine therapy services.",
-    type: "website",
-    images: ["/images/isha_logo.webp"],
-    url: "https://isha.health/privacy-policy",
-  },
+    path: '/privacy-policy',
+  }),
   twitter: {
     card: "summary_large_image",
     title: "Privacy Policy",

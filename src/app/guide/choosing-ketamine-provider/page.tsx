@@ -1,15 +1,15 @@
 import type { Metadata } from 'next';
+import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "How to Choose a Ketamine Therapy Provider",
   description: "A comprehensive guide to choosing the right ketamine therapy provider. Learn about credentials, red flags, cost transparency, at-home vs clinic options, and questions to ask.",
   alternates: { canonical: "https://isha.health/guide/choosing-ketamine-provider" },
-  openGraph: {
+  openGraph: buildOpenGraph({
     title: "How to Choose a Ketamine Therapy Provider",
     description: "A comprehensive guide to choosing the right ketamine therapy provider. Learn about credentials, red flags, cost transparency, at-home vs clinic options, and questions to ask.",
-    type: "website",
-    url: "https://isha.health/guide/choosing-ketamine-provider",
-  },
+    path: '/guide/choosing-ketamine-provider',
+  }),
   twitter: {
     card: "summary_large_image",
     title: "How to Choose a Ketamine Therapy Provider",
@@ -173,7 +173,7 @@ export default function Page() {
       <li><strong>What are your credentials and how long have you been offering ketamine therapy?</strong> Look for licensed medical professionals with specific experience in ketamine treatment for mental health.</li>
       <li><strong>How do you evaluate whether I am a good candidate?</strong> The answer should describe a thorough evaluation process, not a brief screening.</li>
       <li><strong>What does your treatment protocol involve?</strong> Ask about the initial course of treatment, how sessions are structured, and what the maintenance plan looks like.</li>
-      <li><strong>How do you monitor progress?</strong> Providers should use validated assessment tools (such as <a href="/post/feeling-stuck-heres-what-gad-7-and-phq-9-can-tell-you-about-your-mental-health" style="color:#0d9488;text-decoration:underline;">PHQ-9 and GAD-7</a>) and schedule regular check-ins.</li>
+      <li><strong>How do you monitor progress?</strong> Providers should use validated assessment tools (such as PHQ-9 and GAD-7) and schedule regular check-ins.</li>
       <li><strong>What integration or therapeutic support do you offer?</strong> Ask about therapy referrals, <a href="/post/online-integration-circles-for-ketamine-therapy" style="color:#0d9488;text-decoration:underline;">integration circles</a>, or other supportive resources.</li>
       <li><strong>What are the total costs, and do you provide superbills?</strong> Understanding the full financial picture upfront is important. Ask about <a href="/post/ketamine-therapy-insurance-superbill" style="color:#0d9488;text-decoration:underline;">superbills and insurance reimbursement</a> options.</li>
       <li><strong>What safety measures are in place?</strong> For at-home programs, ask about the support person requirement, emergency protocols, and how quickly you can reach a provider if needed.</li>

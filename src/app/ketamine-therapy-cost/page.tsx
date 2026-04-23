@@ -1,18 +1,16 @@
 import type { Metadata } from 'next';
+import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Ketamine Therapy Cost: Pricing Breakdown',
   description:
     'Ketamine therapy costs $350 per consultation at Isha Health. 88.8% improvement rate across 500+ patients. Compare at-home vs IV infusion vs Spravato pricing.',
   alternates: { canonical: 'https://isha.health/ketamine-therapy-cost' },
-  openGraph: {
+  openGraph: buildOpenGraph({
     title: 'How Much Does Ketamine Therapy Cost? | Isha Health',
-    description:
-      'Compare ketamine therapy costs: at-home ($350) vs IV infusion ($400-800) vs Spravato ($500-900). HSA/FSA accepted.',
-    type: 'website',
-    url: 'https://isha.health/ketamine-therapy-cost',
-    images: ['/images/isha_logo.webp'],
-  },
+    description: 'Compare ketamine therapy costs: at-home ($350) vs IV infusion ($400-800) vs Spravato ($500-900). HSA/FSA accepted.',
+    path: '/ketamine-therapy-cost',
+  }),
   twitter: {
     card: 'summary_large_image',
     title: 'Ketamine Therapy Cost | Isha Health',

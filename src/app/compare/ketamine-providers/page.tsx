@@ -1,16 +1,15 @@
 import type { Metadata } from 'next';
+import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "Best Online Ketamine Therapy Providers (2026)",
   description: "Compare online ketamine therapy providers side by side: Isha Health, IV clinics, Spravato, and telehealth options compared on cost and outcomes.",
   alternates: { canonical: "https://isha.health/compare/ketamine-providers" },
-  openGraph: {
+  openGraph: buildOpenGraph({
     title: "Best Online Ketamine Therapy Providers (2026)",
     description: "Compare online ketamine therapy providers side by side: Isha Health, IV clinics, Spravato, and telehealth options compared on cost and outcomes.",
-    type: "website",
-    images: ["/images/isha_logo.webp"],
-    url: "https://isha.health/compare/ketamine-providers",
-  },
+    path: '/compare/ketamine-providers',
+  }),
   twitter: {
     card: "summary_large_image",
     title: "Best Online Ketamine Therapy Providers (2026)",
@@ -86,7 +85,7 @@ export default function Page() {
   <div style="max-width:800px;margin:0 auto;padding:1.5rem;">
     <nav aria-label="Breadcrumb" style="font-size:0.8rem;color:#6b7280;margin-bottom:1.5rem;font-family:'Poppins',sans-serif;">
       <a href="/" style="color:#0d9488;text-decoration:none;">Home</a> /
-      <a href="/compare" style="color:#0d9488;text-decoration:none;">Compare</a> /
+      <a href="/resources" style="color:#0d9488;text-decoration:none;">Compare</a> /
       <span style="color:#9ca3af;">Ketamine Providers</span>
     </nav>
 

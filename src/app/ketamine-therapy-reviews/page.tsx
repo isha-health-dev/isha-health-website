@@ -1,18 +1,16 @@
 import type { Metadata } from 'next';
+import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Ketamine Therapy Reviews: Real Patient Stories',
   description:
     'Read real ketamine therapy reviews from 500+ Isha Health patients. 88.8% improvement rate, 92.6% anxiety remission. Patient testimonials and case studies.',
   alternates: { canonical: 'https://isha.health/ketamine-therapy-reviews' },
-  openGraph: {
+  openGraph: buildOpenGraph({
     title: 'Ketamine Therapy Reviews | Isha Health',
-    description:
-      'Real patient reviews and testimonials. 88.8% improvement rate across 500+ patients. Read their stories.',
-    type: 'website',
-    url: 'https://isha.health/ketamine-therapy-reviews',
-    images: ['/images/isha_logo.webp'],
-  },
+    description: 'Real patient reviews and testimonials. 88.8% improvement rate across 500+ patients. Read their stories.',
+    path: '/ketamine-therapy-reviews',
+  }),
   twitter: {
     card: 'summary_large_image',
     title: 'Ketamine Therapy Reviews | Isha Health',

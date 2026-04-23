@@ -1115,11 +1115,22 @@ export default function DashboardPage() {
             <div style={{ display: 'flex', gap: '0.5rem' }}>
               <select style={{ ...inputStyle, flex: 1 }} id="new-age-group" defaultValue="">
                 <option value="" disabled>Select age group...</option>
-                <option value="Children (0-12)">Children (0-12)</option>
-                <option value="Adolescents (13-17)">Adolescents (13-17)</option>
-                <option value="Young Adults (18-25)">Young Adults (18-25)</option>
-                <option value="Adults (26-64)">Adults (26-64)</option>
-                <option value="Seniors (65+)">Seniors (65+)</option>
+                <optgroup label="Standardized">
+                  <option value="Children (0-12)">Children (0-12)</option>
+                  <option value="Adolescents (13-17)">Adolescents (13-17)</option>
+                  <option value="Young Adults (18-25)">Young Adults (18-25)</option>
+                  <option value="Adults (26-64)">Adults (26-64)</option>
+                  <option value="Seniors (65+)">Seniors (65+)</option>
+                </optgroup>
+                <optgroup label="Psychology Today (legacy)">
+                  <option value="Toddler">Toddler</option>
+                  <option value="Preschooler">Preschooler</option>
+                  <option value="Children 6 To 10">Children 6 To 10</option>
+                  <option value="Preteen">Preteen</option>
+                  <option value="Teen">Teen</option>
+                  <option value="Adults">Adults</option>
+                  <option value="Elders">Elders</option>
+                </optgroup>
               </select>
               <button type="button" onClick={() => { const select = document.getElementById('new-age-group') as HTMLSelectElement; if (select?.value && !ageGroups.includes(select.value)) { setAgeGroups([...ageGroups, select.value]); select.value = ''; } }} style={{ padding: '0.5rem 1rem', backgroundColor: '#0d9488', color: '#fff', border: 'none', borderRadius: '6px', cursor: 'pointer', fontSize: '0.8rem', fontFamily: 'inherit' }}>Add</button>
             </div>

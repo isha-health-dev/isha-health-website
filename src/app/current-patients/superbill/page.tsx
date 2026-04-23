@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Request Your Superbill',
-  description: 'Request a superbill from Isha Health or submit an insurance claim through our claims portal.',
+  description: 'Request a superbill from Isha Health or submit an out-of-network insurance claim through our claims portal to seek reimbursement for ketamine therapy.',
   robots: { index: true, follow: true },
 };
 

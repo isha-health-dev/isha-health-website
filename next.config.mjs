@@ -47,6 +47,12 @@ const nextConfig = {
         destination: '/post/is-ketamine-therapy-addictive',
         permanent: true,
       },
+      // Unpublished cost post — pricing page is the canonical source
+      {
+        source: '/post/how-much-does-ketamine-therapy-cost',
+        destination: '/pricing',
+        permanent: true,
+      },
       // Parent directory index pages
       {
         source: '/locations',

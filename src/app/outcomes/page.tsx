@@ -1,18 +1,16 @@
 import type { Metadata } from 'next';
+import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Patient Outcomes & Clinical Results',
   description:
     '88.8% of Isha Health patients with moderate-to-severe depression show measurable improvement. Based on 546 patients and 1,900+ assessments.',
   alternates: { canonical: 'https://isha.health/outcomes' },
-  openGraph: {
+  openGraph: buildOpenGraph({
     title: 'Patient Outcomes | Isha Health',
-    description:
-      '88.79% improvement rate. 546 patients. 92.64% anxiety remission. Real clinical data from Isha Health.',
-    type: 'website',
-    url: 'https://isha.health/outcomes',
-    images: ['/images/isha_logo.webp'],
-  },
+    description: '88.79% improvement rate. 546 patients. 92.64% anxiety remission. Real clinical data from Isha Health.',
+    path: '/outcomes',
+  }),
 };
 
 export default function OutcomesPage() {

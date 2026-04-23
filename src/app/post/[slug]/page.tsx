@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import { getBlogPost, getAllBlogPosts } from '@/lib/blog';
+import { buildOpenGraph } from '@/lib/seo';
 import Link from 'next/link';
 
 // Fully static — no ISR reads, no dynamic params
@@ -27,14 +28,14 @@ export async function generateMetadata({
     alternates: {
       canonical: `https://isha.health/post/${post.slug}`,
     },
-    openGraph: {
+    openGraph: buildOpenGraph({
       title: post.title,
       description: post.description || '',
+      path: `/post/${post.slug}`,
       type: 'article',
-      url: `https://isha.health/post/${post.slug}`,
-      images: post.image ? [post.image] : [],
+      image: post.image,
       publishedTime: post.firstPublished || post.date,
-    },
+    }),
     twitter: {
       card: 'summary_large_image',
       title: post.title,

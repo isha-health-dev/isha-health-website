@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "Cancellation Policy",
@@ -6,13 +7,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://isha.health/cancellation-policy-isha-health",
   },
-  openGraph: {
+  openGraph: buildOpenGraph({
     title: "Cancellation Policy",
     description: "Review the cancellation policy at Isha Health. Understand the terms and conditions regarding appointment cancellations and rescheduling. Ensure you are aware of our policies to avoid any fees and manage your appointments effectively.",
-    type: "website",
-    images: ["/images/isha_logo.webp"],
-    url: "https://isha.health/cancellation-policy-isha-health",
-  },
+    path: '/cancellation-policy-isha-health',
+  }),
   twitter: {
     card: "summary_large_image",
     title: "Cancellation Policy",

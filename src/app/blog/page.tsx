@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getAllBlogPosts } from '@/lib/blog';
+import { buildOpenGraph } from '@/lib/seo';
 import { NewsletterForm } from '../newsletter-form';
 
 const POSTS_PER_PAGE = 12;
@@ -24,20 +25,18 @@ export async function generateMetadata({
   const pageLabel = currentPage > 1 ? ` | Page ${currentPage}` : '';
 
   return {
-    title: `Ketamine Therapy Blog — Mental Health Insights & Treatment Guides${catLabel}${pageLabel}`,
+    title: `Ketamine Therapy Blog: Insights & Guides${catLabel}${pageLabel}`,
     description:
       'Expert insights on ketamine therapy, depression, anxiety, PTSD, and mental health treatment. Updated regularly by the Isha Health clinical team.',
     alternates: {
       canonical: 'https://isha.health/blog',
     },
-    openGraph: {
-      title: `Ketamine Therapy Blog${catLabel} | Isha Health`,
+    openGraph: buildOpenGraph({
+      title: `Ketamine Therapy Blog${catLabel}`,
       description:
         'Expert insights on ketamine therapy, depression, anxiety, PTSD, and mental health treatment from the Isha Health clinical team.',
-      type: 'website',
-      url: 'https://isha.health/blog',
-      images: ['/images/isha_logo.webp'],
-    },
+      path: '/blog',
+    }),
     twitter: {
       card: 'summary_large_image',
       title: `Ketamine Therapy Blog${catLabel} | Isha Health`,

@@ -1,16 +1,15 @@
 import type { Metadata } from 'next';
+import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "Ketamine vs TMS: Comparison Guide",
   description: "Compare ketamine therapy and TMS for depression — cost, speed of relief, side effects, and insurance coverage explained side by side.",
   alternates: { canonical: "https://isha.health/compare/ketamine-vs-tms" },
-  openGraph: {
+  openGraph: buildOpenGraph({
     title: "Ketamine vs TMS: Comparison Guide",
     description: "Compare ketamine therapy and TMS for depression — cost, speed of relief, side effects, and insurance coverage explained side by side.",
-    type: "website",
-    images: ["/images/isha_logo.webp"],
-    url: "https://isha.health/compare/ketamine-vs-tms",
-  },
+    path: '/compare/ketamine-vs-tms',
+  }),
   twitter: {
     card: "summary_large_image",
     title: "Ketamine vs TMS: Comparison Guide",
@@ -33,7 +32,7 @@ export default function Page() {
   <div style="max-width:800px;margin:0 auto;padding:1.5rem;">
     <nav aria-label="Breadcrumb" style="font-size:0.8rem;color:#6b7280;margin-bottom:1.5rem;font-family:'Poppins',sans-serif;">
       <a href="/" style="color:#0d9488;text-decoration:none;">Home</a> /
-      <a href="/compare" style="color:#0d9488;text-decoration:none;">Compare</a> /
+      <a href="/resources" style="color:#0d9488;text-decoration:none;">Compare</a> /
       <span style="color:#9ca3af;">Ketamine vs TMS</span>
     </nav>
 

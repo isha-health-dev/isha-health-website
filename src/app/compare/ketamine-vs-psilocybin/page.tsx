@@ -1,16 +1,15 @@
 import type { Metadata } from 'next';
+import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "Ketamine vs Psilocybin Therapy Compared",
   description: "Compare ketamine therapy and psilocybin-assisted therapy for depression. Understand legal status, mechanisms of action, clinical evidence, accessibility, and key differences between these treatments.",
   alternates: { canonical: "https://isha.health/compare/ketamine-vs-psilocybin" },
-  openGraph: {
+  openGraph: buildOpenGraph({
     title: "Ketamine vs Psilocybin Therapy Compared",
     description: "Compare ketamine therapy and psilocybin-assisted therapy for depression. Understand legal status, mechanisms of action, clinical evidence, accessibility, and key differences between these treatments.",
-    type: "website",
-    images: ["/images/isha_logo.webp"],
-    url: "https://isha.health/compare/ketamine-vs-psilocybin",
-  },
+    path: '/compare/ketamine-vs-psilocybin',
+  }),
   twitter: {
     card: "summary_large_image",
     title: "Ketamine vs Psilocybin Therapy Compared",
@@ -33,7 +32,7 @@ export default function Page() {
   <div style="max-width:800px;margin:0 auto;padding:1.5rem;">
     <nav aria-label="Breadcrumb" style="font-size:0.8rem;color:#6b7280;margin-bottom:1.5rem;font-family:'Poppins',sans-serif;">
       <a href="/" style="color:#0d9488;text-decoration:none;">Home</a> /
-      <a href="/compare" style="color:#0d9488;text-decoration:none;">Compare</a> /
+      <a href="/resources" style="color:#0d9488;text-decoration:none;">Compare</a> /
       <span style="color:#9ca3af;">Ketamine vs Psilocybin Therapy</span>
     </nav>
 

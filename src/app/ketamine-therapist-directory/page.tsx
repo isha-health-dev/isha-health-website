@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildOpenGraph } from '@/lib/seo';
 import { getAllTherapists } from '@/lib/therapist-queries';
 import { getTherapistName, getTherapistSlug } from '@/lib/therapist-types';
 import { TherapistDirectory } from './directory';
@@ -10,13 +11,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://isha.health/ketamine-therapist-directory',
   },
-  openGraph: {
+  openGraph: buildOpenGraph({
     title: 'Ketamine Therapy Clinician Directory | Isha Health',
-    description:
-      'Browse ketamine therapy clinicians across the United States. Filter by state, specialty, insurance, and visit type.',
-    type: 'website',
-    url: 'https://isha.health/ketamine-therapist-directory',
-  },
+    description: 'Browse ketamine therapy clinicians across the United States. Filter by state, specialty, insurance, and visit type.',
+    path: '/ketamine-therapist-directory',
+  }),
   twitter: {
     card: 'summary_large_image',
     title: 'Ketamine Therapy Clinician Directory | Isha Health',

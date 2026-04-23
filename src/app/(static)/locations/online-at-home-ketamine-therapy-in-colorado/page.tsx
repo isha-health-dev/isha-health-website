@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "Online At-Home Ketamine Therapy in Colorado",
@@ -6,12 +7,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://isha.health/locations/online-at-home-ketamine-therapy-in-colorado",
   },
-  openGraph: {
+  openGraph: buildOpenGraph({
     title: "Online At-Home Ketamine Therapy in Colorado",
     description: "Colorado residents: at-home ketamine therapy starting at $350. 88.8% of patients improve. Same-day appointments. No referral needed.",
-    type: "website",
-    url: "https://isha.health/locations/online-at-home-ketamine-therapy-in-colorado",
-  },
+    path: '/locations/online-at-home-ketamine-therapy-in-colorado',
+  }),
   twitter: {
     card: "summary_large_image",
     title: "Online At-Home Ketamine Therapy in Colorado",
@@ -29,7 +29,7 @@ export default function Page() {
   <nav style="margin-bottom:1.5rem;font-size:0.85rem;">
     <a href="/" style="color:#0d9488;text-decoration:none;">Home</a>
     <span style="margin:0 0.5rem;color:#9ca3af;">›</span>
-    <a href="/locations" style="color:#0d9488;text-decoration:none;">Locations</a>
+    <a href="/" style="color:#0d9488;text-decoration:none;">Locations</a>
     <span style="margin:0 0.5rem;color:#9ca3af;">›</span>
     <span style="color:#6b7280;">Colorado</span>
   </nav>

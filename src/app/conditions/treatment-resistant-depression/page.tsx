@@ -1,16 +1,15 @@
 import type { Metadata } from 'next';
+import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "Ketamine for Treatment-Resistant Depression",
   description: "Ketamine has shown significant promise for treatment-resistant depression when conventional antidepressants have not worked. Learn about the evidence and how Isha Health provides ketamine-assisted therapy for TRD.",
   alternates: { canonical: "https://isha.health/conditions/treatment-resistant-depression" },
-  openGraph: {
+  openGraph: buildOpenGraph({
     title: "Ketamine for Treatment-Resistant Depression",
     description: "Ketamine has shown significant promise for treatment-resistant depression when conventional antidepressants have not worked. Learn about the evidence and how Isha Health provides ketamine-assisted therapy for TRD.",
-    type: "website",
-    images: ["/images/isha_logo.webp"],
-    url: "https://isha.health/conditions/treatment-resistant-depression",
-  },
+    path: '/conditions/treatment-resistant-depression',
+  }),
   twitter: {
     card: "summary_large_image",
     title: "Ketamine for Treatment-Resistant Depression",

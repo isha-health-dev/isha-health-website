@@ -17,9 +17,11 @@ function getBlogPosts(): { slug: string; date: string }[] {
         const slug = file.replace(/\.mdx$/, '');
         const dateMatch = content.match(/^date:\s*(.+)$/m);
         const date = dateMatch ? dateMatch[1].trim().replace(/['"]/g, '') : '2024-01-01';
-        return { slug, date };
+        const isDraft = /^draft:\s*true\b/m.test(content);
+        return { slug, date, isDraft };
       })
-      .filter((post) => post.date <= today); // Exclude future-dated posts
+      .filter((post) => !post.isDraft && post.date <= today) // exclude drafts + future-dated
+      .map(({ slug, date }) => ({ slug, date }));
   } catch {
     return [];
   }

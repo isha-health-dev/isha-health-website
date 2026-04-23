@@ -1,16 +1,15 @@
 import type { Metadata } from 'next';
+import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "Oral Ketamine vs IV Infusion Compared",
   description: "Compare oral (sublingual) ketamine with IV ketamine infusions. Understand differences in bioavailability, convenience, cost, clinical evidence, and which route may be best for your situation.",
   alternates: { canonical: "https://isha.health/compare/oral-ketamine-vs-iv-infusion" },
-  openGraph: {
+  openGraph: buildOpenGraph({
     title: "Oral Ketamine vs IV Infusion Compared",
     description: "Compare oral (sublingual) ketamine with IV ketamine infusions. Understand differences in bioavailability, convenience, cost, clinical evidence, and which route may be best for your situation.",
-    type: "website",
-    images: ["/images/isha_logo.webp"],
-    url: "https://isha.health/compare/oral-ketamine-vs-iv-infusion",
-  },
+    path: '/compare/oral-ketamine-vs-iv-infusion',
+  }),
   twitter: {
     card: "summary_large_image",
     title: "Oral Ketamine vs IV Infusion Compared",
@@ -33,7 +32,7 @@ export default function Page() {
   <div style="max-width:800px;margin:0 auto;padding:1.5rem;">
     <nav aria-label="Breadcrumb" style="font-size:0.8rem;color:#6b7280;margin-bottom:1.5rem;font-family:'Poppins',sans-serif;">
       <a href="/" style="color:#0d9488;text-decoration:none;">Home</a> /
-      <a href="/compare" style="color:#0d9488;text-decoration:none;">Compare</a> /
+      <a href="/resources" style="color:#0d9488;text-decoration:none;">Compare</a> /
       <span style="color:#9ca3af;">Oral Ketamine vs IV Infusion</span>
     </nav>
 

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "Healing Music Playlist",
@@ -6,13 +7,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://isha.health/healing-music-playlist",
   },
-  openGraph: {
+  openGraph: buildOpenGraph({
     title: "Healing Music Playlist",
     description: "Relax and enhance your ketamine therapy experience with our carefully curated healing music playlist. Find peace and calmness while you undergo treatment for depression and anxiety at Isha Health, your trusted online ketamine clinic in San Francisco, CA.",
-    type: "website",
-    images: ["/images/isha_logo.webp"],
-    url: "https://isha.health/healing-music-playlist",
-  },
+    path: '/healing-music-playlist',
+  }),
   twitter: {
     card: "summary_large_image",
     title: "Healing Music Playlist",

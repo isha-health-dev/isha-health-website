@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "Online Ketamine Therapy: How It Works",
@@ -6,12 +7,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://isha.health/our-treatment-approach",
   },
-  openGraph: {
+  openGraph: buildOpenGraph({
     title: "Online Ketamine Therapy: How It Works",
     description: "At-home ketamine therapy with a physician. 88.8% of patients improve. Personalized treatment plans, telehealth sessions, medication delivered to your door.",
-    type: "website",
-    url: "https://isha.health/our-treatment-approach",
-  },
+    path: '/our-treatment-approach',
+  }),
   twitter: {
     card: "summary_large_image",
     title: "Online Ketamine Therapy: How It Works",

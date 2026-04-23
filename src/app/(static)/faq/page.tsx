@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "Isha Health - Ketamine Clinic for Depression & Anxiety | Frequently Asked Questions",
@@ -6,13 +7,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://isha.health/faq",
   },
-  openGraph: {
+  openGraph: buildOpenGraph({
     title: "Isha Health - Ketamine Clinic for Depression & Anxiety | Frequently Asked Questions",
     description: "Find answers to common questions about Isha Health, a San Francisco-based at-home ketamine clinic providing treatment for depression and anxiety. Learn more about our services, process, and outcomes.",
-    type: "website",
-    images: ["/images/isha_logo.webp"],
-    url: "https://isha.health/faq",
-  },
+    path: '/faq',
+  }),
   twitter: {
     card: "summary_large_image",
     title: "Isha Health - Ketamine Clinic for Depression & Anxiety | Frequently Asked Questions",

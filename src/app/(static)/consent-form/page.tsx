@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "Informed Consent",
@@ -6,12 +7,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://isha.health/consent-form",
   },
-  openGraph: {
+  openGraph: buildOpenGraph({
     title: "Informed Consent",
     description: "Review Isha Health's informed consent policy detailing the rights and responsibilities of clients, including privacy, risks, and treatment protocols.",
-    type: "website",
-    url: "https://isha.health/consent-form",
-  },
+    path: '/consent-form',
+  }),
   twitter: {
     card: "summary_large_image",
     title: "Informed Consent",

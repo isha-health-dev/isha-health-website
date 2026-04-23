@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "Dr Mai Shimada | Isha Health",
@@ -6,12 +7,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://isha.health/dr-mai-shimada",
   },
-  openGraph: {
+  openGraph: buildOpenGraph({
     title: "Dr Mai Shimada | Isha Health",
     description: "Dr. Mai Shimada is a board certified emergency medicine physician with over 10 years of experience . She decided to start Isha Health after discovering the transformative benefits of ketamine therapy for various mental health conditions. She completed Psychedelic Facilitation Certification Program at the UC Berkeley and is a study physician for psychedelic medicine clinical trials at Open Mind Collective.",
-    type: "website",
-    url: "https://isha.health/dr-mai-shimada",
-  },
+    path: '/dr-mai-shimada',
+  }),
   twitter: {
     card: "summary_large_image",
     title: "Dr Mai Shimada | Isha Health",

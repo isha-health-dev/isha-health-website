@@ -1,18 +1,17 @@
 import type { Metadata } from 'next';
+import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "Terms of Use",
-  description: "By using ISHA Health's online ketamine therapy services, you agree to our terms of use.",
+  description: "Review the Isha Health Terms of Use for our online ketamine therapy services, including payment, arbitration, account rules, and user responsibilities.",
   alternates: {
     canonical: "https://isha.health/terms-of-use",
   },
-  openGraph: {
+  openGraph: buildOpenGraph({
     title: "Terms of Use",
     description: "By using ISHA Health's online ketamine therapy services, you agree to our terms of use.",
-    type: "website",
-    images: ["/images/isha_logo.webp"],
-    url: "https://isha.health/terms-of-use",
-  },
+    path: '/terms-of-use',
+  }),
   twitter: {
     card: "summary_large_image",
     title: "Terms of Use",

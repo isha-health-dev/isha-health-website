@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "Appointment Scheduling for Current Patients",
@@ -6,13 +7,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://isha.health/current-patients/scheduling",
   },
-  openGraph: {
+  openGraph: buildOpenGraph({
     title: "Appointment Scheduling for Current Patients",
     description: "For current patients: Schedule your follow-up appointments quickly and easily with Isha Health. Manage your healthcare online in just a few clicks.",
-    type: "website",
-    images: ["/images/isha_logo.webp"],
-    url: "https://isha.health/current-patients/scheduling",
-  },
+    path: '/current-patients/scheduling',
+  }),
   twitter: {
     card: "summary_large_image",
     title: "Appointment Scheduling for Current Patients",

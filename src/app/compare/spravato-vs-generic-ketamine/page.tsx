@@ -1,16 +1,15 @@
 import type { Metadata } from 'next';
+import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "Spravato vs Generic Ketamine Compared",
   description: "Compare Spravato (esketamine) nasal spray with generic ketamine for depression. Understand differences in FDA approval, cost, administration, insurance coverage, and clinical evidence.",
   alternates: { canonical: "https://isha.health/compare/spravato-vs-generic-ketamine" },
-  openGraph: {
+  openGraph: buildOpenGraph({
     title: "Spravato vs Generic Ketamine Compared",
     description: "Compare Spravato (esketamine) nasal spray with generic ketamine for depression. Understand differences in FDA approval, cost, administration, insurance coverage, and clinical evidence.",
-    type: "website",
-    images: ["/images/isha_logo.webp"],
-    url: "https://isha.health/compare/spravato-vs-generic-ketamine",
-  },
+    path: '/compare/spravato-vs-generic-ketamine',
+  }),
   twitter: {
     card: "summary_large_image",
     title: "Spravato vs Generic Ketamine Compared",
@@ -33,7 +32,7 @@ export default function Page() {
   <div style="max-width:800px;margin:0 auto;padding:1.5rem;">
     <nav aria-label="Breadcrumb" style="font-size:0.8rem;color:#6b7280;margin-bottom:1.5rem;font-family:'Poppins',sans-serif;">
       <a href="/" style="color:#0d9488;text-decoration:none;">Home</a> /
-      <a href="/compare" style="color:#0d9488;text-decoration:none;">Compare</a> /
+      <a href="/resources" style="color:#0d9488;text-decoration:none;">Compare</a> /
       <span style="color:#9ca3af;">Spravato vs Generic Ketamine</span>
     </nav>
 

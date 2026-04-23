@@ -1,16 +1,15 @@
 import type { Metadata } from 'next';
+import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "At-Home Ketamine Therapy in Denver, CO",
   description: "Online ketamine-assisted therapy in Denver, Colorado. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
   alternates: { canonical: "https://isha.health/locations/ketamine-therapy-denver" },
-  openGraph: {
+  openGraph: buildOpenGraph({
     title: "At-Home Ketamine Therapy in Denver, CO",
     description: "Online ketamine-assisted therapy in Denver, Colorado. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
-    type: "website",
-    images: ["/images/isha_logo.webp"],
-    url: "https://isha.health/locations/ketamine-therapy-denver",
-  },
+    path: '/locations/ketamine-therapy-denver',
+  }),
   twitter: {
     card: "summary_large_image",
     title: "At-Home Ketamine Therapy in Denver, CO",

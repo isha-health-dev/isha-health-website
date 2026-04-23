@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "Ketamine Therapy for Depression: 88.8% Improve",
@@ -6,13 +7,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://isha.health/ketamine-therapy-for-depression",
   },
-  openGraph: {
+  openGraph: buildOpenGraph({
     title: "Ketamine Therapy for Depression: 88.8% Improve",
     description: "88.8% of patients with moderate-to-severe depression improve with ketamine therapy. Physician-led, at-home treatment starting at $350.",
-    type: "website",
-    images: ["/images/isha_logo.webp"],
-    url: "https://isha.health/ketamine-therapy-for-depression",
-  },
+    path: '/ketamine-therapy-for-depression',
+  }),
   twitter: {
     card: "summary_large_image",
     title: "Ketamine Therapy for Depression: 88.8% Improve",

@@ -1,16 +1,15 @@
 import type { Metadata } from 'next';
+import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "At-Home Ketamine Therapy in Portland, OR",
   description: "Online ketamine-assisted therapy in Portland, Oregon. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
   alternates: { canonical: "https://isha.health/locations/ketamine-therapy-portland" },
-  openGraph: {
+  openGraph: buildOpenGraph({
     title: "At-Home Ketamine Therapy in Portland, OR",
     description: "Online ketamine-assisted therapy in Portland, Oregon. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
-    type: "website",
-    images: ["/images/isha_logo.webp"],
-    url: "https://isha.health/locations/ketamine-therapy-portland",
-  },
+    path: '/locations/ketamine-therapy-portland',
+  }),
   twitter: {
     card: "summary_large_image",
     title: "At-Home Ketamine Therapy in Portland, OR",

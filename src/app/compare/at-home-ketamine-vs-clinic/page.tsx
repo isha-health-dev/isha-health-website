@@ -1,16 +1,15 @@
 import type { Metadata } from 'next';
+import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "At-Home Ketamine vs In-Clinic Ketamine",
   description: "Compare at-home telehealth ketamine therapy with in-clinic ketamine treatment. Learn about differences in convenience, supervision, cost, safety, and outcomes to make an informed decision.",
   alternates: { canonical: "https://isha.health/compare/at-home-ketamine-vs-clinic" },
-  openGraph: {
+  openGraph: buildOpenGraph({
     title: "At-Home Ketamine vs In-Clinic Ketamine",
     description: "Compare at-home telehealth ketamine therapy with in-clinic ketamine treatment. Learn about differences in convenience, supervision, cost, safety, and outcomes to make an informed decision.",
-    type: "website",
-    images: ["/images/isha_logo.webp"],
-    url: "https://isha.health/compare/at-home-ketamine-vs-clinic",
-  },
+    path: '/compare/at-home-ketamine-vs-clinic',
+  }),
   twitter: {
     card: "summary_large_image",
     title: "At-Home Ketamine vs In-Clinic Ketamine",
@@ -33,7 +32,7 @@ export default function Page() {
   <div style="max-width:800px;margin:0 auto;padding:1.5rem;">
     <nav aria-label="Breadcrumb" style="font-size:0.8rem;color:#6b7280;margin-bottom:1.5rem;font-family:'Poppins',sans-serif;">
       <a href="/" style="color:#0d9488;text-decoration:none;">Home</a> /
-      <a href="/compare" style="color:#0d9488;text-decoration:none;">Compare</a> /
+      <a href="/resources" style="color:#0d9488;text-decoration:none;">Compare</a> /
       <span style="color:#9ca3af;">At-Home Ketamine vs Clinic</span>
     </nav>
 

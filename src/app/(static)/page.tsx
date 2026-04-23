@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "Online Ketamine Therapy for Depression & Anxiety",
@@ -6,13 +7,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://isha.health",
   },
-  openGraph: {
+  openGraph: buildOpenGraph({
     title: "Online Ketamine Therapy for Depression & Anxiety",
     description: "88.8% of patients improve. Physician-led at-home ketamine therapy for depression, anxiety, and PTSD. $350 consultation, available in 9 states.",
-    type: "website",
-    url: "https://isha.health",
-    images: ["/images/isha_logo.webp"],
-  },
+    path: '/',
+  }),
   twitter: {
     card: "summary_large_image",
     title: "Online Ketamine Therapy for Depression & Anxiety",
