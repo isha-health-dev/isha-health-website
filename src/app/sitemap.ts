@@ -4,6 +4,13 @@ import { join } from 'path';
 import { getAllTherapists } from '@/lib/therapist-queries';
 import { getTherapistSlug } from '@/lib/therapist-types';
 
+// Regenerate hourly so new therapists + newly-published posts surface without
+// waiting for a full redeploy. Without this export, Next.js was treating the
+// route as fully dynamic, and content/blog/*.mdx wasn't in the runtime bundle
+// — getBlogPosts() fell through to the catch and the sitemap shipped with zero
+// /post/ URLs.
+export const revalidate = 3600;
+
 const BASE_URL = 'https://isha.health';
 
 function getBlogPosts(): { slug: string; date: string }[] {

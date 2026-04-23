@@ -9,6 +9,13 @@ const nextConfig = {
       },
     ],
   },
+  // sitemap.ts and /post/[slug] read MDX from content/blog via readdirSync.
+  // Vercel's file-trace doesn't pick up dynamic process.cwd() reads, so these
+  // files must be explicitly bundled into the serverless function output.
+  outputFileTracingIncludes: {
+    '/sitemap.xml': ['./content/blog/**/*'],
+    '/post/[slug]': ['./content/blog/**/*'],
+  },
   async redirects() {
     return [
       // Fix 404 location aliases
