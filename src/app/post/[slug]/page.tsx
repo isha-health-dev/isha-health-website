@@ -3,7 +3,12 @@ import { notFound } from 'next/navigation';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import { getBlogPost, getAllBlogPosts } from '@/lib/blog';
 import { buildOpenGraph } from '@/lib/seo';
+import { mdxComponents } from '@/lib/mdx-components';
+import imageDims from '@/lib/image-dims.json';
 import Link from 'next/link';
+import Image from 'next/image';
+
+const dims = imageDims as Record<string, { w: number; h: number }>;
 
 // Fully static — no ISR reads, no dynamic params
 export const dynamicParams = false;
@@ -234,17 +239,33 @@ export default async function BlogPostPage({
               </a>
             </span>
           </div>
-          {post.image && (
-            <div style={{ marginBottom: '2rem' }}>
-              <img
-                src={post.image}
-                alt={post.imageAlt || post.title}
-                style={{ width: '100%', borderRadius: '8px' }}
-              />
-            </div>
-          )}
+          {post.image && (() => {
+            const m = dims[post.image];
+            return (
+              <div style={{ marginBottom: '2rem' }}>
+                {m ? (
+                  <Image
+                    src={post.image}
+                    alt={post.imageAlt || post.title}
+                    width={m.w}
+                    height={m.h}
+                    priority
+                    sizes="(max-width: 768px) 100vw, 800px"
+                    style={{ width: '100%', height: 'auto', borderRadius: '8px' }}
+                  />
+                ) : (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    src={post.image}
+                    alt={post.imageAlt || post.title}
+                    style={{ width: '100%', borderRadius: '8px' }}
+                  />
+                )}
+              </div>
+            );
+          })()}
           <div className="rich-text w-richtext">
-            <MDXRemote source={post.content} />
+            <MDXRemote source={post.content} components={mdxComponents} />
           </div>
         </div>
       </div>
@@ -277,13 +298,26 @@ export default async function BlogPostPage({
                   href={`/post/${related.slug}`}
                   style={{ textDecoration: 'none', color: 'inherit', display: 'block', borderRadius: '10px', overflow: 'hidden', border: '1px solid #e5e7eb', transition: 'box-shadow 0.2s ease' }}
                 >
-                  {related.thumbnail && (
-                    <img
-                      src={related.thumbnail}
-                      alt={related.imageAlt || related.title}
-                      style={{ width: '100%', height: '160px', objectFit: 'cover', display: 'block' }}
-                    />
-                  )}
+                  {related.thumbnail && (() => {
+                    const m = dims[related.thumbnail];
+                    return m ? (
+                      <Image
+                        src={related.thumbnail}
+                        alt={related.imageAlt || related.title}
+                        width={m.w}
+                        height={m.h}
+                        sizes="240px"
+                        style={{ width: '100%', height: '160px', objectFit: 'cover', display: 'block' }}
+                      />
+                    ) : (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img
+                        src={related.thumbnail}
+                        alt={related.imageAlt || related.title}
+                        style={{ width: '100%', height: '160px', objectFit: 'cover', display: 'block' }}
+                      />
+                    );
+                  })()}
                   <div style={{ padding: '1rem' }}>
                     <h3 style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.95rem', fontWeight: 600, color: '#0f766e', margin: '0 0 0.5rem', lineHeight: 1.3 }}>{related.title}</h3>
                     {related.description && (

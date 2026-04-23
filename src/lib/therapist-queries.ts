@@ -20,6 +20,19 @@ const THERAPIST_SELECT = `
 // Emails to exclude from the public directory
 const EXCLUDED_EMAILS = ['mai@isha.health'];
 
+// Profiles with these first-name / last-name patterns are treated as test data.
+// Match is case-insensitive and trims whitespace.
+function looksLikeTestProfile(t: { first_name?: string; last_name?: string; email?: string }): boolean {
+  const first = (t.first_name || '').trim().toLowerCase();
+  const last = (t.last_name || '').trim().toLowerCase();
+  const email = (t.email || '').trim().toLowerCase();
+  if (first === 'test' || last === 'test') return true;
+  if (first.startsWith('test ') || last.startsWith('test ')) return true;
+  if (first === 'test' && last === 'signup') return true;
+  if (email.startsWith('test+') || email.startsWith('test@')) return true;
+  return false;
+}
+
 export async function getAllTherapists(): Promise<TherapistWithRelations[]> {
   const { data, error } = await supabase
     .from('therapist')
@@ -30,7 +43,7 @@ export async function getAllTherapists(): Promise<TherapistWithRelations[]> {
   if (error) throw error;
   // Filter out excluded profiles (staff, test accounts, etc.)
   return ((data as TherapistWithRelations[]) || []).filter(
-    (t) => !EXCLUDED_EMAILS.includes(t.email)
+    (t) => !EXCLUDED_EMAILS.includes(t.email) && !looksLikeTestProfile(t)
   );
 }
 

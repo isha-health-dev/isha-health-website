@@ -35,6 +35,7 @@ yarn-error.log*
 # source data (not needed in deploy)
 /webflow-scrape
 /scripts
+!/scripts/generate-image-dimensions.mjs
 *.csv
 
 # typescript
