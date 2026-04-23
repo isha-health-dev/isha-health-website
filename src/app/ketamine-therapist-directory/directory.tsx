@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import type { TherapistWithRelations } from '@/lib/therapist-types';
 import {
   formatRole,
@@ -571,12 +572,13 @@ function TherapistCard({ therapist: t }: { therapist: TherapistWithRelations }) 
     >
       <div className="flex items-start gap-4">
         {t.profile_pic ? (
-          <img
+          <Image
             src={getOptimizedProfilePic(t.profile_pic, 128) || t.profile_pic}
             alt={name}
             className="w-16 h-16 rounded-full object-cover flex-shrink-0"
             width={64}
             height={64}
+            sizes="64px"
             loading="lazy"
             style={{ objectPosition: t.profile_pic_position || 'center center' }}
           />

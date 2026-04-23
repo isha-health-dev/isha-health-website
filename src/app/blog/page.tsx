@@ -1,8 +1,12 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { getAllBlogPosts } from '@/lib/blog';
 import { buildOpenGraph } from '@/lib/seo';
+import imageDims from '@/lib/image-dims.json';
 import { NewsletterForm } from '../newsletter-form';
+
+const dims = imageDims as Record<string, { w: number; h: number }>;
 
 const POSTS_PER_PAGE = 12;
 
@@ -242,13 +246,26 @@ export default function BlogPage({
                 transition: 'box-shadow 0.2s',
               }}
             >
-              {post.thumbnail && (
-                <img
-                  src={post.thumbnail}
-                  alt={post.imageAlt || post.title}
-                  style={{ width: '100%', height: '200px', objectFit: 'cover' }}
-                />
-              )}
+              {post.thumbnail && (() => {
+                const m = dims[post.thumbnail];
+                return m ? (
+                  <Image
+                    src={post.thumbnail}
+                    alt={post.imageAlt || post.title}
+                    width={m.w}
+                    height={m.h}
+                    sizes="(max-width: 768px) 100vw, 360px"
+                    style={{ width: '100%', height: '200px', objectFit: 'cover' }}
+                  />
+                ) : (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    src={post.thumbnail}
+                    alt={post.imageAlt || post.title}
+                    style={{ width: '100%', height: '200px', objectFit: 'cover' }}
+                  />
+                );
+              })()}
               <div style={{ padding: '1.25rem' }}>
                 <h2
                   style={{

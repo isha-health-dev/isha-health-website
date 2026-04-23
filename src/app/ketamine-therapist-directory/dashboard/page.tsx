@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import { createBrowserSupabase } from '@/lib/supabase-browser';
 
 interface TherapistProfile {
@@ -415,9 +416,12 @@ export default function DashboardPage() {
         <h2 style={{ fontSize: '1.1rem', fontWeight: 600, color: '#111827', marginBottom: '1rem' }}>Profile Photo</h2>
         <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
           {profile.profile_pic ? (
-            <img
+            <Image
               src={profile.profile_pic}
               alt="Profile"
+              width={100}
+              height={100}
+              sizes="100px"
               style={{ width: '100px', height: '100px', borderRadius: '50%', objectFit: 'cover' }}
             />
           ) : (

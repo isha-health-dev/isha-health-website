@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import { getTherapistBySlug, getAllTherapistSlugs } from '@/lib/therapist-queries';
 import {
   formatRole,
@@ -198,13 +199,14 @@ export default async function TherapistProfilePage({
         {/* Header */}
         <div className="flex flex-col sm:flex-row items-start gap-6 mb-8">
           {t.profile_pic ? (
-            <img
+            <Image
               src={getOptimizedProfilePic(t.profile_pic, 256) || t.profile_pic}
               alt={`${name} - Ketamine-Assisted Psychotherapist`}
               className="w-32 h-32 rounded-full object-cover flex-shrink-0"
               width={128}
               height={128}
-              loading="lazy"
+              sizes="128px"
+              priority
               style={{ objectPosition: t.profile_pic_position || 'center center' }}
             />
           ) : (

@@ -1,5 +1,9 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import { buildOpenGraph } from '@/lib/seo';
+import imageDims from '@/lib/image-dims.json';
+
+const dims = imageDims as Record<string, { w: number; h: number }>;
 
 export const metadata: Metadata = {
   title: "ISHA Health Press - Online Ketamine Therapy",
@@ -120,12 +124,27 @@ export default function Page() {
               transition: 'box-shadow 0.2s',
             }}
           >
-            <img
-              src={m.img}
-              alt={m.title}
-              loading="lazy"
-              style={{ width: '100%', height: '200px', objectFit: 'cover' }}
-            />
+            {(() => {
+              const d = dims[m.img];
+              return d ? (
+                <Image
+                  src={m.img}
+                  alt={m.title}
+                  width={d.w}
+                  height={d.h}
+                  sizes="(max-width: 768px) 100vw, 360px"
+                  style={{ width: '100%', height: '200px', objectFit: 'cover' }}
+                />
+              ) : (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  src={m.img}
+                  alt={m.title}
+                  loading="lazy"
+                  style={{ width: '100%', height: '200px', objectFit: 'cover' }}
+                />
+              );
+            })()}
             <div style={{ padding: '1.25rem' }}>
               <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.7rem', color: '#0d9488', fontWeight: 600, textTransform: 'uppercase' as const, letterSpacing: '0.05em', marginBottom: '0.25rem' }}>{m.subtitle}</p>
               <h2 style={{ fontFamily: "'Libre Baskerville', serif", fontSize: '1.05rem', fontWeight: 700, color: '#111827', marginBottom: '0.5rem', lineHeight: 1.3 }}>{m.title}</h2>

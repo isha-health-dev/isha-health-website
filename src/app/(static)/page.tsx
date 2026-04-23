@@ -1,5 +1,9 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import { buildOpenGraph } from '@/lib/seo';
+import imageDims from '@/lib/image-dims.json';
+
+const dims = imageDims as Record<string, { w: number; h: number }>;
 
 export const metadata: Metadata = {
   title: "Online Ketamine Therapy for Depression & Anxiety",
@@ -238,7 +242,14 @@ export default function Page() {
         {/* Founder */}
         <div style={{ display: 'flex', flexWrap: 'wrap' as const, gap: '2rem', alignItems: 'center', marginBottom: '2.5rem', padding: '2rem', background: '#fff', borderRadius: '12px', border: '1px solid #e5e7eb' }}>
           <div style={{ flex: '0 0 120px' }}>
-            <img src="/images/94f52bd2_6539c2caf1b0c2065ced5bf4_mai.png" alt="Mai Shimada, MD" style={{ width: '120px', height: '120px', borderRadius: '50%', objectFit: 'cover' }} loading="lazy" />
+            <Image
+              src="/images/94f52bd2_6539c2caf1b0c2065ced5bf4_mai.png"
+              alt="Mai Shimada, MD"
+              width={dims['/images/94f52bd2_6539c2caf1b0c2065ced5bf4_mai.png']?.w ?? 240}
+              height={dims['/images/94f52bd2_6539c2caf1b0c2065ced5bf4_mai.png']?.h ?? 240}
+              sizes="120px"
+              style={{ width: '120px', height: '120px', borderRadius: '50%', objectFit: 'cover' }}
+            />
           </div>
           <div style={{ flex: '1 1 300px' }}>
             <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.75rem', color: '#0d9488', fontWeight: 600, textTransform: 'uppercase' as const, letterSpacing: '0.05em', marginBottom: '0.25rem' }}>Founder</p>
@@ -251,9 +262,20 @@ export default function Page() {
 
         {/* Clinician Photo Grid */}
         <div style={{ display: 'flex', flexWrap: 'wrap' as const, justifyContent: 'center', gap: '0.75rem', marginBottom: '2rem' }}>
-          {team.slice(1).map((m, i) => (
-            <img key={i} src={m.img} alt={m.name} style={{ width: '72px', height: '72px', borderRadius: '50%', objectFit: 'cover', border: '2px solid #fff', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }} loading="lazy" />
-          ))}
+          {team.slice(1).map((m, i) => {
+            const d = dims[m.img];
+            return (
+              <Image
+                key={i}
+                src={m.img}
+                alt={m.name}
+                width={d?.w ?? 144}
+                height={d?.h ?? 144}
+                sizes="72px"
+                style={{ width: '72px', height: '72px', borderRadius: '50%', objectFit: 'cover', border: '2px solid #fff', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}
+              />
+            );
+          })}
         </div>
 
         <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.85rem', color: '#6b7280', textAlign: 'center', marginBottom: '1.5rem' }}>Our network includes 600+ clinicians across the country &mdash; psychiatrists, psychologists, LMFTs, and LCSWs.</p>
