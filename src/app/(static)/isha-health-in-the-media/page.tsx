@@ -39,7 +39,7 @@ const media = [
     desc: "#78 — Dr. Mai Shimada, on Ketamine Assisted Therapy & Founding as an MD",
     quote: "At the ACE NextGen Unity Conference in New York City, Dr. Mai joined a panel discussion on Balancing Business and Well-Being, sharing insights on the intersection of entrepreneurship and mental health.",
     img: "/images/d6f8e999_6734811c7fd486f1b9e7b99a_acenexegen.png",
-    url: "https://www.acenextgen.org/unity2024",
+    url: "https://www.acenextgen.org/events",
     cta: "Learn More",
   },
   {
