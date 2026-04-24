@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import imageDims from './image-dims.json';
+import { KeyTakeaways, Callout } from './mdx-callouts';
 
 const dims: Record<string, { w: number; h: number }> = imageDims;
 
@@ -37,6 +38,11 @@ function MDXImg({ src, alt, title }: { src?: string; alt?: string; title?: strin
   );
 }
 
+// Components exposed to blog MDX. `KeyTakeaways` and `Callout` can be
+// invoked directly in any .mdx file without an import statement; the
+// img override maps markdown images to next/image.
 export const mdxComponents = {
   img: MDXImg,
+  KeyTakeaways,
+  Callout,
 };

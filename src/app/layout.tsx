@@ -54,10 +54,13 @@ const navbarHtml = `
       </a>
     </div>
     <!-- Right: links + CTA -->
-    <div style="display:flex;align-items:center;gap:12px;flex-shrink:0;">
-      <a href="/collaborate-with-isha-health" class="desktop-only" style="font-size:11px;letter-spacing:0.5px;color:#888;text-decoration:none;font-weight:500;">FOR CLINICIANS</a>
-      <a href="/pricing" class="desktop-only" style="font-size:13px;font-weight:600;letter-spacing:1px;color:#333;text-decoration:none;">PRICING</a>
-      <a id="check-availability" href="/appointment" class="nav-cta" style="background:#1abc9c;color:#fff;padding:10px 22px;border-radius:6px;font-size:13px;font-weight:600;letter-spacing:0.5px;text-decoration:none;white-space:nowrap;">CHECK AVAILABILITY</a>
+    <div style="display:flex;align-items:center;gap:18px;flex-shrink:0;">
+      <a href="/ketamine-therapist-directory" class="desktop-only nav-link" style="font-size:13px;font-weight:500;color:#374151;text-decoration:none;">Find a therapist</a>
+      <a href="/blog" class="desktop-only nav-link" style="font-size:13px;font-weight:500;color:#374151;text-decoration:none;">Blog</a>
+      <a href="/outcomes" class="desktop-only nav-link" style="font-size:13px;font-weight:500;color:#374151;text-decoration:none;">Outcomes</a>
+      <a href="/pricing" class="desktop-only nav-link" style="font-size:13px;font-weight:500;color:#374151;text-decoration:none;">Pricing</a>
+      <a href="/collaborate-with-isha-health" class="desktop-only" style="font-size:11px;letter-spacing:0.5px;color:#9ca3af;text-decoration:none;font-weight:500;">FOR CLINICIANS</a>
+      <a id="check-availability" href="/appointment" class="nav-cta" style="background:#0d9488;color:#fff;padding:10px 20px;border-radius:6px;font-size:13px;font-weight:600;letter-spacing:0.3px;text-decoration:none;white-space:nowrap;">Check availability</a>
     </div>
   </div>
   <!-- Overlay backdrop -->
@@ -102,6 +105,11 @@ const navbarHtml = `
   </div>
   <div style="height:1px;background:#222;"></div>
   <style>
+    .nav-link:hover { color: #0d9488 !important; }
+    @media (max-width: 1024px) {
+      .desktop-only.nav-link[href="/ketamine-therapist-directory"],
+      .desktop-only.nav-link[href="/outcomes"] { display: none !important; }
+    }
     @media (max-width: 768px) {
       .desktop-only { display: none !important; }
       .nav-cta { padding: 8px 14px !important; font-size: 11px !important; }
@@ -322,7 +330,7 @@ gtag('config', 'AW-16993591045');`,
           crossOrigin="anonymous"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Poppins:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap"
           rel="stylesheet"
         />
       </head>

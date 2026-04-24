@@ -67,25 +67,30 @@ export default function Page() {
     {/* Hero */}
     <div
       dangerouslySetInnerHTML={{
-        __html: `<div style="background-image:url('/images/hero-bg.webp');background-size:cover;background-position:right center;min-height:520px;display:flex;align-items:center;padding:4rem 1.5rem;">
-          <div style="max-width:550px;padding-left:8%;">
-            <h1 style="font-family:'Libre Baskerville',serif;font-size:3rem;font-weight:700;color:#111827;line-height:1.15;margin-bottom:1.25rem;">Unlock Your Mind's Potential</h1>
-            <p style="font-family:'Poppins',sans-serif;font-size:1rem;color:#4b5563;line-height:1.7;margin-bottom:0.75rem;">Personalized mental health care for depression, anxiety, and PTSD</p>
-            <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#4b5563;line-height:1.7;margin-bottom:2rem;">Are you struggling to feel like yourself? Isha Health combines ketamine-assisted therapy with holistic care — available via telemedicine in 9 states.</p>
-            <a href="/am-i-a-candidate" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.9rem 2.5rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:1rem;font-family:'Poppins',sans-serif;">Am I a Candidate?</a>
+        __html: `<div class="isha-hero" style="background:linear-gradient(180deg,#f0fdfa 0%,#ffffff 65%);padding:5rem 1.5rem 4rem;border-bottom:1px solid #e5e7eb;">
+          <div style="max-width:820px;margin:0 auto;text-align:center;">
+            <div style="display:inline-flex;align-items:center;gap:0.5rem;background:#ccfbf1;color:#0f766e;padding:0.35rem 0.9rem;border-radius:999px;font-family:'Poppins',sans-serif;font-size:0.78rem;font-weight:600;letter-spacing:0.02em;margin-bottom:1.5rem;">
+              <span style="width:6px;height:6px;border-radius:50%;background:#0d9488;"></span>
+              Physician-led • Available in 9 states
+            </div>
+            <h1 style="font-family:'Libre Baskerville',serif;font-size:3.2rem;font-weight:700;color:#0f172a;line-height:1.1;letter-spacing:-0.01em;margin-bottom:1.25rem;">Unlock your mind&rsquo;s potential</h1>
+            <p style="font-family:'Poppins',sans-serif;font-size:1.1rem;color:#4b5563;line-height:1.6;max-width:640px;margin:0 auto 2rem;">Personalized ketamine-assisted therapy for depression, anxiety, and PTSD &mdash; delivered to your home by a board-certified physician.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:0.75rem;justify-content:center;margin-bottom:2.5rem;">
+              <a href="/am-i-a-candidate" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.95rem 2.25rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:1rem;font-family:'Poppins',sans-serif;box-shadow:0 1px 2px rgba(15,118,110,0.15);">Am I a candidate?</a>
+              <a href="/pricing" style="display:inline-block;background-color:#ffffff;color:#0f766e;padding:0.95rem 2.25rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:1rem;font-family:'Poppins',sans-serif;border:1px solid #99f6e4;">See pricing</a>
+            </div>
+            <div style="display:flex;flex-wrap:wrap;gap:2rem;justify-content:center;font-family:'Poppins',sans-serif;font-size:0.85rem;color:#4b5563;">
+              <span><strong style="color:#0f766e;">88.8%</strong> improvement rate</span>
+              <span><strong style="color:#0f766e;">500+</strong> patients treated</span>
+              <span><strong style="color:#0f766e;">$350</strong> consultation</span>
+            </div>
           </div>
         </div>
         <style>
           @media (max-width: 768px) {
-            div[style*="hero-bg.webp"] {
-              background-image: url('/images/hero-bg-mobile.webp') !important;
-              background-position: center !important;
-              min-height: 400px !important;
-            }
-            div[style*="hero-bg.webp"] > div {
-              padding-left: 5% !important;
-              max-width: 100% !important;
-            }
+            .isha-hero { padding: 3rem 1.25rem 2.5rem !important; }
+            .isha-hero h1 { font-size: 2.2rem !important; }
+            .isha-hero p { font-size: 1rem !important; }
           }
         </style>`,
       }}
@@ -218,16 +223,22 @@ export default function Page() {
 
     {/* Testimonials */}
     <div style={{ backgroundColor: '#fff', padding: '4rem 1.5rem', borderTop: '1px solid #e5e7eb' }}>
-      <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
-        <h2 style={{ fontFamily: "'Libre Baskerville', serif", fontSize: '1.8rem', fontWeight: 700, color: '#111827', textAlign: 'center', marginBottom: '0.5rem' }}>What Our Patients Say</h2>
+      <div style={{ maxWidth: '1080px', margin: '0 auto' }}>
+        <h2 style={{ fontFamily: "'Libre Baskerville', serif", fontSize: '1.8rem', fontWeight: 700, color: '#111827', textAlign: 'center', marginBottom: '0.5rem' }}>What our patients say</h2>
         <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '1rem', color: '#6b7280', textAlign: 'center', marginBottom: '2.5rem' }}>Real stories from real patients across the country</p>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '1.25rem' }}>
-          {testimonials.map((t, i) => (
-            <div key={i} style={{ padding: '1.5rem', border: '1px solid #e5e7eb', borderRadius: '10px', background: '#fafafa' }}>
-              <p style={{ fontFamily: "'Source Sans Pro', sans-serif", fontSize: '0.9rem', color: '#374151', lineHeight: 1.6, fontStyle: 'italic', marginBottom: '0.75rem' }}>&ldquo;{t.quote}&rdquo;</p>
-              <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.8rem', color: '#6b7280', fontWeight: 600 }}>&mdash; {t.name}, {t.loc}</p>
-            </div>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem' }}>
+          {testimonials.slice(0, 3).map((t, i) => (
+            <blockquote key={i} style={{ margin: 0, padding: '2rem', border: '1px solid #e5e7eb', borderRadius: '12px', background: '#fafafa', borderLeft: '3px solid #0d9488', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+              <p style={{ fontFamily: "'Libre Baskerville', serif", fontSize: '1.05rem', color: '#111827', lineHeight: 1.6, marginBottom: '1.25rem' }}>&ldquo;{t.quote}&rdquo;</p>
+              <footer style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.85rem', color: '#4b5563', fontWeight: 500 }}>
+                <span style={{ color: '#111827', fontWeight: 600 }}>{t.name}</span>
+                <span style={{ color: '#9ca3af' }}> &middot; {t.loc}</span>
+              </footer>
+            </blockquote>
           ))}
+        </div>
+        <div style={{ textAlign: 'center', marginTop: '2.5rem' }}>
+          <a href="/ketamine-therapy-reviews" style={{ display: 'inline-block', fontFamily: "'Poppins', sans-serif", fontSize: '0.95rem', color: '#0f766e', fontWeight: 600, textDecoration: 'none', borderBottom: '1px solid #99f6e4', paddingBottom: '2px' }}>Read more patient stories &rarr;</a>
         </div>
       </div>
     </div>
