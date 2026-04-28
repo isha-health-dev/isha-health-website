@@ -49,6 +49,12 @@ export default async function Page() {
       If you're in Austin and struggling with depression, anxiety, or PTSD, you don't need to visit a clinic. Isha Health brings physician-led ketamine-assisted therapy directly to you through secure telemedicine — no traffic, no waiting rooms, no disruption to your routine.
     </p>
 
+
+    <div style="background:#fff7ed;border:1px solid #fed7aa;border-left:4px solid #ea580c;border-radius:10px;padding:1rem 1.25rem;margin:1.5rem 0 2rem;">
+      <p style="font-family:'Poppins',sans-serif;font-size:0.85rem;font-weight:700;letter-spacing:0.04em;color:#9a3412;margin-bottom:0.5rem;text-transform:uppercase;">If you&rsquo;re in crisis</p>
+      <p style="font-family:'Poppins',sans-serif;font-size:0.92rem;color:#7c2d12;line-height:1.6;margin:0;">Ketamine therapy is not appropriate for an active crisis. If you&rsquo;re experiencing thoughts of suicide or self-harm right now, call or text <strong>988</strong> (Suicide &amp; Crisis Lifeline), text <strong>HOME to 741741</strong> (Crisis Text Line), or call <strong>911</strong>. These are free, confidential, and available 24/7.</p>
+    </div>
+
     <h2 style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#111827;margin-bottom:1rem;">How it works</h2>
     <div style="display:flex;flex-wrap:wrap;gap:1rem;margin-bottom:2rem;">
       <div style="flex:1 1 200px;padding:1.25rem;border:1px solid #e5e7eb;border-radius:10px;background:#fafafa;">
@@ -93,6 +99,16 @@ export default async function Page() {
     <p style="font-family:'Poppins',sans-serif;font-size:0.95rem;line-height:1.8;color:#374151;margin-bottom:1.25rem;text-wrap:pretty;">
       Major healthcare systems serving the area include Dell Medical School at UT Austin, Ascension Seton, Baylor Scott & White, and St. David's HealthCare. Isha Health complements these in-system options with a fully telehealth alternative — accessible from Downtown, East Austin, South Austin, Round Rock, Cedar Park, and Westlake and anywhere else with a stable internet connection. Sessions are scheduled in your local Central Time, and our physician network is licensed to prescribe in Texas.
     </p>
+
+    <h3 style="font-family:'Libre Baskerville',serif;font-size:1.05rem;font-weight:700;color:#111827;margin-top:1.5rem;margin-bottom:0.5rem;">Mental health context in Austin</h3>
+    <p style="font-family:'Poppins',sans-serif;font-size:0.95rem;line-height:1.8;color:#374151;margin-bottom:1rem;text-wrap:pretty;">
+      Austin's tech workforce reports elevated rates of anxiety and burnout-related depression, while the University of Texas at Austin student population accounts for a steady volume of college-age depression and anxiety diagnoses.
+    </p>
+    <h3 style="font-family:'Libre Baskerville',serif;font-size:1.05rem;font-weight:700;color:#111827;margin-top:1.25rem;margin-bottom:0.5rem;">Local research and clinical trials</h3>
+    <p style="font-family:'Poppins',sans-serif;font-size:0.95rem;line-height:1.8;color:#374151;margin-bottom:1rem;text-wrap:pretty;">
+      Dell Medical School at UT Austin runs an active psychiatry research program and has been a participating site for several recent depression and trauma-focused trials. For active studies, see <a href="https://clinicaltrials.gov/search?term=ketamine%20Austin&aggFilters=status:rec" rel="nofollow" style="color:#0d9488;text-decoration:underline;">recruiting ketamine trials in Austin on ClinicalTrials.gov</a>.
+    </p>
+
 
 ${therapistsHtml}
     <h2 style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#111827;margin-bottom:1rem;">Frequently asked questions</h2>
