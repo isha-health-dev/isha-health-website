@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { buildOpenGraph } from '@/lib/seo';
+import { getTherapistsForCity } from '@/lib/city-therapists';
 
 export const metadata: Metadata = {
   title: "At-Home Ketamine Therapy in Atlanta, GA",
@@ -18,7 +19,16 @@ export const metadata: Metadata = {
   },
 };
 
-export default function Page() {
+export default async function Page() {
+  const therapists = await getTherapistsForCity('ketamine-therapy-atlanta');
+  const therapistsHtml = therapists.length > 0
+    ? `
+    <h2 style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#111827;margin-top:2.5rem;margin-bottom:1rem;">Ketamine-assisted therapists in Atlanta</h2>
+    <p style="font-family:'Poppins',sans-serif;font-size:0.95rem;color:#4b5563;line-height:1.6;margin-bottom:1.25rem;">These licensed clinicians work with Atlanta-area patients receiving ketamine therapy. Many can complement your Isha Health treatment with integration support.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:0.75rem;margin-bottom:0.75rem;">${therapists.map((t) => `<a href="/ketamine-therapist-directory/${t.slug}" style="display:block;padding:0.85rem 1rem;border:1px solid #e5e7eb;border-radius:10px;text-decoration:none;color:inherit;background:#fafafa;"><span style="display:block;font-family:&apos;Poppins&apos;,sans-serif;font-weight:600;color:#111827;font-size:0.95rem;">${t.name}</span>${t.city ? `<span style="display:block;font-family:&apos;Poppins&apos;,sans-serif;font-size:0.8rem;color:#6b7280;margin-top:0.15rem;">${t.city}, ${t.state || ''}</span>` : ''}</a>`).join('')}</div>
+    <p style="font-family:'Poppins',sans-serif;font-size:0.85rem;color:#6b7280;"><a href="/ketamine-therapist-directory" style="color:#0d9488;text-decoration:underline;">Browse the full clinician directory →</a></p>
+    `
+    : '';
   return (
     <div
       dangerouslySetInnerHTML={{
@@ -84,6 +94,7 @@ export default function Page() {
       Major healthcare systems serving the area include Emory Healthcare, Piedmont Healthcare, Wellstar Health System, and Grady Health System. Isha Health complements these in-system options with a fully telehealth alternative — accessible from Midtown, Buckhead, Decatur, Sandy Springs, Marietta, and Alpharetta and anywhere else with a stable internet connection. Sessions are scheduled in your local Eastern Time, and our physician network is licensed to prescribe in Georgia.
     </p>
 
+${therapistsHtml}
     <h2 style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#111827;margin-bottom:1rem;">Frequently asked questions</h2>
     <div style="margin-bottom:2rem;">
       <div style="border-bottom:1px solid #e5e7eb;padding:1rem 0;">
