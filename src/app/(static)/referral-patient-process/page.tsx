@@ -100,7 +100,7 @@ export default function Page() {
             Step 4
           </h3>
           <p style="margin:0;">
-            Direct your patient to our website (<a href="https://www.isha.health/" target="_blank" style="color:#0d9488;text-decoration:underline;">https://www.isha.health</a>) to book the initial evaluation with us.
+            Direct your patient to our website (<a href="https://isha.health/" target="_blank" style="color:#0d9488;text-decoration:underline;">isha.health</a>) to book the initial evaluation with us.
           </p>
         </div>
 

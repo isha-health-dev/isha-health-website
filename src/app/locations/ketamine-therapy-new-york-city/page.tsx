@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "At-Home Ketamine Therapy in New York City, NY",
   description: "NYC ketamine therapy from home — $350/session, no clinic visit. 88.8% of patients improve. Same-day appointments available.",
   alternates: { canonical: "https://isha.health/locations/ketamine-therapy-new-york-city" },
+  robots: { index: true, follow: true }, // Major metro — overrides locations/layout.tsx noindex
   openGraph: buildOpenGraph({
     title: "At-Home Ketamine Therapy in New York City, NY",
     description: "NYC ketamine therapy from home — $350/session, no clinic visit. 88.8% of patients improve. Same-day appointments available.",

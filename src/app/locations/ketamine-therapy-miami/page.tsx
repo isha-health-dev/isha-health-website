@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "At-Home Ketamine Therapy in Miami, FL",
   description: "Online ketamine-assisted therapy in Miami, Florida. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
   alternates: { canonical: "https://isha.health/locations/ketamine-therapy-miami" },
+  robots: { index: true, follow: true }, // Major metro — overrides locations/layout.tsx noindex
   openGraph: buildOpenGraph({
     title: "At-Home Ketamine Therapy in Miami, FL",
     description: "Online ketamine-assisted therapy in Miami, Florida. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",

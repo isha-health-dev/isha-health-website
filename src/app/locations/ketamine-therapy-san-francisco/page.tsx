@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "At-Home Ketamine Therapy in San Francisco, CA",
   description: "Online ketamine-assisted therapy in San Francisco, California. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
   alternates: { canonical: "https://isha.health/locations/ketamine-therapy-san-francisco" },
+  robots: { index: true, follow: true }, // Major metro — overrides locations/layout.tsx noindex
   openGraph: buildOpenGraph({
     title: "At-Home Ketamine Therapy in San Francisco, CA",
     description: "Online ketamine-assisted therapy in San Francisco, California. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",

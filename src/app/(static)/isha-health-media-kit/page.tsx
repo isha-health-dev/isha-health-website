@@ -78,7 +78,7 @@ export default function Page() {
       </p>
 
       <div style="margin-bottom:1.5rem;">
-        <a href="https://www.isha.health" target="_blank" style="display:inline-flex;align-items:center;background-color:#bcd9c7;color:#333;padding:12px 24px;border:none;border-radius:5px;font-size:16px;text-decoration:none;margin:10px 0;font-weight:bold;">
+        <a href="https://isha.health" target="_blank" style="display:inline-flex;align-items:center;background-color:#bcd9c7;color:#333;padding:12px 24px;border:none;border-radius:5px;font-size:16px;text-decoration:none;margin:10px 0;font-weight:bold;">
           Collaborating with
           <img src="/images/cd4f580f_66ed4db3ad891a3cbd9a58e5_Isha_Health_Original_Logo.png" alt="Isha Health Logo" style="height:30px;margin-left:12px;">
         </a>
@@ -107,7 +107,7 @@ export default function Page() {
         height: 30px;
         margin-left: 12px;
     }
-&lt;/style&gt;&lt;a href="https://www.isha.health" class="isha-collab-link" target="_blank"&gt;
+&lt;/style&gt;&lt;a href="https://isha.health" class="isha-collab-link" target="_blank"&gt;
     Collaborating with
     &lt;img src="/images/cd4f580f_66ed4db3ad891a3cbd9a58e5_Isha_Health_Original_Logo.png" alt="Isha Health Logo"&gt;
 &lt;/a&gt;</textarea>

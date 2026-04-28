@@ -2,20 +2,20 @@ import type { Metadata } from 'next';
 import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: 'Online Ketamine Therapy from Home | Isha Health',
+  title: 'Online Ketamine Therapy: At-Home Treatment from $350',
   description:
-    'Get online ketamine therapy from home. 88.8% of 500+ patients show improvement, 92.6% anxiety remission. Available in 9 states. $350 consultation.',
+    'Online ketamine therapy from $350/session, prescribed by a board-certified physician. 88.8% of 500+ patients improve. Available in AZ, CA, CO, FL, GA, NY, OR, TX, WA.',
   alternates: { canonical: 'https://isha.health/online-ketamine-therapy' },
   openGraph: buildOpenGraph({
-    title: 'Online Ketamine Therapy from Home | Isha Health',
-    description: 'Telehealth ketamine treatment with 88.8% improvement rate. Prescribed by board-certified psychiatrists. Available in AZ, CA, CO, FL, GA, NY, OR, TX, WA.',
+    title: 'Online Ketamine Therapy: At-Home Treatment from $350',
+    description: 'Online ketamine therapy from $350/session, prescribed by a board-certified physician. 88.8% of 500+ patients improve. Available in 9 US states.',
     path: '/online-ketamine-therapy',
   }),
   twitter: {
     card: 'summary_large_image',
-    title: 'Online Ketamine Therapy from Home | Isha Health',
+    title: 'Online Ketamine Therapy: At-Home Treatment from $350',
     description:
-      'Telehealth ketamine treatment. 88.8% improvement rate across 500+ patients. $350 consultation.',
+      'Physician-led online ketamine therapy. 88.8% improvement rate across 500+ patients. $350/session, no subscription.',
   },
 };
 
@@ -91,8 +91,8 @@ export default function OnlineKetamineTherapyPage() {
       <span style="color:#9ca3af;">Online Ketamine Therapy</span>
     </nav>
 
-    <p style="font-family:'Poppins',sans-serif;font-size:1.1rem;line-height:1.8;color:#374151;text-align:center;max-width:700px;margin:0 auto 3rem;text-wrap:pretty;">
-      Receive ketamine therapy online through a secure telehealth platform — prescribed and monitored by board-certified psychiatrists. No clinic visits required. Treatment from the comfort and privacy of your home.
+    <p style="font-family:'Poppins',sans-serif;font-size:1.1rem;line-height:1.8;color:#374151;text-align:center;max-width:720px;margin:0 auto 3rem;text-wrap:pretty;">
+      Online ketamine therapy lets you receive a physician-prescribed mental health treatment from home — no clinic visits, no commute, no waiting room. Isha Health's telehealth program pairs a board-certified psychiatrist with structured at-home sessions and a required support person, with <a href="/outcomes" style="color:#0d9488;text-decoration:underline;">88.8% of patients showing measurable improvement</a>. Available in 9 US states.
     </p>
 
     <!-- How it works -->
@@ -205,6 +205,60 @@ export default function OnlineKetamineTherapyPage() {
       </div>
       <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#374151;line-height:1.7;">
         Find a <a href="/ketamine-therapist-directory" style="color:#0d9488;text-decoration:underline;">ketamine therapist near you</a> to complement your treatment.
+      </p>
+    </div>
+
+    <!-- Online vs In-Clinic comparison -->
+    <div style="margin-bottom:3rem;">
+      <h2 style="font-family:'Libre Baskerville',serif;font-size:1.4rem;font-weight:700;color:#111827;margin-bottom:1.25rem;padding-bottom:0.5rem;border-bottom:2px solid #0d9488;">Online Ketamine Therapy vs In-Clinic</h2>
+      <p style="font-family:'Poppins',sans-serif;font-size:0.95rem;color:#374151;line-height:1.7;margin-bottom:1.25rem;">
+        Most ketamine clinics in the US deliver treatment via IV infusion in a clinical setting. Online programs like Isha Health prescribe oral or sublingual ketamine that you take at home, supervised by a psychiatrist via telehealth. The differences that matter for most patients:
+      </p>
+      <div style="overflow-x:auto;">
+        <table style="width:100%;border-collapse:collapse;font-family:'Poppins',sans-serif;font-size:0.9rem;color:#374151;border:1px solid #e5e7eb;border-radius:8px;overflow:hidden;">
+          <thead>
+            <tr style="background:#f0fdfa;">
+              <th style="text-align:left;padding:0.75rem 1rem;font-weight:600;color:#0f766e;border-bottom:1px solid #ccfbf1;"></th>
+              <th style="text-align:left;padding:0.75rem 1rem;font-weight:600;color:#0f766e;border-bottom:1px solid #ccfbf1;">Online (at-home)</th>
+              <th style="text-align:left;padding:0.75rem 1rem;font-weight:600;color:#0f766e;border-bottom:1px solid #ccfbf1;">In-clinic IV</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding:0.75rem 1rem;border-bottom:1px solid #e5e7eb;font-weight:500;">Cost per session</td>
+              <td style="padding:0.75rem 1rem;border-bottom:1px solid #e5e7eb;">$350</td>
+              <td style="padding:0.75rem 1rem;border-bottom:1px solid #e5e7eb;">$400–$800</td>
+            </tr>
+            <tr>
+              <td style="padding:0.75rem 1rem;border-bottom:1px solid #e5e7eb;font-weight:500;">Setting</td>
+              <td style="padding:0.75rem 1rem;border-bottom:1px solid #e5e7eb;">Your home</td>
+              <td style="padding:0.75rem 1rem;border-bottom:1px solid #e5e7eb;">Clinic</td>
+            </tr>
+            <tr>
+              <td style="padding:0.75rem 1rem;border-bottom:1px solid #e5e7eb;font-weight:500;">Route</td>
+              <td style="padding:0.75rem 1rem;border-bottom:1px solid #e5e7eb;">Oral / sublingual</td>
+              <td style="padding:0.75rem 1rem;border-bottom:1px solid #e5e7eb;">Intravenous</td>
+            </tr>
+            <tr>
+              <td style="padding:0.75rem 1rem;border-bottom:1px solid #e5e7eb;font-weight:500;">Time per session</td>
+              <td style="padding:0.75rem 1rem;border-bottom:1px solid #e5e7eb;">~2 hours at home</td>
+              <td style="padding:0.75rem 1rem;border-bottom:1px solid #e5e7eb;">2–3 hours including travel</td>
+            </tr>
+            <tr>
+              <td style="padding:0.75rem 1rem;border-bottom:1px solid #e5e7eb;font-weight:500;">Insurance</td>
+              <td style="padding:0.75rem 1rem;border-bottom:1px solid #e5e7eb;">Out-of-network superbill; HSA/FSA</td>
+              <td style="padding:0.75rem 1rem;border-bottom:1px solid #e5e7eb;">Rarely covered</td>
+            </tr>
+            <tr>
+              <td style="padding:0.75rem 1rem;font-weight:500;">Required support person</td>
+              <td style="padding:0.75rem 1rem;">Yes</td>
+              <td style="padding:0.75rem 1rem;">Provided by clinic</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#4b5563;line-height:1.7;margin-top:1.25rem;">
+        For a deeper dive on routes of administration, see our guide to <a href="/compare/oral-ketamine-vs-iv-infusion" style="color:#0d9488;text-decoration:underline;">oral ketamine vs IV infusion</a> and <a href="/compare/at-home-ketamine-vs-clinic" style="color:#0d9488;text-decoration:underline;">at-home vs clinic ketamine therapy</a>.
       </p>
     </div>
 

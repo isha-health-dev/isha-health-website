@@ -2,20 +2,20 @@ import type { Metadata } from 'next';
 import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: 'Affordable Ketamine Therapy: $350 Per Session',
+  title: 'Affordable Ketamine Therapy: $350/Session, 9 States',
   description:
-    'At-home ketamine therapy from $350/session. Compare costs: IV infusion $400-800, Spravato $500-900. HSA/FSA accepted. No referral needed.',
+    'At-home ketamine therapy from $350/session — among the cheapest physician-led options. Compare with IV ($400–800) and Spravato ($600–900). HSA/FSA accepted, superbills provided.',
   alternates: { canonical: 'https://isha.health/affordable-ketamine-therapy' },
   openGraph: buildOpenGraph({
-    title: 'Affordable Ketamine Therapy from $350 | Isha Health',
-    description: 'At-home ketamine therapy starting at $350 per session. Compare affordable ketamine treatment costs vs IV infusion and Spravato.',
+    title: 'Affordable Ketamine Therapy: $350/Session, 9 States',
+    description: 'At-home ketamine therapy from $350/session — among the cheapest physician-led options. Compare with IV ($400–800) and Spravato ($600–900). HSA/FSA accepted.',
     path: '/affordable-ketamine-therapy',
   }),
   twitter: {
     card: 'summary_large_image',
-    title: 'Affordable Ketamine Therapy | Isha Health',
+    title: 'Affordable Ketamine Therapy: $350/Session',
     description:
-      'Affordable ketamine treatment from $350/session. HSA/FSA accepted. No referral needed.',
+      'At-home ketamine therapy from $350/session — among the cheapest physician-led options. HSA/FSA accepted. No referral needed.',
   },
 };
 

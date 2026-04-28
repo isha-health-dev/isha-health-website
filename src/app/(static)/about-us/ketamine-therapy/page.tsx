@@ -82,7 +82,7 @@ export default function Page() {
       Ketamine therapy offers a unique approach to treating depression and anxiety, particularly for individuals who have not found relief from traditional treatments such as talk therapy or medication. Unlike traditional antidepressants, which can take weeks or months to become effective, ketamine therapy can provide rapid relief from symptoms. Additionally, ketamine therapy has been shown to have long-lasting effects on brain function, leading to sustained improvements in mental health and well-being.
     </p>
     <p style="margin:0 0 2rem;">
-      Please <a href="https://www.isha.health/consent-form" style="color:#0d9488;text-decoration:underline;">review our ketamine consent form</a> for more information and disclosures.
+      Please <a href="https://isha.health/consent-form" style="color:#0d9488;text-decoration:underline;">review our ketamine consent form</a> for more information and disclosures.
     </p>
 
     <div style="text-align:center;">

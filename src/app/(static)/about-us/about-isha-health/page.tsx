@@ -102,7 +102,7 @@ export default function Page() {
           <h3 style="font-family:'Libre Baskerville',serif;font-size:1.1rem;font-weight:700;color:#111827;margin:0 0 0.25rem;">Mai Shimada, MD</h3>
           <p style="margin:0 0 0.75rem;font-size:0.9rem;color:#0d9488;font-weight:500;">Founder &amp; CEO</p>
           <p style="margin:0;font-size:0.9rem;line-height:1.7;color:#555;">
-            Dr. Mai Shimada is a board certified emergency medicine physician with over 10 years of experience. She decided to start Isha Health after discovering the transformative benefits of ketamine therapy for various mental health conditions... <a href="https://www.isha.health/dr-mai-shimada" style="color:#0d9488;text-decoration:none;font-weight:500;">Read More</a>
+            Dr. Mai Shimada is a board certified emergency medicine physician with over 10 years of experience. She decided to start Isha Health after discovering the transformative benefits of ketamine therapy for various mental health conditions... <a href="https://isha.health/dr-mai-shimada" style="color:#0d9488;text-decoration:none;font-weight:500;">Read More</a>
           </p>
         </div>
       </div>
@@ -116,7 +116,7 @@ export default function Page() {
           <h3 style="font-family:'Libre Baskerville',serif;font-size:1.1rem;font-weight:700;color:#111827;margin:0 0 0.25rem;">Akua Brown, MD</h3>
           <p style="margin:0 0 0.75rem;font-size:0.9rem;color:#0d9488;font-weight:500;">Board Certified Physician</p>
           <p style="margin:0;font-size:0.9rem;line-height:1.7;color:#555;">
-            Dr. Akua Brown specializes in psychedelic medicine with a focus on increasing accessibility, education, and safety in the field. Fluent in both Spanish and English, she adopts community-focused approaches that mirror her identity as a Black American, queer, nature lover, and abolitionist... <a href="https://www.isha.health/dr-akua-brown" style="color:#0d9488;text-decoration:none;font-weight:500;">Read More</a>
+            Dr. Akua Brown specializes in psychedelic medicine with a focus on increasing accessibility, education, and safety in the field. Fluent in both Spanish and English, she adopts community-focused approaches that mirror her identity as a Black American, queer, nature lover, and abolitionist... <a href="https://isha.health/dr-akua-brown" style="color:#0d9488;text-decoration:none;font-weight:500;">Read More</a>
           </p>
         </div>
       </div>

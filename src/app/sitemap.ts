@@ -124,9 +124,34 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.8,
   }));
 
-  // City pages (/locations/ketamine-therapy-*) are noindex — see
-  // src/app/locations/layout.tsx. Excluded from the sitemap so we
-  // don't submit URLs we've already told Google to skip.
+  // City pages (/locations/ketamine-therapy-*) default to noindex via
+  // src/app/locations/layout.tsx. The 17 major-metro pages below opt
+  // back into indexing (and into the sitemap) by overriding `robots`
+  // at the page level. Smaller-market city pages remain noindex.
+  const majorCityPages = [
+    'ketamine-therapy-new-york-city',
+    'ketamine-therapy-brooklyn',
+    'ketamine-therapy-long-island',
+    'ketamine-therapy-los-angeles',
+    'ketamine-therapy-san-francisco',
+    'ketamine-therapy-san-diego',
+    'ketamine-therapy-beverly-hills',
+    'ketamine-therapy-houston',
+    'ketamine-therapy-dallas',
+    'ketamine-therapy-austin',
+    'ketamine-therapy-miami',
+    'ketamine-therapy-denver',
+    'ketamine-therapy-atlanta',
+    'ketamine-therapy-portland',
+    'ketamine-therapy-seattle',
+    'ketamine-therapy-phoenix',
+    'ketamine-therapy-scottsdale',
+  ];
+  const cityEntries: MetadataRoute.Sitemap = majorCityPages.map((page) => ({
+    url: `${BASE_URL}/locations/${page}`,
+    changeFrequency: 'monthly',
+    priority: 0.7,
+  }));
 
   // Condition pages
   const conditionPages = getDynamicPages('conditions', 'conditions');
@@ -180,6 +205,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...staticEntries,
     ...blogEntries,
     ...stateEntries,
+    ...cityEntries,
     ...conditionEntries,
     ...compareEntries,
     ...guideEntries,

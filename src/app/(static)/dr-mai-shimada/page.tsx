@@ -69,7 +69,7 @@ export default function Page() {
         Available in AZ, CA, CO, FL, GA, NY, OR, TX, and WA
       </p>
       <a
-        href="https://www.isha.health/appointment#all-states-booking"
+        href="https://isha.health/appointment#all-states-booking"
         style="display: inline-block; background-color: #0d9488; color: #fff; font-family: 'Poppins', sans-serif; font-size: 1rem; font-weight: 600; padding: 14px 32px; border-radius: 8px; text-decoration: none; margin-bottom: 36px; transition: background-color 0.2s;"
       >Schedule with Dr. Mai</a>
 

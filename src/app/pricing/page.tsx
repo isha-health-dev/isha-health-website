@@ -2,19 +2,19 @@ import type { Metadata } from 'next';
 import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: 'Pricing - Personalized Ketamine Therapy',
+  title: 'Online Ketamine Therapy: $350 per Session',
   description:
-    "ISHA Health offers personalized online ketamine therapy for depression and anxiety. Plans start at $350 with ongoing support from licensed clinicians.",
+    'Online ketamine therapy from $350 per session — physician-led, no subscription. Includes consultation, prescription, and ongoing support in 9 states.',
   alternates: { canonical: 'https://isha.health/pricing' },
   openGraph: buildOpenGraph({
-    title: 'Personalized Ketamine Therapy Pricing',
-    description: 'Personalized ketamine-assisted therapy tailored to your unique needs. Initial consultation $350.',
+    title: 'Online Ketamine Therapy: $350 per Session',
+    description: 'Online ketamine therapy from $350 per session — physician-led, no subscription. Includes consultation, prescription, and ongoing support in 9 states.',
     path: '/pricing',
   }),
   twitter: {
     card: 'summary_large_image',
-    title: 'Pricing',
-    description: 'Personalized ketamine therapy. Initial consultation $350.',
+    title: 'Online Ketamine Therapy: $350 per Session',
+    description: 'Online ketamine therapy from $350. Physician-led, no subscription, 9 states.',
   },
 };
 
