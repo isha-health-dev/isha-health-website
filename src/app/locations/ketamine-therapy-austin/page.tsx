@@ -75,6 +75,15 @@ export default function Page() {
       <span style="padding:0.4rem 1rem;border-radius:20px;border:1px solid #d1d5db;font-size:0.85rem;color:#374151;font-family:'Poppins',sans-serif;">Treatment-resistant depression</span>
     </div>
 
+
+    <h2 style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#111827;margin-top:2.5rem;margin-bottom:1rem;">About ketamine therapy in Austin</h2>
+    <p style="font-family:'Poppins',sans-serif;font-size:0.95rem;line-height:1.8;color:#374151;margin-bottom:1.25rem;text-wrap:pretty;">
+      Austin, a 975,000-resident city in Texas (Central Time), sits within the Austin-Round Rock metro of 2.4 million. Austin's tech workforce and university population skew young and high-stress — Austin Public Health surveys show anxiety symptoms rising faster than the state average. Telehealth ketamine therapy is a fit for residents who already work remotely and want to skip the cross-town drive to a clinic.
+    </p>
+    <p style="font-family:'Poppins',sans-serif;font-size:0.95rem;line-height:1.8;color:#374151;margin-bottom:1.25rem;text-wrap:pretty;">
+      Major healthcare systems serving the area include Dell Medical School at UT Austin, Ascension Seton, Baylor Scott & White, and St. David's HealthCare. Isha Health complements these in-system options with a fully telehealth alternative — accessible from Downtown, East Austin, South Austin, Round Rock, Cedar Park, and Westlake and anywhere else with a stable internet connection. Sessions are scheduled in your local Central Time, and our physician network is licensed to prescribe in Texas.
+    </p>
+
     <h2 style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#111827;margin-bottom:1rem;">Frequently asked questions</h2>
     <div style="margin-bottom:2rem;">
       <div style="border-bottom:1px solid #e5e7eb;padding:1rem 0;">

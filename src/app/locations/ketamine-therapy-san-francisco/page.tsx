@@ -75,6 +75,15 @@ export default function Page() {
       <span style="padding:0.4rem 1rem;border-radius:20px;border:1px solid #d1d5db;font-size:0.85rem;color:#374151;font-family:'Poppins',sans-serif;">Treatment-resistant depression</span>
     </div>
 
+
+    <h2 style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#111827;margin-top:2.5rem;margin-bottom:1rem;">About ketamine therapy in San Francisco</h2>
+    <p style="font-family:'Poppins',sans-serif;font-size:0.95rem;line-height:1.8;color:#374151;margin-bottom:1.25rem;text-wrap:pretty;">
+      San Francisco, an 808,000-resident city in California (Pacific Time), sits within the Bay Area's 7.7 million residents. San Francisco has the highest concentration of psychiatrists per capita of any US city, but in-network availability is famously poor — many Bay Area residents wait weeks for an out-of-pocket appointment. Online ketamine therapy provides a same-week alternative, with a physician-led protocol designed for the at-home setting.
+    </p>
+    <p style="font-family:'Poppins',sans-serif;font-size:0.95rem;line-height:1.8;color:#374151;margin-bottom:1.25rem;text-wrap:pretty;">
+      Major healthcare systems serving the area include UCSF Health, California Pacific Medical Center (Sutter Health), Kaiser Permanente, and Stanford Health Care (Peninsula). Isha Health complements these in-system options with a fully telehealth alternative — accessible from the Mission, the Sunset, the Richmond, SoMa, and the Marina and anywhere else with a stable internet connection. Sessions are scheduled in your local Pacific Time, and our physician network is licensed to prescribe in California.
+    </p>
+
     <h2 style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#111827;margin-bottom:1rem;">Frequently asked questions</h2>
     <div style="margin-bottom:2rem;">
       <div style="border-bottom:1px solid #e5e7eb;padding:1rem 0;">

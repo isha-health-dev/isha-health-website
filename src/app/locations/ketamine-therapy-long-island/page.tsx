@@ -75,6 +75,15 @@ export default function Page() {
       <span style="padding:0.4rem 1rem;border-radius:20px;border:1px solid #d1d5db;font-size:0.85rem;color:#374151;font-family:'Poppins',sans-serif;">Treatment-resistant depression</span>
     </div>
 
+
+    <h2 style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#111827;margin-top:2.5rem;margin-bottom:1rem;">About ketamine therapy in Long Island</h2>
+    <p style="font-family:'Poppins',sans-serif;font-size:0.95rem;line-height:1.8;color:#374151;margin-bottom:1.25rem;text-wrap:pretty;">
+      Long Island, a Nassau and Suffolk counties' 2.8 million-resident city in New York (Eastern Time), sits within the Long Island region east of New York City. Long Island residents face notable barriers to specialty mental-health care: long drives to Manhattan psychiatry practices, limited in-network coverage on the East End, and the seasonal isolation common in beach communities outside summer. Online ketamine therapy removes the LIRR or LIE drive entirely.
+    </p>
+    <p style="font-family:'Poppins',sans-serif;font-size:0.95rem;line-height:1.8;color:#374151;margin-bottom:1.25rem;text-wrap:pretty;">
+      Major healthcare systems serving the area include Northwell Health, Stony Brook Medicine, NYU Langone Long Island, and Catholic Health. Isha Health complements these in-system options with a fully telehealth alternative — accessible from Nassau and Suffolk County communities, including the North Shore, South Shore, and the Hamptons and anywhere else with a stable internet connection. Sessions are scheduled in your local Eastern Time, and our physician network is licensed to prescribe in New York.
+    </p>
+
     <h2 style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#111827;margin-bottom:1rem;">Frequently asked questions</h2>
     <div style="margin-bottom:2rem;">
       <div style="border-bottom:1px solid #e5e7eb;padding:1rem 0;">

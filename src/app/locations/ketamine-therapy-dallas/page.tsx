@@ -75,6 +75,15 @@ export default function Page() {
       <span style="padding:0.4rem 1rem;border-radius:20px;border:1px solid #d1d5db;font-size:0.85rem;color:#374151;font-family:'Poppins',sans-serif;">Treatment-resistant depression</span>
     </div>
 
+
+    <h2 style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#111827;margin-top:2.5rem;margin-bottom:1rem;">About ketamine therapy in Dallas</h2>
+    <p style="font-family:'Poppins',sans-serif;font-size:0.95rem;line-height:1.8;color:#374151;margin-bottom:1.25rem;text-wrap:pretty;">
+      Dallas, a 1.3 million-resident city in Texas (Central Time), sits within the Dallas-Fort Worth metro of 8 million. Dallas's rapid growth has outpaced its in-network behavioral-health supply: many residents wait 6–12 weeks for a psychiatrist accepting their insurance. Telehealth ketamine therapy fills that gap with a same-week option for treatment-resistant depression and anxiety.
+    </p>
+    <p style="font-family:'Poppins',sans-serif;font-size:0.95rem;line-height:1.8;color:#374151;margin-bottom:1.25rem;text-wrap:pretty;">
+      Major healthcare systems serving the area include UT Southwestern Medical Center, Baylor Scott & White Health, Methodist Health System, and Texas Health Resources. Isha Health complements these in-system options with a fully telehealth alternative — accessible from Uptown, Oak Lawn, Lakewood, Plano, Frisco, and the Park Cities and anywhere else with a stable internet connection. Sessions are scheduled in your local Central Time, and our physician network is licensed to prescribe in Texas.
+    </p>
+
     <h2 style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#111827;margin-bottom:1rem;">Frequently asked questions</h2>
     <div style="margin-bottom:2rem;">
       <div style="border-bottom:1px solid #e5e7eb;padding:1rem 0;">

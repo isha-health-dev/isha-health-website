@@ -75,6 +75,15 @@ export default function Page() {
       <span style="padding:0.4rem 1rem;border-radius:20px;border:1px solid #d1d5db;font-size:0.85rem;color:#374151;font-family:'Poppins',sans-serif;">Treatment-resistant depression</span>
     </div>
 
+
+    <h2 style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#111827;margin-top:2.5rem;margin-bottom:1rem;">About ketamine therapy in Scottsdale</h2>
+    <p style="font-family:'Poppins',sans-serif;font-size:0.95rem;line-height:1.8;color:#374151;margin-bottom:1.25rem;text-wrap:pretty;">
+      Scottsdale, a 245,000-resident city in Arizona (Mountain Standard Time (no DST)), sits within the Phoenix metro's east-Valley communities, including Paradise Valley and Tempe. Scottsdale residents have access to some of the country's strongest private psychiatric practices, but the highest-rated providers are almost entirely cash-pay and booked weeks out. Online ketamine therapy at $350/session is a comparatively affordable, physician-led alternative that doesn't require relocating your day to a Camelback-area clinic.
+    </p>
+    <p style="font-family:'Poppins',sans-serif;font-size:0.95rem;line-height:1.8;color:#374151;margin-bottom:1.25rem;text-wrap:pretty;">
+      Major healthcare systems serving the area include Mayo Clinic Arizona, HonorHealth Scottsdale, Banner Health, and a high concentration of private psychiatric practices. Isha Health complements these in-system options with a fully telehealth alternative — accessible from Old Town, North Scottsdale, Paradise Valley, Fountain Hills, and Tempe and anywhere else with a stable internet connection. Sessions are scheduled in your local Mountain Standard Time (no DST), and our physician network is licensed to prescribe in Arizona.
+    </p>
+
     <h2 style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#111827;margin-bottom:1rem;">Frequently asked questions</h2>
     <div style="margin-bottom:2rem;">
       <div style="border-bottom:1px solid #e5e7eb;padding:1rem 0;">

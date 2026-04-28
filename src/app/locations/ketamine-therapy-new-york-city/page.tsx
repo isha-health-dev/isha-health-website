@@ -75,6 +75,15 @@ export default function Page() {
       <span style="padding:0.4rem 1rem;border-radius:20px;border:1px solid #d1d5db;font-size:0.85rem;color:#374151;font-family:'Poppins',sans-serif;">Treatment-resistant depression</span>
     </div>
 
+
+    <h2 style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#111827;margin-top:2.5rem;margin-bottom:1rem;">About ketamine therapy in New York City</h2>
+    <p style="font-family:'Poppins',sans-serif;font-size:0.95rem;line-height:1.8;color:#374151;margin-bottom:1.25rem;text-wrap:pretty;">
+      New York City, an 8.3 million-resident city in New York (Eastern Time), sits within the New York metro area's 19+ million residents. New York City carries one of the highest population-adjusted rates of anxiety and major depression in the country, driven in part by long commutes, cost-of-living pressure, and post-pandemic shifts in how New Yorkers work and live. Local survey data from the NYC Department of Health and Mental Hygiene consistently shows roughly one in five adult New Yorkers reporting symptoms of moderate-to-severe depression in a given year.
+    </p>
+    <p style="font-family:'Poppins',sans-serif;font-size:0.95rem;line-height:1.8;color:#374151;margin-bottom:1.25rem;text-wrap:pretty;">
+      Major healthcare systems serving the area include Mount Sinai, NewYork-Presbyterian, NYU Langone, and Weill Cornell. Isha Health complements these in-system options with a fully telehealth alternative — accessible from Manhattan, Brooklyn, Queens, the Bronx, and Staten Island and anywhere else with a stable internet connection. Sessions are scheduled in your local Eastern Time, and our physician network is licensed to prescribe in New York.
+    </p>
+
     <h2 style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#111827;margin-bottom:1rem;">Frequently asked questions</h2>
     <div style="margin-bottom:2rem;">
       <div style="border-bottom:1px solid #e5e7eb;padding:1rem 0;">
