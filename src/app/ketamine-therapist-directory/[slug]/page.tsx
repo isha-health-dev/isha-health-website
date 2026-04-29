@@ -13,8 +13,10 @@ import {
 } from '@/lib/therapist-types';
 import { buildOpenGraph } from '@/lib/seo';
 
-// No timer-based ISR — on-demand revalidation only (triggered by dashboard save)
-export const dynamicParams = false; // Only pre-rendered slugs — prevents ISR reads
+// On-demand revalidation when a therapist saves their dashboard. dynamicParams
+// is true so newly-signed-up therapists render immediately on first visit
+// (without it, new slugs 404 until the next full deploy).
+export const dynamicParams = true;
 
 export async function generateStaticParams() {
   const slugs = await getAllTherapistSlugs();

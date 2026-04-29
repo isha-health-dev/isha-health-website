@@ -21,7 +21,9 @@ jobs:
           # Push an empty commit to trigger Vercel auto-deploy
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git commit --allow-empty -m "chore: daily rebuild for scheduled posts [skip ci]"
+          # Note: do NOT add [skip ci] — Vercel honors it and would skip the deploy,
+          # which is the entire reason for this empty commit.
+          git commit --allow-empty -m "chore: daily rebuild for scheduled posts"
           git push
 
       - name: Submit fresh URLs to IndexNow (Bing, Yandex)
