@@ -32,7 +32,7 @@ export default function SuperbillPage() {
     <div style="display:flex;flex-wrap:wrap;gap:1.5rem;justify-content:center;margin-bottom:2.5rem;">
 
       <!-- Reimbursify claim -->
-      <a href="https://reimbursify.com/" target="_blank" rel="noopener noreferrer" style="flex:1 1 280px;max-width:320px;padding:2rem;border:2px solid #0d9488;border-radius:12px;text-decoration:none;text-align:center;background:#f0fdfa;">
+      <a href="https://partner-filefast.reimbursify.com/?qc=MSHIM523A" target="_blank" rel="noopener noreferrer" style="flex:1 1 280px;max-width:320px;padding:2rem;border:2px solid #0d9488;border-radius:12px;text-decoration:none;text-align:center;background:#f0fdfa;">
         <p style="font-family:'Libre Baskerville',serif;font-size:1.15rem;font-weight:700;color:#0f766e;margin-bottom:0.5rem;">Submit a Claim</p>
         <p style="font-family:'Poppins',sans-serif;font-size:0.85rem;color:#4b5563;line-height:1.5;">Upload your superbill and insurance card via Reimbursify to file an out-of-network claim electronically.</p>
         <p style="font-family:'Poppins',sans-serif;font-size:0.85rem;color:#0d9488;font-weight:600;margin-top:1rem;">Go to Reimbursify →</p>
