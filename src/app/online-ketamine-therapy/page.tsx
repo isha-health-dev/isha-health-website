@@ -4,7 +4,7 @@ import { buildOpenGraph } from '@/lib/seo';
 export const metadata: Metadata = {
   title: 'Online Ketamine Therapy: At-Home Treatment from $350',
   description:
-    'Online ketamine therapy from $350/session, prescribed by a board-certified physician. 88.8% of 500+ patients improve. Available in AZ, CA, CO, FL, GA, NY, OR, TX, WA.',
+    'Online ketamine therapy from $350/session, prescribed by a board-certified physician. 88.8% of 500+ patients improve. Available in AZ, CA, CO, FL, GA, NY…',
   alternates: { canonical: 'https://isha.health/online-ketamine-therapy' },
   openGraph: buildOpenGraph({
     title: 'Online Ketamine Therapy: At-Home Treatment from $350',

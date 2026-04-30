@@ -4,18 +4,18 @@ import { getTherapistsForCity } from '@/lib/city-therapists';
 
 export const metadata: Metadata = {
   title: "At-Home Ketamine Therapy in Long Island, NY",
-  description: "Online ketamine-assisted therapy in Long Island, New York. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
+  description: "Online ketamine-assisted therapy in Long Island, New York. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required…",
   alternates: { canonical: "https://isha.health/locations/ketamine-therapy-long-island" },
   robots: { index: true, follow: true }, // Major metro — overrides locations/layout.tsx noindex
   openGraph: buildOpenGraph({
     title: "At-Home Ketamine Therapy in Long Island, NY",
-    description: "Online ketamine-assisted therapy in Long Island, New York. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
+    description: "Online ketamine-assisted therapy in Long Island, New York. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required…",
     path: '/locations/ketamine-therapy-long-island',
   }),
   twitter: {
     card: "summary_large_image",
     title: "At-Home Ketamine Therapy in Long Island, NY",
-    description: "Online ketamine-assisted therapy in Long Island, New York. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
+    description: "Online ketamine-assisted therapy in Long Island, New York. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required…",
   },
 };
 

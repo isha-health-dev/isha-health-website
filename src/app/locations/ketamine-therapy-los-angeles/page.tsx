@@ -4,18 +4,18 @@ import { getTherapistsForCity } from '@/lib/city-therapists';
 
 export const metadata: Metadata = {
   title: "At-Home Ketamine Therapy in Los Angeles, CA",
-  description: "Online ketamine-assisted therapy in Los Angeles, California. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
+  description: "Online ketamine-assisted therapy in Los Angeles, California. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required…",
   alternates: { canonical: "https://isha.health/locations/ketamine-therapy-los-angeles" },
   robots: { index: true, follow: true }, // Major metro — overrides locations/layout.tsx noindex
   openGraph: buildOpenGraph({
     title: "At-Home Ketamine Therapy in Los Angeles, CA",
-    description: "Online ketamine-assisted therapy in Los Angeles, California. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
+    description: "Online ketamine-assisted therapy in Los Angeles, California. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required…",
     path: '/locations/ketamine-therapy-los-angeles',
   }),
   twitter: {
     card: "summary_large_image",
     title: "At-Home Ketamine Therapy in Los Angeles, CA",
-    description: "Online ketamine-assisted therapy in Los Angeles, California. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
+    description: "Online ketamine-assisted therapy in Los Angeles, California. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required…",
   },
 };
 

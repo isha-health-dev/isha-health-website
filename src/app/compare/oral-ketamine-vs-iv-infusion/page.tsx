@@ -3,17 +3,17 @@ import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "Oral Ketamine vs IV Infusion Compared",
-  description: "Compare oral (sublingual) ketamine with IV ketamine infusions. Understand differences in bioavailability, convenience, cost, clinical evidence, and which route may be best for your situation.",
+  description: "Compare oral (sublingual) ketamine with IV ketamine infusions. Understand differences in bioavailability, convenience, cost, clinical evidence, and which…",
   alternates: { canonical: "https://isha.health/compare/oral-ketamine-vs-iv-infusion" },
   openGraph: buildOpenGraph({
     title: "Oral Ketamine vs IV Infusion Compared",
-    description: "Compare oral (sublingual) ketamine with IV ketamine infusions. Understand differences in bioavailability, convenience, cost, clinical evidence, and which route may be best for your situation.",
+    description: "Compare oral (sublingual) ketamine with IV ketamine infusions. Understand differences in bioavailability, convenience, cost, clinical evidence, and which…",
     path: '/compare/oral-ketamine-vs-iv-infusion',
   }),
   twitter: {
     card: "summary_large_image",
     title: "Oral Ketamine vs IV Infusion Compared",
-    description: "Compare oral (sublingual) ketamine with IV ketamine infusions. Understand differences in bioavailability, convenience, cost, clinical evidence, and which route may be best for your situation.",
+    description: "Compare oral (sublingual) ketamine with IV ketamine infusions. Understand differences in bioavailability, convenience, cost, clinical evidence, and which…",
   },
 };
 

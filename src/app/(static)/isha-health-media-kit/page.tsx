@@ -3,19 +3,19 @@ import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "Isha Health Media Kit",
-  description: "Download Isha Health clinic logos and HTML code to easily add a link to Isha Health on your website. Access high-quality branding materials for media use and create clickable buttons linking to our clinic.",
+  description: "Download Isha Health clinic logos and HTML code to easily add a link to Isha Health on your website. Access high-quality branding materials for media use…",
   alternates: {
     canonical: "https://isha.health/isha-health-media-kit",
   },
   openGraph: buildOpenGraph({
     title: "Isha Health Media Kit",
-    description: "Download Isha Health clinic logos and HTML code to easily add a link to Isha Health on your website. Access high-quality branding materials for media use and create clickable buttons linking to our clinic.",
+    description: "Download Isha Health clinic logos and HTML code to easily add a link to Isha Health on your website. Access high-quality branding materials for media use…",
     path: '/isha-health-media-kit',
   }),
   twitter: {
     card: "summary_large_image",
     title: "Isha Health Media Kit",
-    description: "Download Isha Health clinic logos and HTML code to easily add a link to Isha Health on your website. Access high-quality branding materials for media use and create clickable buttons linking to our clinic.",
+    description: "Download Isha Health clinic logos and HTML code to easily add a link to Isha Health on your website. Access high-quality branding materials for media use…",
   },
 };
 

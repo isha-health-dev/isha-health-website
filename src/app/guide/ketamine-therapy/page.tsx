@@ -3,17 +3,17 @@ import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "The Complete Guide to Ketamine Therapy",
-  description: "Everything you need to know about ketamine therapy: how it works, conditions treated, types of ketamine, what to expect, costs, safety, and how to choose a provider.",
+  description: "Everything you need to know about ketamine therapy: how it works, conditions treated, types of ketamine, what to expect, costs, safety, and how to choose a…",
   alternates: { canonical: "https://isha.health/guide/ketamine-therapy" },
   openGraph: buildOpenGraph({
     title: "The Complete Guide to Ketamine Therapy",
-    description: "Everything you need to know about ketamine therapy: how it works, conditions treated, types of ketamine, what to expect, costs, safety, and how to choose a provider.",
+    description: "Everything you need to know about ketamine therapy: how it works, conditions treated, types of ketamine, what to expect, costs, safety, and how to choose a…",
     path: '/guide/ketamine-therapy',
   }),
   twitter: {
     card: "summary_large_image",
     title: "The Complete Guide to Ketamine Therapy",
-    description: "Everything you need to know about ketamine therapy: how it works, conditions treated, types of ketamine, what to expect, costs, safety, and how to choose a provider.",
+    description: "Everything you need to know about ketamine therapy: how it works, conditions treated, types of ketamine, what to expect, costs, safety, and how to choose a…",
   },
 };
 
@@ -234,7 +234,7 @@ export default function Page() {
     <!-- Section 6: Cost and Insurance -->
     <h2 id="cost-and-insurance" style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#111827;margin-bottom:1rem;margin-top:2.5rem;">Cost and Insurance</h2>
     <p style="font-family:'Source Sans Pro','Poppins',sans-serif;font-size:0.95rem;line-height:1.8;color:#374151;margin-bottom:1rem;text-wrap:pretty;">
-      The cost of ketamine therapy varies significantly depending on the route of administration, provider, and location. For a thorough breakdown, read our article on <a href="/post/how-much-does-ketamine-therapy-cost" style="color:#0d9488;text-decoration:underline;">how much ketamine therapy costs</a> and visit our <a href="/pricing" style="color:#0d9488;text-decoration:underline;">pricing page</a>.
+      The cost of ketamine therapy varies significantly depending on the route of administration, provider, and location. For a thorough breakdown, read our article on <a href="/pricing" style="color:#0d9488;text-decoration:underline;">how much ketamine therapy costs</a> and visit our <a href="/pricing" style="color:#0d9488;text-decoration:underline;">pricing page</a>.
     </p>
     <ul style="font-family:'Source Sans Pro','Poppins',sans-serif;font-size:0.95rem;color:#374151;line-height:1.8;padding-left:1.25rem;margin-bottom:1rem;">
       <li><strong>IV ketamine infusions:</strong> $400 to $800+ per session; a typical initial course involves 6 sessions over 2 to 3 weeks</li>

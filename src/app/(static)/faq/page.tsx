@@ -2,20 +2,20 @@ import type { Metadata } from 'next';
 import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: "Isha Health - Ketamine Clinic for Depression & Anxiety | Frequently Asked Questions",
-  description: "Find answers to common questions about Isha Health, a San Francisco-based at-home ketamine clinic providing treatment for depression and anxiety. Learn more about our services, process, and outcomes.",
+  title: "Isha Health - Ketamine Clinic for Depression & Anxiety…",
+  description: "Find answers to common questions about Isha Health, a San Francisco-based at-home ketamine clinic providing treatment for depression and anxiety. Learn more…",
   alternates: {
     canonical: "https://isha.health/faq",
   },
   openGraph: buildOpenGraph({
-    title: "Isha Health - Ketamine Clinic for Depression & Anxiety | Frequently Asked Questions",
-    description: "Find answers to common questions about Isha Health, a San Francisco-based at-home ketamine clinic providing treatment for depression and anxiety. Learn more about our services, process, and outcomes.",
+    title: "Isha Health - Ketamine Clinic for Depression & Anxiety…",
+    description: "Find answers to common questions about Isha Health, a San Francisco-based at-home ketamine clinic providing treatment for depression and anxiety. Learn more…",
     path: '/faq',
   }),
   twitter: {
     card: "summary_large_image",
-    title: "Isha Health - Ketamine Clinic for Depression & Anxiety | Frequently Asked Questions",
-    description: "Find answers to common questions about Isha Health, a San Francisco-based at-home ketamine clinic providing treatment for depression and anxiety. Learn more about our services, process, and outcomes.",
+    title: "Isha Health - Ketamine Clinic for Depression & Anxiety…",
+    description: "Find answers to common questions about Isha Health, a San Francisco-based at-home ketamine clinic providing treatment for depression and anxiety. Learn more…",
   },
 };
 
@@ -40,7 +40,7 @@ export default function Page() {
     </div>
     <div style="margin-bottom:2rem;">
       <h3 style="font-family:'Libre Baskerville',serif;font-size:1.05rem;font-weight:700;color:#111827;margin-bottom:0.75rem;padding-left:1rem;border-left:3px solid #0d9488;">Is ketamine addictive?</h3>
-      <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#4b5563;line-height:1.7;padding-left:1rem;">Ketamine has a **low risk of addiction** when used in a **medical setting** under supervision. Unlike daily antidepressants, ketamine treatments are spaced out to prevent dependence. However, **recreational misuse** at high doses can lead to **psychological dependence**.<br/><br/><a href="https://isha.health/post/is-ketamine-addictive" style="color:#0d9488;text-decoration:underline;">Learn more →</a><br/><br/>Please <a href="https://isha.health/consent-form" style="color:#0d9488;text-decoration:underline;">review our ketamine consent form</a> for more information and disclosures.</p>
+      <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#4b5563;line-height:1.7;padding-left:1rem;">Ketamine has a **low risk of addiction** when used in a **medical setting** under supervision. Unlike daily antidepressants, ketamine treatments are spaced out to prevent dependence. However, **recreational misuse** at high doses can lead to **psychological dependence**.<br/><br/><a href="https://isha.health/post/is-ketamine-therapy-addictive" style="color:#0d9488;text-decoration:underline;">Learn more →</a><br/><br/>Please <a href="https://isha.health/consent-form" style="color:#0d9488;text-decoration:underline;">review our ketamine consent form</a> for more information and disclosures.</p>
     </div>
     <div style="margin-bottom:2rem;">
       <h3 style="font-family:'Libre Baskerville',serif;font-size:1.05rem;font-weight:700;color:#111827;margin-bottom:0.75rem;padding-left:1rem;border-left:3px solid #0d9488;">What is ketamine-assisted psychotherapy?</h3>

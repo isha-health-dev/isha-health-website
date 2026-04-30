@@ -2,17 +2,17 @@ import type { Metadata } from 'next';
 import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: "Ketamine vs ECT (Electroconvulsive Therapy): Which Is Right for You?",
+  title: "Ketamine vs ECT (Electroconvulsive Therapy): Which Is…",
   description: "Compare ketamine therapy and electroconvulsive therapy (ECT) for treatment-resistant depression: administration, side effects, speed of relief, and cost.",
   alternates: { canonical: "https://isha.health/compare/ketamine-vs-ect" },
   openGraph: buildOpenGraph({
-    title: "Ketamine vs ECT (Electroconvulsive Therapy): Which Is Right for You?",
+    title: "Ketamine vs ECT (Electroconvulsive Therapy): Which Is…",
     description: "Compare ketamine therapy and electroconvulsive therapy (ECT) for treatment-resistant depression. Understand differences in administration, side effects, speed of relief, and cost.",
     path: '/compare/ketamine-vs-ect',
   }),
   twitter: {
     card: "summary_large_image",
-    title: "Ketamine vs ECT (Electroconvulsive Therapy): Which Is Right for You?",
+    title: "Ketamine vs ECT (Electroconvulsive Therapy): Which Is…",
     description: "Compare ketamine therapy and electroconvulsive therapy (ECT) for treatment-resistant depression. Understand differences in administration, side effects, speed of relief, and cost.",
   },
 };

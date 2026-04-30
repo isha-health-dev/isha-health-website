@@ -3,19 +3,19 @@ import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "Dr Mai Shimada | Isha Health",
-  description: "Dr. Mai Shimada is a board certified emergency medicine physician with over 10 years of experience . She decided to start Isha Health after discovering the transformative benefits of ketamine therapy for various mental health conditions. She completed Psychedelic Facilitation Certification Program at the UC Berkeley and is a study physician for psychedelic medicine clinical trials at Open Mind Collective.",
+  description: "Dr. Mai Shimada is a board certified emergency medicine physician with over 10 years of experience . She decided to start Isha Health after discovering the…",
   alternates: {
     canonical: "https://isha.health/dr-mai-shimada",
   },
   openGraph: buildOpenGraph({
     title: "Dr Mai Shimada | Isha Health",
-    description: "Dr. Mai Shimada is a board certified emergency medicine physician with over 10 years of experience . She decided to start Isha Health after discovering the transformative benefits of ketamine therapy for various mental health conditions. She completed Psychedelic Facilitation Certification Program at the UC Berkeley and is a study physician for psychedelic medicine clinical trials at Open Mind Collective.",
+    description: "Dr. Mai Shimada is a board certified emergency medicine physician with over 10 years of experience . She decided to start Isha Health after discovering the…",
     path: '/dr-mai-shimada',
   }),
   twitter: {
     card: "summary_large_image",
     title: "Dr Mai Shimada | Isha Health",
-    description: "Dr. Mai Shimada is a board certified emergency medicine physician with over 10 years of experience . She decided to start Isha Health after discovering the transformative benefits of ketamine therapy for various mental health conditions. She completed Psychedelic Facilitation Certification Program at the UC Berkeley and is a study physician for psychedelic medicine clinical trials at Open Mind Collective.",
+    description: "Dr. Mai Shimada is a board certified emergency medicine physician with over 10 years of experience . She decided to start Isha Health after discovering the…",
   },
 };
 

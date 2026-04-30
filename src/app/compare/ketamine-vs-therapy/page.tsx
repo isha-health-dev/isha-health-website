@@ -3,17 +3,17 @@ import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "Ketamine vs Traditional Talk Therapy",
-  description: "Compare ketamine-assisted therapy with traditional psychotherapy approaches like CBT and talk therapy. Understand how they differ in mechanism, timeline, cost, and when each may be appropriate.",
+  description: "Compare ketamine-assisted therapy with traditional psychotherapy approaches like CBT and talk therapy. Understand how they differ in mechanism, timeline…",
   alternates: { canonical: "https://isha.health/compare/ketamine-vs-therapy" },
   openGraph: buildOpenGraph({
     title: "Ketamine vs Traditional Talk Therapy",
-    description: "Compare ketamine-assisted therapy with traditional psychotherapy approaches like CBT and talk therapy. Understand how they differ in mechanism, timeline, cost, and when each may be appropriate.",
+    description: "Compare ketamine-assisted therapy with traditional psychotherapy approaches like CBT and talk therapy. Understand how they differ in mechanism, timeline…",
     path: '/compare/ketamine-vs-therapy',
   }),
   twitter: {
     card: "summary_large_image",
     title: "Ketamine vs Traditional Talk Therapy",
-    description: "Compare ketamine-assisted therapy with traditional psychotherapy approaches like CBT and talk therapy. Understand how they differ in mechanism, timeline, cost, and when each may be appropriate.",
+    description: "Compare ketamine-assisted therapy with traditional psychotherapy approaches like CBT and talk therapy. Understand how they differ in mechanism, timeline…",
   },
 };
 

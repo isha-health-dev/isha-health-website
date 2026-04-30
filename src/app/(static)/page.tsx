@@ -67,30 +67,25 @@ export default function Page() {
     {/* Hero */}
     <div
       dangerouslySetInnerHTML={{
-        __html: `<div class="isha-hero" style="background:linear-gradient(180deg,#f0fdfa 0%,#ffffff 65%);padding:5rem 1.5rem 4rem;border-bottom:1px solid #e5e7eb;">
-          <div style="max-width:820px;margin:0 auto;text-align:center;">
-            <div style="display:inline-flex;align-items:center;gap:0.5rem;background:#ccfbf1;color:#0f766e;padding:0.35rem 0.9rem;border-radius:999px;font-family:'Poppins',sans-serif;font-size:0.78rem;font-weight:600;letter-spacing:0.02em;margin-bottom:1.5rem;">
-              <span style="width:6px;height:6px;border-radius:50%;background:#0d9488;"></span>
-              Physician-led • Available in 9 states
-            </div>
-            <h1 style="font-family:'Libre Baskerville',serif;font-size:3.2rem;font-weight:700;color:#0f172a;line-height:1.1;letter-spacing:-0.01em;margin-bottom:1.25rem;">Unlock your mind&rsquo;s potential</h1>
-            <p style="font-family:'Poppins',sans-serif;font-size:1.1rem;color:#4b5563;line-height:1.6;max-width:640px;margin:0 auto 2rem;">Personalized ketamine-assisted therapy for depression, anxiety, and PTSD &mdash; delivered to your home by a board-certified physician.</p>
-            <div style="display:flex;flex-wrap:wrap;gap:0.75rem;justify-content:center;margin-bottom:2.5rem;">
-              <a href="/am-i-a-candidate" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.95rem 2.25rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:1rem;font-family:'Poppins',sans-serif;box-shadow:0 1px 2px rgba(15,118,110,0.15);">Am I a candidate?</a>
-              <a href="/pricing" style="display:inline-block;background-color:#ffffff;color:#0f766e;padding:0.95rem 2.25rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:1rem;font-family:'Poppins',sans-serif;border:1px solid #99f6e4;">See pricing</a>
-            </div>
-            <div style="display:flex;flex-wrap:wrap;gap:2rem;justify-content:center;font-family:'Poppins',sans-serif;font-size:0.85rem;color:#4b5563;">
-              <span><strong style="color:#0f766e;">88.8%</strong> improvement rate</span>
-              <span><strong style="color:#0f766e;">500+</strong> patients treated</span>
-              <span><strong style="color:#0f766e;">$350</strong> consultation</span>
-            </div>
+        __html: `<div style="background-image:url('/images/hero-bg.webp');background-size:cover;background-position:right center;min-height:520px;display:flex;align-items:center;padding:4rem 1.5rem;">
+          <div style="max-width:550px;padding-left:8%;">
+            <h1 style="font-family:'Libre Baskerville',serif;font-size:3rem;font-weight:700;color:#111827;line-height:1.15;margin-bottom:1.25rem;">Unlock Your Mind's Potential</h1>
+            <p style="font-family:'Poppins',sans-serif;font-size:1rem;color:#4b5563;line-height:1.7;margin-bottom:0.75rem;">Personalized mental health care for depression, anxiety, and PTSD</p>
+            <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#4b5563;line-height:1.7;margin-bottom:2rem;">Are you struggling to feel like yourself? Isha Health combines ketamine-assisted therapy with holistic care — available via telemedicine in 9 states.</p>
+            <a href="/am-i-a-candidate" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.9rem 2.5rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:1rem;font-family:'Poppins',sans-serif;">Am I a Candidate?</a>
           </div>
         </div>
         <style>
           @media (max-width: 768px) {
-            .isha-hero { padding: 3rem 1.25rem 2.5rem !important; }
-            .isha-hero h1 { font-size: 2.2rem !important; }
-            .isha-hero p { font-size: 1rem !important; }
+            div[style*="hero-bg.webp"] {
+              background-image: url('/images/hero-bg-mobile.webp') !important;
+              background-position: center !important;
+              min-height: 400px !important;
+            }
+            div[style*="hero-bg.webp"] > div {
+              padding-left: 5% !important;
+              max-width: 100% !important;
+            }
           }
         </style>`,
       }}
@@ -360,7 +355,7 @@ export default function Page() {
                   <p style="font-family:'Source Sans Pro',sans-serif;font-size:0.85rem;color:#4b5563;line-height:1.5;">A senior attorney with treatment-resistant depression found rapid relief.</p>
                 </div>
               </a>
-              <a href="/post/how-much-does-ketamine-therapy-cost" style="flex:1 1 300px;max-width:340px;text-decoration:none;color:inherit;border:1px solid #e5e7eb;border-radius:10px;overflow:hidden;background:#fff;">
+              <a href="/pricing" style="flex:1 1 300px;max-width:340px;text-decoration:none;color:inherit;border:1px solid #e5e7eb;border-radius:10px;overflow:hidden;background:#fff;">
                 <div style="padding:1.25rem;">
                   <p style="font-family:'Poppins',sans-serif;font-size:0.7rem;color:#0d9488;font-weight:600;margin-bottom:0.35rem;text-transform:uppercase;letter-spacing:0.05em;">Cost & Insurance</p>
                   <p style="font-family:'Poppins',sans-serif;font-size:1rem;font-weight:600;color:#111827;line-height:1.4;margin-bottom:0.5rem;">How Much Does Ketamine Therapy Cost?</p>

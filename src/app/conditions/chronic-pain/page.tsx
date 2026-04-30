@@ -3,17 +3,17 @@ import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "Ketamine Therapy for Chronic Pain",
-  description: "Ketamine has a long history of use in pain management and emerging evidence supports its role in treating chronic pain conditions. Learn how Isha Health approaches ketamine-assisted therapy for chronic pain.",
+  description: "Ketamine has a long history of use in pain management and emerging evidence supports its role in treating chronic pain conditions. Learn how Isha Health…",
   alternates: { canonical: "https://isha.health/conditions/chronic-pain" },
   openGraph: buildOpenGraph({
     title: "Ketamine Therapy for Chronic Pain",
-    description: "Ketamine has a long history of use in pain management and emerging evidence supports its role in treating chronic pain conditions. Learn how Isha Health approaches ketamine-assisted therapy for chronic pain.",
+    description: "Ketamine has a long history of use in pain management and emerging evidence supports its role in treating chronic pain conditions. Learn how Isha Health…",
     path: '/conditions/chronic-pain',
   }),
   twitter: {
     card: "summary_large_image",
     title: "Ketamine Therapy for Chronic Pain",
-    description: "Ketamine has a long history of use in pain management and emerging evidence supports its role in treating chronic pain conditions. Learn how Isha Health approaches ketamine-assisted therapy for chronic pain.",
+    description: "Ketamine has a long history of use in pain management and emerging evidence supports its role in treating chronic pain conditions. Learn how Isha Health…",
   },
 };
 

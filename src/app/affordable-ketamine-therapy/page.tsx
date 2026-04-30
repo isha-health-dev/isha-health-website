@@ -4,7 +4,7 @@ import { buildOpenGraph } from '@/lib/seo';
 export const metadata: Metadata = {
   title: 'Affordable Ketamine Therapy: $350/Session, 9 States',
   description:
-    'At-home ketamine therapy from $350/session — among the cheapest physician-led options. Compare with IV ($400–800) and Spravato ($600–900). HSA/FSA accepted, superbills provided.',
+    'At-home ketamine therapy from $350/session — among the cheapest physician-led options. Compare with IV ($400–800) and Spravato ($600–900). HSA/FSA accepted…',
   alternates: { canonical: 'https://isha.health/affordable-ketamine-therapy' },
   openGraph: buildOpenGraph({
     title: 'Affordable Ketamine Therapy: $350/Session, 9 States',

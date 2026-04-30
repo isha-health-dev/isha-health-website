@@ -2,18 +2,18 @@ import type { Metadata } from 'next';
 import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: "Ketamine vs Antidepressants (SSRIs/SNRIs): Which Is Right for You?",
-  description: "Compare ketamine therapy with traditional antidepressants like SSRIs and SNRIs. Learn about speed of relief, mechanisms, side effects, and when each option may be appropriate.",
+  title: "Ketamine vs Antidepressants (SSRIs/SNRIs): Which Is…",
+  description: "Compare ketamine therapy with traditional antidepressants like SSRIs and SNRIs. Learn about speed of relief, mechanisms, side effects, and when each option…",
   alternates: { canonical: "https://isha.health/compare/ketamine-vs-antidepressants" },
   openGraph: buildOpenGraph({
-    title: "Ketamine vs Antidepressants (SSRIs/SNRIs): Which Is Right for You?",
-    description: "Compare ketamine therapy with traditional antidepressants like SSRIs and SNRIs. Learn about speed of relief, mechanisms, side effects, and when each option may be appropriate.",
+    title: "Ketamine vs Antidepressants (SSRIs/SNRIs): Which Is…",
+    description: "Compare ketamine therapy with traditional antidepressants like SSRIs and SNRIs. Learn about speed of relief, mechanisms, side effects, and when each option…",
     path: '/compare/ketamine-vs-antidepressants',
   }),
   twitter: {
     card: "summary_large_image",
-    title: "Ketamine vs Antidepressants (SSRIs/SNRIs): Which Is Right for You?",
-    description: "Compare ketamine therapy with traditional antidepressants like SSRIs and SNRIs. Learn about speed of relief, mechanisms, side effects, and when each option may be appropriate.",
+    title: "Ketamine vs Antidepressants (SSRIs/SNRIs): Which Is…",
+    description: "Compare ketamine therapy with traditional antidepressants like SSRIs and SNRIs. Learn about speed of relief, mechanisms, side effects, and when each option…",
   },
 };
 

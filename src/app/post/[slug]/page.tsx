@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import { getBlogPost, getAllBlogPosts } from '@/lib/blog';
-import { buildOpenGraph } from '@/lib/seo';
+import { buildOpenGraph, truncateTitle, truncateDescription } from '@/lib/seo';
 import { mdxComponents } from '@/lib/mdx-components';
 import imageDims from '@/lib/image-dims.json';
 import Link from 'next/link';
@@ -27,15 +27,19 @@ export async function generateMetadata({
   const post = getBlogPost(slug);
   if (!post) return { title: 'Post Not Found' };
 
+  // Trim long titles (layout appends ' | Isha Health' — keep total ≤70) and
+  // long meta descriptions (~158). Body content keeps the full author title.
+  const seoTitle = truncateTitle(post.title);
+  const seoDescription = truncateDescription(post.description || '');
   return {
-    title: post.title,
-    description: post.description || '',
+    title: seoTitle,
+    description: seoDescription,
     alternates: {
       canonical: `https://isha.health/post/${post.slug}`,
     },
     openGraph: buildOpenGraph({
-      title: post.title,
-      description: post.description || '',
+      title: seoTitle,
+      description: seoDescription,
       path: `/post/${post.slug}`,
       type: 'article',
       image: post.image,
@@ -43,8 +47,8 @@ export async function generateMetadata({
     }),
     twitter: {
       card: 'summary_large_image',
-      title: post.title,
-      description: post.description || '',
+      title: seoTitle,
+      description: seoDescription,
     },
   };
 }

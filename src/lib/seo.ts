@@ -3,6 +3,27 @@ import type { Metadata } from 'next';
 const SITE_URL = 'https://isha.health';
 const DEFAULT_OG_IMAGE = '/images/isha_logo.webp';
 
+// Layout title template appends ' | Isha Health' (14 chars). Aim ≤70 total.
+const TITLE_BUDGET = 56;
+const META_BUDGET = 158;
+
+function truncateAtWord(text: string, max: number): string {
+  if (text.length <= max) return text;
+  const cut = text
+    .slice(0, max - 1)
+    .replace(/\s+\S*$/, '')
+    .replace(/[\s,;:.\-—]+$/, '');
+  return cut + '…';
+}
+
+export function truncateTitle(title: string): string {
+  return truncateAtWord(title, TITLE_BUDGET);
+}
+
+export function truncateDescription(description: string): string {
+  return truncateAtWord(description, META_BUDGET);
+}
+
 type OGInput = {
   title: string;
   description?: string;

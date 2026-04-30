@@ -3,19 +3,19 @@ import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "Referral Patient Process | Isha Health",
-  description: "Learn how to refer patients to Isha Health for ketamine treatment. Our step-by-step guide for therapists ensures a smooth referral process. Find out how to connect your patients with our treatment.",
+  description: "Learn how to refer patients to Isha Health for ketamine treatment. Our step-by-step guide for therapists ensures a smooth referral process. Find out how to…",
   alternates: {
     canonical: "https://isha.health/referral-patient-process",
   },
   openGraph: buildOpenGraph({
     title: "Referral Patient Process | Isha Health",
-    description: "Learn how to refer patients to Isha Health for ketamine treatment. Our step-by-step guide for therapists ensures a smooth referral process. Find out how to connect your patients with our treatment.",
+    description: "Learn how to refer patients to Isha Health for ketamine treatment. Our step-by-step guide for therapists ensures a smooth referral process. Find out how to…",
     path: '/referral-patient-process',
   }),
   twitter: {
     card: "summary_large_image",
     title: "Referral Patient Process | Isha Health",
-    description: "Learn how to refer patients to Isha Health for ketamine treatment. Our step-by-step guide for therapists ensures a smooth referral process. Find out how to connect your patients with our treatment.",
+    description: "Learn how to refer patients to Isha Health for ketamine treatment. Our step-by-step guide for therapists ensures a smooth referral process. Find out how to…",
   },
 };
 

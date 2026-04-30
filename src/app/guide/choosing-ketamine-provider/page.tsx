@@ -3,17 +3,17 @@ import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "How to Choose a Ketamine Therapy Provider",
-  description: "A comprehensive guide to choosing the right ketamine therapy provider. Learn about credentials, red flags, cost transparency, at-home vs clinic options, and questions to ask.",
+  description: "A comprehensive guide to choosing the right ketamine therapy provider. Learn about credentials, red flags, cost transparency, at-home vs clinic options, and…",
   alternates: { canonical: "https://isha.health/guide/choosing-ketamine-provider" },
   openGraph: buildOpenGraph({
     title: "How to Choose a Ketamine Therapy Provider",
-    description: "A comprehensive guide to choosing the right ketamine therapy provider. Learn about credentials, red flags, cost transparency, at-home vs clinic options, and questions to ask.",
+    description: "A comprehensive guide to choosing the right ketamine therapy provider. Learn about credentials, red flags, cost transparency, at-home vs clinic options, and…",
     path: '/guide/choosing-ketamine-provider',
   }),
   twitter: {
     card: "summary_large_image",
     title: "How to Choose a Ketamine Therapy Provider",
-    description: "A comprehensive guide to choosing the right ketamine therapy provider. Learn about credentials, red flags, cost transparency, at-home vs clinic options, and questions to ask.",
+    description: "A comprehensive guide to choosing the right ketamine therapy provider. Learn about credentials, red flags, cost transparency, at-home vs clinic options, and…",
   },
 };
 
@@ -234,7 +234,7 @@ export default function Page() {
       Cost transparency is a hallmark of a trustworthy provider. Before committing to treatment, you should have a clear understanding of all expenses, including consultation fees, medication costs, follow-up appointment fees, and any additional charges.
     </p>
     <p style="font-family:'Source Sans Pro','Poppins',sans-serif;font-size:0.95rem;line-height:1.8;color:#374151;margin-bottom:1rem;text-wrap:pretty;">
-      Our detailed article on <a href="/post/how-much-does-ketamine-therapy-cost" style="color:#0d9488;text-decoration:underline;">how much ketamine therapy costs</a> provides a comprehensive breakdown of pricing across different treatment models. Visit our <a href="/pricing" style="color:#0d9488;text-decoration:underline;">pricing page</a> to see Isha Health's current rates.
+      Our detailed article on <a href="/pricing" style="color:#0d9488;text-decoration:underline;">how much ketamine therapy costs</a> provides a comprehensive breakdown of pricing across different treatment models. Visit our <a href="/pricing" style="color:#0d9488;text-decoration:underline;">pricing page</a> to see Isha Health's current rates.
     </p>
     <p style="font-family:'Source Sans Pro','Poppins',sans-serif;font-size:0.95rem;line-height:1.8;color:#374151;margin-bottom:1rem;text-wrap:pretty;">
       Key considerations regarding cost:
@@ -313,7 +313,7 @@ export default function Page() {
 
     <div style="margin-bottom:2rem;">
       <h3 style="font-family:'Libre Baskerville',serif;font-size:1rem;font-weight:700;color:#111827;margin-bottom:0.5rem;">How much should ketamine therapy cost?</h3>
-      <p style="font-family:'Source Sans Pro','Poppins',sans-serif;font-size:0.95rem;line-height:1.8;color:#374151;">IV infusions typically cost $400 to $800 per session. At-home oral programs may start around $350 per appointment plus medication. Be cautious of prices significantly above or below market rates. See our <a href="/pricing" style="color:#0d9488;text-decoration:underline;">pricing page</a> and our breakdown of <a href="/post/how-much-does-ketamine-therapy-cost" style="color:#0d9488;text-decoration:underline;">ketamine therapy costs</a>.</p>
+      <p style="font-family:'Source Sans Pro','Poppins',sans-serif;font-size:0.95rem;line-height:1.8;color:#374151;">IV infusions typically cost $400 to $800 per session. At-home oral programs may start around $350 per appointment plus medication. Be cautious of prices significantly above or below market rates. See our <a href="/pricing" style="color:#0d9488;text-decoration:underline;">pricing page</a> and our breakdown of <a href="/pricing" style="color:#0d9488;text-decoration:underline;">ketamine therapy costs</a>.</p>
     </div>
 
     <!-- Related Guides -->

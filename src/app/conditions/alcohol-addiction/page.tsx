@@ -3,17 +3,17 @@ import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "Ketamine Therapy for Alcohol Use Disorder",
-  description: "Emerging research suggests ketamine may help reduce alcohol cravings and support recovery from alcohol use disorder. Learn about the clinical evidence and how Isha Health approaches treatment.",
+  description: "Emerging research suggests ketamine may help reduce alcohol cravings and support recovery from alcohol use disorder. Learn about the clinical evidence and…",
   alternates: { canonical: "https://isha.health/conditions/alcohol-addiction" },
   openGraph: buildOpenGraph({
     title: "Ketamine Therapy for Alcohol Use Disorder",
-    description: "Emerging research suggests ketamine may help reduce alcohol cravings and support recovery from alcohol use disorder. Learn about the clinical evidence and how Isha Health approaches treatment.",
+    description: "Emerging research suggests ketamine may help reduce alcohol cravings and support recovery from alcohol use disorder. Learn about the clinical evidence and…",
     path: '/conditions/alcohol-addiction',
   }),
   twitter: {
     card: "summary_large_image",
     title: "Ketamine Therapy for Alcohol Use Disorder",
-    description: "Emerging research suggests ketamine may help reduce alcohol cravings and support recovery from alcohol use disorder. Learn about the clinical evidence and how Isha Health approaches treatment.",
+    description: "Emerging research suggests ketamine may help reduce alcohol cravings and support recovery from alcohol use disorder. Learn about the clinical evidence and…",
   },
 };
 
