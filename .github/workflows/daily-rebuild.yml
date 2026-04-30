@@ -9,22 +9,16 @@ on:
 jobs:
   rebuild:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
-      - uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Trigger Vercel rebuild
+      - name: Trigger Vercel deploy
+        env:
+          VERCEL_DEPLOY_HOOK_URL: ${{ secrets.VERCEL_DEPLOY_HOOK_URL }}
         run: |
-          # Push an empty commit to trigger Vercel auto-deploy
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          # Note: do NOT add [skip ci] — Vercel honors it and would skip the deploy,
-          # which is the entire reason for this empty commit.
-          git commit --allow-empty -m "chore: daily rebuild for scheduled posts"
-          git push
+          if [ -z "$VERCEL_DEPLOY_HOOK_URL" ]; then
+            echo "VERCEL_DEPLOY_HOOK_URL secret is missing"
+            exit 1
+          fi
+          curl -fsS -X POST "$VERCEL_DEPLOY_HOOK_URL"
 
       - name: Submit fresh URLs to IndexNow (Bing, Yandex)
         env:
