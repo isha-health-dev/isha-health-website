@@ -45,7 +45,7 @@ export default function Page() {
       <img src="/images/e6379c86_642406643241395c44e7a6a8_musical-note.webp" loading="lazy" width="16" height="16" alt="Musical note"> Healing Sound Playlist
     </a>
     <a href="https://isha.health/post/donation-based-online-integration-circles-for-people-receiving-ketamien-treatment" style="display:inline-flex;align-items:center;gap:0.4rem;font-family:'Poppins',sans-serif;font-size:0.8rem;font-weight:600;color:#0d9488;text-decoration:none;padding:0.4rem 0.75rem;border:1px solid #d1d5db;border-radius:6px;background:#fff;">
-      <img src="/images/183b0d86_642406653901acaa5c694427_rec.webp" loading="lazy" width="16" height="16" alt=""> Integration Circles
+      <img src="/images/183b0d86_642406653901acaa5c694427_rec.webp" loading="lazy" width="16" height="16" alt="Integration circles icon"> Integration Circles
     </a>
     <a href="/faq" style="display:inline-flex;align-items:center;gap:0.4rem;font-family:'Poppins',sans-serif;font-size:0.8rem;font-weight:600;color:#0d9488;text-decoration:none;padding:0.4rem 0.75rem;border:1px solid #d1d5db;border-radius:6px;background:#fff;">
       <img src="/images/5c86e7c3_6424066424468df6964e631a_information.webp" loading="lazy" width="16" height="16" alt="Information"> FAQ

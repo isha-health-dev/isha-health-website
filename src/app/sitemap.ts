@@ -201,7 +201,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${BASE_URL}/faq/ketamine-therapy`, changeFrequency: 'monthly', priority: 0.8 },
   ];
 
-  return [
+  // Dedupe by URL (some routes are listed in multiple blocks — e.g. the
+  // directory + pricing + compare/ketamine-providers each appear in
+  // staticPages and again in their specialized block).
+  const all = [
     ...staticEntries,
     ...blogEntries,
     ...stateEntries,
@@ -212,4 +215,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...therapistEntries,
     ...additionalPages,
   ];
+  const seen = new Set<string>();
+  return all.filter((entry) => {
+    if (seen.has(entry.url)) return false;
+    seen.add(entry.url);
+    return true;
+  });
 }
