@@ -320,20 +320,27 @@ export default async function TherapistProfilePage({
           </div>
         </div>
 
-        {/* Booking Button */}
-        {t.booking_url && (
-          <div className="mb-8">
-            <a
-              href={t.booking_url.startsWith('http') ? t.booking_url : `https://${t.booking_url}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-teal-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-teal-700 transition-colors"
-              style={{ textDecoration: 'none' }}
-            >
-              Book a Session
-            </a>
-          </div>
-        )}
+        {/* Booking / Website CTA — prefer the explicit booking_url; fall
+            back to website so every profile with a link has a visible CTA. */}
+        {(() => {
+          const url = t.booking_url || t.website;
+          if (!url) return null;
+          const href = url.startsWith('http') ? url : `https://${url}`;
+          const label = t.booking_url ? 'Book a Session' : 'Visit Website';
+          return (
+            <div className="mb-8">
+              <a
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-teal-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-teal-700 transition-colors"
+                style={{ textDecoration: 'none' }}
+              >
+                {label} →
+              </a>
+            </div>
+          );
+        })()}
 
         {/* Upcoming Events */}
         {t.therapist_event && t.therapist_event.length > 0 && (
