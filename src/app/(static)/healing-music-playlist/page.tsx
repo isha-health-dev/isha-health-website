@@ -19,12 +19,97 @@ export const metadata: Metadata = {
   },
 };
 
+const embeds: { kind: 'playlist' | 'album'; id: string }[] = [
+  { kind: 'playlist', id: '233QHLsMhXceP8xharLmzI' },
+  { kind: 'playlist', id: '5vmeBxK341JO8oOJ6BUPjK' },
+  { kind: 'playlist', id: '41FOMAZXEBVtzrYpeGsxZA' },
+  { kind: 'playlist', id: '4elYzxuJtMdIsZHB5Z5uTB' },
+  { kind: 'album', id: '3G6sgqTyhRddurUilNLJNR' },
+  { kind: 'playlist', id: '2CBAwuuqP9ORwBl89Uvq39' },
+  { kind: 'playlist', id: '6EBtnrgLRXUI0mrvgyJVLc' },
+  { kind: 'playlist', id: '6Dto3bi9XooAYZyObaD1l9' },
+  { kind: 'playlist', id: '2mT6LpOU4ipJ0BkoCigAiw' },
+  { kind: 'playlist', id: '0DkS4rI50cBtRMAILOdxlE' },
+  { kind: 'playlist', id: '334NrKIQaK8dfQUNWA1N9k' },
+  { kind: 'playlist', id: '2U3WLh1hDoBWhB9wtuf6Bx' },
+  { kind: 'playlist', id: '1PBhHh3DqkRUsVf8lqtTVd' },
+  { kind: 'album', id: '6py1dRNZE25nASqawLVWLR' },
+];
+
+const embedsHtml = embeds
+  .map(
+    ({ kind, id }) =>
+      `<iframe class="kap-embed" src="https://open.spotify.com/embed/${kind}/${id}?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`,
+  )
+  .join('');
+
+const html = `
+<div class="kap-music-page">
+  <section class="kap-hero">
+    <div class="kap-hero-inner">
+      <p class="kap-eyebrow">For Your Sessions</p>
+      <h1 class="kap-h1">Healing Music Playlist</h1>
+      <p class="kap-sub">A curated mix of ambient, meditative, and 432Hz sound — chosen by patients and clinicians to support your <a href="/post/9-things-you-should-do-before-your-ketamine-dosing-sessions">ketamine therapy sessions</a> at home.</p>
+    </div>
+  </section>
+  <section class="kap-grid-wrap">
+    <div class="kap-grid">${embedsHtml}</div>
+  </section>
+</div>
+<style>
+.kap-music-page { background: #ffffff; }
+.kap-hero {
+  background: linear-gradient(180deg, #f0fdfa 0%, #ffffff 100%);
+  padding: 4rem 1.5rem 3rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+.kap-hero-inner { max-width: 760px; margin: 0 auto; text-align: center; }
+.kap-eyebrow {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #0f766e;
+  margin: 0 0 0.75rem;
+}
+.kap-h1 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  margin: 0 0 1rem;
+}
+.kap-sub {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.05rem;
+  color: #4b5563;
+  line-height: 1.65;
+  max-width: 620px;
+  margin: 0 auto;
+}
+.kap-sub a { color: #0d9488; text-decoration: underline; }
+.kap-grid-wrap { padding: 3rem 1.5rem 4rem; }
+.kap-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+.kap-embed { border-radius: 12px; display: block; }
+@media (max-width: 720px) {
+  .kap-hero { padding: 3rem 1.25rem 2.25rem; }
+  .kap-h1 { font-size: 2rem; }
+  .kap-sub { font-size: 1rem; }
+  .kap-grid { grid-template-columns: 1fr; gap: 1.25rem; }
+  .kap-grid-wrap { padding: 2rem 1.25rem 3rem; }
+}
+</style>
+`;
+
 export default function Page() {
-  return (
-    <div
-      dangerouslySetInnerHTML={{
-        __html: "<div style=\"padding:0 0 2rem;\"><div style=\"text-align:center;padding:3rem 1.5rem 1.5rem;\"><h1 style=\"font-family:'Libre Baskerville',serif;font-size:2rem;font-weight:700;color:#111827;margin:0;\">Healing Music Playlist</h1></div><div style=\"max-width:800px;margin:0 auto;padding:0 1.5rem;\"><h3>Explore Healing Music Playlists for Enhanced Ketamine Therapy Experience</h3><p>Discover a collection of meticulously curated healing music playlists to elevate your <a href=\"https://isha.health/post/9-things-you-should-do-before-your-ketamine-dosing-sessions\">ketamine therapy sessions</a>. It is important to find peace and tranquility during your treatment for depression and anxiety. These are playlists that have received great reviews from our patients, providing a soothing backdrop to support your therapeutic journey. Immerse yourself in the power of music and explore our selection of favorite playlists. Find solace, relaxation, and a renewed sense of well-being as you embark on your ketamine therapy experience.</p><div class=\"w-embed w-iframe\"><iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/playlist/233QHLsMhXceP8xharLmzI?utm_source=generator\" width=\"100%\" height=\"380\" frameborder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\"></iframe></div><div class=\"w-embed w-iframe\"><iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/playlist/5vmeBxK341JO8oOJ6BUPjK?utm_source=generator\" width=\"100%\" height=\"352\" frameborder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe></div><div class=\"w-embed w-iframe\"><iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/playlist/41FOMAZXEBVtzrYpeGsxZA?utm_source=generator\" width=\"100%\" height=\"352\" frameborder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe></div><div class=\"w-embed w-iframe\"><iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/playlist/4elYzxuJtMdIsZHB5Z5uTB?utm_source=generator\" width=\"100%\" height=\"352\" frameborder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe></div><div class=\"w-embed w-iframe\"><iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/album/3G6sgqTyhRddurUilNLJNR?utm_source=generator\" width=\"100%\" height=\"352\" frameborder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe></div><div class=\"w-embed w-iframe\"><iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/playlist/2CBAwuuqP9ORwBl89Uvq39?utm_source=generator\" width=\"100%\" height=\"352\" frameborder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe></div><div class=\"w-embed w-iframe\"><iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/playlist/6EBtnrgLRXUI0mrvgyJVLc?utm_source=generator\" width=\"100%\" height=\"352\" frameborder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe></div><div class=\"w-embed w-iframe\"><iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/playlist/6Dto3bi9XooAYZyObaD1l9?utm_source=generator\" width=\"100%\" height=\"352\" frameborder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe></div><div class=\"w-embed w-iframe\"><iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/playlist/2mT6LpOU4ipJ0BkoCigAiw?utm_source=generator\" width=\"100%\" height=\"352\" frameborder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe></div><div class=\"w-embed w-iframe\"><iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/playlist/0DkS4rI50cBtRMAILOdxlE?utm_source=generator\" width=\"100%\" height=\"352\" frameborder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe></div><div class=\"w-embed w-iframe\"><iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/playlist/334NrKIQaK8dfQUNWA1N9k?utm_source=generator\" width=\"100%\" height=\"352\" frameborder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe></div><div class=\"w-embed w-iframe\"><iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/playlist/2U3WLh1hDoBWhB9wtuf6Bx?utm_source=generator\" width=\"100%\" height=\"352\" frameborder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe></div><div class=\"w-embed w-iframe\"><iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/playlist/1PBhHh3DqkRUsVf8lqtTVd?utm_source=generator\" width=\"100%\" height=\"352\" frameborder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe></div><div class=\"w-embed w-iframe\"><iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/album/6py1dRNZE25nASqawLVWLR?utm_source=generator\" width=\"100%\" height=\"352\" frameborder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe></div></div></div>",
-      }}
-    />
-  );
+  return <div dangerouslySetInnerHTML={{ __html: html }} />;
 }
