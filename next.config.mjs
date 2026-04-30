@@ -5,7 +5,10 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'yqmliskulywrurqcbhfr.supabase.co',
-        pathname: '/storage/v1/object/public/**',
+        // Allow both raw (/object/public) and Supabase-optimized
+        // (/render/image/public) paths — getOptimizedProfilePic rewrites to
+        // the latter, so a narrower pattern would 400 every profile picture.
+        pathname: '/storage/v1/**',
       },
     ],
   },

@@ -324,7 +324,7 @@ export default async function TherapistProfilePage({
         {t.booking_url && (
           <div className="mb-8">
             <a
-              href={t.booking_url}
+              href={t.booking_url.startsWith('http') ? t.booking_url : `https://${t.booking_url}`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-teal-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-teal-700 transition-colors"

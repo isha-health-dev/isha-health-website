@@ -1,9 +1,18 @@
 import type { Metadata } from 'next';
+import { buildOpenGraph } from '@/lib/seo';
+
+const description =
+  'Request a superbill from Isha Health or submit an out-of-network insurance claim through our claims portal to seek reimbursement for ketamine therapy.';
 
 export const metadata: Metadata = {
   title: 'Request Your Superbill',
-  description: 'Request a superbill from Isha Health or submit an out-of-network insurance claim through our claims portal to seek reimbursement for ketamine therapy.',
+  description,
   robots: { index: true, follow: true },
+  openGraph: buildOpenGraph({
+    title: 'Request Your Superbill | Isha Health',
+    description,
+    path: '/current-patients/superbill',
+  }),
 };
 
 export default function SuperbillPage() {
