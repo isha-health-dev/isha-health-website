@@ -37,7 +37,7 @@ const navbarHtml = `
 <nav style="position:sticky;top:0;z-index:1000;font-family:'Poppins',sans-serif;background:#fff;">
   <!-- Top bar -->
   <div style="background:#2d3436;color:#fff;text-align:center;padding:8px 16px;font-size:13px;letter-spacing:0.3px;">
-    Online Ketamine Treatment Available in: AZ, CA, CO, FL, GA, NY, OR, TX, and WA.
+    Online Ketamine Treatment Available in: AZ, CA, CO, FL, GA, OR, TX, and WA.
   </div>
   <!-- Main navbar -->
   <div style="max-width:1200px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;">
@@ -194,7 +194,6 @@ const footerHtml = `
         <p style="font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#888;margin:0 0 16px;">Location</p>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px 24px;">
           <a href="/locations/online-at-home-ketamine-therapy-in-arizona" style="color:#ccc;text-decoration:none;font-size:14px;padding:4px 0;">Arizona</a>
-          <a href="/locations/online-at-home-ketamine-therapy-in-new-york" style="color:#ccc;text-decoration:none;font-size:14px;padding:4px 0;">New York</a>
           <a href="/locations/online-at-home-ketamine-therapy-in-california" style="color:#ccc;text-decoration:none;font-size:14px;padding:4px 0;">California</a>
           <a href="/locations/online-at-home-ketamine-therapy-in-oregon" style="color:#ccc;text-decoration:none;font-size:14px;padding:4px 0;">Oregon</a>
           <a href="/locations/online-at-home-ketamine-therapy-in-colorado" style="color:#ccc;text-decoration:none;font-size:14px;padding:4px 0;">Colorado</a>
@@ -263,7 +262,7 @@ gtag('config', 'AW-16993591045');`,
               url: 'https://isha.health',
               logo: 'https://isha.health/images/isha_logo.webp',
               description:
-                'Physician-led online ketamine therapy for depression, anxiety, and PTSD. 88.8% of patients with moderate-to-severe depression show measurable improvement. Available in 9 states.',
+                'Physician-led online ketamine therapy for depression, anxiety, and PTSD. 88.8% of patients with moderate-to-severe depression show measurable improvement. Available in 8 states.',
               address: {
                 '@type': 'PostalAddress',
                 streetAddress: '4255 18th Street',
@@ -289,7 +288,6 @@ gtag('config', 'AW-16993591045');`,
                 { '@type': 'AdministrativeArea', name: 'Colorado' },
                 { '@type': 'AdministrativeArea', name: 'Florida' },
                 { '@type': 'AdministrativeArea', name: 'Georgia' },
-                { '@type': 'AdministrativeArea', name: 'New York' },
                 { '@type': 'AdministrativeArea', name: 'Oregon' },
                 { '@type': 'AdministrativeArea', name: 'Texas' },
                 { '@type': 'AdministrativeArea', name: 'Washington' },

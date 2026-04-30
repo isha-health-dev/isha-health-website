@@ -41,7 +41,7 @@ export default function Page() {
         Upon confirmation of the booking of the initial evaluation, we will reach out to you to coordinate a time to discuss the care of your patient.
       </p>
       <p style="margin:0 0 2rem;font-weight:600;color:#0d9488;">
-        Please note at this time we are only treating patients who live in AZ, CA, CO, FL, GA, OR, NY and WA.
+        Please note at this time we are only treating patients who live in AZ, CA, CO, FL, GA, OR, TX, and WA.
       </p>
 
       <div style="text-align:center;margin-bottom:2.5rem;">

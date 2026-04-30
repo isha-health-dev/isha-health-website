@@ -27,7 +27,7 @@ export default function Page() {
 
   <div style="text-align:center;padding:2rem 0;">
     <h1 style="font-family:'Libre Baskerville',serif;font-size:2rem;font-weight:700;color:#111827;margin-bottom:0.75rem;">Schedule Your Initial Consultation</h1>
-    <p style="font-family:'Poppins',sans-serif;font-size:1rem;color:#6b7280;">60 minutes with a physician &middot; $350 &middot; Available in 9 states</p>
+    <p style="font-family:'Poppins',sans-serif;font-size:1rem;color:#6b7280;">60 minutes with a physician &middot; $350 &middot; Available in 8 states</p>
   </div>
 
   <div style="background:#f9fafb;border:1px solid #e5e7eb;border-radius:10px;padding:1.5rem;margin-bottom:2rem;">
@@ -46,7 +46,7 @@ export default function Page() {
   </div>
 
   <div style="margin-bottom:1rem;">
-    <p style="font-family:'Poppins',sans-serif;font-size:0.85rem;font-weight:600;color:#111827;margin-bottom:0.5rem;">Available in: AZ, CA, CO, FL, GA, NY, OR, TX, WA</p>
+    <p style="font-family:'Poppins',sans-serif;font-size:0.85rem;font-weight:600;color:#111827;margin-bottom:0.5rem;">Available in: AZ, CA, CO, FL, GA, OR, TX, WA</p>
   </div>
 
   <div id="all-states-booking" style="border:1px solid #e5e7eb;border-radius:10px;overflow:hidden;">

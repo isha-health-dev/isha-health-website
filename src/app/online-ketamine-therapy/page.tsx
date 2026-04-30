@@ -4,11 +4,11 @@ import { buildOpenGraph } from '@/lib/seo';
 export const metadata: Metadata = {
   title: 'Online Ketamine Therapy: At-Home Treatment from $350',
   description:
-    'Online ketamine therapy from $350/session, prescribed by a board-certified physician. 88.8% of 500+ patients improve. Available in AZ, CA, CO, FL, GA, NY…',
+    'Online ketamine therapy from $350/session, prescribed by a board-certified physician. 88.8% of 500+ patients improve. Available in AZ, CA, CO, FL, GA…',
   alternates: { canonical: 'https://isha.health/online-ketamine-therapy' },
   openGraph: buildOpenGraph({
     title: 'Online Ketamine Therapy: At-Home Treatment from $350',
-    description: 'Online ketamine therapy from $350/session, prescribed by a board-certified physician. 88.8% of 500+ patients improve. Available in 9 US states.',
+    description: 'Online ketamine therapy from $350/session, prescribed by a board-certified physician. 88.8% of 500+ patients improve. Available in 8 US states.',
     path: '/online-ketamine-therapy',
   }),
   twitter: {
@@ -50,7 +50,7 @@ export default function OnlineKetamineTherapyPage() {
         name: 'What states offer online ketamine therapy through Isha Health?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Isha Health currently provides online ketamine therapy in Arizona, California, Colorado, Florida, Georgia, New York, Oregon, Texas, and Washington.',
+          text: 'Isha Health currently provides online ketamine therapy in Arizona, California, Colorado, Florida, Georgia, Oregon, Texas, and Washington.',
         },
       },
       {
@@ -92,7 +92,7 @@ export default function OnlineKetamineTherapyPage() {
     </nav>
 
     <p style="font-family:'Poppins',sans-serif;font-size:1.1rem;line-height:1.8;color:#374151;text-align:center;max-width:720px;margin:0 auto 3rem;text-wrap:pretty;">
-      Online ketamine therapy lets you receive a physician-prescribed mental health treatment from home — no clinic visits, no commute, no waiting room. Isha Health's telehealth program pairs a board-certified psychiatrist with structured at-home sessions and a required support person, with <a href="/outcomes" style="color:#0d9488;text-decoration:underline;">88.8% of patients showing measurable improvement</a>. Available in 9 US states.
+      Online ketamine therapy lets you receive a physician-prescribed mental health treatment from home — no clinic visits, no commute, no waiting room. Isha Health's telehealth program pairs a board-certified psychiatrist with structured at-home sessions and a required support person, with <a href="/outcomes" style="color:#0d9488;text-decoration:underline;">88.8% of patients showing measurable improvement</a>. Available in 8 US states.
     </p>
 
     <!-- How it works -->
@@ -198,7 +198,6 @@ export default function OnlineKetamineTherapyPage() {
         <a href="/locations/online-at-home-ketamine-therapy-in-colorado" style="display:inline-block;padding:0.5rem 1rem;background:#f0fdfa;border:1px solid #ccfbf1;border-radius:8px;color:#0f766e;text-decoration:none;font-family:'Poppins',sans-serif;font-size:0.9rem;font-weight:500;">Colorado</a>
         <a href="/locations/online-at-home-ketamine-therapy-in-florida" style="display:inline-block;padding:0.5rem 1rem;background:#f0fdfa;border:1px solid #ccfbf1;border-radius:8px;color:#0f766e;text-decoration:none;font-family:'Poppins',sans-serif;font-size:0.9rem;font-weight:500;">Florida</a>
         <a href="/locations/online-at-home-ketamine-therapy-in-georgia" style="display:inline-block;padding:0.5rem 1rem;background:#f0fdfa;border:1px solid #ccfbf1;border-radius:8px;color:#0f766e;text-decoration:none;font-family:'Poppins',sans-serif;font-size:0.9rem;font-weight:500;">Georgia</a>
-        <a href="/locations/online-at-home-ketamine-therapy-in-new-york" style="display:inline-block;padding:0.5rem 1rem;background:#f0fdfa;border:1px solid #ccfbf1;border-radius:8px;color:#0f766e;text-decoration:none;font-family:'Poppins',sans-serif;font-size:0.9rem;font-weight:500;">New York</a>
         <a href="/locations/online-at-home-ketamine-therapy-in-oregon" style="display:inline-block;padding:0.5rem 1rem;background:#f0fdfa;border:1px solid #ccfbf1;border-radius:8px;color:#0f766e;text-decoration:none;font-family:'Poppins',sans-serif;font-size:0.9rem;font-weight:500;">Oregon</a>
         <a href="/locations/online-at-home-ketamine-therapy-in-texas" style="display:inline-block;padding:0.5rem 1rem;background:#f0fdfa;border:1px solid #ccfbf1;border-radius:8px;color:#0f766e;text-decoration:none;font-family:'Poppins',sans-serif;font-size:0.9rem;font-weight:500;">Texas</a>
         <a href="/locations/online-at-home-ketamine-therapy-in-washington" style="display:inline-block;padding:0.5rem 1rem;background:#f0fdfa;border:1px solid #ccfbf1;border-radius:8px;color:#0f766e;text-decoration:none;font-family:'Poppins',sans-serif;font-size:0.9rem;font-weight:500;">Washington</a>
@@ -278,7 +277,7 @@ export default function OnlineKetamineTherapyPage() {
 
       <div style="margin-bottom:1.5rem;">
         <h3 style="font-family:'Poppins',sans-serif;font-size:1rem;font-weight:600;color:#111827;margin-bottom:0.5rem;">What states offer online ketamine therapy through Isha Health?</h3>
-        <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#374151;line-height:1.7;">Isha Health currently provides online ketamine therapy in Arizona, California, Colorado, Florida, Georgia, New York, Oregon, Texas, and Washington.</p>
+        <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#374151;line-height:1.7;">Isha Health currently provides online ketamine therapy in Arizona, California, Colorado, Florida, Georgia, Oregon, Texas, and Washington.</p>
       </div>
 
       <div style="margin-bottom:1.5rem;">

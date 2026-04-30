@@ -115,7 +115,7 @@ export default function Page() {
             <td style="padding:0.75rem 1rem;border:1px solid #e5e7eb;">Oral ketamine</td>
             <td style="padding:0.75rem 1rem;border:1px solid #e5e7eb;"><strong>88.8% improvement rate</strong> (published)</td>
             <td style="padding:0.75rem 1rem;border:1px solid #e5e7eb;">Personalized, physician-led protocol</td>
-            <td style="padding:0.75rem 1rem;border:1px solid #e5e7eb;">9 states</td>
+            <td style="padding:0.75rem 1rem;border:1px solid #e5e7eb;">8 states</td>
           </tr>
           <tr>
             <td style="padding:0.75rem 1rem;border:1px solid #e5e7eb;font-weight:600;">IV Infusion Clinics</td>

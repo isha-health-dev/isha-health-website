@@ -151,7 +151,7 @@ export default function Page() {
   <!-- CTA -->
   <div style="text-align:center;padding:2rem 0;">
     <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.9rem 2.5rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:1rem;">Book a Consultation</a>
-    <p style="font-size:0.85rem;color:#6b7280;margin-top:0.75rem;">$350 · 60 minutes · Available in AZ, CA, CO, FL, GA, NY, OR, TX, WA</p>
+    <p style="font-size:0.85rem;color:#6b7280;margin-top:0.75rem;">$350 · 60 minutes · Available in AZ, CA, CO, FL, GA, OR, TX, WA</p>
   </div>
 
   <!-- Related -->

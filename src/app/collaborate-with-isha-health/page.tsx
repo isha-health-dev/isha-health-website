@@ -224,7 +224,7 @@ export default function CollaboratePage() {
                 style={inputStyle}
                 value={form.licenseStates}
                 onChange={(e) => setForm({ ...form, licenseStates: e.target.value })}
-                placeholder="e.g., CA, NY, TX"
+                placeholder="e.g., CA, TX, FL"
               />
             </div>
           </div>

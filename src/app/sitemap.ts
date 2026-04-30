@@ -113,7 +113,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     'online-at-home-ketamine-therapy-in-colorado',
     'online-at-home-ketamine-therapy-in-florida',
     'online-at-home-ketamine-therapy-in-georgia',
-    'online-at-home-ketamine-therapy-in-new-york',
     'online-at-home-ketamine-therapy-in-oregon',
     'online-at-home-ketamine-therapy-in-texas',
     'online-at-home-ketamine-therapy-in-washington',

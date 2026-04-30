@@ -66,7 +66,7 @@ export default function Page() {
       <div style="width: 60px; height: 3px; background-color: #0d9488; border-radius: 2px; margin-bottom: 16px;"></div>
       <p style="font-size: 1rem; line-height: 1.7; margin: 0 0 24px 0; color: #444;">
         Founder &amp; CEO<br />
-        Available in AZ, CA, CO, FL, GA, NY, OR, TX, and WA
+        Available in AZ, CA, CO, FL, GA, OR, TX, and WA
       </p>
       <a
         href="https://isha.health/appointment#all-states-booking"

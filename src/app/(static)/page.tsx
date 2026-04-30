@@ -7,19 +7,19 @@ const dims = imageDims as Record<string, { w: number; h: number }>;
 
 export const metadata: Metadata = {
   title: "Online Ketamine Therapy for Depression & Anxiety",
-  description: "88.8% of patients improve. Physician-led at-home ketamine therapy for depression, anxiety, and PTSD. $350 consultation, available in 9 states.",
+  description: "88.8% of patients improve. Physician-led at-home ketamine therapy for depression, anxiety, and PTSD. $350 consultation, available in 8 states.",
   alternates: {
     canonical: "https://isha.health",
   },
   openGraph: buildOpenGraph({
     title: "Online Ketamine Therapy for Depression & Anxiety",
-    description: "88.8% of patients improve. Physician-led at-home ketamine therapy for depression, anxiety, and PTSD. $350 consultation, available in 9 states.",
+    description: "88.8% of patients improve. Physician-led at-home ketamine therapy for depression, anxiety, and PTSD. $350 consultation, available in 8 states.",
     path: '/',
   }),
   twitter: {
     card: "summary_large_image",
     title: "Online Ketamine Therapy for Depression & Anxiety",
-    description: "88.8% of patients improve. Physician-led at-home ketamine therapy for depression, anxiety, and PTSD. $350 consultation, available in 9 states.",
+    description: "88.8% of patients improve. Physician-led at-home ketamine therapy for depression, anxiety, and PTSD. $350 consultation, available in 8 states.",
   },
 };
 
@@ -71,7 +71,7 @@ export default function Page() {
           <div style="max-width:550px;padding-left:8%;">
             <h1 style="font-family:'Libre Baskerville',serif;font-size:3rem;font-weight:700;color:#111827;line-height:1.15;margin-bottom:1.25rem;">Unlock Your Mind's Potential</h1>
             <p style="font-family:'Poppins',sans-serif;font-size:1rem;color:#4b5563;line-height:1.7;margin-bottom:0.75rem;">Personalized mental health care for depression, anxiety, and PTSD</p>
-            <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#4b5563;line-height:1.7;margin-bottom:2rem;">Are you struggling to feel like yourself? Isha Health combines ketamine-assisted therapy with holistic care — available via telemedicine in 9 states.</p>
+            <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#4b5563;line-height:1.7;margin-bottom:2rem;">Are you struggling to feel like yourself? Isha Health combines ketamine-assisted therapy with holistic care — available via telemedicine in 8 states.</p>
             <a href="/am-i-a-candidate" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.9rem 2.5rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:1rem;font-family:'Poppins',sans-serif;">Am I a Candidate?</a>
           </div>
         </div>
