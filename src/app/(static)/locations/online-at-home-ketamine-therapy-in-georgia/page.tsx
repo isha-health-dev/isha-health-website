@@ -50,7 +50,7 @@ export default function Page() {
 
   <section style="margin-bottom:2.5rem;">
     <h2 style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#111827;margin-bottom:0.75rem;">Why Choose Isha Health for At-Home Ketamine Treatment in Georgia?</h2>
-    <img src="/images/3a27d97b_67acf5b26c5a83cdd332b761_pexels-esra-afsar-123882149-30411707__1).jpg" loading="lazy" alt="At-home ketamine therapy" style="width:100%;max-height:280px;object-fit:cover;border-radius:10px;margin-bottom:1rem;">
+    <img src="/images/3a27d97b_67acf5b26c5a83cdd332b761_pexels-esra-afsar-123882149-30411707__1).jpg" loading="lazy" alt="At-home ketamine therapy" style="max-width:100%;max-height:380px;width:auto;height:auto;display:block;margin:0 auto;border-radius:10px;margin-bottom:1rem;">
     <ul style="padding-left:1.25rem;">
       <li style="margin-bottom:0.75rem;"><strong>Appointments available in as little as 24 hours</strong><br>No long wait times — schedule your online psychiatric care in Georgia today and begin your healing journey without delays.</li>
       <li style="margin-bottom:0.75rem;"><strong>Expert guidance from licensed clinicians</strong><br>From your first session to ongoing monitoring, our clinicians guide you through every step, ensuring a safe and effective at-home ketamine therapy experience.</li>
@@ -131,7 +131,7 @@ export default function Page() {
       <h4 style="font-weight:700;color:#111827;margin:0 0 0.5rem;">4. Begin Your At-Home Ketamine Treatment</h4>
       <p style="margin:0;">Place the sublingual ketamine tablet under your tongue and relax in a quiet, safe space. The session lasts about 1.5 hours, during which you may experience deep relaxation and heightened mental clarity.</p>
     </div>
-    <img src="/images/ae5f6a69_64de1de50aadefba5f98b95c_how-it-works.webp" loading="lazy" alt="How it works" style="width:100%;max-height:280px;object-fit:cover;border-radius:10px;margin-top:1rem;">
+    <img src="/images/ae5f6a69_64de1de50aadefba5f98b95c_how-it-works.webp" loading="lazy" alt="How it works" style="max-width:100%;max-height:380px;width:auto;height:auto;display:block;margin:0 auto;border-radius:10px;margin-top:1rem;">
   </section>
 
   <section style="margin-bottom:2.5rem;">
@@ -174,7 +174,7 @@ export default function Page() {
       <p style="margin:0;">Create a calm, comfortable space free of distractions, use soft lighting, and consider meditative music or an eye mask to enhance relaxation.</p>
     </div>
 
-    <img src="/images/60503bec_6538dad73fe55bb4d6aab323_all_you_need_is_kat__1).png" loading="lazy" alt="Ketamine therapy" style="width:100%;max-height:280px;object-fit:cover;border-radius:10px;margin-top:1rem;">
+    <img src="/images/60503bec_6538dad73fe55bb4d6aab323_all_you_need_is_kat__1).png" loading="lazy" alt="Ketamine therapy" style="max-width:100%;max-height:380px;width:auto;height:auto;display:block;margin:0 auto;border-radius:10px;margin-top:1rem;">
   </section>
 
   <section style="background:#f0fdfa;border:1px solid #99f6e4;border-radius:12px;padding:1.5rem;text-align:center;margin-bottom:2.5rem;">

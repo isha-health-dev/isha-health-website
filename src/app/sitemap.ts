@@ -128,9 +128,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // back into indexing (and into the sitemap) by overriding `robots`
   // at the page level. Smaller-market city pages remain noindex.
   const majorCityPages = [
-    'ketamine-therapy-new-york-city',
-    'ketamine-therapy-brooklyn',
-    'ketamine-therapy-long-island',
     'ketamine-therapy-los-angeles',
     'ketamine-therapy-san-francisco',
     'ketamine-therapy-san-diego',

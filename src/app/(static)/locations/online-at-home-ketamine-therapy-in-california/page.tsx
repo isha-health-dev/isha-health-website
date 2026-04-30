@@ -54,7 +54,7 @@ export default function Page() {
   <!-- Why Choose -->
   <section style="margin-bottom:2.5rem;">
     <h2 style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#111827;margin-bottom:0.75rem;">Why Choose Isha Health for At-Home Ketamine Treatment in California?</h2>
-    <img src="/images/3a27d97b_67acf5b26c5a83cdd332b761_pexels-esra-afsar-123882149-30411707__1).jpg" loading="lazy" alt="At-home ketamine therapy" style="width:100%;max-height:280px;object-fit:cover;border-radius:10px;margin-bottom:1rem;">
+    <img src="/images/3a27d97b_67acf5b26c5a83cdd332b761_pexels-esra-afsar-123882149-30411707__1).jpg" loading="lazy" alt="At-home ketamine therapy" style="max-width:100%;max-height:380px;width:auto;height:auto;display:block;margin:0 auto;border-radius:10px;margin-bottom:1rem;">
     <ul style="padding-left:1.25rem;">
       <li style="margin-bottom:0.75rem;"><strong>Appointments available in as little as 24 hours</strong><br>No long wait times — schedule your initial consultation quickly and start your healing journey right away.</li>
       <li style="margin-bottom:0.75rem;"><strong>Expert guidance from licensed clinicians</strong><br>From your first session to ongoing support, our team of experienced clinicians ensures a safe and effective online ketamine treatment process.</li>
@@ -139,7 +139,7 @@ export default function Page() {
       <h4 style="font-weight:700;color:#111827;margin:0 0 0.5rem;">4. Begin Your At-Home Ketamine Treatment</h4>
       <p style="margin:0;">Place the sublingual ketamine tablet under your tongue and relax in a quiet, comfortable setting. The effects typically last about 1.5 hours. We recommend using an eye mask and calming music to enhance the experience.</p>
     </div>
-    <img src="/images/ae5f6a69_64de1de50aadefba5f98b95c_how-it-works.webp" loading="lazy" alt="How it works" style="width:100%;max-height:280px;object-fit:cover;border-radius:10px;margin-top:1rem;">
+    <img src="/images/ae5f6a69_64de1de50aadefba5f98b95c_how-it-works.webp" loading="lazy" alt="How it works" style="max-width:100%;max-height:380px;width:auto;height:auto;display:block;margin:0 auto;border-radius:10px;margin-top:1rem;">
   </section>
 
   <!-- FAQ -->
@@ -191,7 +191,7 @@ export default function Page() {
       <p style="margin:0;">Our team is here to answer your questions! Visit our Contact Page or email us at <a href="mailto:info@isha.health" style="color:#0d9488;">info@isha.health</a>.</p>
     </div>
 
-    <img src="/images/60503bec_6538dad73fe55bb4d6aab323_all_you_need_is_kat__1).png" loading="lazy" alt="Ketamine therapy" style="width:100%;max-height:280px;object-fit:cover;border-radius:10px;margin-top:1rem;">
+    <img src="/images/60503bec_6538dad73fe55bb4d6aab323_all_you_need_is_kat__1).png" loading="lazy" alt="Ketamine therapy" style="max-width:100%;max-height:380px;width:auto;height:auto;display:block;margin:0 auto;border-radius:10px;margin-top:1rem;">
   </section>
 
   <!-- Directory Link -->
