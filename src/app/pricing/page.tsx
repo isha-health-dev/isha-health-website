@@ -73,9 +73,6 @@ export default function PricingPage() {
 
   <!-- Pricing Cards -->
   <div style="max-width:900px;margin:0 auto;padding:2.5rem 1.5rem;">
-    <div style="background-color:#fef3c7;border:1px solid #fcd34d;border-radius:10px;padding:0.85rem 1.25rem;text-align:center;margin-bottom:1.5rem;">
-      <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;font-weight:600;color:#92400e;margin:0;">Current price: $398 per appointment. Starting May 1, 2026, all appointments will be $398.</p>
-    </div>
     <div style="display:flex;flex-wrap:wrap;gap:1.5rem;justify-content:center;">
 
       <!-- Initial Consultation -->
@@ -85,9 +82,11 @@ export default function PricingPage() {
           <p style="color:#ccfbf1;font-size:0.85rem;margin:0.25rem 0 0;font-family:'Poppins',sans-serif;">60 minutes with a physician</p>
         </div>
         <div style="padding:1.5rem;">
-          <p style="text-align:center;margin-bottom:1.25rem;">
-            <span style="font-size:2.5rem;font-weight:700;color:#111827;font-family:'Libre Baskerville',serif;">$398</span>
+          <p style="text-align:center;margin-bottom:0.35rem;">
+            <span style="font-size:1.5rem;color:#9ca3af;text-decoration:line-through;font-family:'Libre Baskerville',serif;margin-right:0.5rem;vertical-align:middle;">$796</span>
+            <span style="font-size:2.5rem;font-weight:700;color:#111827;font-family:'Libre Baskerville',serif;vertical-align:middle;">$398</span>
           </p>
+          <p style="text-align:center;margin:0 0 1.25rem;font-family:'Poppins',sans-serif;font-size:0.8rem;font-weight:600;color:#0d9488;letter-spacing:0.04em;text-transform:uppercase;">Save 50% — limited time</p>
           <ul style="list-style:none;padding:0;margin:0;font-family:'Poppins',sans-serif;font-size:0.9rem;color:#374151;line-height:1.6;">
             <li style="padding:0.5rem 0;border-bottom:1px solid #f3f4f6;display:flex;gap:0.5rem;align-items:flex-start;">
               <span style="color:#0d9488;font-weight:700;flex-shrink:0;">✓</span>
