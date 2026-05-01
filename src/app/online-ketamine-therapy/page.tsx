@@ -84,7 +84,7 @@ export default function OnlineKetamineTherapyPage() {
     <h1 style="font-family:'Libre Baskerville',serif;font-size:2rem;font-weight:700;color:#111827;margin:0;">Online Ketamine Therapy from Home</h1>
   </div>
 
-  <div style="max-width:800px;margin:0 auto;padding:1.5rem;" style="max-width:900px;margin:0 auto;padding:2rem 1.5rem;">
+  <div style="max-width:900px;margin:0 auto;padding:2rem 1.5rem;">
 
     <nav aria-label="Breadcrumb" style="font-size:0.8rem;color:#6b7280;margin-bottom:1.5rem;font-family:'Poppins',sans-serif;">
       <a href="/" style="color:#0d9488;text-decoration:none;">Home</a> /

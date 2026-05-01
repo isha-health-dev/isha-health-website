@@ -21,7 +21,7 @@ export default function ResourcesPage() {
   <div style="text-align:center;padding:3rem 1.5rem 1.5rem;">
     <h1 style="font-family:'Libre Baskerville',serif;font-size:2rem;font-weight:700;color:#111827;margin:0;">Ketamine Therapy Resources</h1>
   </div>
-  <div style="max-width:800px;margin:0 auto;padding:1.5rem;" style="max-width:1000px;margin:0 auto;padding:2rem 1.5rem;">
+  <div style="max-width:1000px;margin:0 auto;padding:2rem 1.5rem;">
 
     <p style="font-family:'Poppins',sans-serif;font-size:1.05rem;line-height:1.8;color:#4b5563;text-align:center;margin-bottom:3rem;max-width:700px;margin-left:auto;margin-right:auto;text-wrap:pretty;">
       Everything you need to understand ketamine therapy — from how it works to finding the right provider. Evidence-based information from the Isha Health clinical team.

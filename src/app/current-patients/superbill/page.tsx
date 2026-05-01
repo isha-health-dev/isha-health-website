@@ -23,7 +23,7 @@ export default function SuperbillPage() {
   <div style="text-align:center;padding:3rem 1.5rem 1.5rem;">
     <h1 style="font-family:'Libre Baskerville',serif;font-size:2rem;font-weight:700;color:#111827;margin:0;">Request Your Superbill</h1>
   </div>
-  <div style="max-width:800px;margin:0 auto;padding:1.5rem;" style="max-width:700px;margin:0 auto;padding:2rem 1.5rem;">
+  <div style="max-width:700px;margin:0 auto;padding:2rem 1.5rem;">
 
     <p style="font-family:'Poppins',sans-serif;font-size:1rem;color:#4b5563;line-height:1.7;text-align:center;margin-bottom:2.5rem;text-wrap:pretty;">
       Use the options below to request a superbill or submit an insurance claim for reimbursement.
