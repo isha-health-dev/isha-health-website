@@ -3,19 +3,19 @@ import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "Online At-Home Ketamine Therapy in Washington",
-  description: "Washington residents: at-home ketamine therapy starting at $350. 88.8% of patients improve. Same-day appointments. No referral needed.",
+  description: "Washington residents: at-home ketamine therapy starting at $398. 88.8% of patients improve. Same-day appointments. No referral needed.",
   alternates: {
     canonical: "https://isha.health/locations/online-at-home-ketamine-therapy-in-washington",
   },
   openGraph: buildOpenGraph({
     title: "Online At-Home Ketamine Therapy in Washington",
-    description: "Washington residents: at-home ketamine therapy starting at $350. 88.8% of patients improve. Same-day appointments. No referral needed.",
+    description: "Washington residents: at-home ketamine therapy starting at $398. 88.8% of patients improve. Same-day appointments. No referral needed.",
     path: '/locations/online-at-home-ketamine-therapy-in-washington',
   }),
   twitter: {
     card: "summary_large_image",
     title: "Online At-Home Ketamine Therapy in Washington",
-    description: "Washington residents: at-home ketamine therapy starting at $350. 88.8% of patients improve. Same-day appointments. No referral needed.",
+    description: "Washington residents: at-home ketamine therapy starting at $398. 88.8% of patients improve. Same-day appointments. No referral needed.",
   },
 };
 

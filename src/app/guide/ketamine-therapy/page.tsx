@@ -55,7 +55,7 @@ export default function Page() {
         "name": "How much does ketamine therapy cost?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Costs vary by route of administration and provider. IV ketamine infusions typically range from $400 to $800 per session. At-home oral ketamine programs like Isha Health start at around $350 per appointment plus $50 to $150 per month for medication. Spravato (esketamine) may be covered by some insurance plans."
+          "text": "Costs vary by route of administration and provider. IV ketamine infusions typically range from $400 to $800 per session. At-home oral ketamine programs like Isha Health start at around $398 per appointment plus $50 to $150 per month for medication. Spravato (esketamine) may be covered by some insurance plans."
         }
       },
       {
@@ -239,7 +239,7 @@ export default function Page() {
     <ul style="font-family:'Source Sans Pro','Poppins',sans-serif;font-size:0.95rem;color:#374151;line-height:1.8;padding-left:1.25rem;margin-bottom:1rem;">
       <li><strong>IV ketamine infusions:</strong> $400 to $800+ per session; a typical initial course involves 6 sessions over 2 to 3 weeks</li>
       <li><strong>Spravato (esketamine):</strong> May be covered by insurance; out-of-pocket costs can be high without coverage</li>
-      <li><strong>At-home oral ketamine:</strong> Generally the most affordable option; Isha Health appointments start at approximately $350 plus $50 to $150 per month for medication</li>
+      <li><strong>At-home oral ketamine:</strong> Generally the most affordable option; Isha Health appointments start at approximately $398 plus $50 to $150 per month for medication</li>
     </ul>
     <p style="font-family:'Source Sans Pro','Poppins',sans-serif;font-size:0.95rem;line-height:1.8;color:#374151;margin-bottom:2rem;text-wrap:pretty;">
       Most ketamine therapy (other than Spravato) is not directly covered by insurance, as it is considered off-label use. However, many providers offer superbills that patients can submit for potential out-of-network reimbursement. Learn more about <a href="/post/ketamine-therapy-insurance-superbill" style="color:#0d9488;text-decoration:underline;">ketamine therapy insurance and superbills</a>. HSA and FSA funds can typically be used toward ketamine treatment costs.
@@ -313,7 +313,7 @@ export default function Page() {
 
     <div style="margin-bottom:1.5rem;">
       <h3 style="font-family:'Libre Baskerville',serif;font-size:1rem;font-weight:700;color:#111827;margin-bottom:0.5rem;">How much does ketamine therapy cost?</h3>
-      <p style="font-family:'Source Sans Pro','Poppins',sans-serif;font-size:0.95rem;line-height:1.8;color:#374151;">Costs vary by route and provider. IV infusions typically range from $400 to $800 per session. At-home oral ketamine through Isha Health starts at approximately $350 per appointment plus $50 to $150 per month for medication. See our <a href="/pricing" style="color:#0d9488;text-decoration:underline;">pricing page</a> for current rates.</p>
+      <p style="font-family:'Source Sans Pro','Poppins',sans-serif;font-size:0.95rem;line-height:1.8;color:#374151;">Costs vary by route and provider. IV infusions typically range from $400 to $800 per session. At-home oral ketamine through Isha Health starts at approximately $398 per appointment plus $50 to $150 per month for medication. See our <a href="/pricing" style="color:#0d9488;text-decoration:underline;">pricing page</a> for current rates.</p>
     </div>
 
     <div style="margin-bottom:1.5rem;">

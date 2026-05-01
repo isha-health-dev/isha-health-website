@@ -68,7 +68,7 @@ export default function Page() {
           </tr>
           <tr>
             <td style="padding:0.75rem 1rem;border:1px solid #e5e7eb;font-weight:600;">Cost</td>
-            <td style="padding:0.75rem 1rem;border:1px solid #e5e7eb;">At-home oral ketamine: ~$350/appointment + $50-150/mo medication; IV infusions: $400-800/session</td>
+            <td style="padding:0.75rem 1rem;border:1px solid #e5e7eb;">At-home oral ketamine: ~$398/appointment + $50-150/mo medication; IV infusions: $400-800/session</td>
             <td style="padding:0.75rem 1rem;border:1px solid #e5e7eb;">$2,500+ per session; often covered by insurance for TRD</td>
           </tr>
           <tr style="background-color:#f9fafb;">

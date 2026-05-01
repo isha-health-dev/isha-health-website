@@ -27,7 +27,7 @@ export default function Page() {
 
   <div style="text-align:center;padding:2rem 0;">
     <h1 style="font-family:'Libre Baskerville',serif;font-size:2rem;font-weight:700;color:#111827;margin-bottom:0.75rem;">Schedule Your Initial Consultation</h1>
-    <p style="font-family:'Poppins',sans-serif;font-size:1rem;color:#6b7280;">60 minutes with a physician &middot; $350 &middot; Available in 8 states</p>
+    <p style="font-family:'Poppins',sans-serif;font-size:1rem;color:#6b7280;">60 minutes with a physician &middot; $398 &middot; Available in 8 states</p>
   </div>
 
   <div style="background:#f9fafb;border:1px solid #e5e7eb;border-radius:10px;padding:1.5rem;margin-bottom:2rem;">
@@ -38,7 +38,7 @@ export default function Page() {
       Isha Health does not accept insurance, including Medicaid and Medicare. Payment is due at the time of service. Please mind the time zone when booking.
     </p>
     <p style="font-family:'Poppins',sans-serif;font-size:0.85rem;color:#6b7280;line-height:1.6;margin-bottom:0.75rem;">
-      <strong style="color:#374151;">Cancellation policy:</strong> A $120 fee applies for cancellations less than 48 hours before the appointment. No-shows are charged the full $350. <a href="/cancellation-policy-isha-health" style="color:#0d9488;text-decoration:underline;">View full policy</a>.
+      <strong style="color:#374151;">Cancellation policy:</strong> A $120 fee applies for cancellations less than 48 hours before the appointment. No-shows are charged the full $398. <a href="/cancellation-policy-isha-health" style="color:#0d9488;text-decoration:underline;">View full policy</a>.
     </p>
     <p style="font-family:'Poppins',sans-serif;font-size:0.85rem;color:#6b7280;line-height:1.6;">
       No availability showing? Email <a href="mailto:info@isha.health" style="color:#0d9488;text-decoration:underline;">info@isha.health</a> — we may be able to accommodate you sooner.

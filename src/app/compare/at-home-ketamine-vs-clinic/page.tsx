@@ -68,7 +68,7 @@ export default function Page() {
           </tr>
           <tr>
             <td style="padding:0.75rem 1rem;border:1px solid #e5e7eb;font-weight:600;">Cost</td>
-            <td style="padding:0.75rem 1rem;border:1px solid #e5e7eb;">~$350/appointment + $50-150/mo medication at Isha Health; HSA/FSA accepted</td>
+            <td style="padding:0.75rem 1rem;border:1px solid #e5e7eb;">~$398/appointment + $50-150/mo medication at Isha Health; HSA/FSA accepted</td>
             <td style="padding:0.75rem 1rem;border:1px solid #e5e7eb;">$400-800+ per session for IV; initial course of 6 sessions = $2,400-4,800+</td>
           </tr>
           <tr style="background-color:#f9fafb;">

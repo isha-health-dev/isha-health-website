@@ -3,19 +3,19 @@ import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "Online At-Home Ketamine Therapy in Colorado",
-  description: "Colorado residents: at-home ketamine therapy starting at $350. 88.8% of patients improve. Same-day appointments. No referral needed.",
+  description: "Colorado residents: at-home ketamine therapy starting at $398. 88.8% of patients improve. Same-day appointments. No referral needed.",
   alternates: {
     canonical: "https://isha.health/locations/online-at-home-ketamine-therapy-in-colorado",
   },
   openGraph: buildOpenGraph({
     title: "Online At-Home Ketamine Therapy in Colorado",
-    description: "Colorado residents: at-home ketamine therapy starting at $350. 88.8% of patients improve. Same-day appointments. No referral needed.",
+    description: "Colorado residents: at-home ketamine therapy starting at $398. 88.8% of patients improve. Same-day appointments. No referral needed.",
     path: '/locations/online-at-home-ketamine-therapy-in-colorado',
   }),
   twitter: {
     card: "summary_large_image",
     title: "Online At-Home Ketamine Therapy in Colorado",
-    description: "Colorado residents: at-home ketamine therapy starting at $350. 88.8% of patients improve. Same-day appointments. No referral needed.",
+    description: "Colorado residents: at-home ketamine therapy starting at $398. 88.8% of patients improve. Same-day appointments. No referral needed.",
   },
 };
 

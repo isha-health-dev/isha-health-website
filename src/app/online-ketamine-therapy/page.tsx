@@ -2,20 +2,20 @@ import type { Metadata } from 'next';
 import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: 'Online Ketamine Therapy: At-Home Treatment from $350',
+  title: 'Online Ketamine Therapy: At-Home Treatment from $398',
   description:
-    'Online ketamine therapy from $350/session, prescribed by a board-certified physician. 88.8% of 500+ patients improve. Available in AZ, CA, CO, FL, GA…',
+    'Online ketamine therapy from $398/session, prescribed by a board-certified physician. 88.8% of 500+ patients improve. Available in AZ, CA, CO, FL, GA…',
   alternates: { canonical: 'https://isha.health/online-ketamine-therapy' },
   openGraph: buildOpenGraph({
-    title: 'Online Ketamine Therapy: At-Home Treatment from $350',
-    description: 'Online ketamine therapy from $350/session, prescribed by a board-certified physician. 88.8% of 500+ patients improve. Available in 8 US states.',
+    title: 'Online Ketamine Therapy: At-Home Treatment from $398',
+    description: 'Online ketamine therapy from $398/session, prescribed by a board-certified physician. 88.8% of 500+ patients improve. Available in 8 US states.',
     path: '/online-ketamine-therapy',
   }),
   twitter: {
     card: 'summary_large_image',
-    title: 'Online Ketamine Therapy: At-Home Treatment from $350',
+    title: 'Online Ketamine Therapy: At-Home Treatment from $398',
     description:
-      'Physician-led online ketamine therapy. 88.8% improvement rate across 500+ patients. $350/session, no subscription.',
+      'Physician-led online ketamine therapy. 88.8% improvement rate across 500+ patients. $398/session, no subscription.',
   },
 };
 
@@ -42,7 +42,7 @@ export default function OnlineKetamineTherapyPage() {
         name: 'How much does online ketamine therapy cost?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'The initial 60-minute consultation is $350. Follow-up appointments are $350 for 30 minutes. Monthly medication costs range from $50 to $150 depending on your prescribed dosage. HSA/FSA cards are accepted and superbills are provided for insurance reimbursement.',
+          text: 'The initial 60-minute consultation is $398. Follow-up appointments are $398 for 30 minutes. Monthly medication costs range from $50 to $150 depending on your prescribed dosage. HSA/FSA cards are accepted and superbills are provided for insurance reimbursement.',
         },
       },
       {
@@ -166,12 +166,12 @@ export default function OnlineKetamineTherapyPage() {
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-bottom:1.5rem;">
         <div style="padding:1.25rem;border:1px solid #e5e7eb;border-radius:10px;">
           <p style="font-family:'Poppins',sans-serif;font-size:0.75rem;color:#6b7280;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem;">Initial consultation</p>
-          <p style="font-family:'Libre Baskerville',serif;font-size:1.75rem;font-weight:700;color:#111827;">$350</p>
+          <p style="font-family:'Libre Baskerville',serif;font-size:1.75rem;font-weight:700;color:#111827;">$398</p>
           <p style="font-family:'Poppins',sans-serif;font-size:0.8rem;color:#6b7280;">60-minute evaluation</p>
         </div>
         <div style="padding:1.25rem;border:1px solid #e5e7eb;border-radius:10px;">
           <p style="font-family:'Poppins',sans-serif;font-size:0.75rem;color:#6b7280;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem;">Follow-up visits</p>
-          <p style="font-family:'Libre Baskerville',serif;font-size:1.75rem;font-weight:700;color:#111827;">$350</p>
+          <p style="font-family:'Libre Baskerville',serif;font-size:1.75rem;font-weight:700;color:#111827;">$398</p>
           <p style="font-family:'Poppins',sans-serif;font-size:0.8rem;color:#6b7280;">30-minute appointments</p>
         </div>
         <div style="padding:1.25rem;border:1px solid #e5e7eb;border-radius:10px;">
@@ -225,7 +225,7 @@ export default function OnlineKetamineTherapyPage() {
           <tbody>
             <tr>
               <td style="padding:0.75rem 1rem;border-bottom:1px solid #e5e7eb;font-weight:500;">Cost per session</td>
-              <td style="padding:0.75rem 1rem;border-bottom:1px solid #e5e7eb;">$350</td>
+              <td style="padding:0.75rem 1rem;border-bottom:1px solid #e5e7eb;">$398</td>
               <td style="padding:0.75rem 1rem;border-bottom:1px solid #e5e7eb;">$400–$800</td>
             </tr>
             <tr>
@@ -272,7 +272,7 @@ export default function OnlineKetamineTherapyPage() {
 
       <div style="margin-bottom:1.5rem;">
         <h3 style="font-family:'Poppins',sans-serif;font-size:1rem;font-weight:600;color:#111827;margin-bottom:0.5rem;">How much does online ketamine therapy cost?</h3>
-        <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#374151;line-height:1.7;">The initial 60-minute consultation is $350. Follow-up appointments are $350 for 30 minutes. Monthly medication costs range from $50 to $150 depending on your prescribed dosage. HSA/FSA cards are accepted and superbills are provided for insurance reimbursement.</p>
+        <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#374151;line-height:1.7;">The initial 60-minute consultation is $398. Follow-up appointments are $398 for 30 minutes. Monthly medication costs range from $50 to $150 depending on your prescribed dosage. HSA/FSA cards are accepted and superbills are provided for insurance reimbursement.</p>
       </div>
 
       <div style="margin-bottom:1.5rem;">

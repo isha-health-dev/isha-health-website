@@ -68,7 +68,7 @@ export default function Page() {
           </tr>
           <tr>
             <td style="padding:0.75rem 1rem;border:1px solid #e5e7eb;font-weight:600;">Cost</td>
-            <td style="padding:0.75rem 1rem;border:1px solid #e5e7eb;">At-home oral: ~$350/appointment + $50-150/mo medication</td>
+            <td style="padding:0.75rem 1rem;border:1px solid #e5e7eb;">At-home oral: ~$398/appointment + $50-150/mo medication</td>
             <td style="padding:0.75rem 1rem;border:1px solid #e5e7eb;">Oregon program: $1,500-3,500+ per session (includes facilitator fees); clinical trials: no cost</td>
           </tr>
           <tr style="background-color:#f9fafb;">

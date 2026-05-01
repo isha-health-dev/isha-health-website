@@ -68,7 +68,7 @@ export default function Page() {
           </tr>
           <tr>
             <td style="padding:0.75rem 1rem;border:1px solid #e5e7eb;font-weight:600;">Cost</td>
-            <td style="padding:0.75rem 1rem;border:1px solid #e5e7eb;">At-home oral: ~$350/appointment + $50-150/mo medication; generally not covered by insurance</td>
+            <td style="padding:0.75rem 1rem;border:1px solid #e5e7eb;">At-home oral: ~$398/appointment + $50-150/mo medication; generally not covered by insurance</td>
             <td style="padding:0.75rem 1rem;border:1px solid #e5e7eb;">Often $10-50/month with insurance; widely covered by most health plans</td>
           </tr>
           <tr style="background-color:#f9fafb;">

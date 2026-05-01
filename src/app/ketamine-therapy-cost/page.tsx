@@ -4,18 +4,18 @@ import { buildOpenGraph } from '@/lib/seo';
 export const metadata: Metadata = {
   title: 'Ketamine Therapy Cost: Pricing Breakdown',
   description:
-    'Ketamine therapy costs $350 per consultation at Isha Health. 88.8% improvement rate across 500+ patients. Compare at-home vs IV infusion vs Spravato pricing.',
+    'Ketamine therapy costs $398 per consultation at Isha Health. 88.8% improvement rate across 500+ patients. Compare at-home vs IV infusion vs Spravato pricing.',
   alternates: { canonical: 'https://isha.health/ketamine-therapy-cost' },
   openGraph: buildOpenGraph({
     title: 'How Much Does Ketamine Therapy Cost? | Isha Health',
-    description: 'Compare ketamine therapy costs: at-home ($350) vs IV infusion ($400-800) vs Spravato ($500-900). HSA/FSA accepted.',
+    description: 'Compare ketamine therapy costs: at-home ($398) vs IV infusion ($400-800) vs Spravato ($500-900). HSA/FSA accepted.',
     path: '/ketamine-therapy-cost',
   }),
   twitter: {
     card: 'summary_large_image',
     title: 'Ketamine Therapy Cost | Isha Health',
     description:
-      'Ketamine therapy from $350 per consultation. Compare pricing for at-home, IV infusion, and Spravato.',
+      'Ketamine therapy from $398 per consultation. Compare pricing for at-home, IV infusion, and Spravato.',
   },
 };
 
@@ -34,7 +34,7 @@ export default function KetamineTherapyCostPage() {
         name: 'How much does ketamine therapy cost?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'At Isha Health, the initial 60-minute consultation is $350 and follow-up visits are $350 for 30 minutes. Monthly medication costs $50-$150. IV infusion clinics typically charge $400-$800 per session, while Spravato (esketamine) costs $500-$900 per session plus insurance requirements.',
+          text: 'At Isha Health, the initial 60-minute consultation is $398 and follow-up visits are $398 for 30 minutes. Monthly medication costs $50-$150. IV infusion clinics typically charge $400-$800 per session, while Spravato (esketamine) costs $500-$900 per session plus insurance requirements.',
         },
       },
       {
@@ -50,7 +50,7 @@ export default function KetamineTherapyCostPage() {
         name: 'Is at-home ketamine therapy cheaper than IV infusions?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes. At-home oral ketamine therapy through Isha Health costs $350 per consultation plus $50-$150/month for medication. A typical IV infusion series costs $2,400-$4,800 for six sessions. At-home treatment is significantly more affordable while clinical data shows comparable outcomes.',
+          text: 'Yes. At-home oral ketamine therapy through Isha Health costs $398 per consultation plus $50-$150/month for medication. A typical IV infusion series costs $2,400-$4,800 for six sessions. At-home treatment is significantly more affordable while clinical data shows comparable outcomes.',
         },
       },
       {
@@ -63,10 +63,10 @@ export default function KetamineTherapyCostPage() {
       },
       {
         '@type': 'Question',
-        name: 'What is included in the $350 consultation fee?',
+        name: 'What is included in the $398 consultation fee?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'The $350 initial consultation includes a full 60-minute psychiatric evaluation, personalized treatment planning, prescription (if appropriate), ongoing clinical monitoring via PHQ-9 and GAD-7 assessments, secure messaging access to your psychiatrist, and superbill generation for insurance reimbursement.',
+          text: 'The $398 initial consultation includes a full 60-minute psychiatric evaluation, personalized treatment planning, prescription (if appropriate), ongoing clinical monitoring via PHQ-9 and GAD-7 assessments, secure messaging access to your psychiatrist, and superbill generation for insurance reimbursement.',
         },
       },
       {
@@ -102,12 +102,12 @@ export default function KetamineTherapyCostPage() {
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-bottom:1.5rem;">
         <div style="padding:1.5rem;background:#f0fdfa;border-radius:12px;border:1px solid #ccfbf1;text-align:center;">
           <p style="font-family:'Poppins',sans-serif;font-size:0.75rem;color:#6b7280;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.5rem;">Initial consultation</p>
-          <p style="font-family:'Libre Baskerville',serif;font-size:2.25rem;font-weight:700;color:#0f766e;margin-bottom:0.25rem;">$350</p>
+          <p style="font-family:'Libre Baskerville',serif;font-size:2.25rem;font-weight:700;color:#0f766e;margin-bottom:0.25rem;">$398</p>
           <p style="font-family:'Poppins',sans-serif;font-size:0.85rem;color:#4b5563;">60-minute psychiatric evaluation</p>
         </div>
         <div style="padding:1.5rem;background:#f0fdfa;border-radius:12px;border:1px solid #ccfbf1;text-align:center;">
           <p style="font-family:'Poppins',sans-serif;font-size:0.75rem;color:#6b7280;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.5rem;">Follow-up appointment</p>
-          <p style="font-family:'Libre Baskerville',serif;font-size:2.25rem;font-weight:700;color:#0f766e;margin-bottom:0.25rem;">$350</p>
+          <p style="font-family:'Libre Baskerville',serif;font-size:2.25rem;font-weight:700;color:#0f766e;margin-bottom:0.25rem;">$398</p>
           <p style="font-family:'Poppins',sans-serif;font-size:0.85rem;color:#4b5563;">30-minute follow-up visit</p>
         </div>
         <div style="padding:1.5rem;background:#f0fdfa;border-radius:12px;border:1px solid #ccfbf1;text-align:center;">
@@ -139,7 +139,7 @@ export default function KetamineTherapyCostPage() {
           <tbody>
             <tr>
               <td style="padding:0.75rem 1rem;border-bottom:1px solid #e5e7eb;font-weight:500;color:#374151;">Cost per session</td>
-              <td style="padding:0.75rem 1rem;border-bottom:1px solid #e5e7eb;text-align:center;color:#0f766e;font-weight:600;">$350</td>
+              <td style="padding:0.75rem 1rem;border-bottom:1px solid #e5e7eb;text-align:center;color:#0f766e;font-weight:600;">$398</td>
               <td style="padding:0.75rem 1rem;border-bottom:1px solid #e5e7eb;text-align:center;color:#374151;">$400–$800</td>
               <td style="padding:0.75rem 1rem;border-bottom:1px solid #e5e7eb;text-align:center;color:#374151;">$500–$900</td>
             </tr>
@@ -177,7 +177,7 @@ export default function KetamineTherapyCostPage() {
 
     <!-- What's included -->
     <div style="margin-bottom:3rem;">
-      <h2 style="font-family:'Libre Baskerville',serif;font-size:1.4rem;font-weight:700;color:#111827;margin-bottom:1.25rem;padding-bottom:0.5rem;border-bottom:2px solid #0d9488;">What Is Included in the $350 Consultation</h2>
+      <h2 style="font-family:'Libre Baskerville',serif;font-size:1.4rem;font-weight:700;color:#111827;margin-bottom:1.25rem;padding-bottom:0.5rem;border-bottom:2px solid #0d9488;">What Is Included in the $398 Consultation</h2>
 
       <ul style="font-family:'Poppins',sans-serif;font-size:0.95rem;color:#374151;line-height:2;padding-left:1.25rem;">
         <li>Full 60-minute psychiatric evaluation with a board-certified psychiatrist</li>
@@ -240,7 +240,7 @@ export default function KetamineTherapyCostPage() {
 
       <div style="margin-bottom:1.5rem;">
         <h3 style="font-family:'Poppins',sans-serif;font-size:1rem;font-weight:600;color:#111827;margin-bottom:0.5rem;">How much does ketamine therapy cost?</h3>
-        <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#374151;line-height:1.7;">At Isha Health, the initial 60-minute consultation is $350 and follow-up visits are $350 for 30 minutes. Monthly medication costs $50-$150. IV infusion clinics typically charge $400-$800 per session, while Spravato costs $500-$900 per session plus insurance requirements.</p>
+        <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#374151;line-height:1.7;">At Isha Health, the initial 60-minute consultation is $398 and follow-up visits are $398 for 30 minutes. Monthly medication costs $50-$150. IV infusion clinics typically charge $400-$800 per session, while Spravato costs $500-$900 per session plus insurance requirements.</p>
       </div>
 
       <div style="margin-bottom:1.5rem;">
@@ -250,7 +250,7 @@ export default function KetamineTherapyCostPage() {
 
       <div style="margin-bottom:1.5rem;">
         <h3 style="font-family:'Poppins',sans-serif;font-size:1rem;font-weight:600;color:#111827;margin-bottom:0.5rem;">Is at-home ketamine therapy cheaper than IV infusions?</h3>
-        <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#374151;line-height:1.7;">Yes. At-home oral ketamine therapy through Isha Health costs $350 per consultation plus $50-$150/month for medication. A typical IV infusion series costs $2,400-$4,800 for six sessions. At-home treatment is significantly more affordable while clinical data shows comparable outcomes.</p>
+        <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#374151;line-height:1.7;">Yes. At-home oral ketamine therapy through Isha Health costs $398 per consultation plus $50-$150/month for medication. A typical IV infusion series costs $2,400-$4,800 for six sessions. At-home treatment is significantly more affordable while clinical data shows comparable outcomes.</p>
       </div>
 
       <div style="margin-bottom:1.5rem;">
@@ -259,8 +259,8 @@ export default function KetamineTherapyCostPage() {
       </div>
 
       <div style="margin-bottom:1.5rem;">
-        <h3 style="font-family:'Poppins',sans-serif;font-size:1rem;font-weight:600;color:#111827;margin-bottom:0.5rem;">What is included in the $350 consultation fee?</h3>
-        <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#374151;line-height:1.7;">The $350 initial consultation includes a full 60-minute psychiatric evaluation, personalized treatment planning, prescription (if appropriate), ongoing clinical monitoring via PHQ-9 and GAD-7 assessments, secure messaging access to your psychiatrist, and superbill generation for insurance reimbursement.</p>
+        <h3 style="font-family:'Poppins',sans-serif;font-size:1rem;font-weight:600;color:#111827;margin-bottom:0.5rem;">What is included in the $398 consultation fee?</h3>
+        <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#374151;line-height:1.7;">The $398 initial consultation includes a full 60-minute psychiatric evaluation, personalized treatment planning, prescription (if appropriate), ongoing clinical monitoring via PHQ-9 and GAD-7 assessments, secure messaging access to your psychiatrist, and superbill generation for insurance reimbursement.</p>
       </div>
 
       <div style="margin-bottom:1.5rem;">

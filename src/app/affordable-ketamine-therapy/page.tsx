@@ -2,20 +2,20 @@ import type { Metadata } from 'next';
 import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: 'Affordable Ketamine Therapy: $350/Session, 9 States',
+  title: 'Affordable Ketamine Therapy: $398/Session, 9 States',
   description:
-    'At-home ketamine therapy from $350/session — among the cheapest physician-led options. Compare with IV ($400–800) and Spravato ($600–900). HSA/FSA accepted…',
+    'At-home ketamine therapy from $398/session — among the cheapest physician-led options. Compare with IV ($400–800) and Spravato ($600–900). HSA/FSA accepted…',
   alternates: { canonical: 'https://isha.health/affordable-ketamine-therapy' },
   openGraph: buildOpenGraph({
-    title: 'Affordable Ketamine Therapy: $350/Session, 9 States',
-    description: 'At-home ketamine therapy from $350/session — among the cheapest physician-led options. Compare with IV ($400–800) and Spravato ($600–900). HSA/FSA accepted.',
+    title: 'Affordable Ketamine Therapy: $398/Session, 9 States',
+    description: 'At-home ketamine therapy from $398/session — among the cheapest physician-led options. Compare with IV ($400–800) and Spravato ($600–900). HSA/FSA accepted.',
     path: '/affordable-ketamine-therapy',
   }),
   twitter: {
     card: 'summary_large_image',
-    title: 'Affordable Ketamine Therapy: $350/Session',
+    title: 'Affordable Ketamine Therapy: $398/Session',
     description:
-      'At-home ketamine therapy from $350/session — among the cheapest physician-led options. HSA/FSA accepted. No referral needed.',
+      'At-home ketamine therapy from $398/session — among the cheapest physician-led options. HSA/FSA accepted. No referral needed.',
   },
 };
 
@@ -59,7 +59,7 @@ export default function AffordableKetamineTherapyPage() {
         name: 'How much does ketamine therapy cost?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'At Isha Health, affordable ketamine therapy starts at $350 per session. The initial 60-minute consultation and follow-up 30-minute visits are each $350. Monthly medication costs $50-$150. By comparison, IV infusion clinics charge $400-$800 per session and Spravato costs $500-$900 per session.',
+          text: 'At Isha Health, affordable ketamine therapy starts at $398 per session. The initial 60-minute consultation and follow-up 30-minute visits are each $398. Monthly medication costs $50-$150. By comparison, IV infusion clinics charge $400-$800 per session and Spravato costs $500-$900 per session.',
         },
       },
       {
@@ -88,10 +88,10 @@ export default function AffordableKetamineTherapyPage() {
       },
       {
         '@type': 'Question',
-        name: "What's included in the $350 consultation?",
+        name: "What's included in the $398 consultation?",
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'The $350 consultation includes a 60-minute physician evaluation (initial) or 30-minute follow-up, personalized treatment plan, prescription sent to your pharmacy, ongoing messaging with your care team, PHQ-9 and GAD-7 progress tracking, and a superbill for insurance reimbursement.',
+          text: 'The $398 consultation includes a 60-minute physician evaluation (initial) or 30-minute follow-up, personalized treatment plan, prescription sent to your pharmacy, ongoing messaging with your care team, PHQ-9 and GAD-7 progress tracking, and a superbill for insurance reimbursement.',
         },
       },
       {
@@ -119,7 +119,7 @@ export default function AffordableKetamineTherapyPage() {
     </nav>
 
     <p style="font-family:'Poppins',sans-serif;font-size:1.1rem;line-height:1.8;color:#374151;text-align:center;max-width:700px;margin:0 auto 3rem;text-wrap:pretty;">
-      Physician-led <strong>affordable ketamine treatment</strong> starting at $350 per session — a fraction of IV infusion or clinic-based costs. No referral needed.
+      Physician-led <strong>affordable ketamine treatment</strong> starting at $398 per session — a fraction of IV infusion or clinic-based costs. No referral needed.
     </p>
 
     <!-- Why Affordable -->
@@ -171,7 +171,7 @@ export default function AffordableKetamineTherapyPage() {
           <tbody>
             <tr>
               <td style="padding:0.75rem 1rem;border-bottom:1px solid #e5e7eb;font-weight:500;color:#374151;">Per session</td>
-              <td style="padding:0.75rem 1rem;border-bottom:1px solid #e5e7eb;text-align:center;color:#0f766e;font-weight:600;">$350</td>
+              <td style="padding:0.75rem 1rem;border-bottom:1px solid #e5e7eb;text-align:center;color:#0f766e;font-weight:600;">$398</td>
               <td style="padding:0.75rem 1rem;border-bottom:1px solid #e5e7eb;text-align:center;color:#374151;">$400–$800</td>
               <td style="padding:0.75rem 1rem;border-bottom:1px solid #e5e7eb;text-align:center;color:#374151;">$500–$900</td>
             </tr>
@@ -209,7 +209,7 @@ export default function AffordableKetamineTherapyPage() {
 
     <!-- What's Included -->
     <div style="margin-bottom:3rem;">
-      <h2 style="font-family:'Libre Baskerville',serif;font-size:1.4rem;font-weight:700;color:#111827;margin-bottom:1.25rem;padding-bottom:0.5rem;border-bottom:2px solid #0d9488;">What's Included in $350</h2>
+      <h2 style="font-family:'Libre Baskerville',serif;font-size:1.4rem;font-weight:700;color:#111827;margin-bottom:1.25rem;padding-bottom:0.5rem;border-bottom:2px solid #0d9488;">What's Included in $398</h2>
 
       <p style="font-family:'Poppins',sans-serif;font-size:0.95rem;color:#374151;line-height:1.7;margin-bottom:1rem;">
         Every consultation at Isha Health includes comprehensive physician-led care — not just a prescription:
@@ -244,7 +244,7 @@ export default function AffordableKetamineTherapyPage() {
         </div>
         <div style="padding:1.25rem;background:#fff;border-radius:12px;border:1px solid #e5e7eb;">
           <p style="font-family:'Poppins',sans-serif;font-size:0.95rem;font-weight:600;color:#0f766e;margin-bottom:0.4rem;">Book Before May 1, 2026</p>
-          <p style="font-family:'Poppins',sans-serif;font-size:0.85rem;color:#4b5563;line-height:1.6;">Lock in the current $350 rate before the price increases to $398 per session.</p>
+          <p style="font-family:'Poppins',sans-serif;font-size:0.85rem;color:#4b5563;line-height:1.6;">Lock in the current $398 rate before the price increases to $398 per session.</p>
         </div>
         <div style="padding:1.25rem;background:#fff;border-radius:12px;border:1px solid #e5e7eb;">
           <p style="font-family:'Poppins',sans-serif;font-size:0.95rem;font-weight:600;color:#0f766e;margin-bottom:0.4rem;">Compare Pharmacy Prices</p>
@@ -281,7 +281,7 @@ export default function AffordableKetamineTherapyPage() {
 
       <div style="margin-bottom:1.5rem;">
         <h3 style="font-family:'Poppins',sans-serif;font-size:1rem;font-weight:600;color:#111827;margin-bottom:0.5rem;">How much does ketamine therapy cost?</h3>
-        <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#374151;line-height:1.7;">At Isha Health, affordable ketamine therapy starts at $350 per session. The initial 60-minute consultation and follow-up 30-minute visits are each $350. Monthly medication costs $50-$150. By comparison, IV infusion clinics charge $400-$800 per session and Spravato costs $500-$900 per session.</p>
+        <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#374151;line-height:1.7;">At Isha Health, affordable ketamine therapy starts at $398 per session. The initial 60-minute consultation and follow-up 30-minute visits are each $398. Monthly medication costs $50-$150. By comparison, IV infusion clinics charge $400-$800 per session and Spravato costs $500-$900 per session.</p>
       </div>
 
       <div style="margin-bottom:1.5rem;">
@@ -300,8 +300,8 @@ export default function AffordableKetamineTherapyPage() {
       </div>
 
       <div style="margin-bottom:1.5rem;">
-        <h3 style="font-family:'Poppins',sans-serif;font-size:1rem;font-weight:600;color:#111827;margin-bottom:0.5rem;">What's included in the $350 consultation?</h3>
-        <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#374151;line-height:1.7;">The $350 consultation includes a 60-minute physician evaluation (initial) or 30-minute follow-up, personalized treatment plan, prescription sent to your pharmacy, ongoing messaging with your care team, PHQ-9 and GAD-7 progress tracking, and a superbill for insurance reimbursement.</p>
+        <h3 style="font-family:'Poppins',sans-serif;font-size:1rem;font-weight:600;color:#111827;margin-bottom:0.5rem;">What's included in the $398 consultation?</h3>
+        <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#374151;line-height:1.7;">The $398 consultation includes a 60-minute physician evaluation (initial) or 30-minute follow-up, personalized treatment plan, prescription sent to your pharmacy, ongoing messaging with your care team, PHQ-9 and GAD-7 progress tracking, and a superbill for insurance reimbursement.</p>
       </div>
 
       <div style="margin-bottom:1.5rem;">
@@ -312,7 +312,7 @@ export default function AffordableKetamineTherapyPage() {
 
     <!-- CTA -->
     <div style="background-color:#f0fdfa;padding:2.5rem;border-radius:12px;text-align:center;border:1px solid #ccfbf1;">
-      <p style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#0f766e;margin-bottom:0.5rem;">Book Your $350 Consultation</p>
+      <p style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#0f766e;margin-bottom:0.5rem;">Book Your $398 Consultation</p>
       <p style="font-family:'Poppins',sans-serif;color:#4b5563;margin-bottom:1.5rem;font-size:0.95rem;">Start affordable ketamine therapy from the comfort of your home. No referral needed.</p>
       <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
         <a href="/pricing" style="display:inline-block;background-color:#fff;color:#0d9488;padding:0.85rem 2rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:1rem;font-family:'Poppins',sans-serif;border:2px solid #0d9488;">View Full Pricing</a>

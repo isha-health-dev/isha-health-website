@@ -2,19 +2,19 @@ import type { Metadata } from 'next';
 import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: 'Online Ketamine Therapy: $350 per Session',
+  title: 'Online Ketamine Therapy: $398 per Session',
   description:
-    'Online ketamine therapy from $350 per session — physician-led, no subscription. Includes consultation, prescription, and ongoing support in 8 states.',
+    'Online ketamine therapy from $398 per session — physician-led, no subscription. Includes consultation, prescription, and ongoing support in 8 states.',
   alternates: { canonical: 'https://isha.health/pricing' },
   openGraph: buildOpenGraph({
-    title: 'Online Ketamine Therapy: $350 per Session',
-    description: 'Online ketamine therapy from $350 per session — physician-led, no subscription. Includes consultation, prescription, and ongoing support in 8 states.',
+    title: 'Online Ketamine Therapy: $398 per Session',
+    description: 'Online ketamine therapy from $398 per session — physician-led, no subscription. Includes consultation, prescription, and ongoing support in 8 states.',
     path: '/pricing',
   }),
   twitter: {
     card: 'summary_large_image',
-    title: 'Online Ketamine Therapy: $350 per Session',
-    description: 'Online ketamine therapy from $350. Physician-led, no subscription, 8 states.',
+    title: 'Online Ketamine Therapy: $398 per Session',
+    description: 'Online ketamine therapy from $398. Physician-led, no subscription, 8 states.',
   },
 };
 
@@ -51,7 +51,7 @@ export default function PricingPage() {
       {
         "@type": "Question",
         "name": "What is Isha Health's cancellation policy?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Please provide at least 48 hours notice to cancel or reschedule. Late cancellations incur a $120 fee. No-shows are charged the full $350 appointment fee." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Please provide at least 48 hours notice to cancel or reschedule. Late cancellations incur a $120 fee. No-shows are charged the full $398 appointment fee." }
       },
       {
         "@type": "Question",
@@ -74,7 +74,7 @@ export default function PricingPage() {
   <!-- Pricing Cards -->
   <div style="max-width:900px;margin:0 auto;padding:2.5rem 1.5rem;">
     <div style="background-color:#fef3c7;border:1px solid #fcd34d;border-radius:10px;padding:0.85rem 1.25rem;text-align:center;margin-bottom:1.5rem;">
-      <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;font-weight:600;color:#92400e;margin:0;">Current price: $350 per appointment. Starting May 1, 2026, all appointments will be $398.</p>
+      <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;font-weight:600;color:#92400e;margin:0;">Current price: $398 per appointment. Starting May 1, 2026, all appointments will be $398.</p>
     </div>
     <div style="display:flex;flex-wrap:wrap;gap:1.5rem;justify-content:center;">
 
@@ -86,7 +86,7 @@ export default function PricingPage() {
         </div>
         <div style="padding:1.5rem;">
           <p style="text-align:center;margin-bottom:1.25rem;">
-            <span style="font-size:2.5rem;font-weight:700;color:#111827;font-family:'Libre Baskerville',serif;">$350</span>
+            <span style="font-size:2.5rem;font-weight:700;color:#111827;font-family:'Libre Baskerville',serif;">$398</span>
           </p>
           <ul style="list-style:none;padding:0;margin:0;font-family:'Poppins',sans-serif;font-size:0.9rem;color:#374151;line-height:1.6;">
             <li style="padding:0.5rem 0;border-bottom:1px solid #f3f4f6;display:flex;gap:0.5rem;align-items:flex-start;">
@@ -121,7 +121,7 @@ export default function PricingPage() {
         </div>
         <div style="padding:1.5rem;">
           <p style="text-align:center;margin-bottom:1.25rem;">
-            <span style="font-size:2.5rem;font-weight:700;color:#111827;font-family:'Libre Baskerville',serif;">$350</span>
+            <span style="font-size:2.5rem;font-weight:700;color:#111827;font-family:'Libre Baskerville',serif;">$398</span>
           </p>
           <ul style="list-style:none;padding:0;margin:0;font-family:'Poppins',sans-serif;font-size:0.9rem;color:#374151;line-height:1.6;">
             <li style="padding:0.5rem 0;border-bottom:1px solid #f3f4f6;display:flex;gap:0.5rem;align-items:flex-start;">
@@ -218,7 +218,7 @@ export default function PricingPage() {
 
     <div style="border-bottom:1px solid #e5e7eb;padding:1.25rem 0;">
       <h3 style="font-family:'Poppins',sans-serif;font-size:1rem;font-weight:600;color:#111827;margin-bottom:0.5rem;">What is your cancellation policy?</h3>
-      <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#4b5563;line-height:1.6;">Please provide at least 48 hours' notice to cancel or reschedule. Late cancellations incur a $120 fee. No-shows are charged the full $350 appointment fee. See our full <a href="/cancellation-policy-isha-health" style="color:#0d9488;text-decoration:underline;">cancellation policy</a>.</p>
+      <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#4b5563;line-height:1.6;">Please provide at least 48 hours' notice to cancel or reschedule. Late cancellations incur a $120 fee. No-shows are charged the full $398 appointment fee. See our full <a href="/cancellation-policy-isha-health" style="color:#0d9488;text-decoration:underline;">cancellation policy</a>.</p>
     </div>
 
     <div style="padding:1.25rem 0;">

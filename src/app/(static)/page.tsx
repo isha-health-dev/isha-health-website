@@ -7,19 +7,19 @@ const dims = imageDims as Record<string, { w: number; h: number }>;
 
 export const metadata: Metadata = {
   title: "Online Ketamine Therapy for Depression & Anxiety",
-  description: "88.8% of patients improve. Physician-led at-home ketamine therapy for depression, anxiety, and PTSD. $350 consultation, available in 8 states.",
+  description: "88.8% of patients improve. Physician-led at-home ketamine therapy for depression, anxiety, and PTSD. $398 consultation, available in 8 states.",
   alternates: {
     canonical: "https://isha.health",
   },
   openGraph: buildOpenGraph({
     title: "Online Ketamine Therapy for Depression & Anxiety",
-    description: "88.8% of patients improve. Physician-led at-home ketamine therapy for depression, anxiety, and PTSD. $350 consultation, available in 8 states.",
+    description: "88.8% of patients improve. Physician-led at-home ketamine therapy for depression, anxiety, and PTSD. $398 consultation, available in 8 states.",
     path: '/',
   }),
   twitter: {
     card: "summary_large_image",
     title: "Online Ketamine Therapy for Depression & Anxiety",
-    description: "88.8% of patients improve. Physician-led at-home ketamine therapy for depression, anxiety, and PTSD. $350 consultation, available in 8 states.",
+    description: "88.8% of patients improve. Physician-led at-home ketamine therapy for depression, anxiety, and PTSD. $398 consultation, available in 8 states.",
   },
 };
 
@@ -204,7 +204,7 @@ export default function Page() {
               </div>
               <div style="flex:1 1 260px;background:#fff;border-radius:10px;padding:1.75rem;border:1px solid #e5e7eb;">
                 <h3 style="font-family:'Libre Baskerville',serif;font-size:1.1rem;font-weight:700;color:#111827;margin-bottom:0.75rem;">Affordable, Accessible Telehealth</h3>
-                <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#4b5563;line-height:1.6;">Through telemedicine and sublingual ketamine, treatment is both cost-effective and convenient \u2014 all from your home. <a href="/pricing" style="color:#0d9488;text-decoration:underline;">$350 per consultation</a>, monitored by experienced clinicians.</p>
+                <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#4b5563;line-height:1.6;">Through telemedicine and sublingual ketamine, treatment is both cost-effective and convenient \u2014 all from your home. <a href="/pricing" style="color:#0d9488;text-decoration:underline;">$398 per consultation</a>, monitored by experienced clinicians.</p>
               </div>
               <div style="flex:1 1 260px;background:#fff;border-radius:10px;padding:1.75rem;border:1px solid #e5e7eb;">
                 <h3 style="font-family:'Libre Baskerville',serif;font-size:1.1rem;font-weight:700;color:#111827;margin-bottom:0.75rem;">Personalized, Evidence-Based</h3>

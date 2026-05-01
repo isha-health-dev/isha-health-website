@@ -3,19 +3,19 @@ import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "Ketamine Therapy for Anxiety",
-  description: "92.6% of patients reach minimal anxiety levels with ketamine therapy. Physician-led at-home treatment starting at $350.",
+  description: "92.6% of patients reach minimal anxiety levels with ketamine therapy. Physician-led at-home treatment starting at $398.",
   alternates: {
     canonical: "https://isha.health/ketamine-therapy-for-anxiety",
   },
   openGraph: buildOpenGraph({
     title: "Ketamine Therapy for Anxiety",
-    description: "92.6% of patients reach minimal anxiety levels with ketamine therapy. Physician-led at-home treatment starting at $350.",
+    description: "92.6% of patients reach minimal anxiety levels with ketamine therapy. Physician-led at-home treatment starting at $398.",
     path: '/ketamine-therapy-for-anxiety',
   }),
   twitter: {
     card: "summary_large_image",
     title: "Ketamine Therapy for Anxiety",
-    description: "92.6% of patients reach minimal anxiety levels with ketamine therapy. Physician-led at-home treatment starting at $350.",
+    description: "92.6% of patients reach minimal anxiety levels with ketamine therapy. Physician-led at-home treatment starting at $398.",
   },
 };
 
@@ -91,7 +91,7 @@ export default function Page() {
 
   <div style="margin:1.5rem 0;">
     <h3 style="font-family:Libre Baskerville,serif;font-size:1.05rem;font-weight:700;color:#111827;margin-bottom:0.75rem;">Start Treatment</h3>
-    <p style="font-size:0.9rem;color:#374151;line-height:1.6;">Isha Health offers <a href="/online-ketamine-therapy" style="color:#0d9488;text-decoration:underline;">online ketamine therapy</a> via telemedicine in 9 states. Initial consultations are <a href="/ketamine-therapy-cost" style="color:#0d9488;text-decoration:underline;">$350 for 60 minutes</a> with a physician. <a href="/ketamine-therapy-reviews" style="color:#0d9488;text-decoration:underline;">Read patient reviews</a>.</p>
+    <p style="font-size:0.9rem;color:#374151;line-height:1.6;">Isha Health offers <a href="/online-ketamine-therapy" style="color:#0d9488;text-decoration:underline;">online ketamine therapy</a> via telemedicine in 9 states. Initial consultations are <a href="/ketamine-therapy-cost" style="color:#0d9488;text-decoration:underline;">$398 for 60 minutes</a> with a physician. <a href="/ketamine-therapy-reviews" style="color:#0d9488;text-decoration:underline;">Read patient reviews</a>.</p>
   </div>
 
   <div style="margin:1.5rem 0;">

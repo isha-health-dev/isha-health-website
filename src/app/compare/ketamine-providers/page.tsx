@@ -39,7 +39,7 @@ export default function Page() {
         "name": "How much does online ketamine therapy cost?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Online ketamine therapy typically costs between $200 and $900 per session depending on the provider and administration method. At-home oral ketamine through telehealth providers like Isha Health costs around $350 per session. IV infusion clinics charge $400-800 per session. Spravato (esketamine) nasal spray costs $500-900 per session but may be partially covered by insurance."
+          "text": "Online ketamine therapy typically costs between $200 and $900 per session depending on the provider and administration method. At-home oral ketamine through telehealth providers like Isha Health costs around $398 per session. IV infusion clinics charge $400-800 per session. Spravato (esketamine) nasal spray costs $500-900 per session but may be partially covered by insurance."
         }
       },
       {
@@ -110,7 +110,7 @@ export default function Page() {
         <tbody>
           <tr style="background-color:#f0fdfa;">
             <td style="padding:0.75rem 1rem;border:1px solid #e5e7eb;font-weight:700;color:#0d9488;">Isha Health</td>
-            <td style="padding:0.75rem 1rem;border:1px solid #e5e7eb;">$350/session</td>
+            <td style="padding:0.75rem 1rem;border:1px solid #e5e7eb;">$398/session</td>
             <td style="padding:0.75rem 1rem;border:1px solid #e5e7eb;">At-home (telehealth)</td>
             <td style="padding:0.75rem 1rem;border:1px solid #e5e7eb;">Oral ketamine</td>
             <td style="padding:0.75rem 1rem;border:1px solid #e5e7eb;"><strong>88.8% improvement rate</strong> (published)</td>
@@ -188,7 +188,7 @@ export default function Page() {
       <div style="margin-bottom:1.5rem;">
         <h3 style="font-family:'Libre Baskerville',serif;font-size:1.05rem;font-weight:700;color:#111827;margin:0 0 0.5rem 0;">How much does online ketamine therapy cost?</h3>
         <p style="font-family:'Poppins',sans-serif;font-size:0.95rem;line-height:1.7;color:#374151;margin:0;">
-          Online ketamine therapy typically costs between $200 and $900 per session depending on the provider type and method of administration. At-home oral ketamine through telehealth providers like Isha Health costs around $350 per session. IV infusion clinics charge $400-800 per session. Spravato (esketamine) nasal spray costs $500-900 per session but may be partially covered by insurance. <a href="/pricing" style="color:#0d9488;text-decoration:underline;">View Isha Health pricing</a>.
+          Online ketamine therapy typically costs between $200 and $900 per session depending on the provider type and method of administration. At-home oral ketamine through telehealth providers like Isha Health costs around $398 per session. IV infusion clinics charge $400-800 per session. Spravato (esketamine) nasal spray costs $500-900 per session but may be partially covered by insurance. <a href="/pricing" style="color:#0d9488;text-decoration:underline;">View Isha Health pricing</a>.
         </p>
       </div>
       <div style="margin-bottom:1.5rem;">

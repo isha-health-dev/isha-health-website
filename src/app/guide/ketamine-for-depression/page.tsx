@@ -235,7 +235,7 @@ export default function Page() {
           </tr>
           <tr>
             <td style="padding:0.75rem 1rem;border:1px solid #e5e7eb;font-weight:600;">Cost</td>
-            <td style="padding:0.75rem 1rem;border:1px solid #e5e7eb;">Generally more affordable ($350/appt + medication)</td>
+            <td style="padding:0.75rem 1rem;border:1px solid #e5e7eb;">Generally more affordable ($398/appt + medication)</td>
             <td style="padding:0.75rem 1rem;border:1px solid #e5e7eb;">Typically $400-$800+ per infusion session</td>
           </tr>
           <tr style="background-color:#f9fafb;">

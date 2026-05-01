@@ -3,20 +3,20 @@ import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "Online At-Home Ketamine Therapy in New York",
-  description: "New York residents: at-home ketamine therapy starting at $350. 88.8% of patients improve. Same-day appointments. No referral needed.",
+  description: "New York residents: at-home ketamine therapy starting at $398. 88.8% of patients improve. Same-day appointments. No referral needed.",
   alternates: {
     canonical: "https://isha.health/locations/online-at-home-ketamine-therapy-in-new-york",
   },
   robots: { index: false, follow: true }, // NY service paused — keep URL alive but hide from search
   openGraph: buildOpenGraph({
     title: "Online At-Home Ketamine Therapy in New York",
-    description: "New York residents: at-home ketamine therapy starting at $350. 88.8% of patients improve. Same-day appointments. No referral needed.",
+    description: "New York residents: at-home ketamine therapy starting at $398. 88.8% of patients improve. Same-day appointments. No referral needed.",
     path: '/locations/online-at-home-ketamine-therapy-in-new-york',
   }),
   twitter: {
     card: "summary_large_image",
     title: "Online At-Home Ketamine Therapy in New York",
-    description: "New York residents: at-home ketamine therapy starting at $350. 88.8% of patients improve. Same-day appointments. No referral needed.",
+    description: "New York residents: at-home ketamine therapy starting at $398. 88.8% of patients improve. Same-day appointments. No referral needed.",
   },
 };
 

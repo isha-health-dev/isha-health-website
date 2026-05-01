@@ -69,7 +69,7 @@ export default function Page() {
           <tr>
             <td style="padding:0.75rem 1rem;border:1px solid #e5e7eb;font-weight:600;">Cost</td>
             <td style="padding:0.75rem 1rem;border:1px solid #e5e7eb;">$600-900+ per session without insurance; may be partially covered by some plans with prior authorization</td>
-            <td style="padding:0.75rem 1rem;border:1px solid #e5e7eb;">At-home oral: ~$350/appointment + $50-150/mo medication; IV infusions: $400-800/session</td>
+            <td style="padding:0.75rem 1rem;border:1px solid #e5e7eb;">At-home oral: ~$398/appointment + $50-150/mo medication; IV infusions: $400-800/session</td>
           </tr>
           <tr style="background-color:#f9fafb;">
             <td style="padding:0.75rem 1rem;border:1px solid #e5e7eb;font-weight:600;">FDA status</td>

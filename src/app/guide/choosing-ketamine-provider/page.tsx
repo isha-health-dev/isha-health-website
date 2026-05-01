@@ -71,7 +71,7 @@ export default function Page() {
         "name": "How much should ketamine therapy cost?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Costs vary by route and provider. IV infusions typically cost $400 to $800 per session. At-home oral ketamine programs may start around $350 per appointment plus medication costs. Be wary of providers who charge significantly above or below market rates without clear justification. Transparent pricing is a sign of a trustworthy provider."
+          "text": "Costs vary by route and provider. IV infusions typically cost $400 to $800 per session. At-home oral ketamine programs may start around $398 per appointment plus medication costs. Be wary of providers who charge significantly above or below market rates without clear justification. Transparent pricing is a sign of a trustworthy provider."
         }
       }
     ]
@@ -313,7 +313,7 @@ export default function Page() {
 
     <div style="margin-bottom:2rem;">
       <h3 style="font-family:'Libre Baskerville',serif;font-size:1rem;font-weight:700;color:#111827;margin-bottom:0.5rem;">How much should ketamine therapy cost?</h3>
-      <p style="font-family:'Source Sans Pro','Poppins',sans-serif;font-size:0.95rem;line-height:1.8;color:#374151;">IV infusions typically cost $400 to $800 per session. At-home oral programs may start around $350 per appointment plus medication. Be cautious of prices significantly above or below market rates. See our <a href="/pricing" style="color:#0d9488;text-decoration:underline;">pricing page</a> and our breakdown of <a href="/pricing" style="color:#0d9488;text-decoration:underline;">ketamine therapy costs</a>.</p>
+      <p style="font-family:'Source Sans Pro','Poppins',sans-serif;font-size:0.95rem;line-height:1.8;color:#374151;">IV infusions typically cost $400 to $800 per session. At-home oral programs may start around $398 per appointment plus medication. Be cautious of prices significantly above or below market rates. See our <a href="/pricing" style="color:#0d9488;text-decoration:underline;">pricing page</a> and our breakdown of <a href="/pricing" style="color:#0d9488;text-decoration:underline;">ketamine therapy costs</a>.</p>
     </div>
 
     <!-- Related Guides -->
