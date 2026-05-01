@@ -51,7 +51,7 @@ export default function PricingPage() {
       {
         "@type": "Question",
         "name": "What is Isha Health's cancellation policy?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Please provide at least 48 hours notice to cancel or reschedule. Late cancellations incur a $120 fee. No-shows are charged the full $398 appointment fee." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Please provide at least 48 hours notice to cancel or reschedule. Late cancellations incur a $140 fee. No-shows are charged the full $398 appointment fee." }
       },
       {
         "@type": "Question",
@@ -217,7 +217,7 @@ export default function PricingPage() {
 
     <div style="border-bottom:1px solid #e5e7eb;padding:1.25rem 0;">
       <h3 style="font-family:'Poppins',sans-serif;font-size:1rem;font-weight:600;color:#111827;margin-bottom:0.5rem;">What is your cancellation policy?</h3>
-      <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#4b5563;line-height:1.6;">Please provide at least 48 hours' notice to cancel or reschedule. Late cancellations incur a $120 fee. No-shows are charged the full $398 appointment fee. See our full <a href="/cancellation-policy-isha-health" style="color:#0d9488;text-decoration:underline;">cancellation policy</a>.</p>
+      <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#4b5563;line-height:1.6;">Please provide at least 48 hours' notice to cancel or reschedule. Late cancellations incur a $140 fee. No-shows are charged the full $398 appointment fee. See our full <a href="/cancellation-policy-isha-health" style="color:#0d9488;text-decoration:underline;">cancellation policy</a>.</p>
     </div>
 
     <div style="padding:1.25rem 0;">
