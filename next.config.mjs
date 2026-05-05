@@ -32,6 +32,12 @@ const nextConfig = {
         destination: '/locations/ketamine-therapy-new-york-city',
         permanent: true,
       },
+      // Short-URL aliases for current-patients pages
+      {
+        source: '/session-instruction',
+        destination: '/current-patients/session-instruction',
+        permanent: true,
+      },
       // Redirect findyourkaptherapist.isha.health -> main site login
       {
         source: '/login',
