@@ -44,24 +44,19 @@ export default function Page() {
     <p style="margin:0 0 2rem;font-size:1rem;line-height:1.8;">
       My friend (I call her Kanako here to protect her privacy) was the first person I knew who suffered from depression, although at the time we did not have a name for it. The Japanese school nurse called it a "cold in the heart", as if it was just a temporary physical ailment that could be cured with rest and medicine. Kanako stopped coming to school and eventually disappeared from my life. Her absence left a deep impact on me and made me realize the importance of mental health.
     </p>
-    <div style="text-align:center;">
-      <img src="/images/ab6f7e84_64384f8d20293ffaf5e0a4fd_image.webp" loading="lazy" width="600" alt="Meet our CEO, Mai Shimada MD, sharing her story and vision behind Isha Health's online at-home ketamine clinic for depression and anxiety treatment" srcset="/images/34b8d47c_64384f8d20293ffaf5e0a4fd_image-p-500.webp 500w, /images/b941961a_64384f8d20293ffaf5e0a4fd_image-p-800.webp 800w, /images/5583f1e8_64384f8d20293ffaf5e0a4fd_image.webp 900w" sizes="(max-width:767px) 100vw, 600px" style="max-width:100%;height:auto;border-radius:12px;">
-    </div>
+    <figure style="text-align:center;margin:2rem 0 0;">
+      <img src="/images/ab6f7e84_64384f8d20293ffaf5e0a4fd_image.webp" loading="lazy" width="420" alt="Dr. Mai Shimada, founder of Isha Health" srcset="/images/34b8d47c_64384f8d20293ffaf5e0a4fd_image-p-500.webp 500w, /images/b941961a_64384f8d20293ffaf5e0a4fd_image-p-800.webp 800w" sizes="(max-width:767px) 100vw, 420px" style="width:100%;max-width:420px;height:auto;border-radius:12px;">
+    </figure>
   </section>
 
   <!-- Founder Story - Part 2 -->
-  <section style="display:flex;gap:2.5rem;align-items:center;margin-bottom:3rem;flex-wrap:wrap;">
-    <div style="flex:1;min-width:280px;">
-      <img src="/images/pexels-hafeisi.jpg" loading="lazy" alt="Find peace and tranquility with ketamine therapy - Isha Health" srcset="/images/pexels-hafeisi-p-500.webp 500w, /images/pexels-hafeisi.jpg 640w" sizes="(max-width:767px) 100vw, 300px" style="width:100%;max-width:300px;height:auto;border-radius:12px;">
-    </div>
-    <div style="flex:2;min-width:280px;">
-      <p style="margin:0 0 1.5rem;font-size:1rem;line-height:1.8;">
-        Years later, as a young doctor working in the United States, I saw firsthand the challenges faced by patients with mental health issues. The healthcare system was not equipped to provide the comprehensive care that was needed. It was then that I knew I wanted to make a difference and find a way to provide more effective treatments.
-      </p>
-      <p style="margin:0;font-size:1rem;line-height:1.8;">
-        My journey led me to ketamine therapy, which has shown great promise in treating depression and anxiety. By combining Western medicine with Eastern philosophy, we at Isha Health strive to treat the whole person, not just the symptoms. Our approach is inspired by the belief that mind and body are inseparable, and that a holistic approach is the key to achieving optimal health.
-      </p>
-    </div>
+  <section style="margin-bottom:3rem;">
+    <p style="margin:0 0 1.5rem;font-size:1rem;line-height:1.8;">
+      Years later, as a young doctor working in the United States, I saw firsthand the challenges faced by patients with mental health issues. The healthcare system was not equipped to provide the comprehensive care that was needed. It was then that I knew I wanted to make a difference and find a way to provide more effective treatments.
+    </p>
+    <p style="margin:0;font-size:1rem;line-height:1.8;">
+      My journey led me to ketamine therapy, which has shown great promise in treating depression and anxiety. By combining Western medicine with Eastern philosophy, we at Isha Health strive to treat the whole person, not just the symptoms. Our approach is inspired by the belief that mind and body are inseparable, and that a holistic approach is the key to achieving optimal health.
+    </p>
   </section>
 
   <!-- Murakami Quote & Mission -->
@@ -82,9 +77,12 @@ export default function Page() {
   </section>
 
   <!-- Tokyo Image -->
-  <div style="text-align:center;margin-bottom:3.5rem;">
-    <img src="/images/pexels-shane.webp" loading="lazy" alt="Inspired by the culture and beauty of Tokyo - Isha Health's online at-home ketamine clinic for depression and anxiety" style="max-width:100%;height:auto;border-radius:12px;">
-  </div>
+  <figure style="text-align:center;margin:0 auto 3.5rem;max-width:480px;">
+    <img src="/images/pexels-shane.webp" loading="lazy" width="480" alt="Cherry blossoms in Tokyo" style="width:100%;height:auto;border-radius:12px;display:block;">
+    <figcaption style="font-family:'Poppins',sans-serif;font-size:0.8rem;color:#9ca3af;margin-top:0.75rem;font-style:italic;">
+      Tokyo — where the journey began.
+    </figcaption>
+  </figure>
 
   <!-- Divider -->
   <div style="width:100%;height:1px;background:#e5e7eb;margin:0 0 3rem;"></div>
