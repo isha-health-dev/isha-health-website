@@ -1,48 +1,46 @@
 import { MetadataRoute } from 'next';
-import { readdirSync, readFileSync } from 'fs';
-import { join } from 'path';
+import { getAllBlogPosts } from '@/lib/blog';
 import { getAllTherapists } from '@/lib/therapist-queries';
 import { getTherapistSlug } from '@/lib/therapist-types';
 
-// Regenerate hourly so new therapists + newly-published posts surface without
-// waiting for a full redeploy. Without this export, Next.js was treating the
-// route as fully dynamic, and content/blog/*.mdx wasn't in the runtime bundle
-// — getBlogPosts() fell through to the catch and the sitemap shipped with zero
-// /post/ URLs.
+// Regenerate hourly so new therapists surface without waiting for a redeploy.
 export const revalidate = 3600;
 
 const BASE_URL = 'https://isha.health';
 
-function getBlogPosts(): { slug: string; date: string }[] {
-  const blogDir = join(process.cwd(), 'content', 'blog');
-  const today = new Date().toISOString().split('T')[0];
-  try {
-    const files = readdirSync(blogDir).filter((f) => f.endsWith('.mdx'));
-    return files
-      .map((file) => {
-        const content = readFileSync(join(blogDir, file), 'utf-8');
-        const slug = file.replace(/\.mdx$/, '');
-        const dateMatch = content.match(/^date:\s*(.+)$/m);
-        const date = dateMatch ? dateMatch[1].trim().replace(/['"]/g, '') : '2024-01-01';
-        const isDraft = /^draft:\s*true\b/m.test(content);
-        return { slug, date, isDraft };
-      })
-      .filter((post) => !post.isDraft && post.date <= today) // exclude drafts + future-dated
-      .map(({ slug, date }) => ({ slug, date }));
-  } catch {
-    return [];
-  }
-}
+// Hardcoded rather than read from src/app/<dir> at runtime — readdirSync on the
+// app source tree silently failed in production (Vercel's serverless bundle
+// doesn't carry src/app), so the sitemap was shipping with zero conditions/
+// guide entries and only the static compare page. New entries here require a
+// one-line addition; tradeoff is worth it for a deterministic sitemap.
+const CONDITION_PAGES = [
+  'alcohol-addiction',
+  'bipolar-depression',
+  'chronic-pain',
+  'ocd',
+  'postpartum-depression',
+  'ptsd',
+  'suicidal-ideation',
+  'treatment-resistant-depression',
+];
 
-function getDynamicPages(dir: string, prefix: string): string[] {
-  try {
-    return readdirSync(join(process.cwd(), 'src', 'app', dir), { withFileTypes: true })
-      .filter((d) => d.isDirectory() && !d.name.startsWith('[') && !d.name.startsWith('('))
-      .map((d) => `${prefix}/${d.name}`);
-  } catch {
-    return [];
-  }
-}
+const COMPARE_PAGES = [
+  'at-home-ketamine-vs-clinic',
+  'ketamine-providers',
+  'ketamine-vs-antidepressants',
+  'ketamine-vs-ect',
+  'ketamine-vs-psilocybin',
+  'ketamine-vs-therapy',
+  'ketamine-vs-tms',
+  'oral-ketamine-vs-iv-infusion',
+  'spravato-vs-generic-ketamine',
+];
+
+const GUIDE_PAGES = [
+  'choosing-ketamine-provider',
+  'ketamine-for-depression',
+  'ketamine-therapy',
+];
 
 const staticPages = [
   '',
@@ -60,7 +58,6 @@ const staticPages = [
   'current-patients/scheduling',
   'current-patients/session-instruction',
   'current-patients/superbill',
-  'dr-akua-brown',
   'dr-mai-shimada',
   'faq',
   'good-faith-estimate',
@@ -97,9 +94,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: page === '' ? 1.0 : page === 'pricing' || page === 'appointment' ? 0.9 : 0.7,
   }));
 
-  // Blog posts — frontmatter date is a real per-post timestamp
-  const blogPosts = getBlogPosts();
-  const blogEntries: MetadataRoute.Sitemap = blogPosts.map((post) => ({
+  // Blog posts — getAllBlogPosts already excludes drafts + future-dated.
+  // Routed through the same lib /post/[slug]'s generateStaticParams uses,
+  // so either both routes pick up new posts or both fail in lockstep.
+  const blogEntries: MetadataRoute.Sitemap = getAllBlogPosts().map((post) => ({
     url: `${BASE_URL}/post/${post.slug}`,
     lastModified: post.date,
     changeFrequency: 'yearly',
@@ -149,26 +147,20 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.7,
   }));
 
-  // Condition pages
-  const conditionPages = getDynamicPages('conditions', 'conditions');
-  const conditionEntries: MetadataRoute.Sitemap = conditionPages.map((page) => ({
-    url: `${BASE_URL}/${page}`,
+  const conditionEntries: MetadataRoute.Sitemap = CONDITION_PAGES.map((slug) => ({
+    url: `${BASE_URL}/conditions/${slug}`,
     changeFrequency: 'monthly',
     priority: 0.8,
   }));
 
-  // Comparison pages
-  const comparePages = getDynamicPages('compare', 'compare');
-  const compareEntries: MetadataRoute.Sitemap = comparePages.map((page) => ({
-    url: `${BASE_URL}/${page}`,
+  const compareEntries: MetadataRoute.Sitemap = COMPARE_PAGES.map((slug) => ({
+    url: `${BASE_URL}/compare/${slug}`,
     changeFrequency: 'monthly',
     priority: 0.7,
   }));
 
-  // Guide pages
-  const guidePages = getDynamicPages('guide', 'guide');
-  const guideEntries: MetadataRoute.Sitemap = guidePages.map((page) => ({
-    url: `${BASE_URL}/${page}`,
+  const guideEntries: MetadataRoute.Sitemap = GUIDE_PAGES.map((slug) => ({
+    url: `${BASE_URL}/guide/${slug}`,
     changeFrequency: 'monthly',
     priority: 0.9,
   }));
