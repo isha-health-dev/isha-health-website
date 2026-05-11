@@ -9,7 +9,9 @@
     "start": "next start",
     "lint": "next lint",
     "test": "npx playwright test",
-    "test:ui": "npx playwright test --ui"
+    "test:ui": "npx playwright test --ui",
+    "audit": "npm run audit:metadata && npx playwright test tests/audit",
+    "audit:metadata": "node audits/audit-metadata.mjs"
   },
   "dependencies": {
     "@supabase/ssr": "^0.10.0",

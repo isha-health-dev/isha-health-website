@@ -1,0 +1,29 @@
+# Configuration for the weekly external link audit (.github/workflows/audit-external.yml).
+
+max_concurrency = 4
+max_retries = 2
+timeout = 20
+include_fragments = true
+
+# Treat soft-bot blocks as success, not failures (these can't be fixed; they're
+# bot-detection heuristics on the destination, not real link rot).
+accept = [200, 201, 203, 204, 206, 301, 302, 304, 308, 401, 403, 429]
+
+# Skip social platforms that block link checkers entirely. We re-verify these
+# manually if needed.
+exclude = [
+  "linkedin\\.com",
+  "twitter\\.com",
+  "x\\.com",
+  "facebook\\.com",
+  "instagram\\.com",
+  "tiktok\\.com",
+  # GTM/analytics tags pulled by the layout — not user-facing links.
+  "googletagmanager\\.com",
+  "google-analytics\\.com",
+  "ahrefs\\.com",
+]
+
+# Don't follow links recursively off-domain. Lychee checks each URL once and
+# checks its outgoing links once, but doesn't crawl deeper on external sites.
+exclude_all_private = false

@@ -5,7 +5,7 @@ test.describe('SEO essentials', () => {
     await page.goto('/');
     const desc = await page.locator('meta[name="description"]').getAttribute('content');
     expect(desc).toContain('88.8%');
-    expect(desc).toContain('$350');
+    expect(desc).toContain('$398');
   });
 
   test('homepage has canonical URL', async ({ page }) => {
