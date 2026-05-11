@@ -44,9 +44,6 @@ export default function Page() {
     <p style="margin:0 0 2rem;font-size:1rem;line-height:1.8;">
       My friend (I call her Kanako here to protect her privacy) was the first person I knew who suffered from depression, although at the time we did not have a name for it. The Japanese school nurse called it a "cold in the heart", as if it was just a temporary physical ailment that could be cured with rest and medicine. Kanako stopped coming to school and eventually disappeared from my life. Her absence left a deep impact on me and made me realize the importance of mental health.
     </p>
-    <figure style="text-align:center;margin:2rem 0 0;">
-      <img src="/images/ab6f7e84_64384f8d20293ffaf5e0a4fd_image.webp" loading="lazy" width="420" alt="Dr. Mai Shimada, founder of Isha Health" srcset="/images/34b8d47c_64384f8d20293ffaf5e0a4fd_image-p-500.webp 500w, /images/b941961a_64384f8d20293ffaf5e0a4fd_image-p-800.webp 800w" sizes="(max-width:767px) 100vw, 420px" style="width:100%;max-width:420px;height:auto;border-radius:12px;">
-    </figure>
   </section>
 
   <!-- Founder Story - Part 2 -->
