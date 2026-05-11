@@ -24,13 +24,21 @@ test.describe('Sitemap completeness', () => {
     // Floors per route family — set well below current counts so these only
     // fire when an entire family silently drops out (the actual regression
     // we hit). Bump as the site grows.
+    // Therapist directory floor is only enforced when Supabase env vars are
+    // present (CI without secrets gets a placeholder client → 0 profiles).
+    const hasSupabase = !!(
+      process.env.NEXT_PUBLIC_SUPABASE_URL &&
+      !process.env.NEXT_PUBLIC_SUPABASE_URL.includes('placeholder')
+    );
     const checks: Array<[RegExp, number, string]> = [
       [/<loc>https:\/\/isha\.health\/post\//g, 150, '/post/'],
       [/<loc>https:\/\/isha\.health\/conditions\//g, 5, '/conditions/'],
       [/<loc>https:\/\/isha\.health\/compare\//g, 5, '/compare/'],
       [/<loc>https:\/\/isha\.health\/guide\//g, 2, '/guide/'],
       [/<loc>https:\/\/isha\.health\/locations\//g, 15, '/locations/'],
-      [/<loc>https:\/\/isha\.health\/ketamine-therapist-directory\//g, 50, '/ketamine-therapist-directory/'],
+      ...(hasSupabase
+        ? ([[/<loc>https:\/\/isha\.health\/ketamine-therapist-directory\//g, 50, '/ketamine-therapist-directory/']] as Array<[RegExp, number, string]>)
+        : []),
     ];
     for (const [re, min, label] of checks) {
       const count = (body.match(re) ?? []).length;
