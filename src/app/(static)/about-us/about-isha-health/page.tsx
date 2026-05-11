@@ -24,12 +24,16 @@ export default function Page() {
     <div
       dangerouslySetInnerHTML={{
         __html: `
-<div style="max-width:800px;margin:0 auto;padding:2rem 1.5rem 4rem;font-family:'Poppins',sans-serif;color:#374151;font-size:1rem;line-height:1.8;">
+<div style="max-width:880px;margin:0 auto;padding:2rem 1.5rem 4rem;font-family:'Poppins',sans-serif;color:#374151;font-size:1rem;line-height:1.8;">
 
   <!-- Hero Section -->
-  <div style="text-align:center;padding:3rem 0 2.5rem;">
-    <h1 style="font-family:'Libre Baskerville',serif;font-size:2.2rem;font-weight:700;color:#111827;margin:0;line-height:1.35;">Reimagining Mental Health Treatment:<br>Our Story at ISHA Health</h1>
-    <div style="width:60px;height:3px;background:#0d9488;margin:1.5rem auto 0;border-radius:2px;"></div>
+  <div style="text-align:center;padding:3.5rem 0 3rem;">
+    <p style="font-family:'Poppins',sans-serif;font-size:0.8rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#0d9488;margin:0 0 1rem;">Our Story</p>
+    <h1 style="font-family:'Libre Baskerville',serif;font-size:2.4rem;font-weight:700;color:#111827;margin:0;line-height:1.3;letter-spacing:-0.01em;">Reimagining Mental Health Treatment</h1>
+    <div style="width:60px;height:3px;background:#0d9488;margin:1.5rem auto 1.5rem;border-radius:2px;"></div>
+    <p style="font-family:'Poppins',sans-serif;font-size:1.05rem;line-height:1.7;color:#6b7280;max-width:620px;margin:0 auto;">
+      Isha Health was founded by physicians who saw that conventional mental healthcare wasn't reaching the people who needed it most. This is how we got here — and how we practice now.
+    </p>
   </div>
 
   <!-- Founder Story - Part 1 -->
@@ -90,23 +94,19 @@ export default function Page() {
     <h2 style="font-family:'Libre Baskerville',serif;font-size:1.75rem;font-weight:700;color:#111827;margin:0 0 0.5rem;text-align:center;">Clinical Team</h2>
     <div style="width:40px;height:3px;background:#0d9488;margin:0 auto 2.5rem;border-radius:2px;"></div>
 
-    <!-- Lead Clinicians -->
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,360px));gap:2.5rem;margin-bottom:3rem;justify-content:center;">
-
-      <!-- Mai Shimada -->
-      <div style="background:#fff;border:1px solid #e5e7eb;border-radius:12px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,0.06);">
-        <a href="/dr-mai-shimada" style="display:block;">
-          <img src="/images/a4ede320_67fd440a4857c20020d732ef_Mai_profile.jpg" loading="lazy" width="293" height="300" alt="Mai profile" srcset="/images/ece85efe_67fd440a4857c20020d732ef_Mai_profile-p-500.jpg 500w, /images/5cb2995c_67fd440a4857c20020d732ef_Mai_profile-p-800.jpg 800w, /images/1b569815_67fd440a4857c20020d732ef_Mai_profile-p-1080.jpg 1080w, /images/ed9fab12_67fd440a4857c20020d732ef_Mai_profile-p-1600.jpg 1600w, /images/aa592424_67fd440a4857c20020d732ef_Mai_profile-p-2000.jpg 2000w, /images/934d6f75_67fd440a4857c20020d732ef_Mai_profile-p-2600.jpg 2600w, /images/c2846a79_67fd440a4857c20020d732ef_Mai_profile.jpg 2855w" sizes="(max-width:479px) 100vw, 293px" style="width:100%;height:280px;object-fit:cover;">
-        </a>
-        <div style="padding:1.25rem;">
-          <h3 style="font-family:'Libre Baskerville',serif;font-size:1.1rem;font-weight:700;color:#111827;margin:0 0 0.25rem;">Mai Shimada, MD</h3>
-          <p style="margin:0 0 0.75rem;font-size:0.9rem;color:#0d9488;font-weight:500;">Founder &amp; CEO</p>
-          <p style="margin:0;font-size:0.9rem;line-height:1.7;color:#555;">
-            Dr. Mai Shimada is a board certified emergency medicine physician with over 10 years of experience. She decided to start Isha Health after discovering the transformative benefits of ketamine therapy for various mental health conditions... <a href="https://isha.health/dr-mai-shimada" style="color:#0d9488;text-decoration:none;font-weight:500;">Read More</a>
-          </p>
-        </div>
+    <!-- Lead Clinician (featured) -->
+    <div style="display:flex;gap:0;align-items:stretch;margin-bottom:3.5rem;flex-wrap:wrap;background:#fff;border:1px solid #e5e7eb;border-radius:14px;overflow:hidden;box-shadow:0 2px 6px rgba(0,0,0,0.04);">
+      <a href="/dr-mai-shimada" style="display:block;flex:0 0 280px;min-width:0;">
+        <img src="/images/a4ede320_67fd440a4857c20020d732ef_Mai_profile.jpg" loading="lazy" width="293" height="300" alt="Dr. Mai Shimada, Founder and CEO of Isha Health" srcset="/images/ece85efe_67fd440a4857c20020d732ef_Mai_profile-p-500.jpg 500w, /images/5cb2995c_67fd440a4857c20020d732ef_Mai_profile-p-800.jpg 800w, /images/1b569815_67fd440a4857c20020d732ef_Mai_profile-p-1080.jpg 1080w" sizes="(max-width:639px) 100vw, 280px" style="width:100%;height:100%;min-height:280px;object-fit:cover;display:block;">
+      </a>
+      <div style="flex:1;min-width:260px;padding:2rem 2rem;display:flex;flex-direction:column;justify-content:center;">
+        <p style="font-family:'Poppins',sans-serif;font-size:0.75rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#0d9488;margin:0 0 0.5rem;">Founder &amp; CEO</p>
+        <h3 style="font-family:'Libre Baskerville',serif;font-size:1.5rem;font-weight:700;color:#111827;margin:0 0 0.75rem;line-height:1.3;">Mai Shimada, MD MBA FAAEM</h3>
+        <p style="margin:0 0 1rem;font-size:0.95rem;line-height:1.7;color:#555;">
+          Board-certified emergency medicine physician with 10+ years of clinical experience. Mai founded Isha Health after seeing how ketamine therapy could change outcomes for patients whom conventional treatments had failed.
+        </p>
+        <a href="/dr-mai-shimada" style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#0d9488;text-decoration:none;font-weight:600;align-self:flex-start;">Read full bio →</a>
       </div>
-
     </div>
 
     <!-- Collaborative Care -->
@@ -236,8 +236,12 @@ export default function Page() {
   </section>
 
   <!-- CTA -->
-  <div style="text-align:center;padding:2rem 0;">
-    <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#fff;padding:1rem 2.5rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:1rem;font-family:'Poppins',sans-serif;">Book a Consultation</a>
+  <div style="margin-top:3rem;padding:2.5rem 2rem;background:linear-gradient(135deg,#0d9488 0%,#0891a3 100%);border-radius:14px;text-align:center;color:#fff;">
+    <h2 style="font-family:'Libre Baskerville',serif;font-size:1.5rem;font-weight:700;margin:0 0 0.5rem;color:#fff;line-height:1.3;">Ready to take the next step?</h2>
+    <p style="font-family:'Poppins',sans-serif;font-size:0.95rem;line-height:1.6;margin:0 auto 1.5rem;max-width:480px;color:rgba(255,255,255,0.92);">
+      A 60-minute consultation with a physician is the first step. We'll talk through your history and figure out whether ketamine therapy is a fit.
+    </p>
+    <a href="/appointment" style="display:inline-block;background-color:#fff;color:#0d9488;padding:0.85rem 2.25rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:0.95rem;font-family:'Poppins',sans-serif;">Book a Consultation</a>
   </div>
 
 </div>
