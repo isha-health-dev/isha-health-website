@@ -50,8 +50,6 @@ const testimonials = [
 
 const team = [
   { name: "Mai Shimada, MD", title: "Founder & CEO", img: "/images/94f52bd2_6539c2caf1b0c2065ced5bf4_mai.png" },
-  { name: "Jennifer S. Birch, NP", title: "Psychiatric Nurse Practitioner", img: "/images/702ab160_65bbe1931d159fc0043c75be_jennifer.png" },
-  { name: "Jenya Kaufman, MD", title: "Psychiatrist", img: "/images/0119903c_65bbe1933e6cae126541f4df_jenya2.png" },
   { name: "Margaret Brako, LCSW", title: "Clinical Social Worker", img: "/images/f8aea750_6539c2cacbe52be4e0624076_Margaret.png" },
   { name: "Perrin Elisha, PhD", title: "Clinical Psychologist", img: "/images/40bae703_65bbe193273c8fe689c24647_perrin.png" },
   { name: "Sandy Kong, LMFT", title: "Licensed Marriage & Family Therapist", img: "/images/ac260f0b_65bde0a90b546a064c202c2a_Sandy.png" },

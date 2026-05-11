@@ -76,6 +76,12 @@ const nextConfig = {
         destination: '/about-us/about-isha-health',
         permanent: true,
       },
+      // Jennifer Birch + Jenya Kaufman no longer with Isha Health.
+      {
+        source: '/post/introducing-jennifer-birch-mhnp-bc-a-beacon-of-experience-in-ketamine-therapy',
+        destination: '/blog',
+        permanent: true,
+      },
       // Parent directory index pages
       {
         source: '/locations',

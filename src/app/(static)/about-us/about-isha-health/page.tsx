@@ -117,28 +117,6 @@ export default function Page() {
 
     <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:2rem;margin-bottom:2rem;">
 
-      <!-- Jennifer Birch -->
-      <div style="text-align:center;">
-        <img src="/images/702ab160_65bbe1931d159fc0043c75be_jennifer.png" loading="lazy" alt="Jennifer" style="width:160px;height:160px;border-radius:50%;object-fit:cover;margin-bottom:1rem;border:3px solid #f0fdfa;">
-        <h4 style="font-family:'Libre Baskerville',serif;font-size:1rem;font-weight:700;color:#111827;margin:0 0 0.25rem;">Jennifer S. Birch, NP</h4>
-        <p style="margin:0 0 0.25rem;font-size:0.85rem;color:#0d9488;font-weight:500;">Psychiatric Nurse Practitioner</p>
-        <p style="margin:0 0 0.5rem;font-size:0.85rem;color:#999;">Berkeley, California</p>
-        <p style="margin:0;font-size:0.85rem;line-height:1.65;color:#555;text-align:left;">
-          Jennifer, an experienced Psychiatric Nurse Practitioner from Yale University, specializes in treating mental health conditions like depression and anxiety. She focuses on empowering patients with clear treatment information.
-        </p>
-      </div>
-
-      <!-- Jenya Kaufman -->
-      <div style="text-align:center;">
-        <img src="/images/0119903c_65bbe1933e6cae126541f4df_jenya2.png" loading="lazy" alt="Jenya2" style="width:160px;height:160px;border-radius:50%;object-fit:cover;margin-bottom:1rem;border:3px solid #f0fdfa;">
-        <h4 style="font-family:'Libre Baskerville',serif;font-size:1rem;font-weight:700;color:#111827;margin:0 0 0.25rem;">Jenya Kaufman, MD</h4>
-        <p style="margin:0 0 0.25rem;font-size:0.85rem;color:#0d9488;font-weight:500;">Board-certified Psychiatrist</p>
-        <p style="margin:0 0 0.5rem;font-size:0.85rem;color:#999;">San Francisco, California</p>
-        <p style="margin:0;font-size:0.85rem;line-height:1.65;color:#555;text-align:left;">
-          Dr. Jenya Kaufman is a Stanford graduate and board-certified psychiatrist from UCSF. She has completed a comprehensive Psychedelic Facilitation Course at UC Berkeley, equipping her with a deep understanding of psychedelic integration practices.
-        </p>
-      </div>
-
       <!-- Margaret Brako -->
       <div style="text-align:center;">
         <img src="/images/f8aea750_6539c2cacbe52be4e0624076_Margaret.png" loading="lazy" alt="Margaret" style="width:160px;height:160px;border-radius:50%;object-fit:cover;margin-bottom:1rem;border:3px solid #f0fdfa;">
