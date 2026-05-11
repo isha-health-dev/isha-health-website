@@ -91,7 +91,7 @@ export default function Page() {
     <div style="width:40px;height:3px;background:#0d9488;margin:0 auto 2.5rem;border-radius:2px;"></div>
 
     <!-- Lead Clinicians -->
-    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:2.5rem;margin-bottom:3rem;">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,360px));gap:2.5rem;margin-bottom:3rem;justify-content:center;">
 
       <!-- Mai Shimada -->
       <div style="background:#fff;border:1px solid #e5e7eb;border-radius:12px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,0.06);">
@@ -107,19 +107,6 @@ export default function Page() {
         </div>
       </div>
 
-      <!-- Akua Brown -->
-      <div style="background:#fff;border:1px solid #e5e7eb;border-radius:12px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,0.06);">
-        <a href="/dr-akua-brown" style="display:block;">
-          <img src="/images/a69bb441_6656f9443fb086eb1810a077_akua.png" loading="lazy" width="300" height="300" alt="Akua" style="width:100%;height:280px;object-fit:cover;">
-        </a>
-        <div style="padding:1.25rem;">
-          <h3 style="font-family:'Libre Baskerville',serif;font-size:1.1rem;font-weight:700;color:#111827;margin:0 0 0.25rem;">Akua Brown, MD</h3>
-          <p style="margin:0 0 0.75rem;font-size:0.9rem;color:#0d9488;font-weight:500;">Board Certified Physician</p>
-          <p style="margin:0;font-size:0.9rem;line-height:1.7;color:#555;">
-            Dr. Akua Brown specializes in psychedelic medicine with a focus on increasing accessibility, education, and safety in the field. Fluent in both Spanish and English, she adopts community-focused approaches that mirror her identity as a Black American, queer, nature lover, and abolitionist... <a href="https://isha.health/dr-akua-brown" style="color:#0d9488;text-decoration:none;font-weight:500;">Read More</a>
-          </p>
-        </div>
-      </div>
     </div>
 
     <!-- Collaborative Care -->
@@ -170,7 +157,7 @@ export default function Page() {
         <p style="margin:0 0 0.25rem;font-size:0.85rem;color:#0d9488;font-weight:500;">Psychotherapist</p>
         <p style="margin:0 0 0.5rem;font-size:0.85rem;color:#999;">San Francisco, California</p>
         <p style="margin:0;font-size:0.85rem;line-height:1.65;color:#555;text-align:left;">
-          Sarah Carr, LMFT is the Founder and Clinical Director of <a href="http://www.mindfulsf.com/" target="_blank" style="color:#0d9488;text-decoration:none;">mindfulSF</a>. Sarah has extensive training in Ketamine Assisted Psychotherapy (KAP) and has completed the Internal Family Systems (IFS) and Ketamine Assisted Psychotherapy Intensive through the Ketamine Training Center and IFS Institute.
+          Sarah Carr, LMFT is the Founder and Clinical Director of <a href="https://www.mindfulsf.com/" target="_blank" style="color:#0d9488;text-decoration:none;">mindfulSF</a>. Sarah has extensive training in Ketamine Assisted Psychotherapy (KAP) and has completed the Internal Family Systems (IFS) and Ketamine Assisted Psychotherapy Intensive through the Ketamine Training Center and IFS Institute.
         </p>
       </div>
 

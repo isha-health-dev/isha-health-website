@@ -69,6 +69,13 @@ const nextConfig = {
         destination: '/pricing',
         permanent: true,
       },
+      // Akua Brown no longer with Isha Health — redirect indexed profile URL
+      // to the team page so existing backlinks land on something relevant.
+      {
+        source: '/dr-akua-brown',
+        destination: '/about-us/about-isha-health',
+        permanent: true,
+      },
       // Parent directory index pages
       {
         source: '/locations',

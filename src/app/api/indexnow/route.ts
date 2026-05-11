@@ -15,7 +15,7 @@ function getAllUrls(): string[] {
     '/our-treatment-approach', '/am-i-a-candidate',
     '/ketamine-therapy-for-depression', '/ketamine-therapy-for-anxiety',
     '/what-is-ketamine-assisted-therapy', '/ketamine-therapist-directory',
-    '/dr-mai-shimada', '/dr-akua-brown',
+    '/dr-mai-shimada',
     '/collaborate-with-isha-health', '/referral-patient-process',
     '/isha-health-in-the-media', '/isha-health-media-kit',
     '/consent-form', '/terms-of-use', '/privacy-policy',

@@ -81,7 +81,7 @@ export default function Page() {
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://isha.health" },
-      { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://isha.health/guide" },
+      { "@type": "ListItem", "position": 2, "name": "Resources", "item": "https://isha.health/resources" },
       { "@type": "ListItem", "position": 3, "name": "Choosing a Ketamine Provider", "item": "https://isha.health/guide/choosing-ketamine-provider" }
     ]
   })}</script>
@@ -222,7 +222,7 @@ export default function Page() {
       <li><strong>Medical licensure:</strong> The prescribing provider must be a licensed physician (MD or DO), psychiatric nurse practitioner, or other advanced practice provider with prescriptive authority in your state.</li>
       <li><strong>Psychiatric training:</strong> Providers with psychiatry or mental health training are better equipped to conduct thorough evaluations, manage complex medication interactions, and provide holistic care.</li>
       <li><strong>Ketamine-specific training:</strong> Several organizations offer training programs in ketamine-assisted therapy. While not legally required, completion of such programs indicates a commitment to specialized knowledge.</li>
-      <li><strong>Board certification:</strong> Board certification in psychiatry is a strong indicator of training and expertise. For Isha Health's team, see our physicians' backgrounds: <a href="/dr-mai-shimada" style="color:#0d9488;text-decoration:underline;">Dr. Mai Shimada</a> and <a href="/dr-akua-brown" style="color:#0d9488;text-decoration:underline;">Dr. Akua Brown</a>.</li>
+      <li><strong>Board certification:</strong> Board certification in psychiatry is a strong indicator of training and expertise. For background on Isha Health's lead physician, see <a href="/dr-mai-shimada" style="color:#0d9488;text-decoration:underline;">Dr. Mai Shimada</a>.</li>
     </ul>
     <p style="font-family:'Source Sans Pro','Poppins',sans-serif;font-size:0.95rem;line-height:1.8;color:#374151;margin-bottom:2rem;text-wrap:pretty;">
       For therapists who provide integration support alongside ketamine treatment, relevant credentials may include licensure as a psychologist, clinical social worker, or counselor, ideally with training in psychedelic-assisted therapy. Our article on <a href="/post/therapist-awareness-ketamine-client-therapy" style="color:#0d9488;text-decoration:underline;">therapist awareness of ketamine in client therapy</a> discusses what therapists should know about supporting ketamine patients.
