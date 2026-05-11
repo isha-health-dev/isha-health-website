@@ -3,17 +3,17 @@ import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "At-Home Ketamine Therapy in Palo Alto, CA",
-  description: "Online ketamine-assisted therapy in Palo Alto, California. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
+  description: "Physician-led online ketamine therapy in Palo Alto, California for depression, anxiety, PTSD. At-home, no clinic visits. Book a consultation.",
   alternates: { canonical: "https://isha.health/locations/ketamine-therapy-palo-alto" },
   openGraph: buildOpenGraph({
     title: "At-Home Ketamine Therapy in Palo Alto, CA",
-    description: "Online ketamine-assisted therapy in Palo Alto, California. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
+    description: "Physician-led online ketamine therapy in Palo Alto, California for depression, anxiety, PTSD. At-home, no clinic visits. Book a consultation.",
     path: '/locations/ketamine-therapy-palo-alto',
   }),
   twitter: {
     card: "summary_large_image",
     title: "At-Home Ketamine Therapy in Palo Alto, CA",
-    description: "Online ketamine-assisted therapy in Palo Alto, California. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
+    description: "Physician-led online ketamine therapy in Palo Alto, California for depression, anxiety, PTSD. At-home, no clinic visits. Book a consultation.",
   },
 };
 

@@ -73,7 +73,7 @@ export default function Page() {
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://isha.health" },
-      { "@type": "ListItem", "position": 2, "name": "Compare", "item": "https://isha.health/compare" },
+      { "@type": "ListItem", "position": 2, "name": "Resources", "item": "https://isha.health/resources" },
       { "@type": "ListItem", "position": 3, "name": "Ketamine Providers Compared", "item": "https://isha.health/compare/ketamine-providers" }
     ]
   })}</script>

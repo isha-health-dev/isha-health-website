@@ -3,17 +3,17 @@ import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "At-Home Ketamine Therapy in Chandler, AZ",
-  description: "Online ketamine-assisted therapy in Chandler, Arizona. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
+  description: "Physician-led online ketamine therapy in Chandler, Arizona for depression, anxiety, PTSD. At-home, no clinic visits. Book a consultation.",
   alternates: { canonical: "https://isha.health/locations/ketamine-therapy-chandler" },
   openGraph: buildOpenGraph({
     title: "At-Home Ketamine Therapy in Chandler, AZ",
-    description: "Online ketamine-assisted therapy in Chandler, Arizona. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
+    description: "Physician-led online ketamine therapy in Chandler, Arizona for depression, anxiety, PTSD. At-home, no clinic visits. Book a consultation.",
     path: '/locations/ketamine-therapy-chandler',
   }),
   twitter: {
     card: "summary_large_image",
     title: "At-Home Ketamine Therapy in Chandler, AZ",
-    description: "Online ketamine-assisted therapy in Chandler, Arizona. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
+    description: "Physician-led online ketamine therapy in Chandler, Arizona for depression, anxiety, PTSD. At-home, no clinic visits. Book a consultation.",
   },
 };
 

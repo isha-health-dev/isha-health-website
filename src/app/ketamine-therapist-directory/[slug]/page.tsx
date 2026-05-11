@@ -116,7 +116,11 @@ export default async function TherapistProfilePage({
     name,
     jobTitle: formatRole(t.mental_health_role),
     ...(t.profile_pic ? { image: t.profile_pic } : {}),
-    ...(t.website ? { url: t.website } : {}),
+    // Some therapist rows have prose stuffed into the website field — guard
+    // against emitting "https://I have extensive experience..." into JSON-LD.
+    ...(t.website && t.website.length < 250 && !/\s/.test(t.website)
+      ? { url: t.website.startsWith('http') ? t.website : `https://${t.website}` }
+      : {}),
     ...(t.phone ? { telephone: t.phone } : {}),
     ...(location
       ? {

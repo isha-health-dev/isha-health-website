@@ -75,7 +75,7 @@ const media = [
     desc: "Mai Shimada M.D.: Using Ketamine for Treating Depression and PTSD",
     quote: "Even though this treatment is completely legal, if that bothers you, turn it off right now. I'm going to preface this episode by...",
     img: "/images/bc73405c_6418618a494f1608b6f830cf_Screenshot_2023-03-18_at_00.49.28.webp",
-    url: "https://rosspalmer.com/mai-shimada/",
+    url: "https://rosspalmer.com/mai-shimada",
     cta: "Listen Now",
   },
   {

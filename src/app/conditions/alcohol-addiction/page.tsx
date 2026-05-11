@@ -65,7 +65,7 @@ export default function Page() {
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://isha.health" },
-      { "@type": "ListItem", "position": 2, "name": "Conditions", "item": "https://isha.health/conditions" },
+      { "@type": "ListItem", "position": 2, "name": "Resources", "item": "https://isha.health/resources" },
       { "@type": "ListItem", "position": 3, "name": "Alcohol Use Disorder", "item": "https://isha.health/conditions/alcohol-addiction" }
     ]
   })}</script>

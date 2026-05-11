@@ -164,7 +164,13 @@ export default async function BlogPostPage({
       },
     },
     mainEntityOfPage: `https://isha.health/post/${post.slug}`,
-    ...(post.image ? { image: post.image } : {}),
+    ...(post.image
+      ? {
+          image: post.image.startsWith('http')
+            ? post.image
+            : `https://isha.health${post.image.startsWith('/') ? '' : '/'}${post.image}`,
+        }
+      : {}),
   };
 
   return (

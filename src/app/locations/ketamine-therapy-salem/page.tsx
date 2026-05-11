@@ -3,17 +3,17 @@ import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "At-Home Ketamine Therapy in Salem, OR",
-  description: "Online ketamine-assisted therapy in Salem, Oregon. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
+  description: "Physician-led online ketamine therapy in Salem, Oregon for depression, anxiety, PTSD. At-home, no clinic visits. Book a consultation.",
   alternates: { canonical: "https://isha.health/locations/ketamine-therapy-salem" },
   openGraph: buildOpenGraph({
     title: "At-Home Ketamine Therapy in Salem, OR",
-    description: "Online ketamine-assisted therapy in Salem, Oregon. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
+    description: "Physician-led online ketamine therapy in Salem, Oregon for depression, anxiety, PTSD. At-home, no clinic visits. Book a consultation.",
     path: '/locations/ketamine-therapy-salem',
   }),
   twitter: {
     card: "summary_large_image",
     title: "At-Home Ketamine Therapy in Salem, OR",
-    description: "Online ketamine-assisted therapy in Salem, Oregon. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
+    description: "Physician-led online ketamine therapy in Salem, Oregon for depression, anxiety, PTSD. At-home, no clinic visits. Book a consultation.",
   },
 };
 

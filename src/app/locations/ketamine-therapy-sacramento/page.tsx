@@ -3,17 +3,17 @@ import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "At-Home Ketamine Therapy in Sacramento, CA",
-  description: "Online ketamine-assisted therapy in Sacramento, California. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
+  description: "Physician-led online ketamine therapy in Sacramento, California for depression, anxiety, PTSD. At-home, no clinic visits. Book a consultation.",
   alternates: { canonical: "https://isha.health/locations/ketamine-therapy-sacramento" },
   openGraph: buildOpenGraph({
     title: "At-Home Ketamine Therapy in Sacramento, CA",
-    description: "Online ketamine-assisted therapy in Sacramento, California. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
+    description: "Physician-led online ketamine therapy in Sacramento, California for depression, anxiety, PTSD. At-home, no clinic visits. Book a consultation.",
     path: '/locations/ketamine-therapy-sacramento',
   }),
   twitter: {
     card: "summary_large_image",
     title: "At-Home Ketamine Therapy in Sacramento, CA",
-    description: "Online ketamine-assisted therapy in Sacramento, California. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book your consultation today.",
+    description: "Physician-led online ketamine therapy in Sacramento, California for depression, anxiety, PTSD. At-home, no clinic visits. Book a consultation.",
   },
 };
 

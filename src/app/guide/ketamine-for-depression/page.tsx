@@ -81,7 +81,7 @@ export default function Page() {
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://isha.health" },
-      { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://isha.health/guide" },
+      { "@type": "ListItem", "position": 2, "name": "Resources", "item": "https://isha.health/resources" },
       { "@type": "ListItem", "position": 3, "name": "Ketamine for Depression", "item": "https://isha.health/guide/ketamine-for-depression" }
     ]
   })}</script>
