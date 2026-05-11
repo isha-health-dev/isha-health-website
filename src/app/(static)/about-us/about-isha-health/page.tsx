@@ -73,13 +73,6 @@ export default function Page() {
     </p>
   </section>
 
-  <!-- Tokyo Image -->
-  <figure style="text-align:center;margin:0 auto 3.5rem;max-width:480px;">
-    <img src="/images/pexels-shane.webp" loading="lazy" width="480" alt="Cherry blossoms in Tokyo" style="width:100%;height:auto;border-radius:12px;display:block;">
-    <figcaption style="font-family:'Poppins',sans-serif;font-size:0.8rem;color:#9ca3af;margin-top:0.75rem;font-style:italic;">
-      Tokyo — where the journey began.
-    </figcaption>
-  </figure>
 
   <!-- Divider -->
   <div style="width:100%;height:1px;background:#e5e7eb;margin:0 0 3rem;"></div>
