@@ -12,7 +12,10 @@ test.describe('Sitemap completeness', () => {
     expect(response?.status()).toBe(200);
     const body = await response!.text();
     const locs = body.match(/<loc>[^<]+<\/loc>/g) ?? [];
-    expect(locs.length).toBeGreaterThan(400);
+    // Lower floor when Supabase isn't configured (CI without secrets — no
+    // therapist profiles get emitted, which is ~200 fewer URLs).
+    const minTotal = process.env.NEXT_PUBLIC_SUPABASE_URL ? 400 : 250;
+    expect(locs.length).toBeGreaterThan(minTotal);
 
     const urls = new Set(locs.map((m) => m.replace(/<\/?loc>/g, '')));
     expect(urls.size).toBe(locs.length); // no duplicates
