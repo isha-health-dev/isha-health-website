@@ -34,6 +34,12 @@ function looksLikeTestProfile(t: { first_name?: string; last_name?: string; emai
 }
 
 export async function getAllTherapists(): Promise<TherapistWithRelations[]> {
+  // CI builds without real Supabase credentials — short-circuit so
+  // generateStaticParams gets [] instead of throwing on fetch to a
+  // placeholder host during build.
+  if (!process.env.NEXT_PUBLIC_SUPABASE_URL) {
+    return [];
+  }
   const { data, error } = await supabase
     .from('therapist')
     .select(THERAPIST_SELECT)

@@ -25,11 +25,8 @@ test.describe('Sitemap completeness', () => {
     // fire when an entire family silently drops out (the actual regression
     // we hit). Bump as the site grows.
     // Therapist directory floor is only enforced when Supabase env vars are
-    // present (CI without secrets gets a placeholder client → 0 profiles).
-    const hasSupabase = !!(
-      process.env.NEXT_PUBLIC_SUPABASE_URL &&
-      !process.env.NEXT_PUBLIC_SUPABASE_URL.includes('placeholder')
-    );
+    // present (CI without secrets gets [] from getAllTherapists by design).
+    const hasSupabase = !!process.env.NEXT_PUBLIC_SUPABASE_URL;
     const checks: Array<[RegExp, number, string]> = [
       [/<loc>https:\/\/isha\.health\/post\//g, 150, '/post/'],
       [/<loc>https:\/\/isha\.health\/conditions\//g, 5, '/conditions/'],
