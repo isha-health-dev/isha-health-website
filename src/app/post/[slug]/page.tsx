@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { MDXRemote } from 'next-mdx-remote/rsc';
+import remarkGfm from 'remark-gfm';
 import { getBlogPost, getAllBlogPosts } from '@/lib/blog';
 import { buildOpenGraph, truncateTitle, truncateDescription } from '@/lib/seo';
 import { mdxComponents } from '@/lib/mdx-components';
@@ -275,7 +276,11 @@ export default async function BlogPostPage({
             );
           })()}
           <div className="rich-text w-richtext">
-            <MDXRemote source={post.content} components={mdxComponents} />
+            <MDXRemote
+              source={post.content}
+              components={mdxComponents}
+              options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }}
+            />
           </div>
         </div>
       </div>
