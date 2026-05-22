@@ -36,6 +36,7 @@ yarn-error.log*
 /webflow-scrape
 /scripts
 !/scripts/generate-image-dimensions.mjs
+!/scripts/auto-tweet.mjs
 *.csv
 
 # typescript

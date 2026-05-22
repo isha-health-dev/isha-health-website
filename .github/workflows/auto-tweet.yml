@@ -1,0 +1,59 @@
+name: Auto-tweet new blog posts
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'content/blog/**.mdx'
+  schedule:
+    # Daily at 14:00 UTC (10am ET in EDT, 9am ET in EST) — picks up
+    # posts whose `date:` falls on the current day per the staggered
+    # publishing schedule.
+    - cron: '0 14 * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Print tweets without posting'
+        required: false
+        default: 'false'
+
+jobs:
+  tweet:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - run: npm ci
+
+      - name: Post new tweets
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
+          DRY_RUN: ${{ inputs.dry_run == 'true' && '1' || '' }}
+        run: node scripts/auto-tweet.mjs
+
+      - name: Commit updated tweet log
+        if: ${{ inputs.dry_run != 'true' }}
+        run: |
+          if [ -n "$(git status --porcelain social/tweeted-posts.json 2>/dev/null)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add social/tweeted-posts.json
+            git commit -m "chore: update auto-tweet log [skip ci]"
+            git push
+          else
+            echo "No log changes to commit."
+          fi
