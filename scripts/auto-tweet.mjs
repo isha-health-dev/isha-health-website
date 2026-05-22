@@ -153,6 +153,9 @@ async function main() {
       saveLog(log);
     } catch (err) {
       console.error(`  ✗ failed: ${err.message || err}`);
+      if (err.code) console.error(`    code: ${err.code}`);
+      if (err.data) console.error(`    data: ${JSON.stringify(err.data)}`);
+      if (err.errors) console.error(`    errors: ${JSON.stringify(err.errors)}`);
       // Don't crash the whole run on a single failure.
     }
   }
