@@ -106,7 +106,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Location pages (state pages from static + city pages)
   const statePages = [
-    'online-at-home-ketamine-therapy-in-arizona',
     'online-at-home-ketamine-therapy-in-california',
     'online-at-home-ketamine-therapy-in-colorado',
     'online-at-home-ketamine-therapy-in-florida',
@@ -138,8 +137,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     'ketamine-therapy-atlanta',
     'ketamine-therapy-portland',
     'ketamine-therapy-seattle',
-    'ketamine-therapy-phoenix',
-    'ketamine-therapy-scottsdale',
   ];
   const cityEntries: MetadataRoute.Sitemap = majorCityPages.map((page) => ({
     url: `${BASE_URL}/locations/${page}`,

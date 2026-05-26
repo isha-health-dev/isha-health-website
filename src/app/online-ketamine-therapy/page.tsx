@@ -50,7 +50,7 @@ export default function OnlineKetamineTherapyPage() {
         name: 'What states offer online ketamine therapy through Isha Health?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Isha Health currently provides online ketamine therapy in Arizona, California, Colorado, Florida, Georgia, Oregon, Texas, and Washington.',
+          text: 'Isha Health currently provides online ketamine therapy in California, Colorado, Florida, Georgia, Oregon, Texas, and Washington.',
         },
       },
       {
@@ -193,7 +193,6 @@ export default function OnlineKetamineTherapyPage() {
         Isha Health provides online ketamine therapy to patients in the following states:
       </p>
       <div style="display:flex;flex-wrap:wrap;gap:0.75rem;margin-bottom:1.5rem;">
-        <a href="/locations/online-at-home-ketamine-therapy-in-arizona" style="display:inline-block;padding:0.5rem 1rem;background:#f0fdfa;border:1px solid #ccfbf1;border-radius:8px;color:#0f766e;text-decoration:none;font-family:'Poppins',sans-serif;font-size:0.9rem;font-weight:500;">Arizona</a>
         <a href="/locations/online-at-home-ketamine-therapy-in-california" style="display:inline-block;padding:0.5rem 1rem;background:#f0fdfa;border:1px solid #ccfbf1;border-radius:8px;color:#0f766e;text-decoration:none;font-family:'Poppins',sans-serif;font-size:0.9rem;font-weight:500;">California</a>
         <a href="/locations/online-at-home-ketamine-therapy-in-colorado" style="display:inline-block;padding:0.5rem 1rem;background:#f0fdfa;border:1px solid #ccfbf1;border-radius:8px;color:#0f766e;text-decoration:none;font-family:'Poppins',sans-serif;font-size:0.9rem;font-weight:500;">Colorado</a>
         <a href="/locations/online-at-home-ketamine-therapy-in-florida" style="display:inline-block;padding:0.5rem 1rem;background:#f0fdfa;border:1px solid #ccfbf1;border-radius:8px;color:#0f766e;text-decoration:none;font-family:'Poppins',sans-serif;font-size:0.9rem;font-weight:500;">Florida</a>
@@ -277,7 +276,7 @@ export default function OnlineKetamineTherapyPage() {
 
       <div style="margin-bottom:1.5rem;">
         <h3 style="font-family:'Poppins',sans-serif;font-size:1rem;font-weight:600;color:#111827;margin-bottom:0.5rem;">What states offer online ketamine therapy through Isha Health?</h3>
-        <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#374151;line-height:1.7;">Isha Health currently provides online ketamine therapy in Arizona, California, Colorado, Florida, Georgia, Oregon, Texas, and Washington.</p>
+        <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#374151;line-height:1.7;">Isha Health currently provides online ketamine therapy in California, Colorado, Florida, Georgia, Oregon, Texas, and Washington.</p>
       </div>
 
       <div style="margin-bottom:1.5rem;">

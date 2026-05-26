@@ -192,7 +192,6 @@ export default function ResourcesPage() {
       <h2 style="font-family:'Libre Baskerville',serif;font-size:1.4rem;font-weight:700;color:#111827;margin-bottom:1.25rem;padding-bottom:0.5rem;border-bottom:2px solid #0d9488;">Available Locations</h2>
       <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#6b7280;margin-bottom:1rem;">Isha Health offers physician-led at-home ketamine therapy via telemedicine in these states:</p>
       <div style="display:flex;flex-wrap:wrap;gap:0.75rem;">
-        <a href="/locations/online-at-home-ketamine-therapy-in-arizona" style="padding:0.5rem 1rem;border:1px solid #e5e7eb;border-radius:6px;text-decoration:none;color:#111827;font-family:'Poppins',sans-serif;font-size:0.85rem;background:#fff;">Arizona</a>
         <a href="/locations/online-at-home-ketamine-therapy-in-california" style="padding:0.5rem 1rem;border:1px solid #e5e7eb;border-radius:6px;text-decoration:none;color:#111827;font-family:'Poppins',sans-serif;font-size:0.85rem;background:#fff;">California</a>
         <a href="/locations/online-at-home-ketamine-therapy-in-colorado" style="padding:0.5rem 1rem;border:1px solid #e5e7eb;border-radius:6px;text-decoration:none;color:#111827;font-family:'Poppins',sans-serif;font-size:0.85rem;background:#fff;">Colorado</a>
         <a href="/locations/online-at-home-ketamine-therapy-in-florida" style="padding:0.5rem 1rem;border:1px solid #e5e7eb;border-radius:6px;text-decoration:none;color:#111827;font-family:'Poppins',sans-serif;font-size:0.85rem;background:#fff;">Florida</a>

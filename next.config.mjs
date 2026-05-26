@@ -57,6 +57,42 @@ const nextConfig = {
         destination: 'https://isha.health/ketamine-therapist-directory',
         permanent: true,
       },
+      // Arizona pages — service no longer offered in AZ (2026-05-26)
+      {
+        source: '/locations/online-at-home-ketamine-therapy-in-arizona',
+        destination: '/online-ketamine-therapy',
+        permanent: true,
+      },
+      {
+        source: '/locations/ketamine-therapy-phoenix',
+        destination: '/online-ketamine-therapy',
+        permanent: true,
+      },
+      {
+        source: '/locations/ketamine-therapy-mesa',
+        destination: '/online-ketamine-therapy',
+        permanent: true,
+      },
+      {
+        source: '/locations/ketamine-therapy-tucson',
+        destination: '/online-ketamine-therapy',
+        permanent: true,
+      },
+      {
+        source: '/locations/ketamine-therapy-chandler',
+        destination: '/online-ketamine-therapy',
+        permanent: true,
+      },
+      {
+        source: '/locations/ketamine-therapy-scottsdale',
+        destination: '/online-ketamine-therapy',
+        permanent: true,
+      },
+      {
+        source: '/locations/ketamine-therapy-tempe',
+        destination: '/online-ketamine-therapy',
+        permanent: true,
+      },
       // Old blog slugs that changed
       {
         source: '/post/is-ketamine-addictive',

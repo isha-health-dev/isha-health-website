@@ -40,7 +40,7 @@ function getAllUrls(): string[] {
 
   // Location pages (state + city)
   const statePages = [
-    'arizona', 'california', 'colorado', 'florida', 'georgia',
+    'california', 'colorado', 'florida', 'georgia',
     'new-york', 'oregon', 'texas', 'washington',
   ];
   statePages.forEach((s) =>

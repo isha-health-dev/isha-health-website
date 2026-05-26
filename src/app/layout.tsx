@@ -193,7 +193,6 @@ const footerHtml = `
       <div>
         <p style="font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#888;margin:0 0 16px;">Location</p>
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px 24px;">
-          <a href="/locations/online-at-home-ketamine-therapy-in-arizona" style="color:#ccc;text-decoration:none;font-size:14px;padding:4px 0;">Arizona</a>
           <a href="/locations/online-at-home-ketamine-therapy-in-california" style="color:#ccc;text-decoration:none;font-size:14px;padding:4px 0;">California</a>
           <a href="/locations/online-at-home-ketamine-therapy-in-oregon" style="color:#ccc;text-decoration:none;font-size:14px;padding:4px 0;">Oregon</a>
           <a href="/locations/online-at-home-ketamine-therapy-in-colorado" style="color:#ccc;text-decoration:none;font-size:14px;padding:4px 0;">Colorado</a>
@@ -283,7 +282,6 @@ gtag('config', 'AW-16993591045');`,
               ],
               medicalSpecialty: 'Psychiatric',
               areaServed: [
-                { '@type': 'AdministrativeArea', name: 'Arizona' },
                 { '@type': 'AdministrativeArea', name: 'California' },
                 { '@type': 'AdministrativeArea', name: 'Colorado' },
                 { '@type': 'AdministrativeArea', name: 'Florida' },
