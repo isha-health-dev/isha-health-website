@@ -37,7 +37,7 @@ const navbarHtml = `
 <nav style="position:sticky;top:0;z-index:1000;font-family:'Poppins',sans-serif;background:#fff;">
   <!-- Top bar -->
   <div style="background:#2d3436;color:#fff;text-align:center;padding:8px 16px;font-size:13px;letter-spacing:0.3px;">
-    Limited time: Initial consultation is <strong>$398</strong> <span style="text-decoration:line-through;opacity:0.7;">$796</span> — <a href="/appointment" style="color:#5eead4;text-decoration:underline;">Book now</a>
+    Initial physician consultation: <span style="text-decoration:line-through;opacity:0.7;">$796</span> <strong>$398</strong> — <a href="/appointment" style="color:#5eead4;text-decoration:underline;">Book now</a>
   </div>
   <!-- Main navbar -->
   <div style="max-width:1200px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;">
