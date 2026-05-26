@@ -92,7 +92,7 @@ export default function OnlineKetamineTherapyPage() {
     </nav>
 
     <p style="font-family:'Poppins',sans-serif;font-size:1.1rem;line-height:1.8;color:#374151;text-align:center;max-width:720px;margin:0 auto 3rem;text-wrap:pretty;">
-      Online ketamine therapy lets you receive a physician-prescribed mental health treatment from home — no clinic visits, no commute, no waiting room. Isha Health's telehealth program pairs a board-certified psychiatrist with structured at-home sessions and a required support person, with <a href="/outcomes" style="color:#0d9488;text-decoration:underline;">88.8% of patients showing measurable improvement</a>. California is our largest market, with care also available in Colorado, Florida, Georgia, Oregon, Texas, and Washington.
+      Online ketamine therapy lets you receive a physician-prescribed mental health treatment from home — no clinic visits, no commute, no waiting room. Isha Health's telehealth program pairs a board-certified psychiatrist with structured at-home sessions and a required support person, with <a href="/outcomes" style="color:#0d9488;text-decoration:underline;">88.8% of patients showing measurable improvement</a>. We are based in San Francisco, California and a majority of our patients are in California. Care is also available in Colorado, Florida, Georgia, Oregon, Texas, and Washington.
     </p>
 
     <!-- How it works -->
@@ -133,6 +133,20 @@ export default function OnlineKetamineTherapyPage() {
       </ul>
       <p style="font-family:'Poppins',sans-serif;font-size:0.95rem;color:#374151;line-height:1.7;">
         Not sure if you qualify? <a href="/am-i-a-candidate" style="color:#0d9488;text-decoration:underline;">Check if you are a candidate</a> or read our <a href="/guide/ketamine-therapy" style="color:#0d9488;text-decoration:underline;">complete guide to ketamine therapy</a>.
+      </p>
+    </div>
+
+    <!-- Built for professionals -->
+    <div style="margin-bottom:3rem;background:#f9f7f3;border:1px solid #ede9e0;border-radius:12px;padding:2rem;">
+      <h2 style="font-family:'Libre Baskerville',serif;font-size:1.4rem;font-weight:700;color:#111827;margin-bottom:1rem;">Built for high-stakes professionals</h2>
+      <p style="font-family:'Poppins',sans-serif;font-size:0.95rem;color:#374151;line-height:1.7;margin-bottom:1rem;">
+        A majority of our patients are <strong>startup founders, tech executives, attorneys, physicians, professors, and senior operators</strong> — people whose work depends on being mentally sharp every day and who can't afford months of trial-and-error on medications that may or may not work.
+      </p>
+      <p style="font-family:'Poppins',sans-serif;font-size:0.95rem;color:#374151;line-height:1.7;margin-bottom:1rem;">
+        Our protocol is built for that reality: a 60-minute physician evaluation, structured at-home sessions you complete on your own schedule, and PHQ-9 / GAD-7 measurement every visit so you know whether it's working. Median time to first measurable improvement: <strong>1.29 sessions</strong>. No subscription. No clinic visits. No waiting rooms.
+      </p>
+      <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#6b7280;line-height:1.6;font-style:italic;">
+        Based in San Francisco, California. Confidential, physician-led, and discreet.
       </p>
     </div>
 
