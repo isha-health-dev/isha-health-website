@@ -6,20 +6,20 @@ import imageDims from '@/lib/image-dims.json';
 const dims = imageDims as Record<string, { w: number; h: number }>;
 
 export const metadata: Metadata = {
-  title: "Online Ketamine Therapy for Depression & Anxiety",
-  description: "88.8% of patients improve. Physician-led at-home ketamine therapy for depression, anxiety, and PTSD. $398 consultation, available in 8 states.",
+  title: "Online Ketamine Therapy in California — and 6 Other States",
+  description: "California's evidence-based at-home ketamine therapy for depression, anxiety, and PTSD. 88.8% of patients improve. $398 with a board-certified physician. Also serving CO, FL, GA, OR, TX, WA.",
   alternates: {
     canonical: "https://isha.health",
   },
   openGraph: buildOpenGraph({
-    title: "Online Ketamine Therapy for Depression & Anxiety",
-    description: "88.8% of patients improve. Physician-led at-home ketamine therapy for depression, anxiety, and PTSD. $398 consultation, available in 8 states.",
+    title: "Online Ketamine Therapy in California — and 6 Other States",
+    description: "California's evidence-based at-home ketamine therapy for depression, anxiety, and PTSD. 88.8% of patients improve. $398 with a board-certified physician.",
     path: '/',
   }),
   twitter: {
     card: "summary_large_image",
-    title: "Online Ketamine Therapy for Depression & Anxiety",
-    description: "88.8% of patients improve. Physician-led at-home ketamine therapy for depression, anxiety, and PTSD. $398 consultation, available in 8 states.",
+    title: "Online Ketamine Therapy in California — and 6 Other States",
+    description: "California's evidence-based at-home ketamine therapy. 88.8% improvement rate across 500+ patients. $398 consultation.",
   },
 };
 
@@ -28,13 +28,13 @@ const subStyle = "font-family:'Poppins',sans-serif;font-size:1rem;color:#6b7280;
 const bodyStyle = "font-family:'Poppins',sans-serif;font-size:0.95rem;color:#4b5563;line-height:1.7;";
 
 const testimonials = [
-  { quote: "Ketamine assisted therapy helped me so much to get out of my depression and PTSD. I never felt better in my life.", name: "Amber S", loc: "Brooklyn, New York" },
+  { quote: "I was recommended ECT for my severe depression. Then I found Isha. I am grateful.", name: "Elliot M", loc: "San Francisco, California" },
   { quote: "My anxiety is just gone. I barely think about it anymore. It wasn\u2019t instantaneous, but it worked eventually.", name: "Patricia L", loc: "Santa Monica, California" },
+  { quote: "I felt that my anxiety and depression melting away even during the first session.", name: "Cynthia L", loc: "Mountain View, California" },
+  { quote: "Ketamine assisted therapy helped me so much to get out of my depression and PTSD. I never felt better in my life.", name: "Amber S", loc: "Brooklyn, New York" },
   { quote: "I tried IV ketamine for my TRD before and it was too much for me. Isha\u2019s approach is gentler on my body and worked great.", name: "Laila L", loc: "New York, New York" },
   { quote: "Ketamine therapy is the only treatment that has worked for my depression and anxiety.", name: "Rakesh V", loc: "Seattle, Washington" },
   { quote: "I have been able to come off from my meds for the past month. I am hopeful that I no longer need SSRIs in the future.", name: "David S", loc: "Denver, Colorado" },
-  { quote: "I felt that my anxiety and depression melting away even during the first session.", name: "Cynthia L", loc: "Mountain View, California" },
-  { quote: "I was recommended ECT for my severe depression. Then I found Isha. I am grateful.", name: "Elliot M", loc: "San Francisco, California" },
   { quote: "You saved my life. My anxiety is under control, and I finally feel like myself again.", name: "Emily P", loc: "Miami, Florida" },
   { quote: "I can\u2019t thank Isha Health enough for helping me overcome my depression and anxiety. Ketamine therapy has truly been a game-changer.", name: "Robert C", loc: "Beverly Hills, California" },
   { quote: "I started ketamine therapy for my depression. It ended up also helping me stop drinking. I\u2019m sober for 6 months by now.", name: "Sergey M", loc: "San Francisco, California" },
@@ -69,7 +69,7 @@ export default function Page() {
           <div style="max-width:550px;padding-left:8%;">
             <h1 style="font-family:'Libre Baskerville',serif;font-size:3rem;font-weight:700;color:#111827;line-height:1.15;margin-bottom:1.25rem;">Unlock Your Mind's Potential</h1>
             <p style="font-family:'Poppins',sans-serif;font-size:1rem;color:#4b5563;line-height:1.7;margin-bottom:0.75rem;">Personalized mental health care for depression, anxiety, and PTSD</p>
-            <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#4b5563;line-height:1.7;margin-bottom:2rem;">Are you struggling to feel like yourself? Isha Health combines ketamine-assisted therapy with holistic care — available via telemedicine in 8 states.</p>
+            <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#4b5563;line-height:1.7;margin-bottom:2rem;">Are you struggling to feel like yourself? Isha Health combines ketamine-assisted therapy with holistic care — California's leading at-home program, also serving Colorado, Florida, Georgia, Oregon, Texas, and Washington.</p>
             <a href="/am-i-a-candidate" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.9rem 2.5rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:1rem;font-family:'Poppins',sans-serif;">Am I a Candidate?</a>
           </div>
         </div>
@@ -218,7 +218,7 @@ export default function Page() {
     <div style={{ backgroundColor: '#fff', padding: '4rem 1.5rem', borderTop: '1px solid #e5e7eb' }}>
       <div style={{ maxWidth: '1080px', margin: '0 auto' }}>
         <h2 style={{ fontFamily: "'Libre Baskerville', serif", fontSize: '1.8rem', fontWeight: 700, color: '#111827', textAlign: 'center', marginBottom: '0.5rem' }}>What our patients say</h2>
-        <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '1rem', color: '#6b7280', textAlign: 'center', marginBottom: '2.5rem' }}>Real stories from real patients across the country</p>
+        <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '1rem', color: '#6b7280', textAlign: 'center', marginBottom: '2.5rem' }}>Real stories from patients across California — and our six other states</p>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem' }}>
           {testimonials.slice(0, 3).map((t, i) => (
             <blockquote key={i} style={{ margin: 0, padding: '2rem', border: '1px solid #e5e7eb', borderRadius: '12px', background: '#fafafa', borderLeft: '3px solid #0d9488', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>

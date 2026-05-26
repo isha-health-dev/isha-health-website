@@ -2,20 +2,20 @@ import type { Metadata } from 'next';
 import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: 'Online Ketamine Therapy: At-Home Treatment from $398',
+  title: 'Online Ketamine Therapy in California: At-Home from $398',
   description:
-    'Online ketamine therapy from $398/session, prescribed by a board-certified physician. 88.8% of 500+ patients improve. Available in AZ, CA, CO, FL, GA…',
+    "California's at-home ketamine therapy from $398/session, prescribed by a board-certified physician. 88.8% of 500+ patients improve. Also available in CO, FL, GA, OR, TX, WA.",
   alternates: { canonical: 'https://isha.health/online-ketamine-therapy' },
   openGraph: buildOpenGraph({
-    title: 'Online Ketamine Therapy: At-Home Treatment from $398',
-    description: 'Online ketamine therapy from $398/session, prescribed by a board-certified physician. 88.8% of 500+ patients improve. Available in 8 US states.',
+    title: 'Online Ketamine Therapy in California: At-Home from $398',
+    description: "California's at-home ketamine therapy from $398/session, prescribed by a board-certified physician. 88.8% of 500+ patients improve. Also available in six other US states.",
     path: '/online-ketamine-therapy',
   }),
   twitter: {
     card: 'summary_large_image',
-    title: 'Online Ketamine Therapy: At-Home Treatment from $398',
+    title: 'Online Ketamine Therapy in California: At-Home from $398',
     description:
-      'Physician-led online ketamine therapy. 88.8% improvement rate across 500+ patients. $398/session, no subscription.',
+      "California's physician-led online ketamine therapy. 88.8% improvement rate across 500+ patients. $398/session, no subscription.",
   },
 };
 
@@ -92,7 +92,7 @@ export default function OnlineKetamineTherapyPage() {
     </nav>
 
     <p style="font-family:'Poppins',sans-serif;font-size:1.1rem;line-height:1.8;color:#374151;text-align:center;max-width:720px;margin:0 auto 3rem;text-wrap:pretty;">
-      Online ketamine therapy lets you receive a physician-prescribed mental health treatment from home — no clinic visits, no commute, no waiting room. Isha Health's telehealth program pairs a board-certified psychiatrist with structured at-home sessions and a required support person, with <a href="/outcomes" style="color:#0d9488;text-decoration:underline;">88.8% of patients showing measurable improvement</a>. Available in 8 US states.
+      Online ketamine therapy lets you receive a physician-prescribed mental health treatment from home — no clinic visits, no commute, no waiting room. Isha Health's telehealth program pairs a board-certified psychiatrist with structured at-home sessions and a required support person, with <a href="/outcomes" style="color:#0d9488;text-decoration:underline;">88.8% of patients showing measurable improvement</a>. California is our largest market, with care also available in Colorado, Florida, Georgia, Oregon, Texas, and Washington.
     </p>
 
     <!-- How it works -->
