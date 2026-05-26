@@ -6,19 +6,19 @@ import imageDims from '@/lib/image-dims.json';
 const dims = imageDims as Record<string, { w: number; h: number }>;
 
 export const metadata: Metadata = {
-  title: "Online Ketamine Therapy in California — and 6 Other States",
+  title: "Online Ketamine Therapy in San Francisco, California",
   description: "California's evidence-based at-home ketamine therapy for depression, anxiety, and PTSD. 88.8% of patients improve. $398 with a board-certified physician. Also serving CO, FL, GA, OR, TX, WA.",
   alternates: {
     canonical: "https://isha.health",
   },
   openGraph: buildOpenGraph({
-    title: "Online Ketamine Therapy in California — and 6 Other States",
+    title: "Online Ketamine Therapy in San Francisco, California",
     description: "California's evidence-based at-home ketamine therapy for depression, anxiety, and PTSD. 88.8% of patients improve. $398 with a board-certified physician.",
     path: '/',
   }),
   twitter: {
     card: "summary_large_image",
-    title: "Online Ketamine Therapy in California — and 6 Other States",
+    title: "Online Ketamine Therapy in San Francisco, California",
     description: "California's evidence-based at-home ketamine therapy. 88.8% improvement rate across 500+ patients. $398 consultation.",
   },
 };
