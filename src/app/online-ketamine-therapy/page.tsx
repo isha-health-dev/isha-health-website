@@ -2,20 +2,20 @@ import type { Metadata } from 'next';
 import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
-  title: 'Online Ketamine Therapy in California: At-Home from $398',
+  title: 'Physician-Led Online Ketamine Therapy in California: At-Home from $398',
   description:
-    "California's at-home ketamine therapy from $398/session, prescribed by a board-certified physician. 88.8% of 500+ patients improve. Also available in CO, FL, GA, OR, TX, WA.",
+    "California's physician-led at-home ketamine therapy from $398/session. Dr. Shimada has provided ketamine care since 2013. 88.8% of 500+ patients improve. Also available in CO, FL, GA, OR, TX, WA.",
   alternates: { canonical: 'https://isha.health/online-ketamine-therapy' },
   openGraph: buildOpenGraph({
-    title: 'Online Ketamine Therapy in California: At-Home from $398',
-    description: "California's at-home ketamine therapy from $398/session, prescribed by a board-certified physician. 88.8% of 500+ patients improve. Also available in six other US states.",
+    title: 'Physician-Led Online Ketamine Therapy in California: At-Home from $398',
+    description: "California's physician-led at-home ketamine therapy from $398/session. Ketamine care since 2013. 88.8% of 500+ patients improve. Also available in six other US states.",
     path: '/online-ketamine-therapy',
   }),
   twitter: {
     card: 'summary_large_image',
-    title: 'Online Ketamine Therapy in California: At-Home from $398',
+    title: 'Physician-Led Online Ketamine Therapy in California: At-Home from $398',
     description:
-      "California's physician-led online ketamine therapy. 88.8% improvement rate across 500+ patients. $398/session, no subscription.",
+      "Physician-led online ketamine therapy. Dr. Shimada has provided ketamine care since 2013. 88.8% improvement rate across 500+ patients. $398/session, no subscription.",
   },
 };
 
@@ -146,7 +146,7 @@ export default function OnlineKetamineTherapyPage() {
         Our protocol is built for that reality: a 60-minute physician evaluation, structured at-home sessions you complete on your own schedule, and PHQ-9 / GAD-7 measurement every visit so you know whether it's working. Median time to first measurable improvement: <strong>1.29 sessions</strong>. No subscription. No clinic visits. No waiting rooms.
       </p>
       <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#6b7280;line-height:1.6;font-style:italic;">
-        Based in San Francisco, California. Confidential, physician-led, and discreet.
+        Based in San Francisco, California. Led by Dr. Mai Shimada, who has provided ketamine care since 2013.
       </p>
     </div>
 

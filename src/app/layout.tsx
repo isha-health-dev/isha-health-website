@@ -205,6 +205,7 @@ const footerHtml = `
     </div>
     <!-- Copyright -->
     <div style="border-top:1px solid #333;padding:24px 0;text-align:center;">
+      <p style="font-size:13px;color:#888;margin:0 0 6px;">Physician-led &middot; Dr. Shimada has provided ketamine care since 2013</p>
       <p style="font-size:13px;color:#666;margin:0;">&copy; 2026 Isha Health. All rights reserved</p>
     </div>
   </div>
