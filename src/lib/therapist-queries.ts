@@ -33,6 +33,13 @@ function looksLikeTestProfile(t: { first_name?: string; last_name?: string; emai
   return false;
 }
 
+// Profiles with no name at all (incomplete signups) produce an empty slug,
+// which collides with the directory's own path during static export and
+// breaks the build. Exclude them from the public directory.
+function hasNoName(t: { first_name?: string; last_name?: string }): boolean {
+  return !(t.first_name || '').trim() && !(t.last_name || '').trim();
+}
+
 export async function getAllTherapists(): Promise<TherapistWithRelations[]> {
   // CI builds without real Supabase credentials — short-circuit so
   // generateStaticParams gets [] instead of throwing on fetch to a
@@ -49,7 +56,7 @@ export async function getAllTherapists(): Promise<TherapistWithRelations[]> {
   if (error) throw error;
   // Filter out excluded profiles (staff, test accounts, etc.)
   return ((data as TherapistWithRelations[]) || []).filter(
-    (t) => !EXCLUDED_EMAILS.includes(t.email) && !looksLikeTestProfile(t)
+    (t) => !EXCLUDED_EMAILS.includes(t.email) && !looksLikeTestProfile(t) && !hasNoName(t)
   );
 }
 
