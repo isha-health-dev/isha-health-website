@@ -18,7 +18,7 @@ const THERAPIST_SELECT = `
 `;
 
 // Emails to exclude from the public directory
-const EXCLUDED_EMAILS = ['mai@isha.health'];
+const EXCLUDED_EMAILS = ['mai@isha.health', 'mariantinglmft@gmail.com'];
 
 // Profiles with these first-name / last-name patterns are treated as test data.
 // Match is case-insensitive and trims whitespace.
