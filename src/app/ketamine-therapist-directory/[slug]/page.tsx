@@ -20,7 +20,19 @@ export const dynamicParams = true;
 
 export async function generateStaticParams() {
   const slugs = await getAllTherapistSlugs();
-  return slugs.map(({ slug }) => ({ slug }));
+  // Defense in depth: an empty slug collides with the parent
+  // /ketamine-therapist-directory path during static export and breaks the
+  // whole build (this happened in production from an incomplete-signup
+  // profile with no name). Duplicate slugs would silently drop a profile's
+  // page, so keep only the first occurrence of each.
+  const seen = new Set<string>();
+  return slugs
+    .filter(({ slug }) => {
+      if (!slug || seen.has(slug)) return false;
+      seen.add(slug);
+      return true;
+    })
+    .map(({ slug }) => ({ slug }));
 }
 
 export async function generateMetadata({
