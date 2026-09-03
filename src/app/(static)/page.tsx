@@ -197,8 +197,8 @@ export default function Page() {
             <p style="${subStyle}">For depression and anxiety treatment that actually works.</p>
             <div style="display:flex;flex-wrap:wrap;gap:1.5rem;">
               <div style="flex:1 1 260px;background:#fff;border-radius:10px;padding:1.75rem;border:1px solid #e5e7eb;">
-                <h3 style="font-family:'Libre Baskerville',serif;font-size:1.1rem;font-weight:700;color:#111827;margin-bottom:0.75rem;">Faster and Better Outcomes</h3>
-                <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#4b5563;line-height:1.6;">Unlike conventional medications that take months, ketamine therapy can yield rapid responses. Many patients report improvement within weeks \u2014 some within days.</p>
+                <h3 style="font-family:'Libre Baskerville',serif;font-size:1.1rem;font-weight:700;color:#111827;margin-bottom:0.75rem;">Rapid Relief</h3>
+                <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#4b5563;line-height:1.6;">While some conventional medications can take months to take effect, ketamine therapy can often yield rapid responses. Many patients report improvement within weeks \u2014 some within days.</p>
               </div>
               <div style="flex:1 1 260px;background:#fff;border-radius:10px;padding:1.75rem;border:1px solid #e5e7eb;">
                 <h3 style="font-family:'Libre Baskerville',serif;font-size:1.1rem;font-weight:700;color:#111827;margin-bottom:0.75rem;">Affordable, Accessible Telehealth</h3>

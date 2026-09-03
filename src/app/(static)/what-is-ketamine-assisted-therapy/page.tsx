@@ -112,7 +112,7 @@ export default function Page() {
   <section style="margin-bottom:2.5rem;">
     <h2 style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#111827;margin-bottom:1rem;">Is It Safe?</h2>
     <p>Yes. Ketamine has been used safely in medicine for over 50 years. It's <a href="/post/is-ketamine-legal" style="color:#0d9488;text-decoration:underline;">FDA-approved as an anesthetic</a> and prescribed off-label for mental health conditions by licensed physicians.</p>
-    <p style="margin-top:0.75rem;">At therapeutic doses under clinical supervision, side effects are mild and temporary:</p>
+    <p style="margin-top:0.75rem;">At therapeutic doses under clinical supervision, side effects are typically mild and temporary for most patients, but can include:</p>
     <ul style="padding-left:1.25rem;margin-top:0.5rem;">
       <li>Temporary dissociation (feeling of detachment)</li>
       <li>Mild nausea or dizziness</li>
