@@ -4,18 +4,18 @@ import { getTherapistsForCity } from '@/lib/city-therapists';
 
 export const metadata: Metadata = {
   title: "At-Home Ketamine Therapy in Portland, OR",
-  description: "Online ketamine-assisted therapy in Portland, Oregon. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book…",
+  description: "Online ketamine-assisted therapy in Portland, Oregon. Physician-led at-home treatment for depression, anxiety, and PTSD. At-home, by therapist referral.",
   alternates: { canonical: "https://isha.health/locations/ketamine-therapy-portland" },
   robots: { index: true, follow: true }, // Major metro — overrides locations/layout.tsx noindex
   openGraph: buildOpenGraph({
     title: "At-Home Ketamine Therapy in Portland, OR",
-    description: "Online ketamine-assisted therapy in Portland, Oregon. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book…",
+    description: "Online ketamine-assisted therapy in Portland, Oregon. Physician-led at-home treatment for depression, anxiety, and PTSD. At-home, by therapist referral.",
     path: '/locations/ketamine-therapy-portland',
   }),
   twitter: {
     card: "summary_large_image",
     title: "At-Home Ketamine Therapy in Portland, OR",
-    description: "Online ketamine-assisted therapy in Portland, Oregon. Physician-led at-home treatment for depression, anxiety, and PTSD. No clinic visits required. Book…",
+    description: "Online ketamine-assisted therapy in Portland, Oregon. Physician-led at-home treatment for depression, anxiety, and PTSD. At-home, by therapist referral.",
   },
 };
 
@@ -146,7 +146,7 @@ ${therapistsHtml}
   <div style="background-color:#f0fdfa;padding:3rem 1.5rem;text-align:center;border-top:1px solid #ccfbf1;">
     <p style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#0f766e;margin-bottom:0.5rem;">Ready to start feeling better?</p>
     <p style="font-family:'Poppins',sans-serif;color:#4b5563;margin-bottom:1.5rem;font-size:0.95rem;">Appointments often available within 24 hours for patients in Portland.</p>
-    <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.85rem 2.5rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:1rem;font-family:'Poppins',sans-serif;">Check Appointment Availability</a>
+    <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.85rem 2.5rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:1rem;font-family:'Poppins',sans-serif;">See How Referrals Work</a>
   </div>
 </div>`
       }}

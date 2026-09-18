@@ -37,7 +37,7 @@ const navbarHtml = `
 <nav style="position:sticky;top:0;z-index:1000;font-family:'Poppins',sans-serif;background:#fff;">
   <!-- Top bar -->
   <div style="background:#2d3436;color:#fff;text-align:center;padding:8px 16px;font-size:13px;letter-spacing:0.3px;">
-    Initial physician consultation: <span style="text-decoration:line-through;opacity:0.7;">$796</span> <strong>$398</strong> — <a href="/appointment" style="color:#5eead4;text-decoration:underline;">Book now</a>
+    Initial physician consultation: <span style="text-decoration:line-through;opacity:0.7;">$796</span> <strong>$398</strong> — new patients by therapist referral. <a href="/appointment" style="color:#5eead4;text-decoration:underline;">How to get referred</a>
   </div>
   <!-- Main navbar -->
   <div style="max-width:1200px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;">
@@ -60,7 +60,7 @@ const navbarHtml = `
       <a href="/outcomes" class="desktop-only nav-link" style="font-size:13px;font-weight:500;color:#374151;text-decoration:none;">Outcomes</a>
       <a href="/pricing" class="desktop-only nav-link" style="font-size:13px;font-weight:500;color:#374151;text-decoration:none;">Pricing</a>
       <a href="/collaborate-with-isha-health" class="desktop-only" style="font-size:11px;letter-spacing:0.5px;color:#9ca3af;text-decoration:none;font-weight:500;">FOR CLINICIANS</a>
-      <a id="check-availability" href="/appointment" class="nav-cta" style="background:#0d9488;color:#fff;padding:10px 20px;border-radius:6px;font-size:13px;font-weight:600;letter-spacing:0.3px;text-decoration:none;white-space:nowrap;">Check availability</a>
+      <a id="check-availability" href="/appointment" class="nav-cta" style="background:#0d9488;color:#fff;padding:10px 20px;border-radius:6px;font-size:13px;font-weight:600;letter-spacing:0.3px;text-decoration:none;white-space:nowrap;">Get referred</a>
     </div>
   </div>
   <!-- Overlay backdrop -->
@@ -75,7 +75,7 @@ const navbarHtml = `
     </div>
     <div style="margin-bottom:16px;">
       <p style="font-size:12px;font-weight:600;letter-spacing:1px;color:#888;margin:0 0 8px;">FOR PATIENTS</p>
-      <a href="/appointment" style="display:block;padding:6px 0;color:#333;text-decoration:none;font-size:14px;">Make an Appointment</a>
+      <a href="/appointment" style="display:block;padding:6px 0;color:#333;text-decoration:none;font-size:14px;">New Patient Referrals</a>
       <a href="/pricing" style="display:block;padding:6px 0;color:#333;text-decoration:none;font-size:14px;">Pricing</a>
       <a href="/our-treatment-approach" style="display:block;padding:6px 0;color:#333;text-decoration:none;font-size:14px;">Our Treatment Approach</a>
       <p style="font-size:13px;font-weight:500;color:#555;margin:10px 0 4px;">Current Patients</p>

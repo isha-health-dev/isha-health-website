@@ -207,7 +207,7 @@ export default function Page() {
     <p style="font-family:'Poppins',sans-serif;font-size:0.95rem;line-height:1.6;margin:0 auto 1.5rem;max-width:480px;color:rgba(255,255,255,0.92);">
       A 60-minute consultation with a physician is the first step. We'll talk through your history and figure out whether ketamine therapy is a fit.
     </p>
-    <a href="/appointment" style="display:inline-block;background-color:#fff;color:#0d9488;padding:0.85rem 2.25rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:0.95rem;font-family:'Poppins',sans-serif;">Book a Consultation</a>
+    <a href="/appointment" style="display:inline-block;background-color:#fff;color:#0d9488;padding:0.85rem 2.25rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:0.95rem;font-family:'Poppins',sans-serif;">See How Referrals Work</a>
   </div>
 
 </div>

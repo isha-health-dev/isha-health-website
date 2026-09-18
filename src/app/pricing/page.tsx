@@ -157,7 +157,7 @@ export default function PricingPage() {
 
     <!-- CTA -->
     <div style="text-align:center;margin-top:2rem;">
-      <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.85rem 2.5rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:1rem;font-family:'Poppins',sans-serif;">Check Appointment Availability</a>
+      <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.85rem 2.5rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:1rem;font-family:'Poppins',sans-serif;">See How Referrals Work</a>
     </div>
   </div>
 
@@ -229,8 +229,8 @@ export default function PricingPage() {
   <!-- Bottom CTA -->
   <div style="background-color:#f0fdfa;padding:3rem 1.5rem;text-align:center;border-top:1px solid #ccfbf1;">
     <h2 style="font-family:'Libre Baskerville',serif;font-size:1.35rem;font-weight:700;color:#0f766e;margin-bottom:0.5rem;">Ready to feel better?</h2>
-    <p style="font-family:'Poppins',sans-serif;color:#4b5563;margin-bottom:1.5rem;font-size:0.95rem;max-width:500px;margin-left:auto;margin-right:auto;text-wrap:pretty;">Book your initial consultation and get a treatment plan built around you — not a template.</p>
-    <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.85rem 2.5rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:1rem;font-family:'Poppins',sans-serif;">Check Appointment Availability</a>
+    <p style="font-family:'Poppins',sans-serif;color:#4b5563;margin-bottom:1.5rem;font-size:0.95rem;max-width:500px;margin-left:auto;margin-right:auto;text-wrap:pretty;">New patients start with a referral from a collaborating therapist. Your first visit is a 60-minute physician consultation, with a treatment plan built around you — not a template.</p>
+    <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.85rem 2.5rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:1rem;font-family:'Poppins',sans-serif;">See How Referrals Work</a>
     <p style="font-family:'Poppins',sans-serif;font-size:0.8rem;color:#9ca3af;margin-top:1rem;">Available in AZ, CA, CO, FL, GA, OR, TX, and WA</p>
   </div>
 </div>

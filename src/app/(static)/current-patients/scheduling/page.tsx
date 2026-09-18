@@ -32,7 +32,7 @@ export default function Page() {
   </div>
 
   <div style="background:#f0fdfa;border-left:4px solid #0d9488;padding:1.25rem 1.5rem;margin-bottom:2rem;border-radius:0 8px 8px 0;">
-    <p style="font-family:'Poppins',sans-serif;font-size:0.95rem;color:#374151;line-height:1.7;margin:0;">Please note that this appointment scheduler is for patients who are currently receiving treatment with us.<br>If you are a new patient, please visit our <a href="/appointment" style="color:#0d9488;font-weight:600;text-decoration:underline;">Make an Appointment page</a>.</p>
+    <p style="font-family:'Poppins',sans-serif;font-size:0.95rem;color:#374151;line-height:1.7;margin:0;">Please note that this appointment scheduler is for patients who are currently receiving treatment with us.<br>If you are a new patient, please visit our <a href="/appointment" style="color:#0d9488;font-weight:600;text-decoration:underline;">New Patient Referrals page</a>.</p>
   </div>
 
   <div style="border-radius:12px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,0.1);">

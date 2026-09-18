@@ -35,10 +35,10 @@ export default function Page() {
     <div style="font-family:'Poppins',sans-serif;font-size:0.95rem;color:#374151;line-height:1.7;">
 
       <p style="margin:0 0 1.5rem;">
-        If you are a clinician and have a patient who you would like to refer to Isha Health for ketamine treatment, please fill out the forms, upload them here through our secure HIPAA-compliant uploader, and direct your patient to our website to book their initial evaluation.
+        If you are a clinician and have a patient who you would like to refer to Isha Health for ketamine treatment, please fill out the forms and upload them here through our secure HIPAA-compliant uploader. Isha Health sees new patients by referral only, so your referral is what opens the door &mdash; once we receive it, we contact your patient directly to schedule their initial evaluation.
       </p>
       <p style="margin:0 0 1.5rem;">
-        Upon confirmation of the booking of the initial evaluation, we will reach out to you to coordinate a time to discuss the care of your patient.
+        Once the initial evaluation is scheduled, we will reach out to you to coordinate a time to discuss the care of your patient.
       </p>
       <p style="margin:0 0 2rem;font-weight:600;color:#0d9488;">
         Please note at this time we are only treating patients who live in AZ, CA, CO, FL, GA, OR, TX, and WA.
@@ -100,7 +100,7 @@ export default function Page() {
             Step 4
           </h3>
           <p style="margin:0;">
-            Direct your patient to our website (<a href="https://isha.health/" target="_blank" style="color:#0d9488;text-decoration:underline;">isha.health</a>) to book the initial evaluation with us.
+            Once we receive your referral, we contact your patient directly to schedule the initial evaluation. They do not need to book anything themselves &mdash; see <a href="https://isha.health/appointment" target="_blank" style="color:#0d9488;text-decoration:underline;">how referrals work</a>.
           </p>
         </div>
 

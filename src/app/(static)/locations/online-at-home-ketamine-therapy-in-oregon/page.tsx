@@ -3,19 +3,19 @@ import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "Online At-Home Ketamine Therapy in Oregon",
-  description: "Oregon residents: at-home ketamine therapy starting at $398. 88.8% of patients improve. Same-day appointments. No referral needed.",
+  description: "Oregon residents: at-home ketamine therapy starting at $398. 88.8% of patients improve. Same-day appointments. Therapist referral required.",
   alternates: {
     canonical: "https://isha.health/locations/online-at-home-ketamine-therapy-in-oregon",
   },
   openGraph: buildOpenGraph({
     title: "Online At-Home Ketamine Therapy in Oregon",
-    description: "Oregon residents: at-home ketamine therapy starting at $398. 88.8% of patients improve. Same-day appointments. No referral needed.",
+    description: "Oregon residents: at-home ketamine therapy starting at $398. 88.8% of patients improve. Same-day appointments. Therapist referral required.",
     path: '/locations/online-at-home-ketamine-therapy-in-oregon',
   }),
   twitter: {
     card: "summary_large_image",
     title: "Online At-Home Ketamine Therapy in Oregon",
-    description: "Oregon residents: at-home ketamine therapy starting at $398. 88.8% of patients improve. Same-day appointments. No referral needed.",
+    description: "Oregon residents: at-home ketamine therapy starting at $398. 88.8% of patients improve. Same-day appointments. Therapist referral required.",
   },
 };
 
@@ -52,7 +52,7 @@ export default function Page() {
     <h2 style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#111827;margin-bottom:0.75rem;">Why Choose Isha Health for At-Home Ketamine Treatment in Oregon?</h2>
     <img src="/images/3a27d97b_67acf5b26c5a83cdd332b761_pexels-esra-afsar-123882149-30411707__1).jpg" loading="lazy" alt="At-home ketamine therapy" style="max-width:100%;max-height:380px;width:auto;height:auto;display:block;margin:0 auto;border-radius:10px;margin-bottom:1rem;">
     <ul style="padding-left:1.25rem;">
-      <li style="margin-bottom:0.75rem;"><strong>Appointments available in as little as 24 hours</strong><br>No long wait times — schedule your online ketamine treatment in Oregon today and begin your healing journey quickly.</li>
+      <li style="margin-bottom:0.75rem;"><strong>Appointments available in as little as 24 hours</strong><br>No long wait times — once your therapist refers you, we schedule your online ketamine treatment in Oregon today and begin your healing journey quickly.</li>
       <li style="margin-bottom:0.75rem;"><strong>Expert guidance from licensed clinicians</strong><br>From your first session to ongoing monitoring, our team supports you at every step, ensuring a safe and effective remote ketamine treatment.</li>
       <li style="margin-bottom:0.75rem;"><strong>Affordable and accessible mental health care</strong><br>Isha Health offers affordable ketamine therapy in Oregon, providing a cost-effective solution for those seeking innovative anxiety therapies and rapid depression relief.</li>
       <li style="margin-bottom:0.75rem;"><strong>Alternative to traditional ketamine clinics</strong><br>Our home-based ketamine treatment is designed for convenience, eliminating clinic visits while maintaining professional oversight.</li>
@@ -182,7 +182,7 @@ export default function Page() {
   <section style="text-align:center;margin-bottom:2.5rem;">
     <h2 style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#111827;margin-bottom:0.75rem;">Start Your At-Home Ketamine Treatment in Oregon Today</h2>
     <p>Take control of your mental health with Isha Health's affordable, expert-led at-home ketamine therapy.</p>
-    <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.85rem 2rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:0.95rem;margin-top:1rem;">Book a Consultation</a>
+    <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.85rem 2rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:0.95rem;margin-top:1rem;">See How Referrals Work</a>
   </section>
 
   <section style="margin-bottom:2rem;">
@@ -202,7 +202,7 @@ export default function Page() {
 {"@type":"Question","name":"Does ketamine therapy help with chronic pain?","acceptedAnswer":{"@type":"Answer","text":"We don't provide chronic pain management. Please contact a pain management specialist for that."}},
 {"@type":"Question","name":"Are there risks or side effects of ketamine therapy?","acceptedAnswer":{"@type":"Answer","text":"Common side effects include mild nausea, dizziness, or dissociation, which are temporary."}},
 {"@type":"Question","name":"How does ketamine therapy compare to traditional antidepressants?","acceptedAnswer":{"@type":"Answer","text":"Unlike antidepressants that take weeks to show results, ketamine therapy often produces rapid improvements within hours to days."}},
-{"@type":"Question","name":"How do I start at-home ketamine treatment in Oregon?","acceptedAnswer":{"@type":"Answer","text":"Schedule a virtual consultation with one of our licensed clinicians, who will assess your eligibility and discuss a personalized treatment plan."}},
+{"@type":"Question","name":"How do I start at-home ketamine treatment in Oregon?","acceptedAnswer":{"@type":"Answer","text":"Your therapist refers you for a virtual consultation with one of our licensed clinicians, who will assess your eligibility and discuss a personalized treatment plan."}},
 {"@type":"Question","name":"What are the legal requirements for at-home ketamine therapy in Oregon?","acceptedAnswer":{"@type":"Answer","text":"Ketamine is legally prescribed by licensed healthcare providers in Oregon. We ensure full compliance with state regulations."}},
 {"@type":"Question","name":"How does at-home ketamine treatment differ from in-clinic options?","acceptedAnswer":{"@type":"Answer","text":"At-home ketamine therapy offers the same scientifically-backed benefits as in-clinic infusions but in a convenient, comfortable environment."}},
 {"@type":"Question","name":"What types of conditions can be treated with at-home ketamine in Oregon?","acceptedAnswer":{"@type":"Answer","text":"We provide ketamine therapy for depression, PTSD, and anxiety. It could also be helpful for OCD, insomnia, migraines, fibromyalgia, and eating disorders."}},

@@ -236,7 +236,7 @@ const faqData = [
   },
   {
     question: "How do I know if I'm a good candidate for ketamine therapy?",
-    answer: "Good candidates for ketamine therapy generally include adults who have not responded adequately to two or more standard antidepressant treatments, have a diagnosis that may benefit from ketamine, and do not have certain contraindications such as uncontrolled hypertension or active psychosis. The best way to determine candidacy is through a comprehensive evaluation with a qualified provider. You can start with our <a href=\"/am-i-a-candidate\" style=\"color:#0d9488;text-decoration:underline;\">am I a candidate</a> screening or <a href=\"/appointment\" style=\"color:#0d9488;text-decoration:underline;\">book an appointment</a> for a full assessment."
+    answer: "Good candidates for ketamine therapy generally include adults who have not responded adequately to two or more standard antidepressant treatments, have a diagnosis that may benefit from ketamine, and do not have certain contraindications such as uncontrolled hypertension or active psychosis. The best way to determine candidacy is through a comprehensive evaluation with a qualified provider. You can start with our <a href=\"/am-i-a-candidate\" style=\"color:#0d9488;text-decoration:underline;\">am I a candidate</a> screening or <a href=\"/appointment\" style=\"color:#0d9488;text-decoration:underline;\">ask your therapist for a referral</a> for a full assessment."
   }
 ];
 
@@ -328,7 +328,7 @@ ${sectionsHtml}
       <p style="font-family:'Poppins',sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin-bottom:1.5rem;text-wrap:pretty;">
         Take the first step toward finding relief. Our team of experienced clinicians can help determine whether ketamine therapy may be right for you.
       </p>
-      <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#ffffff;font-family:'Poppins',sans-serif;font-size:1rem;font-weight:600;padding:0.85rem 2.5rem;border-radius:8px;text-decoration:none;">Book an Appointment</a>
+      <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#ffffff;font-family:'Poppins',sans-serif;font-size:1rem;font-weight:600;padding:0.85rem 2.5rem;border-radius:8px;text-decoration:none;">See How Referrals Work</a>
     </div>
   </div>
 </div>`;

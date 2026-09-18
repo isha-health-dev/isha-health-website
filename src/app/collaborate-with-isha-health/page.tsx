@@ -87,7 +87,7 @@ export default function CollaboratePage() {
         }}
       >
         <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '1rem', lineHeight: 1.7, color: '#4b5563', marginBottom: '2rem', textAlign: 'center' }}>
-          We believe ketamine therapy works best when prescribers and therapists work together. Isha Health collaborates with over 500 clinicians across the country — our physicians handle the medical side while you provide the integration support that deepens and sustains patient progress.
+          We believe ketamine therapy works best when prescribers and therapists work together. Isha Health collaborates with over 500 clinicians across the country — our physicians handle the medical side while you provide the integration support that deepens and sustains patient progress. Isha Health now accepts new patients by referral from a collaborating therapist only.
         </p>
 
         {/* How It Works */}
@@ -112,7 +112,7 @@ export default function CollaboratePage() {
               <span style={{ fontFamily: "'Libre Baskerville', serif", fontSize: '1.3rem', fontWeight: 700, color: '#0d9488', flexShrink: 0 }}>3</span>
               <div>
                 <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.95rem', fontWeight: 600, color: '#111827', marginBottom: '0.25rem' }}>Refer patients who need a prescriber</p>
-                <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.85rem', color: '#4b5563', lineHeight: 1.6 }}>If your clients are interested in ketamine therapy but need a physician to prescribe and monitor, refer them to Isha Health. We handle the medical side so you can focus on therapy.</p>
+                <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.85rem', color: '#4b5563', lineHeight: 1.6 }}>If your clients are interested in ketamine therapy but need a physician to prescribe and monitor, refer them to Isha Health. Referral from a collaborating therapist is how all new patients begin with us. We handle the medical side so you can focus on therapy.</p>
               </div>
             </div>
           </div>
@@ -152,7 +152,7 @@ export default function CollaboratePage() {
 
         {/* Form Header */}
         <h2 style={{ fontFamily: "'Libre Baskerville', serif", fontSize: '1.3rem', fontWeight: 700, color: '#111827', marginBottom: '0.5rem' }}>Get in Touch</h2>
-        <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.9rem', color: '#6b7280', marginBottom: '1.5rem' }}>Fill out the form below and our team will be in touch.</p>
+        <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.9rem', color: '#6b7280', marginBottom: '1.5rem' }}>Use the form below to introduce yourself or to refer a client. Our team will be in touch.</p>
 
         <form onSubmit={handleSubmit}>
           <div style={{ display: 'flex', gap: '0.75rem', marginBottom: '1rem' }}>

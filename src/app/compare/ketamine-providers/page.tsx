@@ -216,7 +216,7 @@ export default function Page() {
       <p style="font-family:'Poppins',sans-serif;font-size:1rem;line-height:1.7;color:#374151;margin:0 0 1.25rem 0;">
         Find out if ketamine therapy is right for you with a physician-led consultation.
       </p>
-      <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#fff;font-family:'Poppins',sans-serif;font-weight:600;font-size:1rem;padding:0.85rem 2.5rem;border-radius:8px;text-decoration:none;">Book an Appointment</a>
+      <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#fff;font-family:'Poppins',sans-serif;font-weight:600;font-size:1rem;padding:0.85rem 2.5rem;border-radius:8px;text-decoration:none;">See How Referrals Work</a>
     </div>
   </div>
 </div>`

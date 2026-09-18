@@ -3,19 +3,19 @@ import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "Online At-Home Ketamine Therapy in Texas",
-  description: "Texas residents: at-home ketamine therapy starting at $398. 88.8% of patients improve. Same-day appointments. No referral needed.",
+  description: "Texas residents: at-home ketamine therapy starting at $398. 88.8% of patients improve. Same-day appointments. Therapist referral required.",
   alternates: {
     canonical: "https://isha.health/locations/online-at-home-ketamine-therapy-in-texas",
   },
   openGraph: buildOpenGraph({
     title: "Online At-Home Ketamine Therapy in Texas",
-    description: "Texas residents: at-home ketamine therapy starting at $398. 88.8% of patients improve. Same-day appointments. No referral needed.",
+    description: "Texas residents: at-home ketamine therapy starting at $398. 88.8% of patients improve. Same-day appointments. Therapist referral required.",
     path: '/locations/online-at-home-ketamine-therapy-in-texas',
   }),
   twitter: {
     card: "summary_large_image",
     title: "Online At-Home Ketamine Therapy in Texas",
-    description: "Texas residents: at-home ketamine therapy starting at $398. 88.8% of patients improve. Same-day appointments. No referral needed.",
+    description: "Texas residents: at-home ketamine therapy starting at $398. 88.8% of patients improve. Same-day appointments. Therapist referral required.",
   },
 };
 
@@ -52,7 +52,7 @@ export default function Page() {
     <h2 style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#111827;margin-bottom:0.75rem;">Why Choose Isha Health for At-Home Ketamine Treatment in Texas?</h2>
     <img src="/images/3a27d97b_67acf5b26c5a83cdd332b761_pexels-esra-afsar-123882149-30411707__1).jpg" loading="lazy" alt="At-home ketamine therapy" style="max-width:100%;max-height:380px;width:auto;height:auto;display:block;margin:0 auto;border-radius:10px;margin-bottom:1rem;">
     <ul style="padding-left:1.25rem;">
-      <li style="margin-bottom:0.75rem;"><strong>Appointments available in as little as 24 hours</strong><br>No waiting for months — schedule your telemedicine ketamine therapy in Texas today and start treatment promptly.</li>
+      <li style="margin-bottom:0.75rem;"><strong>Appointments available in as little as 24 hours</strong><br>No waiting for months — once your therapist refers you, we schedule your telemedicine ketamine therapy in Texas and start treatment promptly.</li>
       <li style="margin-bottom:0.75rem;"><strong>Expert guidance from licensed clinicians</strong><br>Our clinicians provide continuous support, assessments, and treatment adjustments for a safe and effective at-home ketamine therapy experience.</li>
       <li style="margin-bottom:0.75rem;"><strong>Affordable and accessible treatment</strong><br>Isha Health offers affordable ketamine therapy in Texas, making mental health treatment accessible for those seeking alternative solutions.</li>
       <li style="margin-bottom:0.75rem;"><strong>A trusted alternative to ketamine clinics</strong><br>Our home-based ketamine treatment eliminates the need for in-person visits while maintaining professional oversight and high medical standards.</li>
@@ -176,7 +176,7 @@ export default function Page() {
   <section style="text-align:center;margin-bottom:2.5rem;">
     <h2 style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#111827;margin-bottom:0.75rem;">Start Your At-Home Ketamine Treatment in Texas Today</h2>
     <p>Take control of your mental health with Isha Health's affordable, expert-led at-home ketamine therapy.</p>
-    <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.85rem 2rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:0.95rem;margin-top:1rem;">Book a Consultation</a>
+    <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.85rem 2rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:0.95rem;margin-top:1rem;">See How Referrals Work</a>
   </section>
 
   <section style="margin-bottom:2rem;">

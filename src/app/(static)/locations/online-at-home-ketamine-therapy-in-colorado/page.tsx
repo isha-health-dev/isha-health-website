@@ -3,19 +3,19 @@ import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "Online At-Home Ketamine Therapy in Colorado",
-  description: "Colorado residents: at-home ketamine therapy starting at $398. 88.8% of patients improve. Same-day appointments. No referral needed.",
+  description: "Colorado residents: at-home ketamine therapy starting at $398. 88.8% of patients improve. Same-day appointments. Therapist referral required.",
   alternates: {
     canonical: "https://isha.health/locations/online-at-home-ketamine-therapy-in-colorado",
   },
   openGraph: buildOpenGraph({
     title: "Online At-Home Ketamine Therapy in Colorado",
-    description: "Colorado residents: at-home ketamine therapy starting at $398. 88.8% of patients improve. Same-day appointments. No referral needed.",
+    description: "Colorado residents: at-home ketamine therapy starting at $398. 88.8% of patients improve. Same-day appointments. Therapist referral required.",
     path: '/locations/online-at-home-ketamine-therapy-in-colorado',
   }),
   twitter: {
     card: "summary_large_image",
     title: "Online At-Home Ketamine Therapy in Colorado",
-    description: "Colorado residents: at-home ketamine therapy starting at $398. 88.8% of patients improve. Same-day appointments. No referral needed.",
+    description: "Colorado residents: at-home ketamine therapy starting at $398. 88.8% of patients improve. Same-day appointments. Therapist referral required.",
   },
 };
 
@@ -52,7 +52,7 @@ export default function Page() {
     <h2 style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#111827;margin-bottom:0.75rem;">Why Choose Isha Health for At-Home Ketamine Treatment in Colorado?</h2>
     <img src="/images/3a27d97b_67acf5b26c5a83cdd332b761_pexels-esra-afsar-123882149-30411707__1).jpg" loading="lazy" alt="At-home ketamine therapy" style="max-width:100%;max-height:380px;width:auto;height:auto;display:block;margin:0 auto;border-radius:10px;margin-bottom:1rem;">
     <ul style="padding-left:1.25rem;">
-      <li style="margin-bottom:0.75rem;"><strong>Appointments available in as little as 24 hours</strong><br>No long wait times — schedule your initial consultation quickly and begin your healing journey immediately.</li>
+      <li style="margin-bottom:0.75rem;"><strong>Appointments available in as little as 24 hours</strong><br>No long wait times — once your therapist refers you, we schedule your initial consultation quickly and begin your healing journey immediately.</li>
       <li style="margin-bottom:0.75rem;"><strong>Expert guidance from licensed clinicians</strong><br>From your first session to ongoing support, our experienced clinicians guide you through at-home ketamine therapy, ensuring a safe and effective experience.</li>
       <li style="margin-bottom:0.75rem;"><strong>Affordable, accessible mental health treatment</strong><br>We provide cost-effective, evidence-based ketamine therapy for anxiety, depression, and PTSD without requiring travel to a clinic.</li>
       <li style="margin-bottom:0.75rem;"><strong>An alternative to in-person ketamine clinics</strong><br>Isha Health offers a remote, patient-centered alternative that ensures privacy, convenience, and expert medical oversight.</li>
@@ -155,13 +155,13 @@ export default function Page() {
       <ul style="padding-left:1.25rem;margin:0.5rem 0 0;">
         <li>No in-person clinic visits required — fully remote treatment process.</li>
         <li>Affordable and accessible — more cost-effective than in-person ketamine clinics.</li>
-        <li>Fast consultations — get started within 24 hours.</li>
+        <li>Fast consultations — appointments within 24 hours of your referral.</li>
         <li>Ongoing support — licensed providers assist you every step of the way.</li>
       </ul>
     </div>
     <div style="border-bottom:1px solid #e5e7eb;padding-bottom:1rem;margin-bottom:1rem;">
       <h3 style="font-size:1.05rem;font-weight:700;color:#111827;margin:0 0 0.5rem;">5. How do I know if at-home ketamine therapy is right for me?</h3>
-      <p style="margin:0;">You can assess your potential eligibility by completing <a href="/am-i-a-candidate" style="color:#0d9488;">a brief questionnaire</a>. To determine your actual eligibility, you'll need to <a href="/appointment" style="color:#0d9488;">schedule a consultation</a> with our medical team. If you have treatment-resistant depression, PTSD, or anxiety, ketamine therapy could be an effective option.</p>
+      <p style="margin:0;">You can assess your potential eligibility by completing <a href="/am-i-a-candidate" style="color:#0d9488;">a brief questionnaire</a>. To determine your actual eligibility, you'll need to <a href="/appointment" style="color:#0d9488;">see how referrals work</a> with our medical team. If you have treatment-resistant depression, PTSD, or anxiety, ketamine therapy could be an effective option.</p>
     </div>
     <div style="border-bottom:1px solid #e5e7eb;padding-bottom:1rem;margin-bottom:1rem;">
       <h3 style="font-size:1.05rem;font-weight:700;color:#111827;margin:0 0 0.5rem;">6. Is at-home ketamine therapy legal in Colorado?</h3>
@@ -173,7 +173,7 @@ export default function Page() {
     </div>
     <div style="border-bottom:1px solid #e5e7eb;padding-bottom:1rem;margin-bottom:1rem;">
       <h3 style="font-size:1.05rem;font-weight:700;color:#111827;margin:0 0 0.5rem;">8. How quickly can I start ketamine treatment in Colorado?</h3>
-      <p style="margin:0;">You can schedule a consultation within 24 hours and begin treatment within days after your medical evaluation.</p>
+      <p style="margin:0;">Once your therapist refers you, we typically schedule your consultation within 24 hours and begin treatment within days after your medical evaluation.</p>
     </div>
     <div style="border-bottom:1px solid #e5e7eb;padding-bottom:1rem;margin-bottom:1rem;">
       <h3 style="font-size:1.05rem;font-weight:700;color:#111827;margin:0 0 0.5rem;">9. How can I contact Isha Health?</h3>
@@ -191,7 +191,7 @@ export default function Page() {
   <section style="text-align:center;margin-bottom:2.5rem;">
     <h2 style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#111827;margin-bottom:0.75rem;">Start Your At-Home Ketamine Treatment in Colorado Today</h2>
     <p>Take control of your mental health with Isha Health's affordable, expert-led at-home ketamine therapy.</p>
-    <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.85rem 2rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:0.95rem;margin-top:1rem;">Book a Consultation</a>
+    <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.85rem 2rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:0.95rem;margin-top:1rem;">See How Referrals Work</a>
   </section>
 
   <section style="margin-bottom:2rem;">
@@ -215,7 +215,7 @@ export default function Page() {
 {"@type":"Question","name":"What makes Isha Health's online ketamine treatment different?","acceptedAnswer":{"@type":"Answer","text":"No in-person clinic visits required, affordable and accessible, fast consultations within 24 hours, and ongoing support from licensed providers."}},
 {"@type":"Question","name":"Is at-home ketamine therapy legal in Colorado?","acceptedAnswer":{"@type":"Answer","text":"Yes, ketamine is legally approved for medical use in Colorado when prescribed by a licensed healthcare provider."}},
 {"@type":"Question","name":"What form of ketamine does Isha Health provide?","acceptedAnswer":{"@type":"Answer","text":"We offer sublingual ketamine lozenges, a safe and effective method for at-home treatment."}},
-{"@type":"Question","name":"How quickly can I start ketamine treatment in Colorado?","acceptedAnswer":{"@type":"Answer","text":"You can schedule a consultation within 24 hours and begin treatment within days after your medical evaluation."}},
+{"@type":"Question","name":"How quickly can I start ketamine treatment in Colorado?","acceptedAnswer":{"@type":"Answer","text":"Once your therapist refers you, we typically schedule your consultation within 24 hours and begin treatment within days after your medical evaluation."}},
 {"@type":"Question","name":"How can I contact Isha Health?","acceptedAnswer":{"@type":"Answer","text":"Visit our Contact Page or email us at info@isha.health."}}
 ]}
 </script>

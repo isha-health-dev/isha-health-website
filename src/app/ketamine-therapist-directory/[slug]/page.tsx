@@ -61,7 +61,7 @@ export async function generateMetadata({
       : withoutCreds.length <= 56
         ? withoutCreds
         : name;
-  const description = `${name} offers ketamine-assisted psychotherapy${location ? ` in ${location}` : ''}. View specialties, credentials, and book a session via Isha Health.`;
+  const description = `${name} offers ketamine-assisted psychotherapy${location ? ` in ${location}` : ''}. View specialties, credentials, and contact details via Isha Health.`;
 
   return {
     title,
@@ -619,8 +619,8 @@ export default async function TherapistProfilePage({
           dangerouslySetInnerHTML={{
             __html: `<div style="margin-top:3rem;padding:2.5rem;background-color:#f0fdfa;border-radius:12px;text-align:center;border:1px solid #ccfbf1;">
               <p style="font-size:1.35rem !important;font-weight:700 !important;color:#0f766e !important;margin-bottom:0.5rem !important;font-family:'Libre Baskerville',serif !important;letter-spacing:normal !important;text-transform:none !important;">Ready to start ketamine-assisted therapy?</p>
-              <p style="color:#4b5563 !important;margin-bottom:1.5rem !important;font-size:1rem !important;font-family:'Poppins',sans-serif !important;letter-spacing:normal !important;text-transform:none !important;">Book a consultation with Isha Health to see if ketamine therapy is right for you.</p>
-              <a href="/appointment" style="display:inline-block !important;background-color:#0d9488 !important;color:#fff !important;padding:0.85rem 2.5rem !important;border-radius:8px !important;text-decoration:none !important;font-weight:600 !important;font-size:1rem !important;font-family:'Poppins',sans-serif !important;letter-spacing:normal !important;text-transform:none !important;transition:background-color 0.2s;">Check Appointment Availability</a>
+              <p style="color:#4b5563 !important;margin-bottom:1.5rem !important;font-size:1rem !important;font-family:'Poppins',sans-serif !important;letter-spacing:normal !important;text-transform:none !important;">Isha Health sees new patients by referral from a collaborating therapist. See how to get referred.</p>
+              <a href="/appointment" style="display:inline-block !important;background-color:#0d9488 !important;color:#fff !important;padding:0.85rem 2.5rem !important;border-radius:8px !important;text-decoration:none !important;font-weight:600 !important;font-size:1rem !important;font-family:'Poppins',sans-serif !important;letter-spacing:normal !important;text-transform:none !important;transition:background-color 0.2s;">See How Referrals Work</a>
             </div>`,
           }}
         />

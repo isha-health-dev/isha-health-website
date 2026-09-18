@@ -171,7 +171,7 @@ export default function Page() {
   <!-- CTA Button -->
   <div style="text-align:center;margin:2.5rem 0;">
     <a href="/appointment" style="display:inline-block;background:#0d9488;color:#ffffff;font-family:'Poppins',sans-serif;font-size:1rem;font-weight:600;padding:0.85rem 2.5rem;border-radius:8px;text-decoration:none;">
-      Make an appointment
+      See how referrals work
     </a>
   </div>
 
