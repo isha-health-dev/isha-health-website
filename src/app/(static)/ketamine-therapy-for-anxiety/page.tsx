@@ -71,7 +71,7 @@ export default function Page() {
 
   <section style="text-align:center;margin-bottom:2.5rem;padding:2rem 0;">
     <p style="font-size:1rem;margin-bottom:1.5rem;">We discussed some of the many clinical studies that indicate ketamine therapy is effective in the treatment of patients with treatment-resistant anxiety, social anxiety disorder (SAD), and generalized anxiety disorder (GAD). Ketamine treatment efficacy has been proven as maintenance therapy as well. It is also known that patients have a higher treatment success rate when ketamine is combined with psychotherapy. Additionally, many patients are now turning to online therapy services for anxiety and telemedicine mental health services, which can complement ketamine therapy and offer more accessible mental health support.</p>
-    <a href="/appointment" style="display:inline-block;background:#0d9488;color:#fff;font-family:Poppins,sans-serif;font-size:1rem;font-weight:600;padding:0.75rem 2rem;border-radius:8px;text-decoration:none;">Make an appointment</a>
+    <a href="/appointment" style="display:inline-block;background:#0d9488;color:#fff;font-family:Poppins,sans-serif;font-size:1rem;font-weight:600;padding:0.75rem 2rem;border-radius:8px;text-decoration:none;">See how referrals work</a>
   </section>
 
   

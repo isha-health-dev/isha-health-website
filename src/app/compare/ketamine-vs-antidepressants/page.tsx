@@ -136,7 +136,7 @@ export default function Page() {
       </div>
       <div style="padding:1rem 0;">
         <h3 style="font-family:'Poppins',sans-serif;font-size:0.95rem;font-weight:600;color:#111827;margin-bottom:0.35rem;">What if antidepressants have not worked for me?</h3>
-        <p style="font-family:'Source Sans Pro',sans-serif;font-size:0.9rem;color:#4b5563;line-height:1.5;">If two or more antidepressants have not worked, you may have treatment-resistant depression. Ketamine is one of several options for TRD. Learn more on our <a href="/am-i-a-candidate" style="color:#0d9488;text-decoration:underline;">candidacy page</a> or schedule a consultation to discuss your options.</p>
+        <p style="font-family:'Source Sans Pro',sans-serif;font-size:0.9rem;color:#4b5563;line-height:1.5;">If two or more antidepressants have not worked, you may have treatment-resistant depression. Ketamine is one of several options for TRD. Learn more on our <a href="/am-i-a-candidate" style="color:#0d9488;text-decoration:underline;">candidacy page</a> or see how referrals work to discuss your options.</p>
       </div>
     </div>
   </div>
@@ -151,7 +151,7 @@ export default function Page() {
   <div style="background-color:#f0fdfa;padding:3rem 1.5rem;text-align:center;border-top:1px solid #ccfbf1;">
     <p style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#0f766e;margin-bottom:0.5rem;">Looking beyond traditional antidepressants?</p>
     <p style="font-family:'Poppins',sans-serif;color:#4b5563;margin-bottom:1.5rem;font-size:0.95rem;">Our physicians can help you evaluate whether ketamine therapy may be a good fit.</p>
-    <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.85rem 2.5rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:1rem;font-family:'Poppins',sans-serif;">Check Appointment Availability</a>
+    <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.85rem 2.5rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:1rem;font-family:'Poppins',sans-serif;">See How Referrals Work</a>
   </div>
 </div>`,
       }}

@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Affordable Ketamine Therapy: $398/Session',
     description:
-      'At-home ketamine therapy from $398/session — among the cheapest physician-led options. HSA/FSA accepted. No referral needed.',
+      'At-home ketamine therapy from $398/session — among the cheapest physician-led options. HSA/FSA accepted. Therapist referral required.',
   },
 };
 
@@ -119,7 +119,7 @@ export default function AffordableKetamineTherapyPage() {
     </nav>
 
     <p style="font-family:'Poppins',sans-serif;font-size:1.1rem;line-height:1.8;color:#374151;text-align:center;max-width:700px;margin:0 auto 3rem;text-wrap:pretty;">
-      Physician-led <strong>affordable ketamine treatment</strong> starting at $398 per session — a fraction of IV infusion or clinic-based costs. No referral needed.
+      Physician-led <strong>affordable ketamine treatment</strong> starting at $398 per session — a fraction of IV infusion or clinic-based costs. Therapist referral required.
     </p>
 
     <!-- Why Affordable -->
@@ -312,11 +312,11 @@ export default function AffordableKetamineTherapyPage() {
 
     <!-- CTA -->
     <div style="background-color:#f0fdfa;padding:2.5rem;border-radius:12px;text-align:center;border:1px solid #ccfbf1;">
-      <p style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#0f766e;margin-bottom:0.5rem;">Book Your $398 Consultation</p>
-      <p style="font-family:'Poppins',sans-serif;color:#4b5563;margin-bottom:1.5rem;font-size:0.95rem;">Start affordable ketamine therapy from the comfort of your home. No referral needed.</p>
+      <p style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#0f766e;margin-bottom:0.5rem;">Your $398 Consultation, by Referral</p>
+      <p style="font-family:'Poppins',sans-serif;color:#4b5563;margin-bottom:1.5rem;font-size:0.95rem;">Start affordable ketamine therapy from the comfort of your home. Therapist referral required.</p>
       <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
         <a href="/pricing" style="display:inline-block;background-color:#fff;color:#0d9488;padding:0.85rem 2rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:1rem;font-family:'Poppins',sans-serif;border:2px solid #0d9488;">View Full Pricing</a>
-        <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.85rem 2rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:1rem;font-family:'Poppins',sans-serif;">Book Consultation</a>
+        <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.85rem 2rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:1rem;font-family:'Poppins',sans-serif;">See How Referrals Work</a>
       </div>
     </div>
 

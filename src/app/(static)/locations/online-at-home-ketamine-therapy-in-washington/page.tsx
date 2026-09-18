@@ -3,19 +3,19 @@ import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "Online At-Home Ketamine Therapy in Washington",
-  description: "Washington residents: at-home ketamine therapy starting at $398. 88.8% of patients improve. Same-day appointments. No referral needed.",
+  description: "Washington residents: at-home ketamine therapy starting at $398. 88.8% of patients improve. Same-day appointments. Therapist referral required.",
   alternates: {
     canonical: "https://isha.health/locations/online-at-home-ketamine-therapy-in-washington",
   },
   openGraph: buildOpenGraph({
     title: "Online At-Home Ketamine Therapy in Washington",
-    description: "Washington residents: at-home ketamine therapy starting at $398. 88.8% of patients improve. Same-day appointments. No referral needed.",
+    description: "Washington residents: at-home ketamine therapy starting at $398. 88.8% of patients improve. Same-day appointments. Therapist referral required.",
     path: '/locations/online-at-home-ketamine-therapy-in-washington',
   }),
   twitter: {
     card: "summary_large_image",
     title: "Online At-Home Ketamine Therapy in Washington",
-    description: "Washington residents: at-home ketamine therapy starting at $398. 88.8% of patients improve. Same-day appointments. No referral needed.",
+    description: "Washington residents: at-home ketamine therapy starting at $398. 88.8% of patients improve. Same-day appointments. Therapist referral required.",
   },
 };
 
@@ -52,7 +52,7 @@ export default function Page() {
     <h2 style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#111827;margin-bottom:0.75rem;">Why Choose Isha Health for At-Home Ketamine Treatment in Washington?</h2>
     <img src="/images/3a27d97b_67acf5b26c5a83cdd332b761_pexels-esra-afsar-123882149-30411707__1).jpg" loading="lazy" alt="At-home ketamine therapy" style="max-width:100%;max-height:380px;width:auto;height:auto;display:block;margin:0 auto;border-radius:10px;margin-bottom:1rem;">
     <ul style="padding-left:1.25rem;">
-      <li style="margin-bottom:0.75rem;"><strong>Appointments available in as little as 24 hours</strong><br>No long wait times — schedule your online ketamine treatment in Washington today and start your healing journey quickly.</li>
+      <li style="margin-bottom:0.75rem;"><strong>Appointments available in as little as 24 hours</strong><br>No long wait times — once your therapist refers you, we schedule your online ketamine treatment in Washington today and start your healing journey quickly.</li>
       <li style="margin-bottom:0.75rem;"><strong>Expert guidance from licensed clinicians</strong><br>From your first session to ongoing support, our clinicians ensure a safe, effective, and comfortable remote ketamine therapy experience.</li>
       <li style="margin-bottom:0.75rem;"><strong>Affordable and accessible mental health treatment</strong><br>Isha Health offers affordable ketamine therapy in Washington, making treatment for mood disorders available to more individuals seeking innovative care.</li>
       <li style="margin-bottom:0.75rem;"><strong>Alternative to traditional ketamine clinics</strong><br>Our home-based ketamine treatment is designed for convenience, comfort, and safety, eliminating clinic visits while maintaining professional oversight.</li>
@@ -168,8 +168,8 @@ export default function Page() {
 
   <section style="text-align:center;margin-bottom:2.5rem;">
     <h2 style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#111827;margin-bottom:0.75rem;">Start Your At-Home Ketamine Treatment in Washington Today</h2>
-    <p>Take control of your mental health with effective and affordable ketamine therapy in Washington. Schedule your consultation today and begin your journey toward long-term relief.</p>
-    <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.85rem 2rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:0.95rem;margin-top:1rem;">Book a Consultation</a>
+    <p>Take control of your mental health with effective and affordable ketamine therapy in Washington. Ask your therapist for a referral and begin your journey toward long-term relief.</p>
+    <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.85rem 2rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:0.95rem;margin-top:1rem;">See How Referrals Work</a>
   </section>
 
   <section style="margin-bottom:2rem;">

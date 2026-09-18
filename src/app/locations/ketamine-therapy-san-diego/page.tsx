@@ -94,7 +94,7 @@ export default async function Page() {
 
     <h2 style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#111827;margin-top:2.5rem;margin-bottom:1rem;">About ketamine therapy in San Diego</h2>
     <p style="font-family:'Poppins',sans-serif;font-size:0.95rem;line-height:1.8;color:#374151;margin-bottom:1.25rem;text-wrap:pretty;">
-      San Diego, a 1.4 million-resident city in California (Pacific Time), sits within the San Diego County metro of 3.3 million. San Diego's military and veteran population — including many active-duty and recently-separated service members — has unmet demand for evidence-based PTSD and depression care. Telehealth ketamine therapy lets you start treatment without a referral chain or waitlist.
+      San Diego, a 1.4 million-resident city in California (Pacific Time), sits within the San Diego County metro of 3.3 million. San Diego's military and veteran population — including many active-duty and recently-separated service members — has unmet demand for evidence-based PTSD and depression care. Telehealth ketamine therapy lets you start treatment without a waitlist once your therapist refers you.
     </p>
     <p style="font-family:'Poppins',sans-serif;font-size:0.95rem;line-height:1.8;color:#374151;margin-bottom:1.25rem;text-wrap:pretty;">
       Major healthcare systems serving the area include UC San Diego Health, Scripps Health, Sharp HealthCare, and Naval Medical Center San Diego (TRICARE). Isha Health complements these in-system options with a fully telehealth alternative — accessible from Downtown, La Jolla, North County, East County, and South Bay and anywhere else with a stable internet connection. Sessions are scheduled in your local Pacific Time, and our physician network is licensed to prescribe in California.
@@ -146,7 +146,7 @@ ${therapistsHtml}
   <div style="background-color:#f0fdfa;padding:3rem 1.5rem;text-align:center;border-top:1px solid #ccfbf1;">
     <p style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#0f766e;margin-bottom:0.5rem;">Ready to start feeling better?</p>
     <p style="font-family:'Poppins',sans-serif;color:#4b5563;margin-bottom:1.5rem;font-size:0.95rem;">Appointments often available within 24 hours for patients in San Diego.</p>
-    <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.85rem 2.5rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:1rem;font-family:'Poppins',sans-serif;">Check Appointment Availability</a>
+    <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.85rem 2.5rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:1rem;font-family:'Poppins',sans-serif;">See How Referrals Work</a>
   </div>
 </div>`
       }}

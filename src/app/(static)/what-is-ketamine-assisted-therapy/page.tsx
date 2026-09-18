@@ -144,13 +144,13 @@ export default function Page() {
     <div style="margin-top:1rem;">
       <p style="margin-bottom:0.75rem;"><strong>Already working with a therapist?</strong> Ask them about incorporating KAP into your treatment plan, or have them <a href="/collaborate-with-isha-health" style="color:#0d9488;text-decoration:underline;">collaborate with Isha Health</a>.</p>
       <p style="margin-bottom:0.75rem;"><strong>Looking for a KAP therapist?</strong> Browse our <a href="/ketamine-therapist-directory" style="color:#0d9488;text-decoration:underline;">clinician directory</a> with 600+ therapists trained in ketamine-assisted psychotherapy.</p>
-      <p><strong>Ready to start?</strong> Book a 60-minute consultation with an Isha Health physician.</p>
+      <p><strong>Ready to start?</strong> Ask your therapist to refer you for a 60-minute consultation with an Isha Health physician.</p>
     </div>
   </section>
 
   <!-- CTA -->
   <div style="text-align:center;padding:2rem 0;">
-    <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.9rem 2.5rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:1rem;">Book a Consultation</a>
+    <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.9rem 2.5rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:1rem;">See How Referrals Work</a>
     <p style="font-size:0.85rem;color:#6b7280;margin-top:0.75rem;">$398 · 60 minutes · Available in AZ, CA, CO, FL, GA, OR, TX, WA</p>
   </div>
 

@@ -3,19 +3,19 @@ import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "Online At-Home Ketamine Therapy in California",
-  description: "California residents: at-home ketamine therapy starting at $398. 88.8% of patients improve. Same-day appointments. No referral needed.",
+  description: "California residents: at-home ketamine therapy starting at $398. 88.8% of patients improve. Same-day appointments. Therapist referral required.",
   alternates: {
     canonical: "https://isha.health/locations/online-at-home-ketamine-therapy-in-california",
   },
   openGraph: buildOpenGraph({
     title: "Online At-Home Ketamine Therapy in California",
-    description: "California residents: at-home ketamine therapy starting at $398. 88.8% of patients improve. Same-day appointments. No referral needed.",
+    description: "California residents: at-home ketamine therapy starting at $398. 88.8% of patients improve. Same-day appointments. Therapist referral required.",
     path: '/locations/online-at-home-ketamine-therapy-in-california',
   }),
   twitter: {
     card: "summary_large_image",
     title: "Online At-Home Ketamine Therapy in California",
-    description: "California residents: at-home ketamine therapy starting at $398. 88.8% of patients improve. Same-day appointments. No referral needed.",
+    description: "California residents: at-home ketamine therapy starting at $398. 88.8% of patients improve. Same-day appointments. Therapist referral required.",
   },
 };
 
@@ -56,7 +56,7 @@ export default function Page() {
     <h2 style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#111827;margin-bottom:0.75rem;">Why Choose Isha Health for At-Home Ketamine Treatment in California?</h2>
     <img src="/images/3a27d97b_67acf5b26c5a83cdd332b761_pexels-esra-afsar-123882149-30411707__1).jpg" loading="lazy" alt="At-home ketamine therapy" style="max-width:100%;max-height:380px;width:auto;height:auto;display:block;margin:0 auto;border-radius:10px;margin-bottom:1rem;">
     <ul style="padding-left:1.25rem;">
-      <li style="margin-bottom:0.75rem;"><strong>Appointments available in as little as 24 hours</strong><br>No long wait times — schedule your initial consultation quickly and start your healing journey right away.</li>
+      <li style="margin-bottom:0.75rem;"><strong>Appointments available in as little as 24 hours</strong><br>No long wait times — once your therapist refers you, we schedule your initial consultation quickly and start your healing journey right away.</li>
       <li style="margin-bottom:0.75rem;"><strong>Expert guidance from licensed clinicians</strong><br>From your first session to ongoing support, our team of experienced clinicians ensures a safe and effective online ketamine treatment process.</li>
       <li style="margin-bottom:0.75rem;"><strong>Affordable, personalized therapy without leaving home</strong><br>Enjoy high-quality, evidence-based teletherapy services from the comfort of your home. Our services are designed to be both accessible and affordable.</li>
       <li style="margin-bottom:0.75rem;"><strong>A trusted alternative to traditional ketamine clinics</strong><br>Our ketamine telehealth services provide an alternative to in-person treatment, ensuring privacy, convenience, and expert medical oversight.</li>
@@ -166,7 +166,7 @@ export default function Page() {
       <ul style="padding-left:1.25rem;margin:0.5rem 0 0;">
         <li>No in-person clinic visits required — 100% online treatment process.</li>
         <li>Affordable pricing — more cost-effective than traditional ketamine clinics.</li>
-        <li>Fast consultations — book an appointment in as little as 24 hours.</li>
+        <li>Fast consultations — appointments in as little as 24 hours after your referral.</li>
         <li>Ongoing support — dedicated clinicians guide you through every step.</li>
       </ul>
     </div>
@@ -183,7 +183,7 @@ export default function Page() {
 
     <div style="border-bottom:1px solid #e5e7eb;padding-bottom:1rem;margin-bottom:1rem;">
       <h3 style="font-size:1.05rem;font-weight:700;color:#111827;margin:0 0 0.5rem;">7. How quickly can I start ketamine treatment in California?</h3>
-      <p style="margin:0;">You can schedule a consultation within 24 hours and begin treatment within days after your medical evaluation.</p>
+      <p style="margin:0;">Once your therapist refers you, we typically schedule your consultation within 24 hours and begin treatment within days after your medical evaluation.</p>
     </div>
 
     <div style="border-bottom:1px solid #e5e7eb;padding-bottom:1rem;margin-bottom:1rem;">
@@ -204,7 +204,7 @@ export default function Page() {
   <section style="text-align:center;margin-bottom:2.5rem;">
     <h2 style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#111827;margin-bottom:0.75rem;">Start Your At-Home Ketamine Treatment in California Today</h2>
     <p>Take control of your mental health with Isha Health's affordable, expert-led at-home ketamine therapy.</p>
-    <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.85rem 2rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:0.95rem;margin-top:1rem;">Book a Consultation</a>
+    <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.85rem 2rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:0.95rem;margin-top:1rem;">See How Referrals Work</a>
   </section>
 
   <!-- Ketamine Therapy Near You -->
@@ -237,7 +237,7 @@ export default function Page() {
     {"@type":"Question","name":"What makes Isha Health's online ketamine treatment different?","acceptedAnswer":{"@type":"Answer","text":"No in-person clinic visits required, affordable pricing, fast consultations within 24 hours, and ongoing support from dedicated clinicians."}},
     {"@type":"Question","name":"Is at-home ketamine therapy legal in California?","acceptedAnswer":{"@type":"Answer","text":"Yes, ketamine is legally approved for medical use in California when prescribed by a licensed healthcare provider."}},
     {"@type":"Question","name":"What form of ketamine does Isha Health provide?","acceptedAnswer":{"@type":"Answer","text":"We offer sublingual ketamine lozenges, a safe and effective method for at-home treatment."}},
-    {"@type":"Question","name":"How quickly can I start ketamine treatment in California?","acceptedAnswer":{"@type":"Answer","text":"You can schedule a consultation within 24 hours and begin treatment within days after your medical evaluation."}},
+    {"@type":"Question","name":"How quickly can I start ketamine treatment in California?","acceptedAnswer":{"@type":"Answer","text":"Once your therapist refers you, we typically schedule your consultation within 24 hours and begin treatment within days after your medical evaluation."}},
     {"@type":"Question","name":"How can I contact Isha Health?","acceptedAnswer":{"@type":"Answer","text":"Our team is here to answer your questions! Visit our Contact Page or email us at info@isha.health."}}
   ]
 }

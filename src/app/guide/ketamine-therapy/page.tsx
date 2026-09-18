@@ -184,7 +184,7 @@ export default function Page() {
     <div style="background-color:#f0fdfa;border:2px solid #0d9488;border-radius:12px;padding:2rem;text-align:center;margin:2.5rem 0;">
       <h3 style="font-family:'Libre Baskerville',serif;font-size:1.2rem;font-weight:700;color:#0d9488;margin-bottom:0.75rem;">Wondering if Ketamine Therapy Is Right for You?</h3>
       <p style="font-family:'Source Sans Pro','Poppins',sans-serif;font-size:0.95rem;color:#374151;margin-bottom:1.25rem;">Take the first step by scheduling a consultation with one of our board-certified physicians.</p>
-      <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.75rem 2rem;border-radius:8px;text-decoration:none;font-family:'Poppins',sans-serif;font-weight:600;font-size:0.95rem;">Book a Consultation</a>
+      <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.75rem 2rem;border-radius:8px;text-decoration:none;font-family:'Poppins',sans-serif;font-weight:600;font-size:0.95rem;">See How Referrals Work</a>
     </div>
 
     <!-- Section 4: Types of Ketamine -->
@@ -290,7 +290,7 @@ export default function Page() {
     <div style="background-color:#f0fdfa;border:2px solid #0d9488;border-radius:12px;padding:2rem;text-align:center;margin:2.5rem 0;">
       <h3 style="font-family:'Libre Baskerville',serif;font-size:1.2rem;font-weight:700;color:#0d9488;margin-bottom:0.75rem;">Ready to Explore Ketamine Therapy?</h3>
       <p style="font-family:'Source Sans Pro','Poppins',sans-serif;font-size:0.95rem;color:#374151;margin-bottom:1.25rem;">Isha Health provides physician-led, at-home ketamine therapy with personalized treatment plans and ongoing support.</p>
-      <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.75rem 2rem;border-radius:8px;text-decoration:none;font-family:'Poppins',sans-serif;font-weight:600;font-size:0.95rem;">Schedule Your Consultation</a>
+      <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.75rem 2rem;border-radius:8px;text-decoration:none;font-family:'Poppins',sans-serif;font-weight:600;font-size:0.95rem;">See How Referrals Work</a>
     </div>
 
     <!-- FAQ Section -->

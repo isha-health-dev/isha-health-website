@@ -138,7 +138,7 @@ export default function Page() {
   </div>
 
   <div style="text-align:center;margin-top:2rem;">
-    <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.85rem 2rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:0.95rem;font-family:'Poppins',sans-serif;">Book a Consultation</a>
+    <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.85rem 2rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:0.95rem;font-family:'Poppins',sans-serif;">See How Referrals Work</a>
     <p style="font-family:'Poppins',sans-serif;font-size:0.8rem;color:#6b7280;margin-top:0.75rem;">Questions? Email <a href="mailto:info@isha.health" style="color:#0d9488;">info@isha.health</a></p>
   </div>
 </div>`,

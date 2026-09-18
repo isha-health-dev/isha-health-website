@@ -181,7 +181,7 @@ export default function Page() {
               </div>
             </div>
             <div style="text-align:center;margin-top:2rem;">
-              <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.85rem 2rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:0.95rem;font-family:'Poppins',sans-serif;">Get Started</a>
+              <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.85rem 2rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:0.95rem;font-family:'Poppins',sans-serif;">See How Referrals Work</a>
             </div>
           </div>
         </div>`,

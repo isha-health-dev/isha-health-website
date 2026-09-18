@@ -183,8 +183,8 @@ export default function Page() {
     <!-- CTA -->
     <div style="background-color:#f0fdfa;border:2px solid #0d9488;border-radius:12px;padding:2rem;text-align:center;margin:2.5rem 0;">
       <h3 style="font-family:'Libre Baskerville',serif;font-size:1.2rem;font-weight:700;color:#0d9488;margin-bottom:0.75rem;">Have Questions About Ketamine Therapy?</h3>
-      <p style="font-family:'Source Sans Pro','Poppins',sans-serif;font-size:0.95rem;color:#374151;margin-bottom:1.25rem;">Schedule a consultation with an Isha Health physician to get personalized answers about your treatment options.</p>
-      <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.75rem 2rem;border-radius:8px;text-decoration:none;font-family:'Poppins',sans-serif;font-weight:600;font-size:0.95rem;">Book a Consultation</a>
+      <p style="font-family:'Source Sans Pro','Poppins',sans-serif;font-size:0.95rem;color:#374151;margin-bottom:1.25rem;">Get referred to an Isha Health physician for personalized answers about your treatment options.</p>
+      <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.75rem 2rem;border-radius:8px;text-decoration:none;font-family:'Poppins',sans-serif;font-weight:600;font-size:0.95rem;">See How Referrals Work</a>
     </div>
 
     <!-- Section 5: At-Home vs Clinic -->
@@ -280,7 +280,7 @@ export default function Page() {
     <div style="background-color:#f0fdfa;border:2px solid #0d9488;border-radius:12px;padding:2rem;text-align:center;margin:2.5rem 0;">
       <h3 style="font-family:'Libre Baskerville',serif;font-size:1.2rem;font-weight:700;color:#0d9488;margin-bottom:0.75rem;">Ready to Get Started with Isha Health?</h3>
       <p style="font-family:'Source Sans Pro','Poppins',sans-serif;font-size:0.95rem;color:#374151;margin-bottom:1.25rem;">Our board-certified physicians provide personalized, evidence-informed ketamine therapy with comprehensive support at every step.</p>
-      <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.75rem 2rem;border-radius:8px;text-decoration:none;font-family:'Poppins',sans-serif;font-weight:600;font-size:0.95rem;">Schedule Your Consultation</a>
+      <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.75rem 2rem;border-radius:8px;text-decoration:none;font-family:'Poppins',sans-serif;font-weight:600;font-size:0.95rem;">See How Referrals Work</a>
     </div>
 
     <!-- FAQ Section -->

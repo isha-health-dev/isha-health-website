@@ -3,19 +3,19 @@ import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "Online At-Home Ketamine Therapy in Florida",
-  description: "Florida residents: at-home ketamine therapy starting at $398. 88.8% of patients improve. Same-day appointments. No referral needed.",
+  description: "Florida residents: at-home ketamine therapy starting at $398. 88.8% of patients improve. Same-day appointments. Therapist referral required.",
   alternates: {
     canonical: "https://isha.health/locations/online-at-home-ketamine-therapy-in-florida",
   },
   openGraph: buildOpenGraph({
     title: "Online At-Home Ketamine Therapy in Florida",
-    description: "Florida residents: at-home ketamine therapy starting at $398. 88.8% of patients improve. Same-day appointments. No referral needed.",
+    description: "Florida residents: at-home ketamine therapy starting at $398. 88.8% of patients improve. Same-day appointments. Therapist referral required.",
     path: '/locations/online-at-home-ketamine-therapy-in-florida',
   }),
   twitter: {
     card: "summary_large_image",
     title: "Online At-Home Ketamine Therapy in Florida",
-    description: "Florida residents: at-home ketamine therapy starting at $398. 88.8% of patients improve. Same-day appointments. No referral needed.",
+    description: "Florida residents: at-home ketamine therapy starting at $398. 88.8% of patients improve. Same-day appointments. Therapist referral required.",
   },
 };
 
@@ -52,7 +52,7 @@ export default function Page() {
     <h2 style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#111827;margin-bottom:0.75rem;">Why Choose Isha Health for At-Home Ketamine Treatment in Florida?</h2>
     <img src="/images/3a27d97b_67acf5b26c5a83cdd332b761_pexels-esra-afsar-123882149-30411707__1).jpg" loading="lazy" alt="At-home ketamine therapy" style="max-width:100%;max-height:380px;width:auto;height:auto;display:block;margin:0 auto;border-radius:10px;margin-bottom:1rem;">
     <ul style="padding-left:1.25rem;">
-      <li style="margin-bottom:0.75rem;"><strong>Appointments available in as little as 24 hours</strong><br>No long wait times — schedule your initial consultation quickly and start your healing journey immediately.</li>
+      <li style="margin-bottom:0.75rem;"><strong>Appointments available in as little as 24 hours</strong><br>No long wait times — once your therapist refers you, we schedule your initial consultation quickly and start your healing journey immediately.</li>
       <li style="margin-bottom:0.75rem;"><strong>Expert guidance from licensed clinicians</strong><br>From your first session to ongoing support, our team of experienced clinicians ensures a safe and effective online therapy experience in Florida.</li>
       <li style="margin-bottom:0.75rem;"><strong>Affordable, evidence-based treatment at home</strong><br>Experience psychiatric care in a way that fits your lifestyle. Our at-home ketamine therapy is designed to be affordable, flexible, and accessible.</li>
       <li style="margin-bottom:0.75rem;"><strong>An alternative to traditional ketamine clinics</strong><br>Isha Health provides a fully remote option, making ketamine therapy in Florida more convenient, private, and effective.</li>
@@ -151,7 +151,7 @@ export default function Page() {
     </div>
     <div style="border-bottom:1px solid #e5e7eb;padding-bottom:1rem;margin-bottom:1rem;">
       <h3 style="font-size:1.05rem;font-weight:700;color:#111827;margin:0 0 0.5rem;">4. How do I get started with at-home ketamine treatment in Florida?</h3>
-      <p style="margin:0;">Schedule an initial consultation with one of our licensed clinicians. After your medical evaluation, treatment will begin within days, providing fast access to alternative depression treatments.</p>
+      <p style="margin:0;">Your therapist refers you for an initial consultation with one of our licensed clinicians. After your medical evaluation, treatment will begin within days, providing fast access to alternative depression treatments.</p>
     </div>
     <div style="border-bottom:1px solid #e5e7eb;padding-bottom:1rem;margin-bottom:1rem;">
       <h3 style="font-size:1.05rem;font-weight:700;color:#111827;margin:0 0 0.5rem;">5. What makes at-home ketamine treatment different from in-clinic treatment?</h3>
@@ -181,7 +181,7 @@ export default function Page() {
   <section style="text-align:center;margin-bottom:2.5rem;">
     <h2 style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#111827;margin-bottom:0.75rem;">Start Your At-Home Ketamine Treatment in Florida Today</h2>
     <p>Take control of your mental health with Isha Health's affordable, expert-led at-home ketamine therapy.</p>
-    <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.85rem 2rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:0.95rem;margin-top:1rem;">Book a Consultation</a>
+    <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.85rem 2rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:0.95rem;margin-top:1rem;">See How Referrals Work</a>
   </section>
 
   <section style="margin-bottom:2rem;">
@@ -203,7 +203,7 @@ export default function Page() {
 {"@type":"Question","name":"Is ketamine nasal spray available as part of treatment?","acceptedAnswer":{"@type":"Answer","text":"Currently, Isha Health provides sublingual ketamine lozenges for at-home treatment, which offer a safe and effective alternative to ketamine nasal spray."}},
 {"@type":"Question","name":"Can I combine at-home ketamine therapy with other treatments?","acceptedAnswer":{"@type":"Answer","text":"Yes, many patients incorporate integrative health approaches alongside ketamine therapy for enhanced mental health benefits."}},
 {"@type":"Question","name":"Does at-home ketamine therapy help with stress management?","acceptedAnswer":{"@type":"Answer","text":"Many patients find that they're better able to manage stress after their ketamine sessions, often due to the insights gained during treatment."}},
-{"@type":"Question","name":"How do I get started with at-home ketamine treatment in Florida?","acceptedAnswer":{"@type":"Answer","text":"Schedule an initial consultation with one of our licensed clinicians. After your medical evaluation, treatment will begin within days."}},
+{"@type":"Question","name":"How do I get started with at-home ketamine treatment in Florida?","acceptedAnswer":{"@type":"Answer","text":"Your therapist refers you for an initial consultation with one of our licensed clinicians. After your medical evaluation, treatment will begin within days."}},
 {"@type":"Question","name":"What makes at-home ketamine treatment in Florida different from in-clinic treatment?","acceptedAnswer":{"@type":"Answer","text":"At-home treatment offers the convenience of receiving therapy in a familiar and comfortable environment with continuous monitoring and guidance."}},
 {"@type":"Question","name":"Are follow-up appointments required?","acceptedAnswer":{"@type":"Answer","text":"Yes, regular follow-ups are essential to track progress and make necessary adjustments to your mental wellness program."}},
 {"@type":"Question","name":"What should I do if I experience side effects?","acceptedAnswer":{"@type":"Answer","text":"Mild side effects like nausea or dizziness are common but temporary. Our team is available to provide guidance and support."}},

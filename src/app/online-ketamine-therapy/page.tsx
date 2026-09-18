@@ -66,7 +66,7 @@ export default function OnlineKetamineTherapyPage() {
         name: 'Do I need a referral for online ketamine therapy?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'No referral is needed. You can book a consultation directly through the Isha Health website. During the initial evaluation, the psychiatrist will determine whether ketamine therapy is appropriate for your condition.',
+          text: 'Yes — Isha Health sees new patients by referral from a collaborating therapist. Your therapist submits the referral, then we contact you to schedule. During the initial evaluation, the psychiatrist will determine whether ketamine therapy is appropriate for your condition.',
         },
       },
       {
@@ -300,7 +300,7 @@ export default function OnlineKetamineTherapyPage() {
 
       <div style="margin-bottom:1.5rem;">
         <h3 style="font-family:'Poppins',sans-serif;font-size:1rem;font-weight:600;color:#111827;margin-bottom:0.5rem;">Do I need a referral?</h3>
-        <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#374151;line-height:1.7;">No referral is needed. You can book a consultation directly through the Isha Health website. During the initial evaluation, the psychiatrist will determine whether ketamine therapy is appropriate for your condition.</p>
+        <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#374151;line-height:1.7;">Yes — Isha Health sees new patients by referral from a collaborating therapist. Your therapist submits the referral, then we contact you to schedule. During the initial evaluation, the psychiatrist will determine whether ketamine therapy is appropriate for your condition.</p>
       </div>
 
       <div style="margin-bottom:1.5rem;">
@@ -320,9 +320,9 @@ export default function OnlineKetamineTherapyPage() {
 
   <!-- CTA -->
     <div style="background-color:#f0fdfa;padding:2.5rem;border-radius:12px;text-align:center;border:1px solid #ccfbf1;">
-      <p style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#0f766e;margin-bottom:0.5rem;">Start Online Ketamine Therapy Today</p>
-      <p style="font-family:'Poppins',sans-serif;color:#4b5563;margin-bottom:1.5rem;font-size:0.95rem;">Book a 60-minute consultation with a board-certified psychiatrist.</p>
-      <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.85rem 2.5rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:1rem;font-family:'Poppins',sans-serif;">Check Appointment Availability</a>
+      <p style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#0f766e;margin-bottom:0.5rem;">Start Online Ketamine Therapy</p>
+      <p style="font-family:'Poppins',sans-serif;color:#4b5563;margin-bottom:1.5rem;font-size:0.95rem;">New patients are seen by referral from a collaborating therapist. Once referred, your first visit is a 60-minute consultation with a board-certified psychiatrist.</p>
+      <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.85rem 2.5rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:1rem;font-family:'Poppins',sans-serif;">See How Referrals Work</a>
     </div>
 
     <p style="font-family:'Poppins',sans-serif;font-size:0.75rem;color:#9ca3af;text-align:center;margin-top:2rem;">

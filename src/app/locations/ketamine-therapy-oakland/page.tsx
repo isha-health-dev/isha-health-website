@@ -3,17 +3,17 @@ import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "At-Home Ketamine Therapy in Oakland, CA",
-  description: "Physician-led online ketamine therapy in Oakland, California for depression, anxiety, PTSD. At-home, no clinic visits. Book a consultation.",
+  description: "Physician-led online ketamine therapy in Oakland, California for depression, anxiety, PTSD. At-home, no clinic visits. New patients by therapist referral.",
   alternates: { canonical: "https://isha.health/locations/ketamine-therapy-oakland" },
   openGraph: buildOpenGraph({
     title: "At-Home Ketamine Therapy in Oakland, CA",
-    description: "Physician-led online ketamine therapy in Oakland, California for depression, anxiety, PTSD. At-home, no clinic visits. Book a consultation.",
+    description: "Physician-led online ketamine therapy in Oakland, California for depression, anxiety, PTSD. At-home, no clinic visits. New patients by therapist referral.",
     path: '/locations/ketamine-therapy-oakland',
   }),
   twitter: {
     card: "summary_large_image",
     title: "At-Home Ketamine Therapy in Oakland, CA",
-    description: "Physician-led online ketamine therapy in Oakland, California for depression, anxiety, PTSD. At-home, no clinic visits. Book a consultation.",
+    description: "Physician-led online ketamine therapy in Oakland, California for depression, anxiety, PTSD. At-home, no clinic visits. New patients by therapist referral.",
   },
 };
 
@@ -109,7 +109,7 @@ export default function Page() {
   <div style="background-color:#f0fdfa;padding:3rem 1.5rem;text-align:center;border-top:1px solid #ccfbf1;">
     <p style="font-family:'Libre Baskerville',serif;font-size:1.3rem;font-weight:700;color:#0f766e;margin-bottom:0.5rem;">Ready to start feeling better?</p>
     <p style="font-family:'Poppins',sans-serif;color:#4b5563;margin-bottom:1.5rem;font-size:0.95rem;">Appointments often available within 24 hours for patients in Oakland.</p>
-    <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.85rem 2.5rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:1rem;font-family:'Poppins',sans-serif;">Check Appointment Availability</a>
+    <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.85rem 2.5rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:1rem;font-family:'Poppins',sans-serif;">See How Referrals Work</a>
   </div>
 </div>`
       }}
