@@ -57,6 +57,42 @@ const nextConfig = {
         destination: 'https://isha.health/ketamine-therapist-directory',
         permanent: true,
       },
+      // Florida pages — service no longer offered in FL (2026-09-18)
+      {
+        source: '/locations/online-at-home-ketamine-therapy-in-florida',
+        destination: '/online-ketamine-therapy',
+        permanent: true,
+      },
+      {
+        source: '/locations/ketamine-therapy-miami',
+        destination: '/online-ketamine-therapy',
+        permanent: true,
+      },
+      {
+        source: '/locations/ketamine-therapy-tampa',
+        destination: '/online-ketamine-therapy',
+        permanent: true,
+      },
+      {
+        source: '/locations/ketamine-therapy-orlando',
+        destination: '/online-ketamine-therapy',
+        permanent: true,
+      },
+      {
+        source: '/locations/ketamine-therapy-jacksonville',
+        destination: '/online-ketamine-therapy',
+        permanent: true,
+      },
+      {
+        source: '/locations/ketamine-therapy-st-petersburg',
+        destination: '/online-ketamine-therapy',
+        permanent: true,
+      },
+      {
+        source: '/locations/ketamine-therapy-fort-lauderdale',
+        destination: '/online-ketamine-therapy',
+        permanent: true,
+      },
       // Arizona pages — service no longer offered in AZ (2026-05-26)
       {
         source: '/locations/online-at-home-ketamine-therapy-in-arizona',

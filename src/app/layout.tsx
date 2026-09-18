@@ -197,7 +197,7 @@ const footerHtml = `
           <a href="/locations/online-at-home-ketamine-therapy-in-oregon" style="color:#ccc;text-decoration:none;font-size:14px;padding:4px 0;">Oregon</a>
           <a href="/locations/online-at-home-ketamine-therapy-in-colorado" style="color:#ccc;text-decoration:none;font-size:14px;padding:4px 0;">Colorado</a>
           <a href="/locations/online-at-home-ketamine-therapy-in-washington" style="color:#ccc;text-decoration:none;font-size:14px;padding:4px 0;">Washington</a>
-          <a href="/locations/online-at-home-ketamine-therapy-in-florida" style="color:#ccc;text-decoration:none;font-size:14px;padding:4px 0;">Florida</a>
+          
           <a href="/locations/online-at-home-ketamine-therapy-in-texas" style="color:#ccc;text-decoration:none;font-size:14px;padding:4px 0;">Texas</a>
           <a href="/locations/online-at-home-ketamine-therapy-in-georgia" style="color:#ccc;text-decoration:none;font-size:14px;padding:4px 0;">Georgia</a>
         </div>
@@ -285,7 +285,6 @@ gtag('config', 'AW-16993591045');`,
               areaServed: [
                 { '@type': 'AdministrativeArea', name: 'California' },
                 { '@type': 'AdministrativeArea', name: 'Colorado' },
-                { '@type': 'AdministrativeArea', name: 'Florida' },
                 { '@type': 'AdministrativeArea', name: 'Georgia' },
                 { '@type': 'AdministrativeArea', name: 'Oregon' },
                 { '@type': 'AdministrativeArea', name: 'Texas' },

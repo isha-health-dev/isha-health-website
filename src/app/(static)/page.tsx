@@ -7,7 +7,7 @@ const dims = imageDims as Record<string, { w: number; h: number }>;
 
 export const metadata: Metadata = {
   title: "Online Ketamine Therapy in San Francisco, California",
-  description: "California's evidence-based at-home ketamine therapy for depression, anxiety, and PTSD. 88.8% of patients improve. $398 with a board-certified physician. Also serving CO, FL, GA, OR, TX, WA.",
+  description: "California's evidence-based at-home ketamine therapy for depression, anxiety, and PTSD. 88.8% of patients improve. $398 with a board-certified physician. Also serving CO, GA, OR, TX, WA.",
   alternates: {
     canonical: "https://isha.health",
   },

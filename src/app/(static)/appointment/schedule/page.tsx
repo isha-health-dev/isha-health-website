@@ -45,7 +45,7 @@ export default function Page() {
   </div>
 
   <div style="margin-bottom:1rem;">
-    <p style="font-family:'Poppins',sans-serif;font-size:0.85rem;font-weight:600;color:#111827;margin-bottom:0.5rem;">Available in: AZ, CA, CO, FL, GA, OR, TX, WA</p>
+    <p style="font-family:'Poppins',sans-serif;font-size:0.85rem;font-weight:600;color:#111827;margin-bottom:0.5rem;">Available in: CA, CO, GA, OR, TX, WA</p>
   </div>
 
   <div id="all-states-booking" style="border:1px solid #e5e7eb;border-radius:10px;overflow:hidden;">
