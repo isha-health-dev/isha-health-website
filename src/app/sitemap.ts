@@ -108,7 +108,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const statePages = [
     'online-at-home-ketamine-therapy-in-california',
     'online-at-home-ketamine-therapy-in-colorado',
-    'online-at-home-ketamine-therapy-in-florida',
     'online-at-home-ketamine-therapy-in-georgia',
     'online-at-home-ketamine-therapy-in-oregon',
     'online-at-home-ketamine-therapy-in-texas',
@@ -132,7 +131,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     'ketamine-therapy-houston',
     'ketamine-therapy-dallas',
     'ketamine-therapy-austin',
-    'ketamine-therapy-miami',
     'ketamine-therapy-denver',
     'ketamine-therapy-atlanta',
     'ketamine-therapy-portland',

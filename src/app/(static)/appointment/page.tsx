@@ -35,7 +35,7 @@ export default function Page() {
 
   <div style="background:#f0fdfa;border:1px solid #99f6e4;border-radius:10px;padding:1.25rem 1.5rem;margin-bottom:2.5rem;">
     <p style="font-family:'Poppins',sans-serif;font-size:0.95rem;color:#115e59;line-height:1.7;margin:0;">
-      <strong>Already a patient at Isha Health?</strong> This change does not affect you. Continue to book follow-ups on the <a href="/current-patients/scheduling" style="color:#0d9488;text-decoration:underline;font-weight:600;">Current Patients scheduling page</a>.
+      <strong>Already a patient at Isha Health?</strong> Continue to book follow-ups on the <a href="/current-patients/scheduling" style="color:#0d9488;text-decoration:underline;font-weight:600;">Current Patients scheduling page</a>.
     </p>
   </div>
 
@@ -66,7 +66,7 @@ export default function Page() {
   <div style="background:#f9fafb;border:1px solid #e5e7eb;border-radius:10px;padding:1.5rem;">
     <h2 style="font-family:'Libre Baskerville',serif;font-size:1.1rem;font-weight:700;color:#111827;margin-bottom:1rem;">What to Expect Once You Are Referred</h2>
     <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#4b5563;line-height:1.7;margin-bottom:1rem;">
-      Your first visit is a 60-minute consultation with a physician, $398. We treat patients in AZ, CA, CO, FL, GA, OR, TX, and WA.
+      Your first visit is a 60-minute consultation with a physician and costs $398. We treat patients in CA, CO, GA, OR, TX, and WA.
     </p>
     <p style="font-family:'Poppins',sans-serif;font-size:0.85rem;color:#6b7280;line-height:1.6;margin-bottom:0.75rem;">
       Isha Health does not accept insurance, including Medicaid and Medicare. Payment is due at the time of service.

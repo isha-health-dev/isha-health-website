@@ -4,7 +4,7 @@ import { buildOpenGraph } from '@/lib/seo';
 export const metadata: Metadata = {
   title: 'Physician-Led Online Ketamine Therapy in California: At-Home from $398',
   description:
-    "California's physician-led at-home ketamine therapy from $398/session. Dr. Shimada has provided ketamine care since 2013. 88.8% of 500+ patients improve. Also available in CO, FL, GA, OR, TX, WA.",
+    "California's physician-led at-home ketamine therapy from $398/session. Dr. Shimada has provided ketamine care since 2013. 88.8% of 500+ patients improve. Also available in CO, GA, OR, TX, WA.",
   alternates: { canonical: 'https://isha.health/online-ketamine-therapy' },
   openGraph: buildOpenGraph({
     title: 'Physician-Led Online Ketamine Therapy in California: At-Home from $398',
@@ -209,7 +209,6 @@ export default function OnlineKetamineTherapyPage() {
       <div style="display:flex;flex-wrap:wrap;gap:0.75rem;margin-bottom:1.5rem;">
         <a href="/locations/online-at-home-ketamine-therapy-in-california" style="display:inline-block;padding:0.5rem 1rem;background:#f0fdfa;border:1px solid #ccfbf1;border-radius:8px;color:#0f766e;text-decoration:none;font-family:'Poppins',sans-serif;font-size:0.9rem;font-weight:500;">California</a>
         <a href="/locations/online-at-home-ketamine-therapy-in-colorado" style="display:inline-block;padding:0.5rem 1rem;background:#f0fdfa;border:1px solid #ccfbf1;border-radius:8px;color:#0f766e;text-decoration:none;font-family:'Poppins',sans-serif;font-size:0.9rem;font-weight:500;">Colorado</a>
-        <a href="/locations/online-at-home-ketamine-therapy-in-florida" style="display:inline-block;padding:0.5rem 1rem;background:#f0fdfa;border:1px solid #ccfbf1;border-radius:8px;color:#0f766e;text-decoration:none;font-family:'Poppins',sans-serif;font-size:0.9rem;font-weight:500;">Florida</a>
         <a href="/locations/online-at-home-ketamine-therapy-in-georgia" style="display:inline-block;padding:0.5rem 1rem;background:#f0fdfa;border:1px solid #ccfbf1;border-radius:8px;color:#0f766e;text-decoration:none;font-family:'Poppins',sans-serif;font-size:0.9rem;font-weight:500;">Georgia</a>
         <a href="/locations/online-at-home-ketamine-therapy-in-oregon" style="display:inline-block;padding:0.5rem 1rem;background:#f0fdfa;border:1px solid #ccfbf1;border-radius:8px;color:#0f766e;text-decoration:none;font-family:'Poppins',sans-serif;font-size:0.9rem;font-weight:500;">Oregon</a>
         <a href="/locations/online-at-home-ketamine-therapy-in-texas" style="display:inline-block;padding:0.5rem 1rem;background:#f0fdfa;border:1px solid #ccfbf1;border-radius:8px;color:#0f766e;text-decoration:none;font-family:'Poppins',sans-serif;font-size:0.9rem;font-weight:500;">Texas</a>

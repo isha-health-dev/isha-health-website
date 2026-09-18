@@ -31,7 +31,7 @@ export default function PricingPage() {
       {
         "@type": "Question",
         "name": "Which states does Isha Health serve?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Isha Health offers ketamine-assisted therapy in Arizona, California, Colorado, Florida, Georgia, Oregon, Texas, and Washington." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Isha Health offers ketamine-assisted therapy in California, Colorado, Georgia, Oregon, Texas, and Washington." }
       },
       {
         "@type": "Question",
@@ -197,7 +197,7 @@ export default function PricingPage() {
 
     <div style="border-bottom:1px solid #e5e7eb;padding:1.25rem 0;">
       <h3 style="font-family:'Poppins',sans-serif;font-size:1rem;font-weight:600;color:#111827;margin-bottom:0.5rem;">Which states do you serve?</h3>
-      <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#4b5563;line-height:1.6;">We offer ketamine-assisted therapy in <a href="/locations/online-at-home-ketamine-therapy-in-arizona" style="color:#0d9488;text-decoration:underline;">Arizona</a>, <a href="/locations/online-at-home-ketamine-therapy-in-california" style="color:#0d9488;text-decoration:underline;">California</a>, <a href="/locations/online-at-home-ketamine-therapy-in-colorado" style="color:#0d9488;text-decoration:underline;">Colorado</a>, <a href="/locations/online-at-home-ketamine-therapy-in-florida" style="color:#0d9488;text-decoration:underline;">Florida</a>, <a href="/locations/online-at-home-ketamine-therapy-in-georgia" style="color:#0d9488;text-decoration:underline;">Georgia</a>, <a href="/locations/online-at-home-ketamine-therapy-in-oregon" style="color:#0d9488;text-decoration:underline;">Oregon</a>, <a href="/locations/online-at-home-ketamine-therapy-in-texas" style="color:#0d9488;text-decoration:underline;">Texas</a>, and <a href="/locations/online-at-home-ketamine-therapy-in-washington" style="color:#0d9488;text-decoration:underline;">Washington</a>.</p>
+      <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#4b5563;line-height:1.6;">We offer ketamine-assisted therapy in <a href="/locations/online-at-home-ketamine-therapy-in-california" style="color:#0d9488;text-decoration:underline;">California</a>, <a href="/locations/online-at-home-ketamine-therapy-in-colorado" style="color:#0d9488;text-decoration:underline;">Colorado</a>, <a href="/locations/online-at-home-ketamine-therapy-in-georgia" style="color:#0d9488;text-decoration:underline;">Georgia</a>, <a href="/locations/online-at-home-ketamine-therapy-in-oregon" style="color:#0d9488;text-decoration:underline;">Oregon</a>, <a href="/locations/online-at-home-ketamine-therapy-in-texas" style="color:#0d9488;text-decoration:underline;">Texas</a>, and <a href="/locations/online-at-home-ketamine-therapy-in-washington" style="color:#0d9488;text-decoration:underline;">Washington</a>.</p>
     </div>
 
     <div style="border-bottom:1px solid #e5e7eb;padding:1.25rem 0;">
@@ -231,7 +231,7 @@ export default function PricingPage() {
     <h2 style="font-family:'Libre Baskerville',serif;font-size:1.35rem;font-weight:700;color:#0f766e;margin-bottom:0.5rem;">Ready to feel better?</h2>
     <p style="font-family:'Poppins',sans-serif;color:#4b5563;margin-bottom:1.5rem;font-size:0.95rem;max-width:500px;margin-left:auto;margin-right:auto;text-wrap:pretty;">New patients start with a referral from a collaborating therapist. Your first visit is a 60-minute physician consultation, with a treatment plan built around you — not a template.</p>
     <a href="/appointment" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.85rem 2.5rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:1rem;font-family:'Poppins',sans-serif;">See How Referrals Work</a>
-    <p style="font-family:'Poppins',sans-serif;font-size:0.8rem;color:#9ca3af;margin-top:1rem;">Available in AZ, CA, CO, FL, GA, OR, TX, and WA</p>
+    <p style="font-family:'Poppins',sans-serif;font-size:0.8rem;color:#9ca3af;margin-top:1rem;">Available in CA, CO, GA, OR, TX, and WA</p>
   </div>
 </div>
 `,
