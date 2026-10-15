@@ -4,18 +4,18 @@ import { getTherapistsForCity } from '@/lib/city-therapists';
 
 export const metadata: Metadata = {
   title: "At-Home Ketamine Therapy in Brooklyn, NY",
-  description: "Online ketamine-assisted therapy in Brooklyn, New York. Physician-led at-home treatment for depression, anxiety, and PTSD. At-home, by therapist referral.",
+  description: "Online ketamine-assisted therapy in Brooklyn, New York. Physician-led at-home treatment for depression, anxiety, and PTSD. At-home, by referral only.",
   alternates: { canonical: "https://isha.health/locations/ketamine-therapy-brooklyn" },
   // NY service paused — fall back to locations/layout.tsx noindex.
   openGraph: buildOpenGraph({
     title: "At-Home Ketamine Therapy in Brooklyn, NY",
-    description: "Online ketamine-assisted therapy in Brooklyn, New York. Physician-led at-home treatment for depression, anxiety, and PTSD. At-home, by therapist referral.",
+    description: "Online ketamine-assisted therapy in Brooklyn, New York. Physician-led at-home treatment for depression, anxiety, and PTSD. At-home, by referral only.",
     path: '/locations/ketamine-therapy-brooklyn',
   }),
   twitter: {
     card: "summary_large_image",
     title: "At-Home Ketamine Therapy in Brooklyn, NY",
-    description: "Online ketamine-assisted therapy in Brooklyn, New York. Physician-led at-home treatment for depression, anxiety, and PTSD. At-home, by therapist referral.",
+    description: "Online ketamine-assisted therapy in Brooklyn, New York. Physician-led at-home treatment for depression, anxiety, and PTSD. At-home, by referral only.",
   },
 };
 

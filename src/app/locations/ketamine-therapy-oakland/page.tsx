@@ -3,17 +3,17 @@ import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "At-Home Ketamine Therapy in Oakland, CA",
-  description: "Physician-led online ketamine therapy in Oakland, California for depression, anxiety, PTSD. At-home, no clinic visits. New patients by therapist referral.",
+  description: "Physician-led online ketamine therapy in Oakland, California for depression, anxiety, PTSD. At-home, no clinic visits. New patients by referral only.",
   alternates: { canonical: "https://isha.health/locations/ketamine-therapy-oakland" },
   openGraph: buildOpenGraph({
     title: "At-Home Ketamine Therapy in Oakland, CA",
-    description: "Physician-led online ketamine therapy in Oakland, California for depression, anxiety, PTSD. At-home, no clinic visits. New patients by therapist referral.",
+    description: "Physician-led online ketamine therapy in Oakland, California for depression, anxiety, PTSD. At-home, no clinic visits. New patients by referral only.",
     path: '/locations/ketamine-therapy-oakland',
   }),
   twitter: {
     card: "summary_large_image",
     title: "At-Home Ketamine Therapy in Oakland, CA",
-    description: "Physician-led online ketamine therapy in Oakland, California for depression, anxiety, PTSD. At-home, no clinic visits. New patients by therapist referral.",
+    description: "Physician-led online ketamine therapy in Oakland, California for depression, anxiety, PTSD. At-home, no clinic visits. New patients by referral only.",
   },
 };
 

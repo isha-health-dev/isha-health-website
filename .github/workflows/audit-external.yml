@@ -1,8 +1,12 @@
 name: External link audit (weekly)
 
 on:
-  schedule:
-    - cron: '0 8 * * 0' # Sundays 08:00 UTC
+  # Schedule disabled 2026-10-15: site is noindexed and intake is referral-only,
+  # so the automated publishing/indexing/promotion cadence is no longer wanted.
+  # Re-enable by uncommenting, and also `gh workflow enable <file>` (the workflow
+  # is additionally disabled on the GitHub side).
+  # schedule:
+  # - cron: '0 8 * * 0' # Sundays 08:00 UTC
   workflow_dispatch:
 
 permissions:

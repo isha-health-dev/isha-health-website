@@ -1,15 +1,21 @@
 name: Auto-tweet new blog posts
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'content/blog/**.mdx'
-  schedule:
-    # Daily at 14:00 UTC (10am ET in EDT, 9am ET in EST) — picks up
-    # posts whose `date:` falls on the current day per the staggered
-    # publishing schedule.
-    - cron: '0 14 * * *'
+  # Push trigger disabled 2026-10-15 alongside the schedule: posting new posts
+  # to X is a discovery channel, which the noindex rollout is meant to close.
+  # push:
+  #   branches: [main]
+  #   paths:
+  #     - 'content/blog/**.mdx'
+  # Schedule disabled 2026-10-15: site is noindexed and intake is referral-only,
+  # so the automated publishing/indexing/promotion cadence is no longer wanted.
+  # Re-enable by uncommenting, and also `gh workflow enable <file>` (the workflow
+  # is additionally disabled on the GitHub side).
+  # schedule:
+  # # Daily at 14:00 UTC (10am ET in EDT, 9am ET in EST) — picks up
+  # # posts whose `date:` falls on the current day per the staggered
+  # # publishing schedule.
+  # - cron: '0 14 * * *'
   workflow_dispatch:
     inputs:
       dry_run:

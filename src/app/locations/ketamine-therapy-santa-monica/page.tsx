@@ -3,17 +3,17 @@ import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "At-Home Ketamine Therapy in Santa Monica, CA",
-  description: "Physician-led online ketamine therapy in Santa Monica, California for depression, anxiety, PTSD. At-home, by therapist referral.",
+  description: "Physician-led online ketamine therapy in Santa Monica, California for depression, anxiety, PTSD. At-home, by referral only.",
   alternates: { canonical: "https://isha.health/locations/ketamine-therapy-santa-monica" },
   openGraph: buildOpenGraph({
     title: "At-Home Ketamine Therapy in Santa Monica, CA",
-    description: "Physician-led online ketamine therapy in Santa Monica, California for depression, anxiety, PTSD. At-home, by therapist referral.",
+    description: "Physician-led online ketamine therapy in Santa Monica, California for depression, anxiety, PTSD. At-home, by referral only.",
     path: '/locations/ketamine-therapy-santa-monica',
   }),
   twitter: {
     card: "summary_large_image",
     title: "At-Home Ketamine Therapy in Santa Monica, CA",
-    description: "Physician-led online ketamine therapy in Santa Monica, California for depression, anxiety, PTSD. At-home, by therapist referral.",
+    description: "Physician-led online ketamine therapy in Santa Monica, California for depression, anxiety, PTSD. At-home, by referral only.",
   },
 };
 
