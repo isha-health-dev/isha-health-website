@@ -4,17 +4,17 @@ import { getTherapistsForCity } from '@/lib/city-therapists';
 
 export const metadata: Metadata = {
   title: "At-Home Ketamine Therapy in Seattle, WA",
-  description: "Online ketamine-assisted therapy in Seattle, Washington. Physician-led at-home treatment for depression, anxiety, and PTSD. At-home, by therapist referral.",
+  description: "Online ketamine-assisted therapy in Seattle, Washington. Physician-led at-home treatment for depression, anxiety, and PTSD. At-home, by referral only.",
   alternates: { canonical: "https://isha.health/locations/ketamine-therapy-seattle" },
   openGraph: buildOpenGraph({
     title: "At-Home Ketamine Therapy in Seattle, WA",
-    description: "Online ketamine-assisted therapy in Seattle, Washington. Physician-led at-home treatment for depression, anxiety, and PTSD. At-home, by therapist referral.",
+    description: "Online ketamine-assisted therapy in Seattle, Washington. Physician-led at-home treatment for depression, anxiety, and PTSD. At-home, by referral only.",
     path: '/locations/ketamine-therapy-seattle',
   }),
   twitter: {
     card: "summary_large_image",
     title: "At-Home Ketamine Therapy in Seattle, WA",
-    description: "Online ketamine-assisted therapy in Seattle, Washington. Physician-led at-home treatment for depression, anxiety, and PTSD. At-home, by therapist referral.",
+    description: "Online ketamine-assisted therapy in Seattle, Washington. Physician-led at-home treatment for depression, anxiety, and PTSD. At-home, by referral only.",
   },
 };
 

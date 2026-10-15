@@ -3,17 +3,17 @@ import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "At-Home Ketamine Therapy in Fort Collins, CO",
-  description: "Physician-led online ketamine therapy in Fort Collins, Colorado for depression, anxiety, PTSD. At-home, by therapist referral.",
+  description: "Physician-led online ketamine therapy in Fort Collins, Colorado for depression, anxiety, PTSD. At-home, by referral only.",
   alternates: { canonical: "https://isha.health/locations/ketamine-therapy-fort-collins" },
   openGraph: buildOpenGraph({
     title: "At-Home Ketamine Therapy in Fort Collins, CO",
-    description: "Physician-led online ketamine therapy in Fort Collins, Colorado for depression, anxiety, PTSD. At-home, by therapist referral.",
+    description: "Physician-led online ketamine therapy in Fort Collins, Colorado for depression, anxiety, PTSD. At-home, by referral only.",
     path: '/locations/ketamine-therapy-fort-collins',
   }),
   twitter: {
     card: "summary_large_image",
     title: "At-Home Ketamine Therapy in Fort Collins, CO",
-    description: "Physician-led online ketamine therapy in Fort Collins, Colorado for depression, anxiety, PTSD. At-home, by therapist referral.",
+    description: "Physician-led online ketamine therapy in Fort Collins, Colorado for depression, anxiety, PTSD. At-home, by referral only.",
   },
 };
 

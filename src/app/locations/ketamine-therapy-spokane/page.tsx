@@ -3,17 +3,17 @@ import { buildOpenGraph } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: "At-Home Ketamine Therapy in Spokane, WA",
-  description: "Physician-led online ketamine therapy in Spokane, Washington for depression, anxiety, PTSD. At-home, no clinic visits. New patients by therapist referral.",
+  description: "Physician-led online ketamine therapy in Spokane, Washington for depression, anxiety, PTSD. At-home, no clinic visits. New patients by referral only.",
   alternates: { canonical: "https://isha.health/locations/ketamine-therapy-spokane" },
   openGraph: buildOpenGraph({
     title: "At-Home Ketamine Therapy in Spokane, WA",
-    description: "Physician-led online ketamine therapy in Spokane, Washington for depression, anxiety, PTSD. At-home, no clinic visits. New patients by therapist referral.",
+    description: "Physician-led online ketamine therapy in Spokane, Washington for depression, anxiety, PTSD. At-home, no clinic visits. New patients by referral only.",
     path: '/locations/ketamine-therapy-spokane',
   }),
   twitter: {
     card: "summary_large_image",
     title: "At-Home Ketamine Therapy in Spokane, WA",
-    description: "Physician-led online ketamine therapy in Spokane, Washington for depression, anxiety, PTSD. At-home, no clinic visits. New patients by therapist referral.",
+    description: "Physician-led online ketamine therapy in Spokane, Washington for depression, anxiety, PTSD. At-home, no clinic visits. New patients by referral only.",
   },
 };
 

@@ -47,7 +47,7 @@ const navbarHtml = `
 <nav style="position:sticky;top:0;z-index:1000;font-family:'Poppins',sans-serif;background:#fff;">
   <!-- Top bar -->
   <div style="background:#2d3436;color:#fff;text-align:center;padding:8px 16px;font-size:13px;letter-spacing:0.3px;">
-    Initial physician consultation: <span style="text-decoration:line-through;opacity:0.7;">$796</span> <strong>$398</strong> — new patients by therapist referral. <a href="/appointment" style="color:#5eead4;text-decoration:underline;">How to get referred</a>
+    Initial physician consultation: <span style="text-decoration:line-through;opacity:0.7;">$796</span> <strong>$398</strong> — new patients by referral only. <a href="/appointment" style="color:#5eead4;text-decoration:underline;">How to get referred</a>
   </div>
   <!-- Main navbar -->
   <div style="max-width:1200px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;">
