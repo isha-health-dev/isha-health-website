@@ -7,7 +7,6 @@ const description =
 export const metadata: Metadata = {
   title: 'Request Your Superbill',
   description,
-  robots: { index: true, follow: true },
   openGraph: buildOpenGraph({
     title: 'Request Your Superbill | Isha Health',
     description,

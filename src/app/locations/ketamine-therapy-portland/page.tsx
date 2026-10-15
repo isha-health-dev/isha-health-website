@@ -6,7 +6,6 @@ export const metadata: Metadata = {
   title: "At-Home Ketamine Therapy in Portland, OR",
   description: "Online ketamine-assisted therapy in Portland, Oregon. Physician-led at-home treatment for depression, anxiety, and PTSD. At-home, by therapist referral.",
   alternates: { canonical: "https://isha.health/locations/ketamine-therapy-portland" },
-  robots: { index: true, follow: true }, // Major metro — overrides locations/layout.tsx noindex
   openGraph: buildOpenGraph({
     title: "At-Home Ketamine Therapy in Portland, OR",
     description: "Online ketamine-assisted therapy in Portland, Oregon. Physician-led at-home treatment for depression, anxiety, and PTSD. At-home, by therapist referral.",

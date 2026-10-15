@@ -15,6 +15,16 @@ export const metadata: Metadata = {
     apple: '/apple-touch-icon.png',
   },
   metadataBase: new URL('https://isha.health'),
+  // Site-wide noindex: the site is reachable by direct URL but is not to be
+  // listed in search results. Crawling stays ALLOWED in robots.ts on purpose —
+  // a Disallow rule would stop crawlers fetching these pages, so they would
+  // never see this tag and already-indexed URLs would linger in results.
+  robots: {
+    index: false,
+    follow: false,
+    nocache: true,
+    googleBot: { index: false, follow: false },
+  },
   openGraph: {
     siteName: 'Isha Health',
     type: 'website',
