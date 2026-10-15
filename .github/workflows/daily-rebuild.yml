@@ -1,9 +1,13 @@
 name: Daily Rebuild for Scheduled Posts
 
 on:
-  schedule:
-    # Run at 7am UTC (midnight PT) every day
-    - cron: '0 7 * * *'
+  # Schedule disabled 2026-10-15: site is noindexed and intake is referral-only,
+  # so the automated publishing/indexing/promotion cadence is no longer wanted.
+  # Re-enable by uncommenting, and also `gh workflow enable <file>` (the workflow
+  # is additionally disabled on the GitHub side).
+  # schedule:
+  # # Run at 7am UTC (midnight PT) every day
+  # - cron: '0 7 * * *'
   workflow_dispatch: # Allow manual trigger
 
 jobs:

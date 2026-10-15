@@ -1,5 +1,7 @@
 {
-  "regions": ["sfo1"],
+  "regions": [
+    "sfo1"
+  ],
   "framework": "nextjs",
   "buildCommand": "next build",
   "outputDirectory": ".next",
@@ -8,16 +10,30 @@
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
       ]
     }
   ],
   "redirects": [
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "www.isha.health" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "www.isha.health"
+        }
+      ],
       "destination": "https://isha.health/:path*",
       "permanent": true
     }
@@ -26,12 +42,6 @@
     {
       "source": "/BingSiteAuth.xml",
       "destination": "/api/bing-auth"
-    }
-  ],
-  "crons": [
-    {
-      "path": "/api/cron/publish-scheduled",
-      "schedule": "0 7 * * *"
     }
   ]
 }
