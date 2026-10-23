@@ -303,7 +303,7 @@ gtag('config', 'AW-16993591045');`,
               founder: {
                 '@type': 'Person',
                 name: 'Mai Shimada, MD',
-                url: 'https://isha.health/dr-mai-shimada',
+                url: 'https://isha.health/about-us/about-isha-health',
                 jobTitle: 'Founder & CEO',
               },
               hasOfferCatalog: {
