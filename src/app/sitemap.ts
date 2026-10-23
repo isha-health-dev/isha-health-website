@@ -58,7 +58,6 @@ const staticPages = [
   'current-patients/scheduling',
   'current-patients/session-instruction',
   'current-patients/superbill',
-  'dr-mai-shimada',
   'faq',
   'good-faith-estimate',
   'healing-music-playlist',

@@ -57,6 +57,12 @@ const nextConfig = {
         destination: 'https://isha.health/ketamine-therapist-directory',
         permanent: true,
       },
+      // Founder bio page retired — folded into the about-us team page (2026-10-23)
+      {
+        source: '/dr-mai-shimada',
+        destination: '/about-us/about-isha-health',
+        permanent: true,
+      },
       // Florida pages — service no longer offered in FL (2026-09-18)
       {
         source: '/locations/online-at-home-ketamine-therapy-in-florida',

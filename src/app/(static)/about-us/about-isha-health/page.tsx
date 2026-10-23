@@ -84,16 +84,13 @@ export default function Page() {
 
     <!-- Lead Clinician (featured) -->
     <div style="display:flex;gap:0;align-items:stretch;margin-bottom:3.5rem;flex-wrap:wrap;background:#fff;border:1px solid #e5e7eb;border-radius:14px;overflow:hidden;box-shadow:0 2px 6px rgba(0,0,0,0.04);">
-      <a href="/dr-mai-shimada" style="display:block;flex:0 0 280px;min-width:0;">
-        <img src="/images/a4ede320_67fd440a4857c20020d732ef_Mai_profile.jpg" loading="lazy" width="293" height="300" alt="Dr. Mai Shimada, Founder and CEO of Isha Health" srcset="/images/ece85efe_67fd440a4857c20020d732ef_Mai_profile-p-500.jpg 500w, /images/5cb2995c_67fd440a4857c20020d732ef_Mai_profile-p-800.jpg 800w, /images/1b569815_67fd440a4857c20020d732ef_Mai_profile-p-1080.jpg 1080w" sizes="(max-width:639px) 100vw, 280px" style="width:100%;height:100%;min-height:280px;object-fit:cover;display:block;">
-      </a>
+      <img src="/images/a4ede320_67fd440a4857c20020d732ef_Mai_profile.jpg" loading="lazy" width="293" height="300" alt="Dr. Mai Shimada, Founder and CEO of Isha Health" srcset="/images/ece85efe_67fd440a4857c20020d732ef_Mai_profile-p-500.jpg 500w, /images/5cb2995c_67fd440a4857c20020d732ef_Mai_profile-p-800.jpg 800w, /images/1b569815_67fd440a4857c20020d732ef_Mai_profile-p-1080.jpg 1080w" sizes="(max-width:639px) 100vw, 280px" style="width:280px;height:100%;min-height:280px;object-fit:cover;display:block;">
       <div style="flex:1;min-width:260px;padding:2rem 2rem;display:flex;flex-direction:column;justify-content:center;">
         <p style="font-family:'Poppins',sans-serif;font-size:0.75rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#0d9488;margin:0 0 0.5rem;">Founder &amp; CEO</p>
         <h3 style="font-family:'Libre Baskerville',serif;font-size:1.5rem;font-weight:700;color:#111827;margin:0 0 0.75rem;line-height:1.3;">Mai Shimada, MD MBA FAAEM</h3>
         <p style="margin:0 0 1rem;font-size:0.95rem;line-height:1.7;color:#555;">
           Board-certified emergency medicine physician with 10+ years of clinical experience. Mai founded Isha Health after seeing how ketamine therapy could change outcomes for patients whom conventional treatments had failed.
         </p>
-        <a href="/dr-mai-shimada" style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#0d9488;text-decoration:none;font-weight:600;align-self:flex-start;">Read full bio →</a>
       </div>
     </div>
 
