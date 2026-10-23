@@ -1,6 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
+    // 2026-10-23: Vercel's Image Optimization transformation quota is
+    // exhausted on the current plan — every /_next/image request (local
+    // and remote alike) 402s with OPTIMIZED_IMAGE_REQUEST_PAYMENT_REQUIRED,
+    // breaking every photo on the site. `unoptimized: true` serves images
+    // as-is, bypassing that endpoint entirely, so photos render again.
+    // Trade-off: no automatic resize/format conversion/compression — larger
+    // payloads, same file sent to every screen size — until the Vercel plan
+    // is upgraded or the quota resets, at which point this should come out.
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
