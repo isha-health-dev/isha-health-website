@@ -98,7 +98,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // so either both routes pick up new posts or both fail in lockstep.
   const blogEntries: MetadataRoute.Sitemap = getAllBlogPosts().map((post) => ({
     url: `${BASE_URL}/post/${post.slug}`,
-    lastModified: post.date,
+    lastModified: post.modifiedDate,
     changeFrequency: 'yearly',
     priority: 0.6,
   }));
