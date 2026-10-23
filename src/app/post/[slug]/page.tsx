@@ -140,7 +140,7 @@ export default async function BlogPostPage({
     headline: post.title,
     description: post.description || '',
     datePublished: post.firstPublished || post.date,
-    dateModified: post.date,
+    dateModified: post.modifiedDate,
     author: {
       '@type': 'Organization',
       name: 'Isha Health',
@@ -229,16 +229,18 @@ export default async function BlogPostPage({
                   year: 'numeric',
                   month: 'long',
                   day: 'numeric',
+                  timeZone: 'UTC',
                 })}
               </time>
             )}
-            {post.date !== publishDate && post.date && (
+            {post.modifiedDate !== publishDate && post.modifiedDate && (
               <span style={{ color: '#9ca3af' }}>
                 · Updated{' '}
-                {new Date(post.date).toLocaleDateString('en-US', {
+                {new Date(post.modifiedDate).toLocaleDateString('en-US', {
                   year: 'numeric',
                   month: 'long',
                   day: 'numeric',
+                  timeZone: 'UTC',
                 })}
               </span>
             )}

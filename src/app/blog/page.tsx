@@ -295,6 +295,7 @@ export default function BlogPage({
                         year: 'numeric',
                         month: 'short',
                         day: 'numeric',
+                        timeZone: 'UTC',
                       })}
                     </time>
                   )}
