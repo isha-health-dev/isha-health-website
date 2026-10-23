@@ -1,10 +1,5 @@
 import type { Metadata } from 'next';
-import Image from 'next/image';
 import { buildOpenGraph } from '@/lib/seo';
-import imageDims from '@/lib/image-dims.json';
-
-const dims = imageDims as Record<string, { w: number; h: number }>;
-
 export const metadata: Metadata = {
   title: "Online Ketamine Therapy in San Francisco, California",
   description: "California's evidence-based at-home ketamine therapy for depression, anxiety, and PTSD. 88.8% of patients improve. $398 with a board-certified physician. Also serving CO, GA, OR, TX, WA.",
@@ -46,17 +41,6 @@ const testimonials = [
   { quote: "These sessions have been transformative and have made me braver to embrace my interactions with others.", name: "Kenneth M", loc: "Monterey, California" },
   { quote: "Thank you. I just want to say thank you to get me out of a pit of depression.", name: "Rachel M", loc: "New York, New York" },
   { quote: "I\u2019m so glad that I found Isha Health for my depression and anxiety. I love that I can speak and message with my doctor as many times as I\u2019d like.", name: "Annika W", loc: "Oakland, California" },
-];
-
-const team = [
-  { name: "Mai Shimada, MD", title: "Founder & CEO", img: "/images/94f52bd2_6539c2caf1b0c2065ced5bf4_mai.png" },
-  { name: "Margaret Brako, LCSW", title: "Clinical Social Worker", img: "/images/f8aea750_6539c2cacbe52be4e0624076_Margaret.png" },
-  { name: "Perrin Elisha, PhD", title: "Clinical Psychologist", img: "/images/40bae703_65bbe193273c8fe689c24647_perrin.png" },
-  { name: "Sandy Kong, LMFT", title: "Licensed Marriage & Family Therapist", img: "/images/ac260f0b_65bde0a90b546a064c202c2a_Sandy.png" },
-  { name: "Katie Chaudry, LCSW", title: "Clinical Social Worker", img: "/images/e84285c3_65bde0a934b01ff54e70d5d5_Katie.png" },
-  { name: "Susan Ono, PsyD", title: "Clinical Psychologist", img: "/images/62838ed7_64deffe0284aac100e3fd8f1_Susan.webp" },
-  { name: "Vincent Rozalski, PhD", title: "Clinical Psychologist", img: "/images/a072c1a3_6539c2ca8377e9342911228c_Vincent.png" },
-  { name: "Jyoti Nadhani, LMFT", title: "Licensed Marriage & Family Therapist", img: "/images/55eaaa6b_65bde0aa6cb8a036b6f541fd_Jyoti.png" },
 ];
 
 export default function Page() {
@@ -242,47 +226,6 @@ export default function Page() {
         <h2 style={{ fontFamily: "'Libre Baskerville', serif", fontSize: '1.8rem', fontWeight: 700, color: '#111827', textAlign: 'center', marginBottom: '0.5rem' }}>A Collaborative Approach to Care</h2>
         <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '1rem', color: '#6b7280', textAlign: 'center', marginBottom: '1rem', lineHeight: 1.7, maxWidth: '650px', marginLeft: 'auto', marginRight: 'auto' }}>Ketamine therapy works best when it&rsquo;s part of a broader care plan. That&rsquo;s why we work alongside therapists, psychologists, and counselors who specialize in ketamine-assisted psychotherapy.</p>
         <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.95rem', color: '#4b5563', textAlign: 'center', marginBottom: '2.5rem', lineHeight: 1.7, maxWidth: '650px', marginLeft: 'auto', marginRight: 'auto' }}>Our physician prescribes and monitors your treatment, while your therapist provides the integration support that deepens and sustains your progress. This collaborative model is how we achieve an <strong>88.8% improvement rate</strong>.</p>
-
-        {/* Founder */}
-        <div style={{ display: 'flex', flexWrap: 'wrap' as const, gap: '2rem', alignItems: 'center', marginBottom: '2.5rem', padding: '2rem', background: '#fff', borderRadius: '12px', border: '1px solid #e5e7eb' }}>
-          <div style={{ flex: '0 0 120px' }}>
-            <Image
-              src="/images/94f52bd2_6539c2caf1b0c2065ced5bf4_mai.png"
-              alt="Mai Shimada, MD"
-              width={dims['/images/94f52bd2_6539c2caf1b0c2065ced5bf4_mai.png']?.w ?? 240}
-              height={dims['/images/94f52bd2_6539c2caf1b0c2065ced5bf4_mai.png']?.h ?? 240}
-              sizes="120px"
-              style={{ width: '120px', height: '120px', borderRadius: '50%', objectFit: 'cover' }}
-            />
-          </div>
-          <div style={{ flex: '1 1 300px' }}>
-            <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.75rem', color: '#0d9488', fontWeight: 600, textTransform: 'uppercase' as const, letterSpacing: '0.05em', marginBottom: '0.25rem' }}>Founder</p>
-            <h3 style={{ fontFamily: "'Libre Baskerville', serif", fontSize: '1.2rem', fontWeight: 700, color: '#111827', marginBottom: '0.5rem' }}>
-              <a href="/dr-mai-shimada" style={{ color: '#111827', textDecoration: 'none' }}>Mai Shimada, MD</a>
-            </h3>
-            <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.9rem', color: '#4b5563', lineHeight: 1.6 }}>Double board-certified physician. Medical degree from The University of Tokyo, postdoctoral research at Harvard. Founded Isha Health to make evidence-based ketamine therapy accessible through telemedicine.</p>
-          </div>
-        </div>
-
-        {/* Clinician Photo Grid */}
-        <div style={{ display: 'flex', flexWrap: 'wrap' as const, justifyContent: 'center', gap: '0.75rem', marginBottom: '2rem' }}>
-          {team.slice(1).map((m, i) => {
-            const d = dims[m.img];
-            return (
-              <Image
-                key={i}
-                src={m.img}
-                alt={m.name}
-                width={d?.w ?? 144}
-                height={d?.h ?? 144}
-                sizes="72px"
-                style={{ width: '72px', height: '72px', borderRadius: '50%', objectFit: 'cover', border: '2px solid #fff', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}
-              />
-            );
-          })}
-        </div>
-
-        <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.85rem', color: '#6b7280', textAlign: 'center', marginBottom: '1.5rem' }}>Our network includes 600+ clinicians across the country &mdash; psychiatrists, psychologists, LMFTs, and LCSWs.</p>
 
         <div style={{ textAlign: 'center' }}>
           <a href="/ketamine-therapist-directory" style={{ display: 'inline-block', backgroundColor: '#0d9488', color: '#fff', padding: '0.85rem 2rem', borderRadius: '8px', textDecoration: 'none', fontWeight: 600, fontSize: '0.95rem', fontFamily: "'Poppins', sans-serif" }}>Browse the Clinician Directory</a>
