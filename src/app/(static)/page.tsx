@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { buildOpenGraph } from '@/lib/seo';
 export const metadata: Metadata = {
   title: "Online Ketamine Therapy in San Francisco, California",
-  description: "California's evidence-based at-home ketamine therapy for depression, anxiety, and PTSD. 88.8% of patients improve. $398 with a board-certified physician. Also serving CO, GA, OR, TX, WA.",
+  description: "California's evidence-based at-home ketamine therapy for depression, anxiety, and PTSD. 88.8% of patients improve. $398 with a board-certified physician. Also serving CO, GA, OR, WA.",
   alternates: {
     canonical: "https://isha.health",
   },
@@ -53,7 +53,7 @@ export default function Page() {
           <div style="max-width:550px;padding-left:8%;">
             <h1 style="font-family:'Libre Baskerville',serif;font-size:3rem;font-weight:700;color:#111827;line-height:1.15;margin-bottom:1.25rem;">Unlock Your Mind's Potential</h1>
             <p style="font-family:'Poppins',sans-serif;font-size:1rem;color:#4b5563;line-height:1.7;margin-bottom:0.75rem;">Personalized mental health care for depression, anxiety, and PTSD</p>
-            <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#4b5563;line-height:1.7;margin-bottom:2rem;">Are you struggling to feel like yourself? Isha Health combines ketamine-assisted therapy with holistic care — California's leading at-home program, also serving Colorado, Florida, Georgia, Oregon, Texas, and Washington.</p>
+            <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#4b5563;line-height:1.7;margin-bottom:2rem;">Are you struggling to feel like yourself? Isha Health combines ketamine-assisted therapy with holistic care — California's leading at-home program, also serving Colorado, Georgia, Oregon, and Washington.</p>
             <a href="/am-i-a-candidate" style="display:inline-block;background-color:#0d9488;color:#fff;padding:0.9rem 2.5rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:1rem;font-family:'Poppins',sans-serif;">Am I a Candidate?</a>
           </div>
         </div>
@@ -202,7 +202,7 @@ export default function Page() {
     <div style={{ backgroundColor: '#fff', padding: '4rem 1.5rem', borderTop: '1px solid #e5e7eb' }}>
       <div style={{ maxWidth: '1080px', margin: '0 auto' }}>
         <h2 style={{ fontFamily: "'Libre Baskerville', serif", fontSize: '1.8rem', fontWeight: 700, color: '#111827', textAlign: 'center', marginBottom: '0.5rem' }}>What our patients say</h2>
-        <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '1rem', color: '#6b7280', textAlign: 'center', marginBottom: '2.5rem' }}>Real stories from patients across California — and our six other states</p>
+        <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '1rem', color: '#6b7280', textAlign: 'center', marginBottom: '2.5rem' }}>Real stories from patients across California — and our four other states</p>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.5rem' }}>
           {testimonials.slice(0, 3).map((t, i) => (
             <blockquote key={i} style={{ margin: 0, padding: '2rem', border: '1px solid #e5e7eb', borderRadius: '12px', background: '#fafafa', borderLeft: '3px solid #0d9488', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>

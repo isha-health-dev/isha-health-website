@@ -72,6 +72,42 @@ const nextConfig = {
         destination: '/about-us/about-isha-health',
         permanent: true,
       },
+      // Texas pages — no longer listed; service ends Feb 2027 (2026-11-18)
+      {
+        source: '/locations/online-at-home-ketamine-therapy-in-texas',
+        destination: '/online-ketamine-therapy',
+        permanent: true,
+      },
+      {
+        source: '/locations/ketamine-therapy-austin',
+        destination: '/online-ketamine-therapy',
+        permanent: true,
+      },
+      {
+        source: '/locations/ketamine-therapy-dallas',
+        destination: '/online-ketamine-therapy',
+        permanent: true,
+      },
+      {
+        source: '/locations/ketamine-therapy-el-paso',
+        destination: '/online-ketamine-therapy',
+        permanent: true,
+      },
+      {
+        source: '/locations/ketamine-therapy-fort-worth',
+        destination: '/online-ketamine-therapy',
+        permanent: true,
+      },
+      {
+        source: '/locations/ketamine-therapy-houston',
+        destination: '/online-ketamine-therapy',
+        permanent: true,
+      },
+      {
+        source: '/locations/ketamine-therapy-san-antonio',
+        destination: '/online-ketamine-therapy',
+        permanent: true,
+      },
       // Florida pages — service no longer offered in FL (2026-09-18)
       {
         source: '/locations/online-at-home-ketamine-therapy-in-florida',

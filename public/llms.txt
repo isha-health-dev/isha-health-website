@@ -1,5 +1,5 @@
 # Isha Health — Online Ketamine Therapy
-> Physician-led at-home ketamine-assisted therapy for depression, anxiety, PTSD, and other mood disorders. Available via telemedicine in CA, CO, GA, OR, TX, and WA. New patients by referral only.
+> Physician-led at-home ketamine-assisted therapy for depression, anxiety, PTSD, and other mood disorders. Available via telemedicine in CA, CO, GA, OR, and WA. New patients by referral only.
 
 ## About
 Isha Health is a telehealth practice offering personalized ketamine-assisted therapy. Founded by Mai Shimada, MD — double board-certified physician (University of Tokyo MD, Harvard postdoctoral research, INSEAD MBA), with training from the UC Berkeley Center for the Science of Psychedelics and Polaris Insight Center KAP program.
@@ -86,7 +86,7 @@ Based on 546 patients with validated assessments:
 - Medication: $50-150/month from compounding pharmacy
 - HSA/FSA accepted
 - Insurance not accepted, including Medicaid and Medicare; payment due at time of service
-- Available in 6 states: CA, CO, GA, OR, TX, WA
+- Available in 5 states: CA, CO, GA, OR, WA
 - New patients by referral only, from a collaborating therapist or clinician
 
 ## Founder
