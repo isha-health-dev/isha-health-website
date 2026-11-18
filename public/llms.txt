@@ -83,7 +83,6 @@ Based on 546 patients with validated assessments:
 - Follow-up appointment: $350 (30 minutes)
 - Medication: $50-150/month from compounding pharmacy
 - HSA/FSA accepted
-- Superbills available for out-of-network insurance reimbursement
 - Available in 9 states: AZ, CA, CO, FL, GA, NY, OR, TX, WA
 - No referral needed
 - Same-day appointments often available

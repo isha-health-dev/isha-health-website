@@ -41,7 +41,7 @@ export default function PricingPage() {
       {
         "@type": "Question",
         "name": "Does Isha Health accept insurance?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Isha Health does not accept insurance plans, including Medicaid and Medicare. Payment is due at the time of service. A superbill can be provided for potential reimbursement from your insurer." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Isha Health does not accept insurance plans, including Medicaid and Medicare. Payment is due at the time of service." }
       },
       {
         "@type": "Question",
@@ -207,7 +207,7 @@ export default function PricingPage() {
 
     <div style="border-bottom:1px solid #e5e7eb;padding:1.25rem 0;">
       <h3 style="font-family:'Poppins',sans-serif;font-size:1rem;font-weight:600;color:#111827;margin-bottom:0.5rem;">Do you accept insurance?</h3>
-      <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#4b5563;line-height:1.6;">We do not accept insurance plans, including Medicaid and Medicare. Payment is due at the time of service. We prioritize patient care, ensuring immediate availability and privacy. We can provide a <a href="/current-patients/superbill" style="color:#0d9488;text-decoration:underline;">superbill</a> for you to submit to your insurance for potential reimbursement.</p>
+      <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#4b5563;line-height:1.6;">We do not accept insurance plans, including Medicaid and Medicare. Payment is due at the time of service. We prioritize patient care, ensuring immediate availability and privacy.</p>
     </div>
 
     <div style="border-bottom:1px solid #e5e7eb;padding:1.25rem 0;">

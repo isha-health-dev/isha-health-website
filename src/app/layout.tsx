@@ -91,7 +91,6 @@ const navbarHtml = `
       <p style="font-size:13px;font-weight:500;color:#555;margin:10px 0 4px;">Current Patients</p>
       <a href="/current-patients/scheduling" style="display:block;padding:4px 0 4px 12px;color:#333;text-decoration:none;font-size:13px;">Scheduling</a>
       <a href="/current-patients/referral-from-your-primary-doctor" style="display:block;padding:4px 0 4px 12px;color:#333;text-decoration:none;font-size:13px;">Qualified Telemedicine Referral</a>
-      <a href="/current-patients/superbill" style="display:block;padding:4px 0 4px 12px;color:#333;text-decoration:none;font-size:13px;">Superbill</a>
       <a href="/current-patients/session-instruction" style="display:block;padding:4px 0 4px 12px;color:#333;text-decoration:none;font-size:13px;">Dosing Session Instructions</a>
       <a href="/healing-music-playlist" style="display:block;padding:4px 0 4px 12px;color:#333;text-decoration:none;font-size:13px;">Healing Sound Playlist</a>
       <a href="/ketamine-therapist-directory" style="display:block;padding:6px 0;color:#333;text-decoration:none;font-size:14px;">Clinician Directory</a>
@@ -172,7 +171,6 @@ const footerHtml = `
         <a href="/what-is-ketamine-assisted-therapy" style="display:block;color:#ccc;text-decoration:none;font-size:14px;padding:4px 0;">What is Ketamine Assisted Therapy</a>
         <a href="/outcomes" style="display:block;color:#ccc;text-decoration:none;font-size:14px;padding:4px 0;">Patient Outcomes</a>
         <a href="/faq/ketamine-therapy" style="display:block;color:#ccc;text-decoration:none;font-size:14px;padding:4px 0;">FAQ</a>
-        <a href="/current-patients/superbill" style="display:block;color:#ccc;text-decoration:none;font-size:14px;padding:4px 0;">Superbill</a>
       </div>
       <!-- Legal -->
       <div>

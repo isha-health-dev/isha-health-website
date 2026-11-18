@@ -42,7 +42,7 @@ export default function OnlineKetamineTherapyPage() {
         name: 'How much does online ketamine therapy cost?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'The initial 60-minute consultation is $398. Follow-up appointments are $398 for 30 minutes. Monthly medication costs range from $50 to $150 depending on your prescribed dosage. HSA/FSA cards are accepted and superbills are provided for insurance reimbursement.',
+          text: 'The initial 60-minute consultation is $398. Follow-up appointments are $398 for 30 minutes. Monthly medication costs range from $50 to $150 depending on your prescribed dosage. HSA/FSA cards are accepted.',
         },
       },
       {
@@ -74,7 +74,7 @@ export default function OnlineKetamineTherapyPage() {
         name: 'Can I use HSA/FSA for online ketamine therapy?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes. Isha Health accepts HSA and FSA cards for payment. We also provide superbills that you can submit to your insurance company for potential out-of-network reimbursement.',
+          text: 'Yes. Isha Health accepts HSA and FSA cards for payment.',
         },
       },
     ],
@@ -195,7 +195,7 @@ export default function OnlineKetamineTherapyPage() {
         </div>
       </div>
       <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#374151;line-height:1.7;">
-        HSA/FSA accepted. Superbills provided for insurance reimbursement. See full <a href="/pricing" style="color:#0d9488;text-decoration:underline;">pricing details</a>.
+        HSA/FSA accepted. See full <a href="/pricing" style="color:#0d9488;text-decoration:underline;">pricing details</a>.
       </p>
     </div>
 
@@ -257,7 +257,7 @@ export default function OnlineKetamineTherapyPage() {
             </tr>
             <tr>
               <td style="padding:0.75rem 1rem;border-bottom:1px solid #e5e7eb;font-weight:500;">Insurance</td>
-              <td style="padding:0.75rem 1rem;border-bottom:1px solid #e5e7eb;">Out-of-network superbill; HSA/FSA</td>
+              <td style="padding:0.75rem 1rem;border-bottom:1px solid #e5e7eb;">HSA/FSA</td>
               <td style="padding:0.75rem 1rem;border-bottom:1px solid #e5e7eb;">Rarely covered</td>
             </tr>
             <tr>
@@ -284,7 +284,7 @@ export default function OnlineKetamineTherapyPage() {
 
       <div style="margin-bottom:1.5rem;">
         <h3 style="font-family:'Poppins',sans-serif;font-size:1rem;font-weight:600;color:#111827;margin-bottom:0.5rem;">How much does online ketamine therapy cost?</h3>
-        <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#374151;line-height:1.7;">The initial 60-minute consultation is $398. Follow-up appointments are $398 for 30 minutes. Monthly medication costs range from $50 to $150 depending on your prescribed dosage. HSA/FSA cards are accepted and superbills are provided for insurance reimbursement.</p>
+        <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#374151;line-height:1.7;">The initial 60-minute consultation is $398. Follow-up appointments are $398 for 30 minutes. Monthly medication costs range from $50 to $150 depending on your prescribed dosage. HSA/FSA cards are accepted.</p>
       </div>
 
       <div style="margin-bottom:1.5rem;">
@@ -304,7 +304,7 @@ export default function OnlineKetamineTherapyPage() {
 
       <div style="margin-bottom:1.5rem;">
         <h3 style="font-family:'Poppins',sans-serif;font-size:1rem;font-weight:600;color:#111827;margin-bottom:0.5rem;">Can I use HSA/FSA?</h3>
-        <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#374151;line-height:1.7;">Yes. Isha Health accepts HSA and FSA cards for payment. We also provide superbills that you can submit to your insurance company for potential out-of-network reimbursement.</p>
+        <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#374151;line-height:1.7;">Yes. Isha Health accepts HSA and FSA cards for payment.</p>
       </div>
     </div>
 

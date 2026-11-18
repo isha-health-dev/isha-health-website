@@ -42,7 +42,7 @@ export default function KetamineTherapyCostPage() {
         name: 'Does insurance cover ketamine therapy?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Most insurance plans do not cover off-label ketamine therapy directly. However, Isha Health provides superbills that you can submit to your insurance for potential out-of-network reimbursement. HSA and FSA cards are accepted for all services.',
+          text: 'Most insurance plans do not cover off-label ketamine therapy directly. HSA and FSA cards are accepted for all services.',
         },
       },
       {
@@ -66,7 +66,7 @@ export default function KetamineTherapyCostPage() {
         name: 'What is included in the $398 consultation fee?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'The $398 initial consultation includes a full 60-minute psychiatric evaluation, personalized treatment planning, prescription (if appropriate), ongoing clinical monitoring via PHQ-9 and GAD-7 assessments, secure messaging access to your psychiatrist, and superbill generation for insurance reimbursement.',
+          text: 'The $398 initial consultation includes a full 60-minute psychiatric evaluation, personalized treatment planning, prescription (if appropriate), ongoing clinical monitoring via PHQ-9 and GAD-7 assessments, and secure messaging access to your psychiatrist.',
         },
       },
       {
@@ -157,7 +157,7 @@ export default function KetamineTherapyCostPage() {
             </tr>
             <tr style="background:#f9fafb;">
               <td style="padding:0.75rem 1rem;border-bottom:1px solid #e5e7eb;font-weight:500;color:#374151;">Insurance</td>
-              <td style="padding:0.75rem 1rem;border-bottom:1px solid #e5e7eb;text-align:center;color:#374151;">HSA/FSA + superbill</td>
+              <td style="padding:0.75rem 1rem;border-bottom:1px solid #e5e7eb;text-align:center;color:#374151;">HSA/FSA</td>
               <td style="padding:0.75rem 1rem;border-bottom:1px solid #e5e7eb;text-align:center;color:#374151;">Rarely covered</td>
               <td style="padding:0.75rem 1rem;border-bottom:1px solid #e5e7eb;text-align:center;color:#374151;">Some plans cover</td>
             </tr>
@@ -185,7 +185,6 @@ export default function KetamineTherapyCostPage() {
         <li>Prescription for oral ketamine (if clinically appropriate)</li>
         <li>Ongoing clinical monitoring using validated tools (PHQ-9, GAD-7)</li>
         <li>Secure messaging access to your treating psychiatrist</li>
-        <li>Superbill generation for insurance reimbursement</li>
         <li>Session preparation and integration guidance</li>
       </ul>
     </div>
@@ -199,12 +198,7 @@ export default function KetamineTherapyCostPage() {
       </p>
       <ul style="font-family:'Poppins',sans-serif;font-size:0.95rem;color:#374151;line-height:2;padding-left:1.25rem;margin-bottom:1rem;">
         <li><strong>HSA/FSA cards</strong> are accepted for all Isha Health services</li>
-        <li><strong>Superbills</strong> are provided after each appointment for out-of-network insurance reimbursement</li>
-        <li>Many patients receive <strong>partial reimbursement</strong> through their insurance plans</li>
       </ul>
-      <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#374151;line-height:1.7;">
-        Learn more about reimbursement on our <a href="/current-patients/superbill" style="color:#0d9488;text-decoration:underline;">superbill page</a>.
-      </p>
     </div>
 
     <!-- Outcomes -->
@@ -245,7 +239,7 @@ export default function KetamineTherapyCostPage() {
 
       <div style="margin-bottom:1.5rem;">
         <h3 style="font-family:'Poppins',sans-serif;font-size:1rem;font-weight:600;color:#111827;margin-bottom:0.5rem;">Does insurance cover ketamine therapy?</h3>
-        <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#374151;line-height:1.7;">Most insurance plans do not cover off-label ketamine therapy directly. However, Isha Health provides superbills that you can submit for potential out-of-network reimbursement. HSA and FSA cards are accepted for all services.</p>
+        <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#374151;line-height:1.7;">Most insurance plans do not cover off-label ketamine therapy directly. HSA and FSA cards are accepted for all services.</p>
       </div>
 
       <div style="margin-bottom:1.5rem;">
@@ -260,7 +254,7 @@ export default function KetamineTherapyCostPage() {
 
       <div style="margin-bottom:1.5rem;">
         <h3 style="font-family:'Poppins',sans-serif;font-size:1rem;font-weight:600;color:#111827;margin-bottom:0.5rem;">What is included in the $398 consultation fee?</h3>
-        <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#374151;line-height:1.7;">The $398 initial consultation includes a full 60-minute psychiatric evaluation, personalized treatment planning, prescription (if appropriate), ongoing clinical monitoring via PHQ-9 and GAD-7 assessments, secure messaging access to your psychiatrist, and superbill generation for insurance reimbursement.</p>
+        <p style="font-family:'Poppins',sans-serif;font-size:0.9rem;color:#374151;line-height:1.7;">The $398 initial consultation includes a full 60-minute psychiatric evaluation, personalized treatment planning, prescription (if appropriate), ongoing clinical monitoring via PHQ-9 and GAD-7 assessments, and secure messaging access to your psychiatrist.</p>
       </div>
 
       <div style="margin-bottom:1.5rem;">

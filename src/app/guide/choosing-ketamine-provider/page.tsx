@@ -55,7 +55,7 @@ export default function Page() {
         "name": "What should I ask during a ketamine therapy consultation?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Key questions include: What are your credentials and experience with ketamine therapy? How do you determine if I am a good candidate? What does your treatment protocol look like? How do you monitor progress and adjust dosing? What integration or therapeutic support do you provide? What are the total costs, and do you offer superbills for insurance reimbursement?"
+          "text": "Key questions include: What are your credentials and experience with ketamine therapy? How do you determine if I am a good candidate? What does your treatment protocol look like? How do you monitor progress and adjust dosing? What integration or therapeutic support do you provide? What are the total costs?"
         }
       },
       {
@@ -175,7 +175,7 @@ export default function Page() {
       <li><strong>What does your treatment protocol involve?</strong> Ask about the initial course of treatment, how sessions are structured, and what the maintenance plan looks like.</li>
       <li><strong>How do you monitor progress?</strong> Providers should use validated assessment tools (such as PHQ-9 and GAD-7) and schedule regular check-ins.</li>
       <li><strong>What integration or therapeutic support do you offer?</strong> Ask about therapy referrals, <a href="/post/online-integration-circles-for-ketamine-therapy" style="color:#0d9488;text-decoration:underline;">integration circles</a>, or other supportive resources.</li>
-      <li><strong>What are the total costs, and do you provide superbills?</strong> Understanding the full financial picture upfront is important. Ask about <a href="/post/ketamine-therapy-insurance-superbill" style="color:#0d9488;text-decoration:underline;">superbills and insurance reimbursement</a> options.</li>
+      <li><strong>What are the total costs?</strong> Understanding the full financial picture upfront is important.</li>
       <li><strong>What safety measures are in place?</strong> For at-home programs, ask about the support person requirement, emergency protocols, and how quickly you can reach a provider if needed.</li>
       <li><strong>What pharmacy do you use, and how is medication delivered?</strong> Learn about their <a href="/post/selecting-a-compounding-pharmacy-for-your-unique-needs" style="color:#0d9488;text-decoration:underline;">compounding pharmacy selection process</a> and medication quality standards.</li>
     </ol>
@@ -242,7 +242,6 @@ export default function Page() {
     <ul style="font-family:'Source Sans Pro','Poppins',sans-serif;font-size:0.95rem;color:#374151;line-height:1.8;padding-left:1.25rem;margin-bottom:1rem;">
       <li>Most off-label ketamine therapy is not directly covered by insurance</li>
       <li>HSA and FSA funds can typically be used for ketamine treatment</li>
-      <li>Some providers offer <a href="/post/ketamine-therapy-insurance-superbill" style="color:#0d9488;text-decoration:underline;">superbills</a> for potential out-of-network reimbursement</li>
       <li>Spravato (esketamine), which is FDA-approved, may be covered by some insurance plans</li>
       <li>Be cautious of providers requiring large upfront package payments without refund policies</li>
     </ul>
@@ -261,7 +260,7 @@ export default function Page() {
       <li><strong>Ongoing monitoring:</strong> Regular follow-up appointments track your progress using validated tools and allow for protocol adjustments</li>
       <li><strong>Integration support:</strong> We provide guidance on <a href="/post/intention-setting-for-ketamine-treatment" style="color:#0d9488;text-decoration:underline;">intention setting</a>, <a href="/post/how-to-do-journaling-for-ketamine-assisted-therapy" style="color:#0d9488;text-decoration:underline;">journaling</a>, and therapeutic integration</li>
       <li><strong>Safety protocols:</strong> Required <a href="/support-person-overview" style="color:#0d9488;text-decoration:underline;">support person</a> for sessions, clear <a href="/safety-information-for-ketamine-treatment" style="color:#0d9488;text-decoration:underline;">safety information</a>, and accessible physician support</li>
-      <li><strong>Transparent pricing:</strong> Clear, upfront pricing with no hidden fees. We also provide superbills for potential insurance reimbursement</li>
+      <li><strong>Transparent pricing:</strong> Clear, upfront pricing with no hidden fees</li>
     </ul>
     <p style="font-family:'Source Sans Pro','Poppins',sans-serif;font-size:0.95rem;line-height:1.8;color:#374151;margin-bottom:2rem;text-wrap:pretty;">
       To learn more about our clinical philosophy, visit our <a href="/our-treatment-approach" style="color:#0d9488;text-decoration:underline;">treatment approach</a> page, or learn about our organization on our <a href="/about-us/about-isha-health" style="color:#0d9488;text-decoration:underline;">About Isha Health</a> page.
