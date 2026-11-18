@@ -193,7 +193,6 @@ export default function ResourcesPage() {
         <a href="/locations/online-at-home-ketamine-therapy-in-colorado" style="padding:0.5rem 1rem;border:1px solid #e5e7eb;border-radius:6px;text-decoration:none;color:#111827;font-family:'Poppins',sans-serif;font-size:0.85rem;background:#fff;">Colorado</a>
         <a href="/locations/online-at-home-ketamine-therapy-in-georgia" style="padding:0.5rem 1rem;border:1px solid #e5e7eb;border-radius:6px;text-decoration:none;color:#111827;font-family:'Poppins',sans-serif;font-size:0.85rem;background:#fff;">Georgia</a>
         <a href="/locations/online-at-home-ketamine-therapy-in-oregon" style="padding:0.5rem 1rem;border:1px solid #e5e7eb;border-radius:6px;text-decoration:none;color:#111827;font-family:'Poppins',sans-serif;font-size:0.85rem;background:#fff;">Oregon</a>
-        <a href="/locations/online-at-home-ketamine-therapy-in-texas" style="padding:0.5rem 1rem;border:1px solid #e5e7eb;border-radius:6px;text-decoration:none;color:#111827;font-family:'Poppins',sans-serif;font-size:0.85rem;background:#fff;">Texas</a>
         <a href="/locations/online-at-home-ketamine-therapy-in-washington" style="padding:0.5rem 1rem;border:1px solid #e5e7eb;border-radius:6px;text-decoration:none;color:#111827;font-family:'Poppins',sans-serif;font-size:0.85rem;background:#fff;">Washington</a>
       </div>
     </div>

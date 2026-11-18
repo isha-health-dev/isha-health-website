@@ -206,7 +206,6 @@ const footerHtml = `
           <a href="/locations/online-at-home-ketamine-therapy-in-colorado" style="color:#ccc;text-decoration:none;font-size:14px;padding:4px 0;">Colorado</a>
           <a href="/locations/online-at-home-ketamine-therapy-in-washington" style="color:#ccc;text-decoration:none;font-size:14px;padding:4px 0;">Washington</a>
           
-          <a href="/locations/online-at-home-ketamine-therapy-in-texas" style="color:#ccc;text-decoration:none;font-size:14px;padding:4px 0;">Texas</a>
           <a href="/locations/online-at-home-ketamine-therapy-in-georgia" style="color:#ccc;text-decoration:none;font-size:14px;padding:4px 0;">Georgia</a>
         </div>
       </div>
@@ -270,7 +269,7 @@ gtag('config', 'AW-16993591045');`,
               url: 'https://isha.health',
               logo: 'https://isha.health/images/isha_logo.webp',
               description:
-                'Physician-led online ketamine therapy for depression, anxiety, and PTSD. 88.8% of patients with moderate-to-severe depression show measurable improvement. Available in 8 states.',
+                'Physician-led online ketamine therapy for depression, anxiety, and PTSD. 88.8% of patients with moderate-to-severe depression show measurable improvement. Available in 5 states.',
               address: {
                 '@type': 'PostalAddress',
                 streetAddress: '4255 18th Street',
@@ -295,7 +294,6 @@ gtag('config', 'AW-16993591045');`,
                 { '@type': 'AdministrativeArea', name: 'Colorado' },
                 { '@type': 'AdministrativeArea', name: 'Georgia' },
                 { '@type': 'AdministrativeArea', name: 'Oregon' },
-                { '@type': 'AdministrativeArea', name: 'Texas' },
                 { '@type': 'AdministrativeArea', name: 'Washington' },
               ],
               founder: {

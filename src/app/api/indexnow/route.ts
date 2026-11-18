@@ -39,8 +39,8 @@ function getAllUrls(): string[] {
 
   // Location pages (state + city)
   const statePages = [
-    'california', 'colorado', 'florida', 'georgia',
-    'new-york', 'oregon', 'texas', 'washington',
+    'california', 'colorado', 'georgia',
+    'oregon', 'washington',
   ];
   statePages.forEach((s) =>
     urls.push(`${BASE_URL}/locations/online-at-home-ketamine-therapy-in-${s}`)

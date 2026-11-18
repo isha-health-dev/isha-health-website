@@ -108,7 +108,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     'online-at-home-ketamine-therapy-in-colorado',
     'online-at-home-ketamine-therapy-in-georgia',
     'online-at-home-ketamine-therapy-in-oregon',
-    'online-at-home-ketamine-therapy-in-texas',
     'online-at-home-ketamine-therapy-in-washington',
   ];
   const stateEntries: MetadataRoute.Sitemap = statePages.map((page) => ({
@@ -118,7 +117,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   }));
 
   // City pages (/locations/ketamine-therapy-*) default to noindex via
-  // src/app/locations/layout.tsx. The 17 major-metro pages below opt
+  // src/app/locations/layout.tsx. The 8 major-metro pages below opt
   // back into indexing (and into the sitemap) by overriding `robots`
   // at the page level. Smaller-market city pages remain noindex.
   const majorCityPages = [
@@ -126,9 +125,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     'ketamine-therapy-san-francisco',
     'ketamine-therapy-san-diego',
     'ketamine-therapy-beverly-hills',
-    'ketamine-therapy-houston',
-    'ketamine-therapy-dallas',
-    'ketamine-therapy-austin',
     'ketamine-therapy-denver',
     'ketamine-therapy-atlanta',
     'ketamine-therapy-portland',
