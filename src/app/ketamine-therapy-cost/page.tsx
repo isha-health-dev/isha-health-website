@@ -191,14 +191,11 @@ export default function KetamineTherapyCostPage() {
 
     <!-- HSA/FSA -->
     <div style="margin-bottom:3rem;">
-      <h2 style="font-family:'Libre Baskerville',serif;font-size:1.4rem;font-weight:700;color:#111827;margin-bottom:1.25rem;padding-bottom:0.5rem;border-bottom:2px solid #0d9488;">HSA/FSA and Insurance Reimbursement</h2>
+      <h2 style="font-family:'Libre Baskerville',serif;font-size:1.4rem;font-weight:700;color:#111827;margin-bottom:1.25rem;padding-bottom:0.5rem;border-bottom:2px solid #0d9488;">HSA/FSA and Insurance</h2>
 
       <p style="font-family:'Poppins',sans-serif;font-size:0.95rem;color:#374151;line-height:1.7;margin-bottom:1rem;">
-        While ketamine therapy is not typically covered by insurance directly, there are ways to reduce your out-of-pocket cost:
+        Isha Health does not accept insurance, including Medicaid and Medicare. <strong>HSA/FSA cards</strong> are accepted for all Isha Health services.
       </p>
-      <ul style="font-family:'Poppins',sans-serif;font-size:0.95rem;color:#374151;line-height:2;padding-left:1.25rem;margin-bottom:1rem;">
-        <li><strong>HSA/FSA cards</strong> are accepted for all Isha Health services</li>
-      </ul>
     </div>
 
     <!-- Outcomes -->
