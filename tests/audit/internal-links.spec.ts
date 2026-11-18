@@ -35,6 +35,8 @@ test.describe('Internal link integrity', () => {
       '/ketamine-for-depression',
       '/ketamine-for-anxiety',
       '/superbill',
+      '/current-patients/superbill',
+      '/post/ketamine-therapy-insurance-superbill',
       '/scheduling',
       '/collaborating-with-isha-health',
     ]);

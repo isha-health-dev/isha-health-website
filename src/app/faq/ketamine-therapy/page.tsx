@@ -196,11 +196,7 @@ const faqData = [
   },
   {
     question: "Does insurance cover ketamine therapy?",
-    answer: "Most insurance plans do not cover generic ketamine when prescribed off-label for mental health conditions. However, Spravato (esketamine) may be covered by some insurance plans for treatment-resistant depression. Some patients are able to obtain partial reimbursement through out-of-network benefits using a superbill provided by their clinician."
-  },
-  {
-    question: "What is a superbill?",
-    answer: "A superbill is an itemized receipt provided by your healthcare provider that includes diagnosis codes, procedure codes, and charges for services rendered. You can submit a superbill to your insurance company to request out-of-network reimbursement. Isha Health provides superbills to patients who wish to seek reimbursement. Learn more on our <a href=\"/current-patients/superbill\" style=\"color:#0d9488;text-decoration:underline;\">superbill page</a>."
+    answer: "Most insurance plans do not cover generic ketamine when prescribed off-label for mental health conditions. However, Spravato (esketamine) may be covered by some insurance plans for treatment-resistant depression."
   },
   {
     question: "Can I use HSA or FSA for ketamine therapy?",
@@ -216,7 +212,7 @@ const faqData = [
   },
   {
     question: "How can I make ketamine therapy more affordable?",
-    answer: "Options for reducing costs include choosing at-home oral ketamine programs over IV infusions, using HSA or FSA funds, submitting superbills for out-of-network reimbursement, and asking about package pricing. Isha Health offers structured treatment packages designed to make therapy more accessible. Visit our <a href=\"/pricing\" style=\"color:#0d9488;text-decoration:underline;\">pricing page</a> to explore options."
+    answer: "Options for reducing costs include choosing at-home oral ketamine programs over IV infusions, using HSA or FSA funds, and asking about package pricing. Isha Health offers structured treatment packages designed to make therapy more accessible. Visit our <a href=\"/pricing\" style=\"color:#0d9488;text-decoration:underline;\">pricing page</a> to explore options."
   },
   {
     question: "Is ketamine legal?",
@@ -246,8 +242,8 @@ const sections = [
   { title: "Conditions Treated", startIndex: 15, count: 8 },
   { title: "Safety and Side Effects", startIndex: 23, count: 10 },
   { title: "Treatment Process", startIndex: 33, count: 10 },
-  { title: "Cost and Insurance", startIndex: 43, count: 7 },
-  { title: "Legal and Practical", startIndex: 50, count: 5 },
+  { title: "Cost and Insurance", startIndex: 43, count: 6 },
+  { title: "Legal and Practical", startIndex: 49, count: 5 },
 ];
 
 function buildHtml() {

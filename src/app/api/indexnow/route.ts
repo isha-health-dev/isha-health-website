@@ -23,7 +23,7 @@ function getAllUrls(): string[] {
     '/cancellation-policy-isha-health', '/refund-policy',
     '/support-person-overview', '/healing-music-playlist',
     '/current-patients/scheduling', '/current-patients/session-instruction',
-    '/current-patients/superbill', '/current-patients/referral-from-your-primary-doctor',
+    '/current-patients/referral-from-your-primary-doctor',
   ];
   staticPages.forEach((p) => urls.push(`${BASE_URL}${p}`));
 

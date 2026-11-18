@@ -271,7 +271,18 @@ const nextConfig = {
       },
       {
         source: '/superbill',
-        destination: '/current-patients/superbill',
+        destination: '/pricing',
+        permanent: true,
+      },
+      // Superbills no longer offered (2026-11-18) — page and guide retired
+      {
+        source: '/current-patients/superbill',
+        destination: '/pricing',
+        permanent: true,
+      },
+      {
+        source: '/post/ketamine-therapy-insurance-superbill',
+        destination: '/pricing',
         permanent: true,
       },
       {

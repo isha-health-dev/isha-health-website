@@ -1,5 +1,5 @@
 # Isha Health — Online Ketamine Therapy
-> Physician-led at-home ketamine-assisted therapy for depression, anxiety, PTSD, and other mood disorders. Available via telemedicine in AZ, CA, CO, FL, GA, NY, OR, TX, and WA.
+> Physician-led at-home ketamine-assisted therapy for depression, anxiety, PTSD, and other mood disorders. Available via telemedicine in CA, CO, GA, OR, TX, and WA. New patients by referral only.
 
 ## About
 Isha Health is a telehealth practice offering personalized ketamine-assisted therapy. Founded by Mai Shimada, MD — double board-certified physician (University of Tokyo MD, Harvard postdoctoral research, INSEAD MBA), with training from the UC Berkeley Center for the Science of Psychedelics and Polaris Insight Center KAP program.
@@ -16,12 +16,13 @@ Based on 546 patients with validated assessments:
 - Full methodology and limitations: https://isha.health/outcomes
 
 ## How It Works
-1. 60-minute video consultation with a licensed physician ($350)
-2. Personalized treatment plan based on symptoms, history, and goals
-3. Oral ketamine prescription sent to compounding pharmacy ($50-150/month)
-4. At-home sessions with eye mask, ~2 hours per session
-5. Ongoing progress monitoring with PHQ-9 and GAD-7 assessments
-6. Integration support through our network of 600+ KAP-trained therapists
+1. Referral from a collaborating therapist or clinician
+2. 60-minute video consultation with a licensed physician ($398)
+3. Personalized treatment plan based on symptoms, history, and goals
+4. Oral ketamine prescription sent to compounding pharmacy ($50-150/month)
+5. At-home sessions with eye mask, ~2 hours per session
+6. Ongoing progress monitoring with PHQ-9 and GAD-7 assessments
+7. Integration support through our network of 600+ KAP-trained therapists
 
 ## Key Pages
 - Homepage: https://isha.health
@@ -31,7 +32,8 @@ Based on 546 patients with validated assessments:
 - Cost Comparison: https://isha.health/ketamine-therapy-cost
 - Affordable Options: https://isha.health/affordable-ketamine-therapy
 - Patient Reviews: https://isha.health/ketamine-therapy-reviews
-- Appointment: https://isha.health/appointment
+- New Patient Referrals: https://isha.health/appointment
+- Referral Process (for clinicians): https://isha.health/referral-patient-process
 - Complete Guide: https://isha.health/guide/ketamine-therapy
 - Depression Guide: https://isha.health/guide/ketamine-for-depression
 - Provider Guide: https://isha.health/guide/choosing-ketamine-provider
@@ -41,7 +43,7 @@ Based on 546 patients with validated assessments:
 - Blog (200+ articles): https://isha.health/blog
 - Resources Hub: https://isha.health/resources
 - Clinician Directory (600+): https://isha.health/ketamine-therapist-directory
-- FAQ (55 questions): https://isha.health/faq/ketamine-therapy
+- FAQ (54 questions): https://isha.health/faq/ketamine-therapy
 - Sitemap: https://isha.health/sitemap.xml
 
 ## Conditions Treated
@@ -79,14 +81,13 @@ Based on 546 patients with validated assessments:
 - 5-star rating on Trustpilot (12 reviews)
 
 ## Pricing
-- Initial consultation: $350 (60 minutes with a physician)
-- Follow-up appointment: $350 (30 minutes)
+- Initial consultation: $398 (60 minutes with a physician)
+- Follow-up appointment: $398 (30 minutes)
 - Medication: $50-150/month from compounding pharmacy
 - HSA/FSA accepted
-- Superbills available for out-of-network insurance reimbursement
-- Available in 9 states: AZ, CA, CO, FL, GA, NY, OR, TX, WA
-- No referral needed
-- Same-day appointments often available
+- Insurance not accepted, including Medicaid and Medicare; payment due at time of service
+- Available in 6 states: CA, CO, GA, OR, TX, WA
+- New patients by referral only, from a collaborating therapist or clinician
 
 ## Founder
 Mai Shimada, MD
@@ -97,7 +98,7 @@ Mai Shimada, MD
 - Psychedelic Facilitation Certification: UC Berkeley
 - KAP Training: Polaris Insight Center
 - Clinical trial study physician: Open Mind Collective
-- Profile: https://isha.health/dr-mai-shimada
+- Team: https://isha.health/about-us/about-isha-health
 
 ## Contact
 - Email: info@isha.health

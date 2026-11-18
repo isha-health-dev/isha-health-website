@@ -181,9 +181,6 @@ export default function ResourcesPage() {
         <a href="/post/how-to-do-journaling-for-ketamine-assisted-therapy" style="padding:1rem;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:inherit;background:#fff;">
           <p style="font-family:'Poppins',sans-serif;font-weight:600;color:#111827;font-size:0.9rem;">Journaling for Ketamine Therapy</p>
         </a>
-        <a href="/post/ketamine-therapy-insurance-superbill" style="padding:1rem;border:1px solid #e5e7eb;border-radius:8px;text-decoration:none;color:inherit;background:#fff;">
-          <p style="font-family:'Poppins',sans-serif;font-weight:600;color:#111827;font-size:0.9rem;">Insurance & Superbills</p>
-        </a>
       </div>
     </div>
 

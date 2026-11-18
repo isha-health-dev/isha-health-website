@@ -57,7 +57,6 @@ const staticPages = [
   'current-patients/referral-from-your-primary-doctor',
   'current-patients/scheduling',
   'current-patients/session-instruction',
-  'current-patients/superbill',
   'faq',
   'good-faith-estimate',
   'healing-music-playlist',

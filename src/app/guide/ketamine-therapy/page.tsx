@@ -242,7 +242,7 @@ export default function Page() {
       <li><strong>At-home oral ketamine:</strong> Generally the most affordable option; Isha Health appointments start at approximately $398 plus $50 to $150 per month for medication</li>
     </ul>
     <p style="font-family:'Source Sans Pro','Poppins',sans-serif;font-size:0.95rem;line-height:1.8;color:#374151;margin-bottom:2rem;text-wrap:pretty;">
-      Most ketamine therapy (other than Spravato) is not directly covered by insurance, as it is considered off-label use. However, many providers offer superbills that patients can submit for potential out-of-network reimbursement. Learn more about <a href="/post/ketamine-therapy-insurance-superbill" style="color:#0d9488;text-decoration:underline;">ketamine therapy insurance and superbills</a>. HSA and FSA funds can typically be used toward ketamine treatment costs.
+      Most ketamine therapy (other than Spravato) is not directly covered by insurance, as it is considered off-label use. HSA and FSA funds can typically be used toward ketamine treatment costs.
     </p>
 
     <!-- Section 7: Safety and Side Effects -->
