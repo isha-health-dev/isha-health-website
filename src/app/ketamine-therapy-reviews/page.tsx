@@ -110,7 +110,7 @@ export default function KetamineTherapyReviewsPage() {
 
         <div style="padding:1.5rem;background:#f9fafb;border-radius:12px;border:1px solid #e5e7eb;border-left:4px solid #0d9488;">
           <p style="font-family:'Source Sans Pro',sans-serif;font-size:0.95rem;color:#374151;line-height:1.7;font-style:italic;margin-bottom:0.75rem;">&ldquo;Ketamine assisted therapy helped me so much to get out of my depression and PTSD. I never felt better in my life.&rdquo;</p>
-          <p style="font-family:'Poppins',sans-serif;font-size:0.8rem;color:#6b7280;font-weight:500;">&mdash; Amber S, Brooklyn, NY</p>
+          <p style="font-family:'Poppins',sans-serif;font-size:0.8rem;color:#6b7280;font-weight:500;">&mdash; Amber S</p>
         </div>
 
         <div style="padding:1.5rem;background:#f9fafb;border-radius:12px;border:1px solid #e5e7eb;border-left:4px solid #0d9488;">
@@ -120,12 +120,12 @@ export default function KetamineTherapyReviewsPage() {
 
         <div style="padding:1.5rem;background:#f9fafb;border-radius:12px;border:1px solid #e5e7eb;border-left:4px solid #0d9488;">
           <p style="font-family:'Source Sans Pro',sans-serif;font-size:0.95rem;color:#374151;line-height:1.7;font-style:italic;margin-bottom:0.75rem;">&ldquo;I tried IV ketamine for my TRD before. Isha&rsquo;s approach is gentler on my body and worked great.&rdquo;</p>
-          <p style="font-family:'Poppins',sans-serif;font-size:0.8rem;color:#6b7280;font-weight:500;">&mdash; Laila L, New York, NY</p>
+          <p style="font-family:'Poppins',sans-serif;font-size:0.8rem;color:#6b7280;font-weight:500;">&mdash; Laila L</p>
         </div>
 
         <div style="padding:1.5rem;background:#f9fafb;border-radius:12px;border:1px solid #e5e7eb;border-left:4px solid #0d9488;">
           <p style="font-family:'Source Sans Pro',sans-serif;font-size:0.95rem;color:#374151;line-height:1.7;font-style:italic;margin-bottom:0.75rem;">&ldquo;You saved my life. My anxiety is under control, and I finally feel like myself again.&rdquo;</p>
-          <p style="font-family:'Poppins',sans-serif;font-size:0.8rem;color:#6b7280;font-weight:500;">&mdash; Emily P, Miami, FL</p>
+          <p style="font-family:'Poppins',sans-serif;font-size:0.8rem;color:#6b7280;font-weight:500;">&mdash; Emily P</p>
         </div>
 
         <div style="padding:1.5rem;background:#f9fafb;border-radius:12px;border:1px solid #e5e7eb;border-left:4px solid #0d9488;">
@@ -135,7 +135,7 @@ export default function KetamineTherapyReviewsPage() {
 
         <div style="padding:1.5rem;background:#f9fafb;border-radius:12px;border:1px solid #e5e7eb;border-left:4px solid #0d9488;">
           <p style="font-family:'Source Sans Pro',sans-serif;font-size:0.95rem;color:#374151;line-height:1.7;font-style:italic;margin-bottom:0.75rem;">&ldquo;Ketamine really worked for my anxiety. I don&rsquo;t even remember when I last had a panic attack.&rdquo;</p>
-          <p style="font-family:'Poppins',sans-serif;font-size:0.8rem;color:#6b7280;font-weight:500;">&mdash; Jared Y, Rochester, NY</p>
+          <p style="font-family:'Poppins',sans-serif;font-size:0.8rem;color:#6b7280;font-weight:500;">&mdash; Jared Y</p>
         </div>
 
         <div style="padding:1.5rem;background:#f9fafb;border-radius:12px;border:1px solid #e5e7eb;border-left:4px solid #0d9488;">
@@ -150,7 +150,7 @@ export default function KetamineTherapyReviewsPage() {
 
         <div style="padding:1.5rem;background:#f9fafb;border-radius:12px;border:1px solid #e5e7eb;border-left:4px solid #0d9488;">
           <p style="font-family:'Source Sans Pro',sans-serif;font-size:0.95rem;color:#374151;line-height:1.7;font-style:italic;margin-bottom:0.75rem;">&ldquo;IV ketamine worked but I could not afford to continue. Isha really saved me.&rdquo;</p>
-          <p style="font-family:'Poppins',sans-serif;font-size:0.8rem;color:#6b7280;font-weight:500;">&mdash; Kurt Z, Brooklyn, NY</p>
+          <p style="font-family:'Poppins',sans-serif;font-size:0.8rem;color:#6b7280;font-weight:500;">&mdash; Kurt Z</p>
         </div>
 
         <div style="padding:1.5rem;background:#f9fafb;border-radius:12px;border:1px solid #e5e7eb;border-left:4px solid #0d9488;">

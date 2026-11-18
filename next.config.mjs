@@ -33,12 +33,12 @@ const nextConfig = {
       // Fix 404 location aliases
       {
         source: '/locations/ketamine-therapy-nyc',
-        destination: '/locations/ketamine-therapy-new-york-city',
+        destination: '/online-ketamine-therapy',
         permanent: true,
       },
       {
         source: '/ketamine-therapy-nyc',
-        destination: '/locations/ketamine-therapy-new-york-city',
+        destination: '/online-ketamine-therapy',
         permanent: true,
       },
       // Short-URL aliases for current-patients pages
@@ -70,6 +70,47 @@ const nextConfig = {
       {
         source: '/dr-mai-shimada',
         destination: '/about-us/about-isha-health',
+        permanent: true,
+      },
+      // New York pages — service no longer offered in NY (2026-11-18)
+      {
+        source: '/locations/online-at-home-ketamine-therapy-in-new-york',
+        destination: '/online-ketamine-therapy',
+        permanent: true,
+      },
+      {
+        source: '/locations/ketamine-therapy-albany',
+        destination: '/online-ketamine-therapy',
+        permanent: true,
+      },
+      {
+        source: '/locations/ketamine-therapy-brooklyn',
+        destination: '/online-ketamine-therapy',
+        permanent: true,
+      },
+      {
+        source: '/locations/ketamine-therapy-buffalo',
+        destination: '/online-ketamine-therapy',
+        permanent: true,
+      },
+      {
+        source: '/locations/ketamine-therapy-long-island',
+        destination: '/online-ketamine-therapy',
+        permanent: true,
+      },
+      {
+        source: '/locations/ketamine-therapy-new-york-city',
+        destination: '/online-ketamine-therapy',
+        permanent: true,
+      },
+      {
+        source: '/locations/ketamine-therapy-rochester',
+        destination: '/online-ketamine-therapy',
+        permanent: true,
+      },
+      {
+        source: '/post/nyc-ketamine-commute-safety',
+        destination: '/online-ketamine-therapy',
         permanent: true,
       },
       // Texas pages — no longer listed; service ends Feb 2027 (2026-11-18)
@@ -297,7 +338,7 @@ const nextConfig = {
       },
       {
         source: '/ketamine-therapy-long-island',
-        destination: '/locations/ketamine-therapy-long-island',
+        destination: '/online-ketamine-therapy',
         permanent: true,
       },
       {

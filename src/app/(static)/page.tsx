@@ -26,20 +26,20 @@ const testimonials = [
   { quote: "I was recommended ECT for my severe depression. Then I found Isha. I am grateful.", name: "Elliot M", loc: "San Francisco, California" },
   { quote: "My anxiety is just gone. I barely think about it anymore. It wasn\u2019t instantaneous, but it worked eventually.", name: "Patricia L", loc: "Santa Monica, California" },
   { quote: "I felt that my anxiety and depression melting away even during the first session.", name: "Cynthia L", loc: "Mountain View, California" },
-  { quote: "Ketamine assisted therapy helped me so much to get out of my depression and PTSD. I never felt better in my life.", name: "Amber S", loc: "Brooklyn, New York" },
-  { quote: "I tried IV ketamine for my TRD before and it was too much for me. Isha\u2019s approach is gentler on my body and worked great.", name: "Laila L", loc: "New York, New York" },
+  { quote: "Ketamine assisted therapy helped me so much to get out of my depression and PTSD. I never felt better in my life.", name: "Amber S", loc: "" },
+  { quote: "I tried IV ketamine for my TRD before and it was too much for me. Isha\u2019s approach is gentler on my body and worked great.", name: "Laila L", loc: "" },
   { quote: "Ketamine therapy is the only treatment that has worked for my depression and anxiety.", name: "Rakesh V", loc: "Seattle, Washington" },
   { quote: "I have been able to come off from my meds for the past month. I am hopeful that I no longer need SSRIs in the future.", name: "David S", loc: "Denver, Colorado" },
-  { quote: "You saved my life. My anxiety is under control, and I finally feel like myself again.", name: "Emily P", loc: "Miami, Florida" },
+  { quote: "You saved my life. My anxiety is under control, and I finally feel like myself again.", name: "Emily P", loc: "" },
   { quote: "I can\u2019t thank Isha Health enough for helping me overcome my depression and anxiety. Ketamine therapy has truly been a game-changer.", name: "Robert C", loc: "Beverly Hills, California" },
   { quote: "I started ketamine therapy for my depression. It ended up also helping me stop drinking. I\u2019m sober for 6 months by now.", name: "Sergey M", loc: "San Francisco, California" },
-  { quote: "I was super nervous in the beginning but I quickly noticed my mood and motivation were improving after a week.", name: "Marc I", loc: "Miami, Florida" },
-  { quote: "Ketamine really worked for my anxiety. I don\u2019t even remember when I last had a panic attack. I used to have it daily.", name: "Jared Y", loc: "Rochester, New York" },
-  { quote: "IV ketamine worked but I could not afford to continue. Isha really saved me.", name: "Kurt Z", loc: "Brooklyn, New York" },
+  { quote: "I was super nervous in the beginning but I quickly noticed my mood and motivation were improving after a week.", name: "Marc I", loc: "" },
+  { quote: "Ketamine really worked for my anxiety. I don\u2019t even remember when I last had a panic attack. I used to have it daily.", name: "Jared Y", loc: "" },
+  { quote: "IV ketamine worked but I could not afford to continue. Isha really saved me.", name: "Kurt Z", loc: "" },
   { quote: "I just wanted to feel better. I actually now feel better.", name: "Levi S", loc: "Escondido, California" },
   { quote: "I was able to come off from SSRIs through ketamine therapy. I feel that my depression is now more manageable.", name: "Osi M", loc: "San Luis Obispo, California" },
   { quote: "These sessions have been transformative and have made me braver to embrace my interactions with others.", name: "Kenneth M", loc: "Monterey, California" },
-  { quote: "Thank you. I just want to say thank you to get me out of a pit of depression.", name: "Rachel M", loc: "New York, New York" },
+  { quote: "Thank you. I just want to say thank you to get me out of a pit of depression.", name: "Rachel M", loc: "" },
   { quote: "I\u2019m so glad that I found Isha Health for my depression and anxiety. I love that I can speak and message with my doctor as many times as I\u2019d like.", name: "Annika W", loc: "Oakland, California" },
 ];
 
@@ -209,7 +209,7 @@ export default function Page() {
               <p style={{ fontFamily: "'Libre Baskerville', serif", fontSize: '1.05rem', color: '#111827', lineHeight: 1.6, marginBottom: '1.25rem' }}>&ldquo;{t.quote}&rdquo;</p>
               <footer style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.85rem', color: '#4b5563', fontWeight: 500 }}>
                 <span style={{ color: '#111827', fontWeight: 600 }}>{t.name}</span>
-                <span style={{ color: '#9ca3af' }}> &middot; {t.loc}</span>
+                {t.loc && <span style={{ color: '#9ca3af' }}> &middot; {t.loc}</span>}
               </footer>
             </blockquote>
           ))}
